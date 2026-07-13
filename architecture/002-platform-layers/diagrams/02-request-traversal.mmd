@@ -1,0 +1,40 @@
+sequenceDiagram
+
+actor Guest
+
+participant Experience
+participant Gateway
+participant Conversation
+participant AI
+participant Business
+participant Data
+participant Integration
+
+Guest->>Experience: Send Message
+
+Experience->>Gateway: Normalize Request
+
+Gateway->>Conversation: Create / Resume Conversation
+
+Conversation->>AI: Build Conversation Context
+
+AI->>Business: Execute Tool
+
+Business->>Data: Read / Write
+
+alt External Provider Needed
+
+Business->>Integration: Provider Request
+Integration-->>Business: Provider Response
+
+end
+
+Business-->>AI: Business Result
+
+AI-->>Conversation: Natural Language Response
+
+Conversation-->>Gateway: Final Response
+
+Gateway-->>Experience: Response
+
+Experience-->>Guest: Display Response
