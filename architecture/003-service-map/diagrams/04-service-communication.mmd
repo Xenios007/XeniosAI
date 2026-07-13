@@ -1,0 +1,23 @@
+sequenceDiagram
+
+participant AI
+participant Booking
+participant Pricing
+participant Calendar
+participant Notification
+
+AI->>Booking: Create Booking (Command)
+
+Booking->>Pricing: Calculate Price (Query)
+
+Pricing-->>Booking: Price
+
+Booking->>Calendar: Reserve Dates (Command)
+
+Calendar-->>Booking: Reservation Confirmed
+
+Booking->>Notification: Send Confirmation (Command)
+
+Notification-->>Booking: Delivered
+
+Booking-->>AI: BookingCreated

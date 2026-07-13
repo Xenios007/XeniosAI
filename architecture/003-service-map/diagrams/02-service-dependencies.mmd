@@ -1,0 +1,25 @@
+flowchart LR
+
+Booking --> Pricing
+Booking --> Calendar
+Booking --> Notification
+Booking --> Property
+
+Pricing --> Property
+
+Knowledge --> Property
+
+Workflow --> Booking
+Workflow --> Pricing
+Workflow --> Calendar
+Workflow --> Notification
+Workflow --> Authentication
+
+Analytics --> Booking
+Analytics --> Pricing
+Analytics --> Calendar
+Analytics --> Notification
+
+Notification --> Integration["Integration Layer"]
+
+Media --> Storage["Object Storage"]
