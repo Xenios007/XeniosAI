@@ -1,0 +1,19 @@
+flowchart TB
+
+Experience["Experience Layer"]
+
+Gateway["Gateway Layer"]
+
+Intelligence["Intelligence Layer"]
+
+Business["Business Services"]
+
+Data["Data Layer"]
+
+Integration["Integration Layer"]
+
+Experience --> Gateway
+Gateway --> Intelligence
+Intelligence --> Business
+Business --> Data
+Business --> Integration

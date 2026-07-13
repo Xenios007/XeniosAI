@@ -1,0 +1,43 @@
+sequenceDiagram
+
+actor Guest
+
+participant Channel
+
+participant Gateway
+
+participant Conversation
+
+participant AI
+
+participant Tool
+
+participant Service
+
+participant Database
+
+Guest->>Channel: Send message
+
+Channel->>Gateway: Normalized request
+
+Gateway->>Conversation: Create / Resume session
+
+Conversation->>AI: Build context
+
+AI->>Tool: Select tool
+
+Tool->>Service: Execute
+
+Service->>Database: Read / Write
+
+Database-->>Service: Result
+
+Service-->>Tool: Response
+
+Tool-->>AI: Structured result
+
+AI-->>Conversation: Natural language reply
+
+Conversation-->>Channel: Response
+
+Channel-->>Guest: Message
