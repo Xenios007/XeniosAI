@@ -1,0 +1,89 @@
+flowchart LR
+
+subgraph External
+Guest
+Owner
+Staff
+
+Messenger
+WhatsApp
+Instagram
+Website
+
+GoogleCalendar
+Airbnb
+PaymentGateway
+Email
+SMS
+
+LLM
+end
+
+subgraph XeniosAI
+
+Gateway
+
+ConversationManager
+
+AIOrchestrator
+
+ToolRouter
+
+Booking
+
+Pricing
+
+Calendar
+
+Knowledge
+
+Notification
+
+Authentication
+
+Property
+
+Analytics
+
+Database
+
+Cache
+
+end
+
+Guest --> Messenger
+Guest --> WhatsApp
+Guest --> Instagram
+Guest --> Website
+
+Messenger --> Gateway
+WhatsApp --> Gateway
+Instagram --> Gateway
+Website --> Gateway
+
+Gateway --> ConversationManager
+ConversationManager --> AIOrchestrator
+AIOrchestrator --> ToolRouter
+
+ToolRouter --> Booking
+ToolRouter --> Pricing
+ToolRouter --> Calendar
+ToolRouter --> Knowledge
+ToolRouter --> Notification
+ToolRouter --> Authentication
+ToolRouter --> Property
+ToolRouter --> Analytics
+
+Booking --> Database
+Pricing --> Database
+Calendar --> Database
+Knowledge --> Database
+Analytics --> Database
+
+Calendar --> GoogleCalendar
+Booking --> Airbnb
+Booking --> PaymentGateway
+Notification --> Email
+Notification --> SMS
+
+AIOrchestrator --> LLM
