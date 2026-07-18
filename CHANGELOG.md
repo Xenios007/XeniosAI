@@ -983,3 +983,20 @@ Version: 0.52.0
 
 Status: Deployment Model Architecture
 Version: 0.53.0
+
+---
+
+## [0.54.0] - ARCH-007 Compute Model
+
+### Added
+- Compute objective, category, workload classification, resource ownership, isolation area, scheduling consideration, lifecycle stage, operational characteristic, future capability, and error-code constants.
+- Immutable contracts for compute categories, resource allocations, scheduling policies, lifecycle records, and validation results.
+- Compute model descriptor for documented compute categories, workload classification, independent resource ownership, scheduling policy validation, compute lifecycle validation, operational characteristics, and future compute placeholders.
+- Dependency-injection registration through `addDeploymentModel`.
+- Unit tests for compute objectives, architecture flow, categories, invalid category validation, resource allocation, scheduling, lifecycle, isolation, operational characteristics, future placeholders, incomplete metadata validation, and DI access.
+
+### Established
+- Compute-model governance without implementing virtual machine specifications, container images, hardware vendors, cloud instance types, orchestration products, GPU scheduling, autoscaling, or infrastructure provisioning.
+
+Status: Deployment Model Architecture
+Version: 0.54.0

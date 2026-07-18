@@ -8,6 +8,14 @@ export {
   DEPLOYMENT_SCALABILITY_STRATEGIES,
   DEPLOYMENT_UNIT_RESPONSIBILITIES,
   CONFIGURATION_PRINCIPLES,
+  COMPUTE_CATEGORY_NAMES,
+  COMPUTE_ISOLATION_AREAS,
+  COMPUTE_LIFECYCLE_STAGES,
+  COMPUTE_OBJECTIVES,
+  COMPUTE_OPERATIONAL_CHARACTERISTICS,
+  COMPUTE_RESOURCE_OWNERSHIP,
+  COMPUTE_SCHEDULING_CONSIDERATIONS,
+  COMPUTE_WORKLOAD_CLASSIFICATIONS,
   ENVIRONMENT_GOVERNANCE_CONTROLS,
   ENVIRONMENT_ISOLATION_AREAS,
   ENVIRONMENT_MONITORING_CAPABILITIES,
@@ -15,6 +23,7 @@ export {
   ENVIRONMENT_RESPONSIBILITIES,
   FEATURE_ROLLOUT_STAGES,
   FUTURE_DEPLOYMENT_CAPABILITIES,
+  FUTURE_COMPUTE_CAPABILITIES,
   FUTURE_ENVIRONMENT_CAPABILITIES,
   FUTURE_RUNTIME_CAPABILITIES,
   RUNTIME_BOUNDARY_RESPONSIBILITIES,
@@ -28,6 +37,11 @@ export {
   RUNTIME_RESPONSIBILITIES,
   WORKLOAD_CATEGORIES
 } from './constants.js';
+export { ComputeCategory } from './contracts/compute-category.js';
+export { ComputeLifecycleRecord } from './contracts/compute-lifecycle-record.js';
+export { ComputeResourceAllocation } from './contracts/compute-resource-allocation.js';
+export { ComputeSchedulingPolicy } from './contracts/compute-scheduling-policy.js';
+export { ComputeValidationResult } from './contracts/compute-validation-result.js';
 export { DeploymentBoundary } from './contracts/deployment-boundary.js';
 export { DeploymentEnvironment } from './contracts/deployment-environment.js';
 export { DeploymentLayer } from './contracts/deployment-layer.js';
@@ -42,6 +56,7 @@ export { RuntimeComponent } from './contracts/runtime-component.js';
 export { RuntimeInteraction } from './contracts/runtime-interaction.js';
 export { RuntimeValidationResult } from './contracts/runtime-validation-result.js';
 export { RuntimeWorkloadProfile } from './contracts/runtime-workload-profile.js';
+export { ComputeModelDescriptor } from './compute/compute-model-descriptor.js';
 export { EnvironmentStrategyDescriptor } from './environments/environment-strategy-descriptor.js';
 export { DeploymentOverviewDescriptor } from './overview/deployment-overview-descriptor.js';
 export { RuntimeTopologyDescriptor } from './runtime/runtime-topology-descriptor.js';

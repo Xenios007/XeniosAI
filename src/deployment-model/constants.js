@@ -12,7 +12,12 @@ export const DEPLOYMENT_MODEL_ERROR_CODES = Object.freeze({
   RUNTIME_TOPOLOGY_INVALID: 'DEPLOYMENT_MODEL_RUNTIME_TOPOLOGY_INVALID',
   RUNTIME_COMPONENT_INVALID: 'DEPLOYMENT_MODEL_RUNTIME_COMPONENT_INVALID',
   RUNTIME_INTERACTION_INVALID: 'DEPLOYMENT_MODEL_RUNTIME_INTERACTION_INVALID',
-  RUNTIME_WORKLOAD_INVALID: 'DEPLOYMENT_MODEL_RUNTIME_WORKLOAD_INVALID'
+  RUNTIME_WORKLOAD_INVALID: 'DEPLOYMENT_MODEL_RUNTIME_WORKLOAD_INVALID',
+  COMPUTE_MODEL_INVALID: 'DEPLOYMENT_MODEL_COMPUTE_MODEL_INVALID',
+  COMPUTE_CATEGORY_INVALID: 'DEPLOYMENT_MODEL_COMPUTE_CATEGORY_INVALID',
+  COMPUTE_RESOURCE_ALLOCATION_INVALID: 'DEPLOYMENT_MODEL_COMPUTE_RESOURCE_ALLOCATION_INVALID',
+  COMPUTE_SCHEDULING_INVALID: 'DEPLOYMENT_MODEL_COMPUTE_SCHEDULING_INVALID',
+  COMPUTE_LIFECYCLE_INVALID: 'DEPLOYMENT_MODEL_COMPUTE_LIFECYCLE_INVALID'
 });
 
 export const DEPLOYMENT_OBJECTIVES = Object.freeze({
@@ -267,4 +272,84 @@ export const FUTURE_RUNTIME_CAPABILITIES = Object.freeze({
   SERVERLESS_RUNTIME_SUPPORT: 'Serverless runtime support',
   EVENT_NATIVE_EXECUTION: 'Event-native execution',
   ADAPTIVE_WORKLOAD_PLACEMENT: 'Adaptive workload placement'
+});
+
+export const COMPUTE_OBJECTIVES = Object.freeze({
+  INDEPENDENT_WORKLOAD_EXECUTION: 'independent-workload-execution',
+  HORIZONTAL_SCALABILITY: 'horizontal-scalability',
+  PREDICTABLE_RESOURCE_UTILIZATION: 'predictable-resource-utilization',
+  FAULT_ISOLATION: 'fault-isolation',
+  ELASTIC_CAPACITY: 'elastic-capacity',
+  HIGH_AVAILABILITY: 'high-availability',
+  OPERATIONAL_FLEXIBILITY: 'operational-flexibility',
+  EFFICIENT_INFRASTRUCTURE_UTILIZATION: 'efficient-infrastructure-utilization'
+});
+
+export const COMPUTE_CATEGORY_NAMES = Object.freeze({
+  API_COMPUTE: 'API Compute',
+  BUSINESS_COMPUTE: 'Business Compute',
+  AI_COMPUTE: 'AI Compute',
+  BACKGROUND_COMPUTE: 'Background Compute',
+  INFRASTRUCTURE_COMPUTE: 'Infrastructure Compute'
+});
+
+export const COMPUTE_WORKLOAD_CLASSIFICATIONS = Object.freeze({
+  INTERACTIVE: 'Interactive',
+  ASYNCHRONOUS: 'Asynchronous',
+  AI_WORKLOADS: 'AI Workloads',
+  OPERATIONAL_WORKLOADS: 'Operational Workloads'
+});
+
+export const COMPUTE_RESOURCE_OWNERSHIP = Object.freeze({
+  CPU_ALLOCATION: 'cpu-allocation',
+  MEMORY_ALLOCATION: 'memory-allocation',
+  STORAGE_LIMITS: 'storage-limits',
+  NETWORK_ACCESS: 'network-access',
+  RUNTIME_CONFIGURATION: 'runtime-configuration'
+});
+
+export const COMPUTE_ISOLATION_AREAS = Object.freeze({
+  INTERACTIVE_WORKLOADS: 'interactive-workloads',
+  AI_WORKLOADS: 'ai-workloads',
+  BACKGROUND_PROCESSING: 'background-processing',
+  INFRASTRUCTURE_SERVICES: 'infrastructure-services',
+  ADMINISTRATIVE_OPERATIONS: 'administrative-operations'
+});
+
+export const COMPUTE_SCHEDULING_CONSIDERATIONS = Object.freeze({
+  RESOURCE_AVAILABILITY: 'resource-availability',
+  EXECUTION_PRIORITY: 'execution-priority',
+  AFFINITY_REQUIREMENTS: 'affinity-requirements',
+  FAULT_DOMAINS: 'fault-domains',
+  CAPACITY_CONSTRAINTS: 'capacity-constraints',
+  OPERATIONAL_POLICIES: 'operational-policies'
+});
+
+export const COMPUTE_LIFECYCLE_STAGES = Object.freeze({
+  PROVISION: 'Provision',
+  DEPLOY: 'Deploy',
+  EXECUTE: 'Execute',
+  SCALE: 'Scale',
+  MAINTAIN: 'Maintain',
+  RETIRE: 'Retire'
+});
+
+export const COMPUTE_OPERATIONAL_CHARACTERISTICS = Object.freeze({
+  AUTOMATED_RECOVERY: 'automated-recovery',
+  HEALTH_MONITORING: 'health-monitoring',
+  GRACEFUL_SHUTDOWN: 'graceful-shutdown',
+  ROLLING_UPDATES: 'rolling-updates',
+  INDEPENDENT_REPLACEMENT: 'independent-replacement',
+  PREDICTABLE_STARTUP: 'predictable-startup'
+});
+
+export const FUTURE_COMPUTE_CAPABILITIES = Object.freeze({
+  GPU_SCHEDULING: 'GPU scheduling',
+  AI_ACCELERATOR_POOLS: 'AI accelerator pools',
+  SERVERLESS_EXECUTION: 'Serverless execution',
+  EDGE_COMPUTE_NODES: 'Edge compute nodes',
+  AUTONOMOUS_WORKLOAD_PLACEMENT: 'Autonomous workload placement',
+  PREDICTIVE_AUTOSCALING: 'Predictive autoscaling',
+  ENERGY_AWARE_SCHEDULING: 'Energy-aware scheduling',
+  HETEROGENEOUS_COMPUTE_CLUSTERS: 'Heterogeneous compute clusters'
 });

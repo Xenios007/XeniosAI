@@ -61,7 +61,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-007-01 Deployment Overview`
 - Completed: `ARCH-007-02 Environment Strategy`
 - Completed: `ARCH-007-03 Runtime Topology`
-- Next: `ARCH-007-04 Compute Model`
+- Completed: `ARCH-007-04 Compute Model`
+- Next: `ARCH-007-05 Storage Topology`
 
 ## Notes
 
