@@ -778,3 +778,20 @@ Version: 0.40.0
 
 Status: Domain Model Architecture
 Version: 0.41.0
+
+---
+
+## [0.42.0] - ARCH-006 Bounded Contexts
+
+### Added
+- Bounded context names, principles, communication mechanisms, isolation aspects, and error-code constants.
+- Immutable contracts for bounded contexts, concept ownership, context collaboration, context isolation, and validation results.
+- Bounded context registry for documented primary contexts, context responsibilities, one-owner concept governance, explicit collaboration validation, and isolation validation.
+- Dependency-injection registration through `addDomainModel`.
+- Unit tests for context principles, primary contexts, responsibilities, concept ownership, shared ownership rejection, collaboration rules, isolation rules, unknown contexts, and DI access.
+
+### Established
+- Bounded-context governance without implementing individual entities, aggregates, value objects, domain services, detailed rules, persistence, deployment isolation, or service runtime behavior.
+
+Status: Domain Model Architecture
+Version: 0.42.0

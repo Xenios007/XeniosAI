@@ -1,4 +1,5 @@
 import { ServiceCollection } from '../foundation/di/service-collection.js';
+import { BoundedContextRegistry } from './bounded-contexts/bounded-context-registry.js';
 import { DomainOverviewDescriptor } from './overview/domain-overview-descriptor.js';
 
 export function addDomainModel(services) {
@@ -6,6 +7,7 @@ export function addDomainModel(services) {
     throw new Error('addDomainModel expects an instance of ServiceCollection.');
   }
 
+  services.registerSingleton('BoundedContextRegistry', () => new BoundedContextRegistry());
   services.registerSingleton('DomainOverviewDescriptor', () => new DomainOverviewDescriptor());
 
   return services;

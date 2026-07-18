@@ -49,7 +49,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-005-09 Transaction Boundaries`
 - Completed: `ARCH-005-10 Future Integration Capabilities`
 - Completed: `ARCH-006-01 Domain Overview`
-- Next: `ARCH-006-02 Bounded Contexts`
+- Completed: `ARCH-006-02 Bounded Contexts`
+- Next: `ARCH-006-03 Core Entities`
 
 ## Notes
 
