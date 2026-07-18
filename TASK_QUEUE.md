@@ -22,7 +22,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-003-02 Service Catalog`
 - Completed: `ARCH-003-03 Service Ownership`
 - Completed: `ARCH-003-04 Service Dependencies`
-- Next: `ARCH-003-05 Domain Boundaries`
+- Completed: `ARCH-003-05 Domain Boundaries`
+- Next: `ARCH-003-06 Service Communication`
 
 ## Notes
 

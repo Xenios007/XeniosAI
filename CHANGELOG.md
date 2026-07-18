@@ -289,3 +289,20 @@ Version: 0.13.0
 
 Status: Service Map Architecture
 Version: 0.14.0
+
+---
+
+## [0.15.0] - ARCH-003 Domain Boundaries
+
+### Added
+- Domain boundary registry for all ARCH-003 services.
+- Immutable contracts for service boundaries, shared concepts, and boundary validation results.
+- Runtime checks for ownership claims, collaboration boundaries, duplicate boundaries, missing boundaries, and explicit boundary violations.
+- Dependency-injection registration for `ServiceBoundaryRegistry`.
+- Unit tests for service owns/does-not-own facts, collaboration metadata, shared concept ownership, boundary violations, and DI access.
+
+### Established
+- Executable representation of ARCH-003-05 domain boundaries without implementing service communication behavior.
+
+Status: Service Map Architecture
+Version: 0.15.0
