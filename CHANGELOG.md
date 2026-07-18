@@ -1085,3 +1085,20 @@ Version: 0.58.0
 
 Status: Deployment Model Architecture
 Version: 0.59.0
+
+---
+
+## [0.60.0] - ARCH-007 Future Deployment Evolution
+
+### Added
+- Future deployment evolution objective, principle, infrastructure stage, compute, storage, network, AI infrastructure, deployment automation, operational intelligence, global deployment, security, observability, sustainability, technology independence, governance, long-term characteristic, and error-code constants.
+- Immutable contracts for deployment evolution candidates, governance assessments, and validation results.
+- Future deployment evolution descriptor for roadmap metadata, architecture-preserving modernization validation, governance assessment validation, and long-term vision placeholders.
+- Dependency-injection registration through `addDeploymentModel`.
+- Unit tests for evolution objectives, principles, infrastructure progression, future capability placeholders, global deployment roadmap, candidate validation, governance assessment validation, incomplete metadata validation, and DI access.
+
+### Established
+- Future-deployment evolution governance without implementing future infrastructure capabilities, prescribing adoption timelines, selecting vendors, introducing platform-specific services, automating migrations, or altering business, service, domain, or data ownership architecture.
+
+Status: Deployment Model Architecture
+Version: 0.60.0

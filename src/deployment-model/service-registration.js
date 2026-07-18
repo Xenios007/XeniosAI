@@ -3,6 +3,7 @@ import { HighAvailabilityDescriptor } from './availability/high-availability-des
 import { ComputeModelDescriptor } from './compute/compute-model-descriptor.js';
 import { DisasterRecoveryDescriptor } from './disaster-recovery/disaster-recovery-descriptor.js';
 import { EnvironmentStrategyDescriptor } from './environments/environment-strategy-descriptor.js';
+import { FutureDeploymentEvolutionDescriptor } from './future/future-deployment-evolution-descriptor.js';
 import { NetworkTopologyDescriptor } from './network/network-topology-descriptor.js';
 import { DeploymentOverviewDescriptor } from './overview/deployment-overview-descriptor.js';
 import { RuntimeTopologyDescriptor } from './runtime/runtime-topology-descriptor.js';
@@ -18,6 +19,7 @@ export function addDeploymentModel(services) {
   services.registerSingleton('DisasterRecoveryDescriptor', () => new DisasterRecoveryDescriptor());
   services.registerSingleton('DeploymentOverviewDescriptor', () => new DeploymentOverviewDescriptor());
   services.registerSingleton('EnvironmentStrategyDescriptor', () => new EnvironmentStrategyDescriptor());
+  services.registerSingleton('FutureDeploymentEvolutionDescriptor', () => new FutureDeploymentEvolutionDescriptor());
   services.registerSingleton('HighAvailabilityDescriptor', () => new HighAvailabilityDescriptor());
   services.registerSingleton('NetworkTopologyDescriptor', () => new NetworkTopologyDescriptor());
   services.registerSingleton('RuntimeTopologyDescriptor', () => new RuntimeTopologyDescriptor());

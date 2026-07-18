@@ -25,6 +25,9 @@ export {
   BACKUP_PRINCIPLES,
   DATA_LIFECYCLE_STAGES,
   DATA_RECOVERY_AREAS,
+  DEPLOYMENT_EVOLUTION_GOVERNANCE_CONTROLS,
+  DEPLOYMENT_EVOLUTION_OBJECTIVES,
+  DEPLOYMENT_EVOLUTION_PRINCIPLES,
   ENVIRONMENT_GOVERNANCE_CONTROLS,
   ENVIRONMENT_ISOLATION_AREAS,
   ENVIRONMENT_MONITORING_CAPABILITIES,
@@ -41,18 +44,29 @@ export {
   DISASTER_RECOVERY_OBJECTIVES,
   DISASTER_RECOVERY_TESTING_ACTIVITIES,
   FUTURE_DEPLOYMENT_CAPABILITIES,
+  FUTURE_AI_INFRASTRUCTURE_CAPABILITIES,
   FUTURE_COMPUTE_CAPABILITIES,
+  FUTURE_COMPUTE_EVOLUTION_CAPABILITIES,
+  FUTURE_DEPLOYMENT_AUTOMATION_CAPABILITIES,
   FUTURE_DISASTER_RECOVERY_CAPABILITIES,
   FUTURE_ENVIRONMENT_CAPABILITIES,
   FUTURE_HIGH_AVAILABILITY_CAPABILITIES,
   FUTURE_NETWORK_CAPABILITIES,
+  FUTURE_NETWORK_EVOLUTION_CAPABILITIES,
+  FUTURE_OBSERVABILITY_EVOLUTION_CAPABILITIES,
+  FUTURE_OPERATIONAL_INTELLIGENCE_CAPABILITIES,
   FUTURE_RUNTIME_CAPABILITIES,
+  FUTURE_SECURITY_EVOLUTION_CAPABILITIES,
   FUTURE_SERVICE_DEPLOYMENT_CAPABILITIES,
+  FUTURE_STORAGE_EVOLUTION_CAPABILITIES,
   FUTURE_STORAGE_CAPABILITIES,
+  GLOBAL_DEPLOYMENT_EVOLUTION_STAGES,
   GRACEFUL_DEGRADATION_STRATEGIES,
   HEALTH_INDICATORS,
   HIGH_AVAILABILITY_OBJECTIVES,
+  INFRASTRUCTURE_EVOLUTION_STAGES,
   INFRASTRUCTURE_RECOVERY_AREAS,
+  LONG_TERM_DEPLOYMENT_CHARACTERISTICS,
   MAINTENANCE_PRINCIPLES,
   NETWORK_COMMUNICATION_METHODS,
   NETWORK_DISCOVERY_CAPABILITIES,
@@ -99,6 +113,8 @@ export {
   STORAGE_ISOLATION_AREAS,
   STORAGE_OBJECTIVES,
   STORAGE_PROTECTION_CAPABILITIES,
+  SUSTAINABILITY_OBJECTIVES,
+  TECHNOLOGY_INDEPENDENCE_TARGETS,
   WORKLOAD_CATEGORIES
 } from './constants.js';
 export { AvailabilityComponent } from './contracts/availability-component.js';
@@ -109,6 +125,9 @@ export { ComputeResourceAllocation } from './contracts/compute-resource-allocati
 export { ComputeSchedulingPolicy } from './contracts/compute-scheduling-policy.js';
 export { ComputeValidationResult } from './contracts/compute-validation-result.js';
 export { DeploymentBoundary } from './contracts/deployment-boundary.js';
+export { DeploymentEvolutionAssessment } from './contracts/deployment-evolution-assessment.js';
+export { DeploymentEvolutionCandidate } from './contracts/deployment-evolution-candidate.js';
+export { DeploymentEvolutionValidationResult } from './contracts/deployment-evolution-validation-result.js';
 export { DeploymentEnvironment } from './contracts/deployment-environment.js';
 export { DeploymentLayer } from './contracts/deployment-layer.js';
 export { DeploymentUnit } from './contracts/deployment-unit.js';
@@ -144,6 +163,7 @@ export { HighAvailabilityDescriptor } from './availability/high-availability-des
 export { ComputeModelDescriptor } from './compute/compute-model-descriptor.js';
 export { DisasterRecoveryDescriptor } from './disaster-recovery/disaster-recovery-descriptor.js';
 export { EnvironmentStrategyDescriptor } from './environments/environment-strategy-descriptor.js';
+export { FutureDeploymentEvolutionDescriptor } from './future/future-deployment-evolution-descriptor.js';
 export { NetworkTopologyDescriptor } from './network/network-topology-descriptor.js';
 export { DeploymentOverviewDescriptor } from './overview/deployment-overview-descriptor.js';
 export { RuntimeTopologyDescriptor } from './runtime/runtime-topology-descriptor.js';

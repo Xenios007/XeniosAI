@@ -67,7 +67,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-007-07 Service Deployment`
 - Completed: `ARCH-007-08 High Availability`
 - Completed: `ARCH-007-09 Disaster Recovery`
-- Next: `ARCH-007-10 Future Deployment Evolution`
+- Completed: `ARCH-007-10 Future Deployment Evolution`
+- Next: `ARCH-008-01 Security Overview`
 
 ## Notes
 
