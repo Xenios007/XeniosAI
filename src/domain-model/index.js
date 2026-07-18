@@ -1,4 +1,8 @@
 export {
+  AGGREGATE_COLLABORATION_MECHANISMS,
+  AGGREGATE_NAMES,
+  AGGREGATE_PRINCIPLES,
+  AGGREGATE_REFERENCE_RULES,
   BOUNDED_CONTEXT_COMMUNICATION_MECHANISMS,
   BOUNDED_CONTEXT_ISOLATION_ASPECTS,
   BOUNDED_CONTEXT_NAMES,
@@ -12,11 +16,17 @@ export {
   DOMAIN_RELATIONSHIP_TYPES,
   ENTITY_INTEGRITY_RULES,
   ENTITY_REFERENCE_RULES,
+  FUTURE_AGGREGATE_CANDIDATES,
   VALUE_OBJECT_CHARACTERISTICS,
   VALUE_OBJECT_FUTURE_CANDIDATES,
   VALUE_OBJECT_NAMES,
   VALUE_OBJECT_OWNERSHIP_RULES
 } from './constants.js';
+export { AggregateDefinition } from './contracts/aggregate-definition.js';
+export { AggregateInvariantCheck } from './contracts/aggregate-invariant-check.js';
+export { AggregateReference } from './contracts/aggregate-reference.js';
+export { AggregateTransactionScope } from './contracts/aggregate-transaction-scope.js';
+export { AggregateValidationResult } from './contracts/aggregate-validation-result.js';
 export { BoundedContext } from './contracts/bounded-context.js';
 export { BoundedContextValidationResult } from './contracts/bounded-context-validation-result.js';
 export { ContextCollaboration } from './contracts/context-collaboration.js';
@@ -36,6 +46,7 @@ export { EntityValidationResult } from './contracts/entity-validation-result.js'
 export { ValueObjectDefinition } from './contracts/value-object-definition.js';
 export { ValueObjectInstance } from './contracts/value-object-instance.js';
 export { ValueObjectValidationResult } from './contracts/value-object-validation-result.js';
+export { AggregateRegistry } from './aggregates/aggregate-registry.js';
 export { BoundedContextRegistry } from './bounded-contexts/bounded-context-registry.js';
 export { CoreEntityRegistry } from './entities/core-entity-registry.js';
 export { DomainOverviewDescriptor } from './overview/domain-overview-descriptor.js';

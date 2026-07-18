@@ -829,3 +829,20 @@ Version: 0.43.0
 
 Status: Domain Model Architecture
 Version: 0.44.0
+
+---
+
+## [0.45.0] - ARCH-006 Aggregates
+
+### Added
+- Aggregate name, principle, reference rule, collaboration mechanism, future candidate, and error-code constants.
+- Immutable contracts for aggregate definitions, references, transaction scopes, invariant checks, and validation results.
+- Aggregate registry for documented aggregate consistency boundaries, Aggregate Root validation, invariant validation, identity-only reference validation, single-aggregate transaction validation, and future aggregate placeholders.
+- Dependency-injection registration through `addDomainModel`.
+- Unit tests for aggregate principles, documented aggregates, members and invariants, definition validation, reference rules, transaction boundaries, invariant enforcement, future placeholders, and DI access.
+
+### Established
+- Aggregate governance without implementing ORM mappings, persistence models, database schemas, repositories, transaction managers, full aggregate mutation behavior, or later domain service/domain rule execution.
+
+Status: Domain Model Architecture
+Version: 0.45.0
