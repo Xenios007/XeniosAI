@@ -68,7 +68,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-007-08 High Availability`
 - Completed: `ARCH-007-09 Disaster Recovery`
 - Completed: `ARCH-007-10 Future Deployment Evolution`
-- Next: `ARCH-008-01 Security Overview`
+- Completed: `ARCH-008-01 Security Overview`
+- Next: `ARCH-008-02 Identity & Authentication`
 
 ## Notes
 

@@ -1102,3 +1102,21 @@ Version: 0.59.0
 
 Status: Deployment Model Architecture
 Version: 0.60.0
+
+---
+
+## [0.61.0] - ARCH-008 Security Overview
+
+### Added
+- Security architecture module under `src/security-architecture/`.
+- Security objective, principle, domain, trust boundary, responsibility owner, lifecycle, risk factor, governance, future capability, and error-code constants.
+- Immutable contracts for security domains, trust boundaries, shared responsibilities, risk assessments, and validation results.
+- Security overview descriptor for documented domain sequencing, trust boundary validation, responsibility ownership validation, risk and governance validation, and future security placeholders.
+- Dependency-injection registration through `addSecurityArchitecture`.
+- Unit tests for objectives, principles, domains, lifecycle, trust boundaries, responsibilities, risk assessment, governance, future placeholders, incomplete metadata validation, and DI access.
+
+### Established
+- Security-overview governance without implementing security products, cryptographic algorithms, operational procedures, identity protocols, authorization engines, monitoring products, or vendor-specific controls.
+
+Status: Security Architecture
+Version: 0.61.0
