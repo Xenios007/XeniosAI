@@ -270,3 +270,22 @@ Version: 0.12.0
 
 Status: Service Map Architecture
 Version: 0.13.0
+
+---
+
+## [0.14.0] - ARCH-003 Service Dependencies
+
+### Added
+- Service dependency graph for the ARCH-003-04 dependency matrix.
+- Immutable service dependency and dependency validation contracts.
+- Dependency type classification for functional, informational, operational, and infrastructure dependencies.
+- Runtime validation for allowed, forbidden, duplicate, and circular dependencies.
+- Dependency-injection registration for `ServiceDependencyGraph`.
+- Unit tests for dependency matrix coverage, external dependencies, validation, duplicate rejection, cycle detection, and DI access.
+
+### Established
+- Executable governance for explicit, minimal, and acyclic service dependencies.
+- Separation between dependency governance and later domain-boundary or communication behavior.
+
+Status: Service Map Architecture
+Version: 0.14.0

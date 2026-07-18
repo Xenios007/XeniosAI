@@ -71,5 +71,6 @@ The repository currently includes automated unit tests for:
 - `ARCH-003-01 Service Landscape` in `tests/service-map/`
 - `ARCH-003-02 Service Catalog` in `tests/service-map/`
 - `ARCH-003-03 Service Ownership` in `tests/service-map/`
+- `ARCH-003-04 Service Dependencies` in `tests/service-map/`
 
 These tests validate reusable platform capabilities and channel-facing behavior without introducing business logic.

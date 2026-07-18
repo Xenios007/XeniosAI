@@ -39,7 +39,8 @@ test('service catalog records purpose, ownership, capabilities, dependencies, an
   assert.deepEqual(booking.dependsOn, [
     BUSINESS_SERVICE_NAMES.PRICING,
     BUSINESS_SERVICE_NAMES.CALENDAR,
-    BUSINESS_SERVICE_NAMES.NOTIFICATION
+    BUSINESS_SERVICE_NAMES.NOTIFICATION,
+    BUSINESS_SERVICE_NAMES.PROPERTY
   ]);
   assert.ok(booking.provides.includes('Create booking'));
   assert.ok(booking.consumers.includes(BUSINESS_SERVICE_NAMES.WORKFLOW));
