@@ -1,0 +1,45 @@
+flowchart TB
+
+subgraph Actors
+User[Human User]
+Service[Service]
+Agent[AI Agent]
+External[External System]
+end
+
+subgraph Security
+Identity[Identity]
+
+Authentication[Authentication]
+
+Authorization[Authorization]
+
+Policy[Policy Evaluation]
+end
+
+subgraph Platform
+Business[Business Services]
+
+Data[(Protected Data)]
+
+Tools[AI Tools]
+end
+
+Audit[(Audit & Monitoring)]
+
+User --> Identity
+Service --> Identity
+Agent --> Identity
+External --> Identity
+
+Identity --> Authentication
+Authentication --> Authorization
+Authorization --> Policy
+
+Policy --> Business
+Policy --> Data
+Policy --> Tools
+
+Business --> Audit
+Data --> Audit
+Tools --> Audit
