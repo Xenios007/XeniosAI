@@ -58,7 +58,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-006-08 Domain Rules`
 - Completed: `ARCH-006-09 Domain Lifecycle`
 - Completed: `ARCH-006-10 Future Domain Evolution`
-- Next: `ARCH-007-01 Deployment Overview`
+- Completed: `ARCH-007-01 Deployment Overview`
+- Next: `ARCH-007-02 Environment Strategy`
 
 ## Notes
 

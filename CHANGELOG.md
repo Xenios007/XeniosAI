@@ -931,3 +931,21 @@ Version: 0.49.0
 
 Status: Domain Model Architecture
 Version: 0.50.0
+
+---
+
+## [0.51.0] - ARCH-007 Deployment Overview
+
+### Added
+- Deployment model module under `src/deployment-model/`.
+- Deployment objective, principle, layer, environment, responsibility, scalability, resilience, future capability, and error-code constants.
+- Immutable contracts for deployment layers, units, environments, boundaries, and validation results.
+- Deployment overview descriptor for documented layer ordering, environment separation, unit ownership validation, boundary alignment validation, scalability/resilience metadata, and future deployment placeholders.
+- Dependency-injection registration through `addDeploymentModel`.
+- Unit tests for deployment objectives, principles, layers, environments, deployment units, boundaries, scalability, resilience, incomplete metadata validation, and DI access.
+
+### Established
+- Deployment overview governance without implementing cloud vendors, orchestration platforms, containers, infrastructure automation, networking configuration, storage topology, or runtime scheduling.
+
+Status: Deployment Model Architecture
+Version: 0.51.0
