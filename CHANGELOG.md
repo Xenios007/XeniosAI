@@ -1154,3 +1154,20 @@ Version: 0.62.0
 
 Status: Security Architecture
 Version: 0.63.0
+
+---
+
+## [0.64.0] - ARCH-008 Zero Trust Architecture
+
+### Added
+- Zero Trust objective, principle, trust lifecycle, decision flow, trust boundary, subject, trust requirement, context, risk, session, service-to-service, observability, governance, future capability, and error-code constants.
+- Immutable contracts for Zero Trust request evaluations, trust boundaries, and validation results.
+- Zero Trust architecture descriptor for documented trust metadata, request evaluation validation, boundary crossing validation, and future Zero Trust placeholders.
+- Dependency-injection registration through `addSecurityArchitecture`.
+- Unit tests for Zero Trust objectives, principles, lifecycle, decision flow, boundaries, subject requirements, request evaluation validation, boundary validation, future placeholders, incomplete metadata validation, and DI access.
+
+### Established
+- Zero Trust governance without implementing network products, identity providers, policy engines, micro-segmentation, runtime enforcement frameworks, confidential-computing systems, or vendor-specific Zero Trust products.
+
+Status: Security Architecture
+Version: 0.64.0

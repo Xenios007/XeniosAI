@@ -11,7 +11,10 @@ export const SECURITY_ARCHITECTURE_ERROR_CODES = Object.freeze({
   AUTHORIZATION_MODEL_INVALID: 'SECURITY_ARCHITECTURE_AUTHORIZATION_MODEL_INVALID',
   AUTHORIZATION_PERMISSION_INVALID: 'SECURITY_ARCHITECTURE_AUTHORIZATION_PERMISSION_INVALID',
   AUTHORIZATION_POLICY_INVALID: 'SECURITY_ARCHITECTURE_AUTHORIZATION_POLICY_INVALID',
-  AUTHORIZATION_DELEGATION_INVALID: 'SECURITY_ARCHITECTURE_AUTHORIZATION_DELEGATION_INVALID'
+  AUTHORIZATION_DELEGATION_INVALID: 'SECURITY_ARCHITECTURE_AUTHORIZATION_DELEGATION_INVALID',
+  ZERO_TRUST_ARCHITECTURE_INVALID: 'SECURITY_ARCHITECTURE_ZERO_TRUST_INVALID',
+  ZERO_TRUST_EVALUATION_INVALID: 'SECURITY_ARCHITECTURE_ZERO_TRUST_EVALUATION_INVALID',
+  ZERO_TRUST_BOUNDARY_INVALID: 'SECURITY_ARCHITECTURE_ZERO_TRUST_BOUNDARY_INVALID'
 });
 
 export const SECURITY_OBJECTIVES = Object.freeze({
@@ -356,4 +359,164 @@ export const FUTURE_AUTHORIZATION_CAPABILITIES = Object.freeze({
   AUTONOMOUS_PERMISSION_REVIEWS: 'Autonomous permission reviews',
   CONTEXT_AWARE_AUTHORIZATION: 'Context-aware authorization',
   PREDICTIVE_ACCESS_RECOMMENDATIONS: 'Predictive access recommendations'
+});
+
+export const ZERO_TRUST_OBJECTIVES = Object.freeze({
+  CONTINUOUS_VERIFICATION: 'continuous-verification',
+  EXPLICIT_TRUST_EVALUATION: 'explicit-trust-evaluation',
+  REDUCED_ATTACK_SURFACE: 'reduced-attack-surface',
+  LEAST_PRIVILEGE_ENFORCEMENT: 'least-privilege-enforcement',
+  SECURE_SERVICE_COMMUNICATION: 'secure-service-communication',
+  STRONG_WORKLOAD_ISOLATION: 'strong-workload-isolation',
+  ADAPTIVE_SECURITY: 'adaptive-security',
+  ENTERPRISE_RESILIENCE: 'enterprise-resilience'
+});
+
+export const ZERO_TRUST_PRINCIPLES = Object.freeze({
+  VERIFY_EXPLICITLY: 'verify-explicitly',
+  LEAST_PRIVILEGE: 'least-privilege',
+  ASSUME_BREACH: 'assume-breach',
+  CONTINUOUS_VALIDATION: 'continuous-validation'
+});
+
+export const TRUST_LIFECYCLE_STAGES = Object.freeze({
+  ESTABLISHED: 'Established',
+  EVALUATED: 'Evaluated',
+  MAINTAINED: 'Maintained',
+  REVOKED: 'Revoked'
+});
+
+export const ZERO_TRUST_DECISION_FLOW_STAGES = Object.freeze({
+  REQUEST: 'Request',
+  IDENTITY_VERIFICATION: 'Identity Verification',
+  AUTHENTICATION: 'Authentication',
+  AUTHORIZATION: 'Authorization',
+  CONTEXT_EVALUATION: 'Context Evaluation',
+  RISK_ASSESSMENT: 'Risk Assessment',
+  POLICY_DECISION: 'Policy Decision',
+  ACCESS_OUTCOME: 'Access Granted or Denied'
+});
+
+export const ZERO_TRUST_BOUNDARY_NAMES = Object.freeze({
+  CLIENT_EDGE: 'Client to Edge',
+  EDGE_GATEWAY: 'Edge to Gateway',
+  GATEWAY_SERVICES: 'Gateway to Services',
+  SERVICE_SERVICE: 'Service to Service',
+  SERVICE_AI: 'Service to AI',
+  AI_KNOWLEDGE_SOURCES: 'AI to Knowledge Sources',
+  SERVICE_DATA: 'Service to Data',
+  PLATFORM_THIRD_PARTY_SYSTEMS: 'Platform to Third-party Systems',
+  OPERATIONS_PRODUCTION: 'Operations to Production'
+});
+
+export const ZERO_TRUST_SUBJECT_TYPES = Object.freeze({
+  HUMAN: 'human',
+  SERVICE: 'service',
+  AI_COMPONENT: 'ai-component',
+  DEVICE: 'device',
+  WORKLOAD: 'workload',
+  NETWORK: 'network',
+  DATA: 'data'
+});
+
+export const HUMAN_TRUST_REQUIREMENTS = Object.freeze({
+  AUTHENTICATION: 'authentication',
+  SESSION_VALIDATION: 'session-validation',
+  RISK_EVALUATION: 'risk-evaluation',
+  PRIVILEGE_VERIFICATION: 'privilege-verification'
+});
+
+export const SERVICE_TRUST_REQUIREMENTS = Object.freeze({
+  CALLING_SERVICE_IDENTITY: 'calling-service-identity',
+  REQUESTED_OPERATION: 'requested-operation',
+  AUTHORIZATION: 'authorization',
+  COMMUNICATION_INTEGRITY: 'communication-integrity'
+});
+
+export const AI_TRUST_REQUIREMENTS = Object.freeze({
+  AUTHENTICATE: 'authenticate',
+  AUTHORIZE_REQUESTS: 'authorize-requests',
+  ASSIGNED_PERMISSIONS: 'assigned-permissions',
+  AUDITABLE_ACTIONS: 'auditable-actions'
+});
+
+export const DEVICE_TRUST_FACTORS = Object.freeze({
+  DEVICE_REGISTRATION: 'device-registration',
+  SECURITY_POSTURE: 'security-posture',
+  COMPLIANCE_STATUS: 'compliance-status',
+  PLATFORM_INTEGRITY: 'platform-integrity'
+});
+
+export const WORKLOAD_TRUST_IDENTITIES = Object.freeze({
+  BACKGROUND_JOBS: 'background-jobs',
+  SCHEDULED_PROCESSES: 'scheduled-processes',
+  BATCH_OPERATIONS: 'batch-operations',
+  EVENT_PROCESSORS: 'event-processors'
+});
+
+export const DATA_TRUST_RESOURCES = Object.freeze({
+  CUSTOMER_INFORMATION: 'customer-information',
+  FINANCIAL_RECORDS: 'financial-records',
+  CONFIGURATION: 'configuration',
+  AI_KNOWLEDGE: 'ai-knowledge',
+  OPERATIONAL_TELEMETRY: 'operational-telemetry',
+  ADMINISTRATIVE_DATA: 'administrative-data'
+});
+
+export const ZERO_TRUST_CONTEXT_GROUPS = Object.freeze({
+  IDENTITY_CONTEXT: 'identity-context',
+  OPERATIONAL_CONTEXT: 'operational-context',
+  SECURITY_CONTEXT: 'security-context'
+});
+
+export const ZERO_TRUST_RISK_FACTORS = Object.freeze({
+  SENSITIVE_RESOURCES: 'sensitive-resources',
+  ADMINISTRATIVE_OPERATIONS: 'administrative-operations',
+  UNUSUAL_REQUEST_PATTERNS: 'unusual-request-patterns',
+  HIGH_VALUE_TRANSACTIONS: 'high-value-transactions',
+  ELEVATED_PRIVILEGES: 'elevated-privileges'
+});
+
+export const ZERO_TRUST_SESSION_REQUIREMENTS = Object.freeze({
+  REAUTHENTICATION: 'reauthentication',
+  POLICY_REEVALUATION: 'policy-reevaluation',
+  PERMISSION_VALIDATION: 'permission-validation',
+  EXPLICIT_TERMINATION: 'explicit-termination'
+});
+
+export const SERVICE_TO_SERVICE_TRUST_REQUIREMENTS = Object.freeze({
+  VERIFIED_CALLER_IDENTITY: 'verified-caller-identity',
+  SECURE_COMMUNICATION: 'secure-communication',
+  AUTHORIZATION_EVALUATION: 'authorization-evaluation',
+  AUDIT_LOGGING: 'audit-logging'
+});
+
+export const ZERO_TRUST_OBSERVABILITY_EVENTS = Object.freeze({
+  AUTHENTICATION_EVENTS: 'authentication-events',
+  AUTHORIZATION_DECISIONS: 'authorization-decisions',
+  TRUST_EVALUATIONS: 'trust-evaluations',
+  RISK_ASSESSMENTS: 'risk-assessments',
+  POLICY_VIOLATIONS: 'policy-violations',
+  SESSION_LIFECYCLE: 'session-lifecycle',
+  SERVICE_COMMUNICATION: 'service-communication'
+});
+
+export const ZERO_TRUST_GOVERNANCE_ACTIVITIES = Object.freeze({
+  TRUST_POLICY_MANAGEMENT: 'trust-policy-management',
+  IDENTITY_GOVERNANCE: 'identity-governance',
+  AUTHORIZATION_REVIEWS: 'authorization-reviews',
+  RISK_ASSESSMENTS: 'risk-assessments',
+  SECURITY_AUDITS: 'security-audits',
+  CONTINUOUS_POLICY_IMPROVEMENT: 'continuous-policy-improvement'
+});
+
+export const FUTURE_ZERO_TRUST_CAPABILITIES = Object.freeze({
+  CONTINUOUS_ADAPTIVE_TRUST_SCORING: 'Continuous adaptive trust scoring',
+  AI_ASSISTED_POLICY_EVALUATION: 'AI-assisted policy evaluation',
+  AUTONOMOUS_TRUST_DECISIONS: 'Autonomous trust decisions',
+  BEHAVIORAL_ANOMALY_DETECTION: 'Behavioral anomaly detection',
+  DYNAMIC_MICRO_SEGMENTATION: 'Dynamic micro-segmentation',
+  REAL_TIME_RISK_ADAPTATION: 'Real-time risk adaptation',
+  CONFIDENTIAL_COMPUTING_INTEGRATION: 'Confidential computing integration',
+  POST_QUANTUM_TRUST_MECHANISMS: 'Post-quantum trust mechanisms'
 });

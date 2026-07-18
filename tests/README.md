@@ -121,5 +121,6 @@ The repository currently includes automated unit tests for:
 - `ARCH-008-01 Security Overview` in `tests/security-architecture/`
 - `ARCH-008-02 Identity & Authentication` in `tests/security-architecture/`
 - `ARCH-008-03 Authorization Model` in `tests/security-architecture/`
+- `ARCH-008-04 Zero Trust Architecture` in `tests/security-architecture/`
 
 These tests validate reusable platform capabilities and channel-facing behavior without introducing business logic.
