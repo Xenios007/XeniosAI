@@ -6,10 +6,15 @@ export {
   REASONING_DECISION_CATEGORIES,
   REASONING_EXECUTION_STRATEGIES,
   REASONING_PIPELINE_STAGES,
+  TOOL_CATEGORIES,
+  TOOL_INVOCATION_TELEMETRY_FIELDS,
+  TOOL_ORCHESTRATION_STAGES,
+  TOOL_SELECTION_PRINCIPLES,
   REQUEST_LIFECYCLE_CHARACTERISTICS,
   REQUEST_LIFECYCLE_STAGES,
   REQUEST_LIFECYCLE_TELEMETRY_FIELDS
 } from './constants.js';
+export { OrchestratedToolResult } from './contracts/orchestrated-tool-result.js';
 export { ReasoningDecisionOutput } from './contracts/reasoning-decision-output.js';
 export { ReasoningPipelineInput } from './contracts/reasoning-pipeline-input.js';
 export { ReasoningPipelineStage } from './contracts/reasoning-pipeline-stage.js';
@@ -22,9 +27,16 @@ export { OrchestratorRequest } from './contracts/orchestrator-request.js';
 export { RequestLifecycleStage } from './contracts/request-lifecycle-stage.js';
 export { RequestLifecycleTraceEntry } from './contracts/request-lifecycle-trace-entry.js';
 export { RequestLifecycleValidationResult } from './contracts/request-lifecycle-validation-result.js';
+export { ToolAuthorizationResult } from './contracts/tool-authorization-result.js';
+export { ToolCapabilityRequirement } from './contracts/tool-capability-requirement.js';
+export { ToolExecutionPlan } from './contracts/tool-execution-plan.js';
+export { ToolInvocationTelemetry } from './contracts/tool-invocation-telemetry.js';
+export { ToolOrchestrationStage } from './contracts/tool-orchestration-stage.js';
+export { ToolResultValidationResult } from './contracts/tool-result-validation-result.js';
 export { OrchestratorBoundaryPolicy } from './governance/orchestrator-boundary-policy.js';
 export { RequestLifecycleDescriptor } from './lifecycle/request-lifecycle-descriptor.js';
 export { ReasoningPipelineDescriptor } from './reasoning/reasoning-pipeline-descriptor.js';
 export { addAiOrchestrator } from './service-registration.js';
 export { OrchestratorComponentRegistry } from './services/orchestrator-component-registry.js';
 export { OrchestratorPlanner } from './services/orchestrator-planner.js';
+export { ToolOrchestrationCoordinator } from './tools/tool-orchestration-coordinator.js';

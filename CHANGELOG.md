@@ -452,3 +452,21 @@ Version: 0.22.0
 
 Status: AI Orchestrator Architecture
 Version: 0.23.0
+
+---
+
+## [0.24.0] - ARCH-004 Tool Orchestration
+
+### Added
+- Canonical tool orchestration lifecycle constants for all ARCH-004-04 stages.
+- Tool category, selection principle, and invocation telemetry constants.
+- Immutable contracts for capability requirements, execution plans, authorization results, invocation telemetry, normalized results, lifecycle stages, and result validation.
+- Tool orchestration coordinator for discovery, capability matching, authorization, execution planning, delegated execution, validation, normalization, and telemetry capture.
+- Dependency-injection registration for `ToolOrchestrationCoordinator`.
+- Unit tests for lifecycle order, categories, telemetry, discovery, matching, authorization rejection, execution planning, result validation, delegated execution, missing executors, and DI access.
+
+### Established
+- Executable tool orchestration governance without placing business logic, persistence, authentication implementation, external communication, retries, fallback recovery, pricing, or availability inside the orchestrator.
+
+Status: AI Orchestrator Architecture
+Version: 0.24.0

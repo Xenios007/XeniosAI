@@ -4,6 +4,7 @@ import { RequestLifecycleDescriptor } from './lifecycle/request-lifecycle-descri
 import { ReasoningPipelineDescriptor } from './reasoning/reasoning-pipeline-descriptor.js';
 import { OrchestratorComponentRegistry } from './services/orchestrator-component-registry.js';
 import { OrchestratorPlanner } from './services/orchestrator-planner.js';
+import { ToolOrchestrationCoordinator } from './tools/tool-orchestration-coordinator.js';
 
 export function addAiOrchestrator(services) {
   if (!(services instanceof ServiceCollection)) {
@@ -13,6 +14,16 @@ export function addAiOrchestrator(services) {
   services.registerSingleton('OrchestratorBoundaryPolicy', () => new OrchestratorBoundaryPolicy());
   services.registerSingleton('RequestLifecycleDescriptor', () => new RequestLifecycleDescriptor());
   services.registerSingleton('ReasoningPipelineDescriptor', () => new ReasoningPipelineDescriptor());
+  services.registerSingleton('ToolOrchestrationCoordinator', provider =>
+    new ToolOrchestrationCoordinator({
+      toolRegistry: services.hasRegistration('ToolRegistry')
+        ? provider.getRequiredService('ToolRegistry')
+        : undefined,
+      toolExecutor: services.hasRegistration('ToolExecutorPort')
+        ? provider.getRequiredService('ToolExecutorPort')
+        : undefined
+    })
+  );
   services.registerSingleton('OrchestratorComponentRegistry', () => new OrchestratorComponentRegistry());
   services.registerSingleton('OrchestratorPlanner', provider =>
     new OrchestratorPlanner({
