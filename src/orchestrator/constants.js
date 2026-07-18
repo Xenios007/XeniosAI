@@ -199,6 +199,46 @@ export const CONTEXT_CONFLICT_PRIORITY = Object.freeze([
   CONTEXT_LAYERS.CONVERSATION
 ]);
 
+export const DECISION_ENGINE_GATES = Object.freeze({
+  INTENT: 'intent-gate',
+  CONTEXT: 'context-gate',
+  POLICY: 'policy-gate',
+  CAPABILITY: 'capability-gate',
+  AUTHORIZATION: 'authorization-gate',
+  CONFIDENCE: 'confidence-gate',
+  EXECUTION_DECISION: 'execution-decision'
+});
+
+export const EXECUTION_DECISION_OUTCOMES = Object.freeze({
+  EXECUTE: 'EXECUTE',
+  RESPOND: 'RESPOND',
+  CLARIFY: 'CLARIFY',
+  RETRY: 'RETRY',
+  ESCALATE: 'ESCALATE',
+  DENY: 'DENY',
+  STOP: 'STOP'
+});
+
+export const DECISION_FAILURE_CLASSIFICATIONS = Object.freeze({
+  MISSING_CONTEXT: 'missing-context',
+  POLICY_VIOLATION: 'policy-violation',
+  AUTHORIZATION_FAILURE: 'authorization-failure',
+  CAPABILITY_UNAVAILABLE: 'capability-unavailable',
+  LOW_CONFIDENCE: 'low-confidence',
+  INTERNAL_PLATFORM_ERROR: 'internal-platform-error'
+});
+
+export const DECISION_RECORD_FIELDS = Object.freeze({
+  INTENT_DETECTED: 'intentDetected',
+  CONTEXT_EVALUATED: 'contextEvaluated',
+  POLICIES_APPLIED: 'policiesApplied',
+  GATES_PASSED: 'gatesPassed',
+  GATES_FAILED: 'gatesFailed',
+  FINAL_DECISION: 'finalDecision',
+  TIMESTAMP: 'timestamp',
+  CORRELATION_ID: 'correlationId'
+});
+
 export const ORCHESTRATION_DECISIONS = Object.freeze({
   CONSULT_MEMORY: 'consult-memory',
   RETRIEVE_KNOWLEDGE: 'retrieve-knowledge',
@@ -228,5 +268,7 @@ export const ORCHESTRATOR_ERROR_CODES = Object.freeze({
   MEMORY_PROVIDER_MISSING: 'ORCHESTRATOR_MEMORY_PROVIDER_MISSING',
   MEMORY_CONTEXT_INVALID: 'ORCHESTRATOR_MEMORY_CONTEXT_INVALID',
   CONTEXT_ASSEMBLY_STAGE_NOT_FOUND: 'ORCHESTRATOR_CONTEXT_STAGE_NOT_FOUND',
-  CONTEXT_ASSEMBLY_INVALID: 'ORCHESTRATOR_CONTEXT_ASSEMBLY_INVALID'
+  CONTEXT_ASSEMBLY_INVALID: 'ORCHESTRATOR_CONTEXT_ASSEMBLY_INVALID',
+  DECISION_GATE_NOT_FOUND: 'ORCHESTRATOR_DECISION_GATE_NOT_FOUND',
+  DECISION_PROPOSAL_INVALID: 'ORCHESTRATOR_DECISION_PROPOSAL_INVALID'
 });

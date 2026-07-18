@@ -506,3 +506,22 @@ Version: 0.25.0
 
 Status: AI Orchestrator Architecture
 Version: 0.26.0
+
+---
+
+## [0.27.0] - ARCH-004 Decision Engine
+
+### Added
+- Canonical decision gate constants for all ARCH-004-07 stages.
+- Execution outcome, failure classification, and decision record field constants.
+- Immutable contracts for orchestration proposals, gate results, execution decisions, and decision records.
+- Decision engine authority for deterministic evaluation across intent, context, policy, capability, authorization, confidence, and final decision gates.
+- Explainable decision record construction with gates passed, gates failed, final decision, timestamp, and correlation ID.
+- Dependency-injection registration for `DecisionEngineAuthority`.
+- Unit tests for gate order, outcomes, failures, record fields, authorization, direct responses, clarification, policy denial, unavailable capabilities, authorization denial, explainability records, invalid proposals, and DI access.
+
+### Established
+- Centralized execution authorization governance without implementing tool execution, business validation, memory storage, response generation, business domain ownership, or failure recovery.
+
+Status: AI Orchestrator Architecture
+Version: 0.27.0

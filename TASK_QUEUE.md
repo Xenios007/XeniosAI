@@ -34,7 +34,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-004-04 Tool Orchestration`
 - Completed: `ARCH-004-05 Memory Orchestration`
 - Completed: `ARCH-004-06 Context Management`
-- Next: `ARCH-004-07 Decision Engine`
+- Completed: `ARCH-004-07 Decision Engine`
+- Next: `ARCH-004-08 Agent Coordination`
 
 ## Notes
 
