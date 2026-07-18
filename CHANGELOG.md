@@ -670,3 +670,21 @@ Version: 0.34.0
 
 Status: Data Flow Architecture
 Version: 0.35.0
+
+---
+
+## [0.36.0] - ARCH-005 Service Integration
+
+### Added
+- Canonical service integration lifecycle constants for all ARCH-005-06 stages.
+- Service integration category, communication pattern, reliability strategy, security control, response status, telemetry, and error-code constants.
+- Immutable contracts for integration lifecycle stages, service integration contracts, requests, responses, telemetry, and validation results.
+- Service integration descriptor for lifecycle validation, explicit contract validation, authorized request construction, response validation, boundary validation, provider isolation checks, and telemetry validation.
+- Dependency-injection registration through `addDataFlow`.
+- Unit tests for lifecycle order, categories, patterns, reliability, security, telemetry, documented integration examples, skipped stages, contract validation, immutable requests, request validation, response validation, boundary preservation, telemetry validation, and DI access.
+
+### Established
+- Service integration governance without implementing service discovery, network transports, API gateways, message brokers, provider SDKs, retry execution, circuit breakers, queues, or contract registry infrastructure.
+
+Status: Data Flow Architecture
+Version: 0.36.0

@@ -43,7 +43,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-005-03 Query Flow`
 - Completed: `ARCH-005-04 Event Flow`
 - Completed: `ARCH-005-05 Workflow Orchestration`
-- Next: `ARCH-005-06 Service Integration`
+- Completed: `ARCH-005-06 Service Integration`
+- Next: `ARCH-005-07 API Contracts`
 
 ## Notes
 

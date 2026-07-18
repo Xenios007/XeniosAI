@@ -20,6 +20,13 @@ export {
   QUERY_OPTIMIZATION_STRATEGIES,
   QUERY_RESULT_STATUSES,
   QUERY_TELEMETRY_FIELDS,
+  SERVICE_INTEGRATION_CATEGORIES,
+  SERVICE_INTEGRATION_LIFECYCLE_STAGES,
+  SERVICE_INTEGRATION_PATTERNS,
+  SERVICE_INTEGRATION_RELIABILITY_STRATEGIES,
+  SERVICE_INTEGRATION_RESPONSE_STATUSES,
+  SERVICE_INTEGRATION_SECURITY_CONTROLS,
+  SERVICE_INTEGRATION_TELEMETRY_FIELDS,
   WORKFLOW_INITIATION_SOURCES,
   WORKFLOW_LIFECYCLE_STAGES,
   WORKFLOW_RECOVERY_STRATEGIES,
@@ -51,6 +58,12 @@ export { QueryLifecycleStage } from './contracts/query-lifecycle-stage.js';
 export { QueryResultRecord } from './contracts/query-result-record.js';
 export { QueryTelemetryRecord } from './contracts/query-telemetry-record.js';
 export { QueryValidationResult } from './contracts/query-validation-result.js';
+export { ServiceIntegrationContract } from './contracts/service-integration-contract.js';
+export { ServiceIntegrationLifecycleStage } from './contracts/service-integration-lifecycle-stage.js';
+export { ServiceIntegrationRequest } from './contracts/service-integration-request.js';
+export { ServiceIntegrationResponse } from './contracts/service-integration-response.js';
+export { ServiceIntegrationTelemetryRecord } from './contracts/service-integration-telemetry-record.js';
+export { ServiceIntegrationValidationResult } from './contracts/service-integration-validation-result.js';
 export { WorkflowDefinition } from './contracts/workflow-definition.js';
 export { WorkflowInstance } from './contracts/workflow-instance.js';
 export { WorkflowLifecycleStage } from './contracts/workflow-lifecycle-stage.js';
@@ -61,6 +74,7 @@ export { WorkflowValidationResult } from './contracts/workflow-validation-result
 export { CommandFlowDescriptor } from './commands/command-flow-descriptor.js';
 export { EventFlowDescriptor } from './events/event-flow-descriptor.js';
 export { ExecutionOverviewDescriptor } from './execution/execution-overview-descriptor.js';
+export { ServiceIntegrationDescriptor } from './integrations/service-integration-descriptor.js';
 export { QueryFlowDescriptor } from './queries/query-flow-descriptor.js';
 export { WorkflowOrchestrationDescriptor } from './workflows/workflow-orchestration-descriptor.js';
 export { addDataFlow } from './service-registration.js';
