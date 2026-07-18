@@ -74,7 +74,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-008-04 Zero Trust Architecture`
 - Completed: `ARCH-008-05 Secrets & Key Management`
 - Completed: `ARCH-008-06 Cryptography & Data Protection`
-- Next: `ARCH-008-07 AI Security`
+- Completed: `ARCH-008-07 AI Security`
+- Next: `ARCH-008-08 Platform & Supply Chain Security`
 
 ## Notes
 

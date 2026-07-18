@@ -1205,3 +1205,20 @@ Version: 0.65.0
 
 Status: Security Architecture
 Version: 0.66.0
+
+---
+
+## [0.67.0] - ARCH-008 AI Security
+
+### Added
+- AI security objective, principle, identity, trust model, identity capability, protected operation, prompt security, prompt injection resistance, knowledge protection, agent communication, tool category, tool invocation, memory, model governance, supply chain, risk, oversight, observability, governance, relationship flow, future capability, and error-code constants.
+- Immutable contracts for AI security profiles, AI tool invocation policies, AI governance policies, and validation results.
+- AI security descriptor for documented metadata, AI security subject validation, tool invocation validation, governance validation, and future capability placeholders.
+- Dependency-injection registration through `addSecurityArchitecture`.
+- Unit tests for AI identities, trust model, prompt protection, knowledge protection, tool security, memory protection, model governance, supply chain review, risk management, oversight, future placeholders, incomplete metadata validation, and DI access.
+
+### Established
+- AI security governance without implementing model selection, prompt engineering techniques, AI evaluation methodologies, model runtime enforcement, or vendor-specific AI platforms.
+
+Status: Security Architecture
+Version: 0.67.0

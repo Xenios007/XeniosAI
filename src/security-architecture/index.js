@@ -1,8 +1,24 @@
 export {
   ACCESS_CONTROL_PRINCIPLES,
   ADMINISTRATIVE_AUTHORIZATION_OPERATIONS,
+  AGENT_COMMUNICATION_CONTROLS,
   AI_AUTHORIZATION_CAPABILITIES,
+  AI_COMPONENT_IDENTITY_TYPES,
+  AI_IDENTITY_CAPABILITIES,
+  AI_MEMORY_ASSET_TYPES,
+  AI_MEMORY_PROTECTION_CONTROLS,
+  AI_PROTECTED_OPERATIONS,
   AI_TRUST_REQUIREMENTS,
+  AI_SECURITY_GOVERNANCE_ACTIVITIES,
+  AI_SECURITY_OBJECTIVES,
+  AI_SECURITY_OBSERVABILITY_EVENTS,
+  AI_SECURITY_PRINCIPLES,
+  AI_SECURITY_RELATIONSHIP_FLOW_STAGES,
+  AI_SECURITY_RISK_TYPES,
+  AI_SUPPLY_CHAIN_COMPONENTS,
+  AI_TOOL_CATEGORIES,
+  AI_TOOL_INVOCATION_REQUIREMENTS,
+  AI_TRUST_MODEL_STAGES,
   AUTHENTICATION_FACTOR_TYPES,
   AUTHENTICATION_PRINCIPLES,
   ATTRIBUTE_AUTHORIZATION_GROUPS,
@@ -36,12 +52,14 @@ export {
   DIGITAL_SIGNATURE_CAPABILITIES,
   ENCRYPTION_COVERAGE_AREAS,
   FUTURE_CRYPTOGRAPHY_DATA_PROTECTION_CAPABILITIES,
+  FUTURE_AI_SECURITY_CAPABILITIES,
   FUTURE_SECRETS_KEY_MANAGEMENT_CAPABILITIES,
   FUTURE_IDENTITY_CAPABILITIES,
   FUTURE_AUTHORIZATION_CAPABILITIES,
   FUTURE_SECURITY_OVERVIEW_CAPABILITIES,
   FUTURE_ZERO_TRUST_CAPABILITIES,
   HUMAN_TRUST_REQUIREMENTS,
+  HUMAN_OVERSIGHT_ACTIVITIES,
   IDENTITY_ARCHITECTURE_STAGES,
   IDENTITY_CATEGORY_NAMES,
   IDENTITY_GOVERNANCE_CONTROLS,
@@ -53,10 +71,14 @@ export {
   INTEGRITY_PROTECTION_TARGETS,
   KEY_LIFECYCLE_STAGES,
   KEY_PURPOSES,
+  KNOWLEDGE_PROTECTION_CONTROLS,
+  MODEL_GOVERNANCE_ACTIVITIES,
   POLICY_EVALUATION_INPUTS,
   PROTECTED_RESOURCE_CATEGORIES,
   PROHIBITED_SECRET_STORAGE_LOCATIONS,
   PRIVACY_PROTECTION_PRINCIPLES,
+  PROMPT_INJECTION_RESISTANCE_CONTROLS,
+  PROMPT_SECURITY_CONTROLS,
   RETENTION_JUSTIFICATIONS,
   SECURE_DISPOSAL_TARGETS,
   SECURITY_ARCHITECTURE_ERROR_CODES,
@@ -101,6 +123,10 @@ export {
   ZERO_TRUST_SESSION_REQUIREMENTS,
   ZERO_TRUST_SUBJECT_TYPES
 } from './constants.js';
+export { AiGovernancePolicy } from './contracts/ai-governance-policy.js';
+export { AiSecurityProfile } from './contracts/ai-security-profile.js';
+export { AiSecurityValidationResult } from './contracts/ai-security-validation-result.js';
+export { AiToolInvocationPolicy } from './contracts/ai-tool-invocation-policy.js';
 export { AuthenticationPolicy } from './contracts/authentication-policy.js';
 export { AuthorizationPermission } from './contracts/authorization-permission.js';
 export { AuthorizationPolicy } from './contracts/authorization-policy.js';
@@ -125,6 +151,7 @@ export { TrustBoundary } from './contracts/trust-boundary.js';
 export { ZeroTrustBoundary } from './contracts/zero-trust-boundary.js';
 export { ZeroTrustEvaluation } from './contracts/zero-trust-evaluation.js';
 export { ZeroTrustValidationResult } from './contracts/zero-trust-validation-result.js';
+export { AiSecurityDescriptor } from './ai-security/ai-security-descriptor.js';
 export { AuthorizationModelDescriptor } from './authorization/authorization-model-descriptor.js';
 export { CryptographyDataProtectionDescriptor } from './cryptography/cryptography-data-protection-descriptor.js';
 export { IdentityAuthenticationDescriptor } from './identity/identity-authentication-descriptor.js';

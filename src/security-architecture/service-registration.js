@@ -1,4 +1,5 @@
 import { ServiceCollection } from '../foundation/di/service-collection.js';
+import { AiSecurityDescriptor } from './ai-security/ai-security-descriptor.js';
 import { AuthorizationModelDescriptor } from './authorization/authorization-model-descriptor.js';
 import { CryptographyDataProtectionDescriptor } from './cryptography/cryptography-data-protection-descriptor.js';
 import { IdentityAuthenticationDescriptor } from './identity/identity-authentication-descriptor.js';
@@ -11,6 +12,7 @@ export function addSecurityArchitecture(services) {
     throw new Error('addSecurityArchitecture expects an instance of ServiceCollection.');
   }
 
+  services.registerSingleton('AiSecurityDescriptor', () => new AiSecurityDescriptor());
   services.registerSingleton('AuthorizationModelDescriptor', () => new AuthorizationModelDescriptor());
   services.registerSingleton('CryptographyDataProtectionDescriptor', () => new CryptographyDataProtectionDescriptor());
   services.registerSingleton('IdentityAuthenticationDescriptor', () => new IdentityAuthenticationDescriptor());

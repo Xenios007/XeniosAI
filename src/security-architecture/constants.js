@@ -22,7 +22,11 @@ export const SECURITY_ARCHITECTURE_ERROR_CODES = Object.freeze({
   CRYPTOGRAPHY_DATA_PROTECTION_INVALID: 'SECURITY_ARCHITECTURE_CRYPTOGRAPHY_DATA_PROTECTION_INVALID',
   DATA_PROTECTION_PROFILE_INVALID: 'SECURITY_ARCHITECTURE_DATA_PROTECTION_PROFILE_INVALID',
   CRYPTOGRAPHIC_PROTECTION_POLICY_INVALID: 'SECURITY_ARCHITECTURE_CRYPTOGRAPHIC_PROTECTION_POLICY_INVALID',
-  DATA_SHARING_RETENTION_POLICY_INVALID: 'SECURITY_ARCHITECTURE_DATA_SHARING_RETENTION_POLICY_INVALID'
+  DATA_SHARING_RETENTION_POLICY_INVALID: 'SECURITY_ARCHITECTURE_DATA_SHARING_RETENTION_POLICY_INVALID',
+  AI_SECURITY_ARCHITECTURE_INVALID: 'SECURITY_ARCHITECTURE_AI_SECURITY_INVALID',
+  AI_SECURITY_PROFILE_INVALID: 'SECURITY_ARCHITECTURE_AI_SECURITY_PROFILE_INVALID',
+  AI_TOOL_INVOCATION_POLICY_INVALID: 'SECURITY_ARCHITECTURE_AI_TOOL_INVOCATION_POLICY_INVALID',
+  AI_GOVERNANCE_POLICY_INVALID: 'SECURITY_ARCHITECTURE_AI_GOVERNANCE_POLICY_INVALID'
 });
 
 export const SECURITY_OBJECTIVES = Object.freeze({
@@ -901,4 +905,202 @@ export const FUTURE_CRYPTOGRAPHY_DATA_PROTECTION_CAPABILITIES = Object.freeze({
   AI_ASSISTED_PRIVACY_ENFORCEMENT: 'AI-assisted privacy enforcement',
   POST_QUANTUM_CRYPTOGRAPHY: 'Post-quantum cryptography',
   AUTONOMOUS_DATA_GOVERNANCE: 'Autonomous data governance'
+});
+
+export const AI_SECURITY_OBJECTIVES = Object.freeze({
+  SECURE_AI_EXECUTION: 'secure-ai-execution',
+  CONTROLLED_INFORMATION_ACCESS: 'controlled-information-access',
+  PROTECTED_PROMPT_PROCESSING: 'protected-prompt-processing',
+  SAFE_TOOL_INVOCATION: 'safe-tool-invocation',
+  TRUSTED_AGENT_COLLABORATION: 'trusted-agent-collaboration',
+  AI_ACCOUNTABILITY: 'ai-accountability',
+  HUMAN_OVERSIGHT: 'human-oversight',
+  ENTERPRISE_RESILIENCE: 'enterprise-resilience'
+});
+
+export const AI_SECURITY_PRINCIPLES = Object.freeze({
+  AI_AS_SECURITY_SUBJECT: 'ai-as-security-subject',
+  LEAST_PRIVILEGE: 'least-privilege',
+  HUMAN_ACCOUNTABILITY: 'human-accountability',
+  DEFENSE_IN_DEPTH: 'defense-in-depth'
+});
+
+export const AI_COMPONENT_IDENTITY_TYPES = Object.freeze({
+  AI_ORCHESTRATOR: 'AI Orchestrator',
+  PLANNING_AGENT: 'Planning Agent',
+  RETRIEVAL_AGENT: 'Retrieval Agent',
+  CODING_AGENT: 'Coding Agent',
+  ANALYTICS_AGENT: 'Analytics Agent',
+  WORKFLOW_AGENT: 'Workflow Agent'
+});
+
+export const AI_TRUST_MODEL_STAGES = Object.freeze({
+  AI_IDENTITY: 'AI Identity',
+  AUTHENTICATION: 'Authentication',
+  AUTHORIZATION: 'Authorization',
+  PROMPT_EVALUATION: 'Prompt Evaluation',
+  KNOWLEDGE_EVALUATION: 'Knowledge Evaluation',
+  TOOL_AUTHORIZATION: 'Tool Authorization',
+  EXECUTION: 'Execution',
+  AUDIT: 'Audit'
+});
+
+export const AI_IDENTITY_CAPABILITIES = Object.freeze({
+  AUTHENTICATION: 'authentication',
+  AUTHORIZATION: 'authorization',
+  AUDITABILITY: 'auditability',
+  DELEGATION: 'delegation',
+  MONITORING: 'monitoring'
+});
+
+export const AI_PROTECTED_OPERATIONS = Object.freeze({
+  PROMPT_EXECUTION: 'prompt-execution',
+  KNOWLEDGE_RETRIEVAL: 'knowledge-retrieval',
+  TOOL_INVOCATION: 'tool-invocation',
+  WORKFLOW_EXECUTION: 'workflow-execution',
+  MEMORY_ACCESS: 'memory-access',
+  ADMINISTRATIVE_ASSISTANCE: 'administrative-assistance'
+});
+
+export const PROMPT_SECURITY_CONTROLS = Object.freeze({
+  VALIDATION: 'validation',
+  SANITIZATION: 'sanitization',
+  CONTEXT_ISOLATION: 'context-isolation',
+  AUTHORIZATION_CHECKS: 'authorization-checks',
+  AUDITABILITY: 'auditability'
+});
+
+export const PROMPT_INJECTION_RESISTANCE_CONTROLS = Object.freeze({
+  INSTRUCTION_ISOLATION: 'instruction-isolation',
+  TRUSTED_SYSTEM_INSTRUCTIONS: 'trusted-system-instructions',
+  CONTEXT_SEPARATION: 'context-separation',
+  INPUT_VALIDATION: 'input-validation',
+  TOOL_AUTHORIZATION: 'tool-authorization',
+  KNOWLEDGE_FILTERING: 'knowledge-filtering'
+});
+
+export const KNOWLEDGE_PROTECTION_CONTROLS = Object.freeze({
+  IDENTITY_VERIFICATION: 'identity-verification',
+  AUTHORIZATION: 'authorization',
+  INFORMATION_CLASSIFICATION: 'information-classification',
+  DATA_MINIMIZATION: 'data-minimization',
+  AUDIT_LOGGING: 'audit-logging'
+});
+
+export const AGENT_COMMUNICATION_CONTROLS = Object.freeze({
+  VERIFIED_IDENTITIES: 'verified-identities',
+  AUTHORIZED_DELEGATION: 'authorized-delegation',
+  SECURE_MESSAGING: 'secure-messaging',
+  CONTROLLED_CONTEXT_SHARING: 'controlled-context-sharing',
+  COMPLETE_AUDITABILITY: 'complete-auditability'
+});
+
+export const AI_TOOL_CATEGORIES = Object.freeze({
+  RESERVATION_SYSTEMS: 'reservation-systems',
+  PAYMENT_SERVICES: 'payment-services',
+  NOTIFICATION_SERVICES: 'notification-services',
+  REPORTING_SYSTEMS: 'reporting-systems',
+  EXTERNAL_APIS: 'external-apis'
+});
+
+export const AI_TOOL_INVOCATION_REQUIREMENTS = Object.freeze({
+  EXPLICIT_AUTHORIZATION: 'explicit-authorization',
+  PARAMETER_VALIDATION: 'parameter-validation',
+  AUDIT_LOGGING: 'audit-logging',
+  ERROR_HANDLING: 'error-handling',
+  OPERATIONAL_MONITORING: 'operational-monitoring'
+});
+
+export const AI_MEMORY_ASSET_TYPES = Object.freeze({
+  CONVERSATION_HISTORY: 'conversation-history',
+  USER_PREFERENCES: 'user-preferences',
+  WORKFLOW_CONTEXT: 'workflow-context',
+  AGENT_STATE: 'agent-state',
+  LONG_TERM_KNOWLEDGE: 'long-term-knowledge'
+});
+
+export const AI_MEMORY_PROTECTION_CONTROLS = Object.freeze({
+  AUTHORIZATION: 'authorization',
+  RETENTION: 'retention',
+  ENCRYPTION_WHERE_APPROPRIATE: 'encryption-where-appropriate',
+  SECURE_DISPOSAL: 'secure-disposal',
+  AUDITABILITY: 'auditability'
+});
+
+export const MODEL_GOVERNANCE_ACTIVITIES = Object.freeze({
+  MODEL_APPROVAL: 'model-approval',
+  VERSION_MANAGEMENT: 'version-management',
+  RISK_ASSESSMENT: 'risk-assessment',
+  CAPABILITY_REVIEW: 'capability-review',
+  OPERATIONAL_MONITORING: 'operational-monitoring',
+  RETIREMENT_PLANNING: 'retirement-planning'
+});
+
+export const AI_SUPPLY_CHAIN_COMPONENTS = Object.freeze({
+  FOUNDATION_MODELS: 'foundation-models',
+  EMBEDDING_MODELS: 'embedding-models',
+  EXTERNAL_APIS: 'external-apis',
+  KNOWLEDGE_REPOSITORIES: 'knowledge-repositories',
+  PLUGINS: 'plugins',
+  AGENT_EXTENSIONS: 'agent-extensions'
+});
+
+export const AI_SECURITY_RISK_TYPES = Object.freeze({
+  PROMPT_INJECTION: 'prompt-injection',
+  UNAUTHORIZED_INFORMATION_DISCLOSURE: 'unauthorized-information-disclosure',
+  HALLUCINATED_OUTPUTS: 'hallucinated-outputs',
+  UNSAFE_TOOL_EXECUTION: 'unsafe-tool-execution',
+  EXCESSIVE_PERMISSIONS: 'excessive-permissions',
+  DATA_LEAKAGE: 'data-leakage',
+  MODEL_MISUSE: 'model-misuse'
+});
+
+export const HUMAN_OVERSIGHT_ACTIVITIES = Object.freeze({
+  HIGH_VALUE_TRANSACTIONS: 'high-value-transactions',
+  REGULATORY_DECISIONS: 'regulatory-decisions',
+  SECURITY_POLICY_CHANGES: 'security-policy-changes',
+  PRODUCTION_DEPLOYMENTS: 'production-deployments',
+  PRIVILEGED_ADMINISTRATIVE_ACTIONS: 'privileged-administrative-actions'
+});
+
+export const AI_SECURITY_OBSERVABILITY_EVENTS = Object.freeze({
+  PROMPT_EXECUTION: 'prompt-execution',
+  KNOWLEDGE_RETRIEVAL: 'knowledge-retrieval',
+  TOOL_INVOCATION: 'tool-invocation',
+  AUTHORIZATION_DECISIONS: 'authorization-decisions',
+  AGENT_DELEGATION: 'agent-delegation',
+  MODEL_SELECTION: 'model-selection',
+  SECURITY_VIOLATIONS: 'security-violations'
+});
+
+export const AI_SECURITY_GOVERNANCE_ACTIVITIES = Object.freeze({
+  SECURITY_POLICY_REVIEWS: 'security-policy-reviews',
+  MODEL_RISK_ASSESSMENTS: 'model-risk-assessments',
+  AGENT_PERMISSION_REVIEWS: 'agent-permission-reviews',
+  PROMPT_GOVERNANCE: 'prompt-governance',
+  KNOWLEDGE_GOVERNANCE: 'knowledge-governance',
+  COMPLIANCE_VALIDATION: 'compliance-validation',
+  OPERATIONAL_AUDITS: 'operational-audits'
+});
+
+export const AI_SECURITY_RELATIONSHIP_FLOW_STAGES = Object.freeze({
+  IDENTITY: 'Identity',
+  AUTHENTICATION: 'Authentication',
+  AUTHORIZATION: 'Authorization',
+  ZERO_TRUST: 'Zero Trust',
+  SECRETS_KEYS: 'Secrets & Keys',
+  CRYPTOGRAPHY: 'Cryptography',
+  AI_SECURITY: 'AI Security',
+  TRUSTED_AI_OPERATIONS: 'Trusted AI Operations'
+});
+
+export const FUTURE_AI_SECURITY_CAPABILITIES = Object.freeze({
+  AUTONOMOUS_POLICY_VALIDATION: 'Autonomous policy validation',
+  AI_ASSISTED_THREAT_DETECTION: 'AI-assisted threat detection',
+  DYNAMIC_TRUST_SCORING_FOR_AGENTS: 'Dynamic trust scoring for agents',
+  BEHAVIORAL_ANOMALY_DETECTION: 'Behavioral anomaly detection',
+  SECURE_MULTI_AGENT_COORDINATION: 'Secure multi-agent coordination',
+  CONFIDENTIAL_AI_EXECUTION: 'Confidential AI execution',
+  VERIFIABLE_AI_REASONING: 'Verifiable AI reasoning',
+  CRYPTOGRAPHIC_ATTESTATION_OF_AI_OUTPUTS: 'Cryptographic attestation of AI outputs'
 });
