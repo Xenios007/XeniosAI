@@ -7,7 +7,9 @@ export {
   SERVICE_DEPENDENCY_TYPES,
   SERVICE_LIFECYCLE_CHECKPOINTS,
   SERVICE_LIFECYCLE_STAGES,
-  SERVICE_MAP_ERROR_CODES
+  SERVICE_MAP_ERROR_CODES,
+  VERSION_CHANGE_TYPES,
+  VERSIONED_ARTIFACT_TYPES
 } from './constants.js';
 export { ServiceBoundaryRegistry } from './boundaries/service-boundary-registry.js';
 export { ServiceCommunicationRegistry } from './communication/service-communication-registry.js';
@@ -26,9 +28,13 @@ export { ServiceDependencyValidationResult } from './contracts/service-dependenc
 export { ServiceDescriptor } from './contracts/service-descriptor.js';
 export { ServiceLandscapeSnapshot } from './contracts/service-landscape-snapshot.js';
 export { ServiceLifecycleRecord } from './contracts/service-lifecycle-record.js';
+export { VersionChangeProposal } from './contracts/version-change-proposal.js';
+export { VersionValidationResult } from './contracts/version-validation-result.js';
+export { VersionedArtifactRecord } from './contracts/versioned-artifact-record.js';
 export { SharedConcept } from './contracts/shared-concept.js';
 export { ServiceDependencyGraph } from './dependencies/service-dependency-graph.js';
 export { ServiceLandscape } from './landscape/service-landscape.js';
 export { ServiceLifecycleRegistry } from './lifecycle/service-lifecycle-registry.js';
 export { ServiceOwnershipRegistry } from './ownership/service-ownership-registry.js';
+export { ServiceVersionRegistry } from './versioning/service-version-registry.js';
 export { addServiceMap } from './service-registration.js';

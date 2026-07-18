@@ -344,3 +344,21 @@ Version: 0.16.0
 
 Status: Service Map Architecture
 Version: 0.17.0
+
+---
+
+## [0.18.0] - ARCH-003 Service Versioning
+
+### Added
+- Service version registry for SemVer-governed service and public artifact versions.
+- Immutable contracts for versioned artifacts, version change proposals, and version validation results.
+- Versioned artifact coverage for services, public APIs, commands, queries, domain events, shared schemas, tool contracts, and configuration formats.
+- Runtime validation for SemVer, deprecation migration guidance, breaking-change governance, backward-compatible feature increments, and patch fixes.
+- Dependency-injection registration for `ServiceVersionRegistry`.
+- Unit tests for artifact coverage, version validation, change classification, duplicate records, missing records, communication pattern mapping, and DI access.
+
+### Established
+- Executable version governance without implementing automated contract diffing or consumer impact analysis.
+
+Status: Service Map Architecture
+Version: 0.18.0

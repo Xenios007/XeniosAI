@@ -25,7 +25,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-003-05 Domain Boundaries`
 - Completed: `ARCH-003-06 Service Communication`
 - Completed: `ARCH-003-07 Service Lifecycle`
-- Next: `ARCH-003-08 Service Versioning`
+- Completed: `ARCH-003-08 Service Versioning`
+- Next: `ARCH-003-09 Service Governance`
 
 ## Notes
 
