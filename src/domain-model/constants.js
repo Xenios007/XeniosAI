@@ -27,7 +27,12 @@ export const DOMAIN_MODEL_ERROR_CODES = Object.freeze({
   DOMAIN_SERVICE_NOT_FOUND: 'DOMAIN_MODEL_DOMAIN_SERVICE_NOT_FOUND',
   DOMAIN_SERVICE_DEFINITION_INVALID: 'DOMAIN_MODEL_DOMAIN_SERVICE_DEFINITION_INVALID',
   DOMAIN_SERVICE_OPERATION_INVALID: 'DOMAIN_MODEL_DOMAIN_SERVICE_OPERATION_INVALID',
-  DOMAIN_SERVICE_COLLABORATION_INVALID: 'DOMAIN_MODEL_DOMAIN_SERVICE_COLLABORATION_INVALID'
+  DOMAIN_SERVICE_COLLABORATION_INVALID: 'DOMAIN_MODEL_DOMAIN_SERVICE_COLLABORATION_INVALID',
+  DOMAIN_EVENT_NOT_FOUND: 'DOMAIN_MODEL_DOMAIN_EVENT_NOT_FOUND',
+  DOMAIN_EVENT_DEFINITION_INVALID: 'DOMAIN_MODEL_DOMAIN_EVENT_DEFINITION_INVALID',
+  DOMAIN_EVENT_PUBLICATION_INVALID: 'DOMAIN_MODEL_DOMAIN_EVENT_PUBLICATION_INVALID',
+  DOMAIN_EVENT_CONSUMPTION_INVALID: 'DOMAIN_MODEL_DOMAIN_EVENT_CONSUMPTION_INVALID',
+  DOMAIN_EVENT_ORDERING_INVALID: 'DOMAIN_MODEL_DOMAIN_EVENT_ORDERING_INVALID'
 });
 
 export const DOMAIN_MODELING_PRINCIPLES = Object.freeze({
@@ -262,4 +267,76 @@ export const FUTURE_DOMAIN_SERVICE_CANDIDATES = Object.freeze({
   RISK_ASSESSMENT_SERVICE: 'Risk Assessment Service',
   SCHEDULING_OPTIMIZATION_SERVICE: 'Scheduling Optimization Service',
   DYNAMIC_PRICING_OPTIMIZATION_SERVICE: 'Dynamic Pricing Optimization Service'
+});
+
+export const DOMAIN_EVENT_NAMES = Object.freeze({
+  RESERVATION_CREATED: 'Reservation Created',
+  RESERVATION_CONFIRMED: 'Reservation Confirmed',
+  RESERVATION_MODIFIED: 'Reservation Modified',
+  RESERVATION_CANCELLED: 'Reservation Cancelled',
+  RESERVATION_CHECKED_IN: 'Reservation Checked In',
+  RESERVATION_CHECKED_OUT: 'Reservation Checked Out',
+  PAYMENT_INITIATED: 'Payment Initiated',
+  PAYMENT_AUTHORIZED: 'Payment Authorized',
+  PAYMENT_CAPTURED: 'Payment Captured',
+  PAYMENT_FAILED: 'Payment Failed',
+  PAYMENT_REFUNDED: 'Payment Refunded',
+  GUEST_REGISTERED: 'Guest Registered',
+  GUEST_UPDATED: 'Guest Updated',
+  GUEST_PROFILE_CHANGED: 'Guest Profile Changed',
+  GUEST_PREFERENCE_UPDATED: 'Guest Preference Updated',
+  PROPERTY_REGISTERED: 'Property Registered',
+  PROPERTY_UPDATED: 'Property Updated',
+  AVAILABILITY_CHANGED: 'Availability Changed',
+  CAPACITY_UPDATED: 'Capacity Updated',
+  MAINTENANCE_SCHEDULED: 'Maintenance Scheduled',
+  NOTIFICATION_QUEUED: 'Notification Queued',
+  NOTIFICATION_SENT: 'Notification Sent',
+  NOTIFICATION_DELIVERED: 'Notification Delivered',
+  NOTIFICATION_FAILED: 'Notification Failed',
+  KNOWLEDGE_INDEXED: 'Knowledge Indexed',
+  KNOWLEDGE_UPDATED: 'Knowledge Updated',
+  KNOWLEDGE_REMOVED: 'Knowledge Removed',
+  KNOWLEDGE_CLASSIFIED: 'Knowledge Classified',
+  WORKFLOW_STARTED: 'Workflow Started',
+  WORKFLOW_CONTINUED: 'Workflow Continued',
+  WORKFLOW_COMPLETED: 'Workflow Completed',
+  WORKFLOW_FAILED: 'Workflow Failed',
+  COMPENSATION_STARTED: 'Compensation Started',
+  COMPENSATION_COMPLETED: 'Compensation Completed'
+});
+
+export const DOMAIN_EVENT_CHARACTERISTICS = Object.freeze({
+  COMPLETED_BUSINESS_FACT: 'completed-business-fact',
+  IMMUTABLE: 'immutable',
+  ONE_OWNING_CONTEXT: 'one-owning-context',
+  BUSINESS_MEANING: 'business-meaning',
+  INDEPENDENTLY_CONSUMABLE: 'independently-consumable',
+  PRESERVES_HISTORICAL_ACCURACY: 'preserves-historical-accuracy'
+});
+
+export const DOMAIN_EVENT_PUBLICATION_RULES = Object.freeze({
+  AFTER_BUSINESS_VALIDATION: 'after-business-validation',
+  AFTER_AGGREGATE_CONSISTENCY: 'after-aggregate-consistency',
+  AFTER_SUCCESSFUL_TRANSACTION: 'after-successful-transaction',
+  ONE_AUTHORITATIVE_PUBLISHER: 'one-authoritative-publisher',
+  PUBLISHER_UNAWARE_OF_CONSUMERS: 'publisher-unaware-of-consumers'
+});
+
+export const DOMAIN_EVENT_EVOLUTION_RULES = Object.freeze({
+  PRESERVE_EXISTING_SEMANTICS: 'preserve-existing-semantics',
+  ADDITIVE_EVOLUTION: 'additive-evolution',
+  AVOID_HISTORICAL_REINTERPRETATION: 'avoid-historical-reinterpretation',
+  NEW_EVENT_TYPE_FOR_NEW_MEANING: 'new-event-type-for-new-meaning'
+});
+
+export const FUTURE_DOMAIN_EVENT_CANDIDATES = Object.freeze({
+  PROMOTION_APPLIED: 'Promotion Applied',
+  LOYALTY_POINTS_EARNED: 'Loyalty Points Earned',
+  INVOICE_GENERATED: 'Invoice Generated',
+  VENDOR_ASSIGNED: 'Vendor Assigned',
+  AI_RECOMMENDATION_GENERATED: 'AI Recommendation Generated',
+  CONVERSATION_STARTED: 'Conversation Started',
+  MAINTENANCE_COMPLETED: 'Maintenance Completed',
+  DYNAMIC_PRICE_CALCULATED: 'Dynamic Price Calculated'
 });

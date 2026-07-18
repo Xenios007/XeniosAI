@@ -863,3 +863,20 @@ Version: 0.45.0
 
 Status: Domain Model Architecture
 Version: 0.46.0
+
+---
+
+## [0.47.0] - ARCH-006 Domain Events
+
+### Added
+- Domain event name, characteristic, publication rule, evolution rule, future candidate, and error-code constants.
+- Immutable contracts for domain event definitions, records, consumption, ordering, and validation results.
+- Domain event registry for documented business facts, one-publisher ownership, past-tense naming, immutable publication, post-consistency publication, consumer independence, aggregate-local ordering, and future event placeholders.
+- Dependency-injection registration through `addDomainModel`.
+- Unit tests for event metadata, documented event ownership, lifecycle groups, definition validation, publication validation, consumption validation, ordering validation, future placeholders, and DI access.
+
+### Established
+- Domain-event governance without implementing event brokers, messaging middleware, serialization formats, transport protocols, outbox processing, replay, event sourcing, or workflow execution.
+
+Status: Domain Model Architecture
+Version: 0.47.0

@@ -54,7 +54,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-006-04 Value Objects`
 - Completed: `ARCH-006-05 Aggregates`
 - Completed: `ARCH-006-06 Domain Services`
-- Next: `ARCH-006-07 Domain Events`
+- Completed: `ARCH-006-07 Domain Events`
+- Next: `ARCH-006-08 Domain Rules`
 
 ## Notes
 
