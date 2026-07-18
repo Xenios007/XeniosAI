@@ -1,0 +1,21 @@
+flowchart TD
+
+A[Workflow Started]
+
+--> B[Initialize Context]
+
+B --> C[Execute Step]
+
+C --> D{More Steps?}
+
+D -- Yes --> C
+
+D -- No --> E[Workflow Complete]
+
+C --> F[Business Service]
+
+F --> G[Publish Events]
+
+style B fill:#E8F5E9
+style C fill:#FFF3E0
+style F fill:#E3F2FD

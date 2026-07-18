@@ -1,0 +1,27 @@
+flowchart LR
+
+subgraph Booking_Service
+
+A1[Begin Transaction]
+
+--> A2[Business Validation]
+
+--> A3[Persist Changes]
+
+--> A4[Commit]
+
+end
+
+A4 --> B[Publish Event]
+
+B --> C[Workflow]
+
+C --> D[Calendar Service]
+
+C --> E[Notification Service]
+
+C --> F[Analytics Service]
+
+style A1 fill:#E3F2FD
+style A4 fill:#E8F5E9
+style C fill:#FFF3E0
