@@ -50,7 +50,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-005-10 Future Integration Capabilities`
 - Completed: `ARCH-006-01 Domain Overview`
 - Completed: `ARCH-006-02 Bounded Contexts`
-- Next: `ARCH-006-03 Core Entities`
+- Completed: `ARCH-006-03 Core Entities`
+- Next: `ARCH-006-04 Value Objects`
 
 ## Notes
 

@@ -100,5 +100,6 @@ The repository currently includes automated unit tests for:
 - `ARCH-005-10 Future Integration Capabilities` in `tests/data-flow/`
 - `ARCH-006-01 Domain Overview` in `tests/domain-model/`
 - `ARCH-006-02 Bounded Contexts` in `tests/domain-model/`
+- `ARCH-006-03 Core Entities` in `tests/domain-model/`
 
 These tests validate reusable platform capabilities and channel-facing behavior without introducing business logic.

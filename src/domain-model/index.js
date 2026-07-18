@@ -3,11 +3,15 @@ export {
   BOUNDED_CONTEXT_ISOLATION_ASPECTS,
   BOUNDED_CONTEXT_NAMES,
   BOUNDED_CONTEXT_PRINCIPLES,
+  CORE_ENTITY_CHARACTERISTICS,
+  CORE_ENTITY_NAMES,
   DOMAIN_BOUNDARY_RULES,
   DOMAIN_CONSISTENCY_MODELS,
   DOMAIN_MODEL_ERROR_CODES,
   DOMAIN_MODELING_PRINCIPLES,
-  DOMAIN_RELATIONSHIP_TYPES
+  DOMAIN_RELATIONSHIP_TYPES,
+  ENTITY_INTEGRITY_RULES,
+  ENTITY_REFERENCE_RULES
 } from './constants.js';
 export { BoundedContext } from './contracts/bounded-context.js';
 export { BoundedContextValidationResult } from './contracts/bounded-context-validation-result.js';
@@ -20,6 +24,12 @@ export { DomainDescriptor } from './contracts/domain-descriptor.js';
 export { DomainRelationship } from './contracts/domain-relationship.js';
 export { DomainStateModel } from './contracts/domain-state-model.js';
 export { DomainValidationResult } from './contracts/domain-validation-result.js';
+export { EntityDefinition } from './contracts/entity-definition.js';
+export { EntityInstance } from './contracts/entity-instance.js';
+export { EntityReference } from './contracts/entity-reference.js';
+export { EntityStateTransition } from './contracts/entity-state-transition.js';
+export { EntityValidationResult } from './contracts/entity-validation-result.js';
 export { BoundedContextRegistry } from './bounded-contexts/bounded-context-registry.js';
+export { CoreEntityRegistry } from './entities/core-entity-registry.js';
 export { DomainOverviewDescriptor } from './overview/domain-overview-descriptor.js';
 export { addDomainModel } from './service-registration.js';

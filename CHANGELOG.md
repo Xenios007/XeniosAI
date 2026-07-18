@@ -795,3 +795,20 @@ Version: 0.41.0
 
 Status: Domain Model Architecture
 Version: 0.42.0
+
+---
+
+## [0.43.0] - ARCH-006 Core Entities
+
+### Added
+- Core entity name, characteristic, reference rule, integrity rule, and error-code constants.
+- Immutable contracts for entity definitions, entity instances, entity references, entity state transitions, and validation results.
+- Core entity registry for documented primary entities, ownership validation, stable identity validation, business-state validation, reference validation, state transition validation, and future entity placeholders.
+- Dependency-injection registration through `addDomainModel`.
+- Unit tests for entity metadata, documented ownership, responsibilities, definition validation, immutable instances, instance validation, reference rules, state transitions, future placeholders, and DI access.
+
+### Established
+- Core-entity governance without implementing detailed aggregate rules, value objects, repositories, persistence schemas, APIs, lifecycle workflow engines, or full business behavior execution.
+
+Status: Domain Model Architecture
+Version: 0.43.0
