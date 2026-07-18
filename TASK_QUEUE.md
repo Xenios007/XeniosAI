@@ -55,7 +55,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-006-05 Aggregates`
 - Completed: `ARCH-006-06 Domain Services`
 - Completed: `ARCH-006-07 Domain Events`
-- Next: `ARCH-006-08 Domain Rules`
+- Completed: `ARCH-006-08 Domain Rules`
+- Next: `ARCH-006-09 Domain Lifecycle`
 
 ## Notes
 

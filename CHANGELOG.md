@@ -880,3 +880,20 @@ Version: 0.46.0
 
 Status: Domain Model Architecture
 Version: 0.47.0
+
+---
+
+## [0.48.0] - ARCH-006 Domain Rules
+
+### Added
+- Domain rule category, name, characteristic, enforcer, sequence step, future category, and error-code constants.
+- Immutable contracts for domain rule definitions, evaluations, collaborations, sequences, and validation results.
+- Domain rule registry for documented business rules, one-owner governance, technology-independence validation, no-duplication validation, pre-state-change evaluation validation, rule collaboration validation, canonical consistency sequencing, and future rule placeholders.
+- Dependency-injection registration through `addDomainModel`.
+- Unit tests for rule metadata, documented ownership, categories and enforcement owners, definition validation, evaluation validation, collaboration validation, sequence validation, future placeholders, and DI access.
+
+### Established
+- Domain-rule governance without implementing a technical validation framework, rules engine, policy DSL, persistence, infrastructure configuration, regulatory engines, AI governance execution, or dynamic optimization.
+
+Status: Domain Model Architecture
+Version: 0.48.0

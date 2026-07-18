@@ -32,7 +32,12 @@ export const DOMAIN_MODEL_ERROR_CODES = Object.freeze({
   DOMAIN_EVENT_DEFINITION_INVALID: 'DOMAIN_MODEL_DOMAIN_EVENT_DEFINITION_INVALID',
   DOMAIN_EVENT_PUBLICATION_INVALID: 'DOMAIN_MODEL_DOMAIN_EVENT_PUBLICATION_INVALID',
   DOMAIN_EVENT_CONSUMPTION_INVALID: 'DOMAIN_MODEL_DOMAIN_EVENT_CONSUMPTION_INVALID',
-  DOMAIN_EVENT_ORDERING_INVALID: 'DOMAIN_MODEL_DOMAIN_EVENT_ORDERING_INVALID'
+  DOMAIN_EVENT_ORDERING_INVALID: 'DOMAIN_MODEL_DOMAIN_EVENT_ORDERING_INVALID',
+  DOMAIN_RULE_NOT_FOUND: 'DOMAIN_MODEL_DOMAIN_RULE_NOT_FOUND',
+  DOMAIN_RULE_DEFINITION_INVALID: 'DOMAIN_MODEL_DOMAIN_RULE_DEFINITION_INVALID',
+  DOMAIN_RULE_EVALUATION_INVALID: 'DOMAIN_MODEL_DOMAIN_RULE_EVALUATION_INVALID',
+  DOMAIN_RULE_COLLABORATION_INVALID: 'DOMAIN_MODEL_DOMAIN_RULE_COLLABORATION_INVALID',
+  DOMAIN_RULE_SEQUENCE_INVALID: 'DOMAIN_MODEL_DOMAIN_RULE_SEQUENCE_INVALID'
 });
 
 export const DOMAIN_MODELING_PRINCIPLES = Object.freeze({
@@ -339,4 +344,73 @@ export const FUTURE_DOMAIN_EVENT_CANDIDATES = Object.freeze({
   CONVERSATION_STARTED: 'Conversation Started',
   MAINTENANCE_COMPLETED: 'Maintenance Completed',
   DYNAMIC_PRICE_CALCULATED: 'Dynamic Price Calculated'
+});
+
+export const DOMAIN_RULE_CATEGORIES = Object.freeze({
+  INVARIANT: 'Invariant',
+  VALIDATION: 'Validation Rule',
+  LIFECYCLE: 'Lifecycle Rule',
+  POLICY: 'Policy Rule',
+  CALCULATION: 'Calculation Rule',
+  ELIGIBILITY: 'Eligibility Rule'
+});
+
+export const DOMAIN_RULE_NAMES = Object.freeze({
+  RESERVATION_DATES_VALID: 'Reservation Dates Valid',
+  RESERVATION_OCCUPANCY_WITHIN_CAPACITY: 'Reservation Occupancy Within Capacity',
+  CANCELLED_RESERVATION_CANNOT_CHECK_IN: 'Cancelled Reservation Cannot Check In',
+  GUEST_EMAIL_VALID: 'Guest Email Valid',
+  GUEST_PHONE_SUPPORTED: 'Guest Phone Supported',
+  PROPERTY_EXISTS_FOR_RESERVATION: 'Property Exists For Reservation',
+  RESERVATION_DATES_COMPLETE: 'Reservation Dates Complete',
+  PAYMENT_CURRENCY_SUPPORTED: 'Payment Currency Supported',
+  PAYMENT_AMOUNT_VALID: 'Payment Amount Valid',
+  RESERVATION_LIFECYCLE_TRANSITION_VALID: 'Reservation Lifecycle Transition Valid',
+  PAYMENT_REFUND_ELIGIBLE: 'Payment Refund Eligible',
+  PRICE_CALCULATION: 'Price Calculation',
+  AVAILABILITY_NOT_DOUBLE_BOOKED: 'Availability Not Double Booked',
+  MAINTENANCE_BLOCKS_RESERVATION: 'Maintenance Blocks Reservation',
+  PAYMENT_AUTHORIZATION_PRECEDES_SETTLEMENT: 'Payment Authorization Precedes Settlement',
+  DUPLICATE_PAYMENT_PREVENTED: 'Duplicate Payment Prevented',
+  NOTIFICATION_CHANNEL_FOLLOWS_GUEST_PREFERENCE: 'Notification Channel Follows Guest Preference',
+  WORKFLOW_STEPS_EXECUTE_IN_ORDER: 'Workflow Steps Execute In Order',
+  COMPLETED_WORKFLOW_CANNOT_RESTART: 'Completed Workflow Cannot Restart',
+  KNOWLEDGE_CLASSIFIED: 'Knowledge Classified',
+  KNOWLEDGE_SOURCE_TRACEABLE: 'Knowledge Source Traceable'
+});
+
+export const DOMAIN_RULE_CHARACTERISTICS = Object.freeze({
+  BUSINESS_INTENT: 'business-intent',
+  TECHNOLOGY_INDEPENDENT: 'technology-independent',
+  EXPLICITLY_OWNED: 'explicitly-owned',
+  CONSISTENTLY_ENFORCED: 'consistently-enforced',
+  BUSINESS_UNDERSTANDABLE: 'business-understandable',
+  PRESERVES_DOMAIN_INTEGRITY: 'preserves-domain-integrity'
+});
+
+export const DOMAIN_RULE_ENFORCERS = Object.freeze({
+  ENTITY: 'Entity',
+  AGGREGATE: 'Aggregate',
+  VALUE_OBJECT: 'Value Object',
+  DOMAIN_SERVICE: 'Domain Service'
+});
+
+export const DOMAIN_RULE_SEQUENCE_STEPS = Object.freeze({
+  BUSINESS_REQUEST: 'Business Request',
+  RULE_EVALUATION: 'Rule Evaluation',
+  VALIDATION: 'Validation',
+  AGGREGATE_UPDATE: 'Aggregate Update',
+  TRANSACTION_COMMIT: 'Transaction Commit',
+  DOMAIN_EVENT: 'Domain Event'
+});
+
+export const FUTURE_DOMAIN_RULE_CATEGORIES = Object.freeze({
+  LOYALTY_POLICIES: 'Loyalty policies',
+  MARKETPLACE_POLICIES: 'Marketplace policies',
+  VENDOR_QUALIFICATION: 'Vendor qualification',
+  AI_GOVERNANCE: 'AI governance',
+  RISK_MANAGEMENT: 'Risk management',
+  COMPLIANCE_VALIDATION: 'Compliance validation',
+  SUSTAINABILITY_POLICIES: 'Sustainability policies',
+  DYNAMIC_OPTIMIZATION_RULES: 'Dynamic optimization rules'
 });
