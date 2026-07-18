@@ -42,7 +42,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-005-02 Command Flow`
 - Completed: `ARCH-005-03 Query Flow`
 - Completed: `ARCH-005-04 Event Flow`
-- Next: `ARCH-005-05 Workflow Orchestration`
+- Completed: `ARCH-005-05 Workflow Orchestration`
+- Next: `ARCH-005-06 Service Integration`
 
 ## Notes
 

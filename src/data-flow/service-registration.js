@@ -3,6 +3,7 @@ import { CommandFlowDescriptor } from './commands/command-flow-descriptor.js';
 import { EventFlowDescriptor } from './events/event-flow-descriptor.js';
 import { ExecutionOverviewDescriptor } from './execution/execution-overview-descriptor.js';
 import { QueryFlowDescriptor } from './queries/query-flow-descriptor.js';
+import { WorkflowOrchestrationDescriptor } from './workflows/workflow-orchestration-descriptor.js';
 
 export function addDataFlow(services) {
   if (!(services instanceof ServiceCollection)) {
@@ -13,6 +14,7 @@ export function addDataFlow(services) {
   services.registerSingleton('EventFlowDescriptor', () => new EventFlowDescriptor());
   services.registerSingleton('ExecutionOverviewDescriptor', () => new ExecutionOverviewDescriptor());
   services.registerSingleton('QueryFlowDescriptor', () => new QueryFlowDescriptor());
+  services.registerSingleton('WorkflowOrchestrationDescriptor', () => new WorkflowOrchestrationDescriptor());
 
   return services;
 }

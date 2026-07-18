@@ -211,6 +211,80 @@ export const EVENT_TELEMETRY_FIELDS = Object.freeze({
   FAILURE_INFORMATION: 'failureInformation'
 });
 
+export const WORKFLOW_LIFECYCLE_STAGES = Object.freeze({
+  WORKFLOW_STARTED: 'workflow-started',
+  INITIALIZE_CONTEXT: 'initialize-context',
+  EXECUTE_STEP: 'execute-step',
+  VALIDATE_OUTCOME: 'validate-outcome',
+  CONTINUE_OR_COMPLETE: 'continue-or-complete',
+  COMPLETE_WORKFLOW: 'complete-workflow',
+  PUBLISH_COMPLETION: 'publish-completion'
+});
+
+export const WORKFLOW_RESPONSIBILITY_OWNERS = Object.freeze({
+  WORKFLOW_COORDINATION: 'ai-orchestrator',
+  BUSINESS_VALIDATION: 'business-services',
+  DATA_PERSISTENCE: 'data-layer',
+  EXTERNAL_COMMUNICATION: 'integration-layer',
+  DECISION_AUTHORIZATION: 'decision-engine'
+});
+
+export const WORKFLOW_INITIATION_SOURCES = Object.freeze({
+  USER_REQUEST: 'user-request',
+  BUSINESS_COMMAND: 'business-command',
+  DOMAIN_EVENT: 'domain-event',
+  SCHEDULED_EXECUTION: 'scheduled-execution',
+  EXTERNAL_INTEGRATION: 'external-integration'
+});
+
+export const WORKFLOW_STATES = Object.freeze({
+  CREATED: 'created',
+  INITIALIZED: 'initialized',
+  RUNNING: 'running',
+  WAITING: 'waiting',
+  RETRYING: 'retrying',
+  SUSPENDED: 'suspended',
+  COMPLETED: 'completed',
+  FAILED: 'failed',
+  CANCELLED: 'cancelled'
+});
+
+export const WORKFLOW_STEP_OUTCOMES = Object.freeze({
+  SUCCESS: 'success',
+  FAILURE: 'failure',
+  PARTIAL_COMPLETION: 'partial-completion',
+  RETRY_REQUIRED: 'retry-required',
+  COMPENSATION_REQUIRED: 'compensation-required'
+});
+
+export const WORKFLOW_RECOVERY_STRATEGIES = Object.freeze({
+  RESUME_FROM_LAST_SUCCESSFUL_STEP: 'resume-from-last-successful-step',
+  RETRY_FAILED_STEP: 'retry-failed-step',
+  EXECUTE_COMPENSATION: 'execute-compensation',
+  ESCALATE_FOR_MANUAL_INTERVENTION: 'escalate-for-manual-intervention',
+  SAFELY_TERMINATE_WORKFLOW: 'safely-terminate-workflow'
+});
+
+export const WORKFLOW_TIMEOUT_ACTIONS = Object.freeze({
+  RETRY: 'retry',
+  SUSPEND: 'suspend',
+  ESCALATE: 'escalate',
+  CANCEL: 'cancel',
+  NOTIFY_OPERATORS: 'notify-operators'
+});
+
+export const WORKFLOW_TELEMETRY_FIELDS = Object.freeze({
+  WORKFLOW_ID: 'workflowId',
+  CORRELATION_ID: 'correlationId',
+  CURRENT_STATE: 'currentState',
+  ACTIVE_STEP: 'activeStep',
+  COMPLETED_STEPS: 'completedSteps',
+  FAILED_STEPS: 'failedSteps',
+  EXECUTION_DURATION: 'executionDurationMs',
+  RETRY_COUNT: 'retryCount',
+  COMPLETION_STATUS: 'completionStatus'
+});
+
 export const DATA_FLOW_ERROR_CODES = Object.freeze({
   EXECUTION_STAGE_NOT_FOUND: 'DATA_FLOW_EXECUTION_STAGE_NOT_FOUND',
   EXECUTION_PARTICIPANT_NOT_FOUND: 'DATA_FLOW_EXECUTION_PARTICIPANT_NOT_FOUND',
@@ -234,5 +308,13 @@ export const DATA_FLOW_ERROR_CODES = Object.freeze({
   EVENT_DEFINITION_INVALID: 'DATA_FLOW_EVENT_DEFINITION_INVALID',
   EVENT_PUBLICATION_INVALID: 'DATA_FLOW_EVENT_PUBLICATION_INVALID',
   EVENT_CONSUMPTION_INVALID: 'DATA_FLOW_EVENT_CONSUMPTION_INVALID',
-  EVENT_TELEMETRY_INVALID: 'DATA_FLOW_EVENT_TELEMETRY_INVALID'
+  EVENT_TELEMETRY_INVALID: 'DATA_FLOW_EVENT_TELEMETRY_INVALID',
+  WORKFLOW_STAGE_NOT_FOUND: 'DATA_FLOW_WORKFLOW_STAGE_NOT_FOUND',
+  WORKFLOW_LIFECYCLE_INVALID: 'DATA_FLOW_WORKFLOW_LIFECYCLE_INVALID',
+  WORKFLOW_DEFINITION_INVALID: 'DATA_FLOW_WORKFLOW_DEFINITION_INVALID',
+  WORKFLOW_INSTANCE_INVALID: 'DATA_FLOW_WORKFLOW_INSTANCE_INVALID',
+  WORKFLOW_STATE_TRANSITION_INVALID: 'DATA_FLOW_WORKFLOW_STATE_TRANSITION_INVALID',
+  WORKFLOW_STEP_OUTCOME_INVALID: 'DATA_FLOW_WORKFLOW_STEP_OUTCOME_INVALID',
+  WORKFLOW_RECOVERY_INVALID: 'DATA_FLOW_WORKFLOW_RECOVERY_INVALID',
+  WORKFLOW_TELEMETRY_INVALID: 'DATA_FLOW_WORKFLOW_TELEMETRY_INVALID'
 });

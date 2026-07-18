@@ -652,3 +652,21 @@ Version: 0.33.0
 
 Status: Data Flow Architecture
 Version: 0.34.0
+
+---
+
+## [0.35.0] - ARCH-005 Workflow Orchestration
+
+### Added
+- Canonical workflow lifecycle constants for all ARCH-005-05 stages.
+- Workflow responsibility owner, initiation source, state, step outcome, recovery strategy, timeout action, telemetry, and error-code constants.
+- Immutable contracts for workflow lifecycle stages, workflow definitions, workflow steps, workflow instances, step outcomes, workflow telemetry, and validation results.
+- Workflow orchestration descriptor for lifecycle validation, definition validation, continuation-capable instance creation, state transition validation, step outcome validation, recovery validation, and telemetry validation.
+- Dependency-injection registration through `addDataFlow`.
+- Unit tests for lifecycle order, ownership metadata, state and recovery metadata, documented workflow examples, skipped stages, definition validation, immutable workflow instances, state transitions, step outcomes, recovery, telemetry validation, and DI access.
+
+### Established
+- Workflow orchestration governance without implementing a workflow runtime, scheduler, message broker, persistence store, distributed transaction, human approval engine, visual modeler, or business rules.
+
+Status: Data Flow Architecture
+Version: 0.35.0

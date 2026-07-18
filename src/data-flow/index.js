@@ -19,7 +19,15 @@ export {
   QUERY_LIFECYCLE_STAGES,
   QUERY_OPTIMIZATION_STRATEGIES,
   QUERY_RESULT_STATUSES,
-  QUERY_TELEMETRY_FIELDS
+  QUERY_TELEMETRY_FIELDS,
+  WORKFLOW_INITIATION_SOURCES,
+  WORKFLOW_LIFECYCLE_STAGES,
+  WORKFLOW_RECOVERY_STRATEGIES,
+  WORKFLOW_RESPONSIBILITY_OWNERS,
+  WORKFLOW_STATES,
+  WORKFLOW_STEP_OUTCOMES,
+  WORKFLOW_TELEMETRY_FIELDS,
+  WORKFLOW_TIMEOUT_ACTIONS
 } from './constants.js';
 export { CommandDefinition } from './contracts/command-definition.js';
 export { CommandEnvelope } from './contracts/command-envelope.js';
@@ -43,8 +51,16 @@ export { QueryLifecycleStage } from './contracts/query-lifecycle-stage.js';
 export { QueryResultRecord } from './contracts/query-result-record.js';
 export { QueryTelemetryRecord } from './contracts/query-telemetry-record.js';
 export { QueryValidationResult } from './contracts/query-validation-result.js';
+export { WorkflowDefinition } from './contracts/workflow-definition.js';
+export { WorkflowInstance } from './contracts/workflow-instance.js';
+export { WorkflowLifecycleStage } from './contracts/workflow-lifecycle-stage.js';
+export { WorkflowStep } from './contracts/workflow-step.js';
+export { WorkflowStepOutcome } from './contracts/workflow-step-outcome.js';
+export { WorkflowTelemetryRecord } from './contracts/workflow-telemetry-record.js';
+export { WorkflowValidationResult } from './contracts/workflow-validation-result.js';
 export { CommandFlowDescriptor } from './commands/command-flow-descriptor.js';
 export { EventFlowDescriptor } from './events/event-flow-descriptor.js';
 export { ExecutionOverviewDescriptor } from './execution/execution-overview-descriptor.js';
 export { QueryFlowDescriptor } from './queries/query-flow-descriptor.js';
+export { WorkflowOrchestrationDescriptor } from './workflows/workflow-orchestration-descriptor.js';
 export { addDataFlow } from './service-registration.js';
