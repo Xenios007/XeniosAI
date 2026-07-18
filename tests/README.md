@@ -80,5 +80,6 @@ The repository currently includes automated unit tests for:
 - `ARCH-003-10 Future Services` in `tests/service-map/`
 - `ARCH-004-01 Orchestrator Overview` in `tests/orchestrator/`
 - `ARCH-004-02 Request Lifecycle` in `tests/orchestrator/`
+- `ARCH-004-03 Reasoning Pipeline` in `tests/orchestrator/`
 
 These tests validate reusable platform capabilities and channel-facing behavior without introducing business logic.

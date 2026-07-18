@@ -30,7 +30,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-003-10 Future Services`
 - Completed: `ARCH-004-01 Orchestrator Overview`
 - Completed: `ARCH-004-02 Request Lifecycle`
-- Next: `ARCH-004-03 Reasoning Pipeline`
+- Completed: `ARCH-004-03 Reasoning Pipeline`
+- Next: `ARCH-004-04 Tool Orchestration`
 
 ## Notes
 

@@ -434,3 +434,21 @@ Version: 0.21.0
 
 Status: AI Orchestrator Architecture
 Version: 0.22.0
+
+---
+
+## [0.23.0] - ARCH-004 Reasoning Pipeline
+
+### Added
+- Canonical reasoning pipeline constants for all ARCH-004-03 stages.
+- Decision category and execution strategy constants for orchestrator reasoning outcomes.
+- Immutable reasoning input, pipeline stage, decision-output, and validation-result contracts.
+- Reasoning pipeline descriptor service with traversal and decision-output validation.
+- Dependency-injection registration for `ReasoningPipelineDescriptor`.
+- Unit tests for stage order, explainability metadata, traversal validation, confidence gating, responsibility boundaries, immutable inputs, and DI access.
+
+### Established
+- Executable reasoning pipeline governance without implementing business validation, persistence, external communication, pricing, availability, authentication, tool execution, or decision-engine behavior.
+
+Status: AI Orchestrator Architecture
+Version: 0.23.0
