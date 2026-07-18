@@ -1,4 +1,9 @@
 export {
+  AGENT_CONTEXT_TYPES,
+  AGENT_COORDINATION_STAGES,
+  AGENT_COORDINATION_STRATEGIES,
+  AGENT_ROLES,
+  AGENT_TELEMETRY_FIELDS,
   CONTEXT_ASSEMBLY_STAGES,
   CONTEXT_CONFLICT_PRIORITY,
   CONTEXT_LAYERS,
@@ -26,6 +31,14 @@ export {
   REQUEST_LIFECYCLE_STAGES,
   REQUEST_LIFECYCLE_TELEMETRY_FIELDS
 } from './constants.js';
+export { AgentAssignment } from './contracts/agent-assignment.js';
+export { AgentCoordinationRequest } from './contracts/agent-coordination-request.js';
+export { AgentCoordinationResult } from './contracts/agent-coordination-result.js';
+export { AgentCoordinationStage } from './contracts/agent-coordination-stage.js';
+export { AgentCoordinationTelemetry } from './contracts/agent-coordination-telemetry.js';
+export { AgentCoordinationValidationResult } from './contracts/agent-coordination-validation-result.js';
+export { AgentDescriptor } from './contracts/agent-descriptor.js';
+export { AgentOutput } from './contracts/agent-output.js';
 export { ContextAssemblyRequest } from './contracts/context-assembly-request.js';
 export { ContextAssemblyStage } from './contracts/context-assembly-stage.js';
 export { ContextAssemblyTelemetry } from './contracts/context-assembly-telemetry.js';
@@ -61,6 +74,7 @@ export { ToolInvocationTelemetry } from './contracts/tool-invocation-telemetry.j
 export { ToolOrchestrationStage } from './contracts/tool-orchestration-stage.js';
 export { ToolResultValidationResult } from './contracts/tool-result-validation-result.js';
 export { WorkingContext } from './contracts/working-context.js';
+export { AgentCoordinationCoordinator } from './agents/agent-coordination-coordinator.js';
 export { ContextAssemblyCoordinator } from './context/context-assembly-coordinator.js';
 export { DecisionEngineAuthority } from './decision/decision-engine-authority.js';
 export { OrchestratorBoundaryPolicy } from './governance/orchestrator-boundary-policy.js';

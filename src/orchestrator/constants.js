@@ -239,6 +239,55 @@ export const DECISION_RECORD_FIELDS = Object.freeze({
   CORRELATION_ID: 'correlationId'
 });
 
+export const AGENT_COORDINATION_STAGES = Object.freeze({
+  USER_REQUEST: 'user-request',
+  AI_ORCHESTRATOR: 'ai-orchestrator',
+  AGENT_SELECTION: 'agent-selection',
+  AGENT_EXECUTION: 'agent-execution',
+  RESULT_AGGREGATION: 'result-aggregation',
+  VALIDATION: 'validation',
+  RESPONSE_COMPOSITION: 'response-composition'
+});
+
+export const AGENT_ROLES = Object.freeze({
+  PLANNER: 'planner',
+  RESEARCH: 'research',
+  KNOWLEDGE: 'knowledge',
+  MEMORY: 'memory',
+  BOOKING: 'booking',
+  PRICING: 'pricing',
+  WORKFLOW: 'workflow',
+  VALIDATION: 'validation',
+  RESPONSE: 'response'
+});
+
+export const AGENT_COORDINATION_STRATEGIES = Object.freeze({
+  SEQUENTIAL: 'sequential',
+  PARALLEL: 'parallel',
+  HIERARCHICAL: 'hierarchical',
+  COLLABORATIVE: 'collaborative'
+});
+
+export const AGENT_CONTEXT_TYPES = Object.freeze({
+  REQUEST: 'request',
+  SESSION: 'session',
+  MEMORY: 'memory',
+  KNOWLEDGE: 'knowledge',
+  BUSINESS: 'business',
+  EXECUTION: 'execution'
+});
+
+export const AGENT_TELEMETRY_FIELDS = Object.freeze({
+  PARTICIPATING_AGENTS: 'participatingAgents',
+  EXECUTION_ORDER: 'executionOrder',
+  EXECUTION_DURATION: 'executionDurationMs',
+  INPUTS: 'inputs',
+  OUTPUTS: 'outputs',
+  FAILURES: 'failures',
+  CORRELATION_ID: 'correlationId',
+  DECISION_HISTORY: 'decisionHistory'
+});
+
 export const ORCHESTRATION_DECISIONS = Object.freeze({
   CONSULT_MEMORY: 'consult-memory',
   RETRIEVE_KNOWLEDGE: 'retrieve-knowledge',
@@ -270,5 +319,8 @@ export const ORCHESTRATOR_ERROR_CODES = Object.freeze({
   CONTEXT_ASSEMBLY_STAGE_NOT_FOUND: 'ORCHESTRATOR_CONTEXT_STAGE_NOT_FOUND',
   CONTEXT_ASSEMBLY_INVALID: 'ORCHESTRATOR_CONTEXT_ASSEMBLY_INVALID',
   DECISION_GATE_NOT_FOUND: 'ORCHESTRATOR_DECISION_GATE_NOT_FOUND',
-  DECISION_PROPOSAL_INVALID: 'ORCHESTRATOR_DECISION_PROPOSAL_INVALID'
+  DECISION_PROPOSAL_INVALID: 'ORCHESTRATOR_DECISION_PROPOSAL_INVALID',
+  AGENT_COORDINATION_STAGE_NOT_FOUND: 'ORCHESTRATOR_AGENT_STAGE_NOT_FOUND',
+  AGENT_SELECTION_INVALID: 'ORCHESTRATOR_AGENT_SELECTION_INVALID',
+  AGENT_OUTPUT_INVALID: 'ORCHESTRATOR_AGENT_OUTPUT_INVALID'
 });

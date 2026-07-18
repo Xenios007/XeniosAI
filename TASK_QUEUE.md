@@ -35,7 +35,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-004-05 Memory Orchestration`
 - Completed: `ARCH-004-06 Context Management`
 - Completed: `ARCH-004-07 Decision Engine`
-- Next: `ARCH-004-08 Agent Coordination`
+- Completed: `ARCH-004-08 Agent Coordination`
+- Next: `ARCH-004-09 Failure Recovery`
 
 ## Notes
 

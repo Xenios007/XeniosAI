@@ -525,3 +525,21 @@ Version: 0.26.0
 
 Status: AI Orchestrator Architecture
 Version: 0.27.0
+
+---
+
+## [0.28.0] - ARCH-004 Agent Coordination
+
+### Added
+- Canonical agent coordination stage constants for the ARCH-004-08 coordination model.
+- Agent role, coordination strategy, context type, and telemetry constants.
+- Immutable contracts for agent descriptors, assignments, coordination requests, outputs, results, telemetry, stages, and validation results.
+- Agent coordination coordinator for orchestrator-owned selection, least-context assignment, deterministic strategy selection, result aggregation, conflict resolution, output validation, and telemetry.
+- Dependency-injection registration for `AgentCoordinationCoordinator`.
+- Unit tests for stage order, roles, strategies, telemetry, agent selection, context scoping, invalid capabilities, strategy selection, conflict aggregation, output validation, coordination telemetry, invalid output rejection, and DI access.
+
+### Established
+- Centralized multi-agent coordination governance without granting agents request ownership, business ownership, autonomous authority, tool execution authority, direct agent-to-agent communication, or failure recovery behavior.
+
+Status: AI Orchestrator Architecture
+Version: 0.28.0
