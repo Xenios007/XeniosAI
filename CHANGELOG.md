@@ -760,3 +760,21 @@ Version: 0.39.0
 
 Status: Data Flow Architecture
 Version: 0.40.0
+
+---
+
+## [0.41.0] - ARCH-006 Domain Overview
+
+### Added
+- Domain model module under `src/domain-model/`.
+- Domain modeling principle, boundary rule, consistency model, relationship type, and error-code constants.
+- Immutable contracts for domain descriptors, concepts, capabilities, relationships, state models, and validation results.
+- Domain overview descriptor for documented domain hierarchy, ubiquitous language, ownership validation, capability validation, collaboration relationship validation, business-state ownership validation, and implementation-terminology rejection.
+- Dependency-injection registration through `addDomainModel`.
+- Unit tests for principles, hierarchy, ubiquitous language, ownership examples, technical terminology rejection, capability ownership, relationship collaboration, state ownership, and DI access.
+
+### Established
+- Domain overview governance without implementing bounded contexts, core entities, value objects, aggregates, domain services, domain events, detailed business rules, persistence, APIs, or workflow behavior.
+
+Status: Domain Model Architecture
+Version: 0.41.0

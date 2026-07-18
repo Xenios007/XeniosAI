@@ -98,5 +98,6 @@ The repository currently includes automated unit tests for:
 - `ARCH-005-08 Messaging Patterns` in `tests/data-flow/`
 - `ARCH-005-09 Transaction Boundaries` in `tests/data-flow/`
 - `ARCH-005-10 Future Integration Capabilities` in `tests/data-flow/`
+- `ARCH-006-01 Domain Overview` in `tests/domain-model/`
 
 These tests validate reusable platform capabilities and channel-facing behavior without introducing business logic.
