@@ -6,6 +6,7 @@ import { DomainLifecycleRegistry } from './domain-lifecycles/domain-lifecycle-re
 import { DomainRuleRegistry } from './domain-rules/domain-rule-registry.js';
 import { DomainServiceRegistry } from './domain-services/domain-service-registry.js';
 import { CoreEntityRegistry } from './entities/core-entity-registry.js';
+import { FutureDomainEvolutionRegistry } from './future-domain-evolution/future-domain-evolution-registry.js';
 import { DomainOverviewDescriptor } from './overview/domain-overview-descriptor.js';
 import { ValueObjectRegistry } from './value-objects/value-object-registry.js';
 
@@ -22,6 +23,7 @@ export function addDomainModel(services) {
   services.registerSingleton('DomainOverviewDescriptor', () => new DomainOverviewDescriptor());
   services.registerSingleton('DomainRuleRegistry', () => new DomainRuleRegistry());
   services.registerSingleton('DomainServiceRegistry', () => new DomainServiceRegistry());
+  services.registerSingleton('FutureDomainEvolutionRegistry', () => new FutureDomainEvolutionRegistry());
   services.registerSingleton('ValueObjectRegistry', () => new ValueObjectRegistry());
 
   return services;

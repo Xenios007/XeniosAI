@@ -35,9 +35,14 @@ export {
   ENTITY_REFERENCE_RULES,
   FUTURE_AGGREGATE_CANDIDATES,
   FUTURE_DOMAIN_EVENT_CANDIDATES,
+  FUTURE_DOMAIN_EVALUATION_DECISIONS,
+  FUTURE_DOMAIN_EVOLUTION_OBJECTIVES,
+  FUTURE_DOMAIN_EVOLUTION_PRINCIPLES,
   FUTURE_DOMAIN_LIFECYCLE_CANDIDATES,
+  FUTURE_DOMAIN_NAMES,
   FUTURE_DOMAIN_RULE_CATEGORIES,
   FUTURE_DOMAIN_SERVICE_CANDIDATES,
+  FUTURE_DOMAIN_STABILITY_RULES,
   VALUE_OBJECT_CHARACTERISTICS,
   VALUE_OBJECT_FUTURE_CANDIDATES,
   VALUE_OBJECT_NAMES,
@@ -83,6 +88,9 @@ export { EntityInstance } from './contracts/entity-instance.js';
 export { EntityReference } from './contracts/entity-reference.js';
 export { EntityStateTransition } from './contracts/entity-state-transition.js';
 export { EntityValidationResult } from './contracts/entity-validation-result.js';
+export { FutureDomainCandidate } from './contracts/future-domain-candidate.js';
+export { FutureDomainEvaluation } from './contracts/future-domain-evaluation.js';
+export { FutureDomainEvaluationResult } from './contracts/future-domain-evaluation-result.js';
 export { ValueObjectDefinition } from './contracts/value-object-definition.js';
 export { ValueObjectInstance } from './contracts/value-object-instance.js';
 export { ValueObjectValidationResult } from './contracts/value-object-validation-result.js';
@@ -93,6 +101,7 @@ export { DomainLifecycleRegistry } from './domain-lifecycles/domain-lifecycle-re
 export { DomainRuleRegistry } from './domain-rules/domain-rule-registry.js';
 export { DomainServiceRegistry } from './domain-services/domain-service-registry.js';
 export { CoreEntityRegistry } from './entities/core-entity-registry.js';
+export { FutureDomainEvolutionRegistry } from './future-domain-evolution/future-domain-evolution-registry.js';
 export { DomainOverviewDescriptor } from './overview/domain-overview-descriptor.js';
 export { ValueObjectRegistry } from './value-objects/value-object-registry.js';
 export { addDomainModel } from './service-registration.js';

@@ -914,3 +914,20 @@ Version: 0.48.0
 
 Status: Domain Model Architecture
 Version: 0.49.0
+
+---
+
+## [0.50.0] - ARCH-006 Future Domain Evolution
+
+### Added
+- Future domain name, evolution principle, evolution objective, stability rule, evaluation decision, and error-code constants.
+- Immutable contracts for future domain candidates, evaluations, and evaluation results.
+- Future domain evolution registry for documented candidate domains, placeholder validation, technology-independence validation, AI policy ownership validation, architecture-preserving evaluation, and accepted-evolution guarding.
+- Dependency-injection registration through `addDomainModel`.
+- Unit tests for principles, objectives, stability rules, documented candidates, responsibilities and entities, candidate validation, evolution evaluation, unknown candidates, and DI access.
+
+### Established
+- Future-domain governance without implementing future domains, services, aggregates, entities, events, AI management behavior, analytics, billing, marketplace, compliance, or infrastructure.
+
+Status: Domain Model Architecture
+Version: 0.50.0

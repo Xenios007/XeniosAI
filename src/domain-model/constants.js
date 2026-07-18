@@ -42,7 +42,10 @@ export const DOMAIN_MODEL_ERROR_CODES = Object.freeze({
   DOMAIN_LIFECYCLE_DEFINITION_INVALID: 'DOMAIN_MODEL_DOMAIN_LIFECYCLE_DEFINITION_INVALID',
   DOMAIN_LIFECYCLE_TRANSITION_INVALID: 'DOMAIN_MODEL_DOMAIN_LIFECYCLE_TRANSITION_INVALID',
   DOMAIN_LIFECYCLE_HISTORY_INVALID: 'DOMAIN_MODEL_DOMAIN_LIFECYCLE_HISTORY_INVALID',
-  DOMAIN_LIFECYCLE_SEQUENCE_INVALID: 'DOMAIN_MODEL_DOMAIN_LIFECYCLE_SEQUENCE_INVALID'
+  DOMAIN_LIFECYCLE_SEQUENCE_INVALID: 'DOMAIN_MODEL_DOMAIN_LIFECYCLE_SEQUENCE_INVALID',
+  FUTURE_DOMAIN_CANDIDATE_NOT_FOUND: 'DOMAIN_MODEL_FUTURE_DOMAIN_CANDIDATE_NOT_FOUND',
+  FUTURE_DOMAIN_CANDIDATE_INVALID: 'DOMAIN_MODEL_FUTURE_DOMAIN_CANDIDATE_INVALID',
+  FUTURE_DOMAIN_EVALUATION_INVALID: 'DOMAIN_MODEL_FUTURE_DOMAIN_EVALUATION_INVALID'
 });
 
 export const DOMAIN_MODELING_PRINCIPLES = Object.freeze({
@@ -481,4 +484,52 @@ export const FUTURE_DOMAIN_LIFECYCLE_CANDIDATES = Object.freeze({
   CONVERSATION: 'Conversation Lifecycle',
   MAINTENANCE: 'Maintenance Lifecycle',
   MARKETPLACE_LISTING: 'Marketplace Listing Lifecycle'
+});
+
+export const FUTURE_DOMAIN_NAMES = Object.freeze({
+  LOYALTY: 'Loyalty',
+  MARKETPLACE: 'Marketplace',
+  VENDOR: 'Vendor',
+  BILLING: 'Billing',
+  REPORTING: 'Reporting',
+  INVENTORY: 'Inventory',
+  MAINTENANCE: 'Maintenance',
+  MARKETING: 'Marketing',
+  AI_MANAGEMENT: 'AI Management',
+  COMPLIANCE: 'Compliance',
+  ANALYTICS: 'Analytics'
+});
+
+export const FUTURE_DOMAIN_EVOLUTION_PRINCIPLES = Object.freeze({
+  EXPLICIT_OWNERSHIP: 'explicit-ownership',
+  UBIQUITOUS_LANGUAGE: 'ubiquitous-language',
+  AGGREGATE_CONSISTENCY: 'aggregate-consistency',
+  DOMAIN_AUTONOMY: 'domain-autonomy',
+  EVENT_DRIVEN_COLLABORATION: 'event-driven-collaboration',
+  TECHNOLOGY_INDEPENDENCE: 'technology-independence'
+});
+
+export const FUTURE_DOMAIN_EVOLUTION_OBJECTIVES = Object.freeze({
+  RICHER_BUSINESS_CAPABILITIES: 'richer-business-capabilities',
+  IMPROVED_CUSTOMER_EXPERIENCE: 'improved-customer-experience',
+  GREATER_AI_ASSISTANCE: 'greater-ai-assistance',
+  STRONGER_BUSINESS_AUTOMATION: 'stronger-business-automation',
+  BROADER_ECOSYSTEM_INTEGRATION: 'broader-ecosystem-integration',
+  INDEPENDENT_DOMAIN_SCALABILITY: 'independent-domain-scalability'
+});
+
+export const FUTURE_DOMAIN_STABILITY_RULES = Object.freeze({
+  ONE_OWNER_PER_CAPABILITY: 'one-owner-per-capability',
+  ONE_AGGREGATE_ROOT_PER_AGGREGATE: 'one-aggregate-root-per-aggregate',
+  ONE_SOURCE_OF_TRUTH_PER_CONCEPT: 'one-source-of-truth-per-concept',
+  IMMUTABLE_DOMAIN_EVENTS: 'immutable-domain-events',
+  COMMANDS_EXPRESS_INTENT: 'commands-express-intent',
+  WORKFLOWS_COORDINATE_DOMAINS: 'workflows-coordinate-domains',
+  TECHNOLOGY_INDEPENDENT_BUSINESS_RULES: 'technology-independent-business-rules'
+});
+
+export const FUTURE_DOMAIN_EVALUATION_DECISIONS = Object.freeze({
+  ACCEPT: 'accept',
+  DEFER: 'defer',
+  REJECT: 'reject'
 });
