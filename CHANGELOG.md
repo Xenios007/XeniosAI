@@ -252,3 +252,21 @@ Version: 0.11.0
 
 Status: Service Map Architecture
 Version: 0.12.0
+
+---
+
+## [0.13.0] - ARCH-003 Service Ownership
+
+### Added
+- Service ownership matrix for major XeniosAI business capabilities.
+- Immutable ownership record and validation result contracts.
+- Service ownership registry with lookup, validation, assertion, and duplicate-owner protection.
+- Dependency-injection registration for `ServiceOwnershipRegistry`.
+- Unit tests for ownership matrix coverage, authority validation, duplicate protection, missing owner handling, and DI access.
+
+### Established
+- Runtime-testable enforcement that every governed capability has exactly one authoritative owner.
+- Clear separation between ownership governance and later dependency or domain-boundary enforcement modules.
+
+Status: Service Map Architecture
+Version: 0.13.0

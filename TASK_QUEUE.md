@@ -20,7 +20,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-002-11 Layer Interactions`
 - Completed: `ARCH-003-01 Service Landscape`
 - Completed: `ARCH-003-02 Service Catalog`
-- Next: `ARCH-003-03 Service Ownership`
+- Completed: `ARCH-003-03 Service Ownership`
+- Next: `ARCH-003-04 Service Dependencies`
 
 ## Notes
 
