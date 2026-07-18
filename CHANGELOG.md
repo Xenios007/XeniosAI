@@ -417,3 +417,20 @@ Version: 0.20.0
 
 Status: AI Orchestrator Architecture
 Version: 0.21.0
+
+---
+
+## [0.22.0] - ARCH-004 Request Lifecycle
+
+### Added
+- Canonical request lifecycle constants for all ARCH-004-02 stages.
+- Immutable lifecycle stage, trace-entry, and validation-result contracts.
+- Request lifecycle descriptor service with canonical traversal and telemetry validation.
+- Dependency-injection registration for `RequestLifecycleDescriptor`.
+- Unit tests for stage order, metadata, skipped stages, out-of-order traversal, telemetry validation, and DI access.
+
+### Established
+- Executable request lifecycle governance without implementing request execution, failure recovery, provider calls, tools, memory storage, or business behavior.
+
+Status: AI Orchestrator Architecture
+Version: 0.22.0
