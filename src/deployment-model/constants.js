@@ -22,7 +22,10 @@ export const DEPLOYMENT_MODEL_ERROR_CODES = Object.freeze({
   STORAGE_CATEGORY_INVALID: 'DEPLOYMENT_MODEL_STORAGE_CATEGORY_INVALID',
   STORAGE_OWNERSHIP_INVALID: 'DEPLOYMENT_MODEL_STORAGE_OWNERSHIP_INVALID',
   STORAGE_LIFECYCLE_INVALID: 'DEPLOYMENT_MODEL_STORAGE_LIFECYCLE_INVALID',
-  STORAGE_BACKUP_INVALID: 'DEPLOYMENT_MODEL_STORAGE_BACKUP_INVALID'
+  STORAGE_BACKUP_INVALID: 'DEPLOYMENT_MODEL_STORAGE_BACKUP_INVALID',
+  NETWORK_TOPOLOGY_INVALID: 'DEPLOYMENT_MODEL_NETWORK_TOPOLOGY_INVALID',
+  NETWORK_ZONE_INVALID: 'DEPLOYMENT_MODEL_NETWORK_ZONE_INVALID',
+  NETWORK_ROUTE_INVALID: 'DEPLOYMENT_MODEL_NETWORK_ROUTE_INVALID'
 });
 
 export const DEPLOYMENT_OBJECTIVES = Object.freeze({
@@ -436,4 +439,92 @@ export const FUTURE_STORAGE_CAPABILITIES = Object.freeze({
   DISTRIBUTED_VECTOR_INDEXING: 'Distributed vector indexing',
   CROSS_REGION_ANALYTICAL_PLATFORMS: 'Cross-region analytical platforms',
   AUTONOMOUS_STORAGE_OPTIMIZATION: 'Autonomous storage optimization'
+});
+
+export const NETWORK_OBJECTIVES = Object.freeze({
+  SECURE_COMMUNICATION: 'secure-communication',
+  CONTROLLED_CONNECTIVITY: 'controlled-connectivity',
+  HIGH_AVAILABILITY: 'high-availability',
+  PREDICTABLE_ROUTING: 'predictable-routing',
+  FAULT_ISOLATION: 'fault-isolation',
+  INDEPENDENT_SCALABILITY: 'independent-scalability',
+  LOW_OPERATIONAL_COMPLEXITY: 'low-operational-complexity',
+  INFRASTRUCTURE_PORTABILITY: 'infrastructure-portability'
+});
+
+export const NETWORK_ZONE_NAMES = Object.freeze({
+  EDGE: 'Edge Zone',
+  GATEWAY: 'Gateway Zone',
+  APPLICATION: 'Application Zone',
+  AI: 'AI Zone',
+  INFRASTRUCTURE: 'Infrastructure Zone',
+  DATA: 'Data Zone'
+});
+
+export const NETWORK_TRAFFIC_DIRECTIONS = Object.freeze({
+  NORTH_SOUTH: 'north-south',
+  EAST_WEST: 'east-west'
+});
+
+export const NETWORK_COMMUNICATION_METHODS = Object.freeze({
+  REST_APIS: 'REST APIs',
+  GRPC: 'gRPC',
+  MESSAGING: 'Messaging',
+  EVENT_STREAMING: 'Event streaming',
+  ASYNCHRONOUS_WORKFLOWS: 'Asynchronous workflows'
+});
+
+export const NETWORK_SEGMENTATION_AREAS = Object.freeze({
+  PUBLIC_TRAFFIC: 'public-traffic',
+  INTERNAL_SERVICES: 'internal-services',
+  AI_WORKLOADS: 'ai-workloads',
+  INFRASTRUCTURE_SERVICES: 'infrastructure-services',
+  DATA_SYSTEMS: 'data-systems',
+  ADMINISTRATIVE_ACCESS: 'administrative-access'
+});
+
+export const NETWORK_DISCOVERY_CAPABILITIES = Object.freeze({
+  LOCATION_INDEPENDENCE: 'location-independence',
+  LOAD_BALANCING: 'load-balancing',
+  HEALTH_AWARENESS: 'health-awareness',
+  VERSION_COMPATIBILITY: 'version-compatibility',
+  RESILIENCE: 'resilience'
+});
+
+export const NETWORK_RESILIENCE_CAPABILITIES = Object.freeze({
+  MULTIPLE_COMMUNICATION_PATHS: 'multiple-communication-paths',
+  AUTOMATIC_FAILOVER: 'automatic-failover',
+  HEALTH_AWARE_ROUTING: 'health-aware-routing',
+  LOAD_BALANCING: 'load-balancing',
+  CONNECTION_RETRIES: 'connection-retries',
+  GRACEFUL_DEGRADATION: 'graceful-degradation'
+});
+
+export const NETWORK_OBSERVABILITY_CAPABILITIES = Object.freeze({
+  REQUEST_TRACING: 'request-tracing',
+  LATENCY_MEASUREMENT: 'latency-measurement',
+  ERROR_REPORTING: 'error-reporting',
+  TRAFFIC_METRICS: 'traffic-metrics',
+  DEPENDENCY_VISUALIZATION: 'dependency-visualization',
+  AUDIT_LOGGING: 'audit-logging'
+});
+
+export const NETWORK_GOVERNANCE_CONTROLS = Object.freeze({
+  ROUTING_STANDARDS: 'routing-standards',
+  NAMING_CONVENTIONS: 'naming-conventions',
+  ADDRESS_MANAGEMENT: 'address-management',
+  CONNECTIVITY_POLICIES: 'connectivity-policies',
+  COMMUNICATION_STANDARDS: 'communication-standards',
+  CAPACITY_PLANNING: 'capacity-planning'
+});
+
+export const FUTURE_NETWORK_CAPABILITIES = Object.freeze({
+  MULTI_REGION_ROUTING: 'Multi-region routing',
+  GLOBAL_TRAFFIC_MANAGEMENT: 'Global traffic management',
+  SERVICE_MESH_INTEGRATION: 'Service mesh integration',
+  EDGE_NETWORKING: 'Edge networking',
+  ZERO_TRUST_NETWORKING: 'Zero-trust networking',
+  ADAPTIVE_TRAFFIC_ROUTING: 'Adaptive traffic routing',
+  AI_ASSISTED_NETWORK_OPTIMIZATION: 'AI-assisted network optimization',
+  AUTONOMOUS_NETWORK_POLICY_MANAGEMENT: 'Autonomous network policy management'
 });

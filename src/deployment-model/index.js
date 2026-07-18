@@ -27,8 +27,18 @@ export {
   FUTURE_DEPLOYMENT_CAPABILITIES,
   FUTURE_COMPUTE_CAPABILITIES,
   FUTURE_ENVIRONMENT_CAPABILITIES,
+  FUTURE_NETWORK_CAPABILITIES,
   FUTURE_RUNTIME_CAPABILITIES,
   FUTURE_STORAGE_CAPABILITIES,
+  NETWORK_COMMUNICATION_METHODS,
+  NETWORK_DISCOVERY_CAPABILITIES,
+  NETWORK_GOVERNANCE_CONTROLS,
+  NETWORK_OBJECTIVES,
+  NETWORK_OBSERVABILITY_CAPABILITIES,
+  NETWORK_RESILIENCE_CAPABILITIES,
+  NETWORK_SEGMENTATION_AREAS,
+  NETWORK_TRAFFIC_DIRECTIONS,
+  NETWORK_ZONE_NAMES,
   RUNTIME_BOUNDARY_RESPONSIBILITIES,
   RUNTIME_FAILURE_HANDLING_CAPABILITIES,
   RUNTIME_GOVERNANCE_CONTROLS,
@@ -62,6 +72,9 @@ export { EnvironmentDataStrategy } from './contracts/environment-data-strategy.j
 export { EnvironmentDefinition } from './contracts/environment-definition.js';
 export { EnvironmentPromotion } from './contracts/environment-promotion.js';
 export { EnvironmentValidationResult } from './contracts/environment-validation-result.js';
+export { NetworkRoute } from './contracts/network-route.js';
+export { NetworkValidationResult } from './contracts/network-validation-result.js';
+export { NetworkZone } from './contracts/network-zone.js';
 export { RuntimeComponent } from './contracts/runtime-component.js';
 export { RuntimeInteraction } from './contracts/runtime-interaction.js';
 export { RuntimeValidationResult } from './contracts/runtime-validation-result.js';
@@ -72,6 +85,7 @@ export { StorageOwnershipRecord } from './contracts/storage-ownership-record.js'
 export { StorageValidationResult } from './contracts/storage-validation-result.js';
 export { ComputeModelDescriptor } from './compute/compute-model-descriptor.js';
 export { EnvironmentStrategyDescriptor } from './environments/environment-strategy-descriptor.js';
+export { NetworkTopologyDescriptor } from './network/network-topology-descriptor.js';
 export { DeploymentOverviewDescriptor } from './overview/deployment-overview-descriptor.js';
 export { RuntimeTopologyDescriptor } from './runtime/runtime-topology-descriptor.js';
 export { StorageTopologyDescriptor } from './storage/storage-topology-descriptor.js';

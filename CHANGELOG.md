@@ -1017,3 +1017,20 @@ Version: 0.54.0
 
 Status: Deployment Model Architecture
 Version: 0.55.0
+
+---
+
+## [0.56.0] - ARCH-007 Network Topology
+
+### Added
+- Network objective, zone, traffic direction, communication method, segmentation, discovery, resilience, observability, governance, future capability, and error-code constants.
+- Immutable contracts for network zones, routes, and validation results.
+- Network topology descriptor for documented zone ordering, controlled public entry, internal communication validation, dynamic service discovery, segmentation, resilience, observability, governance, and future network placeholders.
+- Dependency-injection registration through `addDeploymentModel`.
+- Unit tests for network objectives, layered flow, documented zones, invalid public exposure, route validation, segmentation, service discovery, resilience, observability, governance, future placeholders, incomplete metadata validation, and DI access.
+
+### Established
+- Network-topology governance without implementing firewall products, load balancers, DNS providers, software-defined networking, service mesh runtime behavior, cloud network services, routing infrastructure, or vendor-specific networking technology.
+
+Status: Deployment Model Architecture
+Version: 0.56.0

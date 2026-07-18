@@ -63,7 +63,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-007-03 Runtime Topology`
 - Completed: `ARCH-007-04 Compute Model`
 - Completed: `ARCH-007-05 Storage Topology`
-- Next: `ARCH-007-06 Network Topology`
+- Completed: `ARCH-007-06 Network Topology`
+- Next: `ARCH-007-07 Service Deployment`
 
 ## Notes
 
