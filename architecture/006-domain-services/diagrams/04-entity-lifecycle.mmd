@@ -1,0 +1,17 @@
+stateDiagram-v2
+
+[*] --> Created
+
+Created --> Pending
+
+Pending --> Confirmed
+
+Pending --> Cancelled
+
+Confirmed --> CheckedIn
+
+CheckedIn --> CheckedOut
+
+CheckedOut --> [*]
+
+Cancelled --> [*]
