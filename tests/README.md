@@ -119,5 +119,6 @@ The repository currently includes automated unit tests for:
 - `ARCH-007-09 Disaster Recovery` in `tests/deployment-model/`
 - `ARCH-007-10 Future Deployment Evolution` in `tests/deployment-model/`
 - `ARCH-008-01 Security Overview` in `tests/security-architecture/`
+- `ARCH-008-02 Identity & Authentication` in `tests/security-architecture/`
 
 These tests validate reusable platform capabilities and channel-facing behavior without introducing business logic.

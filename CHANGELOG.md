@@ -1120,3 +1120,20 @@ Version: 0.60.0
 
 Status: Security Architecture
 Version: 0.61.0
+
+---
+
+## [0.62.0] - ARCH-008 Identity & Authentication
+
+### Added
+- Identity objective, identity category, identity architecture stage, authentication principle, authentication factor, credential management, session management, identity lifecycle, verification trigger, observability event, governance, future capability, and error-code constants.
+- Immutable contracts for identity categories, authentication policies, identity lifecycle records, and validation results.
+- Identity authentication descriptor for documented identity flow, category registry, authentication policy validation, lifecycle validation, and future identity placeholders.
+- Dependency-injection registration through `addSecurityArchitecture`.
+- Unit tests for objectives, identity flow, lifecycle, documented categories, invalid category handling, authentication policy validation, lifecycle validation, future placeholders, incomplete metadata validation, and DI access.
+
+### Established
+- Identity and authentication governance without implementing authorization policies, access control models, identity providers, authentication protocols, credential stores, MFA products, federation integrations, or secrets/key storage.
+
+Status: Security Architecture
+Version: 0.62.0

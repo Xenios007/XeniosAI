@@ -3,7 +3,11 @@ export const SECURITY_ARCHITECTURE_ERROR_CODES = Object.freeze({
   SECURITY_DOMAIN_INVALID: 'SECURITY_ARCHITECTURE_DOMAIN_INVALID',
   TRUST_BOUNDARY_INVALID: 'SECURITY_ARCHITECTURE_TRUST_BOUNDARY_INVALID',
   SECURITY_RESPONSIBILITY_INVALID: 'SECURITY_ARCHITECTURE_RESPONSIBILITY_INVALID',
-  SECURITY_RISK_ASSESSMENT_INVALID: 'SECURITY_ARCHITECTURE_RISK_ASSESSMENT_INVALID'
+  SECURITY_RISK_ASSESSMENT_INVALID: 'SECURITY_ARCHITECTURE_RISK_ASSESSMENT_INVALID',
+  IDENTITY_AUTHENTICATION_INVALID: 'SECURITY_ARCHITECTURE_IDENTITY_AUTHENTICATION_INVALID',
+  IDENTITY_CATEGORY_INVALID: 'SECURITY_ARCHITECTURE_IDENTITY_CATEGORY_INVALID',
+  AUTHENTICATION_POLICY_INVALID: 'SECURITY_ARCHITECTURE_AUTHENTICATION_POLICY_INVALID',
+  IDENTITY_LIFECYCLE_INVALID: 'SECURITY_ARCHITECTURE_IDENTITY_LIFECYCLE_INVALID'
 });
 
 export const SECURITY_OBJECTIVES = Object.freeze({
@@ -97,4 +101,111 @@ export const FUTURE_SECURITY_OVERVIEW_CAPABILITIES = Object.freeze({
   POST_QUANTUM_CRYPTOGRAPHY: 'Post-quantum cryptography',
   AUTONOMOUS_COMPLIANCE_VERIFICATION: 'Autonomous compliance verification',
   PREDICTIVE_RISK_ANALYSIS: 'Predictive risk analysis'
+});
+
+export const IDENTITY_OBJECTIVES = Object.freeze({
+  STRONG_IDENTITY_VERIFICATION: 'strong-identity-verification',
+  CONSISTENT_AUTHENTICATION: 'consistent-authentication',
+  FEDERATED_IDENTITY_SUPPORT: 'federated-identity-support',
+  MACHINE_IDENTITY_MANAGEMENT: 'machine-identity-management',
+  AI_IDENTITY_MANAGEMENT: 'ai-identity-management',
+  AUDITABILITY: 'auditability',
+  SCALABILITY: 'scalability',
+  VENDOR_INDEPENDENCE: 'vendor-independence'
+});
+
+export const IDENTITY_CATEGORY_NAMES = Object.freeze({
+  HUMAN_USERS: 'Human Users',
+  SERVICES: 'Services',
+  AI_AGENTS: 'AI Agents',
+  INFRASTRUCTURE: 'Infrastructure',
+  EXTERNAL_SYSTEMS: 'External Systems'
+});
+
+export const IDENTITY_ARCHITECTURE_STAGES = Object.freeze({
+  IDENTITY: 'Identity',
+  AUTHENTICATION: 'Authentication',
+  TRUST_EVALUATION: 'Trust Evaluation',
+  AUTHORIZATION: 'Authorization',
+  BUSINESS_OPERATIONS: 'Business Operations'
+});
+
+export const AUTHENTICATION_PRINCIPLES = Object.freeze({
+  EXPLICIT: 'explicit',
+  REPEATABLE: 'repeatable',
+  AUDITABLE: 'auditable',
+  SECURE: 'secure',
+  INFRASTRUCTURE_INDEPENDENT: 'infrastructure-independent'
+});
+
+export const AUTHENTICATION_FACTOR_TYPES = Object.freeze({
+  KNOWLEDGE: 'Knowledge',
+  POSSESSION: 'Possession',
+  INHERENCE: 'Inherence',
+  CRYPTOGRAPHIC: 'Cryptographic'
+});
+
+export const CREDENTIAL_MANAGEMENT_CAPABILITIES = Object.freeze({
+  SECURE_CREATION: 'secure-creation',
+  ROTATION: 'rotation',
+  EXPIRATION: 'expiration',
+  REVOCATION: 'revocation',
+  RECOVERY: 'recovery',
+  AUDITABILITY: 'auditability'
+});
+
+export const SESSION_MANAGEMENT_CAPABILITIES = Object.freeze({
+  SECURE_ESTABLISHMENT: 'secure-establishment',
+  CONTROLLED_LIFETIME: 'controlled-lifetime',
+  REAUTHENTICATION: 'reauthentication',
+  EXPLICIT_TERMINATION: 'explicit-termination',
+  AUDIT_LOGGING: 'audit-logging'
+});
+
+export const IDENTITY_LIFECYCLE_STAGES = Object.freeze({
+  PROVISION: 'Provision',
+  ACTIVATE: 'Activate',
+  AUTHENTICATE: 'Authenticate',
+  OPERATE: 'Operate',
+  SUSPEND: 'Suspend',
+  REVOKE: 'Revoke',
+  RETIRE: 'Retire'
+});
+
+export const IDENTITY_VERIFICATION_TRIGGERS = Object.freeze({
+  INITIAL_AUTHENTICATION: 'initial-authentication',
+  PRIVILEGE_ESCALATION: 'privilege-escalation',
+  SENSITIVE_TRANSACTIONS: 'sensitive-transactions',
+  ADMINISTRATIVE_OPERATIONS: 'administrative-operations',
+  CROSS_BOUNDARY_COMMUNICATION: 'cross-boundary-communication'
+});
+
+export const IDENTITY_OBSERVABILITY_EVENTS = Object.freeze({
+  AUTHENTICATION_SUCCESS: 'authentication-success',
+  AUTHENTICATION_FAILURE: 'authentication-failure',
+  SESSION_CREATION: 'session-creation',
+  SESSION_TERMINATION: 'session-termination',
+  CREDENTIAL_USAGE: 'credential-usage',
+  IDENTITY_LIFECYCLE_EVENTS: 'identity-lifecycle-events'
+});
+
+export const IDENTITY_GOVERNANCE_CONTROLS = Object.freeze({
+  IDENTITY_OWNERSHIP: 'identity-ownership',
+  PROVISIONING_STANDARDS: 'provisioning-standards',
+  CREDENTIAL_POLICIES: 'credential-policies',
+  AUTHENTICATION_POLICIES: 'authentication-policies',
+  FEDERATION_AGREEMENTS: 'federation-agreements',
+  LIFECYCLE_REVIEWS: 'lifecycle-reviews',
+  PERIODIC_AUDITS: 'periodic-audits'
+});
+
+export const FUTURE_IDENTITY_CAPABILITIES = Object.freeze({
+  PASSWORDLESS_AUTHENTICATION: 'Passwordless authentication',
+  DECENTRALIZED_IDENTITY: 'Decentralized identity (DID)',
+  VERIFIABLE_CREDENTIALS: 'Verifiable credentials',
+  CONTINUOUS_AUTHENTICATION: 'Continuous authentication',
+  RISK_ADAPTIVE_AUTHENTICATION: 'Risk-adaptive authentication',
+  HARDWARE_BACKED_IDENTITIES: 'Hardware-backed identities',
+  AI_ASSISTED_IDENTITY_VERIFICATION: 'AI-assisted identity verification',
+  POST_QUANTUM_AUTHENTICATION: 'Post-quantum authentication mechanisms'
 });
