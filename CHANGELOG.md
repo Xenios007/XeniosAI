@@ -742,3 +742,21 @@ Version: 0.38.0
 
 Status: Data Flow Architecture
 Version: 0.39.0
+
+---
+
+## [0.40.0] - ARCH-005 Future Integration Capabilities
+
+### Added
+- Future integration capability area, maturity stage, stability principle, evaluation criterion, evaluation decision, and error-code constants.
+- Immutable contracts for future integration capability candidates, evaluations, and evaluation results.
+- Future integration capability registry with documented aspirational candidates across workflow, routing, event, messaging, contract, cross-platform, multi-region, federated data, operational intelligence, AI-assisted integration, governance, and emerging technology areas.
+- Evaluation rules that accept only architecture-safe introductions preserving ownership, autonomy, contracts, observability, incremental adoption, measurable business value, and external integration isolation.
+- Dependency-injection registration through `addDataFlow`.
+- Unit tests for candidate coverage, maturity model, stability principles, placeholder status, duplicate protection, accepted/rejected evaluations, unknown candidates, area filtering, and DI access.
+
+### Established
+- Future integration governance without implementing runtime workflow intelligence, dynamic routing, event replay, contract registries, federated query engines, multi-region messaging, operational AI, or emerging technology integrations.
+
+Status: Data Flow Architecture
+Version: 0.40.0

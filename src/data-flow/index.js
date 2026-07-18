@@ -23,6 +23,11 @@ export {
   EXECUTION_RESPONSIBILITIES,
   EXECUTION_STATES,
   EXECUTION_TELEMETRY_FIELDS,
+  FUTURE_INTEGRATION_CAPABILITY_AREAS,
+  FUTURE_INTEGRATION_EVALUATION_CRITERIA,
+  FUTURE_INTEGRATION_EVALUATION_DECISIONS,
+  FUTURE_INTEGRATION_MATURITY_STAGES,
+  FUTURE_INTEGRATION_STABILITY_PRINCIPLES,
   MESSAGE_DELIVERY_MODELS,
   MESSAGE_PROCESSING_STATUSES,
   MESSAGE_RETRY_POLICIES,
@@ -83,6 +88,9 @@ export { ExecutionLifecycleStage } from './contracts/execution-lifecycle-stage.j
 export { ExecutionParticipant } from './contracts/execution-participant.js';
 export { ExecutionTelemetryRecord } from './contracts/execution-telemetry-record.js';
 export { ExecutionValidationResult } from './contracts/execution-validation-result.js';
+export { FutureIntegrationCapabilityCandidate } from './contracts/future-integration-capability-candidate.js';
+export { FutureIntegrationCapabilityEvaluation } from './contracts/future-integration-capability-evaluation.js';
+export { FutureIntegrationCapabilityEvaluationResult } from './contracts/future-integration-capability-evaluation-result.js';
 export { MessageContract } from './contracts/message-contract.js';
 export { MessageEnvelope } from './contracts/message-envelope.js';
 export { MessageLifecycleStage } from './contracts/message-lifecycle-stage.js';
@@ -118,6 +126,7 @@ export { ApiContractDescriptor } from './apis/api-contract-descriptor.js';
 export { CommandFlowDescriptor } from './commands/command-flow-descriptor.js';
 export { EventFlowDescriptor } from './events/event-flow-descriptor.js';
 export { ExecutionOverviewDescriptor } from './execution/execution-overview-descriptor.js';
+export { FutureIntegrationCapabilityRegistry } from './future/future-integration-capability-registry.js';
 export { ServiceIntegrationDescriptor } from './integrations/service-integration-descriptor.js';
 export { MessagingPatternsDescriptor } from './messaging/messaging-patterns-descriptor.js';
 export { QueryFlowDescriptor } from './queries/query-flow-descriptor.js';

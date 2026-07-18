@@ -47,7 +47,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-005-07 API Contracts`
 - Completed: `ARCH-005-08 Messaging Patterns`
 - Completed: `ARCH-005-09 Transaction Boundaries`
-- Next: `ARCH-005-10 Future Integration Capabilities`
+- Completed: `ARCH-005-10 Future Integration Capabilities`
+- Next: `ARCH-006-01 Domain Overview`
 
 ## Notes
 

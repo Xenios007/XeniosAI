@@ -97,5 +97,6 @@ The repository currently includes automated unit tests for:
 - `ARCH-005-07 API Contracts` in `tests/data-flow/`
 - `ARCH-005-08 Messaging Patterns` in `tests/data-flow/`
 - `ARCH-005-09 Transaction Boundaries` in `tests/data-flow/`
+- `ARCH-005-10 Future Integration Capabilities` in `tests/data-flow/`
 
 These tests validate reusable platform capabilities and channel-facing behavior without introducing business logic.
