@@ -235,3 +235,20 @@ Version: 0.10.0
 
 Status: Service Map Architecture
 Version: 0.11.0
+
+---
+
+## [0.12.0] - ARCH-003 Service Catalog
+
+### Added
+- Service catalog entries for all ten ARCH-003 services.
+- Immutable catalog contract covering purpose, primary domain, responsibility, ownership concepts, provided capabilities, dependencies, and consumers.
+- Service catalog lookup and listing service.
+- Dependency-injection registration for `ServiceCatalog`.
+- Unit tests for catalog completeness, documented service facts, duplicate protection, missing lookups, and DI access.
+
+### Established
+- Executable service catalog aligned with ARCH-003-02 without implementing later ownership, dependency, communication, lifecycle, or governance behavior.
+
+Status: Service Map Architecture
+Version: 0.12.0

@@ -1,4 +1,5 @@
 import { ServiceCollection } from '../foundation/di/service-collection.js';
+import { ServiceCatalog } from './catalog/service-catalog.js';
 import { ServiceLandscape } from './landscape/service-landscape.js';
 
 export function addServiceMap(services) {
@@ -11,6 +12,7 @@ export function addServiceMap(services) {
       clock: provider.getRequiredService('Clock')
     })
   );
+  services.registerSingleton('ServiceCatalog', () => new ServiceCatalog());
 
   return services;
 }
