@@ -1,4 +1,5 @@
 import { ServiceCollection } from '../foundation/di/service-collection.js';
+import { ApiContractDescriptor } from './apis/api-contract-descriptor.js';
 import { CommandFlowDescriptor } from './commands/command-flow-descriptor.js';
 import { EventFlowDescriptor } from './events/event-flow-descriptor.js';
 import { ExecutionOverviewDescriptor } from './execution/execution-overview-descriptor.js';
@@ -11,6 +12,7 @@ export function addDataFlow(services) {
     throw new Error('addDataFlow expects an instance of ServiceCollection.');
   }
 
+  services.registerSingleton('ApiContractDescriptor', () => new ApiContractDescriptor());
   services.registerSingleton('CommandFlowDescriptor', () => new CommandFlowDescriptor());
   services.registerSingleton('EventFlowDescriptor', () => new EventFlowDescriptor());
   services.registerSingleton('ExecutionOverviewDescriptor', () => new ExecutionOverviewDescriptor());

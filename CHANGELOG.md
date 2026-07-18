@@ -688,3 +688,21 @@ Version: 0.35.0
 
 Status: Data Flow Architecture
 Version: 0.36.0
+
+---
+
+## [0.37.0] - ARCH-005 API Contracts
+
+### Added
+- Canonical API contract lifecycle constants for all ARCH-005-07 stages.
+- API contract characteristic, compatibility, error category, security requirement, pagination strategy, response status, telemetry, and error-code constants.
+- Immutable contracts for API lifecycle stages, contract definitions, requests, responses, errors, telemetry, and validation results.
+- API contract descriptor for lifecycle validation, ownership validation, request validation, response validation, error contract validation, compatibility validation, implementation-independence checks, and telemetry validation.
+- Dependency-injection registration through `addDataFlow`.
+- Unit tests for lifecycle order, stability metadata, ownership examples, skipped stages, contract validation, immutable requests, request validation, response validation, pagination metadata, compatibility rules, telemetry validation, and DI access.
+
+### Established
+- API contract governance without implementing REST, GraphQL, RPC, gateways, schema registries, automatic client generation, or contract testing infrastructure.
+
+Status: Data Flow Architecture
+Version: 0.37.0

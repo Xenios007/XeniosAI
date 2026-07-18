@@ -44,7 +44,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-005-04 Event Flow`
 - Completed: `ARCH-005-05 Workflow Orchestration`
 - Completed: `ARCH-005-06 Service Integration`
-- Next: `ARCH-005-07 API Contracts`
+- Completed: `ARCH-005-07 API Contracts`
+- Next: `ARCH-005-08 Messaging Patterns`
 
 ## Notes
 

@@ -94,5 +94,6 @@ The repository currently includes automated unit tests for:
 - `ARCH-005-04 Event Flow` in `tests/data-flow/`
 - `ARCH-005-05 Workflow Orchestration` in `tests/data-flow/`
 - `ARCH-005-06 Service Integration` in `tests/data-flow/`
+- `ARCH-005-07 API Contracts` in `tests/data-flow/`
 
 These tests validate reusable platform capabilities and channel-facing behavior without introducing business logic.

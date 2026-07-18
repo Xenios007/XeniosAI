@@ -349,6 +349,79 @@ export const SERVICE_INTEGRATION_TELEMETRY_FIELDS = Object.freeze({
   FAILURE_REASON: 'failureReason'
 });
 
+export const API_CONTRACT_LIFECYCLE_STAGES = Object.freeze({
+  CLIENT_REQUEST: 'client-request',
+  GATEWAY_VALIDATION: 'gateway-validation',
+  AUTHORIZATION: 'authorization',
+  CONTRACT_VALIDATION: 'contract-validation',
+  BUSINESS_EXECUTION: 'business-execution',
+  RESPONSE_CONSTRUCTION: 'response-construction',
+  RESPONSE_VALIDATION: 'response-validation',
+  RETURN_RESPONSE: 'return-response'
+});
+
+export const API_CONTRACT_CHARACTERISTICS = Object.freeze({
+  EXPLICIT: 'explicit',
+  VERSIONED: 'versioned',
+  STABLE: 'stable',
+  CAPABILITY_BASED: 'capability-based',
+  OWNER_PRESERVING: 'owner-preserving',
+  INDEPENDENTLY_EVOLVABLE: 'independently-evolvable'
+});
+
+export const API_COMPATIBILITY_TYPES = Object.freeze({
+  BACKWARD_COMPATIBLE: 'backward-compatible',
+  BREAKING_CHANGE: 'breaking-change',
+  DEPRECATED: 'deprecated',
+  PARALLEL_SUPPORTED: 'parallel-supported'
+});
+
+export const API_ERROR_CATEGORIES = Object.freeze({
+  VALIDATION: 'validation',
+  AUTHENTICATION: 'authentication',
+  AUTHORIZATION: 'authorization',
+  BUSINESS: 'business',
+  NOT_FOUND: 'not-found',
+  CONFLICT: 'conflict',
+  SYSTEM: 'system'
+});
+
+export const API_SECURITY_REQUIREMENTS = Object.freeze({
+  AUTHENTICATION: 'authentication',
+  AUTHORIZATION: 'authorization',
+  INPUT_VALIDATION: 'input-validation',
+  CONFIDENTIALITY: 'confidentiality',
+  INTEGRITY: 'integrity',
+  AUDITABILITY: 'auditability'
+});
+
+export const API_PAGINATION_STRATEGIES = Object.freeze({
+  OFFSET: 'offset',
+  CURSOR: 'cursor',
+  TOKEN: 'token'
+});
+
+export const API_RESPONSE_STATUSES = Object.freeze({
+  SUCCESS: 'success',
+  VALIDATION_FAILURE: 'validation-failure',
+  AUTHENTICATION_FAILURE: 'authentication-failure',
+  AUTHORIZATION_FAILURE: 'authorization-failure',
+  BUSINESS_FAILURE: 'business-failure',
+  NOT_FOUND: 'not-found',
+  CONFLICT: 'conflict',
+  SYSTEM_FAILURE: 'system-failure'
+});
+
+export const API_TELEMETRY_FIELDS = Object.freeze({
+  CORRELATION_ID: 'correlationId',
+  REQUEST_ID: 'requestId',
+  SERVICE_NAME: 'serviceName',
+  OPERATION: 'operation',
+  RESPONSE_TIME: 'responseTimeMs',
+  RESULT: 'result',
+  ERROR_INFORMATION: 'errorInformation'
+});
+
 export const DATA_FLOW_ERROR_CODES = Object.freeze({
   EXECUTION_STAGE_NOT_FOUND: 'DATA_FLOW_EXECUTION_STAGE_NOT_FOUND',
   EXECUTION_PARTICIPANT_NOT_FOUND: 'DATA_FLOW_EXECUTION_PARTICIPANT_NOT_FOUND',
@@ -387,5 +460,12 @@ export const DATA_FLOW_ERROR_CODES = Object.freeze({
   SERVICE_INTEGRATION_REQUEST_INVALID: 'DATA_FLOW_SERVICE_INTEGRATION_REQUEST_INVALID',
   SERVICE_INTEGRATION_RESPONSE_INVALID: 'DATA_FLOW_SERVICE_INTEGRATION_RESPONSE_INVALID',
   SERVICE_INTEGRATION_BOUNDARY_INVALID: 'DATA_FLOW_SERVICE_INTEGRATION_BOUNDARY_INVALID',
-  SERVICE_INTEGRATION_TELEMETRY_INVALID: 'DATA_FLOW_SERVICE_INTEGRATION_TELEMETRY_INVALID'
+  SERVICE_INTEGRATION_TELEMETRY_INVALID: 'DATA_FLOW_SERVICE_INTEGRATION_TELEMETRY_INVALID',
+  API_CONTRACT_STAGE_NOT_FOUND: 'DATA_FLOW_API_CONTRACT_STAGE_NOT_FOUND',
+  API_CONTRACT_LIFECYCLE_INVALID: 'DATA_FLOW_API_CONTRACT_LIFECYCLE_INVALID',
+  API_CONTRACT_DEFINITION_INVALID: 'DATA_FLOW_API_CONTRACT_DEFINITION_INVALID',
+  API_REQUEST_INVALID: 'DATA_FLOW_API_REQUEST_INVALID',
+  API_RESPONSE_INVALID: 'DATA_FLOW_API_RESPONSE_INVALID',
+  API_COMPATIBILITY_INVALID: 'DATA_FLOW_API_COMPATIBILITY_INVALID',
+  API_TELEMETRY_INVALID: 'DATA_FLOW_API_TELEMETRY_INVALID'
 });

@@ -1,4 +1,12 @@
 export {
+  API_COMPATIBILITY_TYPES,
+  API_CONTRACT_CHARACTERISTICS,
+  API_CONTRACT_LIFECYCLE_STAGES,
+  API_ERROR_CATEGORIES,
+  API_PAGINATION_STRATEGIES,
+  API_RESPONSE_STATUSES,
+  API_SECURITY_REQUIREMENTS,
+  API_TELEMETRY_FIELDS,
   COMMAND_CHARACTERISTICS,
   COMMAND_FAILURE_TYPES,
   COMMAND_LIFECYCLE_STAGES,
@@ -36,6 +44,13 @@ export {
   WORKFLOW_TELEMETRY_FIELDS,
   WORKFLOW_TIMEOUT_ACTIONS
 } from './constants.js';
+export { ApiContractDefinition } from './contracts/api-contract-definition.js';
+export { ApiErrorContract } from './contracts/api-error-contract.js';
+export { ApiLifecycleStage } from './contracts/api-lifecycle-stage.js';
+export { ApiRequestContract } from './contracts/api-request-contract.js';
+export { ApiResponseContract } from './contracts/api-response-contract.js';
+export { ApiTelemetryRecord } from './contracts/api-telemetry-record.js';
+export { ApiValidationResult } from './contracts/api-validation-result.js';
 export { CommandDefinition } from './contracts/command-definition.js';
 export { CommandEnvelope } from './contracts/command-envelope.js';
 export { CommandLifecycleStage } from './contracts/command-lifecycle-stage.js';
@@ -71,6 +86,7 @@ export { WorkflowStep } from './contracts/workflow-step.js';
 export { WorkflowStepOutcome } from './contracts/workflow-step-outcome.js';
 export { WorkflowTelemetryRecord } from './contracts/workflow-telemetry-record.js';
 export { WorkflowValidationResult } from './contracts/workflow-validation-result.js';
+export { ApiContractDescriptor } from './apis/api-contract-descriptor.js';
 export { CommandFlowDescriptor } from './commands/command-flow-descriptor.js';
 export { EventFlowDescriptor } from './events/event-flow-descriptor.js';
 export { ExecutionOverviewDescriptor } from './execution/execution-overview-descriptor.js';
