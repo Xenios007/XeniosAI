@@ -288,6 +288,64 @@ export const AGENT_TELEMETRY_FIELDS = Object.freeze({
   DECISION_HISTORY: 'decisionHistory'
 });
 
+export const FAILURE_RECOVERY_STAGES = Object.freeze({
+  FAILURE_DETECTED: 'failure-detected',
+  CLASSIFY_FAILURE: 'classify-failure',
+  DETERMINE_SEVERITY: 'determine-severity',
+  SELECT_RECOVERY_STRATEGY: 'select-recovery-strategy',
+  EXECUTE_RECOVERY: 'execute-recovery',
+  VALIDATE_RECOVERY: 'validate-recovery',
+  RESUME_OR_ESCALATE: 'resume-or-escalate'
+});
+
+export const FAILURE_CATEGORIES = Object.freeze({
+  REASONING: 'reasoning-failure',
+  TOOL: 'tool-failure',
+  BUSINESS: 'business-failure',
+  POLICY: 'policy-failure',
+  MEMORY: 'memory-failure',
+  KNOWLEDGE: 'knowledge-failure',
+  WORKFLOW: 'workflow-failure',
+  INFRASTRUCTURE: 'infrastructure-failure',
+  EXTERNAL_PROVIDER: 'external-provider-failure'
+});
+
+export const FAILURE_SEVERITIES = Object.freeze({
+  LOW: 'low',
+  MEDIUM: 'medium',
+  HIGH: 'high',
+  CRITICAL: 'critical'
+});
+
+export const RECOVERY_STRATEGIES = Object.freeze({
+  RETRY: 'retry',
+  FALLBACK: 'fallback',
+  ALTERNATIVE_TOOL: 'alternative-tool',
+  CLARIFICATION: 'clarification',
+  PARTIAL_COMPLETION: 'partial-completion',
+  WORKFLOW_ROLLBACK: 'workflow-rollback',
+  ESCALATION: 'escalation',
+  SAFE_TERMINATION: 'safe-termination'
+});
+
+export const RECOVERY_OUTCOMES = Object.freeze({
+  RESUME: 'resume',
+  ESCALATE: 'escalate',
+  CONTROLLED_RESPONSE: 'controlled-response',
+  TERMINATE_SAFELY: 'terminate-safely'
+});
+
+export const FAILURE_TELEMETRY_FIELDS = Object.freeze({
+  FAILURE_CATEGORY: 'failureCategory',
+  SEVERITY: 'severity',
+  COMPONENT: 'component',
+  RECOVERY_STRATEGY: 'recoveryStrategy',
+  RECOVERY_RESULT: 'recoveryResult',
+  DURATION: 'durationMs',
+  CORRELATION_ID: 'correlationId',
+  TIMESTAMP: 'timestamp'
+});
+
 export const ORCHESTRATION_DECISIONS = Object.freeze({
   CONSULT_MEMORY: 'consult-memory',
   RETRIEVE_KNOWLEDGE: 'retrieve-knowledge',
@@ -322,5 +380,8 @@ export const ORCHESTRATOR_ERROR_CODES = Object.freeze({
   DECISION_PROPOSAL_INVALID: 'ORCHESTRATOR_DECISION_PROPOSAL_INVALID',
   AGENT_COORDINATION_STAGE_NOT_FOUND: 'ORCHESTRATOR_AGENT_STAGE_NOT_FOUND',
   AGENT_SELECTION_INVALID: 'ORCHESTRATOR_AGENT_SELECTION_INVALID',
-  AGENT_OUTPUT_INVALID: 'ORCHESTRATOR_AGENT_OUTPUT_INVALID'
+  AGENT_OUTPUT_INVALID: 'ORCHESTRATOR_AGENT_OUTPUT_INVALID',
+  FAILURE_RECOVERY_STAGE_NOT_FOUND: 'ORCHESTRATOR_FAILURE_STAGE_NOT_FOUND',
+  FAILURE_EVENT_INVALID: 'ORCHESTRATOR_FAILURE_EVENT_INVALID',
+  RECOVERY_PLAN_INVALID: 'ORCHESTRATOR_RECOVERY_PLAN_INVALID'
 });

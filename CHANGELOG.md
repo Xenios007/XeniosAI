@@ -543,3 +543,21 @@ Version: 0.27.0
 
 Status: AI Orchestrator Architecture
 Version: 0.28.0
+
+---
+
+## [0.29.0] - ARCH-004 Failure Recovery
+
+### Added
+- Canonical failure recovery lifecycle constants for all ARCH-004-09 stages.
+- Failure category, severity, recovery strategy, recovery outcome, and telemetry field constants.
+- Immutable contracts for failure events, recovery plans, recovery results, recovery telemetry, lifecycle stages, and validation results.
+- Failure recovery coordinator for classification, severity determination, deterministic strategy selection, isolated recovery planning, validation, outcome selection, and telemetry.
+- Dependency-injection registration for `FailureRecoveryCoordinator`.
+- Unit tests for lifecycle order, categories, severities, strategies, outcomes, telemetry, classification, severity determination, strategy selection, planning, validation, recovery outcomes, invalid events, and DI access.
+
+### Established
+- Deterministic failure recovery governance without implementing infrastructure failover, provider switching, workflow rollback internals, operator notification systems, predictive detection, or service-internal error handling.
+
+Status: AI Orchestrator Architecture
+Version: 0.29.0
