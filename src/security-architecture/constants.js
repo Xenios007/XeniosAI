@@ -30,7 +30,11 @@ export const SECURITY_ARCHITECTURE_ERROR_CODES = Object.freeze({
   PLATFORM_SUPPLY_CHAIN_SECURITY_INVALID: 'SECURITY_ARCHITECTURE_PLATFORM_SUPPLY_CHAIN_SECURITY_INVALID',
   SOFTWARE_DELIVERY_SECURITY_PROFILE_INVALID: 'SECURITY_ARCHITECTURE_SOFTWARE_DELIVERY_SECURITY_PROFILE_INVALID',
   DEPENDENCY_ARTIFACT_GOVERNANCE_INVALID: 'SECURITY_ARCHITECTURE_DEPENDENCY_ARTIFACT_GOVERNANCE_INVALID',
-  PLATFORM_OPERATIONAL_SECURITY_INVALID: 'SECURITY_ARCHITECTURE_PLATFORM_OPERATIONAL_SECURITY_INVALID'
+  PLATFORM_OPERATIONAL_SECURITY_INVALID: 'SECURITY_ARCHITECTURE_PLATFORM_OPERATIONAL_SECURITY_INVALID',
+  COMPLIANCE_GOVERNANCE_INVALID: 'SECURITY_ARCHITECTURE_COMPLIANCE_GOVERNANCE_INVALID',
+  SECURITY_GOVERNANCE_PROFILE_INVALID: 'SECURITY_ARCHITECTURE_SECURITY_GOVERNANCE_PROFILE_INVALID',
+  AUDIT_COMPLIANCE_POLICY_INVALID: 'SECURITY_ARCHITECTURE_AUDIT_COMPLIANCE_POLICY_INVALID',
+  GOVERNANCE_IMPROVEMENT_POLICY_INVALID: 'SECURITY_ARCHITECTURE_GOVERNANCE_IMPROVEMENT_POLICY_INVALID'
 });
 
 export const SECURITY_OBJECTIVES = Object.freeze({
@@ -1289,4 +1293,200 @@ export const FUTURE_PLATFORM_SUPPLY_CHAIN_SECURITY_CAPABILITIES = Object.freeze(
   CONFIDENTIAL_BUILD_ENVIRONMENTS: 'Confidential build environments',
   AUTONOMOUS_VULNERABILITY_REMEDIATION: 'Autonomous vulnerability remediation',
   CRYPTOGRAPHIC_VERIFICATION_OF_AI_MODEL_PROVENANCE: 'Cryptographic verification of AI model provenance'
+});
+
+export const COMPLIANCE_GOVERNANCE_OBJECTIVES = Object.freeze({
+  CLEAR_ACCOUNTABILITY: 'clear-accountability',
+  POLICY_CONSISTENCY: 'policy-consistency',
+  RISK_VISIBILITY: 'risk-visibility',
+  REGULATORY_ALIGNMENT: 'regulatory-alignment',
+  AUDIT_READINESS: 'audit-readiness',
+  OPERATIONAL_TRANSPARENCY: 'operational-transparency',
+  CONTINUOUS_IMPROVEMENT: 'continuous-improvement',
+  ENTERPRISE_RESILIENCE: 'enterprise-resilience'
+});
+
+export const GOVERNANCE_DOMAIN_STAGES = Object.freeze({
+  POLICIES: 'Policies',
+  STANDARDS: 'Standards',
+  CONTROLS: 'Controls',
+  MONITORING: 'Monitoring',
+  AUDITING: 'Auditing',
+  COMPLIANCE: 'Compliance',
+  IMPROVEMENT: 'Improvement'
+});
+
+export const GOVERNANCE_PRINCIPLES = Object.freeze({
+  ACCOUNTABILITY: 'accountability',
+  TRANSPARENCY: 'transparency',
+  CONSISTENCY: 'consistency',
+  CONTINUOUS_IMPROVEMENT: 'continuous-improvement'
+});
+
+export const SECURITY_RESPONSIBILITY_AREAS = Object.freeze({
+  IDENTITY_GOVERNANCE: 'identity-governance',
+  AI_GOVERNANCE: 'ai-governance',
+  INFRASTRUCTURE_GOVERNANCE: 'infrastructure-governance',
+  DATA_GOVERNANCE: 'data-governance',
+  INCIDENT_MANAGEMENT: 'incident-management',
+  COMPLIANCE_OVERSIGHT: 'compliance-oversight'
+});
+
+export const TRANSPARENCY_SUPPORT_AREAS = Object.freeze({
+  INTERNAL_REVIEW: 'internal-review',
+  EXECUTIVE_OVERSIGHT: 'executive-oversight',
+  REGULATORY_REPORTING: 'regulatory-reporting',
+  CUSTOMER_TRUST: 'customer-trust',
+  INCIDENT_INVESTIGATIONS: 'incident-investigations'
+});
+
+export const GOVERNANCE_APPLICATION_DOMAINS = Object.freeze({
+  BUSINESS_SERVICES: 'business-services',
+  AI_SYSTEMS: 'ai-systems',
+  INFRASTRUCTURE: 'infrastructure',
+  DEVELOPMENT: 'development',
+  OPERATIONS: 'operations',
+  THIRD_PARTY_INTEGRATIONS: 'third-party-integrations'
+});
+
+export const POLICY_MANAGEMENT_STAGES = Object.freeze({
+  POLICY_CREATION: 'policy-creation',
+  APPROVAL: 'approval',
+  PUBLICATION: 'publication',
+  REVIEW: 'review',
+  REVISION: 'revision',
+  RETIREMENT: 'retirement'
+});
+
+export const POLICY_CONTROL_HIERARCHY_STAGES = Object.freeze({
+  POLICY: 'Policy',
+  STANDARD: 'Standard',
+  CONTROL: 'Control',
+  VERIFICATION: 'Verification'
+});
+
+export const RISK_GOVERNANCE_ACTIVITIES = Object.freeze({
+  RISK_IDENTIFICATION: 'risk-identification',
+  RISK_ANALYSIS: 'risk-analysis',
+  RISK_PRIORITIZATION: 'risk-prioritization',
+  RISK_TREATMENT: 'risk-treatment',
+  RISK_MONITORING: 'risk-monitoring',
+  RISK_ACCEPTANCE: 'risk-acceptance'
+});
+
+export const COMPLIANCE_OBLIGATION_TYPES = Object.freeze({
+  PRIVACY_REGULATIONS: 'privacy-regulations',
+  INFORMATION_SECURITY_FRAMEWORKS: 'information-security-frameworks',
+  INDUSTRY_STANDARDS: 'industry-standards',
+  CUSTOMER_CONTRACTUAL_REQUIREMENTS: 'customer-contractual-requirements',
+  INTERNAL_ORGANIZATIONAL_POLICIES: 'internal-organizational-policies'
+});
+
+export const AUDIT_EVIDENCE_TYPES = Object.freeze({
+  SECURITY_LOGS: 'security-logs',
+  CONFIGURATION_HISTORY: 'configuration-history',
+  IDENTITY_RECORDS: 'identity-records',
+  AUTHORIZATION_DECISIONS: 'authorization-decisions',
+  AI_ACTIVITY_RECORDS: 'ai-activity-records',
+  DEPLOYMENT_HISTORY: 'deployment-history',
+  ADMINISTRATIVE_ACTIONS: 'administrative-actions'
+});
+
+export const DATA_GOVERNANCE_ACTIVITIES = Object.freeze({
+  DATA_CLASSIFICATION: 'data-classification',
+  OWNERSHIP_ASSIGNMENT: 'ownership-assignment',
+  RETENTION_POLICIES: 'retention-policies',
+  ACCESS_REVIEWS: 'access-reviews',
+  PRIVACY_ASSESSMENTS: 'privacy-assessments',
+  DISPOSAL_VALIDATION: 'disposal-validation'
+});
+
+export const COMPLIANCE_AI_GOVERNANCE_ACTIVITIES = Object.freeze({
+  MODEL_APPROVAL: 'model-approval',
+  CAPABILITY_ASSESSMENT: 'capability-assessment',
+  RISK_CLASSIFICATION: 'risk-classification',
+  HUMAN_OVERSIGHT: 'human-oversight',
+  PROMPT_GOVERNANCE: 'prompt-governance',
+  AGENT_GOVERNANCE: 'agent-governance',
+  OPERATIONAL_REVIEW: 'operational-review'
+});
+
+export const THIRD_PARTY_GOVERNANCE_CRITERIA = Object.freeze({
+  SECURITY_POSTURE: 'security-posture',
+  COMPLIANCE_COMMITMENTS: 'compliance-commitments',
+  OPERATIONAL_RESILIENCE: 'operational-resilience',
+  CONTRACTUAL_OBLIGATIONS: 'contractual-obligations',
+  DATA_HANDLING_PRACTICES: 'data-handling-practices'
+});
+
+export const SECURITY_METRIC_TYPES = Object.freeze({
+  AUTHENTICATION_SUCCESS_RATES: 'authentication-success-rates',
+  POLICY_COMPLIANCE: 'policy-compliance',
+  INCIDENT_FREQUENCY: 'incident-frequency',
+  VULNERABILITY_REMEDIATION_TIME: 'vulnerability-remediation-time',
+  SECRET_ROTATION_COMPLIANCE: 'secret-rotation-compliance',
+  ACCESS_REVIEW_COMPLETION: 'access-review-completion',
+  AI_POLICY_ADHERENCE: 'ai-policy-adherence'
+});
+
+export const GOVERNANCE_LIFECYCLE_STAGES = Object.freeze({
+  DEFINE: 'Define',
+  IMPLEMENT: 'Implement',
+  MONITOR: 'Monitor',
+  AUDIT: 'Audit',
+  IMPROVE: 'Improve',
+  REPEAT: 'Repeat'
+});
+
+export const INCIDENT_GOVERNANCE_STAGES = Object.freeze({
+  DETECTION: 'detection',
+  ESCALATION: 'escalation',
+  INVESTIGATION: 'investigation',
+  COMMUNICATION: 'communication',
+  RECOVERY: 'recovery',
+  POST_INCIDENT_REVIEW: 'post-incident-review'
+});
+
+export const ORGANIZATIONAL_RESPONSIBILITY_ASSIGNMENTS = Object.freeze({
+  SECURITY_STRATEGY: 'Security Architecture',
+  IDENTITY_GOVERNANCE: 'Identity Platform',
+  AI_GOVERNANCE: 'AI Platform',
+  INFRASTRUCTURE_GOVERNANCE: 'Platform Operations',
+  DATA_GOVERNANCE: 'Data Owners',
+  COMPLIANCE_OVERSIGHT: 'Governance Team',
+  RISK_MANAGEMENT: 'Security Leadership'
+});
+
+export const GOVERNANCE_OBSERVABILITY_EVENTS = Object.freeze({
+  POLICY_CHANGES: 'policy-changes',
+  ADMINISTRATIVE_ACTIONS: 'administrative-actions',
+  AUDIT_EVENTS: 'audit-events',
+  COMPLIANCE_STATUS: 'compliance-status',
+  RISK_INDICATORS: 'risk-indicators',
+  AI_GOVERNANCE_EVENTS: 'ai-governance-events',
+  SECURITY_EXCEPTIONS: 'security-exceptions'
+});
+
+export const COMPLIANCE_GOVERNANCE_RELATIONSHIP_FLOW_STAGES = Object.freeze({
+  IDENTITY: 'Identity',
+  AUTHENTICATION: 'Authentication',
+  AUTHORIZATION: 'Authorization',
+  ZERO_TRUST: 'Zero Trust',
+  SECRETS: 'Secrets',
+  CRYPTOGRAPHY: 'Cryptography',
+  AI_SECURITY: 'AI Security',
+  PLATFORM_SECURITY: 'Platform Security',
+  GOVERNANCE: 'Governance',
+  CONTINUOUS_IMPROVEMENT: 'Continuous Improvement'
+});
+
+export const FUTURE_COMPLIANCE_GOVERNANCE_CAPABILITIES = Object.freeze({
+  AI_ASSISTED_COMPLIANCE_VALIDATION: 'AI-assisted compliance validation',
+  CONTINUOUS_CONTROL_MONITORING: 'Continuous control monitoring',
+  AUTOMATED_POLICY_VERIFICATION: 'Automated policy verification',
+  REAL_TIME_RISK_SCORING: 'Real-time risk scoring',
+  PREDICTIVE_GOVERNANCE_ANALYTICS: 'Predictive governance analytics',
+  AUTONOMOUS_EVIDENCE_COLLECTION: 'Autonomous evidence collection',
+  POLICY_AS_CODE_GOVERNANCE: 'Policy-as-code governance',
+  ADAPTIVE_COMPLIANCE_REPORTING: 'Adaptive compliance reporting'
 });

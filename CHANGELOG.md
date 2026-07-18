@@ -1239,3 +1239,20 @@ Version: 0.67.0
 
 Status: Security Architecture
 Version: 0.68.0
+
+---
+
+## [0.69.0] - ARCH-008 Compliance & Governance
+
+### Added
+- Compliance and governance objective, domain, principle, responsibility, transparency, application domain, policy management, hierarchy, risk, compliance obligation, audit evidence, data governance, AI governance, third-party governance, metric, lifecycle, incident governance, organizational responsibility, observability, relationship flow, future capability, and error-code constants.
+- Immutable contracts for security governance profiles, audit and compliance policies, governance improvement policies, and validation results.
+- Compliance and governance descriptor for documented metadata, governance profile validation, audit/compliance validation, improvement policy validation, and future capability placeholders.
+- Dependency-injection registration through `addSecurityArchitecture`.
+- Unit tests for governance domains, principles, accountability, transparency, policy hierarchy, risk governance, audit readiness, data governance, AI governance, third-party governance, metrics, continuous improvement, incident governance, future placeholders, incomplete metadata validation, and DI access.
+
+### Established
+- Compliance and governance architecture without implementing legal interpretations, certification procedures, regulatory implementation guidance, organization-specific compliance programs, GRC products, or vendor-specific governance tooling.
+
+Status: Security Architecture
+Version: 0.69.0
