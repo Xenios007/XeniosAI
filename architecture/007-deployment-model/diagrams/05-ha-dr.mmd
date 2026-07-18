@@ -1,0 +1,60 @@
+flowchart TB
+
+subgraph High Availability
+
+Traffic[Incoming Traffic]
+
+LB[Load Balancer]
+
+S1[Service Instance A]
+
+S2[Service Instance B]
+
+Health[Health Monitoring]
+
+Recovery[Automatic Recovery]
+
+Traffic --> LB
+
+LB --> S1
+LB --> S2
+
+S1 --> Health
+S2 --> Health
+
+Health --> Recovery
+
+Recovery --> S1
+Recovery --> S2
+
+end
+
+subgraph Disaster Recovery
+
+Backup[Backups]
+
+Replica[Replication]
+
+Infra[Infrastructure Recovery]
+
+Apps[Application Recovery]
+
+Data[Data Recovery]
+
+Validation[Business Validation]
+
+Operations[Normal Operations]
+
+Backup --> Data
+
+Replica --> Data
+
+Infra --> Apps
+
+Apps --> Data
+
+Data --> Validation
+
+Validation --> Operations
+
+end

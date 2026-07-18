@@ -1,0 +1,55 @@
+flowchart TB
+
+Internet((Internet))
+
+subgraph Edge Zone
+Edge[Edge Gateway]
+end
+
+subgraph Gateway Zone
+API[API Gateway]
+end
+
+subgraph Application Zone
+App1[Business Services]
+App2[Workflow Services]
+end
+
+subgraph AI Zone
+AI[AI Services]
+end
+
+subgraph Infrastructure Zone
+MSG[Messaging]
+CFG[Configuration]
+OBS[Observability]
+end
+
+subgraph Data Zone
+DB[(Database)]
+VS[(Vector Store)]
+IDX[(Search Index)]
+OBJ[(Object Storage)]
+end
+
+Internet --> Edge
+Edge --> API
+
+API --> App1
+API --> App2
+
+App1 <--> App2
+
+App1 --> AI
+App2 --> AI
+
+App1 --> DB
+App1 --> IDX
+AI --> VS
+App1 --> OBJ
+
+App1 --> MSG
+App1 --> CFG
+App1 --> OBS
+
+AI --> OBS

@@ -1,0 +1,23 @@
+flowchart TB
+
+Service[Business Services]
+
+Service --> TX[(Transactional Storage)]
+
+TX --> Search[(Search Index)]
+
+TX --> Vector[(Vector Store)]
+
+TX --> Object[(Object Storage)]
+
+TX --> Analytics[(Analytics)]
+
+TX --> Backup[(Backup)]
+
+Search --> Users[Search Queries]
+
+Vector --> AI[AI Retrieval]
+
+Analytics --> Reports[Dashboards]
+
+Backup --> Recovery[Disaster Recovery]

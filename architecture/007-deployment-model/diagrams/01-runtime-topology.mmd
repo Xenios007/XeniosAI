@@ -1,0 +1,57 @@
+flowchart TB
+
+A[Client Applications]
+
+subgraph Edge
+B[Edge Layer]
+end
+
+subgraph Gateway
+C[API Gateway]
+end
+
+subgraph Business
+D[Application Services]
+E[Domain Services]
+end
+
+subgraph AI
+F[AI Orchestrator]
+G[AI Agents]
+H[Knowledge Retrieval]
+end
+
+subgraph Platform
+I[Infrastructure Services]
+J[Messaging]
+K[Configuration]
+L[Monitoring]
+end
+
+subgraph Data
+M[Transactional Storage]
+N[Search Storage]
+O[Vector Storage]
+P[Object Storage]
+end
+
+A --> B
+B --> C
+C --> D
+D --> E
+
+D --> F
+F --> G
+F --> H
+
+E --> I
+F --> I
+
+I --> J
+I --> K
+I --> L
+
+E --> M
+H --> O
+E --> N
+E --> P
