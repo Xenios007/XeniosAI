@@ -33,7 +33,11 @@ export const DEPLOYMENT_MODEL_ERROR_CODES = Object.freeze({
   HIGH_AVAILABILITY_INVALID: 'DEPLOYMENT_MODEL_HIGH_AVAILABILITY_INVALID',
   AVAILABILITY_COMPONENT_INVALID: 'DEPLOYMENT_MODEL_AVAILABILITY_COMPONENT_INVALID',
   FAILURE_DOMAIN_INVALID: 'DEPLOYMENT_MODEL_FAILURE_DOMAIN_INVALID',
-  DEGRADATION_STRATEGY_INVALID: 'DEPLOYMENT_MODEL_DEGRADATION_STRATEGY_INVALID'
+  DEGRADATION_STRATEGY_INVALID: 'DEPLOYMENT_MODEL_DEGRADATION_STRATEGY_INVALID',
+  DISASTER_RECOVERY_INVALID: 'DEPLOYMENT_MODEL_DISASTER_RECOVERY_INVALID',
+  DISASTER_CLASSIFICATION_INVALID: 'DEPLOYMENT_MODEL_DISASTER_CLASSIFICATION_INVALID',
+  RECOVERY_PLAN_INVALID: 'DEPLOYMENT_MODEL_RECOVERY_PLAN_INVALID',
+  RECOVERY_VALIDATION_INVALID: 'DEPLOYMENT_MODEL_RECOVERY_VALIDATION_INVALID'
 });
 
 export const DEPLOYMENT_OBJECTIVES = Object.freeze({
@@ -802,4 +806,141 @@ export const FUTURE_HIGH_AVAILABILITY_CAPABILITIES = Object.freeze({
   ADAPTIVE_TRAFFIC_ROUTING: 'Adaptive traffic routing',
   INTELLIGENT_WORKLOAD_REDISTRIBUTION: 'Intelligent workload redistribution',
   AUTONOMOUS_RESILIENCE_OPTIMIZATION: 'Autonomous resilience optimization'
+});
+
+export const DISASTER_RECOVERY_OBJECTIVES = Object.freeze({
+  BUSINESS_CONTINUITY: 'business-continuity',
+  RECOVERABLE_INFRASTRUCTURE: 'recoverable-infrastructure',
+  RECOVERABLE_APPLICATIONS: 'recoverable-applications',
+  RECOVERABLE_DATA: 'recoverable-data',
+  CONTROLLED_RECOVERY: 'controlled-recovery',
+  OPERATIONAL_RESILIENCE: 'operational-resilience',
+  PREDICTABLE_RESTORATION: 'predictable-restoration',
+  LONG_TERM_PLATFORM_SURVIVABILITY: 'long-term-platform-survivability'
+});
+
+export const DISASTER_RECOVERY_MODEL_STAGES = Object.freeze({
+  DISASTER_EVENT: 'Disaster Event',
+  DETECTION: 'Detection',
+  ASSESSMENT: 'Assessment',
+  RECOVERY_DECISION: 'Recovery Decision',
+  INFRASTRUCTURE_RECOVERY: 'Infrastructure Recovery',
+  APPLICATION_RECOVERY: 'Application Recovery',
+  DATA_RECOVERY: 'Data Recovery',
+  BUSINESS_VALIDATION: 'Business Validation',
+  NORMAL_OPERATIONS: 'Normal Operations'
+});
+
+export const DISASTER_CLASSIFICATION_TYPES = Object.freeze({
+  INFRASTRUCTURE_FAILURES: 'Infrastructure Failures',
+  APPLICATION_FAILURES: 'Application Failures',
+  DATA_FAILURES: 'Data Failures',
+  OPERATIONAL_FAILURES: 'Operational Failures',
+  SECURITY_INCIDENTS: 'Security Incidents'
+});
+
+export const RECOVERY_ARCHITECTURE_CAPABILITIES = Object.freeze({
+  BACKUP: 'Backup',
+  REPLICATION: 'Replication',
+  INFRASTRUCTURE_RECOVERY: 'Infrastructure Recovery',
+  APPLICATION_RECOVERY: 'Application Recovery',
+  DATA_RECOVERY: 'Data Recovery',
+  SERVICE_VALIDATION: 'Service Validation'
+});
+
+export const BACKUP_PRINCIPLES = Object.freeze({
+  FULL_BACKUPS: 'full-backups',
+  INCREMENTAL_BACKUPS: 'incremental-backups',
+  VERSION_RETENTION: 'version-retention',
+  INTEGRITY_VERIFICATION: 'integrity-verification',
+  GEOGRAPHIC_SEPARATION: 'geographic-separation',
+  AUTOMATED_SCHEDULING: 'automated-scheduling'
+});
+
+export const REPLICATION_OBJECTIVES = Object.freeze({
+  REDUCED_RECOVERY_TIME: 'reduced-recovery-time',
+  GEOGRAPHIC_RESILIENCE: 'geographic-resilience',
+  IMPROVED_SERVICE_CONTINUITY: 'improved-service-continuity',
+  DATA_SYNCHRONIZATION: 'data-synchronization'
+});
+
+export const RECOVERY_ENVIRONMENT_MODELS = Object.freeze({
+  COLD_STANDBY: 'Cold standby',
+  WARM_STANDBY: 'Warm standby',
+  HOT_STANDBY: 'Hot standby',
+  ACTIVE_PASSIVE: 'Active-passive',
+  ACTIVE_ACTIVE: 'Active-active'
+});
+
+export const RECOVERY_PRIORITY_ORDER = Object.freeze({
+  IDENTITY: 'Identity',
+  CORE_BUSINESS_SERVICES: 'Core Business Services',
+  PAYMENTS: 'Payments',
+  AI_SERVICES: 'AI Services',
+  REPORTING: 'Reporting',
+  SUPPORTING_SERVICES: 'Supporting Services'
+});
+
+export const INFRASTRUCTURE_RECOVERY_AREAS = Object.freeze({
+  COMPUTE_RESOURCES: 'compute-resources',
+  NETWORKING: 'networking',
+  STORAGE: 'storage',
+  CONFIGURATION: 'configuration',
+  SERVICE_DISCOVERY: 'service-discovery',
+  PLATFORM_SERVICES: 'platform-services'
+});
+
+export const APPLICATION_RECOVERY_AREAS = Object.freeze({
+  SERVICE_DEPLOYMENT: 'service-deployment',
+  CONFIGURATION: 'configuration',
+  DEPENDENCIES: 'dependencies',
+  RUNTIME_HEALTH: 'runtime-health',
+  VERSION_COMPATIBILITY: 'version-compatibility'
+});
+
+export const DATA_RECOVERY_AREAS = Object.freeze({
+  TRANSACTIONAL_DATABASES: 'transactional-databases',
+  SEARCH_INDEXES: 'search-indexes',
+  VECTOR_STORES: 'vector-stores',
+  OBJECT_STORAGE: 'object-storage',
+  ANALYTICAL_SYSTEMS: 'analytical-systems'
+});
+
+export const RECOVERY_VALIDATION_ACTIVITIES = Object.freeze({
+  SERVICE_HEALTH_VERIFICATION: 'service-health-verification',
+  DATA_INTEGRITY_CHECKS: 'data-integrity-checks',
+  BUSINESS_WORKFLOW_TESTING: 'business-workflow-testing',
+  API_VALIDATION: 'api-validation',
+  SECURITY_VERIFICATION: 'security-verification',
+  MONITORING_CONFIRMATION: 'monitoring-confirmation'
+});
+
+export const DISASTER_RECOVERY_TESTING_ACTIVITIES = Object.freeze({
+  BACKUP_RESTORATION: 'backup-restoration',
+  INFRASTRUCTURE_SIMULATION: 'infrastructure-simulation',
+  REGIONAL_FAILOVER: 'regional-failover',
+  RECOVERY_EXERCISES: 'recovery-exercises',
+  OPERATIONAL_REHEARSALS: 'operational-rehearsals',
+  BUSINESS_CONTINUITY_VALIDATION: 'business-continuity-validation'
+});
+
+export const DISASTER_RECOVERY_GOVERNANCE_CONTROLS = Object.freeze({
+  RECOVERY_OBJECTIVES: 'recovery-objectives',
+  RECOVERY_DOCUMENTATION: 'recovery-documentation',
+  BACKUP_POLICIES: 'backup-policies',
+  RECOVERY_TESTING: 'recovery-testing',
+  CAPACITY_PLANNING: 'capacity-planning',
+  RISK_ASSESSMENT: 'risk-assessment',
+  COMPLIANCE_VALIDATION: 'compliance-validation'
+});
+
+export const FUTURE_DISASTER_RECOVERY_CAPABILITIES = Object.freeze({
+  AUTONOMOUS_DISASTER_DETECTION: 'Autonomous disaster detection',
+  AI_ASSISTED_RECOVERY_PLANNING: 'AI-assisted recovery planning',
+  CONTINUOUS_RECOVERY_VALIDATION: 'Continuous recovery validation',
+  PREDICTIVE_RECOVERY_SIMULATIONS: 'Predictive recovery simulations',
+  MULTI_REGION_AUTONOMOUS_FAILOVER: 'Multi-region autonomous failover',
+  INTELLIGENT_WORKLOAD_RELOCATION: 'Intelligent workload relocation',
+  AUTOMATED_COMPLIANCE_VERIFICATION: 'Automated compliance verification',
+  SELF_HEALING_RECOVERY_ENVIRONMENTS: 'Self-healing recovery environments'
 });

@@ -1,4 +1,5 @@
 export {
+  APPLICATION_RECOVERY_AREAS,
   DEPLOYMENT_ENVIRONMENT_NAMES,
   DEPLOYMENT_LAYER_NAMES,
   DEPLOYMENT_MODEL_ERROR_CODES,
@@ -21,7 +22,9 @@ export {
   COMPUTE_SCHEDULING_CONSIDERATIONS,
   COMPUTE_WORKLOAD_CLASSIFICATIONS,
   BACKUP_CAPABILITIES,
+  BACKUP_PRINCIPLES,
   DATA_LIFECYCLE_STAGES,
+  DATA_RECOVERY_AREAS,
   ENVIRONMENT_GOVERNANCE_CONTROLS,
   ENVIRONMENT_ISOLATION_AREAS,
   ENVIRONMENT_MONITORING_CAPABILITIES,
@@ -32,8 +35,14 @@ export {
   DEPENDENCY_RESILIENCE_STRATEGIES,
   FAILURE_DETECTION_MECHANISMS,
   FAILURE_DOMAIN_TYPES,
+  DISASTER_CLASSIFICATION_TYPES,
+  DISASTER_RECOVERY_GOVERNANCE_CONTROLS,
+  DISASTER_RECOVERY_MODEL_STAGES,
+  DISASTER_RECOVERY_OBJECTIVES,
+  DISASTER_RECOVERY_TESTING_ACTIVITIES,
   FUTURE_DEPLOYMENT_CAPABILITIES,
   FUTURE_COMPUTE_CAPABILITIES,
+  FUTURE_DISASTER_RECOVERY_CAPABILITIES,
   FUTURE_ENVIRONMENT_CAPABILITIES,
   FUTURE_HIGH_AVAILABILITY_CAPABILITIES,
   FUTURE_NETWORK_CAPABILITIES,
@@ -43,6 +52,7 @@ export {
   GRACEFUL_DEGRADATION_STRATEGIES,
   HEALTH_INDICATORS,
   HIGH_AVAILABILITY_OBJECTIVES,
+  INFRASTRUCTURE_RECOVERY_AREAS,
   MAINTENANCE_PRINCIPLES,
   NETWORK_COMMUNICATION_METHODS,
   NETWORK_DISCOVERY_CAPABILITIES,
@@ -63,6 +73,11 @@ export {
   RUNTIME_OBSERVABILITY_CAPABILITIES,
   RUNTIME_RESPONSIBILITIES,
   REDUNDANCY_TARGETS,
+  RECOVERY_ARCHITECTURE_CAPABILITIES,
+  RECOVERY_ENVIRONMENT_MODELS,
+  RECOVERY_PRIORITY_ORDER,
+  RECOVERY_VALIDATION_ACTIVITIES,
+  REPLICATION_OBJECTIVES,
   SERVICE_COMPATIBILITY_APPROACHES,
   SERVICE_CONFIGURATION_INPUTS,
   SERVICE_DEPENDENCY_CATEGORIES,
@@ -100,6 +115,8 @@ export { DeploymentUnit } from './contracts/deployment-unit.js';
 export { DeploymentValidationResult } from './contracts/deployment-validation-result.js';
 export { DataLifecyclePolicy } from './contracts/data-lifecycle-policy.js';
 export { DegradationStrategy } from './contracts/degradation-strategy.js';
+export { DisasterClassification } from './contracts/disaster-classification.js';
+export { DisasterRecoveryValidationResult } from './contracts/disaster-recovery-validation-result.js';
 export { EnvironmentConfiguration } from './contracts/environment-configuration.js';
 export { EnvironmentDataStrategy } from './contracts/environment-data-strategy.js';
 export { EnvironmentDefinition } from './contracts/environment-definition.js';
@@ -113,6 +130,8 @@ export { RuntimeComponent } from './contracts/runtime-component.js';
 export { RuntimeInteraction } from './contracts/runtime-interaction.js';
 export { RuntimeValidationResult } from './contracts/runtime-validation-result.js';
 export { RuntimeWorkloadProfile } from './contracts/runtime-workload-profile.js';
+export { RecoveryPlan } from './contracts/recovery-plan.js';
+export { RecoveryValidationPolicy } from './contracts/recovery-validation-policy.js';
 export { ServiceDeploymentUnit } from './contracts/service-deployment-unit.js';
 export { ServiceDeploymentValidationResult } from './contracts/service-deployment-validation-result.js';
 export { ServicePackageDefinition } from './contracts/service-package-definition.js';
@@ -123,6 +142,7 @@ export { StorageOwnershipRecord } from './contracts/storage-ownership-record.js'
 export { StorageValidationResult } from './contracts/storage-validation-result.js';
 export { HighAvailabilityDescriptor } from './availability/high-availability-descriptor.js';
 export { ComputeModelDescriptor } from './compute/compute-model-descriptor.js';
+export { DisasterRecoveryDescriptor } from './disaster-recovery/disaster-recovery-descriptor.js';
 export { EnvironmentStrategyDescriptor } from './environments/environment-strategy-descriptor.js';
 export { NetworkTopologyDescriptor } from './network/network-topology-descriptor.js';
 export { DeploymentOverviewDescriptor } from './overview/deployment-overview-descriptor.js';

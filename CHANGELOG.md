@@ -1068,3 +1068,20 @@ Version: 0.57.0
 
 Status: Deployment Model Architecture
 Version: 0.58.0
+
+---
+
+## [0.59.0] - ARCH-007 Disaster Recovery
+
+### Added
+- Disaster recovery objective, recovery model, disaster classification, recovery capability, backup principle, replication objective, recovery environment, recovery priority, recovery area, validation activity, testing activity, governance, future capability, and error-code constants.
+- Immutable contracts for disaster classifications, recovery plans, recovery validation policies, and validation results.
+- Disaster recovery descriptor for documented recovery lifecycle sequencing, disaster classification validation, recovery-plan validation, recovery readiness validation, and future DR placeholders.
+- Dependency-injection registration through `addDeploymentModel`.
+- Unit tests for objectives, recovery model sequence, disaster classifications, invalid classification handling, recovery plan validation, readiness/testing/governance validation, future placeholders, incomplete metadata validation, and DI access.
+
+### Established
+- Disaster-recovery governance without implementing operational runbooks, vendor-specific backup technologies, failover tooling, backup jobs, infrastructure provisioning, business continuity procedures, or automated disaster recovery execution.
+
+Status: Deployment Model Architecture
+Version: 0.59.0
