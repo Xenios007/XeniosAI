@@ -60,7 +60,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-006-10 Future Domain Evolution`
 - Completed: `ARCH-007-01 Deployment Overview`
 - Completed: `ARCH-007-02 Environment Strategy`
-- Next: `ARCH-007-03 Runtime Topology`
+- Completed: `ARCH-007-03 Runtime Topology`
+- Next: `ARCH-007-04 Compute Model`
 
 ## Notes
 

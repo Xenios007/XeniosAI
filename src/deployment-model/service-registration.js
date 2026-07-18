@@ -1,6 +1,7 @@
 import { ServiceCollection } from '../foundation/di/service-collection.js';
 import { EnvironmentStrategyDescriptor } from './environments/environment-strategy-descriptor.js';
 import { DeploymentOverviewDescriptor } from './overview/deployment-overview-descriptor.js';
+import { RuntimeTopologyDescriptor } from './runtime/runtime-topology-descriptor.js';
 
 export function addDeploymentModel(services) {
   if (!(services instanceof ServiceCollection)) {
@@ -9,6 +10,7 @@ export function addDeploymentModel(services) {
 
   services.registerSingleton('DeploymentOverviewDescriptor', () => new DeploymentOverviewDescriptor());
   services.registerSingleton('EnvironmentStrategyDescriptor', () => new EnvironmentStrategyDescriptor());
+  services.registerSingleton('RuntimeTopologyDescriptor', () => new RuntimeTopologyDescriptor());
 
   return services;
 }
