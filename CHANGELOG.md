@@ -812,3 +812,20 @@ Version: 0.42.0
 
 Status: Domain Model Architecture
 Version: 0.43.0
+
+---
+
+## [0.44.0] - ARCH-006 Value Objects
+
+### Added
+- Value object name, characteristic, ownership rule, future candidate, and error-code constants.
+- Immutable contracts for value object definitions, instances, and validation results.
+- Value object registry for documented reusable values, no-identity validation, immutability validation, owner containment, business-rule validation, equality-by-value comparison, and future placeholders.
+- Dependency-injection registration through `addDomainModel`.
+- Unit tests for characteristics, common value objects, behaviors, reuse, definition validation, immutable instances, business validation, lifecycle and identity rejection, value equality, future placeholders, and DI access.
+
+### Established
+- Value-object governance without implementing serialization, persistence formats, database mappings, framework objects, repositories, or later aggregate/domain-rule behavior.
+
+Status: Domain Model Architecture
+Version: 0.44.0
