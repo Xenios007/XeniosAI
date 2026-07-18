@@ -34,7 +34,10 @@ export const SECURITY_ARCHITECTURE_ERROR_CODES = Object.freeze({
   COMPLIANCE_GOVERNANCE_INVALID: 'SECURITY_ARCHITECTURE_COMPLIANCE_GOVERNANCE_INVALID',
   SECURITY_GOVERNANCE_PROFILE_INVALID: 'SECURITY_ARCHITECTURE_SECURITY_GOVERNANCE_PROFILE_INVALID',
   AUDIT_COMPLIANCE_POLICY_INVALID: 'SECURITY_ARCHITECTURE_AUDIT_COMPLIANCE_POLICY_INVALID',
-  GOVERNANCE_IMPROVEMENT_POLICY_INVALID: 'SECURITY_ARCHITECTURE_GOVERNANCE_IMPROVEMENT_POLICY_INVALID'
+  GOVERNANCE_IMPROVEMENT_POLICY_INVALID: 'SECURITY_ARCHITECTURE_GOVERNANCE_IMPROVEMENT_POLICY_INVALID',
+  FUTURE_SECURITY_EVOLUTION_INVALID: 'SECURITY_ARCHITECTURE_FUTURE_SECURITY_EVOLUTION_INVALID',
+  SECURITY_EVOLUTION_ROADMAP_INVALID: 'SECURITY_ARCHITECTURE_SECURITY_EVOLUTION_ROADMAP_INVALID',
+  EMERGING_SECURITY_TECHNOLOGY_INVALID: 'SECURITY_ARCHITECTURE_EMERGING_SECURITY_TECHNOLOGY_INVALID'
 });
 
 export const SECURITY_OBJECTIVES = Object.freeze({
@@ -1489,4 +1492,172 @@ export const FUTURE_COMPLIANCE_GOVERNANCE_CAPABILITIES = Object.freeze({
   AUTONOMOUS_EVIDENCE_COLLECTION: 'Autonomous evidence collection',
   POLICY_AS_CODE_GOVERNANCE: 'Policy-as-code governance',
   ADAPTIVE_COMPLIANCE_REPORTING: 'Adaptive compliance reporting'
+});
+
+export const SECURITY_EVOLUTION_OBJECTIVES = Object.freeze({
+  ADAPTIVE_TRUST: 'adaptive-trust',
+  INCREASED_AUTOMATION: 'increased-automation',
+  STRONGER_RESILIENCE: 'stronger-resilience',
+  IMPROVED_GOVERNANCE: 'improved-governance',
+  ENHANCED_AI_SECURITY: 'enhanced-ai-security',
+  REDUCED_OPERATIONAL_COMPLEXITY: 'reduced-operational-complexity',
+  BETTER_OBSERVABILITY: 'better-observability',
+  LONG_TERM_CRYPTOGRAPHIC_READINESS: 'long-term-cryptographic-readiness'
+});
+
+export const SECURITY_EVOLUTION_PRINCIPLES = Object.freeze({
+  PRESERVE_ARCHITECTURAL_SEPARATION: 'preserve-architectural-separation',
+  SECURITY_BY_DEFAULT: 'security-by-default',
+  AUTOMATION_FIRST: 'automation-first',
+  CONTINUOUS_VERIFICATION: 'continuous-verification'
+});
+
+export const FUTURE_SECURE_DEFAULTS = Object.freeze({
+  STRONG_AUTHENTICATION: 'strong-authentication',
+  ENCRYPTED_COMMUNICATION: 'encrypted-communication',
+  LEAST_PRIVILEGE: 'least-privilege',
+  SECURE_CONFIGURATION: 'secure-configuration',
+  PROTECTED_ADMINISTRATIVE_OPERATIONS: 'protected-administrative-operations'
+});
+
+export const FUTURE_SECURITY_AUTOMATION_AREAS = Object.freeze({
+  CREDENTIAL_ROTATION: 'credential-rotation',
+  POLICY_VALIDATION: 'policy-validation',
+  CONFIGURATION_VERIFICATION: 'configuration-verification',
+  RISK_ANALYSIS: 'risk-analysis',
+  COMPLIANCE_REPORTING: 'compliance-reporting',
+  INCIDENT_RESPONSE: 'incident-response'
+});
+
+export const FUTURE_CONTINUOUS_VERIFICATION_FACTORS = Object.freeze({
+  BEHAVIORAL_PATTERNS: 'behavioral-patterns',
+  OPERATIONAL_CONTEXT: 'operational-context',
+  DEVICE_CHARACTERISTICS: 'device-characteristics',
+  SERVICE_INTERACTIONS: 'service-interactions',
+  AI_ACTIVITY: 'ai-activity',
+  ORGANIZATIONAL_RISK: 'organizational-risk'
+});
+
+export const SECURITY_IDENTITY_EVOLUTION_CAPABILITIES = Object.freeze({
+  PASSWORDLESS_AUTHENTICATION: 'passwordless-authentication',
+  DECENTRALIZED_IDENTITIES: 'decentralized-identities',
+  VERIFIABLE_CREDENTIALS: 'verifiable-credentials',
+  HARDWARE_BACKED_IDENTITIES: 'hardware-backed-identities',
+  ADAPTIVE_AUTHENTICATION: 'adaptive-authentication',
+  CONTINUOUS_AUTHENTICATION: 'continuous-authentication',
+  FEDERATED_TRUST_EXPANSION: 'federated-trust-expansion'
+});
+
+export const SECURITY_AUTHORIZATION_EVOLUTION_CAPABILITIES = Object.freeze({
+  DYNAMIC_POLICY_EVALUATION: 'dynamic-policy-evaluation',
+  RELATIONSHIP_BASED_AUTHORIZATION: 'relationship-based-authorization',
+  CONTEXT_AWARE_AUTHORIZATION: 'context-aware-authorization',
+  RISK_ADAPTIVE_PERMISSIONS: 'risk-adaptive-permissions',
+  POLICY_AS_CODE: 'policy-as-code',
+  CONTINUOUS_AUTHORIZATION: 'continuous-authorization'
+});
+
+export const SECURITY_ZERO_TRUST_EVOLUTION_CAPABILITIES = Object.freeze({
+  CONTINUOUS_TRUST_SCORING: 'continuous-trust-scoring',
+  ADAPTIVE_MICRO_SEGMENTATION: 'adaptive-micro-segmentation',
+  AUTONOMOUS_TRUST_EVALUATION: 'autonomous-trust-evaluation',
+  REAL_TIME_POLICY_ADAPTATION: 'real-time-policy-adaptation',
+  DYNAMIC_WORKLOAD_VERIFICATION: 'dynamic-workload-verification'
+});
+
+export const SECURITY_SECRETS_EVOLUTION_CAPABILITIES = Object.freeze({
+  DYNAMIC_SECRETS: 'dynamic-secrets',
+  SHORT_LIVED_CREDENTIALS: 'short-lived-credentials',
+  AUTOMATED_ROTATION: 'automated-rotation',
+  HARDWARE_BACKED_KEY_PROTECTION: 'hardware-backed-key-protection',
+  CONFIDENTIAL_COMPUTING_INTEGRATION: 'confidential-computing-integration',
+  AUTONOMOUS_CREDENTIAL_REVOCATION: 'autonomous-credential-revocation'
+});
+
+export const SECURITY_CRYPTOGRAPHY_EVOLUTION_CAPABILITIES = Object.freeze({
+  POST_QUANTUM_CRYPTOGRAPHY: 'post-quantum-cryptography',
+  CONFIDENTIAL_COMPUTING: 'confidential-computing',
+  SECURE_ENCLAVES: 'secure-enclaves',
+  ADVANCED_INTEGRITY_VERIFICATION: 'advanced-integrity-verification',
+  CRYPTOGRAPHIC_ATTESTATION: 'cryptographic-attestation',
+  PRIVACY_PRESERVING_COMPUTATION: 'privacy-preserving-computation'
+});
+
+export const SECURITY_AI_EVOLUTION_CAPABILITIES = Object.freeze({
+  SECURE_MULTI_AGENT_COORDINATION: 'secure-multi-agent-coordination',
+  AI_TRUST_SCORING: 'ai-trust-scoring',
+  AUTONOMOUS_POLICY_ENFORCEMENT: 'autonomous-policy-enforcement',
+  VERIFIABLE_REASONING: 'verifiable-reasoning',
+  AI_BEHAVIORAL_MONITORING: 'ai-behavioral-monitoring',
+  AI_SAFETY_VALIDATION: 'ai-safety-validation',
+  SECURE_MODEL_COLLABORATION: 'secure-model-collaboration'
+});
+
+export const SECURITY_PLATFORM_EVOLUTION_CAPABILITIES = Object.freeze({
+  CONTINUOUS_SOFTWARE_PROVENANCE: 'continuous-software-provenance',
+  AUTOMATED_ARTIFACT_ATTESTATION: 'automated-artifact-attestation',
+  AUTONOMOUS_DEPENDENCY_GOVERNANCE: 'autonomous-dependency-governance',
+  TRUSTED_EXECUTION_ENVIRONMENTS: 'trusted-execution-environments',
+  SECURE_SOFTWARE_FACTORIES: 'secure-software-factories',
+  ADAPTIVE_DEPLOYMENT_VERIFICATION: 'adaptive-deployment-verification'
+});
+
+export const SECURITY_GOVERNANCE_EVOLUTION_CAPABILITIES = Object.freeze({
+  POLICY_AS_CODE: 'policy-as-code',
+  CONTINUOUS_COMPLIANCE: 'continuous-compliance',
+  AUTOMATED_EVIDENCE_COLLECTION: 'automated-evidence-collection',
+  AI_ASSISTED_AUDIT_PREPARATION: 'ai-assisted-audit-preparation',
+  PREDICTIVE_GOVERNANCE_ANALYTICS: 'predictive-governance-analytics',
+  DYNAMIC_CONTROL_VALIDATION: 'dynamic-control-validation'
+});
+
+export const SECURITY_OPERATIONAL_EVOLUTION_CAPABILITIES = Object.freeze({
+  AUTONOMOUS_INCIDENT_TRIAGE: 'autonomous-incident-triage',
+  AI_ASSISTED_INVESTIGATIONS: 'ai-assisted-investigations',
+  AUTOMATED_CONTAINMENT: 'automated-containment',
+  PREDICTIVE_THREAT_ANALYSIS: 'predictive-threat-analysis',
+  DYNAMIC_SECURITY_ORCHESTRATION: 'dynamic-security-orchestration',
+  SELF_HEALING_INFRASTRUCTURE: 'self-healing-infrastructure'
+});
+
+export const EMERGING_SECURITY_TECHNOLOGIES = Object.freeze({
+  QUANTUM_RESISTANT_SYSTEMS: 'quantum-resistant-systems',
+  CONFIDENTIAL_AI: 'confidential-ai',
+  DECENTRALIZED_IDENTITY_ECOSYSTEMS: 'decentralized-identity-ecosystems',
+  SECURE_EDGE_COMPUTING: 'secure-edge-computing',
+  TRUSTED_HARDWARE: 'trusted-hardware',
+  PRIVACY_ENHANCING_TECHNOLOGIES: 'privacy-enhancing-technologies',
+  AUTONOMOUS_SECURITY_PLATFORMS: 'autonomous-security-platforms'
+});
+
+export const SECURITY_MATURITY_STAGES = Object.freeze({
+  FOUNDATIONAL: 'Foundational',
+  MANAGED: 'Managed',
+  INTEGRATED: 'Integrated',
+  ADAPTIVE: 'Adaptive',
+  AUTONOMOUS: 'Autonomous'
+});
+
+export const LONG_TERM_SECURITY_VISION_CHARACTERISTICS = Object.freeze({
+  IDENTITY_CENTRIC: 'identity-centric',
+  POLICY_DRIVEN: 'policy-driven',
+  CONTINUOUSLY_VERIFIED: 'continuously-verified',
+  CRYPTOGRAPHICALLY_RESILIENT: 'cryptographically-resilient',
+  AI_AWARE: 'ai-aware',
+  OPERATIONALLY_OBSERVABLE: 'operationally-observable',
+  GOVERNANCE_ENABLED: 'governance-enabled',
+  AUTOMATION_ASSISTED: 'automation-assisted'
+});
+
+export const FUTURE_SECURITY_RELATIONSHIP_FLOW_STAGES = Object.freeze({
+  SECURITY_OVERVIEW: 'Security Overview',
+  IDENTITY: 'Identity',
+  AUTHORIZATION: 'Authorization',
+  ZERO_TRUST: 'Zero Trust',
+  SECRETS: 'Secrets',
+  CRYPTOGRAPHY: 'Cryptography',
+  AI_SECURITY: 'AI Security',
+  PLATFORM_SECURITY: 'Platform Security',
+  GOVERNANCE: 'Governance',
+  FUTURE_EVOLUTION: 'Future Evolution'
 });

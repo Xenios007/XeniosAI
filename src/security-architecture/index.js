@@ -62,10 +62,15 @@ export {
   DELEGATED_AUTHORIZATION_REQUIREMENTS,
   DEVICE_TRUST_FACTORS,
   DIGITAL_SIGNATURE_CAPABILITIES,
+  EMERGING_SECURITY_TECHNOLOGIES,
   ENCRYPTION_COVERAGE_AREAS,
+  FUTURE_CONTINUOUS_VERIFICATION_FACTORS,
   FUTURE_CRYPTOGRAPHY_DATA_PROTECTION_CAPABILITIES,
   FUTURE_AI_SECURITY_CAPABILITIES,
   FUTURE_COMPLIANCE_GOVERNANCE_CAPABILITIES,
+  FUTURE_SECURE_DEFAULTS,
+  FUTURE_SECURITY_AUTOMATION_AREAS,
+  FUTURE_SECURITY_RELATIONSHIP_FLOW_STAGES,
   FUTURE_SECRETS_KEY_MANAGEMENT_CAPABILITIES,
   FUTURE_IDENTITY_CAPABILITIES,
   FUTURE_PLATFORM_SUPPLY_CHAIN_SECURITY_CAPABILITIES,
@@ -94,6 +99,7 @@ export {
   KEY_LIFECYCLE_STAGES,
   KEY_PURPOSES,
   KNOWLEDGE_PROTECTION_CONTROLS,
+  LONG_TERM_SECURITY_VISION_CHARACTERISTICS,
   MODEL_GOVERNANCE_ACTIVITIES,
   ORGANIZATIONAL_RESPONSIBILITY_ASSIGNMENTS,
   PLATFORM_ADMINISTRATIVE_CONTROLS,
@@ -123,10 +129,22 @@ export {
   SECURITY_LIFECYCLE_STAGES,
   SECURITY_OBJECTIVES,
   SECURITY_PRINCIPLES,
+  SECURITY_AI_EVOLUTION_CAPABILITIES,
+  SECURITY_AUTHORIZATION_EVOLUTION_CAPABILITIES,
+  SECURITY_CRYPTOGRAPHY_EVOLUTION_CAPABILITIES,
+  SECURITY_EVOLUTION_OBJECTIVES,
+  SECURITY_EVOLUTION_PRINCIPLES,
+  SECURITY_GOVERNANCE_EVOLUTION_CAPABILITIES,
+  SECURITY_IDENTITY_EVOLUTION_CAPABILITIES,
   SECURITY_RESPONSIBILITY_OWNERS,
   SECURITY_RISK_FACTORS,
   SECURITY_METRIC_TYPES,
+  SECURITY_MATURITY_STAGES,
+  SECURITY_OPERATIONAL_EVOLUTION_CAPABILITIES,
+  SECURITY_PLATFORM_EVOLUTION_CAPABILITIES,
   SECURITY_RESPONSIBILITY_AREAS,
+  SECURITY_SECRETS_EVOLUTION_CAPABILITIES,
+  SECURITY_ZERO_TRUST_EVOLUTION_CAPABILITIES,
   SECRET_ADMINISTRATIVE_CONTROLS,
   SECRET_CATEGORY_NAMES,
   SECRET_DISTRIBUTION_REQUIREMENTS,
@@ -180,6 +198,8 @@ export { DataProtectionProfile } from './contracts/data-protection-profile.js';
 export { DataSharingRetentionPolicy } from './contracts/data-sharing-retention-policy.js';
 export { DelegatedAuthorizationRecord } from './contracts/delegated-authorization-record.js';
 export { DependencyArtifactGovernancePolicy } from './contracts/dependency-artifact-governance-policy.js';
+export { EmergingSecurityTechnologyProfile } from './contracts/emerging-security-technology-profile.js';
+export { FutureSecurityEvolutionValidationResult } from './contracts/future-security-evolution-validation-result.js';
 export { GovernanceImprovementPolicy } from './contracts/governance-improvement-policy.js';
 export { IdentityCategory } from './contracts/identity-category.js';
 export { IdentityLifecycleRecord } from './contracts/identity-lifecycle-record.js';
@@ -188,6 +208,7 @@ export { KeyLifecycleRecord } from './contracts/key-lifecycle-record.js';
 export { PlatformOperationalSecurityProfile } from './contracts/platform-operational-security-profile.js';
 export { PlatformSupplyChainSecurityValidationResult } from './contracts/platform-supply-chain-security-validation-result.js';
 export { SecurityDomain } from './contracts/security-domain.js';
+export { SecurityEvolutionRoadmap } from './contracts/security-evolution-roadmap.js';
 export { SecurityGovernanceProfile } from './contracts/security-governance-profile.js';
 export { SecurityResponsibility } from './contracts/security-responsibility.js';
 export { SecurityRiskAssessment } from './contracts/security-risk-assessment.js';
@@ -204,6 +225,7 @@ export { AiSecurityDescriptor } from './ai-security/ai-security-descriptor.js';
 export { AuthorizationModelDescriptor } from './authorization/authorization-model-descriptor.js';
 export { ComplianceGovernanceDescriptor } from './compliance-governance/compliance-governance-descriptor.js';
 export { CryptographyDataProtectionDescriptor } from './cryptography/cryptography-data-protection-descriptor.js';
+export { FutureSecurityEvolutionDescriptor } from './future-security/future-security-evolution-descriptor.js';
 export { IdentityAuthenticationDescriptor } from './identity/identity-authentication-descriptor.js';
 export { PlatformSupplyChainSecurityDescriptor } from './platform-supply-chain/platform-supply-chain-security-descriptor.js';
 export { SecretsKeyManagementDescriptor } from './secrets/secrets-key-management-descriptor.js';

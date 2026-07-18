@@ -77,7 +77,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-008-07 AI Security`
 - Completed: `ARCH-008-08 Platform & Supply Chain Security`
 - Completed: `ARCH-008-09 Compliance & Governance`
-- Next: `ARCH-008-10 Future Security Evolution`
+- Completed: `ARCH-008-10 Future Security Evolution`
+- Next: `ARCH-009-01 Observability Overview`
 
 ## Notes
 

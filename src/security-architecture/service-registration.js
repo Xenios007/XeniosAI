@@ -3,6 +3,7 @@ import { AiSecurityDescriptor } from './ai-security/ai-security-descriptor.js';
 import { AuthorizationModelDescriptor } from './authorization/authorization-model-descriptor.js';
 import { ComplianceGovernanceDescriptor } from './compliance-governance/compliance-governance-descriptor.js';
 import { CryptographyDataProtectionDescriptor } from './cryptography/cryptography-data-protection-descriptor.js';
+import { FutureSecurityEvolutionDescriptor } from './future-security/future-security-evolution-descriptor.js';
 import { IdentityAuthenticationDescriptor } from './identity/identity-authentication-descriptor.js';
 import { PlatformSupplyChainSecurityDescriptor } from './platform-supply-chain/platform-supply-chain-security-descriptor.js';
 import { SecurityOverviewDescriptor } from './overview/security-overview-descriptor.js';
@@ -18,6 +19,7 @@ export function addSecurityArchitecture(services) {
   services.registerSingleton('AuthorizationModelDescriptor', () => new AuthorizationModelDescriptor());
   services.registerSingleton('ComplianceGovernanceDescriptor', () => new ComplianceGovernanceDescriptor());
   services.registerSingleton('CryptographyDataProtectionDescriptor', () => new CryptographyDataProtectionDescriptor());
+  services.registerSingleton('FutureSecurityEvolutionDescriptor', () => new FutureSecurityEvolutionDescriptor());
   services.registerSingleton('IdentityAuthenticationDescriptor', () => new IdentityAuthenticationDescriptor());
   services.registerSingleton('PlatformSupplyChainSecurityDescriptor', () => new PlatformSupplyChainSecurityDescriptor());
   services.registerSingleton('SecurityOverviewDescriptor', () => new SecurityOverviewDescriptor());
