@@ -18,7 +18,11 @@ export const SECURITY_ARCHITECTURE_ERROR_CODES = Object.freeze({
   SECRETS_KEY_MANAGEMENT_INVALID: 'SECURITY_ARCHITECTURE_SECRETS_KEY_MANAGEMENT_INVALID',
   SECRET_LIFECYCLE_INVALID: 'SECURITY_ARCHITECTURE_SECRET_LIFECYCLE_INVALID',
   KEY_LIFECYCLE_INVALID: 'SECURITY_ARCHITECTURE_KEY_LIFECYCLE_INVALID',
-  SECRET_DISTRIBUTION_INVALID: 'SECURITY_ARCHITECTURE_SECRET_DISTRIBUTION_INVALID'
+  SECRET_DISTRIBUTION_INVALID: 'SECURITY_ARCHITECTURE_SECRET_DISTRIBUTION_INVALID',
+  CRYPTOGRAPHY_DATA_PROTECTION_INVALID: 'SECURITY_ARCHITECTURE_CRYPTOGRAPHY_DATA_PROTECTION_INVALID',
+  DATA_PROTECTION_PROFILE_INVALID: 'SECURITY_ARCHITECTURE_DATA_PROTECTION_PROFILE_INVALID',
+  CRYPTOGRAPHIC_PROTECTION_POLICY_INVALID: 'SECURITY_ARCHITECTURE_CRYPTOGRAPHIC_PROTECTION_POLICY_INVALID',
+  DATA_SHARING_RETENTION_POLICY_INVALID: 'SECURITY_ARCHITECTURE_DATA_SHARING_RETENTION_POLICY_INVALID'
 });
 
 export const SECURITY_OBJECTIVES = Object.freeze({
@@ -706,4 +710,195 @@ export const FUTURE_SECRETS_KEY_MANAGEMENT_CAPABILITIES = Object.freeze({
   AUTONOMOUS_CREDENTIAL_REVOCATION: 'Autonomous credential revocation',
   POST_QUANTUM_KEY_MANAGEMENT: 'Post-quantum key management',
   POLICY_DRIVEN_SECRET_ORCHESTRATION: 'Policy-driven secret orchestration'
+});
+
+export const CRYPTOGRAPHY_DATA_PROTECTION_OBJECTIVES = Object.freeze({
+  CONFIDENTIALITY: 'confidentiality',
+  INTEGRITY: 'integrity',
+  AUTHENTICITY: 'authenticity',
+  NON_REPUDIATION: 'non-repudiation',
+  PRIVACY: 'privacy',
+  SECURE_INFORMATION_SHARING: 'secure-information-sharing',
+  REGULATORY_COMPLIANCE: 'regulatory-compliance',
+  LONG_TERM_RESILIENCE: 'long-term-resilience'
+});
+
+export const CRYPTOGRAPHY_PHILOSOPHY_OBJECTIVES = Object.freeze({
+  PROTECT_SENSITIVE_INFORMATION: 'protect-sensitive-information',
+  PREVENT_UNAUTHORIZED_DISCLOSURE: 'prevent-unauthorized-disclosure',
+  DETECT_UNAUTHORIZED_MODIFICATION: 'detect-unauthorized-modification',
+  VERIFY_AUTHENTICITY: 'verify-authenticity',
+  SUPPORT_SECURE_COMMUNICATION: 'support-secure-communication',
+  ENABLE_TRUSTED_DIGITAL_OPERATIONS: 'enable-trusted-digital-operations'
+});
+
+export const INFORMATION_CLASSIFICATION_LEVELS = Object.freeze({
+  PUBLIC: 'Public',
+  INTERNAL: 'Internal',
+  CONFIDENTIAL: 'Confidential',
+  RESTRICTED: 'Restricted'
+});
+
+export const CLASSIFICATION_INFLUENCES = Object.freeze({
+  STORAGE_REQUIREMENTS: 'storage-requirements',
+  ACCESS_CONTROLS: 'access-controls',
+  ENCRYPTION_REQUIREMENTS: 'encryption-requirements',
+  RETENTION_POLICIES: 'retention-policies',
+  MONITORING_REQUIREMENTS: 'monitoring-requirements'
+});
+
+export const DATA_CATEGORY_NAMES = Object.freeze({
+  BUSINESS_DATA: 'Business Data',
+  PLATFORM_DATA: 'Platform Data',
+  SECURITY_DATA: 'Security Data',
+  AI_DATA: 'AI Data'
+});
+
+export const DATA_LIFECYCLE_STAGES = Object.freeze({
+  CREATE: 'Create',
+  STORE: 'Store',
+  USE: 'Use',
+  SHARE: 'Share',
+  ARCHIVE: 'Archive',
+  RETAIN: 'Retain',
+  DISPOSE: 'Dispose'
+});
+
+export const ENCRYPTION_COVERAGE_AREAS = Object.freeze({
+  STORED_INFORMATION: 'stored-information',
+  DATA_IN_TRANSIT: 'data-in-transit',
+  BACKUP_MEDIA: 'backup-media',
+  ADMINISTRATIVE_COMMUNICATION: 'administrative-communication',
+  INTER_SERVICE_COMMUNICATION: 'inter-service-communication',
+  EXTERNAL_INTEGRATIONS: 'external-integrations'
+});
+
+export const DATA_AT_REST_LOCATIONS = Object.freeze({
+  DATABASES: 'databases',
+  OBJECT_STORAGE: 'object-storage',
+  BACKUPS: 'backups',
+  AI_KNOWLEDGE_REPOSITORIES: 'ai-knowledge-repositories',
+  CONFIGURATION_REPOSITORIES: 'configuration-repositories'
+});
+
+export const DATA_IN_TRANSIT_CHANNELS = Object.freeze({
+  CLIENT_COMMUNICATION: 'client-communication',
+  SERVICE_TO_SERVICE_COMMUNICATION: 'service-to-service-communication',
+  AI_SERVICE_INTERACTION: 'ai-service-interaction',
+  EXTERNAL_INTEGRATIONS: 'external-integrations',
+  ADMINISTRATIVE_OPERATIONS: 'administrative-operations'
+});
+
+export const INTEGRITY_PROTECTION_TARGETS = Object.freeze({
+  BUSINESS_TRANSACTIONS: 'business-transactions',
+  CONFIGURATION: 'configuration',
+  DEPLOYMENT_ARTIFACTS: 'deployment-artifacts',
+  AUDIT_LOGS: 'audit-logs',
+  AI_OUTPUTS: 'ai-outputs',
+  KNOWLEDGE_REPOSITORIES: 'knowledge-repositories'
+});
+
+export const AUTHENTICITY_TARGETS = Object.freeze({
+  SERVICE_COMMUNICATION: 'service-communication',
+  ADMINISTRATIVE_ACTIONS: 'administrative-actions',
+  SOFTWARE_ARTIFACTS: 'software-artifacts',
+  AI_GENERATED_OUTPUTS: 'ai-generated-outputs',
+  SYSTEM_NOTIFICATIONS: 'system-notifications'
+});
+
+export const DIGITAL_SIGNATURE_CAPABILITIES = Object.freeze({
+  MESSAGE_AUTHENTICITY: 'message-authenticity',
+  INTEGRITY_VALIDATION: 'integrity-validation',
+  SOFTWARE_VERIFICATION: 'software-verification',
+  ARTIFACT_VERIFICATION: 'artifact-verification',
+  ADMINISTRATIVE_APPROVALS: 'administrative-approvals'
+});
+
+export const DATA_MINIMIZATION_BENEFITS = Object.freeze({
+  REDUCED_PRIVACY_RISK: 'reduced-privacy-risk',
+  LOWER_STORAGE_COSTS: 'lower-storage-costs',
+  SIMPLIFIED_COMPLIANCE: 'simplified-compliance',
+  SMALLER_ATTACK_SURFACE: 'smaller-attack-surface'
+});
+
+export const PRIVACY_PROTECTION_PRINCIPLES = Object.freeze({
+  PURPOSE_LIMITATION: 'purpose-limitation',
+  TRANSPARENCY: 'transparency',
+  DATA_MINIMIZATION: 'data-minimization',
+  CONTROLLED_ACCESS: 'controlled-access',
+  RETENTION_MANAGEMENT: 'retention-management',
+  SECURE_DISPOSAL: 'secure-disposal'
+});
+
+export const AI_DATA_PROTECTION_ASSETS = Object.freeze({
+  USER_PROMPTS: 'user-prompts',
+  AI_RESPONSES: 'ai-responses',
+  EMBEDDINGS: 'embeddings',
+  RETRIEVED_KNOWLEDGE: 'retrieved-knowledge',
+  AGENT_MEMORY: 'agent-memory',
+  TOOL_EXECUTION_RESULTS: 'tool-execution-results'
+});
+
+export const DATA_SHARING_DECISION_FACTORS = Object.freeze({
+  RECIPIENT_IDENTITY: 'recipient-identity',
+  INFORMATION_CLASSIFICATION: 'information-classification',
+  BUSINESS_PURPOSE: 'business-purpose',
+  LEGAL_OBLIGATIONS: 'legal-obligations',
+  ORGANIZATIONAL_POLICY: 'organizational-policy'
+});
+
+export const RETENTION_JUSTIFICATIONS = Object.freeze({
+  BUSINESS_OPERATIONS: 'business-operations',
+  LEGAL_OBLIGATIONS: 'legal-obligations',
+  REGULATORY_REQUIREMENTS: 'regulatory-requirements',
+  SECURITY_INVESTIGATIONS: 'security-investigations',
+  ORGANIZATIONAL_POLICY: 'organizational-policy'
+});
+
+export const SECURE_DISPOSAL_TARGETS = Object.freeze({
+  DATABASES: 'databases',
+  STORAGE_MEDIA: 'storage-media',
+  BACKUPS: 'backups',
+  AI_MEMORY: 'ai-memory',
+  TEMPORARY_FILES: 'temporary-files',
+  CRYPTOGRAPHIC_MATERIAL: 'cryptographic-material'
+});
+
+export const DATA_PROTECTION_OBSERVABILITY_EVENTS = Object.freeze({
+  ENCRYPTION_EVENTS: 'encryption-events',
+  INTEGRITY_VERIFICATION: 'integrity-verification',
+  SIGNATURE_VALIDATION: 'signature-validation',
+  PROTECTED_DATA_ACCESS: 'protected-data-access',
+  RETENTION_ACTIONS: 'retention-actions',
+  SECURE_DISPOSAL_ACTIVITIES: 'secure-disposal-activities'
+});
+
+export const DATA_PROTECTION_GOVERNANCE_ACTIVITIES = Object.freeze({
+  INFORMATION_CLASSIFICATION_REVIEWS: 'information-classification-reviews',
+  DATA_PROTECTION_AUDITS: 'data-protection-audits',
+  PRIVACY_ASSESSMENTS: 'privacy-assessments',
+  RETENTION_POLICY_REVIEWS: 'retention-policy-reviews',
+  CRYPTOGRAPHIC_GOVERNANCE: 'cryptographic-governance',
+  COMPLIANCE_VALIDATION: 'compliance-validation'
+});
+
+export const CRYPTOGRAPHY_RELATIONSHIP_FLOW_STAGES = Object.freeze({
+  IDENTITY: 'Identity',
+  AUTHENTICATION: 'Authentication',
+  AUTHORIZATION: 'Authorization',
+  ZERO_TRUST: 'Zero Trust',
+  SECRETS_KEYS: 'Secrets & Keys',
+  CRYPTOGRAPHY: 'Cryptography',
+  PROTECTED_INFORMATION: 'Protected Information'
+});
+
+export const FUTURE_CRYPTOGRAPHY_DATA_PROTECTION_CAPABILITIES = Object.freeze({
+  CONFIDENTIAL_COMPUTING: 'Confidential computing',
+  PRIVACY_PRESERVING_ANALYTICS: 'Privacy-preserving analytics',
+  HOMOMORPHIC_ENCRYPTION: 'Homomorphic encryption',
+  SECURE_MULTI_PARTY_COMPUTATION: 'Secure multi-party computation',
+  AUTOMATED_DATA_CLASSIFICATION: 'Automated data classification',
+  AI_ASSISTED_PRIVACY_ENFORCEMENT: 'AI-assisted privacy enforcement',
+  POST_QUANTUM_CRYPTOGRAPHY: 'Post-quantum cryptography',
+  AUTONOMOUS_DATA_GOVERNANCE: 'Autonomous data governance'
 });

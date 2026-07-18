@@ -15,10 +15,27 @@ export {
   BUSINESS_AUTHORIZATION_ROLES,
   CREDENTIAL_MANAGEMENT_CAPABILITIES,
   AI_SECRET_ACCESS_TARGETS,
+  AI_DATA_PROTECTION_ASSETS,
+  AUTHENTICITY_TARGETS,
   CRYPTOGRAPHIC_KEY_TYPES,
+  CLASSIFICATION_INFLUENCES,
+  CRYPTOGRAPHY_DATA_PROTECTION_OBJECTIVES,
+  CRYPTOGRAPHY_PHILOSOPHY_OBJECTIVES,
+  CRYPTOGRAPHY_RELATIONSHIP_FLOW_STAGES,
   DATA_TRUST_RESOURCES,
+  DATA_AT_REST_LOCATIONS,
+  DATA_CATEGORY_NAMES,
+  DATA_IN_TRANSIT_CHANNELS,
+  DATA_LIFECYCLE_STAGES,
+  DATA_MINIMIZATION_BENEFITS,
+  DATA_PROTECTION_GOVERNANCE_ACTIVITIES,
+  DATA_PROTECTION_OBSERVABILITY_EVENTS,
+  DATA_SHARING_DECISION_FACTORS,
   DELEGATED_AUTHORIZATION_REQUIREMENTS,
   DEVICE_TRUST_FACTORS,
+  DIGITAL_SIGNATURE_CAPABILITIES,
+  ENCRYPTION_COVERAGE_AREAS,
+  FUTURE_CRYPTOGRAPHY_DATA_PROTECTION_CAPABILITIES,
   FUTURE_SECRETS_KEY_MANAGEMENT_CAPABILITIES,
   FUTURE_IDENTITY_CAPABILITIES,
   FUTURE_AUTHORIZATION_CAPABILITIES,
@@ -32,11 +49,16 @@ export {
   IDENTITY_OBJECTIVES,
   IDENTITY_OBSERVABILITY_EVENTS,
   IDENTITY_VERIFICATION_TRIGGERS,
+  INFORMATION_CLASSIFICATION_LEVELS,
+  INTEGRITY_PROTECTION_TARGETS,
   KEY_LIFECYCLE_STAGES,
   KEY_PURPOSES,
   POLICY_EVALUATION_INPUTS,
   PROTECTED_RESOURCE_CATEGORIES,
   PROHIBITED_SECRET_STORAGE_LOCATIONS,
+  PRIVACY_PROTECTION_PRINCIPLES,
+  RETENTION_JUSTIFICATIONS,
+  SECURE_DISPOSAL_TARGETS,
   SECURITY_ARCHITECTURE_ERROR_CODES,
   SECURITY_DOMAIN_NAMES,
   SECURITY_GOVERNANCE_ACTIVITIES,
@@ -83,6 +105,10 @@ export { AuthenticationPolicy } from './contracts/authentication-policy.js';
 export { AuthorizationPermission } from './contracts/authorization-permission.js';
 export { AuthorizationPolicy } from './contracts/authorization-policy.js';
 export { AuthorizationValidationResult } from './contracts/authorization-validation-result.js';
+export { CryptographicProtectionPolicy } from './contracts/cryptographic-protection-policy.js';
+export { CryptographyDataProtectionValidationResult } from './contracts/cryptography-data-protection-validation-result.js';
+export { DataProtectionProfile } from './contracts/data-protection-profile.js';
+export { DataSharingRetentionPolicy } from './contracts/data-sharing-retention-policy.js';
 export { DelegatedAuthorizationRecord } from './contracts/delegated-authorization-record.js';
 export { IdentityCategory } from './contracts/identity-category.js';
 export { IdentityLifecycleRecord } from './contracts/identity-lifecycle-record.js';
@@ -100,6 +126,7 @@ export { ZeroTrustBoundary } from './contracts/zero-trust-boundary.js';
 export { ZeroTrustEvaluation } from './contracts/zero-trust-evaluation.js';
 export { ZeroTrustValidationResult } from './contracts/zero-trust-validation-result.js';
 export { AuthorizationModelDescriptor } from './authorization/authorization-model-descriptor.js';
+export { CryptographyDataProtectionDescriptor } from './cryptography/cryptography-data-protection-descriptor.js';
 export { IdentityAuthenticationDescriptor } from './identity/identity-authentication-descriptor.js';
 export { SecretsKeyManagementDescriptor } from './secrets/secrets-key-management-descriptor.js';
 export { SecurityOverviewDescriptor } from './overview/security-overview-descriptor.js';

@@ -1188,3 +1188,20 @@ Version: 0.64.0
 
 Status: Security Architecture
 Version: 0.65.0
+
+---
+
+## [0.66.0] - ARCH-008 Cryptography & Data Protection
+
+### Added
+- Cryptography and data protection objective, philosophy, classification, data category, lifecycle, encryption, rest, transit, integrity, authenticity, signature, minimization, privacy, AI data, sharing, retention, disposal, observability, governance, relationship flow, future capability, and error-code constants.
+- Immutable contracts for data protection profiles, cryptographic protection policies, data sharing and retention policies, and validation results.
+- Cryptography and data protection descriptor for documented metadata, information lifecycle validation, cryptographic protection validation, sharing and retention validation, and future capability placeholders.
+- Dependency-injection registration through `addSecurityArchitecture`.
+- Unit tests for classification, data lifecycle, encryption coverage, integrity, authenticity, privacy, AI data protection, sharing, retention, disposal, future placeholders, incomplete metadata validation, and DI access.
+
+### Established
+- Cryptography and data protection governance without implementing cryptographic algorithms, encryption libraries, certificate authorities, regulatory implementation details, runtime encryption, or vendor-specific cryptography products.
+
+Status: Security Architecture
+Version: 0.66.0
