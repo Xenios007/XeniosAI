@@ -1,18 +1,23 @@
 export {
   EXTERNAL_COLLABORATORS,
   EXTERNAL_SERVICE_DEPENDENCIES,
+  COMMUNICATION_SURFACES,
   SERVICE_CATEGORY_NAMES,
+  SERVICE_COMMUNICATION_PATTERNS,
   SERVICE_DEPENDENCY_TYPES,
   SERVICE_LIFECYCLE_STAGES,
   SERVICE_MAP_ERROR_CODES
 } from './constants.js';
 export { ServiceBoundaryRegistry } from './boundaries/service-boundary-registry.js';
+export { ServiceCommunicationRegistry } from './communication/service-communication-registry.js';
 export { BoundaryValidationResult } from './contracts/boundary-validation-result.js';
+export { CommunicationValidationResult } from './contracts/communication-validation-result.js';
 export { ServiceCatalog } from './catalog/service-catalog.js';
 export { CapabilityOwnershipRecord } from './contracts/capability-ownership-record.js';
 export { OwnershipValidationResult } from './contracts/ownership-validation-result.js';
 export { ServiceCategory } from './contracts/service-category.js';
 export { ServiceCatalogEntry } from './contracts/service-catalog-entry.js';
+export { ServiceCommunicationContract } from './contracts/service-communication-contract.js';
 export { ServiceBoundary } from './contracts/service-boundary.js';
 export { ServiceDependencyRecord } from './contracts/service-dependency-record.js';
 export { ServiceDependencyValidationResult } from './contracts/service-dependency-validation-result.js';

@@ -306,3 +306,22 @@ Version: 0.14.0
 
 Status: Service Map Architecture
 Version: 0.15.0
+
+---
+
+## [0.16.0] - ARCH-003 Service Communication
+
+### Added
+- Service communication registry for approved service communication contracts.
+- Immutable communication contract and validation result contracts.
+- Approved communication patterns for query, command, domain event, and workflow orchestration.
+- Communication surface validation to reject hidden implementation communication.
+- Dependency-backed validation for direct service communication contracts.
+- Dependency-injection registration for `ServiceCommunicationRegistry`.
+- Unit tests for communication pattern metadata, public contract requirements, anti-pattern rejection, forbidden dependency checks, duplicate contracts, and DI access.
+
+### Established
+- Runtime-testable governance for explicit, versioned, observable, secure, and dependency-backed service communication.
+
+Status: Service Map Architecture
+Version: 0.16.0

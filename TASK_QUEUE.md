@@ -23,7 +23,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-003-03 Service Ownership`
 - Completed: `ARCH-003-04 Service Dependencies`
 - Completed: `ARCH-003-05 Domain Boundaries`
-- Next: `ARCH-003-06 Service Communication`
+- Completed: `ARCH-003-06 Service Communication`
+- Next: `ARCH-003-07 Service Lifecycle`
 
 ## Notes
 
