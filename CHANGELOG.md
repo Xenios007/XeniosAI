@@ -380,3 +380,21 @@ Version: 0.18.0
 
 Status: Service Map Architecture
 Version: 0.19.0
+
+---
+
+## [0.20.0] - ARCH-003 Future Services
+
+### Added
+- Future service registry for documented business and AI service candidates.
+- Immutable contracts for future service candidates, evaluations, and evaluation results.
+- Expansion-rule validation for proposed future services.
+- Candidate metadata for Loyalty, Billing, Payment, CRM, Housekeeping, Maintenance, Revenue Management, Inventory, Smart Property, Marketplace, and future AI services.
+- Dependency-injection registration for `FutureServiceRegistry`.
+- Unit tests for candidate coverage, placeholder status, evaluation rules, duplicate protection, missing candidates, growth strategy, and DI access.
+
+### Established
+- Executable future-service governance without committing to implement candidate services.
+
+Status: Service Map Architecture
+Version: 0.20.0

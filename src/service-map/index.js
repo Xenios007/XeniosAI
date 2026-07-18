@@ -2,6 +2,8 @@ export {
   EXTERNAL_COLLABORATORS,
   EXTERNAL_SERVICE_DEPENDENCIES,
   COMMUNICATION_SURFACES,
+  FUTURE_SERVICE_EVALUATION_DECISIONS,
+  FUTURE_SERVICE_TYPES,
   SERVICE_CATEGORY_NAMES,
   SERVICE_COMMUNICATION_PATTERNS,
   SERVICE_DEPENDENCY_TYPES,
@@ -17,6 +19,9 @@ export { ServiceBoundaryRegistry } from './boundaries/service-boundary-registry.
 export { ServiceCommunicationRegistry } from './communication/service-communication-registry.js';
 export { BoundaryValidationResult } from './contracts/boundary-validation-result.js';
 export { CommunicationValidationResult } from './contracts/communication-validation-result.js';
+export { FutureServiceCandidate } from './contracts/future-service-candidate.js';
+export { FutureServiceEvaluation } from './contracts/future-service-evaluation.js';
+export { FutureServiceEvaluationResult } from './contracts/future-service-evaluation-result.js';
 export { GovernanceChangeRequest } from './contracts/governance-change-request.js';
 export { GovernanceExceptionRecord } from './contracts/governance-exception-record.js';
 export { GovernanceReviewResult } from './contracts/governance-review-result.js';
@@ -39,6 +44,7 @@ export { VersionValidationResult } from './contracts/version-validation-result.j
 export { VersionedArtifactRecord } from './contracts/versioned-artifact-record.js';
 export { SharedConcept } from './contracts/shared-concept.js';
 export { ServiceDependencyGraph } from './dependencies/service-dependency-graph.js';
+export { FutureServiceRegistry } from './future/future-service-registry.js';
 export { ServiceGovernanceRegistry } from './governance/service-governance-registry.js';
 export { ServiceLandscape } from './landscape/service-landscape.js';
 export { ServiceLifecycleRegistry } from './lifecycle/service-lifecycle-registry.js';
