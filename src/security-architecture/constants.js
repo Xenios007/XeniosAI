@@ -7,7 +7,11 @@ export const SECURITY_ARCHITECTURE_ERROR_CODES = Object.freeze({
   IDENTITY_AUTHENTICATION_INVALID: 'SECURITY_ARCHITECTURE_IDENTITY_AUTHENTICATION_INVALID',
   IDENTITY_CATEGORY_INVALID: 'SECURITY_ARCHITECTURE_IDENTITY_CATEGORY_INVALID',
   AUTHENTICATION_POLICY_INVALID: 'SECURITY_ARCHITECTURE_AUTHENTICATION_POLICY_INVALID',
-  IDENTITY_LIFECYCLE_INVALID: 'SECURITY_ARCHITECTURE_IDENTITY_LIFECYCLE_INVALID'
+  IDENTITY_LIFECYCLE_INVALID: 'SECURITY_ARCHITECTURE_IDENTITY_LIFECYCLE_INVALID',
+  AUTHORIZATION_MODEL_INVALID: 'SECURITY_ARCHITECTURE_AUTHORIZATION_MODEL_INVALID',
+  AUTHORIZATION_PERMISSION_INVALID: 'SECURITY_ARCHITECTURE_AUTHORIZATION_PERMISSION_INVALID',
+  AUTHORIZATION_POLICY_INVALID: 'SECURITY_ARCHITECTURE_AUTHORIZATION_POLICY_INVALID',
+  AUTHORIZATION_DELEGATION_INVALID: 'SECURITY_ARCHITECTURE_AUTHORIZATION_DELEGATION_INVALID'
 });
 
 export const SECURITY_OBJECTIVES = Object.freeze({
@@ -208,4 +212,148 @@ export const FUTURE_IDENTITY_CAPABILITIES = Object.freeze({
   HARDWARE_BACKED_IDENTITIES: 'Hardware-backed identities',
   AI_ASSISTED_IDENTITY_VERIFICATION: 'AI-assisted identity verification',
   POST_QUANTUM_AUTHENTICATION: 'Post-quantum authentication mechanisms'
+});
+
+export const AUTHORIZATION_OBJECTIVES = Object.freeze({
+  LEAST_PRIVILEGE: 'least-privilege',
+  POLICY_DRIVEN_ACCESS: 'policy-driven-access',
+  FINE_GRAINED_PERMISSIONS: 'fine-grained-permissions',
+  SEPARATION_OF_DUTIES: 'separation-of-duties',
+  CONSISTENT_ENFORCEMENT: 'consistent-enforcement',
+  COMPLETE_AUDITABILITY: 'complete-auditability',
+  ENTERPRISE_SCALABILITY: 'enterprise-scalability',
+  VENDOR_INDEPENDENCE: 'vendor-independence'
+});
+
+export const AUTHORIZATION_FLOW_STAGES = Object.freeze({
+  IDENTITY: 'Identity',
+  AUTHENTICATION: 'Authentication',
+  AUTHORIZATION_POLICY: 'Authorization Policy',
+  ACCESS_DECISION: 'Access Decision',
+  BUSINESS_OPERATION: 'Business Operation'
+});
+
+export const AUTHORIZATION_COMPONENT_NAMES = Object.freeze({
+  AUTHENTICATED_IDENTITY: 'Authenticated Identity',
+  REQUESTED_RESOURCE: 'Requested Resource',
+  REQUESTED_ACTION: 'Requested Action',
+  POLICY_EVALUATION: 'Policy Evaluation',
+  ACCESS_DECISION: 'Access Decision'
+});
+
+export const ACCESS_CONTROL_PRINCIPLES = Object.freeze({
+  LEAST_PRIVILEGE: 'least-privilege',
+  DEFAULT_DENY: 'default-deny',
+  EXPLICIT_AUTHORIZATION: 'explicit-authorization',
+  SEPARATION_OF_DUTIES: 'separation-of-duties'
+});
+
+export const PROTECTED_RESOURCE_CATEGORIES = Object.freeze({
+  BUSINESS_RESOURCES: 'Business Resources',
+  PLATFORM_RESOURCES: 'Platform Resources',
+  AI_RESOURCES: 'AI Resources',
+  OPERATIONAL_RESOURCES: 'Operational Resources'
+});
+
+export const AUTHORIZATION_ACTIONS = Object.freeze({
+  CREATE: 'Create',
+  READ: 'Read',
+  UPDATE: 'Update',
+  DELETE: 'Delete',
+  EXECUTE: 'Execute',
+  APPROVE: 'Approve',
+  DEPLOY: 'Deploy',
+  CONFIGURE: 'Configure',
+  MONITOR: 'Monitor',
+  MANAGE: 'Manage'
+});
+
+export const POLICY_EVALUATION_INPUTS = Object.freeze({
+  IDENTITY: 'identity',
+  RESOURCE: 'resource',
+  REQUESTED_ACTION: 'requested-action',
+  ORGANIZATIONAL_ROLE: 'organizational-role',
+  BUSINESS_CONTEXT: 'business-context',
+  OPERATIONAL_STATE: 'operational-state',
+  ENVIRONMENTAL_CONDITIONS: 'environmental-conditions'
+});
+
+export const BUSINESS_AUTHORIZATION_ROLES = Object.freeze({
+  CUSTOMER: 'Customer',
+  OPERATOR: 'Operator',
+  MANAGER: 'Manager',
+  AUDITOR: 'Auditor'
+});
+
+export const TECHNICAL_AUTHORIZATION_ROLES = Object.freeze({
+  DEVELOPER: 'Developer',
+  PLATFORM_ENGINEER: 'Platform Engineer',
+  SECURITY_ADMINISTRATOR: 'Security Administrator',
+  AI_ADMINISTRATOR: 'AI Administrator'
+});
+
+export const ATTRIBUTE_AUTHORIZATION_GROUPS = Object.freeze({
+  IDENTITY: 'Identity',
+  RESOURCE: 'Resource',
+  REQUEST: 'Request'
+});
+
+export const SERVICE_AUTHORIZATION_CHECKS = Object.freeze({
+  CALLER_IDENTITY: 'caller-identity',
+  REQUESTED_OPERATION: 'requested-operation',
+  RESOURCE_OWNERSHIP: 'resource-ownership',
+  BUSINESS_RULES: 'business-rules'
+});
+
+export const AI_AUTHORIZATION_CAPABILITIES = Object.freeze({
+  PROMPT_EXECUTION: 'prompt-execution',
+  MODEL_SELECTION: 'model-selection',
+  KNOWLEDGE_RETRIEVAL: 'knowledge-retrieval',
+  TOOL_INVOCATION: 'tool-invocation',
+  AGENT_DELEGATION: 'agent-delegation',
+  MEMORY_ACCESS: 'memory-access'
+});
+
+export const ADMINISTRATIVE_AUTHORIZATION_OPERATIONS = Object.freeze({
+  INFRASTRUCTURE_MANAGEMENT: 'infrastructure-management',
+  DEPLOYMENT: 'deployment',
+  SECRET_MANAGEMENT: 'secret-management',
+  SECURITY_CONFIGURATION: 'security-configuration',
+  USER_ADMINISTRATION: 'user-administration'
+});
+
+export const DELEGATED_AUTHORIZATION_REQUIREMENTS = Object.freeze({
+  EXPLICIT: 'explicit',
+  TIME_LIMITED: 'time-limited',
+  ACCOUNTABLE: 'accountable',
+  AUDITABLE: 'auditable'
+});
+
+export const AUTHORIZATION_OBSERVABILITY_EVENTS = Object.freeze({
+  ACCESS_GRANTS: 'access-grants',
+  ACCESS_DENIALS: 'access-denials',
+  POLICY_EVALUATIONS: 'policy-evaluations',
+  ADMINISTRATIVE_OVERRIDES: 'administrative-overrides',
+  DELEGATION_EVENTS: 'delegation-events',
+  PERMISSION_CHANGES: 'permission-changes'
+});
+
+export const AUTHORIZATION_GOVERNANCE_CONTROLS = Object.freeze({
+  PERMISSION_REVIEWS: 'permission-reviews',
+  ROLE_MANAGEMENT: 'role-management',
+  POLICY_VALIDATION: 'policy-validation',
+  SEPARATION_OF_DUTY_ANALYSIS: 'separation-of-duty-analysis',
+  ACCESS_AUDITS: 'access-audits',
+  PERIODIC_RECERTIFICATION: 'periodic-recertification'
+});
+
+export const FUTURE_AUTHORIZATION_CAPABILITIES = Object.freeze({
+  RISK_ADAPTIVE_AUTHORIZATION: 'Risk-adaptive authorization',
+  RELATIONSHIP_BASED_ACCESS_CONTROL: 'Relationship-based access control',
+  CONTINUOUS_AUTHORIZATION: 'Continuous authorization',
+  AI_ASSISTED_POLICY_ANALYSIS: 'AI-assisted policy analysis',
+  POLICY_AS_CODE: 'Policy-as-code',
+  AUTONOMOUS_PERMISSION_REVIEWS: 'Autonomous permission reviews',
+  CONTEXT_AWARE_AUTHORIZATION: 'Context-aware authorization',
+  PREDICTIVE_ACCESS_RECOMMENDATIONS: 'Predictive access recommendations'
 });

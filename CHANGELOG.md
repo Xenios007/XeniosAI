@@ -1137,3 +1137,20 @@ Version: 0.61.0
 
 Status: Security Architecture
 Version: 0.62.0
+
+---
+
+## [0.63.0] - ARCH-008 Authorization Model
+
+### Added
+- Authorization objective, flow stage, component, access control principle, protected resource, action, policy input, role, attribute group, service check, AI capability, administrative operation, delegation requirement, observability, governance, future capability, and error-code constants.
+- Immutable contracts for authorization permissions, policies, delegated authorization records, and validation results.
+- Authorization model descriptor for documented flow metadata, explicit permission validation, policy-driven access validation, delegated authorization validation, and future authorization placeholders.
+- Dependency-injection registration through `addSecurityArchitecture`.
+- Unit tests for authorization objectives, flows, protected resources, roles, attributes, permission validation, policy validation, delegation validation, future placeholders, incomplete metadata validation, and DI access.
+
+### Established
+- Authorization governance without implementing authentication mechanisms, identity providers, authorization frameworks, policy engines, access control runtime enforcement, permission storage, or vendor-specific authorization products.
+
+Status: Security Architecture
+Version: 0.63.0
