@@ -37,7 +37,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-004-07 Decision Engine`
 - Completed: `ARCH-004-08 Agent Coordination`
 - Completed: `ARCH-004-09 Failure Recovery`
-- Next: `ARCH-004-10 Future AI Capabilities`
+- Completed: `ARCH-004-10 Future AI Capabilities`
+- Next: `ARCH-005-01 Execution Overview`
 
 ## Notes
 

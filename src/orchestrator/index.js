@@ -12,10 +12,14 @@ export {
   DECISION_FAILURE_CLASSIFICATIONS,
   DECISION_RECORD_FIELDS,
   EXECUTION_DECISION_OUTCOMES,
+  AI_CAPABILITY_MATURITY_STAGES,
   FAILURE_CATEGORIES,
   FAILURE_RECOVERY_STAGES,
   FAILURE_SEVERITIES,
   FAILURE_TELEMETRY_FIELDS,
+  FUTURE_AI_CAPABILITY_DOMAINS,
+  FUTURE_AI_EVALUATION_CRITERIA,
+  FUTURE_AI_STABILITY_PRINCIPLES,
   ORCHESTRATION_DECISIONS,
   ORCHESTRATION_STAGES,
   ORCHESTRATOR_COMPONENTS,
@@ -54,6 +58,9 @@ export { DecisionGateResult } from './contracts/decision-gate-result.js';
 export { DecisionRecord } from './contracts/decision-record.js';
 export { FailureRecoveryStage } from './contracts/failure-recovery-stage.js';
 export { FailureTelemetry } from './contracts/failure-telemetry.js';
+export { FutureAiCapabilityCandidate } from './contracts/future-ai-capability-candidate.js';
+export { FutureAiCapabilityEvaluation } from './contracts/future-ai-capability-evaluation.js';
+export { FutureAiCapabilityEvaluationResult } from './contracts/future-ai-capability-evaluation-result.js';
 export { MemoryCandidate } from './contracts/memory-candidate.js';
 export { MemoryContext } from './contracts/memory-context.js';
 export { MemoryOperationTelemetry } from './contracts/memory-operation-telemetry.js';
@@ -90,6 +97,7 @@ export { AgentCoordinationCoordinator } from './agents/agent-coordination-coordi
 export { ContextAssemblyCoordinator } from './context/context-assembly-coordinator.js';
 export { DecisionEngineAuthority } from './decision/decision-engine-authority.js';
 export { FailureRecoveryCoordinator } from './failure/failure-recovery-coordinator.js';
+export { FutureAiCapabilityRegistry } from './future/future-ai-capability-registry.js';
 export { OrchestratorBoundaryPolicy } from './governance/orchestrator-boundary-policy.js';
 export { RequestLifecycleDescriptor } from './lifecycle/request-lifecycle-descriptor.js';
 export { MemoryOrchestrationCoordinator } from './memory/memory-orchestration-coordinator.js';

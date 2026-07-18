@@ -346,6 +346,51 @@ export const FAILURE_TELEMETRY_FIELDS = Object.freeze({
   TIMESTAMP: 'timestamp'
 });
 
+export const FUTURE_AI_CAPABILITY_DOMAINS = Object.freeze({
+  ADVANCED_REASONING: 'advanced-reasoning',
+  ADAPTIVE_MEMORY: 'adaptive-memory',
+  PLANNING_AND_SCHEDULING: 'planning-and-scheduling',
+  AUTONOMOUS_EXECUTION: 'autonomous-execution',
+  MULTI_AGENT_COLLABORATION: 'multi-agent-collaboration',
+  KNOWLEDGE_EVOLUTION: 'knowledge-evolution',
+  PERSONALIZED_INTELLIGENCE: 'personalized-intelligence',
+  LEARNING_AND_OPTIMIZATION: 'learning-and-optimization',
+  GOVERNANCE_AND_COMPLIANCE: 'governance-and-compliance',
+  HUMAN_COLLABORATION: 'human-collaboration'
+});
+
+export const AI_CAPABILITY_MATURITY_STAGES = Object.freeze({
+  REACTIVE_AI: 'reactive-ai',
+  ASSISTED_AI: 'assisted-ai',
+  COORDINATED_AI: 'coordinated-ai',
+  ADAPTIVE_AI: 'adaptive-ai',
+  AUTONOMOUS_AI: 'autonomous-ai',
+  COLLABORATIVE_AI_PLATFORM: 'collaborative-ai-platform'
+});
+
+export const FUTURE_AI_STABILITY_PRINCIPLES = Object.freeze({
+  ORCHESTRATOR_COORDINATES: 'orchestrator-coordinates',
+  DECISION_ENGINE_AUTHORIZES: 'decision-engine-authorizes',
+  BUSINESS_SERVICES_OWN_BUSINESS_LOGIC: 'business-services-own-business-logic',
+  MEMORY_REMAINS_CONTEXTUAL: 'memory-remains-contextual',
+  KNOWLEDGE_REMAINS_AUTHORITATIVE: 'knowledge-remains-authoritative',
+  POLICIES_GOVERN_EXECUTION: 'policies-govern-execution',
+  OBSERVABILITY_REMAINS_COMPREHENSIVE: 'observability-remains-comprehensive'
+});
+
+export const FUTURE_AI_EVALUATION_CRITERIA = Object.freeze({
+  PRESERVES_ARCHITECTURAL_BOUNDARIES: 'preservesArchitecturalBoundaries',
+  VENDOR_INDEPENDENT: 'vendorIndependent',
+  INTEGRATES_THROUGH_ORCHESTRATION: 'integratesThroughOrchestration',
+  RESPECTS_BUSINESS_OWNERSHIP: 'respectsBusinessOwnership',
+  IMPROVES_EXPLAINABILITY: 'improvesExplainability',
+  STRENGTHENS_OBSERVABILITY: 'strengthensObservability',
+  MAINTAINS_SECURITY_AND_PRIVACY: 'maintainsSecurityAndPrivacy',
+  RESPECTS_DECISION_ENGINE: 'respectsDecisionEngine',
+  FOLLOWS_PLATFORM_GOVERNANCE: 'followsPlatformGovernance',
+  MODULAR_AND_TESTABLE: 'modularAndTestable'
+});
+
 export const ORCHESTRATION_DECISIONS = Object.freeze({
   CONSULT_MEMORY: 'consult-memory',
   RETRIEVE_KNOWLEDGE: 'retrieve-knowledge',
@@ -383,5 +428,8 @@ export const ORCHESTRATOR_ERROR_CODES = Object.freeze({
   AGENT_OUTPUT_INVALID: 'ORCHESTRATOR_AGENT_OUTPUT_INVALID',
   FAILURE_RECOVERY_STAGE_NOT_FOUND: 'ORCHESTRATOR_FAILURE_STAGE_NOT_FOUND',
   FAILURE_EVENT_INVALID: 'ORCHESTRATOR_FAILURE_EVENT_INVALID',
-  RECOVERY_PLAN_INVALID: 'ORCHESTRATOR_RECOVERY_PLAN_INVALID'
+  RECOVERY_PLAN_INVALID: 'ORCHESTRATOR_RECOVERY_PLAN_INVALID',
+  FUTURE_AI_CAPABILITY_NOT_FOUND: 'ORCHESTRATOR_FUTURE_AI_CAPABILITY_NOT_FOUND',
+  FUTURE_AI_CAPABILITY_DUPLICATE: 'ORCHESTRATOR_FUTURE_AI_CAPABILITY_DUPLICATE',
+  FUTURE_AI_EVALUATION_REJECTED: 'ORCHESTRATOR_FUTURE_AI_EVALUATION_REJECTED'
 });

@@ -3,6 +3,7 @@ import { AgentCoordinationCoordinator } from './agents/agent-coordination-coordi
 import { ContextAssemblyCoordinator } from './context/context-assembly-coordinator.js';
 import { DecisionEngineAuthority } from './decision/decision-engine-authority.js';
 import { FailureRecoveryCoordinator } from './failure/failure-recovery-coordinator.js';
+import { FutureAiCapabilityRegistry } from './future/future-ai-capability-registry.js';
 import { OrchestratorBoundaryPolicy } from './governance/orchestrator-boundary-policy.js';
 import { RequestLifecycleDescriptor } from './lifecycle/request-lifecycle-descriptor.js';
 import { MemoryOrchestrationCoordinator } from './memory/memory-orchestration-coordinator.js';
@@ -23,6 +24,7 @@ export function addAiOrchestrator(services) {
   services.registerSingleton('ContextAssemblyCoordinator', () => new ContextAssemblyCoordinator());
   services.registerSingleton('DecisionEngineAuthority', () => new DecisionEngineAuthority());
   services.registerSingleton('FailureRecoveryCoordinator', () => new FailureRecoveryCoordinator());
+  services.registerSingleton('FutureAiCapabilityRegistry', () => new FutureAiCapabilityRegistry());
   services.registerSingleton('MemoryOrchestrationCoordinator', provider =>
     new MemoryOrchestrationCoordinator({
       memoryProvider: services.hasRegistration('MemoryPort')

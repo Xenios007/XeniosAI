@@ -87,5 +87,6 @@ The repository currently includes automated unit tests for:
 - `ARCH-004-07 Decision Engine` in `tests/orchestrator/`
 - `ARCH-004-08 Agent Coordination` in `tests/orchestrator/`
 - `ARCH-004-09 Failure Recovery` in `tests/orchestrator/`
+- `ARCH-004-10 Future AI Capabilities` in `tests/orchestrator/`
 
 These tests validate reusable platform capabilities and channel-facing behavior without introducing business logic.

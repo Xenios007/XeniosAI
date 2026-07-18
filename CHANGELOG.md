@@ -561,3 +561,21 @@ Version: 0.28.0
 
 Status: AI Orchestrator Architecture
 Version: 0.29.0
+
+---
+
+## [0.30.0] - ARCH-004 Future AI Capabilities
+
+### Added
+- Future AI capability domain constants for all ARCH-004-10 capability domains.
+- Capability maturity model, architectural stability principle, and evaluation criterion constants.
+- Immutable contracts for future AI capability candidates, evaluations, and evaluation results.
+- Future AI capability registry with documented candidate domains and governance-based introduction evaluation.
+- Dependency-injection registration for `FutureAiCapabilityRegistry`.
+- Unit tests for domain coverage, maturity model order, stability principles, placeholder status, duplicate rejection, proposal acceptance, governance rejection, unknown capability rejection, domain filtering, and DI access.
+
+### Established
+- Future AI capability governance without implementing advanced reasoning, adaptive memory, autonomous execution, dynamic agents, knowledge ingestion, personalization, learning systems, compliance automation, or human approval workflows.
+
+Status: AI Orchestrator Architecture
+Version: 0.30.0
