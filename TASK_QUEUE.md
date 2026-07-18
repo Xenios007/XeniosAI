@@ -32,7 +32,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-004-02 Request Lifecycle`
 - Completed: `ARCH-004-03 Reasoning Pipeline`
 - Completed: `ARCH-004-04 Tool Orchestration`
-- Next: `ARCH-004-05 Memory Orchestration`
+- Completed: `ARCH-004-05 Memory Orchestration`
+- Next: `ARCH-004-06 Context Management`
 
 ## Notes
 

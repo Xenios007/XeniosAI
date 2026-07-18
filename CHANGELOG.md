@@ -470,3 +470,21 @@ Version: 0.23.0
 
 Status: AI Orchestrator Architecture
 Version: 0.24.0
+
+---
+
+## [0.25.0] - ARCH-004 Memory Orchestration
+
+### Added
+- Canonical memory orchestration lifecycle constants for all ARCH-004-05 stages.
+- Memory category, freshness status, and operation telemetry constants.
+- Immutable contracts for retrieval requests, candidates, memory contexts, telemetry, lifecycle stages, and validation results.
+- Memory orchestration coordinator for purposeful retrieval gating, category determination, provider delegation, relevance ranking, freshness validation, structured context construction, and telemetry.
+- Dependency-injection registration for `MemoryOrchestrationCoordinator`.
+- Unit tests for lifecycle order, categories, telemetry, purposeful retrieval, provider delegation, relevance ranking, freshness validation, memory context construction, orchestration flow, and DI access.
+
+### Established
+- Executable memory orchestration governance without implementing memory storage, memory updates, summarization, persistence, business validation, or context window management.
+
+Status: AI Orchestrator Architecture
+Version: 0.25.0

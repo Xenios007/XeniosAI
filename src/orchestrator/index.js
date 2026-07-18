@@ -3,6 +3,10 @@ export {
   ORCHESTRATION_STAGES,
   ORCHESTRATOR_COMPONENTS,
   ORCHESTRATOR_ERROR_CODES,
+  MEMORY_CATEGORIES,
+  MEMORY_FRESHNESS_STATUS,
+  MEMORY_OPERATION_TELEMETRY_FIELDS,
+  MEMORY_ORCHESTRATION_STAGES,
   REASONING_DECISION_CATEGORIES,
   REASONING_EXECUTION_STRATEGIES,
   REASONING_PIPELINE_STAGES,
@@ -14,6 +18,12 @@ export {
   REQUEST_LIFECYCLE_STAGES,
   REQUEST_LIFECYCLE_TELEMETRY_FIELDS
 } from './constants.js';
+export { MemoryCandidate } from './contracts/memory-candidate.js';
+export { MemoryContext } from './contracts/memory-context.js';
+export { MemoryOperationTelemetry } from './contracts/memory-operation-telemetry.js';
+export { MemoryOrchestrationStage } from './contracts/memory-orchestration-stage.js';
+export { MemoryRetrievalRequest } from './contracts/memory-retrieval-request.js';
+export { MemoryValidationResult } from './contracts/memory-validation-result.js';
 export { OrchestratedToolResult } from './contracts/orchestrated-tool-result.js';
 export { ReasoningDecisionOutput } from './contracts/reasoning-decision-output.js';
 export { ReasoningPipelineInput } from './contracts/reasoning-pipeline-input.js';
@@ -35,6 +45,7 @@ export { ToolOrchestrationStage } from './contracts/tool-orchestration-stage.js'
 export { ToolResultValidationResult } from './contracts/tool-result-validation-result.js';
 export { OrchestratorBoundaryPolicy } from './governance/orchestrator-boundary-policy.js';
 export { RequestLifecycleDescriptor } from './lifecycle/request-lifecycle-descriptor.js';
+export { MemoryOrchestrationCoordinator } from './memory/memory-orchestration-coordinator.js';
 export { ReasoningPipelineDescriptor } from './reasoning/reasoning-pipeline-descriptor.js';
 export { addAiOrchestrator } from './service-registration.js';
 export { OrchestratorComponentRegistry } from './services/orchestrator-component-registry.js';

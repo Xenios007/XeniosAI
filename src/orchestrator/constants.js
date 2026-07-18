@@ -124,6 +124,41 @@ export const TOOL_INVOCATION_TELEMETRY_FIELDS = Object.freeze({
   CORRELATION_ID: 'correlationId'
 });
 
+export const MEMORY_CATEGORIES = Object.freeze({
+  CONVERSATION: 'conversation',
+  SESSION: 'session',
+  LONG_TERM: 'long-term',
+  PROCEDURAL: 'procedural',
+  EXECUTION: 'execution'
+});
+
+export const MEMORY_ORCHESTRATION_STAGES = Object.freeze({
+  NEED_MEMORY: 'need-memory',
+  DETERMINE_MEMORY_TYPE: 'determine-memory-type',
+  RETRIEVE_CANDIDATES: 'retrieve-candidates',
+  RANK_RELEVANCE: 'rank-relevance',
+  VALIDATE_FRESHNESS: 'validate-freshness',
+  BUILD_MEMORY_CONTEXT: 'build-memory-context',
+  RETURN_CONTEXT: 'return-context'
+});
+
+export const MEMORY_FRESHNESS_STATUS = Object.freeze({
+  CURRENT: 'current',
+  EXPIRED: 'expired',
+  CONFLICTING: 'conflicting',
+  POLICY_RESTRICTED: 'policy-restricted'
+});
+
+export const MEMORY_OPERATION_TELEMETRY_FIELDS = Object.freeze({
+  MEMORY_CATEGORY: 'memoryCategory',
+  RETRIEVAL_DURATION: 'retrievalDurationMs',
+  CANDIDATE_COUNT: 'candidateCount',
+  SELECTED_MEMORIES: 'selectedMemories',
+  CONFIDENCE: 'confidence',
+  FRESHNESS_EVALUATION: 'freshnessEvaluation',
+  CORRELATION_ID: 'correlationId'
+});
+
 export const ORCHESTRATION_DECISIONS = Object.freeze({
   CONSULT_MEMORY: 'consult-memory',
   RETRIEVE_KNOWLEDGE: 'retrieve-knowledge',
@@ -147,5 +182,9 @@ export const ORCHESTRATOR_ERROR_CODES = Object.freeze({
   TOOL_DISCOVERY_FAILED: 'ORCHESTRATOR_TOOL_DISCOVERY_FAILED',
   TOOL_AUTHORIZATION_DENIED: 'ORCHESTRATOR_TOOL_AUTHORIZATION_DENIED',
   TOOL_RESULT_INVALID: 'ORCHESTRATOR_TOOL_RESULT_INVALID',
-  TOOL_EXECUTOR_MISSING: 'ORCHESTRATOR_TOOL_EXECUTOR_MISSING'
+  TOOL_EXECUTOR_MISSING: 'ORCHESTRATOR_TOOL_EXECUTOR_MISSING',
+  MEMORY_ORCHESTRATION_STAGE_NOT_FOUND: 'ORCHESTRATOR_MEMORY_STAGE_NOT_FOUND',
+  MEMORY_RETRIEVAL_UNPURPOSED: 'ORCHESTRATOR_MEMORY_RETRIEVAL_UNPURPOSED',
+  MEMORY_PROVIDER_MISSING: 'ORCHESTRATOR_MEMORY_PROVIDER_MISSING',
+  MEMORY_CONTEXT_INVALID: 'ORCHESTRATOR_MEMORY_CONTEXT_INVALID'
 });

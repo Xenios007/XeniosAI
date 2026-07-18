@@ -1,6 +1,7 @@
 import { ServiceCollection } from '../foundation/di/service-collection.js';
 import { OrchestratorBoundaryPolicy } from './governance/orchestrator-boundary-policy.js';
 import { RequestLifecycleDescriptor } from './lifecycle/request-lifecycle-descriptor.js';
+import { MemoryOrchestrationCoordinator } from './memory/memory-orchestration-coordinator.js';
 import { ReasoningPipelineDescriptor } from './reasoning/reasoning-pipeline-descriptor.js';
 import { OrchestratorComponentRegistry } from './services/orchestrator-component-registry.js';
 import { OrchestratorPlanner } from './services/orchestrator-planner.js';
@@ -14,6 +15,13 @@ export function addAiOrchestrator(services) {
   services.registerSingleton('OrchestratorBoundaryPolicy', () => new OrchestratorBoundaryPolicy());
   services.registerSingleton('RequestLifecycleDescriptor', () => new RequestLifecycleDescriptor());
   services.registerSingleton('ReasoningPipelineDescriptor', () => new ReasoningPipelineDescriptor());
+  services.registerSingleton('MemoryOrchestrationCoordinator', provider =>
+    new MemoryOrchestrationCoordinator({
+      memoryProvider: services.hasRegistration('MemoryPort')
+        ? provider.getRequiredService('MemoryPort')
+        : undefined
+    })
+  );
   services.registerSingleton('ToolOrchestrationCoordinator', provider =>
     new ToolOrchestrationCoordinator({
       toolRegistry: services.hasRegistration('ToolRegistry')
