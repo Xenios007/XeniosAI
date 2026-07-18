@@ -25,7 +25,11 @@ export const DEPLOYMENT_MODEL_ERROR_CODES = Object.freeze({
   STORAGE_BACKUP_INVALID: 'DEPLOYMENT_MODEL_STORAGE_BACKUP_INVALID',
   NETWORK_TOPOLOGY_INVALID: 'DEPLOYMENT_MODEL_NETWORK_TOPOLOGY_INVALID',
   NETWORK_ZONE_INVALID: 'DEPLOYMENT_MODEL_NETWORK_ZONE_INVALID',
-  NETWORK_ROUTE_INVALID: 'DEPLOYMENT_MODEL_NETWORK_ROUTE_INVALID'
+  NETWORK_ROUTE_INVALID: 'DEPLOYMENT_MODEL_NETWORK_ROUTE_INVALID',
+  SERVICE_DEPLOYMENT_INVALID: 'DEPLOYMENT_MODEL_SERVICE_DEPLOYMENT_INVALID',
+  SERVICE_DEPLOYMENT_UNIT_INVALID: 'DEPLOYMENT_MODEL_SERVICE_DEPLOYMENT_UNIT_INVALID',
+  SERVICE_DEPLOYMENT_PACKAGE_INVALID: 'DEPLOYMENT_MODEL_SERVICE_DEPLOYMENT_PACKAGE_INVALID',
+  SERVICE_DEPLOYMENT_RELEASE_INVALID: 'DEPLOYMENT_MODEL_SERVICE_DEPLOYMENT_RELEASE_INVALID'
 });
 
 export const DEPLOYMENT_OBJECTIVES = Object.freeze({
@@ -527,4 +531,150 @@ export const FUTURE_NETWORK_CAPABILITIES = Object.freeze({
   ADAPTIVE_TRAFFIC_ROUTING: 'Adaptive traffic routing',
   AI_ASSISTED_NETWORK_OPTIMIZATION: 'AI-assisted network optimization',
   AUTONOMOUS_NETWORK_POLICY_MANAGEMENT: 'Autonomous network policy management'
+});
+
+export const SERVICE_DEPLOYMENT_OBJECTIVES = Object.freeze({
+  INDEPENDENT_DEPLOYMENTS: 'independent-deployments',
+  PREDICTABLE_RELEASES: 'predictable-releases',
+  OPERATIONAL_CONSISTENCY: 'operational-consistency',
+  HORIZONTAL_SCALABILITY: 'horizontal-scalability',
+  CONTROLLED_UPGRADES: 'controlled-upgrades',
+  FAST_ROLLBACK: 'fast-rollback',
+  MINIMAL_DOWNTIME: 'minimal-downtime',
+  ENTERPRISE_RESILIENCE: 'enterprise-resilience'
+});
+
+export const SERVICE_DEPLOYMENT_UNIT_OWNERSHIP = Object.freeze({
+  RUNTIME_PROCESS: 'runtime-process',
+  CONFIGURATION: 'configuration',
+  VERSION: 'version',
+  RESOURCE_ALLOCATION: 'resource-allocation',
+  SCALING_POLICY: 'scaling-policy',
+  HEALTH_STATUS: 'health-status',
+  OPERATIONAL_LIFECYCLE: 'operational-lifecycle'
+});
+
+export const SERVICE_PACKAGE_CONTENTS = Object.freeze({
+  EXECUTABLE_APPLICATION: 'executable-application',
+  RUNTIME_DEPENDENCIES: 'runtime-dependencies',
+  CONFIGURATION_INTERFACE: 'configuration-interface',
+  HEALTH_ENDPOINTS: 'health-endpoints',
+  TELEMETRY_INTEGRATION: 'telemetry-integration',
+  VERSION_METADATA: 'version-metadata'
+});
+
+export const SERVICE_DEPLOYMENT_LIFECYCLE_STAGES = Object.freeze({
+  BUILD: 'Build',
+  PACKAGE: 'Package',
+  VALIDATE: 'Validate',
+  DEPLOY: 'Deploy',
+  OPERATE: 'Operate',
+  SCALE: 'Scale',
+  UPGRADE: 'Upgrade',
+  RETIRE: 'Retire'
+});
+
+export const SERVICE_DEPLOYMENT_STRATEGIES = Object.freeze({
+  ROLLING: 'Rolling deployment',
+  BLUE_GREEN: 'Blue-green deployment',
+  CANARY: 'Canary deployment',
+  PROGRESSIVE_ROLLOUT: 'Progressive rollout',
+  IMMUTABLE: 'Immutable deployment'
+});
+
+export const SERVICE_VERSION_METADATA_FIELDS = Object.freeze({
+  SERVICE_VERSION: 'service-version',
+  BUILD_IDENTIFIER: 'build-identifier',
+  RELEASE_TIMESTAMP: 'release-timestamp',
+  API_VERSION: 'api-version',
+  COMPATIBILITY_METADATA: 'compatibility-metadata'
+});
+
+export const SERVICE_COMPATIBILITY_APPROACHES = Object.freeze({
+  VERSIONED_APIS: 'versioned-apis',
+  CONTRACT_EVOLUTION: 'contract-evolution',
+  FEATURE_NEGOTIATION: 'feature-negotiation',
+  GRACEFUL_DEPRECATION: 'graceful-deprecation'
+});
+
+export const SERVICE_CONFIGURATION_INPUTS = Object.freeze({
+  ENVIRONMENT_VARIABLES: 'environment-variables',
+  SECRET_REFERENCES: 'secret-references',
+  FEATURE_FLAGS: 'feature-flags',
+  RESOURCE_LIMITS: 'resource-limits',
+  ENDPOINT_DEFINITIONS: 'endpoint-definitions',
+  RUNTIME_POLICIES: 'runtime-policies'
+});
+
+export const SERVICE_DEPENDENCY_CATEGORIES = Object.freeze({
+  APIS: 'APIs',
+  MESSAGING_SYSTEMS: 'Messaging systems',
+  DATABASES: 'Databases',
+  SEARCH_SERVICES: 'Search services',
+  VECTOR_STORES: 'Vector stores',
+  EXTERNAL_PROVIDERS: 'External providers'
+});
+
+export const SERVICE_SCALING_CONSIDERATIONS = Object.freeze({
+  REQUEST_VOLUME: 'request-volume',
+  CPU_UTILIZATION: 'cpu-utilization',
+  MEMORY_USAGE: 'memory-usage',
+  QUEUE_DEPTH: 'queue-depth',
+  AI_WORKLOAD_DEMAND: 'ai-workload-demand',
+  BACKGROUND_PROCESSING: 'background-processing'
+});
+
+export const SERVICE_HEALTH_SIGNALS = Object.freeze({
+  STARTUP_READINESS: 'startup-readiness',
+  RUNTIME_HEALTH: 'runtime-health',
+  DEPENDENCY_STATUS: 'dependency-status',
+  RESOURCE_UTILIZATION: 'resource-utilization',
+  GRACEFUL_SHUTDOWN_STATE: 'graceful-shutdown-state'
+});
+
+export const SERVICE_RECOVERY_CAPABILITIES = Object.freeze({
+  AUTOMATIC_RESTART: 'automatic-restart',
+  INSTANCE_REPLACEMENT: 'instance-replacement',
+  RETRY_POLICIES: 'retry-policies',
+  GRACEFUL_DEGRADATION: 'graceful-degradation',
+  ROLLBACK: 'rollback',
+  ISOLATION_OF_FAILURES: 'isolation-of-failures'
+});
+
+export const SERVICE_DEPLOYMENT_OBSERVABILITY = Object.freeze({
+  STRUCTURED_LOGGING: 'structured-logging',
+  METRICS: 'metrics',
+  DISTRIBUTED_TRACING: 'distributed-tracing',
+  HEALTH_ENDPOINTS: 'health-endpoints',
+  DEPLOYMENT_METADATA: 'deployment-metadata',
+  RUNTIME_DIAGNOSTICS: 'runtime-diagnostics'
+});
+
+export const SERVICE_DEPLOYMENT_GOVERNANCE = Object.freeze({
+  NAMING_CONVENTIONS: 'naming-conventions',
+  VERSION_STANDARDS: 'version-standards',
+  RELEASE_POLICIES: 'release-policies',
+  DEPLOYMENT_APPROVALS: 'deployment-approvals',
+  CONFIGURATION_REVIEWS: 'configuration-reviews',
+  OPERATIONAL_DOCUMENTATION: 'operational-documentation'
+});
+
+export const SERVICE_DEPLOYMENT_LIFECYCLE_ACTIVITIES = Object.freeze({
+  PROVISIONING: 'Provisioning',
+  DEPLOYMENT: 'Deployment',
+  UPGRADE: 'Upgrade',
+  SCALING: 'Scaling',
+  MAINTENANCE: 'Maintenance',
+  DECOMMISSIONING: 'Decommissioning'
+});
+
+export const FUTURE_SERVICE_DEPLOYMENT_CAPABILITIES = Object.freeze({
+  GITOPS_BASED_DEPLOYMENT: 'GitOps-based deployment',
+  AUTONOMOUS_DEPLOYMENT_VALIDATION: 'Autonomous deployment validation',
+  AI_ASSISTED_ROLLOUT_ANALYSIS: 'AI-assisted rollout analysis',
+  SELF_HEALING_DEPLOYMENT_ORCHESTRATION: 'Self-healing deployment orchestration',
+  PROGRESSIVE_AI_WORKLOAD_MIGRATION: 'Progressive AI workload migration',
+  MULTI_REGION_ACTIVE_DEPLOYMENT: 'Multi-region active deployment',
+  PREDICTIVE_ROLLBACK: 'Predictive rollback',
+  AUTONOMOUS_SERVICE_OPTIMIZATION: 'Autonomous service optimization'
 });

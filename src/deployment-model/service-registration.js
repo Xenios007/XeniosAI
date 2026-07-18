@@ -4,6 +4,7 @@ import { EnvironmentStrategyDescriptor } from './environments/environment-strate
 import { NetworkTopologyDescriptor } from './network/network-topology-descriptor.js';
 import { DeploymentOverviewDescriptor } from './overview/deployment-overview-descriptor.js';
 import { RuntimeTopologyDescriptor } from './runtime/runtime-topology-descriptor.js';
+import { ServiceDeploymentDescriptor } from './service-deployment/service-deployment-descriptor.js';
 import { StorageTopologyDescriptor } from './storage/storage-topology-descriptor.js';
 
 export function addDeploymentModel(services) {
@@ -16,6 +17,7 @@ export function addDeploymentModel(services) {
   services.registerSingleton('EnvironmentStrategyDescriptor', () => new EnvironmentStrategyDescriptor());
   services.registerSingleton('NetworkTopologyDescriptor', () => new NetworkTopologyDescriptor());
   services.registerSingleton('RuntimeTopologyDescriptor', () => new RuntimeTopologyDescriptor());
+  services.registerSingleton('ServiceDeploymentDescriptor', () => new ServiceDeploymentDescriptor());
   services.registerSingleton('StorageTopologyDescriptor', () => new StorageTopologyDescriptor());
 
   return services;

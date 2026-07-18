@@ -29,6 +29,7 @@ export {
   FUTURE_ENVIRONMENT_CAPABILITIES,
   FUTURE_NETWORK_CAPABILITIES,
   FUTURE_RUNTIME_CAPABILITIES,
+  FUTURE_SERVICE_DEPLOYMENT_CAPABILITIES,
   FUTURE_STORAGE_CAPABILITIES,
   NETWORK_COMMUNICATION_METHODS,
   NETWORK_DISCOVERY_CAPABILITIES,
@@ -48,6 +49,21 @@ export {
   RUNTIME_OBJECTIVES,
   RUNTIME_OBSERVABILITY_CAPABILITIES,
   RUNTIME_RESPONSIBILITIES,
+  SERVICE_COMPATIBILITY_APPROACHES,
+  SERVICE_CONFIGURATION_INPUTS,
+  SERVICE_DEPENDENCY_CATEGORIES,
+  SERVICE_DEPLOYMENT_GOVERNANCE,
+  SERVICE_DEPLOYMENT_LIFECYCLE_ACTIVITIES,
+  SERVICE_DEPLOYMENT_LIFECYCLE_STAGES,
+  SERVICE_DEPLOYMENT_OBJECTIVES,
+  SERVICE_DEPLOYMENT_OBSERVABILITY,
+  SERVICE_DEPLOYMENT_STRATEGIES,
+  SERVICE_DEPLOYMENT_UNIT_OWNERSHIP,
+  SERVICE_HEALTH_SIGNALS,
+  SERVICE_PACKAGE_CONTENTS,
+  SERVICE_RECOVERY_CAPABILITIES,
+  SERVICE_SCALING_CONSIDERATIONS,
+  SERVICE_VERSION_METADATA_FIELDS,
   STORAGE_CATEGORY_NAMES,
   STORAGE_CONSISTENCY_MODELS,
   STORAGE_GOVERNANCE_CONTROLS,
@@ -79,6 +95,10 @@ export { RuntimeComponent } from './contracts/runtime-component.js';
 export { RuntimeInteraction } from './contracts/runtime-interaction.js';
 export { RuntimeValidationResult } from './contracts/runtime-validation-result.js';
 export { RuntimeWorkloadProfile } from './contracts/runtime-workload-profile.js';
+export { ServiceDeploymentUnit } from './contracts/service-deployment-unit.js';
+export { ServiceDeploymentValidationResult } from './contracts/service-deployment-validation-result.js';
+export { ServicePackageDefinition } from './contracts/service-package-definition.js';
+export { ServiceReleasePolicy } from './contracts/service-release-policy.js';
 export { StorageBackupPolicy } from './contracts/storage-backup-policy.js';
 export { StorageCategory } from './contracts/storage-category.js';
 export { StorageOwnershipRecord } from './contracts/storage-ownership-record.js';
@@ -88,5 +108,6 @@ export { EnvironmentStrategyDescriptor } from './environments/environment-strate
 export { NetworkTopologyDescriptor } from './network/network-topology-descriptor.js';
 export { DeploymentOverviewDescriptor } from './overview/deployment-overview-descriptor.js';
 export { RuntimeTopologyDescriptor } from './runtime/runtime-topology-descriptor.js';
+export { ServiceDeploymentDescriptor } from './service-deployment/service-deployment-descriptor.js';
 export { StorageTopologyDescriptor } from './storage/storage-topology-descriptor.js';
 export { addDeploymentModel } from './service-registration.js';

@@ -1034,3 +1034,20 @@ Version: 0.55.0
 
 Status: Deployment Model Architecture
 Version: 0.56.0
+
+---
+
+## [0.57.0] - ARCH-007 Service Deployment
+
+### Added
+- Service deployment objective, unit ownership, package content, lifecycle stage, deployment strategy, version metadata, compatibility, configuration, dependency, scaling, health, recovery, observability, governance, lifecycle activity, future capability, and error-code constants.
+- Immutable contracts for service deployment units, service packages, release policies, and validation results.
+- Service deployment descriptor for documented lifecycle sequencing, independent deployment validation, reproducible packaging, release/version governance, externalized configuration, explicit dependency management, operational validation, and future deployment placeholders.
+- Dependency-injection registration through `addDeploymentModel`.
+- Unit tests for objectives, lifecycle sequence, default service deployment units, autonomy violations, package validation, release policy validation, configuration/dependency governance, operational controls, future placeholders, incomplete metadata validation, and DI access.
+
+### Established
+- Service-deployment governance without implementing CI/CD pipelines, infrastructure automation, deployment tooling, containers, orchestration platforms, rollout engines, cloud services, or deployment platform integrations.
+
+Status: Deployment Model Architecture
+Version: 0.57.0

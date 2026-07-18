@@ -114,5 +114,6 @@ The repository currently includes automated unit tests for:
 - `ARCH-007-04 Compute Model` in `tests/deployment-model/`
 - `ARCH-007-05 Storage Topology` in `tests/deployment-model/`
 - `ARCH-007-06 Network Topology` in `tests/deployment-model/`
+- `ARCH-007-07 Service Deployment` in `tests/deployment-model/`
 
 These tests validate reusable platform capabilities and channel-facing behavior without introducing business logic.
