@@ -28,7 +28,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-003-08 Service Versioning`
 - Completed: `ARCH-003-09 Service Governance`
 - Completed: `ARCH-003-10 Future Services`
-- Next: `ARCH-004-01 Orchestrator Overview`
+- Completed: `ARCH-004-01 Orchestrator Overview`
+- Next: `ARCH-004-02 Request Lifecycle`
 
 ## Notes
 

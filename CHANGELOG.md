@@ -398,3 +398,22 @@ Version: 0.19.0
 
 Status: Service Map Architecture
 Version: 0.20.0
+
+---
+
+## [0.21.0] - ARCH-004 Orchestrator Overview
+
+### Added
+- AI Orchestrator module under `src/orchestrator/`.
+- Overview-level orchestration contracts for requests, plans, plan steps, component descriptors, and boundary validation.
+- Orchestrator component registry for coordinated subsystem metadata.
+- Orchestrator boundary policy to prevent ownership of business, persistence, infrastructure, and layer-bypass responsibilities.
+- Orchestrator planner for high-level, stateless execution-plan construction.
+- Dependency-injection registration through `addAiOrchestrator`.
+- Unit tests for component metadata, boundary governance, plan construction, decision derivation, and DI access.
+
+### Established
+- The orchestrator as a coordinator rather than a business service, reasoning engine, memory database, workflow engine, persistence component, or external provider integration point.
+
+Status: AI Orchestrator Architecture
+Version: 0.21.0
