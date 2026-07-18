@@ -325,3 +325,22 @@ Version: 0.15.0
 
 Status: Service Map Architecture
 Version: 0.16.0
+
+---
+
+## [0.17.0] - ARCH-003 Service Lifecycle
+
+### Added
+- Service lifecycle registry for all ARCH-003 services.
+- Immutable lifecycle record and transition result contracts.
+- Lifecycle stage order from proposal through retirement.
+- Governance checkpoint metadata for proposal, architecture, production readiness, deprecation, and retirement reviews.
+- Runtime validation for required owners, sequential lifecycle transitions, documentation, tests, observability, security controls, and retirement strategy.
+- Dependency-injection registration for `ServiceLifecycleRegistry`.
+- Unit tests for lifecycle order, ownership, transition validation, lifecycle requirements, governance checkpoints, metrics, and DI access.
+
+### Established
+- Executable lifecycle governance without implementing deployment, monitoring, or lifecycle automation behavior.
+
+Status: Service Map Architecture
+Version: 0.17.0

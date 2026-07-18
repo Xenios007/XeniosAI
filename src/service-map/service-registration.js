@@ -4,6 +4,7 @@ import { ServiceBoundaryRegistry } from './boundaries/service-boundary-registry.
 import { ServiceCommunicationRegistry } from './communication/service-communication-registry.js';
 import { ServiceDependencyGraph } from './dependencies/service-dependency-graph.js';
 import { ServiceLandscape } from './landscape/service-landscape.js';
+import { ServiceLifecycleRegistry } from './lifecycle/service-lifecycle-registry.js';
 import { ServiceOwnershipRegistry } from './ownership/service-ownership-registry.js';
 
 export function addServiceMap(services) {
@@ -20,6 +21,7 @@ export function addServiceMap(services) {
   services.registerSingleton('ServiceOwnershipRegistry', () => new ServiceOwnershipRegistry());
   services.registerSingleton('ServiceDependencyGraph', () => new ServiceDependencyGraph());
   services.registerSingleton('ServiceBoundaryRegistry', () => new ServiceBoundaryRegistry());
+  services.registerSingleton('ServiceLifecycleRegistry', () => new ServiceLifecycleRegistry());
   services.registerSingleton('ServiceCommunicationRegistry', provider =>
     new ServiceCommunicationRegistry({
       dependencyGraph: provider.getRequiredService('ServiceDependencyGraph')
