@@ -5,6 +5,11 @@ export {
   COMMAND_OUTCOMES,
   COMMAND_TELEMETRY_FIELDS,
   DATA_FLOW_ERROR_CODES,
+  EVENT_CHARACTERISTICS,
+  EVENT_DELIVERY_STATUSES,
+  EVENT_LIFECYCLE_STAGES,
+  EVENT_RELIABILITY_CONCERNS,
+  EVENT_TELEMETRY_FIELDS,
   EXECUTION_LIFECYCLE_STAGES,
   EXECUTION_PARTICIPANTS,
   EXECUTION_RESPONSIBILITIES,
@@ -22,6 +27,12 @@ export { CommandLifecycleStage } from './contracts/command-lifecycle-stage.js';
 export { CommandResult } from './contracts/command-result.js';
 export { CommandTelemetryRecord } from './contracts/command-telemetry-record.js';
 export { CommandValidationResult } from './contracts/command-validation-result.js';
+export { EventConsumptionRecord } from './contracts/event-consumption-record.js';
+export { EventDefinition } from './contracts/event-definition.js';
+export { EventEnvelope } from './contracts/event-envelope.js';
+export { EventLifecycleStage } from './contracts/event-lifecycle-stage.js';
+export { EventTelemetryRecord } from './contracts/event-telemetry-record.js';
+export { EventValidationResult } from './contracts/event-validation-result.js';
 export { ExecutionLifecycleStage } from './contracts/execution-lifecycle-stage.js';
 export { ExecutionParticipant } from './contracts/execution-participant.js';
 export { ExecutionTelemetryRecord } from './contracts/execution-telemetry-record.js';
@@ -33,6 +44,7 @@ export { QueryResultRecord } from './contracts/query-result-record.js';
 export { QueryTelemetryRecord } from './contracts/query-telemetry-record.js';
 export { QueryValidationResult } from './contracts/query-validation-result.js';
 export { CommandFlowDescriptor } from './commands/command-flow-descriptor.js';
+export { EventFlowDescriptor } from './events/event-flow-descriptor.js';
 export { ExecutionOverviewDescriptor } from './execution/execution-overview-descriptor.js';
 export { QueryFlowDescriptor } from './queries/query-flow-descriptor.js';
 export { addDataFlow } from './service-registration.js';

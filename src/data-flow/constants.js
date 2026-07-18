@@ -160,6 +160,57 @@ export const QUERY_TELEMETRY_FIELDS = Object.freeze({
   FAILURE_REASON: 'failureReason'
 });
 
+export const EVENT_LIFECYCLE_STAGES = Object.freeze({
+  BUSINESS_OPERATION_COMPLETED: 'business-operation-completed',
+  CREATE_EVENT: 'create-event',
+  PUBLISH_EVENT: 'publish-event',
+  DISTRIBUTE_EVENT: 'distribute-event',
+  CONSUME_EVENT: 'consume-event',
+  EXECUTE_LOCAL_PROCESSING: 'execute-local-processing',
+  COMPLETE_PROCESSING: 'complete-processing'
+});
+
+export const EVENT_CHARACTERISTICS = Object.freeze({
+  IMMUTABLE: 'immutable',
+  HISTORICAL: 'historical',
+  OBSERVABLE: 'observable',
+  INDEPENDENTLY_CONSUMABLE: 'independently-consumable',
+  LOOSELY_COUPLED: 'loosely-coupled',
+  VERSIONED: 'versioned'
+});
+
+export const EVENT_DELIVERY_STATUSES = Object.freeze({
+  PUBLISHED: 'published',
+  DISTRIBUTED: 'distributed',
+  CONSUMED: 'consumed',
+  PROCESSING_COMPLETED: 'processing-completed',
+  PUBLICATION_FAILED: 'publication-failed',
+  DELIVERY_FAILED: 'delivery-failed',
+  CONSUMER_FAILED: 'consumer-failed',
+  DUPLICATE_DELIVERY: 'duplicate-delivery',
+  INVALID_PAYLOAD: 'invalid-payload',
+  VERSION_MISMATCH: 'version-mismatch'
+});
+
+export const EVENT_RELIABILITY_CONCERNS = Object.freeze({
+  DURABLE_PUBLICATION: 'durable-publication',
+  RETRY_MECHANISMS: 'retry-mechanisms',
+  DUPLICATE_DETECTION: 'duplicate-detection',
+  IDEMPOTENT_CONSUMERS: 'idempotent-consumers',
+  DEAD_LETTER_HANDLING: 'dead-letter-handling'
+});
+
+export const EVENT_TELEMETRY_FIELDS = Object.freeze({
+  EVENT_NAME: 'eventName',
+  PUBLISHER: 'publisher',
+  CORRELATION_ID: 'correlationId',
+  TIMESTAMP: 'timestamp',
+  DELIVERY_STATUS: 'deliveryStatus',
+  CONSUMER_COUNT: 'consumerCount',
+  PROCESSING_DURATION: 'processingDurationMs',
+  FAILURE_INFORMATION: 'failureInformation'
+});
+
 export const DATA_FLOW_ERROR_CODES = Object.freeze({
   EXECUTION_STAGE_NOT_FOUND: 'DATA_FLOW_EXECUTION_STAGE_NOT_FOUND',
   EXECUTION_PARTICIPANT_NOT_FOUND: 'DATA_FLOW_EXECUTION_PARTICIPANT_NOT_FOUND',
@@ -177,5 +228,11 @@ export const DATA_FLOW_ERROR_CODES = Object.freeze({
   QUERY_DEFINITION_INVALID: 'DATA_FLOW_QUERY_DEFINITION_INVALID',
   QUERY_AUTHORIZATION_INVALID: 'DATA_FLOW_QUERY_AUTHORIZATION_INVALID',
   QUERY_SIDE_EFFECT_INVALID: 'DATA_FLOW_QUERY_SIDE_EFFECT_INVALID',
-  QUERY_TELEMETRY_INVALID: 'DATA_FLOW_QUERY_TELEMETRY_INVALID'
+  QUERY_TELEMETRY_INVALID: 'DATA_FLOW_QUERY_TELEMETRY_INVALID',
+  EVENT_STAGE_NOT_FOUND: 'DATA_FLOW_EVENT_STAGE_NOT_FOUND',
+  EVENT_LIFECYCLE_INVALID: 'DATA_FLOW_EVENT_LIFECYCLE_INVALID',
+  EVENT_DEFINITION_INVALID: 'DATA_FLOW_EVENT_DEFINITION_INVALID',
+  EVENT_PUBLICATION_INVALID: 'DATA_FLOW_EVENT_PUBLICATION_INVALID',
+  EVENT_CONSUMPTION_INVALID: 'DATA_FLOW_EVENT_CONSUMPTION_INVALID',
+  EVENT_TELEMETRY_INVALID: 'DATA_FLOW_EVENT_TELEMETRY_INVALID'
 });

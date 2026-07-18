@@ -41,7 +41,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-005-01 Execution Overview`
 - Completed: `ARCH-005-02 Command Flow`
 - Completed: `ARCH-005-03 Query Flow`
-- Next: `ARCH-005-04 Event Flow`
+- Completed: `ARCH-005-04 Event Flow`
+- Next: `ARCH-005-05 Workflow Orchestration`
 
 ## Notes
 

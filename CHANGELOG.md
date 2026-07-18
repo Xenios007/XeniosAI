@@ -634,3 +634,21 @@ Version: 0.32.0
 
 Status: Data Flow Architecture
 Version: 0.33.0
+
+---
+
+## [0.34.0] - ARCH-005 Event Flow
+
+### Added
+- Canonical event lifecycle constants for all ARCH-005-04 stages.
+- Event characteristic, delivery status, reliability concern, telemetry, and error-code constants.
+- Immutable contracts for event lifecycle stages, event definitions, event envelopes, event consumption records, event telemetry, and validation results.
+- Event flow descriptor for lifecycle validation, event ownership validation, completed-fact publication, publisher independence checks, local consumer processing validation, version support, and telemetry validation.
+- Dependency-injection registration through `addDataFlow`.
+- Unit tests for lifecycle order, characteristics, reliability metadata, telemetry, ownership examples, skipped stages, definition validation, immutable event creation, publication validation, consumption validation, telemetry validation, and DI access.
+
+### Established
+- Event-flow governance without implementing messaging infrastructure, event replay, event sourcing, schema registries, event routing, durable delivery, retries, dead-letter handling, or workflow orchestration.
+
+Status: Data Flow Architecture
+Version: 0.34.0
