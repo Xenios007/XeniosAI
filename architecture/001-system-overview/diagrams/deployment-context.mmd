@@ -1,0 +1,33 @@
+flowchart TB
+
+Guest
+
+Internet
+
+ReverseProxy["Reverse Proxy"]
+
+Gateway
+
+Services["Business Services"]
+
+Database
+
+Cache
+
+Storage["Object Storage"]
+
+External["External Providers"]
+
+Guest --> Internet
+
+Internet --> ReverseProxy
+
+ReverseProxy --> Gateway
+
+Gateway --> Services
+
+Services --> Database
+Services --> Cache
+Services --> Storage
+
+Services --> External

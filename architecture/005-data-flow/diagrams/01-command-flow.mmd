@@ -1,0 +1,25 @@
+flowchart TD
+
+A[Request Received]
+
+--> B[AI Orchestrator]
+
+B --> C[Decision Engine]
+
+C --> D[Create Command]
+
+D --> E[Business Service]
+
+E --> F[Business Validation]
+
+F --> G[Execute Business Operation]
+
+G --> H[Persist Changes]
+
+H --> I[Publish Domain Event]
+
+I --> J[Return Result]
+
+style B fill:#E8F5E9
+style C fill:#FFF3E0
+style E fill:#E3F2FD

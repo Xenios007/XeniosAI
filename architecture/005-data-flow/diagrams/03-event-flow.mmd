@@ -1,0 +1,20 @@
+flowchart LR
+
+A[Business Service]
+
+--> B[Business Operation Completed]
+
+B --> C[Publish Event]
+
+C --> D[Event Bus]
+
+D --> E1[Notification Service]
+
+D --> E2[Analytics Service]
+
+D --> E3[Audit Service]
+
+D --> E4[Workflow Engine]
+
+style A fill:#E3F2FD
+style D fill:#FFF3E0

@@ -1,0 +1,35 @@
+sequenceDiagram
+
+participant User
+
+participant API
+
+participant Service
+
+participant Workflow
+
+participant AI
+
+participant External
+
+participant Response
+
+User->>API: Business Request
+
+API->>Service: Service Call
+
+Service->>Workflow: Workflow
+
+Workflow->>AI: AI Task
+
+AI->>External: External Tool
+
+External-->>AI: Result
+
+AI-->>Workflow: Response
+
+Workflow-->>Service: Complete
+
+Service-->>API: Business Result
+
+API-->>User: Response

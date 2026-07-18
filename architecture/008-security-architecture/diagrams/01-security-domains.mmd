@@ -1,0 +1,28 @@
+flowchart TB
+
+Identity[Identity]
+
+Authentication[Authentication]
+
+Authorization[Authorization]
+
+ZeroTrust[Zero Trust]
+
+Secrets[Secrets & Keys]
+
+Crypto[Cryptography]
+
+AISecurity[AI Security]
+
+Platform[Platform Security]
+
+Governance[Governance]
+
+Identity --> Authentication
+Authentication --> Authorization
+Authorization --> ZeroTrust
+ZeroTrust --> Secrets
+Secrets --> Crypto
+Crypto --> AISecurity
+AISecurity --> Platform
+Platform --> Governance

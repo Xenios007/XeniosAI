@@ -1,0 +1,42 @@
+flowchart TB
+
+Attacker((Threat))
+
+subgraph Layer1
+Identity[Identity & Authentication]
+end
+
+subgraph Layer2
+Authorization[Authorization & Zero Trust]
+end
+
+subgraph Layer3
+Network[Network & Service Protection]
+end
+
+subgraph Layer4
+Data[Cryptography & Data Protection]
+end
+
+subgraph Layer5
+AI[AI Security]
+end
+
+subgraph Layer6
+Platform[Platform Security]
+end
+
+subgraph Layer7
+Governance[Monitoring, Audit & Governance]
+end
+
+Protected[(Business Assets)]
+
+Attacker --> Identity
+Identity --> Authorization
+Authorization --> Network
+Network --> Data
+Data --> AI
+AI --> Platform
+Platform --> Governance
+Governance --> Protected

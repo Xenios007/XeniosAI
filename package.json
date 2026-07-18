@@ -1,0 +1,11 @@
+{
+  "name": "xeniosai",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "XeniosAI foundation layer implementation.",
+  "scripts": {
+    "build": "node scripts/verify-foundation.mjs",
+    "test": "node --test"
+  }
+}

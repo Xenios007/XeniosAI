@@ -1,0 +1,37 @@
+flowchart LR
+
+Request[Access Request]
+
+Identity[Identity Verification]
+
+Authentication[Authentication]
+
+Authorization[Authorization]
+
+Context[Context Evaluation]
+
+Risk[Risk Assessment]
+
+Policy[Policy Decision]
+
+Decision{Allow?}
+
+Resource[Protected Resource]
+
+Denied[Access Denied]
+
+Audit[(Audit Log)]
+
+Request --> Identity
+Identity --> Authentication
+Authentication --> Authorization
+Authorization --> Context
+Context --> Risk
+Risk --> Policy
+Policy --> Decision
+
+Decision -->|Yes| Resource
+Decision -->|No| Denied
+
+Resource --> Audit
+Denied --> Audit

@@ -1,0 +1,42 @@
+flowchart LR
+
+Experience["Experience
+Channels
+Rendering
+User Interaction"]
+
+Gateway["Gateway
+Authentication
+Validation
+Routing"]
+
+Conversation["Conversation
+Sessions
+History
+State"]
+
+AI["AI Intelligence
+Intent
+Reasoning
+Tool Selection"]
+
+Business["Business Services
+Business Rules
+Workflows"]
+
+Data["Data
+Persistence
+Cache
+Search"]
+
+Integration["Integration
+External APIs
+Adapters
+Providers"]
+
+Experience --> Gateway
+Gateway --> Conversation
+Conversation --> AI
+AI --> Business
+Business --> Data
+Business --> Integration

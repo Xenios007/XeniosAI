@@ -1,0 +1,23 @@
+flowchart TD
+
+A[Request Received]
+
+--> B[AI Orchestrator]
+
+B --> C[Decision Engine]
+
+C --> D[Create Query]
+
+D --> E[Business Service]
+
+E --> F[Retrieve Data]
+
+F --> G[Validate Result]
+
+G --> H[Compose Response]
+
+H --> I[Return Result]
+
+style B fill:#E8F5E9
+style C fill:#FFF3E0
+style E fill:#E3F2FD

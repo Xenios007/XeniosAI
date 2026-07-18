@@ -1,0 +1,31 @@
+flowchart LR
+
+Build[Build]
+
+Package[Package]
+
+Validate[Validate]
+
+Deploy[Deploy]
+
+Operate[Operate]
+
+Scale[Scale]
+
+Upgrade[Upgrade]
+
+Retire[Retire]
+
+Build --> Package
+Package --> Validate
+Validate --> Deploy
+
+Deploy --> Operate
+
+Operate --> Scale
+
+Operate --> Upgrade
+
+Upgrade --> Operate
+
+Operate --> Retire

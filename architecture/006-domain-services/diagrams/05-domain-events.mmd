@@ -1,0 +1,27 @@
+flowchart LR
+
+Reservation["Reservation Aggregate"]
+
+Payment["Payment Aggregate"]
+
+Notification["Notification Aggregate"]
+
+Analytics["Analytics"]
+
+Workflow["Workflow"]
+
+Reservation -->|"Reservation Created"| Payment
+
+Payment -->|"Payment Authorized"| Reservation
+
+Reservation -->|"Reservation Confirmed"| Notification
+
+Reservation -->|"Reservation Confirmed"| Analytics
+
+Reservation -->|"Reservation Confirmed"| Workflow
+
+Workflow -->|"Payment Requested"| Payment
+
+Payment -->|"Payment Captured"| Notification
+
+Notification -->|"Notification Delivered"| Analytics

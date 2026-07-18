@@ -1,0 +1,18 @@
+flowchart LR
+
+A[Service A]
+
+--> B[Service Contract]
+
+B --> C[Service B]
+
+C --> D[Response]
+
+A -. Event .-> E[Event Bus]
+
+E -. Notify .-> F[Service C]
+
+E -. Notify .-> G[Service D]
+
+style B fill:#FFF3E0
+style E fill:#E8F5E9

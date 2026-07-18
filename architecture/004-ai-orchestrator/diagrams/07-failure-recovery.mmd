@@ -1,0 +1,21 @@
+flowchart TD
+
+A[Failure Detected]
+
+A --> B[Classify Failure]
+
+B --> C[Determine Severity]
+
+C --> D[Recovery Strategy]
+
+D --> E[Execute Recovery]
+
+E --> F{Recovered?}
+
+F -->|Yes| G[Resume Execution]
+
+F -->|No| H[Escalate]
+
+H --> I[Decision Engine]
+
+I --> J[Controlled Response]

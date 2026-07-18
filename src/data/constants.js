@@ -1,0 +1,16 @@
+export const STORAGE_CATEGORIES = Object.freeze({
+  TRANSACTIONAL: 'transactional',
+  CACHE: 'cache',
+  SEARCH: 'search',
+  OBJECT: 'object',
+  VECTOR: 'vector',
+  ANALYTICAL: 'analytical',
+  BACKUP: 'backup'
+});
+
+export const DATA_ERROR_CODES = Object.freeze({
+  RECORD_NOT_FOUND: 'DATA_RECORD_NOT_FOUND',
+  CONCURRENCY_CONFLICT: 'DATA_CONCURRENCY_CONFLICT',
+  TRANSACTION_FAILED: 'DATA_TRANSACTION_FAILED',
+  OBJECT_NOT_FOUND: 'DATA_OBJECT_NOT_FOUND'
+});

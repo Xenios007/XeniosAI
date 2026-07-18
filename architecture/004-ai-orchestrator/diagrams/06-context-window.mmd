@@ -1,0 +1,35 @@
+flowchart TD
+
+A[User Request]
+
+A --> B[Conversation Context]
+
+A --> C[Session Context]
+
+A --> D[Memory Context]
+
+A --> E[Knowledge Context]
+
+A --> F[Business Context]
+
+A --> G[Execution Context]
+
+A --> H[Policy Context]
+
+B --> I[Context Assembly]
+
+C --> I
+
+D --> I
+
+E --> I
+
+F --> I
+
+G --> I
+
+H --> I
+
+I --> J[Working Context]
+
+J --> K[Reasoning Pipeline]

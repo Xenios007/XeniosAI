@@ -1,0 +1,15 @@
+export { CONVERSATION_ERROR_CODES, CONVERSATION_STATES } from './constants.js';
+export { AiPort } from './ai/ai-port.js';
+export { ConversationContext } from './contracts/conversation-context.js';
+export { ConversationMessage } from './contracts/conversation-message.js';
+export { ConversationRecord } from './contracts/conversation-record.js';
+export { ConversationResponse } from './contracts/conversation-response.js';
+export { ConversationSession } from './contracts/conversation-session.js';
+export { Participant } from './contracts/participant.js';
+export { StateTransition } from './contracts/state-transition.js';
+export { ConversationError } from './errors/conversation-error.js';
+export { InMemoryConversationRepository } from './repository/in-memory-conversation-repository.js';
+export { ConversationRepository } from './repository/conversation-repository.js';
+export { addConversationLayer } from './service-registration.js';
+export { ConversationService } from './services/conversation-service.js';
+export { ConversationStateMachine } from './services/conversation-state-machine.js';

@@ -1,0 +1,21 @@
+flowchart TD
+
+A[Client]
+
+--> B[Gateway]
+
+B --> C[Authentication]
+
+C --> D[Authorization]
+
+D --> E[Business Service]
+
+E --> F[Business Logic]
+
+F --> G[Response]
+
+G --> H[Client]
+
+style B fill:#E8F5E9
+style D fill:#FFF3E0
+style E fill:#E3F2FD

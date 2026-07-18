@@ -1,0 +1,29 @@
+flowchart TD
+
+    Guest["Guest / User"]
+
+    Experience["Experience Layer"]
+    Gateway["Gateway Layer"]
+    Conversation["Conversation Layer"]
+    AI["AI Intelligence Layer"]
+    Business["Business Services Layer"]
+    Data["Data Layer"]
+    Integration["Integration Layer"]
+
+    Foundation["Foundation Layer"]
+
+    Guest --> Experience
+    Experience --> Gateway
+    Gateway --> Conversation
+    Conversation --> AI
+    AI --> Business
+    Business --> Data
+    Business --> Integration
+
+    Foundation -. Supports .-> Experience
+    Foundation -. Supports .-> Gateway
+    Foundation -. Supports .-> Conversation
+    Foundation -. Supports .-> AI
+    Foundation -. Supports .-> Business
+    Foundation -. Supports .-> Data
+    Foundation -. Supports .-> Integration

@@ -1,0 +1,47 @@
+flowchart TB
+
+    subgraph Hospitality["Hospitality Operations"]
+        Booking["Booking Service"]
+        Pricing["Pricing Service"]
+        Calendar["Calendar Service"]
+    end
+
+    subgraph Property["Property Management"]
+        PropertySvc["Property Service"]
+        Media["Media Service"]
+    end
+
+    subgraph Knowledge["Knowledge Management"]
+        KnowledgeSvc["Knowledge Service"]
+    end
+
+    subgraph Platform["Platform Services"]
+        Workflow["Workflow Service"]
+        Notification["Notification Service"]
+        Authentication["Authentication Service"]
+    end
+
+    subgraph Intelligence["Business Intelligence"]
+        Analytics["Analytics Service"]
+    end
+
+    Booking --> Pricing
+    Booking --> Calendar
+    Booking --> Notification
+
+    Pricing --> PropertySvc
+
+    KnowledgeSvc --> PropertySvc
+
+    Workflow --> Booking
+    Workflow --> Pricing
+    Workflow --> Calendar
+    Workflow --> Notification
+    Workflow --> Authentication
+
+    Analytics --> Booking
+    Analytics --> Pricing
+    Analytics --> Calendar
+    Analytics --> Notification
+
+    PropertySvc --> Media
