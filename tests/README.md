@@ -89,5 +89,6 @@ The repository currently includes automated unit tests for:
 - `ARCH-004-09 Failure Recovery` in `tests/orchestrator/`
 - `ARCH-004-10 Future AI Capabilities` in `tests/orchestrator/`
 - `ARCH-005-01 Execution Overview` in `tests/data-flow/`
+- `ARCH-005-02 Command Flow` in `tests/data-flow/`
 
 These tests validate reusable platform capabilities and channel-facing behavior without introducing business logic.

@@ -39,7 +39,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-004-09 Failure Recovery`
 - Completed: `ARCH-004-10 Future AI Capabilities`
 - Completed: `ARCH-005-01 Execution Overview`
-- Next: `ARCH-005-02 Command Flow`
+- Completed: `ARCH-005-02 Command Flow`
+- Next: `ARCH-005-03 Query Flow`
 
 ## Notes
 

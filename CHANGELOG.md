@@ -598,3 +598,21 @@ Version: 0.30.0
 
 Status: Data Flow Architecture
 Version: 0.31.0
+
+---
+
+## [0.32.0] - ARCH-005 Command Flow
+
+### Added
+- Canonical command lifecycle constants for all ARCH-005-02 stages.
+- Command outcome, characteristic, failure type, telemetry, and error-code constants.
+- Immutable contracts for command lifecycle stages, command definitions, command envelopes, command results, command telemetry, and validation results.
+- Command flow descriptor for lifecycle validation, command ownership validation, authorized command creation, required payload checks, idempotency guidance checks, and telemetry validation.
+- Dependency-injection registration through `addDataFlow`.
+- Unit tests for lifecycle order, characteristics, telemetry, ownership examples, skipped stages, ownership validation, immutable authorized commands, authorization enforcement, payload validation, idempotency guidance, telemetry validation, and DI access.
+
+### Established
+- Command-flow governance without implementing business validation, business execution, persistence, transactions, event publication, query behavior, event processing, or workflow orchestration.
+
+Status: Data Flow Architecture
+Version: 0.32.0
