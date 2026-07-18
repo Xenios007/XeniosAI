@@ -362,3 +362,21 @@ Version: 0.17.0
 
 Status: Service Map Architecture
 Version: 0.18.0
+
+---
+
+## [0.19.0] - ARCH-003 Service Governance
+
+### Added
+- Service governance registry for service profiles, change reviews, exceptions, decision authority, maturity, and metrics.
+- Immutable governance contracts for change requests, review results, exceptions, and governance profiles.
+- Governance scopes and maturity level constants.
+- Runtime validation for change review checklist completeness, ADR requirements, architecture owner approval, exception documentation, and maturity classification.
+- Dependency-injection registration for `ServiceGovernanceRegistry`.
+- Unit tests for profiles, reviews, ADR checks, authority, exceptions, metrics, and DI access.
+
+### Established
+- Executable governance metadata and validation without replacing architecture review or ADR creation.
+
+Status: Service Map Architecture
+Version: 0.19.0

@@ -76,5 +76,6 @@ The repository currently includes automated unit tests for:
 - `ARCH-003-06 Service Communication` in `tests/service-map/`
 - `ARCH-003-07 Service Lifecycle` in `tests/service-map/`
 - `ARCH-003-08 Service Versioning` in `tests/service-map/`
+- `ARCH-003-09 Service Governance` in `tests/service-map/`
 
 These tests validate reusable platform capabilities and channel-facing behavior without introducing business logic.
