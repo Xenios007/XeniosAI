@@ -9,7 +9,12 @@ export {
   EXECUTION_PARTICIPANTS,
   EXECUTION_RESPONSIBILITIES,
   EXECUTION_STATES,
-  EXECUTION_TELEMETRY_FIELDS
+  EXECUTION_TELEMETRY_FIELDS,
+  QUERY_CHARACTERISTICS,
+  QUERY_LIFECYCLE_STAGES,
+  QUERY_OPTIMIZATION_STRATEGIES,
+  QUERY_RESULT_STATUSES,
+  QUERY_TELEMETRY_FIELDS
 } from './constants.js';
 export { CommandDefinition } from './contracts/command-definition.js';
 export { CommandEnvelope } from './contracts/command-envelope.js';
@@ -21,6 +26,13 @@ export { ExecutionLifecycleStage } from './contracts/execution-lifecycle-stage.j
 export { ExecutionParticipant } from './contracts/execution-participant.js';
 export { ExecutionTelemetryRecord } from './contracts/execution-telemetry-record.js';
 export { ExecutionValidationResult } from './contracts/execution-validation-result.js';
+export { QueryDefinition } from './contracts/query-definition.js';
+export { QueryEnvelope } from './contracts/query-envelope.js';
+export { QueryLifecycleStage } from './contracts/query-lifecycle-stage.js';
+export { QueryResultRecord } from './contracts/query-result-record.js';
+export { QueryTelemetryRecord } from './contracts/query-telemetry-record.js';
+export { QueryValidationResult } from './contracts/query-validation-result.js';
 export { CommandFlowDescriptor } from './commands/command-flow-descriptor.js';
 export { ExecutionOverviewDescriptor } from './execution/execution-overview-descriptor.js';
+export { QueryFlowDescriptor } from './queries/query-flow-descriptor.js';
 export { addDataFlow } from './service-registration.js';

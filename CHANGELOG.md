@@ -616,3 +616,21 @@ Version: 0.31.0
 
 Status: Data Flow Architecture
 Version: 0.32.0
+
+---
+
+## [0.33.0] - ARCH-005 Query Flow
+
+### Added
+- Canonical query lifecycle constants for all ARCH-005-03 stages.
+- Query characteristic, result status, optimization strategy, telemetry, and error-code constants.
+- Immutable contracts for query lifecycle stages, query definitions, query envelopes, query results, query telemetry, and validation results.
+- Query flow descriptor for lifecycle validation, ownership validation, read-only query construction, side-effect checks, authoritative result validation, and telemetry validation.
+- Dependency-injection registration through `addDataFlow`.
+- Unit tests for lifecycle order, read-only characteristics, optimization metadata, ownership examples, aggregated query metadata, skipped stages, definition validation, authorized immutable queries, side-effect rejection, authoritative results, telemetry validation, and DI access.
+
+### Established
+- Query-flow governance without implementing state-changing behavior, event flow, workflow orchestration, consistency models, retrieval optimization implementations, or caching/index infrastructure.
+
+Status: Data Flow Architecture
+Version: 0.33.0

@@ -40,7 +40,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-004-10 Future AI Capabilities`
 - Completed: `ARCH-005-01 Execution Overview`
 - Completed: `ARCH-005-02 Command Flow`
-- Next: `ARCH-005-03 Query Flow`
+- Completed: `ARCH-005-03 Query Flow`
+- Next: `ARCH-005-04 Event Flow`
 
 ## Notes
 
