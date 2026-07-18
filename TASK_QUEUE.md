@@ -72,7 +72,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-008-02 Identity & Authentication`
 - Completed: `ARCH-008-03 Authorization Model`
 - Completed: `ARCH-008-04 Zero Trust Architecture`
-- Next: `ARCH-008-05 Secrets & Key Management`
+- Completed: `ARCH-008-05 Secrets & Key Management`
+- Next: `ARCH-008-06 Cryptography & Data Protection`
 
 ## Notes
 

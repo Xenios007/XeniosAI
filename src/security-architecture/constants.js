@@ -14,7 +14,11 @@ export const SECURITY_ARCHITECTURE_ERROR_CODES = Object.freeze({
   AUTHORIZATION_DELEGATION_INVALID: 'SECURITY_ARCHITECTURE_AUTHORIZATION_DELEGATION_INVALID',
   ZERO_TRUST_ARCHITECTURE_INVALID: 'SECURITY_ARCHITECTURE_ZERO_TRUST_INVALID',
   ZERO_TRUST_EVALUATION_INVALID: 'SECURITY_ARCHITECTURE_ZERO_TRUST_EVALUATION_INVALID',
-  ZERO_TRUST_BOUNDARY_INVALID: 'SECURITY_ARCHITECTURE_ZERO_TRUST_BOUNDARY_INVALID'
+  ZERO_TRUST_BOUNDARY_INVALID: 'SECURITY_ARCHITECTURE_ZERO_TRUST_BOUNDARY_INVALID',
+  SECRETS_KEY_MANAGEMENT_INVALID: 'SECURITY_ARCHITECTURE_SECRETS_KEY_MANAGEMENT_INVALID',
+  SECRET_LIFECYCLE_INVALID: 'SECURITY_ARCHITECTURE_SECRET_LIFECYCLE_INVALID',
+  KEY_LIFECYCLE_INVALID: 'SECURITY_ARCHITECTURE_KEY_LIFECYCLE_INVALID',
+  SECRET_DISTRIBUTION_INVALID: 'SECURITY_ARCHITECTURE_SECRET_DISTRIBUTION_INVALID'
 });
 
 export const SECURITY_OBJECTIVES = Object.freeze({
@@ -519,4 +523,187 @@ export const FUTURE_ZERO_TRUST_CAPABILITIES = Object.freeze({
   REAL_TIME_RISK_ADAPTATION: 'Real-time risk adaptation',
   CONFIDENTIAL_COMPUTING_INTEGRATION: 'Confidential computing integration',
   POST_QUANTUM_TRUST_MECHANISMS: 'Post-quantum trust mechanisms'
+});
+
+export const SECRETS_KEY_MANAGEMENT_OBJECTIVES = Object.freeze({
+  SECURE_SECRET_STORAGE: 'secure-secret-storage',
+  CONTROLLED_SECRET_DISTRIBUTION: 'controlled-secret-distribution',
+  AUTOMATED_ROTATION: 'automated-rotation',
+  STRONG_KEY_GOVERNANCE: 'strong-key-governance',
+  COMPLETE_AUDITABILITY: 'complete-auditability',
+  MINIMAL_SECRET_EXPOSURE: 'minimal-secret-exposure',
+  LEAST_PRIVILEGE: 'least-privilege',
+  VENDOR_NEUTRALITY: 'vendor-neutrality'
+});
+
+export const SECRET_CATEGORY_NAMES = Object.freeze({
+  USER_CREDENTIALS: 'User Credentials',
+  SERVICE_CREDENTIALS: 'Service Credentials',
+  API_CREDENTIALS: 'API Credentials',
+  CERTIFICATES: 'Certificates',
+  ENCRYPTION_KEYS: 'Encryption Keys',
+  SIGNING_KEYS: 'Signing Keys',
+  INFRASTRUCTURE_SECRETS: 'Infrastructure Secrets',
+  AI_SECRETS: 'AI Secrets'
+});
+
+export const SECRET_EXAMPLE_GROUPS = Object.freeze({
+  AUTHENTICATION: 'Authentication',
+  PLATFORM: 'Platform',
+  INFRASTRUCTURE: 'Infrastructure',
+  CRYPTOGRAPHY: 'Cryptography',
+  AI: 'AI'
+});
+
+export const SECRET_OWNERSHIP_RESPONSIBILITIES = Object.freeze({
+  CREATION: 'creation',
+  ROTATION: 'rotation',
+  DISTRIBUTION: 'distribution',
+  REVOCATION: 'revocation',
+  RETIREMENT: 'retirement',
+  AUDIT_REVIEW: 'audit-review'
+});
+
+export const SECRET_LIFECYCLE_STAGES = Object.freeze({
+  GENERATE: 'Generate',
+  VALIDATE: 'Validate',
+  STORE: 'Store',
+  DISTRIBUTE: 'Distribute',
+  USE: 'Use',
+  ROTATE: 'Rotate',
+  REVOKE: 'Revoke',
+  RETIRE: 'Retire'
+});
+
+export const SECRET_GENERATION_REQUIREMENTS = Object.freeze({
+  UNIQUE: 'unique',
+  HIGH_ENTROPY: 'high-entropy',
+  NON_PREDICTABLE: 'non-predictable',
+  PURPOSE_SPECIFIC: 'purpose-specific'
+});
+
+export const PROHIBITED_SECRET_STORAGE_LOCATIONS = Object.freeze({
+  SOURCE_CODE: 'source-code',
+  APPLICATION_BINARIES: 'application-binaries',
+  CONTAINER_IMAGES: 'container-images',
+  DEPLOYMENT_TEMPLATES: 'deployment-templates',
+  VERSION_CONTROL_SYSTEMS: 'version-control-systems',
+  DOCUMENTATION: 'documentation'
+});
+
+export const SECRET_DISTRIBUTION_REQUIREMENTS = Object.freeze({
+  AUTHORIZED_WORKLOADS_ONLY: 'authorized-workloads-only',
+  SPECIFIC_REQUIRED_SECRETS: 'specific-required-secrets',
+  JUST_IN_TIME: 'just-in-time',
+  LIMITED_DURATION: 'limited-duration',
+  AVOID_DUPLICATION: 'avoid-duplication'
+});
+
+export const SECRET_USAGE_REQUIREMENTS = Object.freeze({
+  ACCESS_WHEN_NEEDED: 'access-when-needed',
+  MEMORY_MINIMIZATION: 'memory-minimization',
+  AVOID_LOGGING: 'avoid-logging',
+  AVOID_SERIALIZATION: 'avoid-serialization',
+  NO_DIAGNOSTIC_OUTPUT: 'no-diagnostic-output'
+});
+
+export const SECRET_ROTATION_TRIGGERS = Object.freeze({
+  SCHEDULED_POLICY: 'scheduled-policy',
+  PERSONNEL_CHANGES: 'personnel-changes',
+  SECURITY_INCIDENTS: 'security-incidents',
+  CREDENTIAL_COMPROMISE: 'credential-compromise',
+  COMPLIANCE_REQUIREMENTS: 'compliance-requirements'
+});
+
+export const SECRET_REVOCATION_REQUIREMENTS = Object.freeze({
+  IMMEDIATE_INVALIDATION: 'immediate-invalidation',
+  CONTROLLED_REPLACEMENT: 'controlled-replacement',
+  OPERATIONAL_CONTINUITY: 'operational-continuity',
+  AUDIT_RECORDING: 'audit-recording'
+});
+
+export const CRYPTOGRAPHIC_KEY_TYPES = Object.freeze({
+  ENCRYPTION_KEYS: 'encryption-keys',
+  SIGNING_KEYS: 'signing-keys',
+  CERTIFICATE_KEYS: 'certificate-keys',
+  IDENTITY_KEYS: 'identity-keys',
+  SERVICE_AUTHENTICATION_KEYS: 'service-authentication-keys'
+});
+
+export const KEY_LIFECYCLE_STAGES = Object.freeze({
+  GENERATE: 'Generate',
+  ACTIVATE: 'Activate',
+  USE: 'Use',
+  ROTATE: 'Rotate',
+  ARCHIVE: 'Archive',
+  DESTROY: 'Destroy'
+});
+
+export const KEY_PURPOSES = Object.freeze({
+  DATA_ENCRYPTION: 'data-encryption',
+  TRANSPORT_SECURITY: 'transport-security',
+  DIGITAL_SIGNATURES: 'digital-signatures',
+  SERVICE_AUTHENTICATION: 'service-authentication',
+  BACKUP_ENCRYPTION: 'backup-encryption'
+});
+
+export const AI_SECRET_ACCESS_TARGETS = Object.freeze({
+  EXTERNAL_MODEL_PROVIDERS: 'external-model-providers',
+  KNOWLEDGE_REPOSITORIES: 'knowledge-repositories',
+  TOOL_INTEGRATIONS: 'tool-integrations',
+  WORKFLOW_SERVICES: 'workflow-services',
+  RETRIEVAL_SYSTEMS: 'retrieval-systems'
+});
+
+export const SECRET_ENVIRONMENT_NAMES = Object.freeze({
+  DEVELOPMENT: 'Development',
+  TESTING: 'Testing',
+  STAGING: 'Staging',
+  PRODUCTION: 'Production'
+});
+
+export const SECRET_ADMINISTRATIVE_CONTROLS = Object.freeze({
+  MULTI_PARTY_APPROVAL: 'multi-party-approval',
+  AUDIT_LOGGING: 'audit-logging',
+  SEPARATION_OF_DUTIES: 'separation-of-duties',
+  CHANGE_MANAGEMENT: 'change-management',
+  EMERGENCY_REVOCATION: 'emergency-revocation'
+});
+
+export const SECRET_OBSERVABILITY_EVENTS = Object.freeze({
+  SECRET_CREATION: 'secret-creation',
+  SECRET_ROTATION: 'secret-rotation',
+  ACCESS_REQUESTS: 'access-requests',
+  FAILED_ACCESS_ATTEMPTS: 'failed-access-attempts',
+  REVOCATIONS: 'revocations',
+  KEY_LIFECYCLE_EVENTS: 'key-lifecycle-events'
+});
+
+export const SECRET_GOVERNANCE_ACTIVITIES = Object.freeze({
+  OWNERSHIP_REVIEWS: 'ownership-reviews',
+  ROTATION_VALIDATION: 'rotation-validation',
+  LIFECYCLE_AUDITS: 'lifecycle-audits',
+  COMPLIANCE_VERIFICATION: 'compliance-verification',
+  POLICY_ENFORCEMENT: 'policy-enforcement',
+  INVENTORY_MANAGEMENT: 'inventory-management'
+});
+
+export const SECRETS_RELATIONSHIP_FLOW_STAGES = Object.freeze({
+  IDENTITY: 'Identity',
+  AUTHENTICATION: 'Authentication',
+  AUTHORIZATION: 'Authorization',
+  ZERO_TRUST: 'Zero Trust',
+  SECRETS: 'Secrets',
+  PROTECTED_COMMUNICATION: 'Protected Communication'
+});
+
+export const FUTURE_SECRETS_KEY_MANAGEMENT_CAPABILITIES = Object.freeze({
+  AUTOMATED_SECRET_ROTATION: 'Automated secret rotation',
+  SHORT_LIVED_DYNAMIC_CREDENTIALS: 'Short-lived dynamic credentials',
+  HARDWARE_BACKED_KEY_PROTECTION: 'Hardware-backed key protection',
+  CONFIDENTIAL_COMPUTING_INTEGRATION: 'Confidential computing integration',
+  AI_ASSISTED_SECRET_ANOMALY_DETECTION: 'AI-assisted secret anomaly detection',
+  AUTONOMOUS_CREDENTIAL_REVOCATION: 'Autonomous credential revocation',
+  POST_QUANTUM_KEY_MANAGEMENT: 'Post-quantum key management',
+  POLICY_DRIVEN_SECRET_ORCHESTRATION: 'Policy-driven secret orchestration'
 });

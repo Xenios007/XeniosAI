@@ -14,9 +14,12 @@ export {
   AUTHORIZATION_OBSERVABILITY_EVENTS,
   BUSINESS_AUTHORIZATION_ROLES,
   CREDENTIAL_MANAGEMENT_CAPABILITIES,
+  AI_SECRET_ACCESS_TARGETS,
+  CRYPTOGRAPHIC_KEY_TYPES,
   DATA_TRUST_RESOURCES,
   DELEGATED_AUTHORIZATION_REQUIREMENTS,
   DEVICE_TRUST_FACTORS,
+  FUTURE_SECRETS_KEY_MANAGEMENT_CAPABILITIES,
   FUTURE_IDENTITY_CAPABILITIES,
   FUTURE_AUTHORIZATION_CAPABILITIES,
   FUTURE_SECURITY_OVERVIEW_CAPABILITIES,
@@ -29,8 +32,11 @@ export {
   IDENTITY_OBJECTIVES,
   IDENTITY_OBSERVABILITY_EVENTS,
   IDENTITY_VERIFICATION_TRIGGERS,
+  KEY_LIFECYCLE_STAGES,
+  KEY_PURPOSES,
   POLICY_EVALUATION_INPUTS,
   PROTECTED_RESOURCE_CATEGORIES,
+  PROHIBITED_SECRET_STORAGE_LOCATIONS,
   SECURITY_ARCHITECTURE_ERROR_CODES,
   SECURITY_DOMAIN_NAMES,
   SECURITY_GOVERNANCE_ACTIVITIES,
@@ -39,6 +45,21 @@ export {
   SECURITY_PRINCIPLES,
   SECURITY_RESPONSIBILITY_OWNERS,
   SECURITY_RISK_FACTORS,
+  SECRET_ADMINISTRATIVE_CONTROLS,
+  SECRET_CATEGORY_NAMES,
+  SECRET_DISTRIBUTION_REQUIREMENTS,
+  SECRET_ENVIRONMENT_NAMES,
+  SECRET_EXAMPLE_GROUPS,
+  SECRET_GENERATION_REQUIREMENTS,
+  SECRET_GOVERNANCE_ACTIVITIES,
+  SECRET_LIFECYCLE_STAGES,
+  SECRET_OBSERVABILITY_EVENTS,
+  SECRET_OWNERSHIP_RESPONSIBILITIES,
+  SECRET_REVOCATION_REQUIREMENTS,
+  SECRET_ROTATION_TRIGGERS,
+  SECRET_USAGE_REQUIREMENTS,
+  SECRETS_KEY_MANAGEMENT_OBJECTIVES,
+  SECRETS_RELATIONSHIP_FLOW_STAGES,
   SESSION_MANAGEMENT_CAPABILITIES,
   SERVICE_AUTHORIZATION_CHECKS,
   SERVICE_TO_SERVICE_TRUST_REQUIREMENTS,
@@ -66,16 +87,21 @@ export { DelegatedAuthorizationRecord } from './contracts/delegated-authorizatio
 export { IdentityCategory } from './contracts/identity-category.js';
 export { IdentityLifecycleRecord } from './contracts/identity-lifecycle-record.js';
 export { IdentityValidationResult } from './contracts/identity-validation-result.js';
+export { KeyLifecycleRecord } from './contracts/key-lifecycle-record.js';
 export { SecurityDomain } from './contracts/security-domain.js';
 export { SecurityResponsibility } from './contracts/security-responsibility.js';
 export { SecurityRiskAssessment } from './contracts/security-risk-assessment.js';
 export { SecurityValidationResult } from './contracts/security-validation-result.js';
+export { SecretDistributionPolicy } from './contracts/secret-distribution-policy.js';
+export { SecretLifecycleRecord } from './contracts/secret-lifecycle-record.js';
+export { SecretsKeyManagementValidationResult } from './contracts/secrets-key-management-validation-result.js';
 export { TrustBoundary } from './contracts/trust-boundary.js';
 export { ZeroTrustBoundary } from './contracts/zero-trust-boundary.js';
 export { ZeroTrustEvaluation } from './contracts/zero-trust-evaluation.js';
 export { ZeroTrustValidationResult } from './contracts/zero-trust-validation-result.js';
 export { AuthorizationModelDescriptor } from './authorization/authorization-model-descriptor.js';
 export { IdentityAuthenticationDescriptor } from './identity/identity-authentication-descriptor.js';
+export { SecretsKeyManagementDescriptor } from './secrets/secrets-key-management-descriptor.js';
 export { SecurityOverviewDescriptor } from './overview/security-overview-descriptor.js';
 export { ZeroTrustArchitectureDescriptor } from './zero-trust/zero-trust-architecture-descriptor.js';
 export { addSecurityArchitecture } from './service-registration.js';

@@ -1171,3 +1171,20 @@ Version: 0.63.0
 
 Status: Security Architecture
 Version: 0.64.0
+
+---
+
+## [0.65.0] - ARCH-008 Secrets & Key Management
+
+### Added
+- Secret and key management objective, category, example group, ownership, lifecycle, generation, prohibited storage, distribution, usage, rotation, revocation, key type, key purpose, AI access target, environment, administrative control, observability, governance, relationship flow, future capability, and error-code constants.
+- Immutable contracts for secret lifecycle records, key lifecycle records, secret distribution policies, and validation results.
+- Secrets and key management descriptor for documented metadata, secret lifecycle validation, key lifecycle validation, distribution validation, and future capability placeholders.
+- Dependency-injection registration through `addSecurityArchitecture`.
+- Unit tests for secret categories, lifecycle, ownership, generation, storage, distribution, AI access constraints, key lifecycle, environment isolation, future placeholders, incomplete metadata validation, and DI access.
+
+### Established
+- Secrets and key management governance without implementing cryptographic algorithms, encryption standards, vault products, secret stores, runtime key material handling, identity providers, or vendor-specific secret management products.
+
+Status: Security Architecture
+Version: 0.65.0
