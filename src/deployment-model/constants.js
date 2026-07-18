@@ -2,7 +2,13 @@ export const DEPLOYMENT_MODEL_ERROR_CODES = Object.freeze({
   DEPLOYMENT_OVERVIEW_INVALID: 'DEPLOYMENT_MODEL_OVERVIEW_INVALID',
   DEPLOYMENT_UNIT_INVALID: 'DEPLOYMENT_MODEL_DEPLOYMENT_UNIT_INVALID',
   DEPLOYMENT_ENVIRONMENT_INVALID: 'DEPLOYMENT_MODEL_ENVIRONMENT_INVALID',
-  DEPLOYMENT_BOUNDARY_INVALID: 'DEPLOYMENT_MODEL_BOUNDARY_INVALID'
+  DEPLOYMENT_BOUNDARY_INVALID: 'DEPLOYMENT_MODEL_BOUNDARY_INVALID',
+  ENVIRONMENT_STRATEGY_INVALID: 'DEPLOYMENT_MODEL_ENVIRONMENT_STRATEGY_INVALID',
+  ENVIRONMENT_PROMOTION_INVALID: 'DEPLOYMENT_MODEL_ENVIRONMENT_PROMOTION_INVALID',
+  ENVIRONMENT_CONFIGURATION_INVALID: 'DEPLOYMENT_MODEL_ENVIRONMENT_CONFIGURATION_INVALID',
+  ENVIRONMENT_DATA_STRATEGY_INVALID: 'DEPLOYMENT_MODEL_ENVIRONMENT_DATA_STRATEGY_INVALID',
+  ENVIRONMENT_MONITORING_INVALID: 'DEPLOYMENT_MODEL_ENVIRONMENT_MONITORING_INVALID',
+  ENVIRONMENT_GOVERNANCE_INVALID: 'DEPLOYMENT_MODEL_ENVIRONMENT_GOVERNANCE_INVALID'
 });
 
 export const DEPLOYMENT_OBJECTIVES = Object.freeze({
@@ -91,4 +97,79 @@ export const FUTURE_DEPLOYMENT_CAPABILITIES = Object.freeze({
   SERVERLESS_EXECUTION_MODELS: 'Serverless execution models',
   GLOBAL_TRAFFIC_DISTRIBUTION: 'Global traffic distribution',
   CARBON_AWARE_WORKLOAD_SCHEDULING: 'Carbon-aware workload scheduling'
+});
+
+export const ENVIRONMENT_OBJECTIVES = Object.freeze({
+  SAFE_EXPERIMENTATION: 'safe-experimentation',
+  RELIABLE_TESTING: 'reliable-testing',
+  CONTROLLED_VALIDATION: 'controlled-validation',
+  PREDICTABLE_PRODUCTION_RELEASES: 'predictable-production-releases',
+  OPERATIONAL_STABILITY: 'operational-stability',
+  FAST_RECOVERY: 'fast-recovery',
+  MINIMAL_DEPLOYMENT_RISK: 'minimal-deployment-risk'
+});
+
+export const ENVIRONMENT_RESPONSIBILITIES = Object.freeze({
+  FEATURE_CREATION: 'Feature creation',
+  SERVICE_INTEROPERABILITY: 'Service interoperability',
+  QUALITY_VERIFICATION: 'Quality verification',
+  RELEASE_VALIDATION: 'Release validation',
+  BUSINESS_OPERATIONS: 'Business operations',
+  BUSINESS_CONTINUITY: 'Business continuity'
+});
+
+export const CONFIGURATION_PRINCIPLES = Object.freeze({
+  EXTERNALIZED: 'externalized',
+  VERSION_CONTROLLED: 'version-controlled',
+  ENVIRONMENT_SPECIFIC: 'environment-specific',
+  SECURELY_MANAGED: 'securely-managed',
+  INDEPENDENTLY_DEPLOYABLE: 'independently-deployable',
+  NO_RECOMPILATION_REQUIRED: 'no-recompilation-required'
+});
+
+export const ENVIRONMENT_ISOLATION_AREAS = Object.freeze({
+  COMPUTE_RESOURCES: 'compute-resources',
+  STORAGE: 'storage',
+  NETWORKING: 'networking',
+  SECRETS: 'secrets',
+  MONITORING: 'monitoring',
+  OPERATIONAL_ACCESS: 'operational-access'
+});
+
+export const ENVIRONMENT_MONITORING_CAPABILITIES = Object.freeze({
+  HEALTH_STATUS: 'health-status',
+  LOGS: 'logs',
+  METRICS: 'metrics',
+  TRACES: 'traces',
+  DEPLOYMENT_VERSION: 'deployment-version',
+  RESOURCE_UTILIZATION: 'resource-utilization'
+});
+
+export const ENVIRONMENT_GOVERNANCE_CONTROLS = Object.freeze({
+  ACCESS_CONTROL: 'access-control',
+  DEPLOYMENT_APPROVAL: 'deployment-approval',
+  CHANGE_MANAGEMENT: 'change-management',
+  CONFIGURATION_REVIEW: 'configuration-review',
+  ENVIRONMENT_HEALTH: 'environment-health',
+  CAPACITY_PLANNING: 'capacity-planning'
+});
+
+export const FEATURE_ROLLOUT_STAGES = Object.freeze({
+  DEVELOPMENT: 'Development',
+  INTERNAL_VALIDATION: 'Internal Validation',
+  TESTING: 'Testing',
+  STAGING: 'Staging',
+  LIMITED_PRODUCTION: 'Limited Production',
+  FULL_PRODUCTION: 'Full Production'
+});
+
+export const FUTURE_ENVIRONMENT_CAPABILITIES = Object.freeze({
+  EPHEMERAL_PREVIEW_ENVIRONMENTS: 'Ephemeral preview environments',
+  BRANCH_SPECIFIC_DEPLOYMENTS: 'Branch-specific deployments',
+  AUTOMATED_INTEGRATION_ENVIRONMENTS: 'Automated integration environments',
+  AI_ASSISTED_ENVIRONMENT_PROVISIONING: 'AI-assisted environment provisioning',
+  ENVIRONMENT_CLONING: 'Environment cloning',
+  MULTI_REGION_STAGING: 'Multi-region staging',
+  PERFORMANCE_BENCHMARKING_ENVIRONMENTS: 'Performance benchmarking environments',
+  COMPLIANCE_VALIDATION_ENVIRONMENTS: 'Compliance validation environments'
 });
