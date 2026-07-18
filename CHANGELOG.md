@@ -724,3 +724,21 @@ Version: 0.37.0
 
 Status: Data Flow Architecture
 Version: 0.38.0
+
+---
+
+## [0.39.0] - ARCH-005 Transaction Boundaries
+
+### Added
+- Canonical transaction lifecycle constants for all ARCH-005-09 stages.
+- Transaction ownership principle, consistency scope, coordination mechanism, failure type, result, telemetry, and error-code constants.
+- Immutable contracts for transaction lifecycle stages, boundaries, operation records, compensation records, telemetry records, and validation results.
+- Transaction boundaries descriptor for lifecycle validation, local ownership validation, distributed transaction rejection, event-after-commit validation, operation validation, compensation validation, retry/idempotency checks, and telemetry validation.
+- Dependency-injection registration through `addDataFlow`.
+- Unit tests for lifecycle order, ownership metadata, consistency and coordination metadata, documented ownership examples, skipped stages, boundary validation, local operation validation, invalid operation checks, compensation validation, telemetry validation, and DI access.
+
+### Established
+- Transaction-boundary governance without implementing database transactions, isolation levels, outbox integration, saga orchestration, transaction dashboards, automated compensation, or cross-region consistency.
+
+Status: Data Flow Architecture
+Version: 0.39.0

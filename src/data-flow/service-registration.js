@@ -6,6 +6,7 @@ import { ExecutionOverviewDescriptor } from './execution/execution-overview-desc
 import { ServiceIntegrationDescriptor } from './integrations/service-integration-descriptor.js';
 import { MessagingPatternsDescriptor } from './messaging/messaging-patterns-descriptor.js';
 import { QueryFlowDescriptor } from './queries/query-flow-descriptor.js';
+import { TransactionBoundariesDescriptor } from './transactions/transaction-boundaries-descriptor.js';
 import { WorkflowOrchestrationDescriptor } from './workflows/workflow-orchestration-descriptor.js';
 
 export function addDataFlow(services) {
@@ -20,6 +21,7 @@ export function addDataFlow(services) {
   services.registerSingleton('MessagingPatternsDescriptor', () => new MessagingPatternsDescriptor());
   services.registerSingleton('QueryFlowDescriptor', () => new QueryFlowDescriptor());
   services.registerSingleton('ServiceIntegrationDescriptor', () => new ServiceIntegrationDescriptor());
+  services.registerSingleton('TransactionBoundariesDescriptor', () => new TransactionBoundariesDescriptor());
   services.registerSingleton('WorkflowOrchestrationDescriptor', () => new WorkflowOrchestrationDescriptor());
 
   return services;

@@ -44,6 +44,13 @@ export {
   SERVICE_INTEGRATION_RESPONSE_STATUSES,
   SERVICE_INTEGRATION_SECURITY_CONTROLS,
   SERVICE_INTEGRATION_TELEMETRY_FIELDS,
+  TRANSACTION_CONSISTENCY_SCOPES,
+  TRANSACTION_COORDINATION_MECHANISMS,
+  TRANSACTION_FAILURE_TYPES,
+  TRANSACTION_LIFECYCLE_STAGES,
+  TRANSACTION_OWNERSHIP_PRINCIPLES,
+  TRANSACTION_RESULTS,
+  TRANSACTION_TELEMETRY_FIELDS,
   WORKFLOW_INITIATION_SOURCES,
   WORKFLOW_LIFECYCLE_STAGES,
   WORKFLOW_RECOVERY_STRATEGIES,
@@ -94,6 +101,12 @@ export { ServiceIntegrationRequest } from './contracts/service-integration-reque
 export { ServiceIntegrationResponse } from './contracts/service-integration-response.js';
 export { ServiceIntegrationTelemetryRecord } from './contracts/service-integration-telemetry-record.js';
 export { ServiceIntegrationValidationResult } from './contracts/service-integration-validation-result.js';
+export { TransactionBoundary } from './contracts/transaction-boundary.js';
+export { TransactionCompensationRecord } from './contracts/transaction-compensation-record.js';
+export { TransactionLifecycleStage } from './contracts/transaction-lifecycle-stage.js';
+export { TransactionOperationRecord } from './contracts/transaction-operation-record.js';
+export { TransactionTelemetryRecord } from './contracts/transaction-telemetry-record.js';
+export { TransactionValidationResult } from './contracts/transaction-validation-result.js';
 export { WorkflowDefinition } from './contracts/workflow-definition.js';
 export { WorkflowInstance } from './contracts/workflow-instance.js';
 export { WorkflowLifecycleStage } from './contracts/workflow-lifecycle-stage.js';
@@ -108,5 +121,6 @@ export { ExecutionOverviewDescriptor } from './execution/execution-overview-desc
 export { ServiceIntegrationDescriptor } from './integrations/service-integration-descriptor.js';
 export { MessagingPatternsDescriptor } from './messaging/messaging-patterns-descriptor.js';
 export { QueryFlowDescriptor } from './queries/query-flow-descriptor.js';
+export { TransactionBoundariesDescriptor } from './transactions/transaction-boundaries-descriptor.js';
 export { WorkflowOrchestrationDescriptor } from './workflows/workflow-orchestration-descriptor.js';
 export { addDataFlow } from './service-registration.js';
