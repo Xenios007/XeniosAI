@@ -38,7 +38,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-004-08 Agent Coordination`
 - Completed: `ARCH-004-09 Failure Recovery`
 - Completed: `ARCH-004-10 Future AI Capabilities`
-- Next: `ARCH-005-01 Execution Overview`
+- Completed: `ARCH-005-01 Execution Overview`
+- Next: `ARCH-005-02 Command Flow`
 
 ## Notes
 

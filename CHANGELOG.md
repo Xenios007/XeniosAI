@@ -579,3 +579,22 @@ Version: 0.29.0
 
 Status: AI Orchestrator Architecture
 Version: 0.30.0
+
+---
+
+## [0.31.0] - ARCH-005 Execution Overview
+
+### Added
+- Data Flow module under `src/data-flow/`.
+- Canonical execution lifecycle constants for all ARCH-005-01 stages.
+- Execution participant, responsibility, state, telemetry, and error-code constants.
+- Immutable contracts for lifecycle stages, participants, telemetry records, and validation results.
+- Execution overview descriptor for lifecycle, participant boundary, state transition, and telemetry validation.
+- Dependency-injection registration through `addDataFlow`.
+- Unit tests for lifecycle order, participants, responsibilities, skipped stages, state transitions, telemetry, participant boundaries, and DI access.
+
+### Established
+- High-level execution governance without implementing command flow, query flow, event flow, workflow orchestration, service integration, API contracts, messaging patterns, or transaction boundaries.
+
+Status: Data Flow Architecture
+Version: 0.31.0
