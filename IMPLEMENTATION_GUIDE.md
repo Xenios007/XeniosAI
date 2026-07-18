@@ -172,7 +172,9 @@ Every session:
 
 11. Commit.
 
-12. Stop.
+12. Push the committed branch to the configured Git remote.
+
+13. Stop.
 
 ---
 
@@ -278,6 +280,16 @@ Implement ARCH-002 Foundation Layer
 
 ---
 
+# Pushes
+
+After each successful session commit, push the current branch to the configured Git remote.
+
+If no remote exists, authentication fails, or the push is rejected, report the failure in the end-of-session report and stop.
+
+Do not rewrite remote history unless explicitly instructed.
+
+---
+
 # Pull Requests
 
 Each PR should implement one architecture module only.
@@ -358,6 +370,7 @@ Automatically:
 * locate the next unfinished architecture module
 * implement it
 * commit
+* push
 * report
 * stop
 
