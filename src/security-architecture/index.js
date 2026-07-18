@@ -21,6 +21,7 @@ export {
   AI_TRUST_MODEL_STAGES,
   AUTHENTICATION_FACTOR_TYPES,
   AUTHENTICATION_PRINCIPLES,
+  ARTIFACT_TYPES,
   ATTRIBUTE_AUTHORIZATION_GROUPS,
   AUTHORIZATION_ACTIONS,
   AUTHORIZATION_COMPONENT_NAMES,
@@ -29,6 +30,8 @@ export {
   AUTHORIZATION_OBJECTIVES,
   AUTHORIZATION_OBSERVABILITY_EVENTS,
   BUSINESS_AUTHORIZATION_ROLES,
+  BUILD_SECURITY_REQUIREMENTS,
+  CONFIGURATION_INTEGRITY_CONTROLS,
   CREDENTIAL_MANAGEMENT_CAPABILITIES,
   AI_SECRET_ACCESS_TARGETS,
   AI_DATA_PROTECTION_ASSETS,
@@ -39,6 +42,9 @@ export {
   CRYPTOGRAPHY_PHILOSOPHY_OBJECTIVES,
   CRYPTOGRAPHY_RELATIONSHIP_FLOW_STAGES,
   DATA_TRUST_RESOURCES,
+  DEPENDENCY_COMPONENT_TYPES,
+  DEPENDENCY_GOVERNANCE_REQUIREMENTS,
+  DEPLOYMENT_INTEGRITY_CONTROLS,
   DATA_AT_REST_LOCATIONS,
   DATA_CATEGORY_NAMES,
   DATA_IN_TRANSIT_CHANNELS,
@@ -55,10 +61,12 @@ export {
   FUTURE_AI_SECURITY_CAPABILITIES,
   FUTURE_SECRETS_KEY_MANAGEMENT_CAPABILITIES,
   FUTURE_IDENTITY_CAPABILITIES,
+  FUTURE_PLATFORM_SUPPLY_CHAIN_SECURITY_CAPABILITIES,
   FUTURE_AUTHORIZATION_CAPABILITIES,
   FUTURE_SECURITY_OVERVIEW_CAPABILITIES,
   FUTURE_ZERO_TRUST_CAPABILITIES,
   HUMAN_TRUST_REQUIREMENTS,
+  INCIDENT_CONTAINMENT_ACTIONS,
   HUMAN_OVERSIGHT_ACTIVITIES,
   IDENTITY_ARCHITECTURE_STAGES,
   IDENTITY_CATEGORY_NAMES,
@@ -68,11 +76,19 @@ export {
   IDENTITY_OBSERVABILITY_EVENTS,
   IDENTITY_VERIFICATION_TRIGGERS,
   INFORMATION_CLASSIFICATION_LEVELS,
+  INFRASTRUCTURE_PROTECTION_AREAS,
   INTEGRITY_PROTECTION_TARGETS,
   KEY_LIFECYCLE_STAGES,
   KEY_PURPOSES,
   KNOWLEDGE_PROTECTION_CONTROLS,
   MODEL_GOVERNANCE_ACTIVITIES,
+  PLATFORM_ADMINISTRATIVE_CONTROLS,
+  PLATFORM_AI_SUPPLY_CHAIN_COMPONENTS,
+  PLATFORM_SECURITY_DOMAIN_STAGES,
+  PLATFORM_SECURITY_GOVERNANCE_ACTIVITIES,
+  PLATFORM_SECURITY_OBSERVABILITY_EVENTS,
+  PLATFORM_SECURITY_RELATIONSHIP_FLOW_STAGES,
+  PLATFORM_SUPPLY_CHAIN_SECURITY_OBJECTIVES,
   POLICY_EVALUATION_INPUTS,
   PROTECTED_RESOURCE_CATEGORIES,
   PROHIBITED_SECRET_STORAGE_LOCATIONS,
@@ -80,7 +96,10 @@ export {
   PROMPT_INJECTION_RESISTANCE_CONTROLS,
   PROMPT_SECURITY_CONTROLS,
   RETENTION_JUSTIFICATIONS,
+  RUNTIME_HARDENING_PRACTICES,
+  SBOM_COMPONENT_TYPES,
   SECURE_DISPOSAL_TARGETS,
+  SECURE_DEVELOPMENT_PRACTICES,
   SECURITY_ARCHITECTURE_ERROR_CODES,
   SECURITY_DOMAIN_NAMES,
   SECURITY_GOVERNANCE_ACTIVITIES,
@@ -109,6 +128,7 @@ export {
   SERVICE_TO_SERVICE_TRUST_REQUIREMENTS,
   SERVICE_TRUST_REQUIREMENTS,
   TECHNICAL_AUTHORIZATION_ROLES,
+  THIRD_PARTY_SERVICE_TYPES,
   TRUST_BOUNDARY_NAMES,
   TRUST_LIFECYCLE_STAGES,
   WORKLOAD_TRUST_IDENTITIES,
@@ -136,10 +156,13 @@ export { CryptographyDataProtectionValidationResult } from './contracts/cryptogr
 export { DataProtectionProfile } from './contracts/data-protection-profile.js';
 export { DataSharingRetentionPolicy } from './contracts/data-sharing-retention-policy.js';
 export { DelegatedAuthorizationRecord } from './contracts/delegated-authorization-record.js';
+export { DependencyArtifactGovernancePolicy } from './contracts/dependency-artifact-governance-policy.js';
 export { IdentityCategory } from './contracts/identity-category.js';
 export { IdentityLifecycleRecord } from './contracts/identity-lifecycle-record.js';
 export { IdentityValidationResult } from './contracts/identity-validation-result.js';
 export { KeyLifecycleRecord } from './contracts/key-lifecycle-record.js';
+export { PlatformOperationalSecurityProfile } from './contracts/platform-operational-security-profile.js';
+export { PlatformSupplyChainSecurityValidationResult } from './contracts/platform-supply-chain-security-validation-result.js';
 export { SecurityDomain } from './contracts/security-domain.js';
 export { SecurityResponsibility } from './contracts/security-responsibility.js';
 export { SecurityRiskAssessment } from './contracts/security-risk-assessment.js';
@@ -147,6 +170,7 @@ export { SecurityValidationResult } from './contracts/security-validation-result
 export { SecretDistributionPolicy } from './contracts/secret-distribution-policy.js';
 export { SecretLifecycleRecord } from './contracts/secret-lifecycle-record.js';
 export { SecretsKeyManagementValidationResult } from './contracts/secrets-key-management-validation-result.js';
+export { SoftwareDeliverySecurityProfile } from './contracts/software-delivery-security-profile.js';
 export { TrustBoundary } from './contracts/trust-boundary.js';
 export { ZeroTrustBoundary } from './contracts/zero-trust-boundary.js';
 export { ZeroTrustEvaluation } from './contracts/zero-trust-evaluation.js';
@@ -155,6 +179,7 @@ export { AiSecurityDescriptor } from './ai-security/ai-security-descriptor.js';
 export { AuthorizationModelDescriptor } from './authorization/authorization-model-descriptor.js';
 export { CryptographyDataProtectionDescriptor } from './cryptography/cryptography-data-protection-descriptor.js';
 export { IdentityAuthenticationDescriptor } from './identity/identity-authentication-descriptor.js';
+export { PlatformSupplyChainSecurityDescriptor } from './platform-supply-chain/platform-supply-chain-security-descriptor.js';
 export { SecretsKeyManagementDescriptor } from './secrets/secrets-key-management-descriptor.js';
 export { SecurityOverviewDescriptor } from './overview/security-overview-descriptor.js';
 export { ZeroTrustArchitectureDescriptor } from './zero-trust/zero-trust-architecture-descriptor.js';

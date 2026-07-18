@@ -1222,3 +1222,20 @@ Version: 0.66.0
 
 Status: Security Architecture
 Version: 0.67.0
+
+---
+
+## [0.68.0] - ARCH-008 Platform & Supply Chain Security
+
+### Added
+- Platform and supply chain security objective, domain, secure development, dependency, SBOM, build, artifact, deployment, infrastructure, runtime hardening, configuration, third-party, AI supply chain, administrative control, observability, incident containment, governance, relationship flow, future capability, and error-code constants.
+- Immutable contracts for software delivery security profiles, dependency and artifact governance policies, platform operational security profiles, and validation results.
+- Platform and supply chain security descriptor for documented metadata, trusted delivery validation, dependency/artifact governance validation, operational security validation, and future capability placeholders.
+- Dependency-injection registration through `addSecurityArchitecture`.
+- Unit tests for software delivery lifecycle, secure development, dependency governance, SBOM inventory, artifact integrity, deployment integrity, infrastructure protection, runtime hardening, configuration integrity, third-party services, AI supply chain, administrative controls, incident containment, future placeholders, incomplete metadata validation, and DI access.
+
+### Established
+- Platform and supply chain security governance without implementing CI/CD products, operating systems, cloud providers, runtime hardening tools, vulnerability scanners, SBOM generators, or vendor-specific security tooling.
+
+Status: Security Architecture
+Version: 0.68.0

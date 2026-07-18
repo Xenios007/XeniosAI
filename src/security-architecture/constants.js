@@ -26,7 +26,11 @@ export const SECURITY_ARCHITECTURE_ERROR_CODES = Object.freeze({
   AI_SECURITY_ARCHITECTURE_INVALID: 'SECURITY_ARCHITECTURE_AI_SECURITY_INVALID',
   AI_SECURITY_PROFILE_INVALID: 'SECURITY_ARCHITECTURE_AI_SECURITY_PROFILE_INVALID',
   AI_TOOL_INVOCATION_POLICY_INVALID: 'SECURITY_ARCHITECTURE_AI_TOOL_INVOCATION_POLICY_INVALID',
-  AI_GOVERNANCE_POLICY_INVALID: 'SECURITY_ARCHITECTURE_AI_GOVERNANCE_POLICY_INVALID'
+  AI_GOVERNANCE_POLICY_INVALID: 'SECURITY_ARCHITECTURE_AI_GOVERNANCE_POLICY_INVALID',
+  PLATFORM_SUPPLY_CHAIN_SECURITY_INVALID: 'SECURITY_ARCHITECTURE_PLATFORM_SUPPLY_CHAIN_SECURITY_INVALID',
+  SOFTWARE_DELIVERY_SECURITY_PROFILE_INVALID: 'SECURITY_ARCHITECTURE_SOFTWARE_DELIVERY_SECURITY_PROFILE_INVALID',
+  DEPENDENCY_ARTIFACT_GOVERNANCE_INVALID: 'SECURITY_ARCHITECTURE_DEPENDENCY_ARTIFACT_GOVERNANCE_INVALID',
+  PLATFORM_OPERATIONAL_SECURITY_INVALID: 'SECURITY_ARCHITECTURE_PLATFORM_OPERATIONAL_SECURITY_INVALID'
 });
 
 export const SECURITY_OBJECTIVES = Object.freeze({
@@ -1103,4 +1107,186 @@ export const FUTURE_AI_SECURITY_CAPABILITIES = Object.freeze({
   CONFIDENTIAL_AI_EXECUTION: 'Confidential AI execution',
   VERIFIABLE_AI_REASONING: 'Verifiable AI reasoning',
   CRYPTOGRAPHIC_ATTESTATION_OF_AI_OUTPUTS: 'Cryptographic attestation of AI outputs'
+});
+
+export const PLATFORM_SUPPLY_CHAIN_SECURITY_OBJECTIVES = Object.freeze({
+  TRUSTED_SOFTWARE_DELIVERY: 'trusted-software-delivery',
+  SECURE_INFRASTRUCTURE: 'secure-infrastructure',
+  VERIFIED_SOFTWARE_ARTIFACTS: 'verified-software-artifacts',
+  DEPENDENCY_INTEGRITY: 'dependency-integrity',
+  DEPLOYMENT_ASSURANCE: 'deployment-assurance',
+  OPERATIONAL_RESILIENCE: 'operational-resilience',
+  VENDOR_INDEPENDENCE: 'vendor-independence',
+  END_TO_END_TRACEABILITY: 'end-to-end-traceability'
+});
+
+export const PLATFORM_SECURITY_DOMAIN_STAGES = Object.freeze({
+  SOURCE_CODE: 'Source Code',
+  DEPENDENCIES: 'Dependencies',
+  BUILD: 'Build',
+  ARTIFACTS: 'Artifacts',
+  DEPLOYMENT: 'Deployment',
+  RUNTIME: 'Runtime',
+  OPERATIONS: 'Operations',
+  RETIREMENT: 'Retirement'
+});
+
+export const SECURE_DEVELOPMENT_PRACTICES = Object.freeze({
+  SECURE_CODING_STANDARDS: 'secure-coding-standards',
+  CODE_REVIEW: 'code-review',
+  CHANGE_TRACEABILITY: 'change-traceability',
+  BRANCH_PROTECTION: 'branch-protection',
+  CONTROLLED_APPROVALS: 'controlled-approvals',
+  SECURITY_TESTING: 'security-testing'
+});
+
+export const DEPENDENCY_COMPONENT_TYPES = Object.freeze({
+  FRAMEWORKS: 'frameworks',
+  LIBRARIES: 'libraries',
+  SDKS: 'sdks',
+  AI_PACKAGES: 'ai-packages',
+  OPERATING_SYSTEM_PACKAGES: 'operating-system-packages',
+  BUILD_PLUGINS: 'build-plugins'
+});
+
+export const DEPENDENCY_GOVERNANCE_REQUIREMENTS = Object.freeze({
+  APPROVED: 'approved',
+  VERSIONED: 'versioned',
+  REVIEWED: 'reviewed',
+  MAINTAINED: 'maintained',
+  REPLACEABLE: 'replaceable'
+});
+
+export const SBOM_COMPONENT_TYPES = Object.freeze({
+  LIBRARIES: 'libraries',
+  FRAMEWORKS: 'frameworks',
+  RUNTIME_COMPONENTS: 'runtime-components',
+  AI_PACKAGES: 'ai-packages',
+  THIRD_PARTY_MODULES: 'third-party-modules',
+  BUILD_DEPENDENCIES: 'build-dependencies'
+});
+
+export const BUILD_SECURITY_REQUIREMENTS = Object.freeze({
+  CONTROLLED_INPUTS: 'controlled-inputs',
+  VERIFIED_SOURCE: 'verified-source',
+  ISOLATED_EXECUTION: 'isolated-execution',
+  REPEATABLE_OUTPUTS: 'repeatable-outputs',
+  BUILD_TRACEABILITY: 'build-traceability'
+});
+
+export const ARTIFACT_TYPES = Object.freeze({
+  EXECUTABLES: 'executables',
+  PACKAGES: 'packages',
+  CONTAINER_IMAGES: 'container-images',
+  AI_MODELS: 'ai-models',
+  CONFIGURATION_BUNDLES: 'configuration-bundles',
+  DEPLOYMENT_MANIFESTS: 'deployment-manifests'
+});
+
+export const DEPLOYMENT_INTEGRITY_CONTROLS = Object.freeze({
+  APPROVAL_WORKFLOWS: 'approval-workflows',
+  INTEGRITY_VERIFICATION: 'integrity-verification',
+  VERSION_VALIDATION: 'version-validation',
+  CHANGE_TRACKING: 'change-tracking',
+  ROLLBACK_CAPABILITY: 'rollback-capability'
+});
+
+export const INFRASTRUCTURE_PROTECTION_AREAS = Object.freeze({
+  COMPUTE_RESOURCES: 'compute-resources',
+  NETWORKING: 'networking',
+  STORAGE: 'storage',
+  VIRTUALIZATION: 'virtualization',
+  ORCHESTRATION: 'orchestration',
+  ADMINISTRATIVE_INTERFACES: 'administrative-interfaces'
+});
+
+export const RUNTIME_HARDENING_PRACTICES = Object.freeze({
+  MINIMAL_SERVICES: 'minimal-services',
+  RESTRICTED_ADMINISTRATIVE_ACCESS: 'restricted-administrative-access',
+  SECURE_DEFAULTS: 'secure-defaults',
+  CONFIGURATION_MANAGEMENT: 'configuration-management',
+  CONTINUOUS_PATCHING: 'continuous-patching',
+  OPERATIONAL_MONITORING: 'operational-monitoring'
+});
+
+export const CONFIGURATION_INTEGRITY_CONTROLS = Object.freeze({
+  VERSION_CONTROL: 'version-control',
+  AUTHORIZATION: 'authorization',
+  CHANGE_REVIEW: 'change-review',
+  AUDITABILITY: 'auditability',
+  INTEGRITY_VALIDATION: 'integrity-validation'
+});
+
+export const THIRD_PARTY_SERVICE_TYPES = Object.freeze({
+  PAYMENT_SERVICES: 'payment-services',
+  IDENTITY_PROVIDERS: 'identity-providers',
+  MESSAGING_PLATFORMS: 'messaging-platforms',
+  AI_MODEL_PROVIDERS: 'ai-model-providers',
+  ANALYTICS_PLATFORMS: 'analytics-platforms'
+});
+
+export const PLATFORM_AI_SUPPLY_CHAIN_COMPONENTS = Object.freeze({
+  FOUNDATION_MODELS: 'foundation-models',
+  EMBEDDING_MODELS: 'embedding-models',
+  PROMPT_LIBRARIES: 'prompt-libraries',
+  AGENT_EXTENSIONS: 'agent-extensions',
+  RETRIEVAL_PLUGINS: 'retrieval-plugins',
+  EXTERNAL_AI_SERVICES: 'external-ai-services'
+});
+
+export const PLATFORM_ADMINISTRATIVE_CONTROLS = Object.freeze({
+  STRONG_AUTHENTICATION: 'strong-authentication',
+  LEAST_PRIVILEGE: 'least-privilege',
+  SEPARATION_OF_DUTIES: 'separation-of-duties',
+  COMPREHENSIVE_AUDIT_LOGGING: 'comprehensive-audit-logging',
+  CONTROLLED_APPROVALS: 'controlled-approvals'
+});
+
+export const PLATFORM_SECURITY_OBSERVABILITY_EVENTS = Object.freeze({
+  BUILD_EVENTS: 'build-events',
+  ARTIFACT_VERIFICATION: 'artifact-verification',
+  DEPLOYMENT_APPROVALS: 'deployment-approvals',
+  CONFIGURATION_CHANGES: 'configuration-changes',
+  DEPENDENCY_UPDATES: 'dependency-updates',
+  ADMINISTRATIVE_ACTIONS: 'administrative-actions'
+});
+
+export const INCIDENT_CONTAINMENT_ACTIONS = Object.freeze({
+  ARTIFACT_WITHDRAWAL: 'artifact-withdrawal',
+  DEPLOYMENT_ROLLBACK: 'deployment-rollback',
+  DEPENDENCY_REPLACEMENT: 'dependency-replacement',
+  CREDENTIAL_ROTATION: 'credential-rotation',
+  INFRASTRUCTURE_ISOLATION: 'infrastructure-isolation'
+});
+
+export const PLATFORM_SECURITY_GOVERNANCE_ACTIVITIES = Object.freeze({
+  DEPENDENCY_REVIEWS: 'dependency-reviews',
+  INFRASTRUCTURE_ASSESSMENTS: 'infrastructure-assessments',
+  BUILD_PROCESS_VALIDATION: 'build-process-validation',
+  CONFIGURATION_AUDITS: 'configuration-audits',
+  THIRD_PARTY_RISK_ASSESSMENTS: 'third-party-risk-assessments',
+  SOFTWARE_LIFECYCLE_MANAGEMENT: 'software-lifecycle-management'
+});
+
+export const PLATFORM_SECURITY_RELATIONSHIP_FLOW_STAGES = Object.freeze({
+  IDENTITY: 'Identity',
+  AUTHENTICATION: 'Authentication',
+  AUTHORIZATION: 'Authorization',
+  ZERO_TRUST: 'Zero Trust',
+  SECRETS_KEYS: 'Secrets & Keys',
+  CRYPTOGRAPHY: 'Cryptography',
+  AI_SECURITY: 'AI Security',
+  PLATFORM_SECURITY: 'Platform Security',
+  TRUSTED_SOFTWARE_DELIVERY: 'Trusted Software Delivery'
+});
+
+export const FUTURE_PLATFORM_SUPPLY_CHAIN_SECURITY_CAPABILITIES = Object.freeze({
+  END_TO_END_SOFTWARE_PROVENANCE: 'End-to-end software provenance',
+  AUTOMATED_ARTIFACT_ATTESTATION: 'Automated artifact attestation',
+  CONTINUOUS_DEPENDENCY_RISK_ANALYSIS: 'Continuous dependency risk analysis',
+  AI_ASSISTED_SUPPLY_CHAIN_MONITORING: 'AI-assisted supply chain monitoring',
+  POLICY_DRIVEN_DEPLOYMENT_VERIFICATION: 'Policy-driven deployment verification',
+  CONFIDENTIAL_BUILD_ENVIRONMENTS: 'Confidential build environments',
+  AUTONOMOUS_VULNERABILITY_REMEDIATION: 'Autonomous vulnerability remediation',
+  CRYPTOGRAPHIC_VERIFICATION_OF_AI_MODEL_PROVENANCE: 'Cryptographic verification of AI model provenance'
 });

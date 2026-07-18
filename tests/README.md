@@ -125,5 +125,6 @@ The repository currently includes automated unit tests for:
 - `ARCH-008-05 Secrets & Key Management` in `tests/security-architecture/`
 - `ARCH-008-06 Cryptography & Data Protection` in `tests/security-architecture/`
 - `ARCH-008-07 AI Security` in `tests/security-architecture/`
+- `ARCH-008-08 Platform & Supply Chain Security` in `tests/security-architecture/`
 
 These tests validate reusable platform capabilities and channel-facing behavior without introducing business logic.
