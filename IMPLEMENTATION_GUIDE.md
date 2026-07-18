@@ -302,6 +302,17 @@ Do not guess.
 
 ---
 
+# Module Completion Rules
+
+When an architecture module is completed:
+
+* Mark it as implemented in `TASK_QUEUE.md`.
+* Do not change architecture documents.
+* Recommend exactly one next architecture module.
+* Stop immediately after the report.
+
+---
+
 # End-of-Session Report
 
 Always finish with:
