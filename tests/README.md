@@ -106,5 +106,6 @@ The repository currently includes automated unit tests for:
 - `ARCH-006-06 Domain Services` in `tests/domain-model/`
 - `ARCH-006-07 Domain Events` in `tests/domain-model/`
 - `ARCH-006-08 Domain Rules` in `tests/domain-model/`
+- `ARCH-006-09 Domain Lifecycle` in `tests/domain-model/`
 
 These tests validate reusable platform capabilities and channel-facing behavior without introducing business logic.

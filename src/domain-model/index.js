@@ -11,6 +11,10 @@ export {
   CORE_ENTITY_NAMES,
   DOMAIN_BOUNDARY_RULES,
   DOMAIN_CONSISTENCY_MODELS,
+  DOMAIN_LIFECYCLE_CHARACTERISTICS,
+  DOMAIN_LIFECYCLE_NAMES,
+  DOMAIN_LIFECYCLE_SEQUENCE_STEPS,
+  DOMAIN_LIFECYCLE_STATES,
   DOMAIN_MODEL_ERROR_CODES,
   DOMAIN_MODELING_PRINCIPLES,
   DOMAIN_RELATIONSHIP_TYPES,
@@ -31,6 +35,7 @@ export {
   ENTITY_REFERENCE_RULES,
   FUTURE_AGGREGATE_CANDIDATES,
   FUTURE_DOMAIN_EVENT_CANDIDATES,
+  FUTURE_DOMAIN_LIFECYCLE_CANDIDATES,
   FUTURE_DOMAIN_RULE_CATEGORIES,
   FUTURE_DOMAIN_SERVICE_CANDIDATES,
   VALUE_OBJECT_CHARACTERISTICS,
@@ -56,6 +61,11 @@ export { DomainEventDefinition } from './contracts/domain-event-definition.js';
 export { DomainEventOrdering } from './contracts/domain-event-ordering.js';
 export { DomainEventRecord } from './contracts/domain-event-record.js';
 export { DomainEventValidationResult } from './contracts/domain-event-validation-result.js';
+export { DomainLifecycleDefinition } from './contracts/domain-lifecycle-definition.js';
+export { DomainLifecycleHistory } from './contracts/domain-lifecycle-history.js';
+export { DomainLifecycleSequence } from './contracts/domain-lifecycle-sequence.js';
+export { DomainLifecycleTransition } from './contracts/domain-lifecycle-transition.js';
+export { DomainLifecycleValidationResult } from './contracts/domain-lifecycle-validation-result.js';
 export { DomainRelationship } from './contracts/domain-relationship.js';
 export { DomainRuleCollaboration } from './contracts/domain-rule-collaboration.js';
 export { DomainRuleDefinition } from './contracts/domain-rule-definition.js';
@@ -79,6 +89,7 @@ export { ValueObjectValidationResult } from './contracts/value-object-validation
 export { AggregateRegistry } from './aggregates/aggregate-registry.js';
 export { BoundedContextRegistry } from './bounded-contexts/bounded-context-registry.js';
 export { DomainEventRegistry } from './domain-events/domain-event-registry.js';
+export { DomainLifecycleRegistry } from './domain-lifecycles/domain-lifecycle-registry.js';
 export { DomainRuleRegistry } from './domain-rules/domain-rule-registry.js';
 export { DomainServiceRegistry } from './domain-services/domain-service-registry.js';
 export { CoreEntityRegistry } from './entities/core-entity-registry.js';

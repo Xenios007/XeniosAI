@@ -897,3 +897,20 @@ Version: 0.47.0
 
 Status: Domain Model Architecture
 Version: 0.48.0
+
+---
+
+## [0.49.0] - ARCH-006 Domain Lifecycle
+
+### Added
+- Domain lifecycle name, characteristic, state, sequence step, future candidate, and error-code constants.
+- Immutable contracts for lifecycle definitions, transitions, history, sequences, and validation results.
+- Domain lifecycle registry for documented Aggregate-owned lifecycles, legal state transitions, terminal-state protection, lifecycle-event mapping, transition validation, history validation, canonical consistency sequencing, and future lifecycle placeholders.
+- Dependency-injection registration through `addDomainModel`.
+- Unit tests for lifecycle metadata, documented aggregate ownership, state/event definitions, definition validation, transition validation, history validation, sequence validation, future placeholders, and DI access.
+
+### Established
+- Domain-lifecycle governance without implementing state machine libraries, workflow engines, database persistence, user interface behavior, runtime orchestration, or external lifecycle mutation.
+
+Status: Domain Model Architecture
+Version: 0.49.0

@@ -37,7 +37,12 @@ export const DOMAIN_MODEL_ERROR_CODES = Object.freeze({
   DOMAIN_RULE_DEFINITION_INVALID: 'DOMAIN_MODEL_DOMAIN_RULE_DEFINITION_INVALID',
   DOMAIN_RULE_EVALUATION_INVALID: 'DOMAIN_MODEL_DOMAIN_RULE_EVALUATION_INVALID',
   DOMAIN_RULE_COLLABORATION_INVALID: 'DOMAIN_MODEL_DOMAIN_RULE_COLLABORATION_INVALID',
-  DOMAIN_RULE_SEQUENCE_INVALID: 'DOMAIN_MODEL_DOMAIN_RULE_SEQUENCE_INVALID'
+  DOMAIN_RULE_SEQUENCE_INVALID: 'DOMAIN_MODEL_DOMAIN_RULE_SEQUENCE_INVALID',
+  DOMAIN_LIFECYCLE_NOT_FOUND: 'DOMAIN_MODEL_DOMAIN_LIFECYCLE_NOT_FOUND',
+  DOMAIN_LIFECYCLE_DEFINITION_INVALID: 'DOMAIN_MODEL_DOMAIN_LIFECYCLE_DEFINITION_INVALID',
+  DOMAIN_LIFECYCLE_TRANSITION_INVALID: 'DOMAIN_MODEL_DOMAIN_LIFECYCLE_TRANSITION_INVALID',
+  DOMAIN_LIFECYCLE_HISTORY_INVALID: 'DOMAIN_MODEL_DOMAIN_LIFECYCLE_HISTORY_INVALID',
+  DOMAIN_LIFECYCLE_SEQUENCE_INVALID: 'DOMAIN_MODEL_DOMAIN_LIFECYCLE_SEQUENCE_INVALID'
 });
 
 export const DOMAIN_MODELING_PRINCIPLES = Object.freeze({
@@ -413,4 +418,67 @@ export const FUTURE_DOMAIN_RULE_CATEGORIES = Object.freeze({
   COMPLIANCE_VALIDATION: 'Compliance validation',
   SUSTAINABILITY_POLICIES: 'Sustainability policies',
   DYNAMIC_OPTIMIZATION_RULES: 'Dynamic optimization rules'
+});
+
+export const DOMAIN_LIFECYCLE_NAMES = Object.freeze({
+  RESERVATION: 'Reservation Lifecycle',
+  PAYMENT: 'Payment Lifecycle',
+  GUEST: 'Guest Lifecycle',
+  PROPERTY: 'Property Lifecycle',
+  WORKFLOW: 'Workflow Lifecycle'
+});
+
+export const DOMAIN_LIFECYCLE_CHARACTERISTICS = Object.freeze({
+  BEGINS_WITH_CREATION: 'begins-with-creation',
+  VALID_BUSINESS_STATES: 'valid-business-states',
+  LEGAL_TRANSITIONS_ONLY: 'legal-transitions-only',
+  PRESERVES_BUSINESS_HISTORY: 'preserves-business-history',
+  PRODUCES_DOMAIN_EVENTS: 'produces-domain-events',
+  WELL_DEFINED_COMPLETION: 'well-defined-completion',
+  BUSINESS_EVOLUTION_NOT_TECHNICAL_PROCESSING: 'business-evolution-not-technical-processing'
+});
+
+export const DOMAIN_LIFECYCLE_STATES = Object.freeze({
+  CREATED: 'Created',
+  PENDING: 'Pending',
+  CONFIRMED: 'Confirmed',
+  CHECKED_IN: 'Checked In',
+  CHECKED_OUT: 'Checked Out',
+  CANCELLED: 'Cancelled',
+  INITIATED: 'Initiated',
+  AUTHORIZED: 'Authorized',
+  CAPTURED: 'Captured',
+  SETTLED: 'Settled',
+  FAILED: 'Failed',
+  REFUNDED: 'Refunded',
+  REGISTERED: 'Registered',
+  VERIFIED: 'Verified',
+  ACTIVE: 'Active',
+  ARCHIVED: 'Archived',
+  CONFIGURED: 'Configured',
+  AVAILABLE: 'Available',
+  MAINTENANCE: 'Maintenance',
+  RETIRED: 'Retired',
+  RUNNING: 'Running',
+  COMPLETED: 'Completed',
+  COMPENSATED: 'Compensated'
+});
+
+export const DOMAIN_LIFECYCLE_SEQUENCE_STEPS = Object.freeze({
+  BUSINESS_RULE_VALIDATION: 'Business Rule Validation',
+  AGGREGATE_VALIDATION: 'Aggregate Validation',
+  STATE_TRANSITION: 'State Transition',
+  TRANSACTION_COMMIT: 'Transaction Commit',
+  DOMAIN_EVENT: 'Domain Event'
+});
+
+export const FUTURE_DOMAIN_LIFECYCLE_CANDIDATES = Object.freeze({
+  LOYALTY_MEMBERSHIP: 'Loyalty Membership Lifecycle',
+  PROMOTION: 'Promotion Lifecycle',
+  INVOICE: 'Invoice Lifecycle',
+  VENDOR: 'Vendor Lifecycle',
+  AI_AGENT: 'AI Agent Lifecycle',
+  CONVERSATION: 'Conversation Lifecycle',
+  MAINTENANCE: 'Maintenance Lifecycle',
+  MARKETPLACE_LISTING: 'Marketplace Listing Lifecycle'
 });
