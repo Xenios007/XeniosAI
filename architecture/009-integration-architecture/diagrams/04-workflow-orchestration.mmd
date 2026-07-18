@@ -1,0 +1,21 @@
+flowchart TD
+
+    A[Business Process]
+
+    A --> B[Workflow]
+
+    B --> C[Business Service]
+
+    B --> D[AI Service]
+
+    B --> E[Human Approval]
+
+    B --> F[External System]
+
+    C --> G[Business Outcome]
+
+    D --> G
+
+    E --> G
+
+    F --> G

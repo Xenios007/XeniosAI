@@ -1,0 +1,21 @@
+flowchart TD
+
+    A[Business Capability]
+
+    A --> B[API Layer]
+    A --> C[Messaging Layer]
+    A --> D[Workflow Layer]
+
+    B --> E[Business Services]
+
+    C --> E
+
+    D --> E
+
+    E --> F[AI Services]
+
+    E --> G[External Systems]
+
+    F --> H[Business Outcome]
+
+    G --> H
