@@ -83,5 +83,6 @@ The repository currently includes automated unit tests for:
 - `ARCH-004-03 Reasoning Pipeline` in `tests/orchestrator/`
 - `ARCH-004-04 Tool Orchestration` in `tests/orchestrator/`
 - `ARCH-004-05 Memory Orchestration` in `tests/orchestrator/`
+- `ARCH-004-06 Context Management` in `tests/orchestrator/`
 
 These tests validate reusable platform capabilities and channel-facing behavior without introducing business logic.

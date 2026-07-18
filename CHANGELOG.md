@@ -488,3 +488,21 @@ Version: 0.24.0
 
 Status: AI Orchestrator Architecture
 Version: 0.25.0
+
+---
+
+## [0.26.0] - ARCH-004 Context Management
+
+### Added
+- Canonical context assembly pipeline constants for all ARCH-004-06 stages.
+- Context layer, conflict-priority, and assembly telemetry constants.
+- Immutable contracts for context assembly requests, candidates, stages, telemetry, validation results, and working contexts.
+- Context assembly coordinator for need identification, candidate collection, duplicate removal, conflict resolution, importance ranking, token-budget application, assembly, delivery validation, and telemetry.
+- Dependency-injection registration for `ContextAssemblyCoordinator`.
+- Unit tests for pipeline order, layers, priority, telemetry, minimization, duplicate removal, conflict resolution, ranking, token budgets, traceable delivery, invalid context rejection, and DI access.
+
+### Established
+- Executable context management governance without implementing retrieval, storage, memory ownership, knowledge ownership, business data ownership, policy implementation, summarization, compression, deferred retrieval, or adaptive context behavior.
+
+Status: AI Orchestrator Architecture
+Version: 0.26.0

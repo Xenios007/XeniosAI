@@ -1,4 +1,8 @@
 export {
+  CONTEXT_ASSEMBLY_STAGES,
+  CONTEXT_CONFLICT_PRIORITY,
+  CONTEXT_LAYERS,
+  CONTEXT_TELEMETRY_FIELDS,
   ORCHESTRATION_DECISIONS,
   ORCHESTRATION_STAGES,
   ORCHESTRATOR_COMPONENTS,
@@ -18,6 +22,11 @@ export {
   REQUEST_LIFECYCLE_STAGES,
   REQUEST_LIFECYCLE_TELEMETRY_FIELDS
 } from './constants.js';
+export { ContextAssemblyRequest } from './contracts/context-assembly-request.js';
+export { ContextAssemblyStage } from './contracts/context-assembly-stage.js';
+export { ContextAssemblyTelemetry } from './contracts/context-assembly-telemetry.js';
+export { ContextAssemblyValidationResult } from './contracts/context-assembly-validation-result.js';
+export { ContextCandidate } from './contracts/context-candidate.js';
 export { MemoryCandidate } from './contracts/memory-candidate.js';
 export { MemoryContext } from './contracts/memory-context.js';
 export { MemoryOperationTelemetry } from './contracts/memory-operation-telemetry.js';
@@ -43,6 +52,8 @@ export { ToolExecutionPlan } from './contracts/tool-execution-plan.js';
 export { ToolInvocationTelemetry } from './contracts/tool-invocation-telemetry.js';
 export { ToolOrchestrationStage } from './contracts/tool-orchestration-stage.js';
 export { ToolResultValidationResult } from './contracts/tool-result-validation-result.js';
+export { WorkingContext } from './contracts/working-context.js';
+export { ContextAssemblyCoordinator } from './context/context-assembly-coordinator.js';
 export { OrchestratorBoundaryPolicy } from './governance/orchestrator-boundary-policy.js';
 export { RequestLifecycleDescriptor } from './lifecycle/request-lifecycle-descriptor.js';
 export { MemoryOrchestrationCoordinator } from './memory/memory-orchestration-coordinator.js';
