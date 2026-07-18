@@ -16,6 +16,8 @@ export {
   COMPUTE_RESOURCE_OWNERSHIP,
   COMPUTE_SCHEDULING_CONSIDERATIONS,
   COMPUTE_WORKLOAD_CLASSIFICATIONS,
+  BACKUP_CAPABILITIES,
+  DATA_LIFECYCLE_STAGES,
   ENVIRONMENT_GOVERNANCE_CONTROLS,
   ENVIRONMENT_ISOLATION_AREAS,
   ENVIRONMENT_MONITORING_CAPABILITIES,
@@ -26,6 +28,7 @@ export {
   FUTURE_COMPUTE_CAPABILITIES,
   FUTURE_ENVIRONMENT_CAPABILITIES,
   FUTURE_RUNTIME_CAPABILITIES,
+  FUTURE_STORAGE_CAPABILITIES,
   RUNTIME_BOUNDARY_RESPONSIBILITIES,
   RUNTIME_FAILURE_HANDLING_CAPABILITIES,
   RUNTIME_GOVERNANCE_CONTROLS,
@@ -35,6 +38,12 @@ export {
   RUNTIME_OBJECTIVES,
   RUNTIME_OBSERVABILITY_CAPABILITIES,
   RUNTIME_RESPONSIBILITIES,
+  STORAGE_CATEGORY_NAMES,
+  STORAGE_CONSISTENCY_MODELS,
+  STORAGE_GOVERNANCE_CONTROLS,
+  STORAGE_ISOLATION_AREAS,
+  STORAGE_OBJECTIVES,
+  STORAGE_PROTECTION_CAPABILITIES,
   WORKLOAD_CATEGORIES
 } from './constants.js';
 export { ComputeCategory } from './contracts/compute-category.js';
@@ -47,6 +56,7 @@ export { DeploymentEnvironment } from './contracts/deployment-environment.js';
 export { DeploymentLayer } from './contracts/deployment-layer.js';
 export { DeploymentUnit } from './contracts/deployment-unit.js';
 export { DeploymentValidationResult } from './contracts/deployment-validation-result.js';
+export { DataLifecyclePolicy } from './contracts/data-lifecycle-policy.js';
 export { EnvironmentConfiguration } from './contracts/environment-configuration.js';
 export { EnvironmentDataStrategy } from './contracts/environment-data-strategy.js';
 export { EnvironmentDefinition } from './contracts/environment-definition.js';
@@ -56,8 +66,13 @@ export { RuntimeComponent } from './contracts/runtime-component.js';
 export { RuntimeInteraction } from './contracts/runtime-interaction.js';
 export { RuntimeValidationResult } from './contracts/runtime-validation-result.js';
 export { RuntimeWorkloadProfile } from './contracts/runtime-workload-profile.js';
+export { StorageBackupPolicy } from './contracts/storage-backup-policy.js';
+export { StorageCategory } from './contracts/storage-category.js';
+export { StorageOwnershipRecord } from './contracts/storage-ownership-record.js';
+export { StorageValidationResult } from './contracts/storage-validation-result.js';
 export { ComputeModelDescriptor } from './compute/compute-model-descriptor.js';
 export { EnvironmentStrategyDescriptor } from './environments/environment-strategy-descriptor.js';
 export { DeploymentOverviewDescriptor } from './overview/deployment-overview-descriptor.js';
 export { RuntimeTopologyDescriptor } from './runtime/runtime-topology-descriptor.js';
+export { StorageTopologyDescriptor } from './storage/storage-topology-descriptor.js';
 export { addDeploymentModel } from './service-registration.js';

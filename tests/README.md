@@ -112,5 +112,6 @@ The repository currently includes automated unit tests for:
 - `ARCH-007-02 Environment Strategy` in `tests/deployment-model/`
 - `ARCH-007-03 Runtime Topology` in `tests/deployment-model/`
 - `ARCH-007-04 Compute Model` in `tests/deployment-model/`
+- `ARCH-007-05 Storage Topology` in `tests/deployment-model/`
 
 These tests validate reusable platform capabilities and channel-facing behavior without introducing business logic.

@@ -1000,3 +1000,20 @@ Version: 0.53.0
 
 Status: Deployment Model Architecture
 Version: 0.54.0
+
+---
+
+## [0.55.0] - ARCH-007 Storage Topology
+
+### Added
+- Storage objective, category, consistency model, lifecycle stage, isolation area, protection capability, backup capability, governance control, future capability, and error-code constants.
+- Immutable contracts for storage categories, ownership records, data lifecycle policies, backup policies, and validation results.
+- Storage topology descriptor for documented storage categories, service-owned authoritative data, data lifecycle governance, backup/recovery validation, storage capability validation, cache validation, and future storage placeholders.
+- Dependency-injection registration through `addDeploymentModel`.
+- Unit tests for storage objectives, architecture flow, categories, consistency models, ownership examples, invalid category validation, ownership validation, lifecycle validation, backup policy, cache rules, future placeholders, incomplete metadata validation, and DI access.
+
+### Established
+- Storage-topology governance without implementing database schemas, storage products, storage engines, cloud storage services, replication engines, backup tooling, archival automation, or vendor-specific technology.
+
+Status: Deployment Model Architecture
+Version: 0.55.0

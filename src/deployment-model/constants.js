@@ -17,7 +17,12 @@ export const DEPLOYMENT_MODEL_ERROR_CODES = Object.freeze({
   COMPUTE_CATEGORY_INVALID: 'DEPLOYMENT_MODEL_COMPUTE_CATEGORY_INVALID',
   COMPUTE_RESOURCE_ALLOCATION_INVALID: 'DEPLOYMENT_MODEL_COMPUTE_RESOURCE_ALLOCATION_INVALID',
   COMPUTE_SCHEDULING_INVALID: 'DEPLOYMENT_MODEL_COMPUTE_SCHEDULING_INVALID',
-  COMPUTE_LIFECYCLE_INVALID: 'DEPLOYMENT_MODEL_COMPUTE_LIFECYCLE_INVALID'
+  COMPUTE_LIFECYCLE_INVALID: 'DEPLOYMENT_MODEL_COMPUTE_LIFECYCLE_INVALID',
+  STORAGE_TOPOLOGY_INVALID: 'DEPLOYMENT_MODEL_STORAGE_TOPOLOGY_INVALID',
+  STORAGE_CATEGORY_INVALID: 'DEPLOYMENT_MODEL_STORAGE_CATEGORY_INVALID',
+  STORAGE_OWNERSHIP_INVALID: 'DEPLOYMENT_MODEL_STORAGE_OWNERSHIP_INVALID',
+  STORAGE_LIFECYCLE_INVALID: 'DEPLOYMENT_MODEL_STORAGE_LIFECYCLE_INVALID',
+  STORAGE_BACKUP_INVALID: 'DEPLOYMENT_MODEL_STORAGE_BACKUP_INVALID'
 });
 
 export const DEPLOYMENT_OBJECTIVES = Object.freeze({
@@ -352,4 +357,83 @@ export const FUTURE_COMPUTE_CAPABILITIES = Object.freeze({
   PREDICTIVE_AUTOSCALING: 'Predictive autoscaling',
   ENERGY_AWARE_SCHEDULING: 'Energy-aware scheduling',
   HETEROGENEOUS_COMPUTE_CLUSTERS: 'Heterogeneous compute clusters'
+});
+
+export const STORAGE_OBJECTIVES = Object.freeze({
+  DATA_DURABILITY: 'data-durability',
+  SERVICE_AUTONOMY: 'service-autonomy',
+  SCALABILITY: 'scalability',
+  HIGH_AVAILABILITY: 'high-availability',
+  OPERATIONAL_RESILIENCE: 'operational-resilience',
+  EFFICIENT_RETRIEVAL: 'efficient-retrieval',
+  REGULATORY_COMPLIANCE: 'regulatory-compliance',
+  LONG_TERM_MAINTAINABILITY: 'long-term-maintainability'
+});
+
+export const STORAGE_CATEGORY_NAMES = Object.freeze({
+  TRANSACTIONAL: 'Transactional Storage',
+  SEARCH: 'Search Storage',
+  VECTOR: 'Vector Storage',
+  OBJECT: 'Object Storage',
+  ANALYTICAL: 'Analytical Storage',
+  BACKUP_ARCHIVE: 'Backup & Archive'
+});
+
+export const STORAGE_CONSISTENCY_MODELS = Object.freeze({
+  STRONG: 'strong-consistency',
+  EVENTUAL: 'eventual-consistency'
+});
+
+export const DATA_LIFECYCLE_STAGES = Object.freeze({
+  CREATED: 'Created',
+  OPERATIONAL: 'Operational',
+  HISTORICAL: 'Historical',
+  ARCHIVED: 'Archived',
+  DELETED_WHERE_PERMITTED: 'Deleted where permitted'
+});
+
+export const STORAGE_ISOLATION_AREAS = Object.freeze({
+  SERVICE_OWNERSHIP: 'service-ownership',
+  ENVIRONMENT_SEPARATION: 'environment-separation',
+  SECURITY_BOUNDARIES: 'security-boundaries',
+  BACKUP_DOMAINS: 'backup-domains',
+  OPERATIONAL_RESPONSIBILITIES: 'operational-responsibilities'
+});
+
+export const STORAGE_PROTECTION_CAPABILITIES = Object.freeze({
+  ENCRYPTION: 'encryption',
+  INTEGRITY_VALIDATION: 'integrity-validation',
+  ACCESS_CONTROL: 'access-control',
+  VERSIONING: 'versioning',
+  RETENTION_POLICIES: 'retention-policies',
+  AUDITABILITY: 'auditability'
+});
+
+export const BACKUP_CAPABILITIES = Object.freeze({
+  FULL_BACKUPS: 'full-backups',
+  INCREMENTAL_BACKUPS: 'incremental-backups',
+  POINT_IN_TIME_RECOVERY: 'point-in-time-recovery',
+  GEOGRAPHIC_REDUNDANCY: 'geographic-redundancy',
+  AUTOMATED_VALIDATION: 'automated-validation',
+  RETENTION_POLICIES: 'retention-policies'
+});
+
+export const STORAGE_GOVERNANCE_CONTROLS = Object.freeze({
+  OWNERSHIP_MANAGEMENT: 'ownership-management',
+  SCHEMA_EVOLUTION: 'schema-evolution',
+  RETENTION_POLICIES: 'retention-policies',
+  DATA_CLASSIFICATION: 'data-classification',
+  CAPACITY_PLANNING: 'capacity-planning',
+  COMPLIANCE_MONITORING: 'compliance-monitoring'
+});
+
+export const FUTURE_STORAGE_CAPABILITIES = Object.freeze({
+  MULTI_REGION_REPLICATION: 'Multi-region replication',
+  TIERED_STORAGE_POLICIES: 'Tiered storage policies',
+  COLD_ARCHIVAL_OPTIMIZATION: 'Cold archival optimization',
+  AI_MANAGED_STORAGE_PLACEMENT: 'AI-managed storage placement',
+  INTELLIGENT_LIFECYCLE_AUTOMATION: 'Intelligent lifecycle automation',
+  DISTRIBUTED_VECTOR_INDEXING: 'Distributed vector indexing',
+  CROSS_REGION_ANALYTICAL_PLATFORMS: 'Cross-region analytical platforms',
+  AUTONOMOUS_STORAGE_OPTIMIZATION: 'Autonomous storage optimization'
 });
