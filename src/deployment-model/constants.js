@@ -29,7 +29,11 @@ export const DEPLOYMENT_MODEL_ERROR_CODES = Object.freeze({
   SERVICE_DEPLOYMENT_INVALID: 'DEPLOYMENT_MODEL_SERVICE_DEPLOYMENT_INVALID',
   SERVICE_DEPLOYMENT_UNIT_INVALID: 'DEPLOYMENT_MODEL_SERVICE_DEPLOYMENT_UNIT_INVALID',
   SERVICE_DEPLOYMENT_PACKAGE_INVALID: 'DEPLOYMENT_MODEL_SERVICE_DEPLOYMENT_PACKAGE_INVALID',
-  SERVICE_DEPLOYMENT_RELEASE_INVALID: 'DEPLOYMENT_MODEL_SERVICE_DEPLOYMENT_RELEASE_INVALID'
+  SERVICE_DEPLOYMENT_RELEASE_INVALID: 'DEPLOYMENT_MODEL_SERVICE_DEPLOYMENT_RELEASE_INVALID',
+  HIGH_AVAILABILITY_INVALID: 'DEPLOYMENT_MODEL_HIGH_AVAILABILITY_INVALID',
+  AVAILABILITY_COMPONENT_INVALID: 'DEPLOYMENT_MODEL_AVAILABILITY_COMPONENT_INVALID',
+  FAILURE_DOMAIN_INVALID: 'DEPLOYMENT_MODEL_FAILURE_DOMAIN_INVALID',
+  DEGRADATION_STRATEGY_INVALID: 'DEPLOYMENT_MODEL_DEGRADATION_STRATEGY_INVALID'
 });
 
 export const DEPLOYMENT_OBJECTIVES = Object.freeze({
@@ -677,4 +681,125 @@ export const FUTURE_SERVICE_DEPLOYMENT_CAPABILITIES = Object.freeze({
   MULTI_REGION_ACTIVE_DEPLOYMENT: 'Multi-region active deployment',
   PREDICTIVE_ROLLBACK: 'Predictive rollback',
   AUTONOMOUS_SERVICE_OPTIMIZATION: 'Autonomous service optimization'
+});
+
+export const HIGH_AVAILABILITY_OBJECTIVES = Object.freeze({
+  CONTINUOUS_SERVICE_DELIVERY: 'continuous-service-delivery',
+  MINIMAL_DOWNTIME: 'minimal-downtime',
+  FAULT_ISOLATION: 'fault-isolation',
+  RAPID_RECOVERY: 'rapid-recovery',
+  PREDICTABLE_BEHAVIOR: 'predictable-behavior',
+  OPERATIONAL_RESILIENCE: 'operational-resilience',
+  INDEPENDENT_COMPONENT_RECOVERY: 'independent-component-recovery',
+  GRACEFUL_DEGRADATION: 'graceful-degradation'
+});
+
+export const AVAILABILITY_MODEL_STAGES = Object.freeze({
+  REDUNDANCY: 'Redundancy',
+  HEALTH_MONITORING: 'Health Monitoring',
+  FAILURE_DETECTION: 'Failure Detection',
+  AUTOMATIC_RECOVERY: 'Automatic Recovery',
+  SERVICE_CONTINUITY: 'Service Continuity'
+});
+
+export const REDUNDANCY_TARGETS = Object.freeze({
+  APPLICATION_SERVICES: 'application-services',
+  AI_SERVICES: 'ai-services',
+  INFRASTRUCTURE_SERVICES: 'infrastructure-services',
+  GATEWAYS: 'gateways',
+  STORAGE_SYSTEMS: 'storage-systems',
+  NETWORKING_COMPONENTS: 'networking-components'
+});
+
+export const FAILURE_DOMAIN_TYPES = Object.freeze({
+  SERVICE_INSTANCE: 'service-instance',
+  COMPUTE_NODE: 'compute-node',
+  AVAILABILITY_ZONE: 'availability-zone',
+  STORAGE_SUBSYSTEM: 'storage-subsystem',
+  NETWORK_SEGMENT: 'network-segment',
+  INFRASTRUCTURE_CLUSTER: 'infrastructure-cluster'
+});
+
+export const HEALTH_INDICATORS = Object.freeze({
+  READINESS: 'readiness',
+  LIVENESS: 'liveness',
+  DEPENDENCY_HEALTH: 'dependency-health',
+  RESOURCE_UTILIZATION: 'resource-utilization',
+  OPERATIONAL_STATUS: 'operational-status'
+});
+
+export const FAILURE_DETECTION_MECHANISMS = Object.freeze({
+  HEALTH_CHECKS: 'health-checks',
+  TIMEOUT_MONITORING: 'timeout-monitoring',
+  DEPENDENCY_VALIDATION: 'dependency-validation',
+  RESOURCE_EXHAUSTION_DETECTION: 'resource-exhaustion-detection',
+  COMMUNICATION_FAILURES: 'communication-failures'
+});
+
+export const AUTOMATIC_RECOVERY_MECHANISMS = Object.freeze({
+  RESTART_FAILED_INSTANCES: 'restart-failed-instances',
+  REPLACE_UNHEALTHY_WORKLOADS: 'replace-unhealthy-workloads',
+  REBALANCE_TRAFFIC: 'rebalance-traffic',
+  RESTORE_SERVICE_CAPACITY: 'restore-service-capacity',
+  RESUME_BACKGROUND_PROCESSING: 'resume-background-processing'
+});
+
+export const GRACEFUL_DEGRADATION_STRATEGIES = Object.freeze({
+  REDUCED_AI_FUNCTIONALITY: 'reduced-ai-functionality',
+  DELAYED_BACKGROUND_PROCESSING: 'delayed-background-processing',
+  CACHED_RESPONSES: 'cached-responses',
+  READ_ONLY_OPERATIONS: 'read-only-operations',
+  LIMITED_FEATURE_AVAILABILITY: 'limited-feature-availability'
+});
+
+export const DEPENDENCY_RESILIENCE_STRATEGIES = Object.freeze({
+  RETRY_POLICIES: 'retry-policies',
+  CIRCUIT_BREAKERS: 'circuit-breakers',
+  TIMEOUT_MANAGEMENT: 'timeout-management',
+  FALLBACK_BEHAVIOR: 'fallback-behavior',
+  QUEUE_BUFFERING: 'queue-buffering'
+});
+
+export const MAINTENANCE_PRINCIPLES = Object.freeze({
+  ROLLING_UPDATES: 'rolling-updates',
+  INDEPENDENT_SERVICE_UPGRADES: 'independent-service-upgrades',
+  HEALTH_AWARE_DEPLOYMENT: 'health-aware-deployment',
+  CONTROLLED_TRAFFIC_MIGRATION: 'controlled-traffic-migration',
+  AUTOMATED_VALIDATION: 'automated-validation'
+});
+
+export const AVAILABILITY_MONITORING_METRICS = Object.freeze({
+  SERVICE_UPTIME: 'service-uptime',
+  FAILURE_RATES: 'failure-rates',
+  RECOVERY_TIME: 'recovery-time',
+  RESOURCE_UTILIZATION: 'resource-utilization',
+  CAPACITY_TRENDS: 'capacity-trends',
+  DEPENDENCY_HEALTH: 'dependency-health'
+});
+
+export const CAPACITY_BUFFER_DRIVERS = Object.freeze({
+  TRAFFIC_SPIKES: 'traffic-spikes',
+  INSTANCE_FAILURES: 'instance-failures',
+  MAINTENANCE_WINDOWS: 'maintenance-windows',
+  AI_WORKLOAD_FLUCTUATIONS: 'ai-workload-fluctuations'
+});
+
+export const AVAILABILITY_GOVERNANCE_CONTROLS = Object.freeze({
+  SERVICE_CLASSIFICATION: 'service-classification',
+  AVAILABILITY_TARGETS: 'availability-targets',
+  CAPACITY_PLANNING: 'capacity-planning',
+  OPERATIONAL_REVIEWS: 'operational-reviews',
+  FAILURE_ANALYSIS: 'failure-analysis',
+  RESILIENCE_TESTING: 'resilience-testing'
+});
+
+export const FUTURE_HIGH_AVAILABILITY_CAPABILITIES = Object.freeze({
+  ACTIVE_ACTIVE_MULTI_REGION_DEPLOYMENTS: 'Active-active multi-region deployments',
+  AUTONOMOUS_FAILURE_REMEDIATION: 'Autonomous failure remediation',
+  AI_ASSISTED_HEALTH_ANALYSIS: 'AI-assisted health analysis',
+  PREDICTIVE_SCALING: 'Predictive scaling',
+  SELF_HEALING_INFRASTRUCTURE: 'Self-healing infrastructure',
+  ADAPTIVE_TRAFFIC_ROUTING: 'Adaptive traffic routing',
+  INTELLIGENT_WORKLOAD_REDISTRIBUTION: 'Intelligent workload redistribution',
+  AUTONOMOUS_RESILIENCE_OPTIMIZATION: 'Autonomous resilience optimization'
 });

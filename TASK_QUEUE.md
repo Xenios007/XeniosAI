@@ -65,7 +65,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-007-05 Storage Topology`
 - Completed: `ARCH-007-06 Network Topology`
 - Completed: `ARCH-007-07 Service Deployment`
-- Next: `ARCH-007-08 High Availability`
+- Completed: `ARCH-007-08 High Availability`
+- Next: `ARCH-007-09 Disaster Recovery`
 
 ## Notes
 

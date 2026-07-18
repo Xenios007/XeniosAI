@@ -1051,3 +1051,20 @@ Version: 0.56.0
 
 Status: Deployment Model Architecture
 Version: 0.57.0
+
+---
+
+## [0.58.0] - ARCH-007 High Availability
+
+### Added
+- High availability objective, availability model, redundancy target, failure domain, health indicator, failure detection, automatic recovery, graceful degradation, dependency resilience, maintenance, monitoring, capacity buffer, governance, future capability, and error-code constants.
+- Immutable contracts for availability components, failure-domain policies, degradation strategies, and validation results.
+- High availability descriptor for documented model sequencing, redundant component validation, failure domain isolation, health and recovery validation, graceful degradation, operational readiness, and future HA placeholders.
+- Dependency-injection registration through `addDeploymentModel`.
+- Unit tests for HA objectives, model sequence, redundancy targets, single-point-of-failure rejection, failure domain policy validation, graceful degradation, health management, operational readiness, future placeholders, incomplete metadata validation, and DI access.
+
+### Established
+- High-availability governance without implementing disaster recovery procedures, backup technologies, business continuity planning, clustering products, cloud-provider HA services, runtime orchestrators, traffic managers, or infrastructure automation.
+
+Status: Deployment Model Architecture
+Version: 0.58.0

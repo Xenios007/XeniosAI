@@ -8,6 +8,10 @@ export {
   DEPLOYMENT_SCALABILITY_STRATEGIES,
   DEPLOYMENT_UNIT_RESPONSIBILITIES,
   CONFIGURATION_PRINCIPLES,
+  AUTOMATIC_RECOVERY_MECHANISMS,
+  AVAILABILITY_GOVERNANCE_CONTROLS,
+  AVAILABILITY_MODEL_STAGES,
+  AVAILABILITY_MONITORING_METRICS,
   COMPUTE_CATEGORY_NAMES,
   COMPUTE_ISOLATION_AREAS,
   COMPUTE_LIFECYCLE_STAGES,
@@ -24,13 +28,22 @@ export {
   ENVIRONMENT_OBJECTIVES,
   ENVIRONMENT_RESPONSIBILITIES,
   FEATURE_ROLLOUT_STAGES,
+  CAPACITY_BUFFER_DRIVERS,
+  DEPENDENCY_RESILIENCE_STRATEGIES,
+  FAILURE_DETECTION_MECHANISMS,
+  FAILURE_DOMAIN_TYPES,
   FUTURE_DEPLOYMENT_CAPABILITIES,
   FUTURE_COMPUTE_CAPABILITIES,
   FUTURE_ENVIRONMENT_CAPABILITIES,
+  FUTURE_HIGH_AVAILABILITY_CAPABILITIES,
   FUTURE_NETWORK_CAPABILITIES,
   FUTURE_RUNTIME_CAPABILITIES,
   FUTURE_SERVICE_DEPLOYMENT_CAPABILITIES,
   FUTURE_STORAGE_CAPABILITIES,
+  GRACEFUL_DEGRADATION_STRATEGIES,
+  HEALTH_INDICATORS,
+  HIGH_AVAILABILITY_OBJECTIVES,
+  MAINTENANCE_PRINCIPLES,
   NETWORK_COMMUNICATION_METHODS,
   NETWORK_DISCOVERY_CAPABILITIES,
   NETWORK_GOVERNANCE_CONTROLS,
@@ -49,6 +62,7 @@ export {
   RUNTIME_OBJECTIVES,
   RUNTIME_OBSERVABILITY_CAPABILITIES,
   RUNTIME_RESPONSIBILITIES,
+  REDUNDANCY_TARGETS,
   SERVICE_COMPATIBILITY_APPROACHES,
   SERVICE_CONFIGURATION_INPUTS,
   SERVICE_DEPENDENCY_CATEGORIES,
@@ -72,6 +86,8 @@ export {
   STORAGE_PROTECTION_CAPABILITIES,
   WORKLOAD_CATEGORIES
 } from './constants.js';
+export { AvailabilityComponent } from './contracts/availability-component.js';
+export { AvailabilityValidationResult } from './contracts/availability-validation-result.js';
 export { ComputeCategory } from './contracts/compute-category.js';
 export { ComputeLifecycleRecord } from './contracts/compute-lifecycle-record.js';
 export { ComputeResourceAllocation } from './contracts/compute-resource-allocation.js';
@@ -83,11 +99,13 @@ export { DeploymentLayer } from './contracts/deployment-layer.js';
 export { DeploymentUnit } from './contracts/deployment-unit.js';
 export { DeploymentValidationResult } from './contracts/deployment-validation-result.js';
 export { DataLifecyclePolicy } from './contracts/data-lifecycle-policy.js';
+export { DegradationStrategy } from './contracts/degradation-strategy.js';
 export { EnvironmentConfiguration } from './contracts/environment-configuration.js';
 export { EnvironmentDataStrategy } from './contracts/environment-data-strategy.js';
 export { EnvironmentDefinition } from './contracts/environment-definition.js';
 export { EnvironmentPromotion } from './contracts/environment-promotion.js';
 export { EnvironmentValidationResult } from './contracts/environment-validation-result.js';
+export { FailureDomainPolicy } from './contracts/failure-domain-policy.js';
 export { NetworkRoute } from './contracts/network-route.js';
 export { NetworkValidationResult } from './contracts/network-validation-result.js';
 export { NetworkZone } from './contracts/network-zone.js';
@@ -103,6 +121,7 @@ export { StorageBackupPolicy } from './contracts/storage-backup-policy.js';
 export { StorageCategory } from './contracts/storage-category.js';
 export { StorageOwnershipRecord } from './contracts/storage-ownership-record.js';
 export { StorageValidationResult } from './contracts/storage-validation-result.js';
+export { HighAvailabilityDescriptor } from './availability/high-availability-descriptor.js';
 export { ComputeModelDescriptor } from './compute/compute-model-descriptor.js';
 export { EnvironmentStrategyDescriptor } from './environments/environment-strategy-descriptor.js';
 export { NetworkTopologyDescriptor } from './network/network-topology-descriptor.js';
