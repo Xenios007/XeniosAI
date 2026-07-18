@@ -846,3 +846,20 @@ Version: 0.44.0
 
 Status: Domain Model Architecture
 Version: 0.45.0
+
+---
+
+## [0.46.0] - ARCH-006 Domain Services
+
+### Added
+- Domain service name, characteristic, interaction rule, collaboration target, future candidate, and error-code constants.
+- Immutable contracts for domain service definitions, operations, collaborations, and validation results.
+- Domain service registry for documented service ownership, stateless validation, operation validation, aggregate-boundary collaboration validation, and future service placeholders.
+- Dependency-injection registration through `addDomainModel`.
+- Unit tests for domain service metadata, documented services, responsibilities, definition validation, operation validation, collaboration validation, future placeholders, and DI access.
+
+### Established
+- Domain-service governance without implementing application-service orchestration, infrastructure adapters, persistence, workflows, external APIs, AI orchestration behavior, or concrete domain operation execution.
+
+Status: Domain Model Architecture
+Version: 0.46.0

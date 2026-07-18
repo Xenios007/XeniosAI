@@ -103,5 +103,6 @@ The repository currently includes automated unit tests for:
 - `ARCH-006-03 Core Entities` in `tests/domain-model/`
 - `ARCH-006-04 Value Objects` in `tests/domain-model/`
 - `ARCH-006-05 Aggregates` in `tests/domain-model/`
+- `ARCH-006-06 Domain Services` in `tests/domain-model/`
 
 These tests validate reusable platform capabilities and channel-facing behavior without introducing business logic.

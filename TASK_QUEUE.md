@@ -53,7 +53,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-006-03 Core Entities`
 - Completed: `ARCH-006-04 Value Objects`
 - Completed: `ARCH-006-05 Aggregates`
-- Next: `ARCH-006-06 Domain Services`
+- Completed: `ARCH-006-06 Domain Services`
+- Next: `ARCH-006-07 Domain Events`
 
 ## Notes
 

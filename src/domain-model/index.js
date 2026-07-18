@@ -14,9 +14,14 @@ export {
   DOMAIN_MODEL_ERROR_CODES,
   DOMAIN_MODELING_PRINCIPLES,
   DOMAIN_RELATIONSHIP_TYPES,
+  DOMAIN_SERVICE_CHARACTERISTICS,
+  DOMAIN_SERVICE_COLLABORATION_TARGETS,
+  DOMAIN_SERVICE_INTERACTION_RULES,
+  DOMAIN_SERVICE_NAMES,
   ENTITY_INTEGRITY_RULES,
   ENTITY_REFERENCE_RULES,
   FUTURE_AGGREGATE_CANDIDATES,
+  FUTURE_DOMAIN_SERVICE_CANDIDATES,
   VALUE_OBJECT_CHARACTERISTICS,
   VALUE_OBJECT_FUTURE_CANDIDATES,
   VALUE_OBJECT_NAMES,
@@ -36,6 +41,10 @@ export { DomainCapability } from './contracts/domain-capability.js';
 export { DomainConcept } from './contracts/domain-concept.js';
 export { DomainDescriptor } from './contracts/domain-descriptor.js';
 export { DomainRelationship } from './contracts/domain-relationship.js';
+export { DomainServiceCollaboration } from './contracts/domain-service-collaboration.js';
+export { DomainServiceDefinition } from './contracts/domain-service-definition.js';
+export { DomainServiceOperation } from './contracts/domain-service-operation.js';
+export { DomainServiceValidationResult } from './contracts/domain-service-validation-result.js';
 export { DomainStateModel } from './contracts/domain-state-model.js';
 export { DomainValidationResult } from './contracts/domain-validation-result.js';
 export { EntityDefinition } from './contracts/entity-definition.js';
@@ -48,6 +57,7 @@ export { ValueObjectInstance } from './contracts/value-object-instance.js';
 export { ValueObjectValidationResult } from './contracts/value-object-validation-result.js';
 export { AggregateRegistry } from './aggregates/aggregate-registry.js';
 export { BoundedContextRegistry } from './bounded-contexts/bounded-context-registry.js';
+export { DomainServiceRegistry } from './domain-services/domain-service-registry.js';
 export { CoreEntityRegistry } from './entities/core-entity-registry.js';
 export { DomainOverviewDescriptor } from './overview/domain-overview-descriptor.js';
 export { ValueObjectRegistry } from './value-objects/value-object-registry.js';
