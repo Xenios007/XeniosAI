@@ -18,7 +18,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-002-09 Integration Layer`
 - Completed: `ARCH-002-10 Cross-Cutting Concerns`
 - Completed: `ARCH-002-11 Layer Interactions`
-- Next: `ARCH-003-01 Service Landscape`
+- Completed: `ARCH-003-01 Service Landscape`
+- Next: `ARCH-003-02 Service Catalog`
 
 ## Notes
 

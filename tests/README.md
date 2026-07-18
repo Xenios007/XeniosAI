@@ -68,5 +68,6 @@ The repository currently includes automated unit tests for:
 - `ARCH-002-09 Integration Layer` in `tests/integration/`
 - `ARCH-002-10 Cross-Cutting Concerns` in `tests/cross-cutting/`
 - `ARCH-002-11 Layer Interactions` in `tests/layer-interactions/`
+- `ARCH-003-01 Service Landscape` in `tests/service-map/`
 
 These tests validate reusable platform capabilities and channel-facing behavior without introducing business logic.

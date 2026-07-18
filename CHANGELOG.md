@@ -218,3 +218,20 @@ Version: 0.9.0
 
 Status: Platform Architecture
 Version: 0.10.0
+
+---
+
+## [0.11.0] - ARCH-003 Service Landscape
+
+### Added
+- Service Map module under `src/service-map/`.
+- Canonical service landscape descriptors for the initial ten XeniosAI services.
+- Business-domain grouping for Hospitality Operations, Knowledge Management, Property Management, Platform Services, and Business Intelligence.
+- Dependency-injection registration for the service landscape.
+- Unit tests for service inventory, category grouping, duplicate protection, and DI access.
+
+### Established
+- Executable representation of the ARCH-003 service ecosystem without introducing later catalog, ownership, dependency, or governance behavior.
+
+Status: Service Map Architecture
+Version: 0.11.0
