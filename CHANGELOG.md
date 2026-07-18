@@ -706,3 +706,21 @@ Version: 0.36.0
 
 Status: Data Flow Architecture
 Version: 0.37.0
+
+---
+
+## [0.38.0] - ARCH-005 Messaging Patterns
+
+### Added
+- Canonical messaging lifecycle constants for all ARCH-005-08 stages.
+- Messaging style, message type, routing strategy, delivery model, retry policy, security control, processing status, telemetry, and error-code constants.
+- Immutable contracts for message lifecycle stages, message contracts, envelopes, processing records, telemetry records, and validation results.
+- Messaging patterns descriptor for lifecycle validation, message contract validation, message envelope creation, processing validation, duplicate handling, acknowledgement, dead-letter, expiration, ordering, and telemetry validation.
+- Dependency-injection registration through `addDataFlow`.
+- Unit tests for lifecycle order, messaging metadata, documented message types and styles, skipped stages, contract validation, immutable envelopes, envelope validation, processing validation, telemetry validation, and DI access.
+
+### Established
+- Messaging-pattern governance without selecting or implementing a message broker, queue, stream processor, transport protocol, retry executor, dead-letter store, or cross-region messaging.
+
+Status: Data Flow Architecture
+Version: 0.38.0

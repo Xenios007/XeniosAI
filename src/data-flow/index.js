@@ -23,6 +23,15 @@ export {
   EXECUTION_RESPONSIBILITIES,
   EXECUTION_STATES,
   EXECUTION_TELEMETRY_FIELDS,
+  MESSAGE_DELIVERY_MODELS,
+  MESSAGE_PROCESSING_STATUSES,
+  MESSAGE_RETRY_POLICIES,
+  MESSAGE_ROUTING_STRATEGIES,
+  MESSAGE_SECURITY_CONTROLS,
+  MESSAGE_TELEMETRY_FIELDS,
+  MESSAGE_TYPES,
+  MESSAGING_LIFECYCLE_STAGES,
+  MESSAGING_STYLES,
   QUERY_CHARACTERISTICS,
   QUERY_LIFECYCLE_STAGES,
   QUERY_OPTIMIZATION_STRATEGIES,
@@ -67,6 +76,12 @@ export { ExecutionLifecycleStage } from './contracts/execution-lifecycle-stage.j
 export { ExecutionParticipant } from './contracts/execution-participant.js';
 export { ExecutionTelemetryRecord } from './contracts/execution-telemetry-record.js';
 export { ExecutionValidationResult } from './contracts/execution-validation-result.js';
+export { MessageContract } from './contracts/message-contract.js';
+export { MessageEnvelope } from './contracts/message-envelope.js';
+export { MessageLifecycleStage } from './contracts/message-lifecycle-stage.js';
+export { MessageProcessingRecord } from './contracts/message-processing-record.js';
+export { MessageTelemetryRecord } from './contracts/message-telemetry-record.js';
+export { MessageValidationResult } from './contracts/message-validation-result.js';
 export { QueryDefinition } from './contracts/query-definition.js';
 export { QueryEnvelope } from './contracts/query-envelope.js';
 export { QueryLifecycleStage } from './contracts/query-lifecycle-stage.js';
@@ -91,6 +106,7 @@ export { CommandFlowDescriptor } from './commands/command-flow-descriptor.js';
 export { EventFlowDescriptor } from './events/event-flow-descriptor.js';
 export { ExecutionOverviewDescriptor } from './execution/execution-overview-descriptor.js';
 export { ServiceIntegrationDescriptor } from './integrations/service-integration-descriptor.js';
+export { MessagingPatternsDescriptor } from './messaging/messaging-patterns-descriptor.js';
 export { QueryFlowDescriptor } from './queries/query-flow-descriptor.js';
 export { WorkflowOrchestrationDescriptor } from './workflows/workflow-orchestration-descriptor.js';
 export { addDataFlow } from './service-registration.js';

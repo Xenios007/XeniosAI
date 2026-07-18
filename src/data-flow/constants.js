@@ -422,6 +422,89 @@ export const API_TELEMETRY_FIELDS = Object.freeze({
   ERROR_INFORMATION: 'errorInformation'
 });
 
+export const MESSAGING_LIFECYCLE_STAGES = Object.freeze({
+  CREATE_MESSAGE: 'create-message',
+  VALIDATE_MESSAGE: 'validate-message',
+  ROUTE_MESSAGE: 'route-message',
+  DELIVER_MESSAGE: 'deliver-message',
+  PROCESS_MESSAGE: 'process-message',
+  ACKNOWLEDGE_RESULT: 'acknowledge-result',
+  COMPLETE_PROCESSING: 'complete-processing'
+});
+
+export const MESSAGING_STYLES = Object.freeze({
+  REQUEST_RESPONSE: 'request-response',
+  ASYNCHRONOUS: 'asynchronous',
+  PUBLISH_SUBSCRIBE: 'publish-subscribe',
+  POINT_TO_POINT: 'point-to-point',
+  BROADCAST: 'broadcast'
+});
+
+export const MESSAGE_TYPES = Object.freeze({
+  COMMAND: 'command',
+  QUERY: 'query',
+  EVENT: 'event',
+  NOTIFICATION: 'notification',
+  WORKFLOW_SIGNAL: 'workflow-signal',
+  STATUS_UPDATE: 'status-update'
+});
+
+export const MESSAGE_ROUTING_STRATEGIES = Object.freeze({
+  DIRECT: 'direct',
+  TOPIC: 'topic',
+  QUEUE: 'queue',
+  EVENT: 'event',
+  CONTENT_BASED: 'content-based'
+});
+
+export const MESSAGE_DELIVERY_MODELS = Object.freeze({
+  BEST_EFFORT: 'best-effort',
+  AT_LEAST_ONCE: 'at-least-once',
+  AT_MOST_ONCE: 'at-most-once',
+  EXACTLY_ONCE: 'exactly-once'
+});
+
+export const MESSAGE_RETRY_POLICIES = Object.freeze({
+  IMMEDIATE_RETRY: 'immediate-retry',
+  EXPONENTIAL_BACKOFF: 'exponential-backoff',
+  SCHEDULED_RETRY: 'scheduled-retry',
+  RETRY_LIMITS: 'retry-limits',
+  DEAD_LETTER_ROUTING: 'dead-letter-routing'
+});
+
+export const MESSAGE_SECURITY_CONTROLS = Object.freeze({
+  AUTHENTICATION: 'authentication',
+  AUTHORIZATION: 'authorization',
+  CONFIDENTIALITY: 'confidentiality',
+  INTEGRITY: 'integrity',
+  AUDITABILITY: 'auditability'
+});
+
+export const MESSAGE_PROCESSING_STATUSES = Object.freeze({
+  CREATED: 'created',
+  VALIDATED: 'validated',
+  ROUTED: 'routed',
+  DELIVERED: 'delivered',
+  PROCESSED: 'processed',
+  ACKNOWLEDGED: 'acknowledged',
+  COMPLETED: 'completed',
+  FAILED: 'failed',
+  EXPIRED: 'expired',
+  DEAD_LETTERED: 'dead-lettered'
+});
+
+export const MESSAGE_TELEMETRY_FIELDS = Object.freeze({
+  MESSAGE_ID: 'messageId',
+  CORRELATION_ID: 'correlationId',
+  SOURCE: 'source',
+  DESTINATION: 'destination',
+  MESSAGE_TYPE: 'messageType',
+  DELIVERY_DURATION: 'deliveryDurationMs',
+  PROCESSING_DURATION: 'processingDurationMs',
+  SUCCESS: 'success',
+  RETRY_COUNT: 'retryCount'
+});
+
 export const DATA_FLOW_ERROR_CODES = Object.freeze({
   EXECUTION_STAGE_NOT_FOUND: 'DATA_FLOW_EXECUTION_STAGE_NOT_FOUND',
   EXECUTION_PARTICIPANT_NOT_FOUND: 'DATA_FLOW_EXECUTION_PARTICIPANT_NOT_FOUND',
@@ -467,5 +550,11 @@ export const DATA_FLOW_ERROR_CODES = Object.freeze({
   API_REQUEST_INVALID: 'DATA_FLOW_API_REQUEST_INVALID',
   API_RESPONSE_INVALID: 'DATA_FLOW_API_RESPONSE_INVALID',
   API_COMPATIBILITY_INVALID: 'DATA_FLOW_API_COMPATIBILITY_INVALID',
-  API_TELEMETRY_INVALID: 'DATA_FLOW_API_TELEMETRY_INVALID'
+  API_TELEMETRY_INVALID: 'DATA_FLOW_API_TELEMETRY_INVALID',
+  MESSAGING_STAGE_NOT_FOUND: 'DATA_FLOW_MESSAGING_STAGE_NOT_FOUND',
+  MESSAGING_LIFECYCLE_INVALID: 'DATA_FLOW_MESSAGING_LIFECYCLE_INVALID',
+  MESSAGE_CONTRACT_INVALID: 'DATA_FLOW_MESSAGE_CONTRACT_INVALID',
+  MESSAGE_ENVELOPE_INVALID: 'DATA_FLOW_MESSAGE_ENVELOPE_INVALID',
+  MESSAGE_PROCESSING_INVALID: 'DATA_FLOW_MESSAGE_PROCESSING_INVALID',
+  MESSAGE_TELEMETRY_INVALID: 'DATA_FLOW_MESSAGE_TELEMETRY_INVALID'
 });

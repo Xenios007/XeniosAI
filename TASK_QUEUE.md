@@ -45,7 +45,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-005-05 Workflow Orchestration`
 - Completed: `ARCH-005-06 Service Integration`
 - Completed: `ARCH-005-07 API Contracts`
-- Next: `ARCH-005-08 Messaging Patterns`
+- Completed: `ARCH-005-08 Messaging Patterns`
+- Next: `ARCH-005-09 Transaction Boundaries`
 
 ## Notes
 
