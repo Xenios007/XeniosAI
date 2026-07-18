@@ -1,0 +1,31 @@
+flowchart TD
+
+A[User Request]
+
+A --> B[AI Orchestrator]
+
+B --> C[Planner Agent]
+
+B --> D[Knowledge Agent]
+
+B --> E[Memory Agent]
+
+B --> F[Research Agent]
+
+B --> G[Workflow Agent]
+
+C --> H[Result Aggregation]
+
+D --> H
+
+E --> H
+
+F --> H
+
+G --> H
+
+H --> I[Decision Engine]
+
+I --> J[Business Services]
+
+J --> K[Response]

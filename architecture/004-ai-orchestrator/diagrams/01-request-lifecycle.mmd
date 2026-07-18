@@ -1,0 +1,29 @@
+flowchart TD
+
+A[User Request]
+
+A --> B[AI Orchestrator]
+
+B --> C[Normalize Request]
+
+C --> D[Identify Intent]
+
+D --> E[Build Context]
+
+E --> F[Retrieve Memory]
+
+F --> G[Retrieve Knowledge]
+
+G --> H[Reasoning Pipeline]
+
+H --> I[Decision Engine]
+
+I --> J[Tool Orchestration]
+
+J --> K[Business Services]
+
+K --> L[Validate Results]
+
+L --> M[Compose Response]
+
+M --> N[Return Response]
