@@ -1273,3 +1273,20 @@ Version: 0.69.0
 
 Status: Security Architecture
 Version: 0.70.0
+
+---
+
+## [0.71.0] - ARCH-009 Observability Overview
+
+### Added
+- Observability objective, principle, domain, enterprise visibility, operational evidence, lifecycle, quality attribute, governance foundation, future capability, and error-code constants.
+- Immutable contracts for observability domains, telemetry sources, and validation results.
+- Observability overview descriptor for documented metadata, domain validation, telemetry source validation, evidence coverage validation, and future observability placeholders.
+- Dependency-injection registration through `addObservabilityArchitecture`.
+- Unit tests for observability objectives, principles, lifecycle, domains, telemetry sources, evidence coverage, governance foundations, quality attributes, future placeholders, incomplete metadata validation, and DI access.
+
+### Established
+- Observability overview governance without implementing monitoring products, logging frameworks, telemetry collectors, dashboards, alerting systems, tracing infrastructure, storage backends, or vendor-specific observability tooling.
+
+Status: Observability Architecture
+Version: 0.71.0
