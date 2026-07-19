@@ -84,7 +84,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-009-04 Messaging & Event Architecture`
 - Completed: `ARCH-009-05 Workflow & Process Integration`
 - Completed: `ARCH-009-06 External System Integration`
-- Next: `ARCH-009-07 AI Integration Architecture`
+- Completed: `ARCH-009-07 AI Integration Architecture`
+- Next: `ARCH-009-08 Integration Governance`
 
 ## Notes
 

@@ -8,7 +8,8 @@ export const INTEGRATION_ARCHITECTURE_ERROR_CODES = Object.freeze({
   API_ARCHITECTURE_INVALID: 'INTEGRATION_ARCHITECTURE_API_ARCHITECTURE_INVALID',
   MESSAGING_EVENT_ARCHITECTURE_INVALID: 'INTEGRATION_ARCHITECTURE_MESSAGING_EVENT_ARCHITECTURE_INVALID',
   WORKFLOW_PROCESS_INTEGRATION_INVALID: 'INTEGRATION_ARCHITECTURE_WORKFLOW_PROCESS_INTEGRATION_INVALID',
-  EXTERNAL_SYSTEM_INTEGRATION_INVALID: 'INTEGRATION_ARCHITECTURE_EXTERNAL_SYSTEM_INTEGRATION_INVALID'
+  EXTERNAL_SYSTEM_INTEGRATION_INVALID: 'INTEGRATION_ARCHITECTURE_EXTERNAL_SYSTEM_INTEGRATION_INVALID',
+  AI_INTEGRATION_ARCHITECTURE_INVALID: 'INTEGRATION_ARCHITECTURE_AI_INTEGRATION_ARCHITECTURE_INVALID'
 });
 
 export const INTEGRATION_TREATMENT_PRINCIPLES = Object.freeze({
@@ -990,4 +991,176 @@ export const FUTURE_EXTERNAL_SYSTEM_INTEGRATION_DIRECTIONS = Object.freeze({
   AUTONOMOUS_INTEGRATION_MONITORING: 'Autonomous integration monitoring',
   DYNAMIC_TRUST_EVALUATION: 'Dynamic trust evaluation',
   FEDERATED_ENTERPRISE_ECOSYSTEMS: 'Federated enterprise ecosystems'
+});
+
+export const AI_INTEGRATION_OBJECTIVES = Object.freeze({
+  AI_INTEROPERABILITY: 'ai-interoperability',
+  SECURE_AI_COLLABORATION: 'secure-ai-collaboration',
+  EXPLAINABLE_INTERACTIONS: 'explainable-interactions',
+  MODULAR_AI_CAPABILITIES: 'modular-ai-capabilities',
+  ENTERPRISE_GOVERNANCE: 'enterprise-governance',
+  VENDOR_INDEPENDENCE: 'vendor-independence',
+  SCALABLE_ORCHESTRATION: 'scalable-orchestration',
+  LONG_TERM_MAINTAINABILITY: 'long-term-maintainability'
+});
+
+export const AI_INTEGRATION_MODEL_STAGES = Object.freeze({
+  BUSINESS_PROCESS: 'Business Process',
+  AI_ORCHESTRATOR: 'AI Orchestrator',
+  AI_INTEGRATION_CONTRACT: 'AI Integration Contract',
+  AI_CAPABILITY: 'AI Capability',
+  BUSINESS_OUTCOME: 'Business Outcome'
+});
+
+export const AI_INTEGRATION_PRINCIPLES = Object.freeze({
+  AI_AS_A_SERVICE: 'ai-as-a-service',
+  CAPABILITY_ORIENTED_INTEGRATION: 'capability-oriented-integration',
+  PROVIDER_INDEPENDENCE: 'provider-independence',
+  EXPLICIT_AI_CONTRACTS: 'explicit-ai-contracts',
+  HUMAN_ACCOUNTABILITY: 'human-accountability'
+});
+
+export const AI_CAPABILITY_TYPES = Object.freeze({
+  CLASSIFICATION: 'classification',
+  RECOMMENDATION: 'recommendation',
+  SUMMARIZATION: 'summarization',
+  TRANSLATION: 'translation',
+  RETRIEVAL: 'retrieval',
+  PLANNING: 'planning',
+  DECISION_SUPPORT: 'decision-support'
+});
+
+export const AI_CONTRACT_ELEMENTS = Object.freeze({
+  BUSINESS_CAPABILITY: 'business-capability',
+  INPUTS: 'inputs',
+  OUTPUTS: 'outputs',
+  EXPECTED_BEHAVIOR: 'expected-behavior',
+  SECURITY_REQUIREMENTS: 'security-requirements',
+  OPERATIONAL_EXPECTATIONS: 'operational-expectations',
+  ERROR_CONDITIONS: 'error-conditions'
+});
+
+export const AI_INTEGRATION_PARTICIPANTS = Object.freeze({
+  AI_ORCHESTRATORS: 'ai-orchestrators',
+  AI_AGENTS: 'ai-agents',
+  FOUNDATION_MODELS: 'foundation-models',
+  SPECIALIZED_AI_SERVICES: 'specialized-ai-services',
+  KNOWLEDGE_SERVICES: 'knowledge-services',
+  TOOL_SERVICES: 'tool-services',
+  BUSINESS_SERVICES: 'business-services',
+  HUMAN_OPERATORS: 'human-operators',
+  EXTERNAL_AI_PROVIDERS: 'external-ai-providers'
+});
+
+export const AGENT_COLLABORATION_CONTROLS = Object.freeze({
+  IDENTITY: 'identity',
+  AUTHORIZATION: 'authorization',
+  RESPONSIBILITY: 'responsibility',
+  TRACEABILITY: 'traceability',
+  EXPLAINABILITY: 'explainability',
+  GOVERNANCE: 'governance'
+});
+
+export const AI_SERVICE_INTEGRATION_EXAMPLES = Object.freeze({
+  CUSTOMER_INFORMATION: 'customer-information',
+  BUSINESS_WORKFLOWS: 'business-workflows',
+  INVENTORY_SERVICES: 'inventory-services',
+  PAYMENT_SERVICES: 'payment-services',
+  KNOWLEDGE_REPOSITORIES: 'knowledge-repositories',
+  NOTIFICATION_SERVICES: 'notification-services'
+});
+
+export const AI_TOOL_INTEGRATION_TYPES = Object.freeze({
+  SEARCH: 'search',
+  DOCUMENT_PROCESSING: 'document-processing',
+  SCHEDULING: 'scheduling',
+  ANALYTICS: 'analytics',
+  COMMUNICATION: 'communication',
+  REPORTING: 'reporting',
+  CODE_EXECUTION: 'code-execution'
+});
+
+export const AI_KNOWLEDGE_INTEGRATION_SOURCES = Object.freeze({
+  ENTERPRISE_KNOWLEDGE_BASES: 'enterprise-knowledge-bases',
+  DOCUMENT_REPOSITORIES: 'document-repositories',
+  STRUCTURED_DATABASES: 'structured-databases',
+  SEARCH_PLATFORMS: 'search-platforms',
+  RETRIEVAL_SYSTEMS: 'retrieval-systems'
+});
+
+export const HUMAN_AI_COLLABORATION_TYPES = Object.freeze({
+  REVIEW: 'review',
+  APPROVAL: 'approval',
+  ESCALATION: 'escalation',
+  EXCEPTION_HANDLING: 'exception-handling',
+  DECISION_CONFIRMATION: 'decision-confirmation',
+  FEEDBACK: 'feedback'
+});
+
+export const AI_COMMUNICATION_MODELS = Object.freeze({
+  REQUEST_RESPONSE: 'request-response',
+  EVENT_DRIVEN_AI: 'event-driven-ai',
+  WORKFLOW_ORCHESTRATION: 'workflow-orchestration',
+  AGENT_COLLABORATION: 'agent-collaboration',
+  HUMAN_IN_THE_LOOP: 'human-in-the-loop',
+  SCHEDULED_EXECUTION: 'scheduled-execution'
+});
+
+export const AI_INTEGRATION_LIFECYCLE_STAGES = Object.freeze({
+  DESIGN: 'Design',
+  INTEGRATE: 'Integrate',
+  VALIDATE: 'Validate',
+  DEPLOY: 'Deploy',
+  OPERATE: 'Operate',
+  MONITOR: 'Monitor',
+  IMPROVE: 'Improve'
+});
+
+export const AI_INTEGRATION_OBSERVABILITY_TELEMETRY = Object.freeze({
+  REQUESTS: 'requests',
+  RESPONSES: 'responses',
+  TOOL_USAGE: 'tool-usage',
+  KNOWLEDGE_ACCESS: 'knowledge-access',
+  AGENT_INTERACTIONS: 'agent-interactions',
+  WORKFLOW_PARTICIPATION: 'workflow-participation',
+  PROCESSING_DURATION: 'processing-duration'
+});
+
+export const AI_INTEGRATION_SECURITY_CONTROLS = Object.freeze({
+  IDENTITY: 'identity',
+  AUTHENTICATION: 'authentication',
+  AUTHORIZATION: 'authorization',
+  ENCRYPTION: 'encryption',
+  ZERO_TRUST: 'zero-trust',
+  AUDIT_LOGGING: 'audit-logging',
+  AI_GOVERNANCE: 'ai-governance'
+});
+
+export const AI_INTEGRATION_GOVERNANCE_ACTIVITIES = Object.freeze({
+  CAPABILITY_APPROVAL: 'capability-approval',
+  CONTRACT_MANAGEMENT: 'contract-management',
+  MODEL_GOVERNANCE: 'model-governance',
+  PROVIDER_GOVERNANCE: 'provider-governance',
+  LIFECYCLE_MANAGEMENT: 'lifecycle-management',
+  DOCUMENTATION: 'documentation',
+  OPERATIONAL_STANDARDS: 'operational-standards'
+});
+
+export const AI_INTEGRATION_RELATIONSHIP_FLOW_STAGES = Object.freeze({
+  BUSINESS_CAPABILITY: 'Business Capability',
+  INTEGRATION_CONTRACT: 'Integration Contract',
+  AI_ORCHESTRATOR: 'AI Orchestrator',
+  AI_CAPABILITY: 'AI Capability',
+  BUSINESS_COLLABORATION: 'Business Collaboration'
+});
+
+export const FUTURE_AI_INTEGRATION_DIRECTIONS = Object.freeze({
+  AUTONOMOUS_AGENT_ECOSYSTEMS: 'Autonomous agent ecosystems',
+  DYNAMIC_CAPABILITY_DISCOVERY: 'Dynamic capability discovery',
+  SEMANTIC_SERVICE_COMPOSITION: 'Semantic service composition',
+  MULTI_PROVIDER_AI_FEDERATION: 'Multi-provider AI federation',
+  ADAPTIVE_ORCHESTRATION: 'Adaptive orchestration',
+  POLICY_DRIVEN_AI_ROUTING: 'Policy-driven AI routing',
+  SELF_ORGANIZING_AGENT_COLLABORATION: 'Self-organizing agent collaboration',
+  AI_CAPABILITY_MARKETPLACES: 'AI capability marketplaces'
 });

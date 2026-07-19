@@ -1,5 +1,6 @@
 import { ServiceCollection } from '../foundation/di/service-collection.js';
 import { ApiArchitectureDescriptor } from './api/api-architecture-descriptor.js';
+import { AiIntegrationArchitectureDescriptor } from './ai/ai-integration-architecture-descriptor.js';
 import { ExternalSystemIntegrationDescriptor } from './external/external-system-integration-descriptor.js';
 import { MessagingEventArchitectureDescriptor } from './messaging/messaging-event-architecture-descriptor.js';
 import { IntegrationOverviewDescriptor } from './overview/integration-overview-descriptor.js';
@@ -17,6 +18,7 @@ export function addIntegrationArchitecture(services) {
   services.registerSingleton('MessagingEventArchitectureDescriptor', () => new MessagingEventArchitectureDescriptor());
   services.registerSingleton('WorkflowProcessIntegrationDescriptor', () => new WorkflowProcessIntegrationDescriptor());
   services.registerSingleton('ExternalSystemIntegrationDescriptor', () => new ExternalSystemIntegrationDescriptor());
+  services.registerSingleton('AiIntegrationArchitectureDescriptor', () => new AiIntegrationArchitectureDescriptor());
 
   return services;
 }

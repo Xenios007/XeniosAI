@@ -1409,3 +1409,20 @@ Version: 0.77.0
 
 Status: Integration Architecture
 Version: 0.78.0
+
+---
+
+## [0.79.0] - ARCH-009 AI Integration Architecture
+
+### Added
+- AI integration objective, model, principle, capability, contract, participant, agent collaboration, service integration, tool integration, knowledge integration, Human-AI collaboration, communication model, lifecycle, observability, security, governance, relationship flow, future direction, and error-code constants.
+- Immutable contract for AI integration profiles.
+- AI Integration Architecture descriptor for documented metadata, AI integration validation, and architecture assertion.
+- Dependency-injection registration through `addIntegrationArchitecture`.
+- Unit tests for AI integration objectives, model, capabilities, contracts, participants, agent collaboration, tools, knowledge, Human-AI collaboration, lifecycle, security, governance, future directions, invalid metadata, and DI access.
+
+### Established
+- AI integration governance without implementing model-specific prompting techniques, provider SDKs, inference engines, implementation frameworks, direct model integrations, runtime agents, or AI provider behavior.
+
+Status: Integration Architecture
+Version: 0.79.0

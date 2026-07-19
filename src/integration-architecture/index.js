@@ -1,4 +1,5 @@
 export {
+  AGENT_COLLABORATION_CONTROLS,
   API_ARCHITECTURAL_MODEL_STAGES,
   API_ARCHITECTURE_OBJECTIVES,
   API_CATEGORIES,
@@ -14,6 +15,21 @@ export {
   API_RELIABILITY_CONSIDERATIONS,
   API_SECURITY_CONTROLS,
   API_VERSIONING_REQUIREMENTS,
+  AI_CAPABILITY_TYPES,
+  AI_COMMUNICATION_MODELS,
+  AI_CONTRACT_ELEMENTS,
+  AI_INTEGRATION_GOVERNANCE_ACTIVITIES,
+  AI_INTEGRATION_LIFECYCLE_STAGES,
+  AI_INTEGRATION_MODEL_STAGES,
+  AI_INTEGRATION_OBJECTIVES,
+  AI_INTEGRATION_OBSERVABILITY_TELEMETRY,
+  AI_INTEGRATION_PARTICIPANTS,
+  AI_INTEGRATION_PRINCIPLES,
+  AI_INTEGRATION_RELATIONSHIP_FLOW_STAGES,
+  AI_INTEGRATION_SECURITY_CONTROLS,
+  AI_KNOWLEDGE_INTEGRATION_SOURCES,
+  AI_SERVICE_INTEGRATION_EXAMPLES,
+  AI_TOOL_INTEGRATION_TYPES,
   ENTERPRISE_CONNECTIVITY_TARGETS,
   ENTERPRISE_INTEGRATION_MODEL_STAGES,
   EVENT_CATEGORIES,
@@ -31,12 +47,14 @@ export {
   EXTERNAL_INTEGRATION_RELIABILITY_CONSIDERATIONS,
   EXTERNAL_INTEGRATION_SECURITY_CONTROLS,
   EXTERNAL_SYSTEM_INTEGRATION_OBJECTIVES,
+  FUTURE_AI_INTEGRATION_DIRECTIONS,
   FUTURE_API_ARCHITECTURE_DIRECTIONS,
   FUTURE_EXTERNAL_SYSTEM_INTEGRATION_DIRECTIONS,
   FUTURE_INTEGRATION_OVERVIEW_DIRECTIONS,
   FUTURE_INTEGRATION_PRINCIPLE_DIRECTIONS,
   FUTURE_MESSAGING_EVENT_DIRECTIONS,
   FUTURE_WORKFLOW_PROCESS_DIRECTIONS,
+  HUMAN_AI_COLLABORATION_TYPES,
   ASYNCHRONOUS_COMMUNICATION_BENEFITS,
   ENTERPRISE_INTEGRATION_PRINCIPLES,
   EVOLUTION_WITHOUT_DISRUPTION_REQUIREMENTS,
@@ -101,6 +119,7 @@ export {
   WORKFLOW_RELATIONSHIP_FLOW_STAGES,
   WORKFLOW_SECURITY_CONTROLS
 } from './constants.js';
+export { AiIntegrationProfile } from './contracts/ai-integration-profile.js';
 export { ApiContractProfile } from './contracts/api-contract-profile.js';
 export { ExternalSystemIntegrationProfile } from './contracts/external-system-integration-profile.js';
 export { IntegrationArchitectureValidationResult } from './contracts/integration-architecture-validation-result.js';
@@ -111,6 +130,7 @@ export { IntegrationPrincipleProfile } from './contracts/integration-principle-p
 export { MessagingEventProfile } from './contracts/messaging-event-profile.js';
 export { MessagingMessageProfile } from './contracts/messaging-message-profile.js';
 export { WorkflowProcessProfile } from './contracts/workflow-process-profile.js';
+export { AiIntegrationArchitectureDescriptor } from './ai/ai-integration-architecture-descriptor.js';
 export { ApiArchitectureDescriptor } from './api/api-architecture-descriptor.js';
 export { ExternalSystemIntegrationDescriptor } from './external/external-system-integration-descriptor.js';
 export { MessagingEventArchitectureDescriptor } from './messaging/messaging-event-architecture-descriptor.js';
