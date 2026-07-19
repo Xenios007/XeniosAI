@@ -81,7 +81,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-009-01 Integration Overview`
 - Completed: `ARCH-009-02 Integration Principles`
 - Completed: `ARCH-009-03 API Architecture`
-- Next: `ARCH-009-04 Messaging & Event Architecture`
+- Completed: `ARCH-009-04 Messaging & Event Architecture`
+- Next: `ARCH-009-05 Workflow & Process Integration`
 
 ## Notes
 

@@ -5,7 +5,8 @@ export const INTEGRATION_ARCHITECTURE_ERROR_CODES = Object.freeze({
   INTEGRATION_PRINCIPLES_INVALID: 'INTEGRATION_ARCHITECTURE_PRINCIPLES_INVALID',
   INTEGRATION_PRINCIPLE_INVALID: 'INTEGRATION_ARCHITECTURE_PRINCIPLE_INVALID',
   INTEGRATION_DECISION_MODEL_INVALID: 'INTEGRATION_ARCHITECTURE_DECISION_MODEL_INVALID',
-  API_ARCHITECTURE_INVALID: 'INTEGRATION_ARCHITECTURE_API_ARCHITECTURE_INVALID'
+  API_ARCHITECTURE_INVALID: 'INTEGRATION_ARCHITECTURE_API_ARCHITECTURE_INVALID',
+  MESSAGING_EVENT_ARCHITECTURE_INVALID: 'INTEGRATION_ARCHITECTURE_MESSAGING_EVENT_ARCHITECTURE_INVALID'
 });
 
 export const INTEGRATION_TREATMENT_PRINCIPLES = Object.freeze({
@@ -546,4 +547,146 @@ export const FUTURE_API_ARCHITECTURE_DIRECTIONS = Object.freeze({
   ADAPTIVE_API_ROUTING: 'Adaptive API routing',
   MACHINE_READABLE_GOVERNANCE: 'Machine-readable governance',
   AUTONOMOUS_CONTRACT_VERIFICATION: 'Autonomous contract verification'
+});
+
+export const MESSAGING_EVENT_OBJECTIVES = Object.freeze({
+  LOOSE_COUPLING: 'loose-coupling',
+  ASYNCHRONOUS_COLLABORATION: 'asynchronous-collaboration',
+  RELIABLE_COMMUNICATION: 'reliable-communication',
+  EVENT_DRIVEN_PROCESSING: 'event-driven-processing',
+  ENTERPRISE_SCALABILITY: 'enterprise-scalability',
+  OPERATIONAL_RESILIENCE: 'operational-resilience',
+  HIGH_OBSERVABILITY: 'high-observability',
+  TECHNOLOGY_INDEPENDENCE: 'technology-independence'
+});
+
+export const MESSAGING_EVENT_MODEL_STAGES = Object.freeze({
+  PRODUCER: 'Producer',
+  MESSAGE_OR_EVENT: 'Message or Event',
+  MESSAGING_INFRASTRUCTURE: 'Messaging Infrastructure',
+  CONSUMER: 'Consumer'
+});
+
+export const MESSAGING_EVENT_PRINCIPLES = Object.freeze({
+  DECOUPLED_COMMUNICATION: 'decoupled-communication',
+  BUSINESS_ORIENTED_EVENTS: 'business-oriented-events',
+  MESSAGES_REPRESENT_INTENT: 'messages-represent-intent',
+  INDEPENDENT_PROCESSING: 'independent-processing'
+});
+
+export const EVENT_CATEGORIES = Object.freeze({
+  BUSINESS_EVENTS: 'business-events',
+  DOMAIN_EVENTS: 'domain-events',
+  SYSTEM_EVENTS: 'system-events',
+  AI_EVENTS: 'ai-events'
+});
+
+export const MESSAGE_CATEGORIES = Object.freeze({
+  COMMANDS: 'commands',
+  NOTIFICATIONS: 'notifications',
+  REQUESTS: 'requests',
+  WORKFLOW_INSTRUCTIONS: 'workflow-instructions',
+  SCHEDULED_TASKS: 'scheduled-tasks',
+  ADMINISTRATIVE_OPERATIONS: 'administrative-operations'
+});
+
+export const EVENT_LIFECYCLE_STAGES = Object.freeze({
+  OCCURRED: 'Occurred',
+  PUBLISHED: 'Published',
+  DELIVERED: 'Delivered',
+  CONSUMED: 'Consumed',
+  AUDITED: 'Audited',
+  ARCHIVED: 'Archived'
+});
+
+export const MESSAGE_LIFECYCLE_STAGES = Object.freeze({
+  CREATED: 'Created',
+  VALIDATED: 'Validated',
+  QUEUED: 'Queued',
+  DELIVERED: 'Delivered',
+  PROCESSED: 'Processed',
+  COMPLETED: 'Completed'
+});
+
+export const EVENT_OWNERSHIP_RESPONSIBILITIES = Object.freeze({
+  EVENT_DEFINITION: 'event-definition',
+  BUSINESS_MEANING: 'business-meaning',
+  SCHEMA_EVOLUTION: 'schema-evolution',
+  DOCUMENTATION: 'documentation',
+  LIFECYCLE: 'lifecycle',
+  GOVERNANCE: 'governance'
+});
+
+export const MESSAGE_OWNERSHIP_RESPONSIBILITIES = Object.freeze({
+  COMMAND_DEFINITION: 'command-definition',
+  PROCESSING_EXPECTATIONS: 'processing-expectations',
+  SECURITY_CLASSIFICATION: 'security-classification',
+  VERSION_COMPATIBILITY: 'version-compatibility',
+  OPERATIONAL_GOVERNANCE: 'operational-governance'
+});
+
+export const MESSAGING_DELIVERY_CHARACTERISTICS = Object.freeze({
+  IMMEDIATE_DELIVERY: 'immediate-delivery',
+  DEFERRED_PROCESSING: 'deferred-processing',
+  SCHEDULED_EXECUTION: 'scheduled-execution',
+  PARALLEL_PROCESSING: 'parallel-processing',
+  SEQUENTIAL_PROCESSING: 'sequential-processing'
+});
+
+export const MESSAGING_RELIABILITY_PRINCIPLES = Object.freeze({
+  DELIVERY_ASSURANCE: 'delivery-assurance',
+  RETRY_MANAGEMENT: 'retry-management',
+  DUPLICATE_HANDLING: 'duplicate-handling',
+  IDEMPOTENT_PROCESSING: 'idempotent-processing',
+  FAILURE_ISOLATION: 'failure-isolation',
+  RECOVERY_PROCEDURES: 'recovery-procedures'
+});
+
+export const MESSAGING_OBSERVABILITY_TELEMETRY = Object.freeze({
+  PUBLISHED_EVENTS: 'published-events',
+  DELIVERED_MESSAGES: 'delivered-messages',
+  PROCESSING_STATUS: 'processing-status',
+  FAILURES: 'failures',
+  LATENCY: 'latency',
+  QUEUE_DEPTH: 'queue-depth',
+  CONSUMER_HEALTH: 'consumer-health'
+});
+
+export const MESSAGING_SECURITY_CONTROLS = Object.freeze({
+  IDENTITY: 'identity',
+  AUTHENTICATION: 'authentication',
+  AUTHORIZATION: 'authorization',
+  ENCRYPTION: 'encryption',
+  AUDIT_LOGGING: 'audit-logging',
+  ZERO_TRUST: 'zero-trust',
+  GOVERNANCE: 'governance'
+});
+
+export const MESSAGING_GOVERNANCE_ACTIVITIES = Object.freeze({
+  EVENT_DEFINITIONS: 'event-definitions',
+  MESSAGE_CONTRACTS: 'message-contracts',
+  SCHEMA_GOVERNANCE: 'schema-governance',
+  VERSION_MANAGEMENT: 'version-management',
+  OWNERSHIP: 'ownership',
+  DOCUMENTATION: 'documentation',
+  LIFECYCLE_MANAGEMENT: 'lifecycle-management'
+});
+
+export const MESSAGING_RELATIONSHIP_FLOW_STAGES = Object.freeze({
+  BUSINESS_CAPABILITY: 'Business Capability',
+  INTEGRATION_CONTRACT: 'Integration Contract',
+  API: 'API',
+  MESSAGING: 'Messaging',
+  BUSINESS_COLLABORATION: 'Business Collaboration'
+});
+
+export const FUTURE_MESSAGING_EVENT_DIRECTIONS = Object.freeze({
+  AUTONOMOUS_EVENT_ROUTING: 'Autonomous event routing',
+  AI_ASSISTED_EVENT_CLASSIFICATION: 'AI-assisted event classification',
+  SEMANTIC_EVENT_DISCOVERY: 'Semantic event discovery',
+  DYNAMIC_WORKFLOW_ORCHESTRATION: 'Dynamic workflow orchestration',
+  INTELLIGENT_MESSAGE_PRIORITIZATION: 'Intelligent message prioritization',
+  POLICY_DRIVEN_EVENT_GOVERNANCE: 'Policy-driven event governance',
+  ADAPTIVE_DELIVERY_OPTIMIZATION: 'Adaptive delivery optimization',
+  SELF_HEALING_MESSAGING_INFRASTRUCTURE: 'Self-healing messaging infrastructure'
 });

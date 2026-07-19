@@ -131,5 +131,6 @@ The repository currently includes automated unit tests for:
 - `ARCH-009-01 Integration Overview` in `tests/integration-architecture/`
 - `ARCH-009-02 Integration Principles` in `tests/integration-architecture/`
 - `ARCH-009-03 API Architecture` in `tests/integration-architecture/`
+- `ARCH-009-04 Messaging & Event Architecture` in `tests/integration-architecture/`
 
 These tests validate reusable platform capabilities and channel-facing behavior without introducing business logic.

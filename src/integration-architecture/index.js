@@ -16,9 +16,13 @@ export {
   API_VERSIONING_REQUIREMENTS,
   ENTERPRISE_CONNECTIVITY_TARGETS,
   ENTERPRISE_INTEGRATION_MODEL_STAGES,
+  EVENT_CATEGORIES,
+  EVENT_LIFECYCLE_STAGES,
+  EVENT_OWNERSHIP_RESPONSIBILITIES,
   FUTURE_API_ARCHITECTURE_DIRECTIONS,
   FUTURE_INTEGRATION_OVERVIEW_DIRECTIONS,
   FUTURE_INTEGRATION_PRINCIPLE_DIRECTIONS,
+  FUTURE_MESSAGING_EVENT_DIRECTIONS,
   ASYNCHRONOUS_COMMUNICATION_BENEFITS,
   ENTERPRISE_INTEGRATION_PRINCIPLES,
   EVOLUTION_WITHOUT_DISRUPTION_REQUIREMENTS,
@@ -47,6 +51,18 @@ export {
   INTEGRATION_SECURITY_REQUIREMENTS,
   INTEGRATION_TREATMENT_PRINCIPLES,
   LOOSE_COUPLING_AVOIDED_ASSUMPTIONS,
+  MESSAGE_CATEGORIES,
+  MESSAGE_LIFECYCLE_STAGES,
+  MESSAGE_OWNERSHIP_RESPONSIBILITIES,
+  MESSAGING_DELIVERY_CHARACTERISTICS,
+  MESSAGING_EVENT_MODEL_STAGES,
+  MESSAGING_EVENT_OBJECTIVES,
+  MESSAGING_EVENT_PRINCIPLES,
+  MESSAGING_GOVERNANCE_ACTIVITIES,
+  MESSAGING_OBSERVABILITY_TELEMETRY,
+  MESSAGING_RELATIONSHIP_FLOW_STAGES,
+  MESSAGING_RELIABILITY_PRINCIPLES,
+  MESSAGING_SECURITY_CONTROLS,
   PRINCIPLE_COMMUNICATION_STYLES,
   PRINCIPLE_LOOSE_COUPLING_AVOIDED_ASSUMPTIONS,
   PRINCIPLE_SECURITY_CONTROLS,
@@ -61,7 +77,10 @@ export { IntegrationContractBoundary } from './contracts/integration-contract-bo
 export { IntegrationDecisionModel } from './contracts/integration-decision-model.js';
 export { IntegrationDomainProfile } from './contracts/integration-domain-profile.js';
 export { IntegrationPrincipleProfile } from './contracts/integration-principle-profile.js';
+export { MessagingEventProfile } from './contracts/messaging-event-profile.js';
+export { MessagingMessageProfile } from './contracts/messaging-message-profile.js';
 export { ApiArchitectureDescriptor } from './api/api-architecture-descriptor.js';
+export { MessagingEventArchitectureDescriptor } from './messaging/messaging-event-architecture-descriptor.js';
 export { IntegrationOverviewDescriptor } from './overview/integration-overview-descriptor.js';
 export { IntegrationPrinciplesDescriptor } from './principles/integration-principles-descriptor.js';
 export { addIntegrationArchitecture } from './service-registration.js';

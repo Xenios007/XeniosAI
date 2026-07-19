@@ -1358,3 +1358,20 @@ Version: 0.74.0
 
 Status: Integration Architecture
 Version: 0.75.0
+
+---
+
+## [0.76.0] - ARCH-009 Messaging & Event Architecture
+
+### Added
+- Messaging and event objective, model, principle, event category, message category, lifecycle, ownership, delivery, reliability, observability, security, governance, relationship flow, future direction, and error-code constants.
+- Immutable contracts for messaging event profiles and messaging message profiles.
+- Messaging & Event Architecture descriptor for documented metadata, event validation, message validation, and architecture assertion.
+- Dependency-injection registration through `addIntegrationArchitecture`.
+- Unit tests for messaging objectives, categories, lifecycles, ownership, delivery, reliability, observability, security, governance, future directions, invalid metadata, and DI access.
+
+### Established
+- Messaging and event architecture governance without implementing messaging platforms, event brokers, queues, streaming technologies, serialization formats, vendor products, runtime routing, or transport behavior.
+
+Status: Integration Architecture
+Version: 0.76.0
