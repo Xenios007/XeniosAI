@@ -1426,3 +1426,20 @@ Version: 0.78.0
 
 Status: Integration Architecture
 Version: 0.79.0
+
+---
+
+## [0.80.0] - ARCH-009 Integration Governance
+
+### Added
+- Integration governance objective, model, principle, expectation, ownership, contract review, standardization, lifecycle, versioning, documentation, security, operational governance, AI governance, compliance, quality assurance, metric, relationship flow, future direction, and error-code constants.
+- Immutable contract for integration governance profiles.
+- Integration Governance descriptor for documented metadata, governance validation, and architecture assertion.
+- Dependency-injection registration through `addIntegrationArchitecture`.
+- Unit tests for governance objectives, model, ownership, contract lifecycle, versioning, documentation, security, operations, AI governance, compliance, metrics, future directions, invalid metadata, and DI access.
+
+### Established
+- Integration governance without implementing organizational structures, approval workflows, governance tools, implementation procedures, runtime governance automation, or vendor products.
+
+Status: Integration Architecture
+Version: 0.80.0

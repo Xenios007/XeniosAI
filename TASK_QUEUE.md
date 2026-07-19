@@ -85,7 +85,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-009-05 Workflow & Process Integration`
 - Completed: `ARCH-009-06 External System Integration`
 - Completed: `ARCH-009-07 AI Integration Architecture`
-- Next: `ARCH-009-08 Integration Governance`
+- Completed: `ARCH-009-08 Integration Governance`
+- Next: `ARCH-009-09 Reliability & Resilience`
 
 ## Notes
 

@@ -51,6 +51,7 @@ export {
   FUTURE_API_ARCHITECTURE_DIRECTIONS,
   FUTURE_EXTERNAL_SYSTEM_INTEGRATION_DIRECTIONS,
   FUTURE_INTEGRATION_OVERVIEW_DIRECTIONS,
+  FUTURE_INTEGRATION_GOVERNANCE_DIRECTIONS,
   FUTURE_INTEGRATION_PRINCIPLE_DIRECTIONS,
   FUTURE_MESSAGING_EVENT_DIRECTIONS,
   FUTURE_WORKFLOW_PROCESS_DIRECTIONS,
@@ -67,6 +68,18 @@ export {
   INTEGRATION_DECISION_MODEL_STAGES,
   INTEGRATION_DOMAIN_NAMES,
   INTEGRATION_GOVERNANCE_FOUNDATIONS,
+  INTEGRATION_AI_GOVERNANCE_ACTIVITIES,
+  INTEGRATION_COMPLIANCE_ALIGNMENT_AREAS,
+  INTEGRATION_CONTRACT_LIFECYCLE_STAGES,
+  INTEGRATION_DOCUMENTATION_REQUIREMENTS,
+  INTEGRATION_GOVERNANCE_EXPECTATIONS,
+  INTEGRATION_GOVERNANCE_LIFECYCLE_STAGES,
+  INTEGRATION_GOVERNANCE_METRICS,
+  INTEGRATION_GOVERNANCE_MODEL_STAGES,
+  INTEGRATION_GOVERNANCE_OBJECTIVES,
+  INTEGRATION_GOVERNANCE_PRINCIPLES,
+  INTEGRATION_GOVERNANCE_RELATIONSHIP_FLOW_STAGES,
+  INTEGRATION_GOVERNANCE_SECURITY_CONTROLS,
   INTEGRATION_LIFECYCLE_STAGES,
   INTEGRATION_OBJECTIVES,
   INTEGRATION_PARTICIPANT_TYPES,
@@ -103,6 +116,14 @@ export {
   TECHNOLOGY_INDEPENDENCE_TARGETS,
   VERSION_COMPATIBILITY_REQUIREMENTS,
   INTEGRATION_OWNERSHIP_RESPONSIBILITIES,
+  INTEGRATION_OPERATIONAL_GOVERNANCE_ACTIVITIES,
+  INTEGRATION_OWNERSHIP_ASSIGNMENTS,
+  INTEGRATION_OWNERSHIP_SCOPE,
+  INTEGRATION_QUALITY_ASSURANCE_CONSIDERATIONS,
+  INTEGRATION_STANDARDIZATION_AREAS,
+  INTEGRATION_VERSION_GOVERNANCE_CAPABILITIES,
+  GOVERNED_CONTRACT_REVIEW_AREAS,
+  GOVERNED_INTEGRATION_LIFECYCLE_STAGES,
   WORKFLOW_ACTIVITY_EXAMPLES,
   WORKFLOW_AI_RESPONSIBILITIES,
   WORKFLOW_DECISION_POINTS,
@@ -126,6 +147,7 @@ export { IntegrationArchitectureValidationResult } from './contracts/integration
 export { IntegrationContractBoundary } from './contracts/integration-contract-boundary.js';
 export { IntegrationDecisionModel } from './contracts/integration-decision-model.js';
 export { IntegrationDomainProfile } from './contracts/integration-domain-profile.js';
+export { IntegrationGovernanceProfile } from './contracts/integration-governance-profile.js';
 export { IntegrationPrincipleProfile } from './contracts/integration-principle-profile.js';
 export { MessagingEventProfile } from './contracts/messaging-event-profile.js';
 export { MessagingMessageProfile } from './contracts/messaging-message-profile.js';
@@ -133,6 +155,7 @@ export { WorkflowProcessProfile } from './contracts/workflow-process-profile.js'
 export { AiIntegrationArchitectureDescriptor } from './ai/ai-integration-architecture-descriptor.js';
 export { ApiArchitectureDescriptor } from './api/api-architecture-descriptor.js';
 export { ExternalSystemIntegrationDescriptor } from './external/external-system-integration-descriptor.js';
+export { IntegrationGovernanceDescriptor } from './governance/integration-governance-descriptor.js';
 export { MessagingEventArchitectureDescriptor } from './messaging/messaging-event-architecture-descriptor.js';
 export { IntegrationOverviewDescriptor } from './overview/integration-overview-descriptor.js';
 export { IntegrationPrinciplesDescriptor } from './principles/integration-principles-descriptor.js';

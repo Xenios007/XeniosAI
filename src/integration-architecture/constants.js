@@ -9,7 +9,8 @@ export const INTEGRATION_ARCHITECTURE_ERROR_CODES = Object.freeze({
   MESSAGING_EVENT_ARCHITECTURE_INVALID: 'INTEGRATION_ARCHITECTURE_MESSAGING_EVENT_ARCHITECTURE_INVALID',
   WORKFLOW_PROCESS_INTEGRATION_INVALID: 'INTEGRATION_ARCHITECTURE_WORKFLOW_PROCESS_INTEGRATION_INVALID',
   EXTERNAL_SYSTEM_INTEGRATION_INVALID: 'INTEGRATION_ARCHITECTURE_EXTERNAL_SYSTEM_INTEGRATION_INVALID',
-  AI_INTEGRATION_ARCHITECTURE_INVALID: 'INTEGRATION_ARCHITECTURE_AI_INTEGRATION_ARCHITECTURE_INVALID'
+  AI_INTEGRATION_ARCHITECTURE_INVALID: 'INTEGRATION_ARCHITECTURE_AI_INTEGRATION_ARCHITECTURE_INVALID',
+  INTEGRATION_GOVERNANCE_INVALID: 'INTEGRATION_ARCHITECTURE_GOVERNANCE_INVALID'
 });
 
 export const INTEGRATION_TREATMENT_PRINCIPLES = Object.freeze({
@@ -1163,4 +1164,201 @@ export const FUTURE_AI_INTEGRATION_DIRECTIONS = Object.freeze({
   POLICY_DRIVEN_AI_ROUTING: 'Policy-driven AI routing',
   SELF_ORGANIZING_AGENT_COLLABORATION: 'Self-organizing agent collaboration',
   AI_CAPABILITY_MARKETPLACES: 'AI capability marketplaces'
+});
+
+export const INTEGRATION_GOVERNANCE_OBJECTIVES = Object.freeze({
+  CLEAR_OWNERSHIP: 'clear-ownership',
+  CONTRACT_CONSISTENCY: 'contract-consistency',
+  CONTROLLED_EVOLUTION: 'controlled-evolution',
+  ENTERPRISE_INTEROPERABILITY: 'enterprise-interoperability',
+  SECURITY_ALIGNMENT: 'security-alignment',
+  OPERATIONAL_ACCOUNTABILITY: 'operational-accountability',
+  LONG_TERM_MAINTAINABILITY: 'long-term-maintainability',
+  ARCHITECTURAL_SUSTAINABILITY: 'architectural-sustainability'
+});
+
+export const INTEGRATION_GOVERNANCE_MODEL_STAGES = Object.freeze({
+  DESIGN: 'Design',
+  REVIEW: 'Review',
+  APPROVE: 'Approve',
+  PUBLISH: 'Publish',
+  OPERATE: 'Operate',
+  MONITOR: 'Monitor',
+  IMPROVE: 'Improve'
+});
+
+export const INTEGRATION_GOVERNANCE_PRINCIPLES = Object.freeze({
+  EXPLICIT_OWNERSHIP: 'explicit-ownership',
+  CONTRACT_GOVERNANCE: 'contract-governance',
+  STANDARDIZATION: 'standardization',
+  LIFECYCLE_GOVERNANCE: 'lifecycle-governance',
+  CONSUMER_PROTECTION: 'consumer-protection'
+});
+
+export const INTEGRATION_GOVERNANCE_EXPECTATIONS = Object.freeze({
+  PROTECT_INTEROPERABILITY: 'protect-interoperability',
+  PRESERVE_SERVICE_AUTONOMY: 'preserve-service-autonomy',
+  ENCOURAGE_REUSE: 'encourage-reuse',
+  PROMOTE_ARCHITECTURAL_CONSISTENCY: 'promote-architectural-consistency',
+  ENABLE_CONTROLLED_EVOLUTION: 'enable-controlled-evolution',
+  SUPPORT_OPERATIONAL_EXCELLENCE: 'support-operational-excellence'
+});
+
+export const INTEGRATION_OWNERSHIP_ASSIGNMENTS = Object.freeze({
+  BUSINESS_CAPABILITY_SERVICE_OWNER: 'business-capability-service-owner',
+  INTEGRATION_CONTRACT_SERVICE_OWNER: 'integration-contract-service-owner',
+  SECURITY_ARCHITECTURE: 'security-architecture',
+  ENTERPRISE_ARCHITECTURE: 'enterprise-architecture',
+  PLATFORM_OPERATIONS: 'platform-operations',
+  DOCUMENTATION_CAPABILITY_OWNER: 'documentation-capability-owner',
+  LIFECYCLE_CAPABILITY_OWNER: 'lifecycle-capability-owner'
+});
+
+export const INTEGRATION_OWNERSHIP_SCOPE = Object.freeze({
+  BUSINESS_CAPABILITY: 'business-capability',
+  INTEGRATION_CONTRACT: 'integration-contract',
+  DOCUMENTATION: 'documentation',
+  SECURITY: 'security',
+  LIFECYCLE: 'lifecycle',
+  CONSUMER_COMMUNICATION: 'consumer-communication',
+  OPERATIONAL_SUPPORT: 'operational-support'
+});
+
+export const GOVERNED_CONTRACT_REVIEW_AREAS = Object.freeze({
+  CONTRACT_REVIEW: 'contract-review',
+  CONSISTENCY_VALIDATION: 'consistency-validation',
+  SECURITY_ASSESSMENT: 'security-assessment',
+  COMPATIBILITY_EVALUATION: 'compatibility-evaluation',
+  DOCUMENTATION_QUALITY: 'documentation-quality'
+});
+
+export const INTEGRATION_STANDARDIZATION_AREAS = Object.freeze({
+  NAMING: 'naming',
+  VERSIONING: 'versioning',
+  DOCUMENTATION: 'documentation',
+  ERROR_HANDLING: 'error-handling',
+  SECURITY_EXPECTATIONS: 'security-expectations',
+  OPERATIONAL_BEHAVIOR: 'operational-behavior'
+});
+
+export const GOVERNED_INTEGRATION_LIFECYCLE_STAGES = Object.freeze({
+  PROPOSED: 'Proposed',
+  DESIGNED: 'Designed',
+  APPROVED: 'Approved',
+  PUBLISHED: 'Published',
+  OPERATIONAL: 'Operational',
+  DEPRECATED: 'Deprecated',
+  RETIRED: 'Retired'
+});
+
+export const INTEGRATION_CONTRACT_LIFECYCLE_STAGES = Object.freeze({
+  DRAFT: 'Draft',
+  REVIEW: 'Review',
+  APPROVE: 'Approve',
+  PUBLISH: 'Publish',
+  VERSION: 'Version',
+  DEPRECATE: 'Deprecate',
+  RETIRE: 'Retire'
+});
+
+export const INTEGRATION_VERSION_GOVERNANCE_CAPABILITIES = Object.freeze({
+  COMPATIBILITY_MANAGEMENT: 'compatibility-management',
+  CONTROLLED_CHANGE: 'controlled-change',
+  CONSUMER_MIGRATION: 'consumer-migration',
+  DEPRECATION_PLANNING: 'deprecation-planning',
+  RETIREMENT_STRATEGY: 'retirement-strategy'
+});
+
+export const INTEGRATION_DOCUMENTATION_REQUIREMENTS = Object.freeze({
+  BUSINESS_PURPOSE: 'business-purpose',
+  OWNERSHIP: 'ownership',
+  SUPPORTED_CAPABILITIES: 'supported-capabilities',
+  SECURITY_EXPECTATIONS: 'security-expectations',
+  LIFECYCLE_STATUS: 'lifecycle-status',
+  VERSION_HISTORY: 'version-history'
+});
+
+export const INTEGRATION_GOVERNANCE_SECURITY_CONTROLS = Object.freeze({
+  IDENTITY: 'identity',
+  AUTHENTICATION: 'authentication',
+  AUTHORIZATION: 'authorization',
+  ENCRYPTION: 'encryption',
+  ZERO_TRUST: 'zero-trust',
+  AUDIT_LOGGING: 'audit-logging',
+  AI_GOVERNANCE: 'ai-governance'
+});
+
+export const INTEGRATION_OPERATIONAL_GOVERNANCE_ACTIVITIES = Object.freeze({
+  AVAILABILITY_MONITORING: 'availability-monitoring',
+  CAPACITY_REVIEW: 'capacity-review',
+  PERFORMANCE_ANALYSIS: 'performance-analysis',
+  INCIDENT_REVIEW: 'incident-review',
+  OPERATIONAL_REPORTING: 'operational-reporting',
+  SERVICE_HEALTH_ASSESSMENT: 'service-health-assessment'
+});
+
+export const INTEGRATION_AI_GOVERNANCE_ACTIVITIES = Object.freeze({
+  CAPABILITY_APPROVAL: 'capability-approval',
+  PROVIDER_GOVERNANCE: 'provider-governance',
+  PROMPT_GOVERNANCE: 'prompt-governance',
+  TOOL_GOVERNANCE: 'tool-governance',
+  AGENT_GOVERNANCE: 'agent-governance',
+  HUMAN_OVERSIGHT: 'human-oversight'
+});
+
+export const INTEGRATION_COMPLIANCE_ALIGNMENT_AREAS = Object.freeze({
+  SECURITY_POLICIES: 'security-policies',
+  DATA_GOVERNANCE: 'data-governance',
+  AUDIT_READINESS: 'audit-readiness',
+  OPERATIONAL_CONTROLS: 'operational-controls',
+  RISK_MANAGEMENT: 'risk-management'
+});
+
+export const INTEGRATION_QUALITY_ASSURANCE_CONSIDERATIONS = Object.freeze({
+  CONTRACT_CONSISTENCY: 'contract-consistency',
+  RELIABILITY: 'reliability',
+  SECURITY: 'security',
+  DOCUMENTATION_QUALITY: 'documentation-quality',
+  CONSUMER_EXPERIENCE: 'consumer-experience',
+  OPERATIONAL_READINESS: 'operational-readiness'
+});
+
+export const INTEGRATION_GOVERNANCE_METRICS = Object.freeze({
+  ACTIVE_INTEGRATIONS: 'active-integrations',
+  CONTRACT_COMPLIANCE: 'contract-compliance',
+  VERSION_ADOPTION: 'version-adoption',
+  DOCUMENTATION_COMPLETENESS: 'documentation-completeness',
+  CONSUMER_SATISFACTION: 'consumer-satisfaction',
+  OPERATIONAL_INCIDENTS: 'operational-incidents',
+  SECURITY_EXCEPTIONS: 'security-exceptions'
+});
+
+export const INTEGRATION_GOVERNANCE_LIFECYCLE_STAGES = Object.freeze({
+  DEFINE: 'Define',
+  IMPLEMENT: 'Implement',
+  MEASURE: 'Measure',
+  REVIEW: 'Review',
+  IMPROVE: 'Improve',
+  REPEAT: 'Repeat'
+});
+
+export const INTEGRATION_GOVERNANCE_RELATIONSHIP_FLOW_STAGES = Object.freeze({
+  INTEGRATION_PRINCIPLES: 'Integration Principles',
+  APIS: 'APIs',
+  MESSAGING: 'Messaging',
+  WORKFLOWS: 'Workflows',
+  EXTERNAL_INTEGRATION: 'External Integration',
+  AI_INTEGRATION: 'AI Integration',
+  GOVERNANCE: 'Governance'
+});
+
+export const FUTURE_INTEGRATION_GOVERNANCE_DIRECTIONS = Object.freeze({
+  POLICY_AS_CODE_INTEGRATION_GOVERNANCE: 'Policy-as-code integration governance',
+  AUTOMATED_CONTRACT_VALIDATION: 'Automated contract validation',
+  AI_ASSISTED_GOVERNANCE_REVIEWS: 'AI-assisted governance reviews',
+  CONTINUOUS_COMPATIBILITY_ANALYSIS: 'Continuous compatibility analysis',
+  SEMANTIC_CONTRACT_DISCOVERY: 'Semantic contract discovery',
+  PREDICTIVE_GOVERNANCE_ANALYTICS: 'Predictive governance analytics',
+  AUTONOMOUS_DOCUMENTATION_VALIDATION: 'Autonomous documentation validation',
+  DYNAMIC_LIFECYCLE_GOVERNANCE: 'Dynamic lifecycle governance'
 });
