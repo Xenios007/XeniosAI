@@ -1307,3 +1307,20 @@ Version: 0.71.0
 
 Status: Observability Architecture
 Version: 0.72.0
+
+---
+
+## [0.73.0] - ARCH-009 Integration Overview
+
+### Added
+- Integration treatment, objective, enterprise model, principle, contract, loose-coupling, security, domain, communication model, participant, boundary, connectivity, lifecycle, quality attribute, governance foundation, relationship flow, future direction, and error-code constants.
+- Immutable contracts for integration domain profiles, integration contract boundaries, and validation results.
+- Integration overview descriptor for documented metadata, integration domain validation, contract boundary validation, and overview assertion.
+- Dependency-injection registration through `addIntegrationArchitecture`.
+- Unit tests for integration treatment, objectives, enterprise model, principles, domains, communication models, participants, contract boundaries, lifecycle, governance, future directions, invalid metadata, and DI access.
+
+### Established
+- Integration overview governance without implementing protocols, middleware products, runtime adapters, interface definitions, message brokers, API gateways, or vendor-specific integration platforms.
+
+Status: Integration Architecture
+Version: 0.73.0

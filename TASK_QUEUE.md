@@ -78,9 +78,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-008-08 Platform & Supply Chain Security`
 - Completed: `ARCH-008-09 Compliance & Governance`
 - Completed: `ARCH-008-10 Future Security Evolution`
-- Completed: `ARCH-009-01 Observability Overview`
-- Completed: `ARCH-009-02 Observability Principles`
-- Next: `ARCH-009-03 Business Observability`
+- Completed: `ARCH-009-01 Integration Overview`
+- Next: `ARCH-009-02 Integration Principles`
 
 ## Notes
 
