@@ -1341,3 +1341,20 @@ Version: 0.73.0
 
 Status: Integration Architecture
 Version: 0.74.0
+
+---
+
+## [0.75.0] - ARCH-009 API Architecture
+
+### Added
+- API architecture objective, architectural model, design principle, category, category characteristic, ownership, contract, lifecycle, versioning, discoverability, security, reliability, quality attribute, governance, relationship flow, future direction, and error-code constants.
+- Immutable contract for API contract profiles.
+- API architecture descriptor for documented metadata, API contract validation, and architecture assertion.
+- Dependency-injection registration through `addIntegrationArchitecture`.
+- Unit tests for API objectives, categories, lifecycle, contracts, reliability, security, governance, future directions, invalid metadata, and DI access.
+
+### Established
+- API architecture governance without implementing API protocols, serialization formats, programming frameworks, gateway products, vendor technologies, runtime endpoints, or transport behavior.
+
+Status: Integration Architecture
+Version: 0.75.0

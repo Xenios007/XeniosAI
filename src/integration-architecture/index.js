@@ -1,6 +1,22 @@
 export {
+  API_ARCHITECTURAL_MODEL_STAGES,
+  API_ARCHITECTURE_OBJECTIVES,
+  API_CATEGORIES,
+  API_CATEGORY_CHARACTERISTICS,
+  API_CONTRACT_ELEMENTS,
+  API_DESIGN_PRINCIPLES,
+  API_DISCOVERABILITY_ELEMENTS,
+  API_GOVERNANCE_ACTIVITIES,
+  API_LIFECYCLE_STAGES,
+  API_OWNERSHIP_RESPONSIBILITIES,
+  API_QUALITY_ATTRIBUTES,
+  API_RELATIONSHIP_FLOW_STAGES,
+  API_RELIABILITY_CONSIDERATIONS,
+  API_SECURITY_CONTROLS,
+  API_VERSIONING_REQUIREMENTS,
   ENTERPRISE_CONNECTIVITY_TARGETS,
   ENTERPRISE_INTEGRATION_MODEL_STAGES,
+  FUTURE_API_ARCHITECTURE_DIRECTIONS,
   FUTURE_INTEGRATION_OVERVIEW_DIRECTIONS,
   FUTURE_INTEGRATION_PRINCIPLE_DIRECTIONS,
   ASYNCHRONOUS_COMMUNICATION_BENEFITS,
@@ -39,11 +55,13 @@ export {
   VERSION_COMPATIBILITY_REQUIREMENTS,
   INTEGRATION_OWNERSHIP_RESPONSIBILITIES
 } from './constants.js';
+export { ApiContractProfile } from './contracts/api-contract-profile.js';
 export { IntegrationArchitectureValidationResult } from './contracts/integration-architecture-validation-result.js';
 export { IntegrationContractBoundary } from './contracts/integration-contract-boundary.js';
 export { IntegrationDecisionModel } from './contracts/integration-decision-model.js';
 export { IntegrationDomainProfile } from './contracts/integration-domain-profile.js';
 export { IntegrationPrincipleProfile } from './contracts/integration-principle-profile.js';
+export { ApiArchitectureDescriptor } from './api/api-architecture-descriptor.js';
 export { IntegrationOverviewDescriptor } from './overview/integration-overview-descriptor.js';
 export { IntegrationPrinciplesDescriptor } from './principles/integration-principles-descriptor.js';
 export { addIntegrationArchitecture } from './service-registration.js';

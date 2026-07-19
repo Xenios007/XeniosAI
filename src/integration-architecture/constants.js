@@ -4,7 +4,8 @@ export const INTEGRATION_ARCHITECTURE_ERROR_CODES = Object.freeze({
   INTEGRATION_CONTRACT_BOUNDARY_INVALID: 'INTEGRATION_ARCHITECTURE_CONTRACT_BOUNDARY_INVALID',
   INTEGRATION_PRINCIPLES_INVALID: 'INTEGRATION_ARCHITECTURE_PRINCIPLES_INVALID',
   INTEGRATION_PRINCIPLE_INVALID: 'INTEGRATION_ARCHITECTURE_PRINCIPLE_INVALID',
-  INTEGRATION_DECISION_MODEL_INVALID: 'INTEGRATION_ARCHITECTURE_DECISION_MODEL_INVALID'
+  INTEGRATION_DECISION_MODEL_INVALID: 'INTEGRATION_ARCHITECTURE_DECISION_MODEL_INVALID',
+  API_ARCHITECTURE_INVALID: 'INTEGRATION_ARCHITECTURE_API_ARCHITECTURE_INVALID'
 });
 
 export const INTEGRATION_TREATMENT_PRINCIPLES = Object.freeze({
@@ -382,4 +383,167 @@ export const FUTURE_INTEGRATION_PRINCIPLE_DIRECTIONS = Object.freeze({
   GOVERNANCE: 'Governance',
   RELIABILITY: 'Reliability',
   LONG_TERM_EVOLUTION: 'Long-term evolution'
+});
+
+export const API_ARCHITECTURE_OBJECTIVES = Object.freeze({
+  STABLE_SERVICE_CONTRACTS: 'stable-service-contracts',
+  BUSINESS_CENTRIC_INTERFACES: 'business-centric-interfaces',
+  SECURE_COMMUNICATION: 'secure-communication',
+  INTEROPERABILITY: 'interoperability',
+  INDEPENDENT_EVOLUTION: 'independent-evolution',
+  CONSISTENT_GOVERNANCE: 'consistent-governance',
+  HIGH_DISCOVERABILITY: 'high-discoverability',
+  ENTERPRISE_SCALABILITY: 'enterprise-scalability'
+});
+
+export const API_ARCHITECTURAL_MODEL_STAGES = Object.freeze({
+  BUSINESS_CAPABILITY: 'Business Capability',
+  SERVICE_INTERFACE: 'Service Interface',
+  API_CONTRACT: 'API Contract',
+  CONSUMER: 'Consumer',
+  BUSINESS_OUTCOME: 'Business Outcome'
+});
+
+export const API_DESIGN_PRINCIPLES = Object.freeze({
+  BUSINESS_ORIENTED: 'business-oriented',
+  CONTRACT_STABILITY: 'contract-stability',
+  EXPLICIT_CONTRACTS: 'explicit-contracts',
+  SERVICE_INDEPENDENCE: 'service-independence',
+  CONSISTENCY: 'consistency'
+});
+
+export const API_CATEGORIES = Object.freeze({
+  INTERNAL_APIS: 'internal-apis',
+  EXTERNAL_APIS: 'external-apis',
+  PARTNER_APIS: 'partner-apis',
+  ADMINISTRATIVE_APIS: 'administrative-apis',
+  AI_APIS: 'ai-apis'
+});
+
+export const API_CATEGORY_CHARACTERISTICS = Object.freeze({
+  HIGH_TRUST: 'high-trust',
+  SERVICE_TO_SERVICE_COMMUNICATION: 'service-to-service-communication',
+  BUSINESS_CAPABILITY_SHARING: 'business-capability-sharing',
+  INTERNAL_GOVERNANCE: 'internal-governance',
+  CONTROLLED_EXPOSURE: 'controlled-exposure',
+  SECURITY_BOUNDARIES: 'security-boundaries',
+  VERSION_STABILITY: 'version-stability',
+  CONSUMER_DOCUMENTATION: 'consumer-documentation',
+  CONTRACTUAL_GOVERNANCE: 'contractual-governance',
+  COMPATIBILITY_GUARANTEES: 'compatibility-guarantees',
+  ACCESS_CONTROL: 'access-control',
+  OPERATIONAL_MONITORING: 'operational-monitoring',
+  ELEVATED_GOVERNANCE: 'elevated-governance',
+  ELEVATED_SECURITY_CONTROLS: 'elevated-security-controls',
+  AGENT_INTERACTION: 'agent-interaction',
+  PROMPT_EXECUTION: 'prompt-execution',
+  MODEL_INFERENCE: 'model-inference',
+  KNOWLEDGE_RETRIEVAL: 'knowledge-retrieval',
+  TOOL_INVOCATION: 'tool-invocation'
+});
+
+export const API_OWNERSHIP_RESPONSIBILITIES = Object.freeze({
+  CONTRACT_QUALITY: 'contract-quality',
+  DOCUMENTATION: 'documentation',
+  SECURITY: 'security',
+  AVAILABILITY: 'availability',
+  LIFECYCLE: 'lifecycle',
+  CONSUMER_SUPPORT: 'consumer-support',
+  VERSION_MANAGEMENT: 'version-management'
+});
+
+export const API_CONTRACT_ELEMENTS = Object.freeze({
+  BUSINESS_CAPABILITY: 'business-capability',
+  OPERATIONS: 'operations',
+  INPUT_DEFINITIONS: 'input-definitions',
+  OUTPUT_DEFINITIONS: 'output-definitions',
+  ERROR_RESPONSES: 'error-responses',
+  SECURITY_REQUIREMENTS: 'security-requirements',
+  COMPATIBILITY_EXPECTATIONS: 'compatibility-expectations',
+  SERVICE_RESPONSIBILITIES: 'service-responsibilities'
+});
+
+export const API_LIFECYCLE_STAGES = Object.freeze({
+  DESIGN: 'Design',
+  REVIEW: 'Review',
+  PUBLISH: 'Publish',
+  IMPLEMENT: 'Implement',
+  OPERATE: 'Operate',
+  VERSION: 'Version',
+  RETIRE: 'Retire'
+});
+
+export const API_VERSIONING_REQUIREMENTS = Object.freeze({
+  BACKWARD_COMPATIBILITY: 'backward-compatibility',
+  CONTROLLED_EVOLUTION: 'controlled-evolution',
+  CONSUMER_MIGRATION: 'consumer-migration',
+  PREDICTABLE_DEPRECATION: 'predictable-deprecation',
+  LONG_TERM_STABILITY: 'long-term-stability'
+});
+
+export const API_DISCOVERABILITY_ELEMENTS = Object.freeze({
+  SERVICE_CATALOG: 'service-catalog',
+  CAPABILITY_DESCRIPTIONS: 'capability-descriptions',
+  OWNERSHIP_INFORMATION: 'ownership-information',
+  VERSION_INFORMATION: 'version-information',
+  SECURITY_REQUIREMENTS: 'security-requirements',
+  LIFECYCLE_STATUS: 'lifecycle-status'
+});
+
+export const API_SECURITY_CONTROLS = Object.freeze({
+  IDENTITY: 'identity',
+  AUTHENTICATION: 'authentication',
+  AUTHORIZATION: 'authorization',
+  ENCRYPTION: 'encryption',
+  AUDIT_LOGGING: 'audit-logging',
+  ZERO_TRUST: 'zero-trust',
+  GOVERNANCE: 'governance'
+});
+
+export const API_RELIABILITY_CONSIDERATIONS = Object.freeze({
+  TIMEOUT_MANAGEMENT: 'timeout-management',
+  RETRY_BEHAVIOR: 'retry-behavior',
+  IDEMPOTENCY: 'idempotency',
+  FAILURE_ISOLATION: 'failure-isolation',
+  GRACEFUL_DEGRADATION: 'graceful-degradation',
+  CAPACITY_PLANNING: 'capacity-planning'
+});
+
+export const API_QUALITY_ATTRIBUTES = Object.freeze({
+  AVAILABILITY: 'availability',
+  SCALABILITY: 'scalability',
+  RELIABILITY: 'reliability',
+  MAINTAINABILITY: 'maintainability',
+  EVOLVABILITY: 'evolvability',
+  SECURITY: 'security',
+  PERFORMANCE: 'performance',
+  OBSERVABILITY: 'observability'
+});
+
+export const API_GOVERNANCE_ACTIVITIES = Object.freeze({
+  CONTRACT_REVIEW: 'contract-review',
+  SECURITY_REVIEW: 'security-review',
+  DOCUMENTATION_REVIEW: 'documentation-review',
+  VERSION_GOVERNANCE: 'version-governance',
+  LIFECYCLE_MANAGEMENT: 'lifecycle-management',
+  CONSUMER_COMMUNICATION: 'consumer-communication'
+});
+
+export const API_RELATIONSHIP_FLOW_STAGES = Object.freeze({
+  BUSINESS_CAPABILITY: 'Business Capability',
+  INTEGRATION_PRINCIPLES: 'Integration Principles',
+  API_CONTRACT: 'API Contract',
+  CONSUMER: 'Consumer',
+  BUSINESS_COLLABORATION: 'Business Collaboration'
+});
+
+export const FUTURE_API_ARCHITECTURE_DIRECTIONS = Object.freeze({
+  CONTRACT_FIRST_DEVELOPMENT: 'Contract-first development',
+  POLICY_DRIVEN_API_GOVERNANCE: 'Policy-driven API governance',
+  AI_ASSISTED_API_DOCUMENTATION: 'AI-assisted API documentation',
+  AUTOMATED_COMPATIBILITY_VALIDATION: 'Automated compatibility validation',
+  SEMANTIC_SERVICE_DISCOVERY: 'Semantic service discovery',
+  ADAPTIVE_API_ROUTING: 'Adaptive API routing',
+  MACHINE_READABLE_GOVERNANCE: 'Machine-readable governance',
+  AUTONOMOUS_CONTRACT_VERIFICATION: 'Autonomous contract verification'
 });
