@@ -23,6 +23,7 @@ export {
   FUTURE_INTEGRATION_OVERVIEW_DIRECTIONS,
   FUTURE_INTEGRATION_PRINCIPLE_DIRECTIONS,
   FUTURE_MESSAGING_EVENT_DIRECTIONS,
+  FUTURE_WORKFLOW_PROCESS_DIRECTIONS,
   ASYNCHRONOUS_COMMUNICATION_BENEFITS,
   ENTERPRISE_INTEGRATION_PRINCIPLES,
   EVOLUTION_WITHOUT_DISRUPTION_REQUIREMENTS,
@@ -66,10 +67,26 @@ export {
   PRINCIPLE_COMMUNICATION_STYLES,
   PRINCIPLE_LOOSE_COUPLING_AVOIDED_ASSUMPTIONS,
   PRINCIPLE_SECURITY_CONTROLS,
+  PROCESS_STATE_STAGES,
   STANDARDIZATION_BENEFITS,
   TECHNOLOGY_INDEPENDENCE_TARGETS,
   VERSION_COMPATIBILITY_REQUIREMENTS,
-  INTEGRATION_OWNERSHIP_RESPONSIBILITIES
+  INTEGRATION_OWNERSHIP_RESPONSIBILITIES,
+  WORKFLOW_ACTIVITY_EXAMPLES,
+  WORKFLOW_AI_RESPONSIBILITIES,
+  WORKFLOW_DECISION_POINTS,
+  WORKFLOW_FAILURE_HANDLING_CAPABILITIES,
+  WORKFLOW_GOVERNANCE_ACTIVITIES,
+  WORKFLOW_HUMAN_PARTICIPATION_TYPES,
+  WORKFLOW_LIFECYCLE_STAGES,
+  WORKFLOW_MODEL_STAGES,
+  WORKFLOW_OBSERVABILITY_TELEMETRY,
+  WORKFLOW_ORCHESTRATION_MODEL_STAGES,
+  WORKFLOW_PARTICIPANTS,
+  WORKFLOW_PRINCIPLES,
+  WORKFLOW_PROCESS_OBJECTIVES,
+  WORKFLOW_RELATIONSHIP_FLOW_STAGES,
+  WORKFLOW_SECURITY_CONTROLS
 } from './constants.js';
 export { ApiContractProfile } from './contracts/api-contract-profile.js';
 export { IntegrationArchitectureValidationResult } from './contracts/integration-architecture-validation-result.js';
@@ -79,8 +96,10 @@ export { IntegrationDomainProfile } from './contracts/integration-domain-profile
 export { IntegrationPrincipleProfile } from './contracts/integration-principle-profile.js';
 export { MessagingEventProfile } from './contracts/messaging-event-profile.js';
 export { MessagingMessageProfile } from './contracts/messaging-message-profile.js';
+export { WorkflowProcessProfile } from './contracts/workflow-process-profile.js';
 export { ApiArchitectureDescriptor } from './api/api-architecture-descriptor.js';
 export { MessagingEventArchitectureDescriptor } from './messaging/messaging-event-architecture-descriptor.js';
 export { IntegrationOverviewDescriptor } from './overview/integration-overview-descriptor.js';
 export { IntegrationPrinciplesDescriptor } from './principles/integration-principles-descriptor.js';
+export { WorkflowProcessIntegrationDescriptor } from './workflow/workflow-process-integration-descriptor.js';
 export { addIntegrationArchitecture } from './service-registration.js';

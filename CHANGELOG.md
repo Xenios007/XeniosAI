@@ -1375,3 +1375,20 @@ Version: 0.75.0
 
 Status: Integration Architecture
 Version: 0.76.0
+
+---
+
+## [0.77.0] - ARCH-009 Workflow & Process Integration
+
+### Added
+- Workflow objective, model, principle, participant, orchestration model, activity, decision point, human participation, AI responsibility, lifecycle, process state, failure handling, observability, security, governance, relationship flow, future direction, and error-code constants.
+- Immutable contract for workflow process profiles.
+- Workflow & Process Integration descriptor for documented metadata, workflow validation, and architecture assertion.
+- Dependency-injection registration through `addIntegrationArchitecture`.
+- Unit tests for workflow objectives, models, participants, lifecycle, process states, failure handling, observability, security, governance, future directions, invalid metadata, and DI access.
+
+### Established
+- Workflow and process integration governance without implementing workflow engines, orchestration frameworks, BPM platforms, state machines, vendor technologies, runtime workflow execution, or process automation.
+
+Status: Integration Architecture
+Version: 0.77.0

@@ -6,7 +6,8 @@ export const INTEGRATION_ARCHITECTURE_ERROR_CODES = Object.freeze({
   INTEGRATION_PRINCIPLE_INVALID: 'INTEGRATION_ARCHITECTURE_PRINCIPLE_INVALID',
   INTEGRATION_DECISION_MODEL_INVALID: 'INTEGRATION_ARCHITECTURE_DECISION_MODEL_INVALID',
   API_ARCHITECTURE_INVALID: 'INTEGRATION_ARCHITECTURE_API_ARCHITECTURE_INVALID',
-  MESSAGING_EVENT_ARCHITECTURE_INVALID: 'INTEGRATION_ARCHITECTURE_MESSAGING_EVENT_ARCHITECTURE_INVALID'
+  MESSAGING_EVENT_ARCHITECTURE_INVALID: 'INTEGRATION_ARCHITECTURE_MESSAGING_EVENT_ARCHITECTURE_INVALID',
+  WORKFLOW_PROCESS_INTEGRATION_INVALID: 'INTEGRATION_ARCHITECTURE_WORKFLOW_PROCESS_INTEGRATION_INVALID'
 });
 
 export const INTEGRATION_TREATMENT_PRINCIPLES = Object.freeze({
@@ -689,4 +690,158 @@ export const FUTURE_MESSAGING_EVENT_DIRECTIONS = Object.freeze({
   POLICY_DRIVEN_EVENT_GOVERNANCE: 'Policy-driven event governance',
   ADAPTIVE_DELIVERY_OPTIMIZATION: 'Adaptive delivery optimization',
   SELF_HEALING_MESSAGING_INFRASTRUCTURE: 'Self-healing messaging infrastructure'
+});
+
+export const WORKFLOW_PROCESS_OBJECTIVES = Object.freeze({
+  BUSINESS_PROCESS_COORDINATION: 'business-process-coordination',
+  DISTRIBUTED_ORCHESTRATION: 'distributed-orchestration',
+  LONG_RUNNING_PROCESS_SUPPORT: 'long-running-process-support',
+  SERVICE_AUTONOMY: 'service-autonomy',
+  AI_ASSISTED_EXECUTION: 'ai-assisted-execution',
+  OPERATIONAL_RESILIENCE: 'operational-resilience',
+  ENTERPRISE_SCALABILITY: 'enterprise-scalability',
+  TECHNOLOGY_INDEPENDENCE: 'technology-independence'
+});
+
+export const WORKFLOW_MODEL_STAGES = Object.freeze({
+  BUSINESS_PROCESS: 'Business Process',
+  WORKFLOW: 'Workflow',
+  BUSINESS_ACTIVITIES: 'Business Activities',
+  BUSINESS_OUTCOME: 'Business Outcome'
+});
+
+export const WORKFLOW_PRINCIPLES = Object.freeze({
+  PROCESS_CENTRIC_DESIGN: 'process-centric-design',
+  ORCHESTRATION_WITHOUT_OWNERSHIP: 'orchestration-without-ownership',
+  SERVICE_AUTONOMY: 'service-autonomy',
+  EXPLICIT_BUSINESS_STATES: 'explicit-business-states',
+  LONG_RUNNING_PROCESSES: 'long-running-processes'
+});
+
+export const WORKFLOW_PARTICIPANTS = Object.freeze({
+  BUSINESS_SERVICES: 'business-services',
+  AI_AGENTS: 'ai-agents',
+  HUMAN_USERS: 'human-users',
+  ADMINISTRATIVE_SYSTEMS: 'administrative-systems',
+  EXTERNAL_ENTERPRISE_SYSTEMS: 'external-enterprise-systems',
+  PARTNER_PLATFORMS: 'partner-platforms',
+  SCHEDULED_PROCESSES: 'scheduled-processes'
+});
+
+export const WORKFLOW_ORCHESTRATION_MODEL_STAGES = Object.freeze({
+  WORKFLOW: 'Workflow',
+  ACTIVITY: 'Activity',
+  SERVICE: 'Service',
+  RESULT: 'Result',
+  NEXT_ACTIVITY: 'Next Activity'
+});
+
+export const WORKFLOW_ACTIVITY_EXAMPLES = Object.freeze({
+  VALIDATE_CUSTOMER: 'validate-customer',
+  APPROVE_REQUEST: 'approve-request',
+  GENERATE_DOCUMENT: 'generate-document',
+  EXECUTE_AI_ANALYSIS: 'execute-ai-analysis',
+  NOTIFY_STAKEHOLDERS: 'notify-stakeholders',
+  ARCHIVE_RECORDS: 'archive-records'
+});
+
+export const WORKFLOW_DECISION_POINTS = Object.freeze({
+  APPROVAL_REQUIRED: 'approval-required',
+  ELIGIBILITY_VERIFIED: 'eligibility-verified',
+  RISK_ACCEPTED: 'risk-accepted',
+  AI_CONFIDENCE_SUFFICIENT: 'ai-confidence-sufficient',
+  EXTERNAL_CONFIRMATION_RECEIVED: 'external-confirmation-received'
+});
+
+export const WORKFLOW_HUMAN_PARTICIPATION_TYPES = Object.freeze({
+  APPROVALS: 'approvals',
+  REVIEWS: 'reviews',
+  ESCALATIONS: 'escalations',
+  MANUAL_VERIFICATION: 'manual-verification',
+  EXCEPTION_HANDLING: 'exception-handling'
+});
+
+export const WORKFLOW_AI_RESPONSIBILITIES = Object.freeze({
+  CLASSIFICATION: 'classification',
+  RECOMMENDATION: 'recommendation',
+  SUMMARIZATION: 'summarization',
+  KNOWLEDGE_RETRIEVAL: 'knowledge-retrieval',
+  DECISION_SUPPORT: 'decision-support',
+  TASK_EXECUTION: 'task-execution'
+});
+
+export const WORKFLOW_LIFECYCLE_STAGES = Object.freeze({
+  DESIGNED: 'Designed',
+  PUBLISHED: 'Published',
+  EXECUTED: 'Executed',
+  MONITORED: 'Monitored',
+  IMPROVED: 'Improved',
+  RETIRED: 'Retired'
+});
+
+export const PROCESS_STATE_STAGES = Object.freeze({
+  CREATED: 'Created',
+  VALIDATED: 'Validated',
+  EXECUTING: 'Executing',
+  WAITING: 'Waiting',
+  COMPLETED: 'Completed',
+  FAILED: 'Failed'
+});
+
+export const WORKFLOW_FAILURE_HANDLING_CAPABILITIES = Object.freeze({
+  RETRY_POLICIES: 'retry-policies',
+  COMPENSATION: 'compensation',
+  ESCALATION: 'escalation',
+  MANUAL_INTERVENTION: 'manual-intervention',
+  ROLLBACK_WHERE_APPROPRIATE: 'rollback-where-appropriate',
+  FAILURE_REPORTING: 'failure-reporting'
+});
+
+export const WORKFLOW_OBSERVABILITY_TELEMETRY = Object.freeze({
+  PROCESS_STATUS: 'process-status',
+  ACTIVITY_COMPLETION: 'activity-completion',
+  WAITING_STATES: 'waiting-states',
+  FAILURES: 'failures',
+  DURATION: 'duration',
+  AI_PARTICIPATION: 'ai-participation',
+  HUMAN_APPROVALS: 'human-approvals'
+});
+
+export const WORKFLOW_SECURITY_CONTROLS = Object.freeze({
+  IDENTITY: 'identity',
+  AUTHENTICATION: 'authentication',
+  AUTHORIZATION: 'authorization',
+  ENCRYPTION: 'encryption',
+  AUDIT_LOGGING: 'audit-logging',
+  ZERO_TRUST: 'zero-trust',
+  GOVERNANCE: 'governance'
+});
+
+export const WORKFLOW_GOVERNANCE_ACTIVITIES = Object.freeze({
+  PROCESS_OWNERSHIP: 'process-ownership',
+  VERSION_MANAGEMENT: 'version-management',
+  LIFECYCLE_GOVERNANCE: 'lifecycle-governance',
+  DOCUMENTATION: 'documentation',
+  APPROVAL_POLICIES: 'approval-policies',
+  OPERATIONAL_STANDARDS: 'operational-standards',
+  CONTINUOUS_REVIEW: 'continuous-review'
+});
+
+export const WORKFLOW_RELATIONSHIP_FLOW_STAGES = Object.freeze({
+  BUSINESS_CAPABILITY: 'Business Capability',
+  API: 'API',
+  MESSAGING: 'Messaging',
+  WORKFLOW: 'Workflow',
+  BUSINESS_PROCESS: 'Business Process'
+});
+
+export const FUTURE_WORKFLOW_PROCESS_DIRECTIONS = Object.freeze({
+  AI_ASSISTED_ORCHESTRATION: 'AI-assisted orchestration',
+  ADAPTIVE_PROCESS_ROUTING: 'Adaptive process routing',
+  POLICY_DRIVEN_WORKFLOW_EXECUTION: 'Policy-driven workflow execution',
+  AUTONOMOUS_WORKLOAD_BALANCING: 'Autonomous workload balancing',
+  DYNAMIC_PROCESS_OPTIMIZATION: 'Dynamic process optimization',
+  PREDICTIVE_EXCEPTION_HANDLING: 'Predictive exception handling',
+  SEMANTIC_WORKFLOW_DISCOVERY: 'Semantic workflow discovery',
+  SELF_OPTIMIZING_ORCHESTRATION: 'Self-optimizing orchestration'
 });
