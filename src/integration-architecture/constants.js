@@ -7,7 +7,8 @@ export const INTEGRATION_ARCHITECTURE_ERROR_CODES = Object.freeze({
   INTEGRATION_DECISION_MODEL_INVALID: 'INTEGRATION_ARCHITECTURE_DECISION_MODEL_INVALID',
   API_ARCHITECTURE_INVALID: 'INTEGRATION_ARCHITECTURE_API_ARCHITECTURE_INVALID',
   MESSAGING_EVENT_ARCHITECTURE_INVALID: 'INTEGRATION_ARCHITECTURE_MESSAGING_EVENT_ARCHITECTURE_INVALID',
-  WORKFLOW_PROCESS_INTEGRATION_INVALID: 'INTEGRATION_ARCHITECTURE_WORKFLOW_PROCESS_INTEGRATION_INVALID'
+  WORKFLOW_PROCESS_INTEGRATION_INVALID: 'INTEGRATION_ARCHITECTURE_WORKFLOW_PROCESS_INTEGRATION_INVALID',
+  EXTERNAL_SYSTEM_INTEGRATION_INVALID: 'INTEGRATION_ARCHITECTURE_EXTERNAL_SYSTEM_INTEGRATION_INVALID'
 });
 
 export const INTEGRATION_TREATMENT_PRINCIPLES = Object.freeze({
@@ -844,4 +845,149 @@ export const FUTURE_WORKFLOW_PROCESS_DIRECTIONS = Object.freeze({
   PREDICTIVE_EXCEPTION_HANDLING: 'Predictive exception handling',
   SEMANTIC_WORKFLOW_DISCOVERY: 'Semantic workflow discovery',
   SELF_OPTIMIZING_ORCHESTRATION: 'Self-optimizing orchestration'
+});
+
+export const EXTERNAL_SYSTEM_INTEGRATION_OBJECTIVES = Object.freeze({
+  SECURE_INTEROPERABILITY: 'secure-interoperability',
+  ENTERPRISE_CONNECTIVITY: 'enterprise-connectivity',
+  PARTNER_COLLABORATION: 'partner-collaboration',
+  BUSINESS_EXTENSIBILITY: 'business-extensibility',
+  OPERATIONAL_RESILIENCE: 'operational-resilience',
+  VENDOR_INDEPENDENCE: 'vendor-independence',
+  CONTROLLED_EXTERNAL_EXPOSURE: 'controlled-external-exposure',
+  LONG_TERM_MAINTAINABILITY: 'long-term-maintainability'
+});
+
+export const EXTERNAL_INTEGRATION_MODEL_STAGES = Object.freeze({
+  EXTERNAL_SYSTEM: 'External System',
+  INTEGRATION_CONTRACT: 'Integration Contract',
+  INTEGRATION_BOUNDARY: 'Integration Boundary',
+  BUSINESS_SERVICE: 'Business Service',
+  BUSINESS_CAPABILITY: 'Business Capability'
+});
+
+export const EXTERNAL_INTEGRATION_PRINCIPLES = Object.freeze({
+  BOUNDARY_PROTECTION: 'boundary-protection',
+  CONTROLLED_EXPOSURE: 'controlled-exposure',
+  CONTRACT_STABILITY: 'contract-stability',
+  TECHNOLOGY_INDEPENDENCE: 'technology-independence'
+});
+
+export const EXTERNAL_INTEGRATION_CATEGORIES = Object.freeze({
+  ENTERPRISE_APPLICATIONS: 'enterprise-applications',
+  SAAS_PLATFORMS: 'saas-platforms',
+  CLOUD_SERVICES: 'cloud-services',
+  PARTNER_SYSTEMS: 'partner-systems',
+  GOVERNMENT_SERVICES: 'government-services',
+  AI_PROVIDERS: 'ai-providers'
+});
+
+export const EXTERNAL_INTEGRATION_CATEGORY_EXAMPLES = Object.freeze({
+  ERP_SYSTEMS: 'erp-systems',
+  CRM_PLATFORMS: 'crm-platforms',
+  HR_SYSTEMS: 'hr-systems',
+  FINANCIAL_APPLICATIONS: 'financial-applications',
+  IDENTITY_PLATFORMS: 'identity-platforms',
+  PRODUCTIVITY_PLATFORMS: 'productivity-platforms',
+  COMMUNICATION_SERVICES: 'communication-services',
+  DOCUMENT_MANAGEMENT: 'document-management',
+  COLLABORATION_PLATFORMS: 'collaboration-platforms',
+  BUSINESS_APPLICATIONS: 'business-applications',
+  STORAGE_SERVICES: 'storage-services',
+  IDENTITY_SERVICES: 'identity-services',
+  AI_PLATFORMS: 'ai-platforms',
+  NOTIFICATION_SERVICES: 'notification-services',
+  ANALYTICS_SERVICES: 'analytics-services',
+  SUPPLIERS: 'suppliers',
+  DISTRIBUTORS: 'distributors',
+  CUSTOMERS: 'customers',
+  SERVICE_PROVIDERS: 'service-providers',
+  STRATEGIC_PARTNERS: 'strategic-partners',
+  IDENTITY_VERIFICATION: 'identity-verification',
+  REGULATORY_REPORTING: 'regulatory-reporting',
+  TAX_SYSTEMS: 'tax-systems',
+  LICENSING_SERVICES: 'licensing-services',
+  COMPLIANCE_SERVICES: 'compliance-services',
+  FOUNDATION_MODELS: 'foundation-models',
+  EMBEDDING_SERVICES: 'embedding-services',
+  SPEECH_PROCESSING: 'speech-processing',
+  VISION_PROCESSING: 'vision-processing',
+  TRANSLATION: 'translation',
+  SPECIALIZED_AI_SERVICES: 'specialized-ai-services'
+});
+
+export const EXTERNAL_INTEGRATION_BOUNDARY_RESPONSIBILITIES = Object.freeze({
+  CONTRACT_ENFORCEMENT: 'contract-enforcement',
+  SECURITY_CONTROLS: 'security-controls',
+  TRAFFIC_GOVERNANCE: 'traffic-governance',
+  VALIDATION: 'validation',
+  MONITORING: 'monitoring',
+  OPERATIONAL_VISIBILITY: 'operational-visibility'
+});
+
+export const EXTERNAL_DATA_EXCHANGE_PRINCIPLES = Object.freeze({
+  PUBLISHED_CONTRACTS: 'published-contracts',
+  DATA_INTEGRITY: 'data-integrity',
+  OWNERSHIP_BOUNDARIES: 'ownership-boundaries',
+  TRACEABILITY: 'traceability',
+  SECURITY_GOVERNANCE: 'security-governance',
+  MINIMIZED_DISCLOSURE: 'minimized-disclosure'
+});
+
+export const EXTERNAL_INTEGRATION_SECURITY_CONTROLS = Object.freeze({
+  IDENTITY: 'identity',
+  AUTHENTICATION: 'authentication',
+  AUTHORIZATION: 'authorization',
+  ENCRYPTION: 'encryption',
+  ZERO_TRUST: 'zero-trust',
+  AUDIT_LOGGING: 'audit-logging',
+  GOVERNANCE: 'governance'
+});
+
+export const EXTERNAL_INTEGRATION_RELIABILITY_CONSIDERATIONS = Object.freeze({
+  TIMEOUT_MANAGEMENT: 'timeout-management',
+  RETRY_STRATEGIES: 'retry-strategies',
+  FAILURE_ISOLATION: 'failure-isolation',
+  GRACEFUL_DEGRADATION: 'graceful-degradation',
+  SERVICE_AVAILABILITY_MONITORING: 'service-availability-monitoring',
+  RECOVERY_PROCEDURES: 'recovery-procedures'
+});
+
+export const EXTERNAL_INTEGRATION_OBSERVABILITY_TELEMETRY = Object.freeze({
+  REQUESTS: 'requests',
+  RESPONSES: 'responses',
+  ERRORS: 'errors',
+  AVAILABILITY: 'availability',
+  LATENCY: 'latency',
+  THROUGHPUT: 'throughput',
+  INTEGRATION_FAILURES: 'integration-failures'
+});
+
+export const EXTERNAL_INTEGRATION_GOVERNANCE_ACTIVITIES = Object.freeze({
+  PARTNER_APPROVAL: 'partner-approval',
+  CONTRACT_MANAGEMENT: 'contract-management',
+  SECURITY_REVIEW: 'security-review',
+  LIFECYCLE_MANAGEMENT: 'lifecycle-management',
+  VERSION_GOVERNANCE: 'version-governance',
+  DOCUMENTATION: 'documentation',
+  OPERATIONAL_STANDARDS: 'operational-standards'
+});
+
+export const EXTERNAL_INTEGRATION_RELATIONSHIP_FLOW_STAGES = Object.freeze({
+  BUSINESS_CAPABILITY: 'Business Capability',
+  INTEGRATION_CONTRACT: 'Integration Contract',
+  INTEGRATION_BOUNDARY: 'Integration Boundary',
+  EXTERNAL_SYSTEM: 'External System',
+  BUSINESS_COLLABORATION: 'Business Collaboration'
+});
+
+export const FUTURE_EXTERNAL_SYSTEM_INTEGRATION_DIRECTIONS = Object.freeze({
+  AI_ASSISTED_PARTNER_ONBOARDING: 'AI-assisted partner onboarding',
+  SEMANTIC_CONTRACT_NEGOTIATION: 'Semantic contract negotiation',
+  ADAPTIVE_INTEGRATION_ROUTING: 'Adaptive integration routing',
+  AUTOMATED_COMPATIBILITY_VALIDATION: 'Automated compatibility validation',
+  POLICY_DRIVEN_EXTERNAL_CONNECTIVITY: 'Policy-driven external connectivity',
+  AUTONOMOUS_INTEGRATION_MONITORING: 'Autonomous integration monitoring',
+  DYNAMIC_TRUST_EVALUATION: 'Dynamic trust evaluation',
+  FEDERATED_ENTERPRISE_ECOSYSTEMS: 'Federated enterprise ecosystems'
 });

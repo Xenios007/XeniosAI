@@ -1392,3 +1392,20 @@ Version: 0.76.0
 
 Status: Integration Architecture
 Version: 0.77.0
+
+---
+
+## [0.78.0] - ARCH-009 External System Integration
+
+### Added
+- External integration objective, model, principle, category, category example, boundary responsibility, data exchange, security, reliability, observability, governance, relationship flow, future direction, and error-code constants.
+- Immutable contract for external system integration profiles.
+- External System Integration descriptor for documented metadata, external integration validation, and architecture assertion.
+- Dependency-injection registration through `addIntegrationArchitecture`.
+- Unit tests for external integration objectives, model, categories, boundaries, data exchange, security, reliability, observability, governance, future directions, invalid metadata, and DI access.
+
+### Established
+- External system integration governance without implementing vendors, cloud providers, middleware products, APIs, communication protocols, implementation technologies, runtime connectors, or transport behavior.
+
+Status: Integration Architecture
+Version: 0.78.0

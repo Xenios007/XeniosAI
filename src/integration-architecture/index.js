@@ -19,7 +19,20 @@ export {
   EVENT_CATEGORIES,
   EVENT_LIFECYCLE_STAGES,
   EVENT_OWNERSHIP_RESPONSIBILITIES,
+  EXTERNAL_DATA_EXCHANGE_PRINCIPLES,
+  EXTERNAL_INTEGRATION_BOUNDARY_RESPONSIBILITIES,
+  EXTERNAL_INTEGRATION_CATEGORIES,
+  EXTERNAL_INTEGRATION_CATEGORY_EXAMPLES,
+  EXTERNAL_INTEGRATION_GOVERNANCE_ACTIVITIES,
+  EXTERNAL_INTEGRATION_MODEL_STAGES,
+  EXTERNAL_INTEGRATION_OBSERVABILITY_TELEMETRY,
+  EXTERNAL_INTEGRATION_PRINCIPLES,
+  EXTERNAL_INTEGRATION_RELATIONSHIP_FLOW_STAGES,
+  EXTERNAL_INTEGRATION_RELIABILITY_CONSIDERATIONS,
+  EXTERNAL_INTEGRATION_SECURITY_CONTROLS,
+  EXTERNAL_SYSTEM_INTEGRATION_OBJECTIVES,
   FUTURE_API_ARCHITECTURE_DIRECTIONS,
+  FUTURE_EXTERNAL_SYSTEM_INTEGRATION_DIRECTIONS,
   FUTURE_INTEGRATION_OVERVIEW_DIRECTIONS,
   FUTURE_INTEGRATION_PRINCIPLE_DIRECTIONS,
   FUTURE_MESSAGING_EVENT_DIRECTIONS,
@@ -89,6 +102,7 @@ export {
   WORKFLOW_SECURITY_CONTROLS
 } from './constants.js';
 export { ApiContractProfile } from './contracts/api-contract-profile.js';
+export { ExternalSystemIntegrationProfile } from './contracts/external-system-integration-profile.js';
 export { IntegrationArchitectureValidationResult } from './contracts/integration-architecture-validation-result.js';
 export { IntegrationContractBoundary } from './contracts/integration-contract-boundary.js';
 export { IntegrationDecisionModel } from './contracts/integration-decision-model.js';
@@ -98,6 +112,7 @@ export { MessagingEventProfile } from './contracts/messaging-event-profile.js';
 export { MessagingMessageProfile } from './contracts/messaging-message-profile.js';
 export { WorkflowProcessProfile } from './contracts/workflow-process-profile.js';
 export { ApiArchitectureDescriptor } from './api/api-architecture-descriptor.js';
+export { ExternalSystemIntegrationDescriptor } from './external/external-system-integration-descriptor.js';
 export { MessagingEventArchitectureDescriptor } from './messaging/messaging-event-architecture-descriptor.js';
 export { IntegrationOverviewDescriptor } from './overview/integration-overview-descriptor.js';
 export { IntegrationPrinciplesDescriptor } from './principles/integration-principles-descriptor.js';
