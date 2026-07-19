@@ -1,6 +1,9 @@
 export const OBSERVABILITY_ARCHITECTURE_ERROR_CODES = Object.freeze({
   OBSERVABILITY_OVERVIEW_INVALID: 'OBSERVABILITY_OVERVIEW_INVALID',
+  OBSERVABILITY_PRINCIPLES_INVALID: 'OBSERVABILITY_PRINCIPLES_INVALID',
   OBSERVABILITY_DOMAIN_INVALID: 'OBSERVABILITY_DOMAIN_INVALID',
+  OBSERVABILITY_PRINCIPLE_INVALID: 'OBSERVABILITY_PRINCIPLE_INVALID',
+  OBSERVABILITY_RESPONSIBILITY_INVALID: 'OBSERVABILITY_RESPONSIBILITY_INVALID',
   TELEMETRY_SOURCE_INVALID: 'TELEMETRY_SOURCE_INVALID',
   OPERATIONAL_EVIDENCE_INVALID: 'OPERATIONAL_EVIDENCE_INVALID'
 });
@@ -24,6 +27,91 @@ export const OBSERVABILITY_PRINCIPLES = Object.freeze({
   EXPLAINABILITY: 'explainability',
   TECHNOLOGY_INDEPENDENCE: 'technology-independence',
   VENDOR_NEUTRALITY: 'vendor-neutrality'
+});
+
+export const OBSERVABILITY_PRINCIPLE_NAMES = Object.freeze({
+  BUSINESS_DRIVEN_OBSERVABILITY: 'business-driven-observability',
+  OBSERVABILITY_BY_DESIGN: 'observability-by-design',
+  END_TO_END_CORRELATION: 'end-to-end-correlation',
+  ARCHITECTURAL_CONSISTENCY: 'architectural-consistency',
+  EXPLAINABILITY: 'explainability',
+  MINIMAL_COUPLING: 'minimal-coupling',
+  CONTINUOUS_EVIDENCE: 'continuous-evidence',
+  GOVERNANCE_ALIGNMENT: 'governance-alignment',
+  PRIVACY_AND_SECURITY: 'privacy-and-security',
+  TECHNOLOGY_NEUTRALITY: 'technology-neutrality'
+});
+
+export const OBSERVABILITY_PRINCIPLE_OBJECTIVES = Object.freeze({
+  CONSISTENT_ARCHITECTURAL_GUIDANCE: 'consistent-architectural-guidance',
+  ENTERPRISE_WIDE_VISIBILITY: 'enterprise-wide-visibility',
+  EXPLAINABLE_OPERATIONS: 'explainable-operations',
+  RELIABLE_DIAGNOSTICS: 'reliable-diagnostics',
+  BUSINESS_ALIGNMENT: 'business-alignment',
+  GOVERNANCE_SUPPORT: 'governance-support',
+  SUSTAINABLE_OBSERVABILITY: 'sustainable-observability',
+  TECHNOLOGY_INDEPENDENCE: 'technology-independence'
+});
+
+export const OBSERVABILITY_CORRELATION_TARGETS = Object.freeze({
+  USERS: 'users',
+  BUSINESS_PROCESSES: 'business-processes',
+  SERVICES: 'services',
+  AI_AGENTS: 'ai-agents',
+  WORKFLOWS: 'workflows',
+  INTEGRATIONS: 'integrations',
+  INFRASTRUCTURE: 'infrastructure'
+});
+
+export const OBSERVABILITY_CONSISTENCY_AREAS = Object.freeze({
+  NAMING: 'naming',
+  BUSINESS_IDENTIFIERS: 'business-identifiers',
+  EVENT_CORRELATION: 'event-correlation',
+  LIFECYCLE_VISIBILITY: 'lifecycle-visibility',
+  OPERATIONAL_REPORTING: 'operational-reporting',
+  GOVERNANCE: 'governance'
+});
+
+export const OBSERVABILITY_EXPLAINABILITY_TARGETS = Object.freeze({
+  BUSINESS_DECISIONS: 'business-decisions',
+  WORKFLOW_TRANSITIONS: 'workflow-transitions',
+  AI_RECOMMENDATIONS: 'ai-recommendations',
+  INTEGRATION_BEHAVIOR: 'integration-behavior',
+  SECURITY_EVENTS: 'security-events'
+});
+
+export const OBSERVABILITY_GOVERNANCE_ACTIVITIES = Object.freeze({
+  COMPLIANCE: 'compliance',
+  RISK_MANAGEMENT: 'risk-management',
+  PERFORMANCE_EVALUATION: 'performance-evaluation',
+  SECURITY_OVERSIGHT: 'security-oversight',
+  OPERATIONAL_REVIEW: 'operational-review'
+});
+
+export const OBSERVABILITY_PRIVACY_SECURITY_REQUIREMENTS = Object.freeze({
+  PROTECT_SENSITIVE_INFORMATION: 'protect-sensitive-information',
+  RESPECT_DATA_OWNERSHIP: 'respect-data-ownership',
+  SUPPORT_LEAST_PRIVILEGE: 'support-least-privilege',
+  FOLLOW_ENTERPRISE_GOVERNANCE: 'follow-enterprise-governance'
+});
+
+export const OBSERVABILITY_RESPONSIBILITY_OWNERS = Object.freeze({
+  BUSINESS_CAPABILITY_OWNER: 'business-capability-owner',
+  SERVICE_OWNER: 'service-owner',
+  AI_ARCHITECTURE: 'ai-architecture',
+  SECURITY_ARCHITECTURE: 'security-architecture',
+  PLATFORM_OPERATIONS: 'platform-operations',
+  ENTERPRISE_ARCHITECTURE: 'enterprise-architecture'
+});
+
+export const OBSERVABILITY_PRINCIPLE_RELATIONSHIP_STAGES = Object.freeze({
+  BUSINESS_ALIGNMENT: 'business-alignment',
+  OBSERVABILITY_BY_DESIGN: 'observability-by-design',
+  CONTINUOUS_EVIDENCE: 'continuous-evidence',
+  CORRELATION: 'correlation',
+  EXPLAINABILITY: 'explainability',
+  GOVERNANCE: 'governance',
+  ENTERPRISE_IMPROVEMENT: 'enterprise-improvement'
 });
 
 export const OBSERVABILITY_DOMAIN_NAMES = Object.freeze({
@@ -94,4 +182,15 @@ export const FUTURE_OBSERVABILITY_CAPABILITIES = Object.freeze({
   ADAPTIVE_VISIBILITY_MODELS: 'adaptive-visibility-models',
   CROSS_ENTERPRISE_OBSERVABILITY: 'cross-enterprise-observability',
   SELF_IMPROVING_OPERATIONAL_INTELLIGENCE: 'self-improving-operational-intelligence'
+});
+
+export const FUTURE_OBSERVABILITY_PRINCIPLE_CAPABILITIES = Object.freeze({
+  AI_ASSISTED_EVIDENCE_CORRELATION: 'ai-assisted-evidence-correlation',
+  AUTONOMOUS_DIAGNOSTICS: 'autonomous-diagnostics',
+  SEMANTIC_OPERATIONAL_UNDERSTANDING: 'semantic-operational-understanding',
+  ADAPTIVE_OBSERVABILITY_MODELS: 'adaptive-observability-models',
+  CONTEXT_AWARE_TELEMETRY: 'context-aware-telemetry',
+  PREDICTIVE_GOVERNANCE: 'predictive-governance',
+  SELF_IMPROVING_OBSERVABILITY: 'self-improving-observability',
+  CROSS_ENTERPRISE_OPERATIONAL_INTELLIGENCE: 'cross-enterprise-operational-intelligence'
 });

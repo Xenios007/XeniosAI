@@ -1290,3 +1290,20 @@ Version: 0.70.0
 
 Status: Observability Architecture
 Version: 0.71.0
+
+---
+
+## [0.72.0] - ARCH-009 Observability Principles
+
+### Added
+- Observability principle objective, principle name, correlation target, consistency area, explainability target, governance activity, privacy and security requirement, responsibility owner, relationship flow, future capability, and error-code constants.
+- Immutable contracts for observability principles, observability responsibilities, and validation results.
+- Observability principles descriptor for documented metadata, principle validation, responsibility validation, correlation coverage validation, governance alignment validation, privacy/security validation, and future principle placeholders.
+- Dependency-injection registration through `addObservabilityArchitecture`.
+- Unit tests for principle objectives, canonical principle order, relationship flow, correlation targets, consistency areas, explainability targets, evidence metadata, responsibilities, privacy/security requirements, future placeholders, incomplete metadata validation, and DI access.
+
+### Established
+- Observability principles governance without implementing telemetry formats, monitoring products, logging systems, analytics tools, storage technologies, cloud services, dashboards, autonomous diagnostics, or vendor-specific observability platforms.
+
+Status: Observability Architecture
+Version: 0.72.0
