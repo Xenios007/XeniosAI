@@ -1324,3 +1324,20 @@ Version: 0.72.0
 
 Status: Integration Architecture
 Version: 0.73.0
+
+---
+
+## [0.74.0] - ARCH-009 Integration Principles
+
+### Added
+- Integration principle objective, enterprise principle, decision model, support factor, contract definition, loose-coupling, cohesion, technology independence, communication, asynchronous, reliability, observability, security, version compatibility, ownership, governance, standardization, evolution, quality attribute, relationship flow, future direction, and error-code constants.
+- Immutable contracts for integration principle profiles and integration decision models.
+- Integration principles descriptor for documented metadata, principle validation, decision model validation, and architecture assertion.
+- Dependency-injection registration through `addIntegrationArchitecture`.
+- Unit tests for principle objectives, all 15 principles, decision model, contracts, reliability, security, ownership, governance, quality attributes, future directions, invalid metadata, and DI access.
+
+### Established
+- Integration principles governance without implementing protocol specifications, implementation frameworks, middleware products, programming language guidance, runtime integrations, or vendor-specific platforms.
+
+Status: Integration Architecture
+Version: 0.74.0

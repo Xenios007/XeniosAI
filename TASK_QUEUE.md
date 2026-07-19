@@ -79,7 +79,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-008-09 Compliance & Governance`
 - Completed: `ARCH-008-10 Future Security Evolution`
 - Completed: `ARCH-009-01 Integration Overview`
-- Next: `ARCH-009-02 Integration Principles`
+- Completed: `ARCH-009-02 Integration Principles`
+- Next: `ARCH-009-03 API Architecture`
 
 ## Notes
 

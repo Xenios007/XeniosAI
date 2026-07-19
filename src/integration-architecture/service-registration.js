@@ -1,5 +1,6 @@
 import { ServiceCollection } from '../foundation/di/service-collection.js';
 import { IntegrationOverviewDescriptor } from './overview/integration-overview-descriptor.js';
+import { IntegrationPrinciplesDescriptor } from './principles/integration-principles-descriptor.js';
 
 export function addIntegrationArchitecture(services) {
   if (!(services instanceof ServiceCollection)) {
@@ -7,6 +8,7 @@ export function addIntegrationArchitecture(services) {
   }
 
   services.registerSingleton('IntegrationOverviewDescriptor', () => new IntegrationOverviewDescriptor());
+  services.registerSingleton('IntegrationPrinciplesDescriptor', () => new IntegrationPrinciplesDescriptor());
 
   return services;
 }
