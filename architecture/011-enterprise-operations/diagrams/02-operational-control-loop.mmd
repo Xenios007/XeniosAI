@@ -1,0 +1,24 @@
+flowchart TD
+    A["Observe business and operational evidence"] --> B["Contextualize by capability, tenant, property, and dependency"]
+    B --> C["Assess impact, urgency, risk, and uncertainty"]
+    C --> D["Prioritize and assign accountable ownership"]
+    D --> E{"Decision within delegated authority?"}
+
+    E -- "Yes" --> F["Select governed action"]
+    E -- "No" --> G["Escalate for required authority"]
+    G --> F
+
+    F --> H["Execute human or automated action"]
+    H --> I{"Outcome verified?"}
+
+    I -- "Yes" --> J["Communicate outcome and update operational state"]
+    I -- "No" --> K["Contain, reassess, or recover"]
+    K --> C
+
+    J --> L["Capture evidence and learning"]
+    L --> M["Improve services, controls, capacity, runbooks, and architecture"]
+    M --> A
+
+    N["Policy, security, tenant isolation, and stop conditions"] --> E
+    N --> F
+    N --> H

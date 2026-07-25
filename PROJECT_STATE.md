@@ -11,7 +11,7 @@ Update this file after every successful implementation session.
 - Architecture source of truth: `/architecture`
 - Implementation guide: `IMPLEMENTATION_GUIDE.md`
 - Task queue: `TASK_QUEUE.md`
-- Current implementation state: root `ARCH-011 Enterprise Operations` is implemented; ARCH-011 chapter files are not present locally yet.
+- Current implementation state: root `ARCH-011 Enterprise Operations` is implemented; ARCH-011 chapter files are available locally for implementation.
 - Latest successful implementation module: `ARCH-011 Enterprise Operations`
 - Latest successful commit: current implementation commit for `ARCH-011 Enterprise Operations`
 - Latest push status: pushed to `master`
@@ -37,7 +37,7 @@ Update this file after every successful implementation session.
 
 - Completed through: `ARCH-011 Enterprise Operations`
 - Next documented implementation module: `ARCH-011-01 Enterprise Operations Overview`
-- Reason: `ARCH-011` README lists chapter files, but those files are not present locally yet.
+- Reason: `architecture/011-enterprise-operations/01-enterprise-operations-overview.md` is now available locally.
 
 ## Latest Verification
 
@@ -51,7 +51,6 @@ Update this file after every successful implementation session.
 ## Current Technical Debt
 
 - Pre-existing changelog entries label Observability Overview/Principles as `ARCH-009`, while their source documents are `ARCH-010-01` and `ARCH-010-02`.
-- `ARCH-011` chapter files listed in the root README are missing locally.
 
 ## Session Rules
 
@@ -66,7 +65,5 @@ Every successful implementation session must update:
 Architecture documents must not be changed during implementation unless explicitly instructed.
 
 ## Recommended Next Action
-
-Add or pull the `ARCH-011` chapter files listed in `architecture/011-enterprise-operations/README.md`.
 
 Recommended next architecture module: `ARCH-011-01 Enterprise Operations Overview`.

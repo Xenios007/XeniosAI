@@ -1,0 +1,29 @@
+flowchart TD
+    A["Detect or report disruption"] --> B["Record, correlate, and establish scope"]
+    B --> C["Classify impact, urgency, risk, and priority"]
+    C --> D["Assign incident owner and command level"]
+    D --> E["Assess evidence and diagnose"]
+
+    E --> F{"Expanding or unsafe impact?"}
+    F -- "Yes" --> G["Contain and protect boundaries"]
+    F -- "No" --> H["Select restoration action"]
+    G --> H
+
+    H --> I["Restore, work around, fail over, roll back, or compensate"]
+    I --> J{"Business outcome verified?"}
+
+    J -- "No" --> K["Reassess, escalate, or activate continuity"]
+    K --> E
+
+    J -- "Yes" --> L["Observe stability and recover backlog"]
+    L --> M{"Stable and residual risk owned?"}
+
+    M -- "No" --> E
+    M -- "Yes" --> N["Communicate resolution and close response"]
+    N --> O["Post-incident review"]
+
+    O --> P{"Underlying cause or recurring risk?"}
+    P -- "Yes" --> Q["Create or update problem and known error"]
+    P -- "No" --> R["Record learning and improvement"]
+    Q --> S["Remediate through controlled change"]
+    S --> R

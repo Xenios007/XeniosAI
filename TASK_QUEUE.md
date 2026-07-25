@@ -106,4 +106,3 @@ It exists to complement the architecture and implementation guide without replac
 - Work proceeds strictly in architectural order.
 - Only one architecture module is implemented per session.
 - Missing ADR references should be reported but do not block implementation unless the architecture becomes impossible to realize.
-- `ARCH-011` chapter files are listed in `architecture/011-enterprise-operations/README.md` but are not present locally yet.
