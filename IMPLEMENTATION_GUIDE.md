@@ -319,6 +319,7 @@ Do not guess.
 When an architecture module is completed:
 
 * Mark it as implemented in `TASK_QUEUE.md`.
+* Update `PROJECT_STATE.md` with the latest successful implementation state.
 * Do not change architecture documents.
 * Recommend exactly one next architecture module.
 * Stop immediately after the report.
