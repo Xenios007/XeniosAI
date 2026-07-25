@@ -90,7 +90,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-009-10 Future Integration Evolution`
 - Completed: `ARCH-010-01 Observability Overview`
 - Completed: `ARCH-010-02 Observability Principles`
-- Next: `ARCH-010-03 Business Observability`
+- Completed: `ARCH-010-03 Business Observability`
+- Next: `ARCH-010-04 Service Observability`
 
 ## Notes
 

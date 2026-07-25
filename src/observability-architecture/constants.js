@@ -5,7 +5,8 @@ export const OBSERVABILITY_ARCHITECTURE_ERROR_CODES = Object.freeze({
   OBSERVABILITY_PRINCIPLE_INVALID: 'OBSERVABILITY_PRINCIPLE_INVALID',
   OBSERVABILITY_RESPONSIBILITY_INVALID: 'OBSERVABILITY_RESPONSIBILITY_INVALID',
   TELEMETRY_SOURCE_INVALID: 'TELEMETRY_SOURCE_INVALID',
-  OPERATIONAL_EVIDENCE_INVALID: 'OPERATIONAL_EVIDENCE_INVALID'
+  OPERATIONAL_EVIDENCE_INVALID: 'OPERATIONAL_EVIDENCE_INVALID',
+  BUSINESS_OBSERVABILITY_INVALID: 'BUSINESS_OBSERVABILITY_INVALID'
 });
 
 export const OBSERVABILITY_OBJECTIVES = Object.freeze({
@@ -193,4 +194,177 @@ export const FUTURE_OBSERVABILITY_PRINCIPLE_CAPABILITIES = Object.freeze({
   PREDICTIVE_GOVERNANCE: 'predictive-governance',
   SELF_IMPROVING_OBSERVABILITY: 'self-improving-observability',
   CROSS_ENTERPRISE_OPERATIONAL_INTELLIGENCE: 'cross-enterprise-operational-intelligence'
+});
+
+export const BUSINESS_OBSERVABILITY_OBJECTIVES = Object.freeze({
+  BUSINESS_TRANSPARENCY: 'business-transparency',
+  CAPABILITY_VISIBILITY: 'capability-visibility',
+  CUSTOMER_JOURNEY_UNDERSTANDING: 'customer-journey-understanding',
+  PROCESS_ACCOUNTABILITY: 'process-accountability',
+  EVIDENCE_BASED_GOVERNANCE: 'evidence-based-governance',
+  OPERATIONAL_INTELLIGENCE: 'operational-intelligence',
+  CONTINUOUS_OPTIMIZATION: 'continuous-optimization',
+  STRATEGIC_DECISION_SUPPORT: 'strategic-decision-support'
+});
+
+export const BUSINESS_OBSERVABILITY_MODEL_STAGES = Object.freeze({
+  BUSINESS_STRATEGY: 'Business Strategy',
+  BUSINESS_CAPABILITY: 'Business Capability',
+  BUSINESS_PROCESS: 'Business Process',
+  BUSINESS_OUTCOME: 'Business Outcome',
+  OPERATIONAL_EVIDENCE: 'Operational Evidence'
+});
+
+export const BUSINESS_OBSERVABILITY_PRINCIPLES = Object.freeze({
+  OBSERVE_BUSINESS_CAPABILITIES: 'observe-business-capabilities',
+  OBSERVE_BUSINESS_PROCESSES: 'observe-business-processes',
+  OBSERVE_BUSINESS_OUTCOMES: 'observe-business-outcomes',
+  PRESERVE_BUSINESS_CONTEXT: 'preserve-business-context',
+  END_TO_END_BUSINESS_VISIBILITY: 'end-to-end-business-visibility'
+});
+
+export const BUSINESS_CAPABILITY_EXAMPLES = Object.freeze({
+  CUSTOMER_MANAGEMENT: 'customer-management',
+  ORDER_PROCESSING: 'order-processing',
+  KNOWLEDGE_MANAGEMENT: 'knowledge-management',
+  AI_ASSISTANCE: 'ai-assistance',
+  REPORTING: 'reporting',
+  IDENTITY_MANAGEMENT: 'identity-management'
+});
+
+export const BUSINESS_PROCESS_EXAMPLES = Object.freeze({
+  CUSTOMER_ONBOARDING: 'customer-onboarding',
+  ORDER_FULFILLMENT: 'order-fulfillment',
+  INCIDENT_RESOLUTION: 'incident-resolution',
+  AI_ASSISTED_WORKFLOWS: 'ai-assisted-workflows',
+  DOCUMENT_APPROVAL: 'document-approval',
+  SERVICE_PROVISIONING: 'service-provisioning'
+});
+
+export const BUSINESS_OUTCOME_EXAMPLES = Object.freeze({
+  COMPLETED_TRANSACTIONS: 'completed-transactions',
+  APPROVED_REQUESTS: 'approved-requests',
+  CUSTOMER_SATISFACTION: 'customer-satisfaction',
+  OPERATIONAL_EFFICIENCY: 'operational-efficiency',
+  BUSINESS_VALUE_DELIVERED: 'business-value-delivered',
+  STRATEGIC_OBJECTIVES_ACHIEVED: 'strategic-objectives-achieved'
+});
+
+export const BUSINESS_CONTEXT_ELEMENTS = Object.freeze({
+  BUSINESS_CAPABILITY: 'business-capability',
+  CUSTOMER_IDENTIFIER: 'customer-identifier',
+  PROCESS_IDENTIFIER: 'process-identifier',
+  BUSINESS_TRANSACTION: 'business-transaction',
+  ORGANIZATIONAL_UNIT: 'organizational-unit'
+});
+
+export const BUSINESS_LIFECYCLE_VISIBILITY_STAGES = Object.freeze({
+  REQUEST: 'Request',
+  VALIDATION: 'Validation',
+  PROCESSING: 'Processing',
+  DECISION: 'Decision',
+  COMPLETION: 'Completion'
+});
+
+export const BUSINESS_CAPABILITY_EVIDENCE_TYPES = Object.freeze({
+  REQUEST_VOLUME: 'request-volume',
+  COMPLETION_RATE: 'completion-rate',
+  PROCESSING_DURATION: 'processing-duration',
+  SUCCESS_RATE: 'success-rate',
+  EXCEPTION_RATE: 'exception-rate',
+  CUSTOMER_IMPACT: 'customer-impact'
+});
+
+export const CUSTOMER_JOURNEY_OBSERVABILITY_STAGES = Object.freeze({
+  REQUEST_INITIATION: 'request-initiation',
+  AUTHENTICATION: 'authentication',
+  SERVICE_INTERACTION: 'service-interaction',
+  WORKFLOW_EXECUTION: 'workflow-execution',
+  AI_PARTICIPATION: 'ai-participation',
+  OUTCOME_DELIVERY: 'outcome-delivery'
+});
+
+export const BUSINESS_EVENT_EXAMPLES = Object.freeze({
+  CUSTOMER_REGISTERED: 'customer-registered',
+  ORDER_SUBMITTED: 'order-submitted',
+  PAYMENT_APPROVED: 'payment-approved',
+  WORKFLOW_COMPLETED: 'workflow-completed',
+  AI_RECOMMENDATION_ACCEPTED: 'ai-recommendation-accepted',
+  INCIDENT_RESOLVED: 'incident-resolved'
+});
+
+export const BUSINESS_METRIC_EXAMPLES = Object.freeze({
+  CAPABILITY_UTILIZATION: 'capability-utilization',
+  BUSINESS_THROUGHPUT: 'business-throughput',
+  CUSTOMER_SATISFACTION: 'customer-satisfaction',
+  PROCESS_COMPLETION: 'process-completion',
+  OPERATIONAL_EFFICIENCY: 'operational-efficiency',
+  BUSINESS_AVAILABILITY: 'business-availability'
+});
+
+export const AI_BUSINESS_OBSERVABILITY_TYPES = Object.freeze({
+  AI_ASSISTED_DECISIONS: 'ai-assisted-decisions',
+  RECOMMENDATION_ACCEPTANCE: 'recommendation-acceptance',
+  HUMAN_REVIEW: 'human-review',
+  WORKFLOW_PARTICIPATION: 'workflow-participation',
+  BUSINESS_IMPACT: 'business-impact'
+});
+
+export const BUSINESS_OPERATIONAL_EVIDENCE_SOURCES = Object.freeze({
+  BUSINESS_EVENTS: 'business-events',
+  SERVICE_INTERACTIONS: 'service-interactions',
+  WORKFLOW_TRANSITIONS: 'workflow-transitions',
+  AI_ACTIVITIES: 'ai-activities',
+  INTEGRATION_EXCHANGES: 'integration-exchanges',
+  CUSTOMER_INTERACTIONS: 'customer-interactions'
+});
+
+export const BUSINESS_GOVERNANCE_ALIGNMENT_ACTIVITIES = Object.freeze({
+  PERFORMANCE_EVALUATION: 'performance-evaluation',
+  STRATEGIC_REPORTING: 'strategic-reporting',
+  COMPLIANCE_VISIBILITY: 'compliance-visibility',
+  OPERATIONAL_ACCOUNTABILITY: 'operational-accountability',
+  CONTINUOUS_IMPROVEMENT: 'continuous-improvement'
+});
+
+export const BUSINESS_OBSERVABILITY_QUALITY_ATTRIBUTES = Object.freeze({
+  TRANSPARENCY: 'transparency',
+  ACCOUNTABILITY: 'accountability',
+  TRACEABILITY: 'traceability',
+  EXPLAINABILITY: 'explainability',
+  OPERATIONAL_EXCELLENCE: 'operational-excellence',
+  STRATEGIC_ALIGNMENT: 'strategic-alignment',
+  CUSTOMER_FOCUS: 'customer-focus',
+  ENTERPRISE_MATURITY: 'enterprise-maturity'
+});
+
+export const BUSINESS_OBSERVABILITY_RELATIONSHIP_STAGES = Object.freeze({
+  BUSINESS_CAPABILITY: 'Business Capability',
+  SERVICES: 'Services',
+  AI: 'AI',
+  WORKFLOWS: 'Workflows',
+  INTEGRATIONS: 'Integrations',
+  BUSINESS_OBSERVABILITY: 'Business Observability'
+});
+
+export const BUSINESS_OBSERVABILITY_ARCHITECTURAL_RULES = Object.freeze({
+  OBSERVE_BUSINESS_CAPABILITIES_BEFORE_INFRASTRUCTURE: 'observe-business-capabilities-before-infrastructure',
+  PRESERVE_BUSINESS_CONTEXT_THROUGHOUT_TELEMETRY: 'preserve-business-context-throughout-telemetry',
+  MEASURE_BUSINESS_OUTCOMES_CONTINUOUSLY: 'measure-business-outcomes-continuously',
+  SUPPORT_CUSTOMER_JOURNEY_VISIBILITY: 'support-customer-journey-visibility',
+  CORRELATE_OPERATIONAL_EVIDENCE_ACROSS_DOMAINS: 'correlate-operational-evidence-across-domains',
+  ENABLE_EVIDENCE_BASED_GOVERNANCE: 'enable-evidence-based-governance',
+  PRESERVE_TECHNOLOGY_INDEPENDENCE: 'preserve-technology-independence',
+  REMAIN_VENDOR_NEUTRAL: 'remain-vendor-neutral'
+});
+
+export const FUTURE_BUSINESS_OBSERVABILITY_CAPABILITIES = Object.freeze({
+  AI_ASSISTED_BUSINESS_DIAGNOSTICS: 'ai-assisted-business-diagnostics',
+  PREDICTIVE_BUSINESS_ANALYTICS: 'predictive-business-analytics',
+  SEMANTIC_BUSINESS_TELEMETRY: 'semantic-business-telemetry',
+  AUTONOMOUS_PROCESS_OPTIMIZATION: 'autonomous-process-optimization',
+  INTELLIGENT_CUSTOMER_JOURNEY_ANALYSIS: 'intelligent-customer-journey-analysis',
+  BUSINESS_DIGITAL_TWINS: 'business-digital-twins',
+  ADAPTIVE_OPERATIONAL_INTELLIGENCE: 'adaptive-operational-intelligence',
+  CROSS_ENTERPRISE_BUSINESS_VISIBILITY: 'cross-enterprise-business-visibility'
 });

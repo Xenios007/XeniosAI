@@ -1,5 +1,24 @@
 export {
+  AI_BUSINESS_OBSERVABILITY_TYPES,
+  BUSINESS_CAPABILITY_EVIDENCE_TYPES,
+  BUSINESS_CAPABILITY_EXAMPLES,
+  BUSINESS_CONTEXT_ELEMENTS,
+  BUSINESS_EVENT_EXAMPLES,
+  BUSINESS_GOVERNANCE_ALIGNMENT_ACTIVITIES,
+  BUSINESS_LIFECYCLE_VISIBILITY_STAGES,
+  BUSINESS_METRIC_EXAMPLES,
+  BUSINESS_OBSERVABILITY_ARCHITECTURAL_RULES,
+  BUSINESS_OBSERVABILITY_MODEL_STAGES,
+  BUSINESS_OBSERVABILITY_OBJECTIVES,
+  BUSINESS_OBSERVABILITY_PRINCIPLES,
+  BUSINESS_OBSERVABILITY_QUALITY_ATTRIBUTES,
+  BUSINESS_OBSERVABILITY_RELATIONSHIP_STAGES,
+  BUSINESS_OPERATIONAL_EVIDENCE_SOURCES,
+  BUSINESS_OUTCOME_EXAMPLES,
+  BUSINESS_PROCESS_EXAMPLES,
+  CUSTOMER_JOURNEY_OBSERVABILITY_STAGES,
   ENTERPRISE_VISIBILITY_ELEMENTS,
+  FUTURE_BUSINESS_OBSERVABILITY_CAPABILITIES,
   FUTURE_OBSERVABILITY_CAPABILITIES,
   FUTURE_OBSERVABILITY_PRINCIPLE_CAPABILITIES,
   OBSERVABILITY_ARCHITECTURE_ERROR_CODES,
@@ -20,11 +39,14 @@ export {
   OBSERVABILITY_RESPONSIBILITY_OWNERS,
   OPERATIONAL_EVIDENCE_TYPES
 } from './constants.js';
+export { BusinessObservabilityProfile } from './contracts/business-observability-profile.js';
+export { BusinessOperationalEvidence } from './contracts/business-operational-evidence.js';
 export { ObservabilityDomain } from './contracts/observability-domain.js';
 export { ObservabilityPrinciple } from './contracts/observability-principle.js';
 export { ObservabilityResponsibility } from './contracts/observability-responsibility.js';
 export { ObservabilityValidationResult } from './contracts/observability-validation-result.js';
 export { TelemetrySource } from './contracts/telemetry-source.js';
+export { BusinessObservabilityDescriptor } from './business/business-observability-descriptor.js';
 export { ObservabilityOverviewDescriptor } from './overview/observability-overview-descriptor.js';
 export { ObservabilityPrinciplesDescriptor } from './principles/observability-principles-descriptor.js';
 export { addObservabilityArchitecture } from './service-registration.js';

@@ -1477,3 +1477,20 @@ Version: 0.81.0
 
 Status: Integration Architecture
 Version: 0.82.0
+
+---
+
+## [0.83.0] - ARCH-010 Business Observability
+
+### Added
+- Business observability objective, model, principle, capability, process, outcome, business context, lifecycle visibility, capability evidence, customer journey, business event, metric, AI business observation, operational evidence source, governance, quality attribute, relationship flow, architectural rule, future capability, and error-code constants.
+- Immutable contracts for business observability profiles and business operational evidence.
+- Business Observability descriptor for documented metadata, business-first profile validation, operational evidence validation, and architecture assertion.
+- Dependency-injection registration through `addObservabilityArchitecture`.
+- Unit tests for business observability objectives, model, business metadata, profile validation, evidence validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Business observability governance without implementing business intelligence platforms, financial reporting systems, analytical dashboards, implementation technologies, telemetry products, infrastructure-first monitoring, or vendor-specific observability tooling.
+
+Status: Observability Architecture
+Version: 0.83.0
