@@ -9,7 +9,8 @@ export const OBSERVABILITY_ARCHITECTURE_ERROR_CODES = Object.freeze({
   BUSINESS_OBSERVABILITY_INVALID: 'BUSINESS_OBSERVABILITY_INVALID',
   SERVICE_OBSERVABILITY_INVALID: 'SERVICE_OBSERVABILITY_INVALID',
   AI_OBSERVABILITY_INVALID: 'AI_OBSERVABILITY_INVALID',
-  INTEGRATION_OBSERVABILITY_INVALID: 'INTEGRATION_OBSERVABILITY_INVALID'
+  INTEGRATION_OBSERVABILITY_INVALID: 'INTEGRATION_OBSERVABILITY_INVALID',
+  SECURITY_OBSERVABILITY_INVALID: 'SECURITY_OBSERVABILITY_INVALID'
 });
 
 export const OBSERVABILITY_OBJECTIVES = Object.freeze({
@@ -900,4 +901,191 @@ export const FUTURE_INTEGRATION_OBSERVABILITY_CAPABILITIES = Object.freeze({
   CROSS_ENTERPRISE_TRACING: 'cross-enterprise-tracing',
   ADAPTIVE_OPERATIONAL_INTELLIGENCE: 'adaptive-operational-intelligence',
   SELF_OPTIMIZING_INTEGRATION_VISIBILITY: 'self-optimizing-integration-visibility'
+});
+
+export const SECURITY_OBSERVABILITY_OBJECTIVES = Object.freeze({
+  CONTINUOUS_SECURITY_VISIBILITY: 'continuous-security-visibility',
+  ENTERPRISE_TRACEABILITY: 'enterprise-traceability',
+  RISK_AWARENESS: 'risk-awareness',
+  SECURITY_DIAGNOSTICS: 'security-diagnostics',
+  COMPLIANCE_SUPPORT: 'compliance-support',
+  INCIDENT_INVESTIGATION: 'incident-investigation',
+  GOVERNANCE_EVIDENCE: 'governance-evidence',
+  CONTINUOUS_IMPROVEMENT: 'continuous-improvement'
+});
+
+export const SECURITY_OBSERVABILITY_MODEL_STAGES = Object.freeze({
+  IDENTITY: 'Identity',
+  ACCESS_REQUEST: 'Access Request',
+  SECURITY_DECISION: 'Security Decision',
+  BUSINESS_ACTIVITY: 'Business Activity',
+  SECURITY_EVIDENCE: 'Security Evidence'
+});
+
+export const SECURITY_OBSERVABILITY_PRINCIPLES = Object.freeze({
+  CONTINUOUS_SECURITY_VISIBILITY: 'continuous-security-visibility',
+  BUSINESS_CORRELATED_SECURITY: 'business-correlated-security',
+  ZERO_TRUST_OBSERVABILITY: 'zero-trust-observability',
+  EXPLAINABLE_SECURITY_DECISIONS: 'explainable-security-decisions',
+  LEAST_PRIVILEGE_VERIFICATION: 'least-privilege-verification'
+});
+
+export const SECURITY_VISIBILITY_AREAS = Object.freeze({
+  IDENTITY: 'identity',
+  AUTHENTICATION: 'authentication',
+  AUTHORIZATION: 'authorization',
+  POLICY_EVALUATION: 'policy-evaluation',
+  BUSINESS_ACCESS: 'business-access',
+  ADMINISTRATIVE_ACTIONS: 'administrative-actions'
+});
+
+export const SECURITY_BUSINESS_CONTEXT_ELEMENTS = Object.freeze({
+  BUSINESS_CAPABILITY: 'business-capability',
+  CUSTOMER_INTERACTION: 'customer-interaction',
+  WORKFLOW: 'workflow',
+  SERVICE: 'service',
+  TRANSACTION: 'transaction',
+  AI_ACTIVITY: 'ai-activity'
+});
+
+export const ZERO_TRUST_OBSERVABILITY_ACTIVITIES = Object.freeze({
+  IDENTITY_VERIFICATION: 'identity-verification',
+  ACCESS_EVALUATION: 'access-evaluation',
+  POLICY_ENFORCEMENT: 'policy-enforcement',
+  TRUST_DECISIONS: 'trust-decisions',
+  CONTINUOUS_AUTHORIZATION: 'continuous-authorization'
+});
+
+export const SECURITY_DECISION_OUTCOMES = Object.freeze({
+  ACCESS_GRANTED: 'access-granted',
+  ACCESS_DENIED: 'access-denied',
+  CONDITIONAL_APPROVAL: 'conditional-approval',
+  ESCALATION: 'escalation',
+  POLICY_EXCEPTION: 'policy-exception'
+});
+
+export const LEAST_PRIVILEGE_OBSERVATIONS = Object.freeze({
+  PERMISSION_USAGE: 'permission-usage',
+  ADMINISTRATIVE_ACTIONS: 'administrative-actions',
+  PRIVILEGE_ELEVATION: 'privilege-elevation',
+  TEMPORARY_ACCESS: 'temporary-access',
+  ROLE_UTILIZATION: 'role-utilization'
+});
+
+export const IDENTITY_OBSERVABILITY_ACTIVITIES = Object.freeze({
+  AUTHENTICATION: 'authentication',
+  SESSION_ESTABLISHMENT: 'session-establishment',
+  IDENTITY_VERIFICATION: 'identity-verification',
+  CREDENTIAL_LIFECYCLE: 'credential-lifecycle',
+  IDENTITY_FEDERATION: 'identity-federation'
+});
+
+export const AUTHORIZATION_OBSERVABILITY_ACTIVITIES = Object.freeze({
+  POLICY_EVALUATION: 'policy-evaluation',
+  PERMISSION_CHECKS: 'permission-checks',
+  ACCESS_APPROVAL: 'access-approval',
+  ACCESS_REJECTION: 'access-rejection',
+  POLICY_CHANGES: 'policy-changes'
+});
+
+export const AI_SECURITY_OBSERVABILITY_ACTIVITIES = Object.freeze({
+  AGENT_IDENTITY: 'agent-identity',
+  TOOL_AUTHORIZATION: 'tool-authorization',
+  KNOWLEDGE_ACCESS: 'knowledge-access',
+  PROMPT_GOVERNANCE: 'prompt-governance',
+  POLICY_ENFORCEMENT: 'policy-enforcement',
+  HUMAN_APPROVAL: 'human-approval'
+});
+
+export const INTEGRATION_SECURITY_OBSERVABILITY_ACTIVITIES = Object.freeze({
+  API_AUTHORIZATION: 'api-authorization',
+  EVENT_AUTHORIZATION: 'event-authorization',
+  WORKFLOW_SECURITY: 'workflow-security',
+  EXTERNAL_SYSTEM_ACCESS: 'external-system-access',
+  PARTNER_INTERACTIONS: 'partner-interactions'
+});
+
+export const SECURITY_INCIDENT_OBSERVABILITY_CHARACTERISTICS = Object.freeze({
+  DETECTION: 'detection',
+  IMPACT: 'impact',
+  CONTAINMENT: 'containment',
+  INVESTIGATION: 'investigation',
+  RESOLUTION: 'resolution',
+  RECOVERY: 'recovery'
+});
+
+export const SECURITY_AUDITABILITY_SUPPORTS = Object.freeze({
+  AUDIT_READINESS: 'audit-readiness',
+  COMPLIANCE_VERIFICATION: 'compliance-verification',
+  POLICY_VALIDATION: 'policy-validation',
+  OPERATIONAL_REVIEW: 'operational-review',
+  HISTORICAL_ANALYSIS: 'historical-analysis'
+});
+
+export const SECURITY_RISK_VISIBILITY_TYPES = Object.freeze({
+  UNAUTHORIZED_ACCESS: 'unauthorized-access',
+  POLICY_VIOLATIONS: 'policy-violations',
+  PRIVILEGE_MISUSE: 'privilege-misuse',
+  IDENTITY_ANOMALIES: 'identity-anomalies',
+  INTEGRATION_RISKS: 'integration-risks',
+  AI_MISUSE: 'ai-misuse'
+});
+
+export const SECURITY_OPERATIONAL_EVIDENCE_TYPES = Object.freeze({
+  AUTHENTICATION_EVENTS: 'authentication-events',
+  AUTHORIZATION_DECISIONS: 'authorization-decisions',
+  IDENTITY_ACTIVITIES: 'identity-activities',
+  ADMINISTRATIVE_ACTIONS: 'administrative-actions',
+  POLICY_EVALUATIONS: 'policy-evaluations',
+  INCIDENT_RECORDS: 'incident-records'
+});
+
+export const SECURITY_OBSERVABILITY_GOVERNANCE_ACTIVITIES = Object.freeze({
+  COMPLIANCE: 'compliance',
+  RISK_MANAGEMENT: 'risk-management',
+  OPERATIONAL_REVIEW: 'operational-review',
+  POLICY_ENFORCEMENT: 'policy-enforcement',
+  AUDIT_READINESS: 'audit-readiness',
+  CONTINUOUS_IMPROVEMENT: 'continuous-improvement'
+});
+
+export const SECURITY_OBSERVABILITY_QUALITY_ATTRIBUTES = Object.freeze({
+  TRACEABILITY: 'traceability',
+  ACCOUNTABILITY: 'accountability',
+  EXPLAINABILITY: 'explainability',
+  AUDITABILITY: 'auditability',
+  RELIABILITY: 'reliability',
+  COMPLIANCE: 'compliance',
+  TRUST: 'trust',
+  ENTERPRISE_RESILIENCE: 'enterprise-resilience'
+});
+
+export const SECURITY_OBSERVABILITY_RELATIONSHIP_STAGES = Object.freeze({
+  IDENTITY: 'Identity',
+  SECURITY_CONTROLS: 'Security Controls',
+  BUSINESS_ACTIVITY: 'Business Activity',
+  OPERATIONAL_EVIDENCE: 'Operational Evidence',
+  ENTERPRISE_GOVERNANCE: 'Enterprise Governance'
+});
+
+export const SECURITY_OBSERVABILITY_ARCHITECTURAL_RULES = Object.freeze({
+  OBSERVE_SECURITY_CONTINUOUSLY: 'observe-security-continuously',
+  PRESERVE_BUSINESS_CONTEXT: 'preserve-business-context',
+  SUPPORT_ZERO_TRUST: 'support-zero-trust',
+  EXPLAIN_SECURITY_DECISIONS: 'explain-security-decisions',
+  STRENGTHEN_LEAST_PRIVILEGE_VERIFICATION: 'strengthen-least-privilege-verification',
+  ENABLE_AUDITABILITY: 'enable-auditability',
+  SUPPORT_ENTERPRISE_GOVERNANCE: 'support-enterprise-governance',
+  REMAIN_VENDOR_AND_TECHNOLOGY_NEUTRAL: 'remain-vendor-and-technology-neutral'
+});
+
+export const FUTURE_SECURITY_OBSERVABILITY_CAPABILITIES = Object.freeze({
+  AI_ASSISTED_THREAT_ANALYSIS: 'ai-assisted-threat-analysis',
+  PREDICTIVE_SECURITY_DIAGNOSTICS: 'predictive-security-diagnostics',
+  ADAPTIVE_ZERO_TRUST_TELEMETRY: 'adaptive-zero-trust-telemetry',
+  AUTONOMOUS_COMPLIANCE_VALIDATION: 'autonomous-compliance-validation',
+  BEHAVIORAL_RISK_ANALYSIS: 'behavioral-risk-analysis',
+  INTELLIGENT_POLICY_OPTIMIZATION: 'intelligent-policy-optimization',
+  CROSS_ENTERPRISE_TRUST_ANALYTICS: 'cross-enterprise-trust-analytics',
+  CONTINUOUS_SECURITY_ASSURANCE: 'continuous-security-assurance'
 });

@@ -2,6 +2,7 @@ export {
   AGENT_COLLABORATION_OBSERVABILITY_INTERACTIONS,
   AGENT_OBSERVABILITY_INFORMATION,
   AI_ACCOUNTABILITY_DISTINCTIONS,
+  AI_SECURITY_OBSERVABILITY_ACTIVITIES,
   API_OBSERVABILITY_CHARACTERISTICS,
   AI_BUSINESS_OBSERVABILITY_TYPES,
   AI_BUSINESS_CORRELATION_IDENTIFIERS,
@@ -42,6 +43,7 @@ export {
   FUTURE_AI_OBSERVABILITY_CAPABILITIES,
   FUTURE_BUSINESS_OBSERVABILITY_CAPABILITIES,
   FUTURE_INTEGRATION_OBSERVABILITY_CAPABILITIES,
+  FUTURE_SECURITY_OBSERVABILITY_CAPABILITIES,
   FUTURE_OBSERVABILITY_CAPABILITIES,
   FUTURE_OBSERVABILITY_PRINCIPLE_CAPABILITIES,
   OBSERVABILITY_ARCHITECTURE_ERROR_CODES,
@@ -78,6 +80,10 @@ export {
   INTEGRATION_OBSERVABILITY_QUALITY_ATTRIBUTES,
   INTEGRATION_OBSERVABILITY_RELATIONSHIP_STAGES,
   INTEGRATION_OPERATIONAL_EVIDENCE_TYPES,
+  AUTHORIZATION_OBSERVABILITY_ACTIVITIES,
+  IDENTITY_OBSERVABILITY_ACTIVITIES,
+  INTEGRATION_SECURITY_OBSERVABILITY_ACTIVITIES,
+  LEAST_PRIVILEGE_OBSERVATIONS,
   SERVICE_BUSINESS_IDENTIFIERS,
   SERVICE_COLLABORATION_INTERACTIONS,
   SERVICE_DEPENDENCY_TYPES,
@@ -96,6 +102,21 @@ export {
   SERVICE_OPERATIONAL_EVIDENCE_TYPES,
   SERVICE_PERFORMANCE_CHARACTERISTICS,
   SERVICE_STATE_VISIBILITY_STATES,
+  SECURITY_AUDITABILITY_SUPPORTS,
+  SECURITY_BUSINESS_CONTEXT_ELEMENTS,
+  SECURITY_DECISION_OUTCOMES,
+  SECURITY_INCIDENT_OBSERVABILITY_CHARACTERISTICS,
+  SECURITY_OBSERVABILITY_ARCHITECTURAL_RULES,
+  SECURITY_OBSERVABILITY_GOVERNANCE_ACTIVITIES,
+  SECURITY_OBSERVABILITY_MODEL_STAGES,
+  SECURITY_OBSERVABILITY_OBJECTIVES,
+  SECURITY_OBSERVABILITY_PRINCIPLES,
+  SECURITY_OBSERVABILITY_QUALITY_ATTRIBUTES,
+  SECURITY_OBSERVABILITY_RELATIONSHIP_STAGES,
+  SECURITY_OPERATIONAL_EVIDENCE_TYPES,
+  SECURITY_RISK_VISIBILITY_TYPES,
+  SECURITY_VISIBILITY_AREAS,
+  ZERO_TRUST_OBSERVABILITY_ACTIVITIES,
   WORKFLOW_OBSERVABILITY_TYPES
 } from './constants.js';
 export { AiObservabilityProfile } from './contracts/ai-observability-profile.js';
@@ -110,6 +131,8 @@ export { ObservabilityResponsibility } from './contracts/observability-responsib
 export { ObservabilityValidationResult } from './contracts/observability-validation-result.js';
 export { ServiceObservabilityProfile } from './contracts/service-observability-profile.js';
 export { ServiceOperationalEvidence } from './contracts/service-operational-evidence.js';
+export { SecurityObservabilityProfile } from './contracts/security-observability-profile.js';
+export { SecurityOperationalEvidence } from './contracts/security-operational-evidence.js';
 export { TelemetrySource } from './contracts/telemetry-source.js';
 export { AiObservabilityDescriptor } from './ai/ai-observability-descriptor.js';
 export { BusinessObservabilityDescriptor } from './business/business-observability-descriptor.js';
@@ -117,4 +140,5 @@ export { IntegrationObservabilityDescriptor } from './integration/integration-ob
 export { ObservabilityOverviewDescriptor } from './overview/observability-overview-descriptor.js';
 export { ObservabilityPrinciplesDescriptor } from './principles/observability-principles-descriptor.js';
 export { ServiceObservabilityDescriptor } from './service/service-observability-descriptor.js';
+export { SecurityObservabilityDescriptor } from './security/security-observability-descriptor.js';
 export { addObservabilityArchitecture } from './service-registration.js';

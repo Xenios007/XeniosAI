@@ -1545,3 +1545,20 @@ Version: 0.85.0
 
 Status: Observability Architecture
 Version: 0.86.0
+
+---
+
+## [0.87.0] - ARCH-010 Security Observability
+
+### Added
+- Security observability objective, model, principle, visibility area, business context, Zero Trust activity, security decision, least privilege, identity, authorization, AI security, integration security, incident, auditability, risk, operational evidence, governance, quality attribute, relationship flow, architectural rule, future capability, and error-code constants.
+- Immutable contracts for security observability profiles and security operational evidence.
+- Security Observability descriptor for documented metadata, continuous security profile validation, operational evidence validation, and architecture assertion.
+- Dependency-injection registration through `addObservabilityArchitecture`.
+- Unit tests for security observability objectives, model, security metadata, profile validation, evidence validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Security observability governance without implementing security products, SIEM platforms, endpoint technologies, security tooling, implementation mechanisms, vendor-specific security telemetry, or sensitive implementation detail exposure.
+
+Status: Observability Architecture
+Version: 0.87.0
