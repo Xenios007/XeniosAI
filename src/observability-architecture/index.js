@@ -1,5 +1,23 @@
 export {
+  AGENT_COLLABORATION_OBSERVABILITY_INTERACTIONS,
+  AGENT_OBSERVABILITY_INFORMATION,
+  AI_ACCOUNTABILITY_DISTINCTIONS,
   AI_BUSINESS_OBSERVABILITY_TYPES,
+  AI_BUSINESS_CORRELATION_IDENTIFIERS,
+  AI_DECISION_OBSERVABILITY_CHARACTERISTICS,
+  AI_EXECUTION_LIFECYCLE_STAGES,
+  AI_EXPLAINABILITY_EVIDENCE_TYPES,
+  AI_FAILURE_OBSERVABILITY_CONDITIONS,
+  AI_KNOWLEDGE_OBSERVABILITY_TYPES,
+  AI_OBSERVABILITY_ARCHITECTURAL_RULES,
+  AI_OBSERVABILITY_GOVERNANCE_ACTIVITIES,
+  AI_OBSERVABILITY_MODEL_STAGES,
+  AI_OBSERVABILITY_OBJECTIVES,
+  AI_OBSERVABILITY_PRINCIPLES,
+  AI_OBSERVABILITY_QUALITY_ATTRIBUTES,
+  AI_OBSERVABILITY_RELATIONSHIP_STAGES,
+  AI_PERFORMANCE_OBSERVABILITY_CHARACTERISTICS,
+  AI_TOOL_OBSERVABILITY_ACTIVITIES,
   BUSINESS_CAPABILITY_EVIDENCE_TYPES,
   BUSINESS_CAPABILITY_EXAMPLES,
   BUSINESS_CONTEXT_ELEMENTS,
@@ -18,6 +36,7 @@ export {
   BUSINESS_PROCESS_EXAMPLES,
   CUSTOMER_JOURNEY_OBSERVABILITY_STAGES,
   ENTERPRISE_VISIBILITY_ELEMENTS,
+  FUTURE_AI_OBSERVABILITY_CAPABILITIES,
   FUTURE_BUSINESS_OBSERVABILITY_CAPABILITIES,
   FUTURE_OBSERVABILITY_CAPABILITIES,
   FUTURE_OBSERVABILITY_PRINCIPLE_CAPABILITIES,
@@ -40,6 +59,7 @@ export {
   OPERATIONAL_EVIDENCE_TYPES,
   DISTRIBUTED_DIAGNOSTIC_CAPABILITIES,
   FUTURE_SERVICE_OBSERVABILITY_CAPABILITIES,
+  HUMAN_OVERSIGHT_ACTIVITIES,
   SERVICE_BUSINESS_IDENTIFIERS,
   SERVICE_COLLABORATION_INTERACTIONS,
   SERVICE_DEPENDENCY_TYPES,
@@ -59,6 +79,8 @@ export {
   SERVICE_PERFORMANCE_CHARACTERISTICS,
   SERVICE_STATE_VISIBILITY_STATES
 } from './constants.js';
+export { AiObservabilityProfile } from './contracts/ai-observability-profile.js';
+export { AiOperationalEvidence } from './contracts/ai-operational-evidence.js';
 export { BusinessObservabilityProfile } from './contracts/business-observability-profile.js';
 export { BusinessOperationalEvidence } from './contracts/business-operational-evidence.js';
 export { ObservabilityDomain } from './contracts/observability-domain.js';
@@ -68,6 +90,7 @@ export { ObservabilityValidationResult } from './contracts/observability-validat
 export { ServiceObservabilityProfile } from './contracts/service-observability-profile.js';
 export { ServiceOperationalEvidence } from './contracts/service-operational-evidence.js';
 export { TelemetrySource } from './contracts/telemetry-source.js';
+export { AiObservabilityDescriptor } from './ai/ai-observability-descriptor.js';
 export { BusinessObservabilityDescriptor } from './business/business-observability-descriptor.js';
 export { ObservabilityOverviewDescriptor } from './overview/observability-overview-descriptor.js';
 export { ObservabilityPrinciplesDescriptor } from './principles/observability-principles-descriptor.js';

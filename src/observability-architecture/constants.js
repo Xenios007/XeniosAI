@@ -7,7 +7,8 @@ export const OBSERVABILITY_ARCHITECTURE_ERROR_CODES = Object.freeze({
   TELEMETRY_SOURCE_INVALID: 'TELEMETRY_SOURCE_INVALID',
   OPERATIONAL_EVIDENCE_INVALID: 'OPERATIONAL_EVIDENCE_INVALID',
   BUSINESS_OBSERVABILITY_INVALID: 'BUSINESS_OBSERVABILITY_INVALID',
-  SERVICE_OBSERVABILITY_INVALID: 'SERVICE_OBSERVABILITY_INVALID'
+  SERVICE_OBSERVABILITY_INVALID: 'SERVICE_OBSERVABILITY_INVALID',
+  AI_OBSERVABILITY_INVALID: 'AI_OBSERVABILITY_INVALID'
 });
 
 export const OBSERVABILITY_OBJECTIVES = Object.freeze({
@@ -547,4 +548,184 @@ export const FUTURE_SERVICE_OBSERVABILITY_CAPABILITIES = Object.freeze({
   ADAPTIVE_OBSERVABILITY: 'adaptive-observability',
   INTELLIGENT_DEPENDENCY_ANALYSIS: 'intelligent-dependency-analysis',
   AUTONOMOUS_OPERATIONAL_RECOMMENDATIONS: 'autonomous-operational-recommendations'
+});
+
+export const AI_OBSERVABILITY_OBJECTIVES = Object.freeze({
+  AI_TRANSPARENCY: 'ai-transparency',
+  EXPLAINABLE_AI_BEHAVIOR: 'explainable-ai-behavior',
+  AGENT_ACCOUNTABILITY: 'agent-accountability',
+  BUSINESS_CORRELATION: 'business-correlation',
+  OPERATIONAL_DIAGNOSTICS: 'operational-diagnostics',
+  GOVERNANCE_SUPPORT: 'governance-support',
+  CONTINUOUS_OPTIMIZATION: 'continuous-optimization',
+  ENTERPRISE_TRUST: 'enterprise-trust'
+});
+
+export const AI_OBSERVABILITY_MODEL_STAGES = Object.freeze({
+  BUSINESS_REQUEST: 'Business Request',
+  AI_ORCHESTRATOR: 'AI Orchestrator',
+  AI_CAPABILITY: 'AI Capability',
+  BUSINESS_DECISION: 'Business Decision',
+  OPERATIONAL_EVIDENCE: 'Operational Evidence'
+});
+
+export const AI_OBSERVABILITY_PRINCIPLES = Object.freeze({
+  BUSINESS_CENTRIC_AI_VISIBILITY: 'business-centric-ai-visibility',
+  EXPLAINABLE_AI_PARTICIPATION: 'explainable-ai-participation',
+  AI_ACCOUNTABILITY: 'ai-accountability',
+  AGENT_TRANSPARENCY: 'agent-transparency',
+  HUMAN_OVERSIGHT: 'human-oversight'
+});
+
+export const AI_EXPLAINABILITY_EVIDENCE_TYPES = Object.freeze({
+  AI_OBJECTIVE: 'ai-objective',
+  AI_RECOMMENDATION: 'ai-recommendation',
+  AI_CONFIDENCE: 'ai-confidence',
+  HUMAN_REVIEW: 'human-review',
+  BUSINESS_OUTCOME: 'business-outcome',
+  WORKFLOW_PARTICIPATION: 'workflow-participation'
+});
+
+export const AI_ACCOUNTABILITY_DISTINCTIONS = Object.freeze({
+  AI_RECOMMENDATIONS: 'ai-recommendations',
+  HUMAN_DECISIONS: 'human-decisions',
+  AUTOMATED_EXECUTION: 'automated-execution',
+  BUSINESS_OWNERSHIP: 'business-ownership'
+});
+
+export const AGENT_OBSERVABILITY_INFORMATION = Object.freeze({
+  ASSIGNED_OBJECTIVE: 'assigned-objective',
+  AGENT_IDENTITY: 'agent-identity',
+  TASK_PROGRESSION: 'task-progression',
+  TOOL_USAGE: 'tool-usage',
+  COLLABORATION: 'collaboration',
+  COMPLETION_STATUS: 'completion-status'
+});
+
+export const HUMAN_OVERSIGHT_ACTIVITIES = Object.freeze({
+  REVIEW: 'review',
+  APPROVAL: 'approval',
+  OVERRIDE: 'override',
+  ESCALATION: 'escalation',
+  FEEDBACK: 'feedback',
+  EXCEPTION_HANDLING: 'exception-handling'
+});
+
+export const AI_EXECUTION_LIFECYCLE_STAGES = Object.freeze({
+  REQUEST: 'Request',
+  REASONING: 'Reasoning',
+  KNOWLEDGE_RETRIEVAL: 'Knowledge Retrieval',
+  TOOL_EXECUTION: 'Tool Execution',
+  DECISION: 'Decision',
+  RESPONSE: 'Response'
+});
+
+export const AI_DECISION_OBSERVABILITY_CHARACTERISTICS = Object.freeze({
+  DECISION_OBJECTIVE: 'decision-objective',
+  DECISION_CONTEXT: 'decision-context',
+  SUPPORTING_KNOWLEDGE: 'supporting-knowledge',
+  AI_CONFIDENCE: 'ai-confidence',
+  HUMAN_VALIDATION: 'human-validation',
+  FINAL_OUTCOME: 'final-outcome'
+});
+
+export const AGENT_COLLABORATION_OBSERVABILITY_INTERACTIONS = Object.freeze({
+  TASK_DELEGATION: 'task-delegation',
+  INFORMATION_EXCHANGE: 'information-exchange',
+  SHARED_OBJECTIVES: 'shared-objectives',
+  COORDINATION: 'coordination',
+  COMPLETION: 'completion'
+});
+
+export const AI_TOOL_OBSERVABILITY_ACTIVITIES = Object.freeze({
+  TOOL_SELECTION: 'tool-selection',
+  AUTHORIZATION: 'authorization',
+  INVOCATION: 'invocation',
+  COMPLETION: 'completion',
+  FAILURE: 'failure',
+  BUSINESS_CONTRIBUTION: 'business-contribution'
+});
+
+export const AI_KNOWLEDGE_OBSERVABILITY_TYPES = Object.freeze({
+  KNOWLEDGE_SOURCE: 'knowledge-source',
+  RETRIEVAL_OBJECTIVE: 'retrieval-objective',
+  CONTEXT_UTILIZATION: 'context-utilization',
+  KNOWLEDGE_VERSION: 'knowledge-version',
+  BUSINESS_RELEVANCE: 'business-relevance'
+});
+
+export const AI_PERFORMANCE_OBSERVABILITY_CHARACTERISTICS = Object.freeze({
+  REQUEST_VOLUME: 'request-volume',
+  RESPONSE_DURATION: 'response-duration',
+  COMPLETION_RATE: 'completion-rate',
+  RECOMMENDATION_ACCEPTANCE: 'recommendation-acceptance',
+  HUMAN_OVERRIDE_FREQUENCY: 'human-override-frequency',
+  WORKFLOW_PARTICIPATION: 'workflow-participation'
+});
+
+export const AI_FAILURE_OBSERVABILITY_CONDITIONS = Object.freeze({
+  MODEL_UNAVAILABLE: 'model-unavailable',
+  TOOL_FAILURE: 'tool-failure',
+  KNOWLEDGE_UNAVAILABLE: 'knowledge-unavailable',
+  LOW_CONFIDENCE: 'low-confidence',
+  POLICY_RESTRICTION: 'policy-restriction',
+  HUMAN_ESCALATION: 'human-escalation'
+});
+
+export const AI_BUSINESS_CORRELATION_IDENTIFIERS = Object.freeze({
+  BUSINESS_CAPABILITY: 'business-capability',
+  CUSTOMER_INTERACTION: 'customer-interaction',
+  WORKFLOW_IDENTIFIER: 'workflow-identifier',
+  TRANSACTION_IDENTIFIER: 'transaction-identifier',
+  SERVICE_IDENTIFIER: 'service-identifier'
+});
+
+export const AI_OBSERVABILITY_GOVERNANCE_ACTIVITIES = Object.freeze({
+  EXPLAINABILITY: 'explainability',
+  AUDITABILITY: 'auditability',
+  COMPLIANCE: 'compliance',
+  OPERATIONAL_REVIEW: 'operational-review',
+  RISK_VISIBILITY: 'risk-visibility',
+  HUMAN_ACCOUNTABILITY: 'human-accountability'
+});
+
+export const AI_OBSERVABILITY_QUALITY_ATTRIBUTES = Object.freeze({
+  TRANSPARENCY: 'transparency',
+  EXPLAINABILITY: 'explainability',
+  ACCOUNTABILITY: 'accountability',
+  TRUST: 'trust',
+  TRACEABILITY: 'traceability',
+  RELIABILITY: 'reliability',
+  GOVERNANCE: 'governance',
+  OPERATIONAL_MATURITY: 'operational-maturity'
+});
+
+export const AI_OBSERVABILITY_RELATIONSHIP_STAGES = Object.freeze({
+  BUSINESS_REQUEST: 'Business Request',
+  AI_ORCHESTRATOR: 'AI Orchestrator',
+  AI_CAPABILITY: 'AI Capability',
+  BUSINESS_OUTCOME: 'Business Outcome',
+  OPERATIONAL_EVIDENCE: 'Operational Evidence'
+});
+
+export const AI_OBSERVABILITY_ARCHITECTURAL_RULES = Object.freeze({
+  OBSERVE_AI_WITHIN_BUSINESS_CONTEXT: 'observe-ai-within-business-context',
+  PRESERVE_EXPLAINABILITY: 'preserve-explainability',
+  DISTINGUISH_AI_RECOMMENDATIONS_FROM_BUSINESS_DECISIONS: 'distinguish-ai-recommendations-from-business-decisions',
+  OBSERVE_COMPLETE_AI_EXECUTION_LIFECYCLES: 'observe-complete-ai-execution-lifecycles',
+  SUPPORT_AGENT_TRANSPARENCY: 'support-agent-transparency',
+  ENABLE_HUMAN_OVERSIGHT: 'enable-human-oversight',
+  PRESERVE_ENTERPRISE_GOVERNANCE: 'preserve-enterprise-governance',
+  REMAIN_VENDOR_AND_TECHNOLOGY_NEUTRAL: 'remain-vendor-and-technology-neutral'
+});
+
+export const FUTURE_AI_OBSERVABILITY_CAPABILITIES = Object.freeze({
+  AUTONOMOUS_EXPLAINABILITY: 'autonomous-explainability',
+  AI_ASSISTED_OPERATIONAL_DIAGNOSTICS: 'ai-assisted-operational-diagnostics',
+  SEMANTIC_REASONING_VISUALIZATION: 'semantic-reasoning-visualization',
+  MULTI_AGENT_BEHAVIOR_ANALYSIS: 'multi-agent-behavior-analysis',
+  PREDICTIVE_AI_GOVERNANCE: 'predictive-ai-governance',
+  ADAPTIVE_OBSERVABILITY: 'adaptive-observability',
+  INTELLIGENT_DECISION_VALIDATION: 'intelligent-decision-validation',
+  CROSS_ENTERPRISE_AI_TRANSPARENCY: 'cross-enterprise-ai-transparency'
 });

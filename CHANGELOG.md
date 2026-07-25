@@ -1511,3 +1511,20 @@ Version: 0.83.0
 
 Status: Observability Architecture
 Version: 0.84.0
+
+---
+
+## [0.85.0] - ARCH-010 AI Observability
+
+### Added
+- AI observability objective, model, principle, explainability evidence, accountability distinction, agent information, human oversight, execution lifecycle, decision characteristic, agent collaboration, tool activity, knowledge observation, performance, failure condition, business correlation, governance, quality attribute, relationship flow, architectural rule, future capability, and error-code constants.
+- Immutable contracts for AI observability profiles and AI operational evidence.
+- AI Observability descriptor for documented metadata, explainable AI profile validation, AI operational evidence validation, and architecture assertion.
+- Dependency-injection registration through `addObservabilityArchitecture`.
+- Unit tests for AI observability objectives, model, AI metadata, profile validation, evidence validation, incomplete metadata rejection, and DI access.
+
+### Established
+- AI observability governance without implementing model internals, neural network architectures, provider-specific diagnostics, inference optimization, implementation technologies, runtime model instrumentation, or vendor-specific AI observability behavior.
+
+Status: Observability Architecture
+Version: 0.85.0
