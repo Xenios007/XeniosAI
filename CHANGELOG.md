@@ -1630,3 +1630,20 @@ Version: 0.90.0
 
 Status: Enterprise Operations Architecture
 Version: 0.91.0
+
+---
+
+## [0.92.0] - ARCH-011 Enterprise Operations Overview
+
+### Added
+- Enterprise operations overview objective, landscape stage, capability group, direct/operate/protect/change/improve capability, actor, responsibility, information, control flow, state, priority factor, decision requirement, escalation trigger, operating mode, collaboration requirement, scope boundary, relationship flow, quality attribute, governance foundation, architectural rule, and future capability constants.
+- Immutable contract for enterprise operations overview profiles.
+- Enterprise Operations Overview descriptor for documented metadata, overview profile validation, and architecture assertion.
+- Dependency-injection registration through `addEnterpriseOperations`.
+- Unit tests for enterprise operations overview metadata, validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Enterprise operations overview implementation without replacing business domain ownership, security architecture, observability architecture, or ARCH-012 governance and compliance architecture.
+
+Status: Enterprise Operations Architecture
+Version: 0.92.0
