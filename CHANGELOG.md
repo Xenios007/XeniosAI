@@ -1579,3 +1579,20 @@ Version: 0.87.0
 
 Status: Observability Architecture
 Version: 0.88.0
+
+---
+
+## [0.89.0] - ARCH-010 Observability Governance
+
+### Added
+- Observability governance objective, model, principle, ownership responsibility, evidence integrity, business context, standardization, explainability, responsibility owner, evidence lifecycle, telemetry governance, AI governance, security alignment, quality assurance, governance metric, improvement activity, relationship flow, architectural rule, future capability, and error-code constants.
+- Immutable contracts for observability governance profiles and governed observability evidence.
+- Observability Governance descriptor for documented metadata, governed profile validation, governed evidence validation, and architecture assertion.
+- Dependency-injection registration through `addObservabilityArchitecture`.
+- Unit tests for observability governance objectives, model, governance metadata, profile validation, governed evidence validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Observability governance without implementing specific governance organizations, operational processes, observability products, implementation technologies, or vendor-specific governance tooling.
+
+Status: Observability Architecture
+Version: 0.89.0

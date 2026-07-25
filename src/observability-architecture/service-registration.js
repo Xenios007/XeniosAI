@@ -1,6 +1,7 @@
 import { ServiceCollection } from '../foundation/di/service-collection.js';
 import { AiObservabilityDescriptor } from './ai/ai-observability-descriptor.js';
 import { BusinessObservabilityDescriptor } from './business/business-observability-descriptor.js';
+import { ObservabilityGovernanceDescriptor } from './governance/observability-governance-descriptor.js';
 import { IntegrationObservabilityDescriptor } from './integration/integration-observability-descriptor.js';
 import { ObservabilityOverviewDescriptor } from './overview/observability-overview-descriptor.js';
 import { OperationalObservabilityDescriptor } from './operational/operational-observability-descriptor.js';
@@ -21,6 +22,7 @@ export function addObservabilityArchitecture(services) {
   services.registerSingleton('IntegrationObservabilityDescriptor', () => new IntegrationObservabilityDescriptor());
   services.registerSingleton('SecurityObservabilityDescriptor', () => new SecurityObservabilityDescriptor());
   services.registerSingleton('OperationalObservabilityDescriptor', () => new OperationalObservabilityDescriptor());
+  services.registerSingleton('ObservabilityGovernanceDescriptor', () => new ObservabilityGovernanceDescriptor());
 
   return services;
 }

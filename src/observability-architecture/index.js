@@ -43,6 +43,7 @@ export {
   FUTURE_AI_OBSERVABILITY_CAPABILITIES,
   FUTURE_BUSINESS_OBSERVABILITY_CAPABILITIES,
   FUTURE_INTEGRATION_OBSERVABILITY_CAPABILITIES,
+  FUTURE_OBSERVABILITY_GOVERNANCE_CAPABILITIES,
   FUTURE_SECURITY_OBSERVABILITY_CAPABILITIES,
   FUTURE_OBSERVABILITY_CAPABILITIES,
   FUTURE_OBSERVABILITY_PRINCIPLE_CAPABILITIES,
@@ -52,7 +53,16 @@ export {
   OBSERVABILITY_DOMAIN_NAMES,
   OBSERVABILITY_EXPLAINABILITY_TARGETS,
   OBSERVABILITY_GOVERNANCE_ACTIVITIES,
+  OBSERVABILITY_GOVERNANCE_ARCHITECTURAL_RULES,
+  OBSERVABILITY_GOVERNANCE_BUSINESS_CONTEXT,
   OBSERVABILITY_GOVERNANCE_FOUNDATIONS,
+  OBSERVABILITY_GOVERNANCE_IMPROVEMENT_ACTIVITIES,
+  OBSERVABILITY_GOVERNANCE_METRICS,
+  OBSERVABILITY_GOVERNANCE_MODEL_STAGES,
+  OBSERVABILITY_GOVERNANCE_OBJECTIVES,
+  OBSERVABILITY_GOVERNANCE_PRINCIPLES,
+  OBSERVABILITY_GOVERNANCE_RELATIONSHIP_STAGES,
+  OBSERVABILITY_GOVERNANCE_RESPONSIBILITY_OWNERS,
   OBSERVABILITY_LIFECYCLE_STAGES,
   OBSERVABILITY_OBJECTIVES,
   OBSERVABILITY_PRINCIPLE_NAMES,
@@ -61,7 +71,14 @@ export {
   OBSERVABILITY_PRINCIPLES,
   OBSERVABILITY_PRIVACY_SECURITY_REQUIREMENTS,
   OBSERVABILITY_QUALITY_ATTRIBUTES,
+  OBSERVABILITY_QUALITY_ASSURANCE_CONSIDERATIONS,
   OBSERVABILITY_RESPONSIBILITY_OWNERS,
+  OBSERVABILITY_EVIDENCE_INTEGRITY_REQUIREMENTS,
+  OBSERVABILITY_EVIDENCE_LIFECYCLE_STAGES,
+  OBSERVABILITY_EXPLAINABILITY_AREAS,
+  OBSERVABILITY_OWNERSHIP_RESPONSIBILITIES,
+  OBSERVABILITY_SECURITY_ALIGNMENT_ACTIVITIES,
+  OBSERVABILITY_STANDARDIZATION_AREAS,
   OPERATIONAL_CAPACITY_OBSERVATIONS,
   OPERATIONAL_CORRELATION_DOMAINS,
   OPERATIONAL_DIAGNOSTIC_AREAS,
@@ -120,6 +137,7 @@ export {
   SERVICE_OPERATIONAL_EVIDENCE_TYPES,
   SERVICE_PERFORMANCE_CHARACTERISTICS,
   SERVICE_STATE_VISIBILITY_STATES,
+  AI_OBSERVABILITY_GOVERNANCE_REQUIREMENTS,
   SECURITY_AUDITABILITY_SUPPORTS,
   SECURITY_BUSINESS_CONTEXT_ELEMENTS,
   SECURITY_DECISION_OUTCOMES,
@@ -135,6 +153,7 @@ export {
   SECURITY_RISK_VISIBILITY_TYPES,
   SECURITY_VISIBILITY_AREAS,
   PROACTIVE_OPERATION_CAPABILITIES,
+  TELEMETRY_GOVERNANCE_CONSIDERATIONS,
   ZERO_TRUST_OBSERVABILITY_ACTIVITIES,
   WORKFLOW_OBSERVABILITY_TYPES
 } from './constants.js';
@@ -142,12 +161,14 @@ export { AiObservabilityProfile } from './contracts/ai-observability-profile.js'
 export { AiOperationalEvidence } from './contracts/ai-operational-evidence.js';
 export { BusinessObservabilityProfile } from './contracts/business-observability-profile.js';
 export { BusinessOperationalEvidence } from './contracts/business-operational-evidence.js';
+export { GovernedObservabilityEvidence } from './contracts/governed-observability-evidence.js';
 export { IntegrationObservabilityProfile } from './contracts/integration-observability-profile.js';
 export { IntegrationOperationalEvidence } from './contracts/integration-operational-evidence.js';
 export { ObservabilityDomain } from './contracts/observability-domain.js';
 export { ObservabilityPrinciple } from './contracts/observability-principle.js';
 export { ObservabilityResponsibility } from './contracts/observability-responsibility.js';
 export { ObservabilityValidationResult } from './contracts/observability-validation-result.js';
+export { ObservabilityGovernanceProfile } from './contracts/observability-governance-profile.js';
 export { OperationalObservabilityEvidence } from './contracts/operational-observability-evidence.js';
 export { OperationalObservabilityProfile } from './contracts/operational-observability-profile.js';
 export { ServiceObservabilityProfile } from './contracts/service-observability-profile.js';
@@ -158,6 +179,7 @@ export { TelemetrySource } from './contracts/telemetry-source.js';
 export { AiObservabilityDescriptor } from './ai/ai-observability-descriptor.js';
 export { BusinessObservabilityDescriptor } from './business/business-observability-descriptor.js';
 export { IntegrationObservabilityDescriptor } from './integration/integration-observability-descriptor.js';
+export { ObservabilityGovernanceDescriptor } from './governance/observability-governance-descriptor.js';
 export { ObservabilityOverviewDescriptor } from './overview/observability-overview-descriptor.js';
 export { OperationalObservabilityDescriptor } from './operational/operational-observability-descriptor.js';
 export { ObservabilityPrinciplesDescriptor } from './principles/observability-principles-descriptor.js';

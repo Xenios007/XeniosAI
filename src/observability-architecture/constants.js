@@ -11,7 +11,8 @@ export const OBSERVABILITY_ARCHITECTURE_ERROR_CODES = Object.freeze({
   AI_OBSERVABILITY_INVALID: 'AI_OBSERVABILITY_INVALID',
   INTEGRATION_OBSERVABILITY_INVALID: 'INTEGRATION_OBSERVABILITY_INVALID',
   SECURITY_OBSERVABILITY_INVALID: 'SECURITY_OBSERVABILITY_INVALID',
-  OPERATIONAL_OBSERVABILITY_INVALID: 'OPERATIONAL_OBSERVABILITY_INVALID'
+  OPERATIONAL_OBSERVABILITY_INVALID: 'OPERATIONAL_OBSERVABILITY_INVALID',
+  OBSERVABILITY_GOVERNANCE_INVALID: 'OBSERVABILITY_GOVERNANCE_INVALID'
 });
 
 export const OBSERVABILITY_OBJECTIVES = Object.freeze({
@@ -1266,4 +1267,177 @@ export const FUTURE_OPERATIONAL_OBSERVABILITY_CAPABILITIES = Object.freeze({
   ADAPTIVE_OPERATIONAL_ANALYTICS: 'adaptive-operational-analytics',
   CROSS_ENTERPRISE_OPERATIONAL_INTELLIGENCE: 'cross-enterprise-operational-intelligence',
   CONTINUOUS_OPERATIONAL_ASSURANCE: 'continuous-operational-assurance'
+});
+
+export const OBSERVABILITY_GOVERNANCE_OBJECTIVES = Object.freeze({
+  CLEAR_OWNERSHIP: 'clear-ownership',
+  TRUSTED_OPERATIONAL_EVIDENCE: 'trusted-operational-evidence',
+  ENTERPRISE_CONSISTENCY: 'enterprise-consistency',
+  EXPLAINABLE_OBSERVABILITY: 'explainable-observability',
+  GOVERNANCE_ACCOUNTABILITY: 'governance-accountability',
+  SECURITY_ALIGNMENT: 'security-alignment',
+  LIFECYCLE_MANAGEMENT: 'lifecycle-management',
+  CONTINUOUS_IMPROVEMENT: 'continuous-improvement'
+});
+
+export const OBSERVABILITY_GOVERNANCE_MODEL_STAGES = Object.freeze({
+  DESIGN: 'Design',
+  PRODUCE: 'Produce',
+  CORRELATE: 'Correlate',
+  GOVERN: 'Govern',
+  ANALYZE: 'Analyze',
+  IMPROVE: 'Improve'
+});
+
+export const OBSERVABILITY_GOVERNANCE_PRINCIPLES = Object.freeze({
+  EXPLICIT_OWNERSHIP: 'explicit-ownership',
+  EVIDENCE_INTEGRITY: 'evidence-integrity',
+  BUSINESS_CONTEXT_PRESERVATION: 'business-context-preservation',
+  STANDARDIZATION: 'standardization',
+  EXPLAINABILITY: 'explainability'
+});
+
+export const OBSERVABILITY_OWNERSHIP_RESPONSIBILITIES = Object.freeze({
+  BUSINESS_CONTEXT: 'business-context',
+  EVIDENCE_QUALITY: 'evidence-quality',
+  DOCUMENTATION: 'documentation',
+  LIFECYCLE_MANAGEMENT: 'lifecycle-management',
+  SECURITY: 'security',
+  GOVERNANCE_COMPLIANCE: 'governance-compliance'
+});
+
+export const OBSERVABILITY_EVIDENCE_INTEGRITY_REQUIREMENTS = Object.freeze({
+  AUTHENTIC: 'authentic',
+  CONSISTENT: 'consistent',
+  CORRELATED: 'correlated',
+  EXPLAINABLE: 'explainable',
+  AUDITABLE: 'auditable'
+});
+
+export const OBSERVABILITY_GOVERNANCE_BUSINESS_CONTEXT = Object.freeze({
+  BUSINESS_CAPABILITY: 'business-capability',
+  WORKFLOW: 'workflow',
+  CUSTOMER_INTERACTION: 'customer-interaction',
+  TRANSACTION: 'transaction',
+  ORGANIZATIONAL_UNIT: 'organizational-unit'
+});
+
+export const OBSERVABILITY_STANDARDIZATION_AREAS = Object.freeze({
+  NAMING: 'naming',
+  CORRELATION_IDENTIFIERS: 'correlation-identifiers',
+  LIFECYCLE_STATES: 'lifecycle-states',
+  OPERATIONAL_TERMINOLOGY: 'operational-terminology',
+  GOVERNANCE_CLASSIFICATIONS: 'governance-classifications'
+});
+
+export const OBSERVABILITY_EXPLAINABILITY_AREAS = Object.freeze({
+  BUSINESS_OUTCOMES: 'business-outcomes',
+  AI_PARTICIPATION: 'ai-participation',
+  WORKFLOW_PROGRESSION: 'workflow-progression',
+  SECURITY_DECISIONS: 'security-decisions',
+  OPERATIONAL_CHANGES: 'operational-changes'
+});
+
+export const OBSERVABILITY_GOVERNANCE_RESPONSIBILITY_OWNERS = Object.freeze({
+  BUSINESS_EVIDENCE: 'Business Capability Owner',
+  SERVICE_EVIDENCE: 'Service Owner',
+  AI_EVIDENCE: 'AI Architecture',
+  SECURITY_EVIDENCE: 'Security Architecture',
+  OPERATIONAL_EVIDENCE: 'Platform Operations',
+  GOVERNANCE_STANDARDS: 'Enterprise Architecture'
+});
+
+export const OBSERVABILITY_EVIDENCE_LIFECYCLE_STAGES = Object.freeze({
+  DEFINED: 'Defined',
+  PRODUCED: 'Produced',
+  CORRELATED: 'Correlated',
+  ANALYZED: 'Analyzed',
+  ARCHIVED: 'Archived',
+  RETIRED: 'Retired'
+});
+
+export const TELEMETRY_GOVERNANCE_CONSIDERATIONS = Object.freeze({
+  BUSINESS_RELEVANCE: 'business-relevance',
+  CORRELATION: 'correlation',
+  DATA_QUALITY: 'data-quality',
+  RETENTION: 'retention',
+  PRIVACY: 'privacy',
+  SECURITY: 'security'
+});
+
+export const AI_OBSERVABILITY_GOVERNANCE_REQUIREMENTS = Object.freeze({
+  AGENT_ACCOUNTABILITY: 'agent-accountability',
+  EXPLAINABILITY: 'explainability',
+  HUMAN_OVERSIGHT: 'human-oversight',
+  TOOL_USAGE: 'tool-usage',
+  KNOWLEDGE_UTILIZATION: 'knowledge-utilization',
+  DECISION_TRANSPARENCY: 'decision-transparency'
+});
+
+export const OBSERVABILITY_SECURITY_ALIGNMENT_ACTIVITIES = Object.freeze({
+  EVIDENCE_PROTECTION: 'evidence-protection',
+  ACCESS_GOVERNANCE: 'access-governance',
+  PRIVACY_PRESERVATION: 'privacy-preservation',
+  AUDITABILITY: 'auditability',
+  COMPLIANCE: 'compliance',
+  RISK_MANAGEMENT: 'risk-management'
+});
+
+export const OBSERVABILITY_QUALITY_ASSURANCE_CONSIDERATIONS = Object.freeze({
+  COMPLETENESS: 'completeness',
+  ACCURACY: 'accuracy',
+  CONSISTENCY: 'consistency',
+  CORRELATION_QUALITY: 'correlation-quality',
+  BUSINESS_USEFULNESS: 'business-usefulness',
+  EXPLAINABILITY: 'explainability'
+});
+
+export const OBSERVABILITY_GOVERNANCE_METRICS = Object.freeze({
+  EVIDENCE_COMPLETENESS: 'evidence-completeness',
+  CORRELATION_SUCCESS: 'correlation-success',
+  DOCUMENTATION_COVERAGE: 'documentation-coverage',
+  GOVERNANCE_COMPLIANCE: 'governance-compliance',
+  EXPLAINABILITY_QUALITY: 'explainability-quality',
+  OPERATIONAL_ADOPTION: 'operational-adoption'
+});
+
+export const OBSERVABILITY_GOVERNANCE_IMPROVEMENT_ACTIVITIES = Object.freeze({
+  EVIDENCE_REFINEMENT: 'evidence-refinement',
+  STANDARD_UPDATES: 'standard-updates',
+  GOVERNANCE_REVIEWS: 'governance-reviews',
+  QUALITY_IMPROVEMENT: 'quality-improvement',
+  OPERATIONAL_FEEDBACK: 'operational-feedback',
+  ARCHITECTURAL_EVOLUTION: 'architectural-evolution'
+});
+
+export const OBSERVABILITY_GOVERNANCE_RELATIONSHIP_STAGES = Object.freeze({
+  BUSINESS: 'Business',
+  SERVICES: 'Services',
+  AI: 'AI',
+  INTEGRATION: 'Integration',
+  SECURITY: 'Security',
+  OPERATIONS: 'Operations',
+  GOVERNANCE: 'Governance'
+});
+
+export const OBSERVABILITY_GOVERNANCE_ARCHITECTURAL_RULES = Object.freeze({
+  ASSIGN_EXPLICIT_OWNERSHIP: 'assign-explicit-ownership',
+  PRESERVE_EVIDENCE_INTEGRITY: 'preserve-evidence-integrity',
+  MAINTAIN_BUSINESS_CONTEXT: 'maintain-business-context',
+  STANDARDIZE_OBSERVABILITY_PRACTICES: 'standardize-observability-practices',
+  SUPPORT_EXPLAINABILITY: 'support-explainability',
+  ALIGN_WITH_ENTERPRISE_SECURITY: 'align-with-enterprise-security',
+  ENABLE_CONTINUOUS_IMPROVEMENT: 'enable-continuous-improvement',
+  REMAIN_VENDOR_AND_TECHNOLOGY_NEUTRAL: 'remain-vendor-and-technology-neutral'
+});
+
+export const FUTURE_OBSERVABILITY_GOVERNANCE_CAPABILITIES = Object.freeze({
+  AI_ASSISTED_EVIDENCE_GOVERNANCE: 'ai-assisted-evidence-governance',
+  AUTONOMOUS_QUALITY_VALIDATION: 'autonomous-quality-validation',
+  SEMANTIC_EVIDENCE_MANAGEMENT: 'semantic-evidence-management',
+  PREDICTIVE_GOVERNANCE_ANALYTICS: 'predictive-governance-analytics',
+  INTELLIGENT_OBSERVABILITY_OPTIMIZATION: 'intelligent-observability-optimization',
+  ADAPTIVE_GOVERNANCE_POLICIES: 'adaptive-governance-policies',
+  CROSS_ENTERPRISE_GOVERNANCE_FEDERATION: 'cross-enterprise-governance-federation',
+  CONTINUOUS_GOVERNANCE_ASSURANCE: 'continuous-governance-assurance'
 });
