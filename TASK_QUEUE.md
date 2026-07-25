@@ -86,7 +86,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-009-06 External System Integration`
 - Completed: `ARCH-009-07 AI Integration Architecture`
 - Completed: `ARCH-009-08 Integration Governance`
-- Next: `ARCH-009-09 Reliability & Resilience`
+- Completed: `ARCH-009-09 Reliability & Resilience`
+- Next: `ARCH-009-10 Future Integration Evolution`
 
 ## Notes
 

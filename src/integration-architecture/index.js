@@ -1,5 +1,6 @@
 export {
   AGENT_COLLABORATION_CONTROLS,
+  AI_RESILIENCE_CONSIDERATIONS,
   API_ARCHITECTURAL_MODEL_STAGES,
   API_ARCHITECTURE_OBJECTIVES,
   API_CATEGORIES,
@@ -30,6 +31,8 @@ export {
   AI_KNOWLEDGE_INTEGRATION_SOURCES,
   AI_SERVICE_INTEGRATION_EXAMPLES,
   AI_TOOL_INTEGRATION_TYPES,
+  AVAILABILITY_EVALUATION_FACTORS,
+  CONTROLLED_DEPENDENCY_TARGETS,
   ENTERPRISE_CONNECTIVITY_TARGETS,
   ENTERPRISE_INTEGRATION_MODEL_STAGES,
   EVENT_CATEGORIES,
@@ -47,6 +50,7 @@ export {
   EXTERNAL_INTEGRATION_RELIABILITY_CONSIDERATIONS,
   EXTERNAL_INTEGRATION_SECURITY_CONTROLS,
   EXTERNAL_SYSTEM_INTEGRATION_OBJECTIVES,
+  FAILURE_CATEGORIES,
   FUTURE_AI_INTEGRATION_DIRECTIONS,
   FUTURE_API_ARCHITECTURE_DIRECTIONS,
   FUTURE_EXTERNAL_SYSTEM_INTEGRATION_DIRECTIONS,
@@ -54,7 +58,9 @@ export {
   FUTURE_INTEGRATION_GOVERNANCE_DIRECTIONS,
   FUTURE_INTEGRATION_PRINCIPLE_DIRECTIONS,
   FUTURE_MESSAGING_EVENT_DIRECTIONS,
+  FUTURE_RELIABILITY_RESILIENCE_DIRECTIONS,
   FUTURE_WORKFLOW_PROCESS_DIRECTIONS,
+  GRACEFUL_DEGRADATION_APPROACHES,
   HUMAN_AI_COLLABORATION_TYPES,
   ASYNCHRONOUS_COMMUNICATION_BENEFITS,
   ENTERPRISE_INTEGRATION_PRINCIPLES,
@@ -108,12 +114,25 @@ export {
   MESSAGING_RELATIONSHIP_FLOW_STAGES,
   MESSAGING_RELIABILITY_PRINCIPLES,
   MESSAGING_SECURITY_CONTROLS,
+  OPERATIONAL_CONTINUITY_CAPABILITIES,
   PRINCIPLE_COMMUNICATION_STYLES,
   PRINCIPLE_LOOSE_COUPLING_AVOIDED_ASSUMPTIONS,
   PRINCIPLE_SECURITY_CONTROLS,
   PROCESS_STATE_STAGES,
+  RECOVERY_STRATEGY_CAPABILITIES,
+  RELIABILITY_FAILURE_SCENARIOS,
+  RELIABILITY_GOVERNANCE_ACTIVITIES,
+  RELIABILITY_MODEL_STAGES,
+  RELIABILITY_OBSERVABILITY_TELEMETRY,
+  RELIABILITY_PRINCIPLES,
+  RELIABILITY_RELATIONSHIP_FLOW_STAGES,
+  RELIABILITY_RESILIENCE_OBJECTIVES,
+  RELIABILITY_SECURITY_CONTROLS,
+  RESILIENT_DEPENDENCY_TYPES,
+  RETRY_CONSIDERATIONS,
   STANDARDIZATION_BENEFITS,
   TECHNOLOGY_INDEPENDENCE_TARGETS,
+  TIMEOUT_MANAGEMENT_SUPPORTS,
   VERSION_COMPATIBILITY_REQUIREMENTS,
   INTEGRATION_OWNERSHIP_RESPONSIBILITIES,
   INTEGRATION_OPERATIONAL_GOVERNANCE_ACTIVITIES,
@@ -138,6 +157,7 @@ export {
   WORKFLOW_PRINCIPLES,
   WORKFLOW_PROCESS_OBJECTIVES,
   WORKFLOW_RELATIONSHIP_FLOW_STAGES,
+  WORKFLOW_RESILIENCE_TOLERANCES,
   WORKFLOW_SECURITY_CONTROLS
 } from './constants.js';
 export { AiIntegrationProfile } from './contracts/ai-integration-profile.js';
@@ -151,6 +171,7 @@ export { IntegrationGovernanceProfile } from './contracts/integration-governance
 export { IntegrationPrincipleProfile } from './contracts/integration-principle-profile.js';
 export { MessagingEventProfile } from './contracts/messaging-event-profile.js';
 export { MessagingMessageProfile } from './contracts/messaging-message-profile.js';
+export { ReliabilityResilienceProfile } from './contracts/reliability-resilience-profile.js';
 export { WorkflowProcessProfile } from './contracts/workflow-process-profile.js';
 export { AiIntegrationArchitectureDescriptor } from './ai/ai-integration-architecture-descriptor.js';
 export { ApiArchitectureDescriptor } from './api/api-architecture-descriptor.js';
@@ -159,5 +180,6 @@ export { IntegrationGovernanceDescriptor } from './governance/integration-govern
 export { MessagingEventArchitectureDescriptor } from './messaging/messaging-event-architecture-descriptor.js';
 export { IntegrationOverviewDescriptor } from './overview/integration-overview-descriptor.js';
 export { IntegrationPrinciplesDescriptor } from './principles/integration-principles-descriptor.js';
+export { ReliabilityResilienceDescriptor } from './reliability/reliability-resilience-descriptor.js';
 export { WorkflowProcessIntegrationDescriptor } from './workflow/workflow-process-integration-descriptor.js';
 export { addIntegrationArchitecture } from './service-registration.js';

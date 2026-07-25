@@ -6,6 +6,7 @@ import { IntegrationGovernanceDescriptor } from './governance/integration-govern
 import { MessagingEventArchitectureDescriptor } from './messaging/messaging-event-architecture-descriptor.js';
 import { IntegrationOverviewDescriptor } from './overview/integration-overview-descriptor.js';
 import { IntegrationPrinciplesDescriptor } from './principles/integration-principles-descriptor.js';
+import { ReliabilityResilienceDescriptor } from './reliability/reliability-resilience-descriptor.js';
 import { WorkflowProcessIntegrationDescriptor } from './workflow/workflow-process-integration-descriptor.js';
 
 export function addIntegrationArchitecture(services) {
@@ -21,6 +22,7 @@ export function addIntegrationArchitecture(services) {
   services.registerSingleton('ExternalSystemIntegrationDescriptor', () => new ExternalSystemIntegrationDescriptor());
   services.registerSingleton('AiIntegrationArchitectureDescriptor', () => new AiIntegrationArchitectureDescriptor());
   services.registerSingleton('IntegrationGovernanceDescriptor', () => new IntegrationGovernanceDescriptor());
+  services.registerSingleton('ReliabilityResilienceDescriptor', () => new ReliabilityResilienceDescriptor());
 
   return services;
 }

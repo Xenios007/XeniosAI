@@ -10,7 +10,8 @@ export const INTEGRATION_ARCHITECTURE_ERROR_CODES = Object.freeze({
   WORKFLOW_PROCESS_INTEGRATION_INVALID: 'INTEGRATION_ARCHITECTURE_WORKFLOW_PROCESS_INTEGRATION_INVALID',
   EXTERNAL_SYSTEM_INTEGRATION_INVALID: 'INTEGRATION_ARCHITECTURE_EXTERNAL_SYSTEM_INTEGRATION_INVALID',
   AI_INTEGRATION_ARCHITECTURE_INVALID: 'INTEGRATION_ARCHITECTURE_AI_INTEGRATION_ARCHITECTURE_INVALID',
-  INTEGRATION_GOVERNANCE_INVALID: 'INTEGRATION_ARCHITECTURE_GOVERNANCE_INVALID'
+  INTEGRATION_GOVERNANCE_INVALID: 'INTEGRATION_ARCHITECTURE_GOVERNANCE_INVALID',
+  RELIABILITY_RESILIENCE_INVALID: 'INTEGRATION_ARCHITECTURE_RELIABILITY_RESILIENCE_INVALID'
 });
 
 export const INTEGRATION_TREATMENT_PRINCIPLES = Object.freeze({
@@ -1361,4 +1362,178 @@ export const FUTURE_INTEGRATION_GOVERNANCE_DIRECTIONS = Object.freeze({
   PREDICTIVE_GOVERNANCE_ANALYTICS: 'Predictive governance analytics',
   AUTONOMOUS_DOCUMENTATION_VALIDATION: 'Autonomous documentation validation',
   DYNAMIC_LIFECYCLE_GOVERNANCE: 'Dynamic lifecycle governance'
+});
+
+export const RELIABILITY_RESILIENCE_OBJECTIVES = Object.freeze({
+  CONTINUOUS_BUSINESS_OPERATION: 'continuous-business-operation',
+  FAILURE_ISOLATION: 'failure-isolation',
+  PREDICTABLE_RECOVERY: 'predictable-recovery',
+  GRACEFUL_DEGRADATION: 'graceful-degradation',
+  OPERATIONAL_STABILITY: 'operational-stability',
+  SERVICE_INDEPENDENCE: 'service-independence',
+  ENTERPRISE_SCALABILITY: 'enterprise-scalability',
+  LONG_TERM_RESILIENCE: 'long-term-resilience'
+});
+
+export const RELIABILITY_MODEL_STAGES = Object.freeze({
+  BUSINESS_CAPABILITY: 'Business Capability',
+  INTEGRATION: 'Integration',
+  FAILURE_DETECTION: 'Failure Detection',
+  RECOVERY: 'Recovery',
+  BUSINESS_CONTINUITY: 'Business Continuity'
+});
+
+export const RELIABILITY_PRINCIPLES = Object.freeze({
+  ASSUME_FAILURE: 'assume-failure',
+  GRACEFUL_DEGRADATION: 'graceful-degradation',
+  FAILURE_ISOLATION: 'failure-isolation',
+  INDEPENDENT_RECOVERY: 'independent-recovery',
+  CONTROLLED_DEPENDENCY: 'controlled-dependency'
+});
+
+export const RELIABILITY_FAILURE_SCENARIOS = Object.freeze({
+  NETWORK_INTERRUPTION: 'network-interruptions',
+  SERVICE_OUTAGES: 'service-outages',
+  EXTERNAL_DEPENDENCY_FAILURES: 'external-dependency-failures',
+  AI_PROVIDER_UNAVAILABILITY: 'ai-provider-unavailability',
+  INFRASTRUCTURE_DISRUPTIONS: 'infrastructure-disruptions',
+  HUMAN_OPERATIONAL_ERRORS: 'human-operational-errors'
+});
+
+export const GRACEFUL_DEGRADATION_APPROACHES = Object.freeze({
+  REDUCED_FUNCTIONALITY: 'reduced-functionality',
+  ALTERNATIVE_PROCESSING: 'alternative-processing',
+  DEFERRED_EXECUTION: 'deferred-execution',
+  CACHED_RESPONSES: 'cached-responses',
+  HUMAN_INTERVENTION: 'human-intervention'
+});
+
+export const CONTROLLED_DEPENDENCY_TARGETS = Object.freeze({
+  INDIVIDUAL_VENDORS: 'individual-vendors',
+  SINGLE_INFRASTRUCTURE_COMPONENTS: 'single-infrastructure-components',
+  SINGLE_AI_PROVIDERS: 'single-ai-providers',
+  SINGLE_COMMUNICATION_PATHS: 'single-communication-paths'
+});
+
+export const FAILURE_CATEGORIES = Object.freeze({
+  TEMPORARY_FAILURES: 'temporary-failures',
+  PERMANENT_FAILURES: 'permanent-failures',
+  EXTERNAL_FAILURES: 'external-failures',
+  INTERNAL_FAILURES: 'internal-failures',
+  SECURITY_FAILURES: 'security-failures',
+  CONFIGURATION_FAILURES: 'configuration-failures',
+  CAPACITY_FAILURES: 'capacity-failures'
+});
+
+export const RECOVERY_STRATEGY_CAPABILITIES = Object.freeze({
+  RETRY: 'retry',
+  COMPENSATION: 'compensation',
+  ESCALATION: 'escalation',
+  ALTERNATIVE_PROCESSING: 'alternative-processing',
+  MANUAL_INTERVENTION: 'manual-intervention',
+  CONTROLLED_TERMINATION: 'controlled-termination'
+});
+
+export const RETRY_CONSIDERATIONS = Object.freeze({
+  RETRY_ELIGIBILITY: 'retry-eligibility',
+  RETRY_LIMITS: 'retry-limits',
+  RETRY_TIMING: 'retry-timing',
+  FAILURE_ESCALATION: 'failure-escalation',
+  DUPLICATE_PREVENTION: 'duplicate-prevention'
+});
+
+export const TIMEOUT_MANAGEMENT_SUPPORTS = Object.freeze({
+  FAILURE_DETECTION: 'failure-detection',
+  RESOURCE_PROTECTION: 'resource-protection',
+  OPERATIONAL_RESPONSIVENESS: 'operational-responsiveness',
+  RECOVERY_INITIATION: 'recovery-initiation'
+});
+
+export const RESILIENT_DEPENDENCY_TYPES = Object.freeze({
+  BUSINESS_SERVICES: 'business-services',
+  AI_PROVIDERS: 'ai-providers',
+  EXTERNAL_SYSTEMS: 'external-systems',
+  IDENTITY_SERVICES: 'identity-services',
+  MESSAGING_INFRASTRUCTURE: 'messaging-infrastructure',
+  KNOWLEDGE_REPOSITORIES: 'knowledge-repositories'
+});
+
+export const WORKFLOW_RESILIENCE_TOLERANCES = Object.freeze({
+  DELAYED_PARTICIPANTS: 'delayed-participants',
+  HUMAN_APPROVALS: 'human-approvals',
+  AI_RETRIES: 'ai-retries',
+  EXTERNAL_OUTAGES: 'external-outages',
+  RESTART_SCENARIOS: 'restart-scenarios'
+});
+
+export const AI_RESILIENCE_CONSIDERATIONS = Object.freeze({
+  PROVIDER_AVAILABILITY: 'provider-availability',
+  MODEL_SUBSTITUTION: 'model-substitution',
+  CONFIDENCE_EVALUATION: 'confidence-evaluation',
+  HUMAN_ESCALATION: 'human-escalation',
+  TOOL_AVAILABILITY: 'tool-availability',
+  KNOWLEDGE_SOURCE_ACCESSIBILITY: 'knowledge-source-accessibility'
+});
+
+export const OPERATIONAL_CONTINUITY_CAPABILITIES = Object.freeze({
+  MONITORING: 'monitoring',
+  INCIDENT_RESPONSE: 'incident-response',
+  SERVICE_RESTORATION: 'service-restoration',
+  BUSINESS_COMMUNICATION: 'business-communication',
+  RECOVERY_VALIDATION: 'recovery-validation'
+});
+
+export const AVAILABILITY_EVALUATION_FACTORS = Object.freeze({
+  CRITICALITY: 'criticality',
+  RECOVERY_EXPECTATIONS: 'recovery-expectations',
+  OPERATIONAL_IMPACT: 'operational-impact',
+  BUSINESS_PRIORITIES: 'business-priorities'
+});
+
+export const RELIABILITY_OBSERVABILITY_TELEMETRY = Object.freeze({
+  AVAILABILITY: 'availability',
+  LATENCY: 'latency',
+  ERROR_RATES: 'error-rates',
+  RECOVERY_EVENTS: 'recovery-events',
+  RETRY_ACTIVITY: 'retry-activity',
+  DEPENDENCY_STATUS: 'dependency-status',
+  WORKFLOW_PROGRESS: 'workflow-progress'
+});
+
+export const RELIABILITY_SECURITY_CONTROLS = Object.freeze({
+  IDENTITY: 'identity',
+  AUTHENTICATION: 'authentication',
+  AUTHORIZATION: 'authorization',
+  ENCRYPTION: 'encryption',
+  AUDIT_LOGGING: 'audit-logging',
+  GOVERNANCE: 'governance'
+});
+
+export const RELIABILITY_GOVERNANCE_ACTIVITIES = Object.freeze({
+  DEPENDENCY_REVIEWS: 'dependency-reviews',
+  FAILURE_ANALYSIS: 'failure-analysis',
+  RECOVERY_PLANNING: 'recovery-planning',
+  OPERATIONAL_TESTING: 'operational-testing',
+  SERVICE_ASSESSMENTS: 'service-assessments',
+  CONTINUOUS_IMPROVEMENT: 'continuous-improvement'
+});
+
+export const RELIABILITY_RELATIONSHIP_FLOW_STAGES = Object.freeze({
+  APIS: 'APIs',
+  MESSAGING: 'Messaging',
+  WORKFLOWS: 'Workflows',
+  EXTERNAL_INTEGRATION: 'External Integration',
+  AI_INTEGRATION: 'AI Integration',
+  RELIABILITY_RESILIENCE: 'Reliability & Resilience'
+});
+
+export const FUTURE_RELIABILITY_RESILIENCE_DIRECTIONS = Object.freeze({
+  AI_ASSISTED_FAILURE_PREDICTION: 'AI-assisted failure prediction',
+  AUTONOMOUS_RECOVERY_ORCHESTRATION: 'Autonomous recovery orchestration',
+  PREDICTIVE_DEPENDENCY_ANALYSIS: 'Predictive dependency analysis',
+  DYNAMIC_WORKLOAD_REDISTRIBUTION: 'Dynamic workload redistribution',
+  SELF_HEALING_INTEGRATIONS: 'Self-healing integrations',
+  ADAPTIVE_RESILIENCE_POLICIES: 'Adaptive resilience policies',
+  CONTINUOUS_RESILIENCE_VALIDATION: 'Continuous resilience validation',
+  INTELLIGENT_SERVICE_SUBSTITUTION: 'Intelligent service substitution'
 });

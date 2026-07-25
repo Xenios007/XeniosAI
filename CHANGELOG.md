@@ -1443,3 +1443,20 @@ Version: 0.79.0
 
 Status: Integration Architecture
 Version: 0.80.0
+
+---
+
+## [0.81.0] - ARCH-009 Reliability & Resilience
+
+### Added
+- Reliability and resilience objective, model, principle, failure scenario, degradation, dependency control, failure category, recovery, retry, timeout, dependency, workflow resilience, AI resilience, operational continuity, availability, observability, security, governance, relationship flow, future direction, and error-code constants.
+- Immutable contract for reliability and resilience profiles.
+- Reliability & Resilience descriptor for documented metadata, reliability validation, and architecture assertion.
+- Dependency-injection registration through `addIntegrationArchitecture`.
+- Unit tests for reliability objectives, model, failure management, recovery, retry, timeout, dependency resilience, workflow resilience, AI resilience, continuity, availability, observability, security, governance, future directions, invalid metadata, and DI access.
+
+### Established
+- Reliability and resilience governance without implementing resiliency frameworks, infrastructure products, cloud services, monitoring tools, implementation mechanisms, runtime retry execution, or recovery orchestration.
+
+Status: Integration Architecture
+Version: 0.81.0

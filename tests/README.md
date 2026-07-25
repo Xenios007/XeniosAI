@@ -136,5 +136,6 @@ The repository currently includes automated unit tests for:
 - `ARCH-009-06 External System Integration` in `tests/integration-architecture/`
 - `ARCH-009-07 AI Integration Architecture` in `tests/integration-architecture/`
 - `ARCH-009-08 Integration Governance` in `tests/integration-architecture/`
+- `ARCH-009-09 Reliability & Resilience` in `tests/integration-architecture/`
 
 These tests validate reusable platform capabilities and channel-facing behavior without introducing business logic.
