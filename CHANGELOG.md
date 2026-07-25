@@ -1664,3 +1664,20 @@ Version: 0.92.0
 
 Status: Enterprise Operations Architecture
 Version: 0.93.0
+
+---
+
+## [0.94.0] - ARCH-011 Operations Command and Control
+
+### Added
+- Operations command and control objective, principle, control-plane, situation-origin, situation-model, command-level, command-role, command-assignment, declaration, impact, risk, priority, decision, action, guardrail, escalation, communication, timeline, review-cycle, AI support, autonomous-action, multi-tenant, property-coordination, external-coordination, recovery-verification, transition, learning, quality-attribute, architectural-rule, and future-capability constants.
+- Immutable contract for operations command and control profiles.
+- Operations Command and Control descriptor for documented metadata, profile validation, and architecture assertion.
+- Dependency-injection registration through `addEnterpriseOperations`.
+- Unit tests for command and control metadata, validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Operations command and control as a logical, vendor-neutral architecture without mandating a single operations center, organizational team, communication channel, product, centralized execution model, autonomous command authority by default, technical-only recovery, or cross-tenant sensitive information exposure.
+
+Status: Enterprise Operations Architecture
+Version: 0.94.0

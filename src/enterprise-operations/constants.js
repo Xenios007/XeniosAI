@@ -1,7 +1,8 @@
 export const ENTERPRISE_OPERATIONS_ERROR_CODES = Object.freeze({
   ENTERPRISE_OPERATIONS_INVALID: 'ENTERPRISE_OPERATIONS_INVALID',
   ENTERPRISE_OPERATIONS_OVERVIEW_INVALID: 'ENTERPRISE_OPERATIONS_OVERVIEW_INVALID',
-  ENTERPRISE_OPERATING_MODEL_INVALID: 'ENTERPRISE_OPERATING_MODEL_INVALID'
+  ENTERPRISE_OPERATING_MODEL_INVALID: 'ENTERPRISE_OPERATING_MODEL_INVALID',
+  OPERATIONS_COMMAND_CONTROL_INVALID: 'OPERATIONS_COMMAND_CONTROL_INVALID'
 });
 
 export const ENTERPRISE_OPERATIONS_OBJECTIVES = Object.freeze({
@@ -771,4 +772,493 @@ export const FUTURE_OPERATING_MODEL_CAPABILITIES = Object.freeze({
   REAL_TIME_OPERATING_MODEL_SIMULATION: 'real-time-operating-model-simulation',
   SEMANTIC_RESPONSIBILITY_MODELS: 'semantic-responsibility-models',
   SELF_IMPROVING_OPERATING_RHYTHMS: 'self-improving-operating-rhythms'
+});
+
+export const OPERATIONS_COMMAND_CONTROL_OBJECTIVES = Object.freeze({
+  RAPID_ACCURATE_SITUATIONAL_AWARENESS: 'rapid-accurate-situational-awareness',
+  BUSINESS_IMPACT_DRIVEN_PRIORITIZATION: 'business-impact-driven-prioritization',
+  CLEAR_OPERATIONAL_LEADERSHIP: 'clear-operational-leadership',
+  EXPLICIT_DECISION_RIGHTS: 'explicit-decision-rights',
+  COORDINATED_CROSS_DOMAIN_ACTION: 'coordinated-cross-domain-action',
+  SAFE_DELEGATION_AND_BOUNDED_AUTONOMY: 'safe-delegation-and-bounded-autonomy',
+  TIMELY_ESCALATION: 'timely-escalation',
+  CONSISTENT_STAKEHOLDER_COMMUNICATION: 'consistent-stakeholder-communication',
+  CONTROLLED_AUTOMATED_ACTION: 'controlled-automated-action',
+  TENANT_AND_PROPERTY_BOUNDARY_PROTECTION: 'tenant-and-property-boundary-protection',
+  VERIFIED_RECOVERY: 'verified-recovery',
+  COMPLETE_DECISION_AND_ACTION_TRACEABILITY: 'complete-decision-and-action-traceability',
+  CONTINUOUS_OPERATIONAL_LEARNING: 'continuous-operational-learning',
+  SCALABLE_RESPONSE_ACROSS_PROPERTIES: 'scalable-response-across-properties'
+});
+
+export const OPERATIONS_COMMAND_CONTROL_PRINCIPLES = Object.freeze({
+  OUTCOME_ORIENTED_COMMAND: 'outcome-oriented-command',
+  SINGLE_ACCOUNTABLE_COMMAND: 'single-accountable-command',
+  AUTHORITY_PROPORTIONAL_TO_IMPACT: 'authority-proportional-to-impact',
+  SHARED_SITUATIONAL_AWARENESS: 'shared-situational-awareness',
+  FEDERATED_EXECUTION: 'federated-execution',
+  EVIDENCE_BASED_DECISIONS: 'evidence-based-decisions',
+  CONTROLLED_TEMPO: 'controlled-tempo',
+  COMMUNICATION_AS_OPERATIONAL_CAPABILITY: 'communication-as-operational-capability',
+  REPLACEABLE_LEADERSHIP: 'replaceable-leadership'
+});
+
+export const OPERATIONAL_CONTROL_PLANE_STAGES = Object.freeze({
+  OPERATIONAL_EVIDENCE: 'Operational Evidence',
+  SITUATION_MANAGEMENT: 'Situation Management',
+  IMPACT_AND_RISK_ASSESSMENT: 'Impact and Risk Assessment',
+  PRIORITY_AND_COMMAND_ASSIGNMENT: 'Priority and Command Assignment',
+  DECISION_MANAGEMENT: 'Decision Management',
+  COORDINATED_EXECUTION: 'Coordinated Execution',
+  VERIFICATION_AND_COMMUNICATION: 'Verification and Communication',
+  TRANSITION_CLOSURE_AND_LEARNING: 'Transition, Closure, and Learning'
+});
+
+export const OPERATIONAL_SITUATION_ORIGINS = Object.freeze({
+  BUSINESS_OUTCOME_DEVIATION: 'business-outcome-deviation',
+  GUEST_OR_PROPERTY_REPORT: 'guest-or-property-report',
+  SERVICE_DEGRADATION: 'service-degradation',
+  WORKFLOW_EXCEPTION: 'workflow-exception',
+  AI_QUALITY_OR_SAFETY_CONCERN: 'ai-quality-or-safety-concern',
+  INTEGRATION_FAILURE: 'integration-failure',
+  DATA_QUALITY_OR_INTEGRITY_CONCERN: 'data-quality-or-integrity-concern',
+  SECURITY_EVENT: 'security-event',
+  CAPACITY_RISK: 'capacity-risk',
+  DEPLOYMENT_OR_CHANGE: 'deployment-or-change',
+  EXTERNAL_PARTNER_DISRUPTION: 'external-partner-disruption',
+  REGULATORY_OR_ENVIRONMENTAL_CONDITION: 'regulatory-or-environmental-condition',
+  PREDICTIVE_OPERATIONAL_ANALYSIS: 'predictive-operational-analysis'
+});
+
+export const OPERATIONAL_SITUATION_MODEL_FIELDS = Object.freeze({
+  SITUATION_IDENTIFIER: 'situation-identifier',
+  DETECTION_TIME: 'detection-time',
+  CURRENT_STATUS: 'current-status',
+  BUSINESS_IMPACT: 'business-impact',
+  GUEST_IMPACT: 'guest-impact',
+  TENANT_AND_PROPERTY_SCOPE: 'tenant-and-property-scope',
+  AFFECTED_CAPABILITIES: 'affected-capabilities',
+  AFFECTED_SERVICES_AND_DEPENDENCIES: 'affected-services-and-dependencies',
+  SECURITY_AND_COMPLIANCE_IMPLICATIONS: 'security-and-compliance-implications',
+  CURRENT_PRIORITY: 'current-priority',
+  ACCOUNTABLE_OWNER: 'accountable-owner',
+  COMMAND_LEVEL: 'command-level',
+  DECISION_AUTHORITY: 'decision-authority',
+  ACTIVE_PARTICIPANTS: 'active-participants',
+  KNOWN_FACTS: 'known-facts',
+  ASSUMPTIONS_AND_UNCERTAINTIES: 'assumptions-and-uncertainties',
+  ACTIONS_COMPLETED: 'actions-completed',
+  ACTIONS_PLANNED: 'actions-planned',
+  RISKS: 'risks',
+  COMMUNICATION_STATUS: 'communication-status',
+  RECOVERY_CRITERIA: 'recovery-criteria',
+  EVIDENCE_REFERENCES: 'evidence-references',
+  NEXT_ASSESSMENT_TIME: 'next-assessment-time'
+});
+
+export const OPERATIONAL_COMMAND_LEVELS = Object.freeze({
+  LOCAL_CONTROL: 'level-0-local-control',
+  COORDINATED_RESPONSE: 'level-1-coordinated-response',
+  MAJOR_OPERATIONAL_COMMAND: 'level-2-major-operational-command',
+  ENTERPRISE_CRISIS_COMMAND: 'level-3-enterprise-crisis-command'
+});
+
+export const OPERATIONS_COMMAND_ROLES = Object.freeze({
+  COMMAND_OWNER: 'command-owner',
+  SITUATION_MANAGER: 'situation-manager',
+  BUSINESS_IMPACT_LEAD: 'business-impact-lead',
+  TECHNICAL_COORDINATION_LEAD: 'technical-coordination-lead',
+  SECURITY_LEAD: 'security-lead',
+  COMMUNICATIONS_LEAD: 'communications-lead',
+  DOMAIN_OWNERS: 'domain-owners',
+  ACTION_OWNERS: 'action-owners',
+  DECISION_AUTHORITY: 'decision-authority',
+  RECORDER_OR_EVIDENCE_CUSTODIAN: 'recorder-or-evidence-custodian'
+});
+
+export const COMMAND_ASSIGNMENT_FACTORS = Object.freeze({
+  BUSINESS_CRITICALITY: 'business-criticality',
+  SCOPE_OF_IMPACT: 'scope-of-impact',
+  PRIMARY_AFFECTED_CAPABILITY: 'primary-affected-capability',
+  REQUIRED_AUTHORITY: 'required-authority',
+  DOMAIN_EXPERTISE: 'domain-expertise',
+  AVAILABILITY: 'availability',
+  CONFLICT_OF_INTEREST: 'conflict-of-interest',
+  SECURITY_IMPLICATIONS: 'security-implications',
+  TENANT_OR_PROPERTY_CONTEXT: 'tenant-or-property-context',
+  CONTINUITY_OBLIGATIONS: 'continuity-obligations'
+});
+
+export const OPERATIONAL_DECLARATION_STEPS = Object.freeze({
+  CORRELATE_AVAILABLE_EVIDENCE: 'correlate-available-evidence',
+  ESTABLISH_INITIAL_SCOPE: 'establish-initial-scope',
+  ESTIMATE_BUSINESS_AND_OPERATIONAL_IMPACT: 'estimate-business-and-operational-impact',
+  ASSIGN_PROVISIONAL_PRIORITY: 'assign-provisional-priority',
+  ASSIGN_ACCOUNTABLE_OWNER: 'assign-accountable-owner',
+  DETERMINE_COMMAND_LEVEL: 'determine-command-level',
+  INITIATE_APPROPRIATE_COMMUNICATION: 'initiate-appropriate-communication',
+  DEFINE_NEXT_ASSESSMENT_POINT: 'define-next-assessment-point'
+});
+
+export const OPERATIONAL_IMPACT_DIMENSIONS = Object.freeze({
+  GUEST_EXPERIENCE: 'guest-experience',
+  BOOKING_AND_REVENUE: 'booking-and-revenue',
+  PROPERTY_OPERATIONS: 'property-operations',
+  TENANT_OPERATIONS: 'tenant-operations',
+  SHARED_PLATFORM_CAPABILITY: 'shared-platform-capability',
+  SERVICE_AVAILABILITY: 'service-availability',
+  WORKFLOW_COMPLETION: 'workflow-completion',
+  AI_QUALITY_AND_SAFETY: 'ai-quality-and-safety',
+  DATA_INTEGRITY_OR_AVAILABILITY: 'data-integrity-or-availability',
+  INTEGRATION_DELIVERY: 'integration-delivery',
+  SECURITY_EXPOSURE: 'security-exposure',
+  PRIVACY: 'privacy',
+  COMPLIANCE: 'compliance',
+  REPUTATION: 'reputation',
+  GEOGRAPHIC_SCOPE: 'geographic-scope',
+  DURATION: 'duration',
+  RECOVERABILITY: 'recoverability',
+  DEPENDENCY_PROPAGATION: 'dependency-propagation'
+});
+
+export const OPERATIONAL_RISK_FACTORS = Object.freeze({
+  PROBABILITY_OF_WORSENING_IMPACT: 'probability-of-worsening-impact',
+  UNCERTAINTY: 'uncertainty',
+  BLAST_RADIUS: 'blast-radius',
+  TIME_SENSITIVITY: 'time-sensitivity',
+  IRREVERSIBILITY: 'irreversibility',
+  DEPENDENCY_CONCENTRATION: 'dependency-concentration',
+  SECURITY_EXPOSURE: 'security-exposure',
+  DATA_LOSS_POTENTIAL: 'data-loss-potential',
+  AVAILABILITY_OF_ALTERNATIVES: 'availability-of-alternatives',
+  RECOVERY_COMPLEXITY: 'recovery-complexity',
+  AUTOMATION_CONFIDENCE: 'automation-confidence',
+  HUMAN_RESOURCE_CONSTRAINTS: 'human-resource-constraints',
+  EXTERNAL_DEPENDENCY: 'external-dependency',
+  CHANGE_COLLISION: 'change-collision'
+});
+
+export const OPERATIONAL_PRIORITY_USES = Object.freeze({
+  RESPONSE_OBJECTIVE: 'response-objective',
+  COMMAND_ASSIGNMENT: 'command-assignment',
+  RESOURCE_ALLOCATION: 'resource-allocation',
+  COMMUNICATION_FREQUENCY: 'communication-frequency',
+  ESCALATION_TIMING: 'escalation-timing',
+  CHANGE_RESTRICTIONS: 'change-restrictions',
+  RECOVERY_SEQUENCING: 'recovery-sequencing'
+});
+
+export const BUSINESS_SERVICE_PRIORITY_EXAMPLES = Object.freeze({
+  SAFETY_AND_SECURITY: 'safety-and-security',
+  GUEST_ACCESS_AND_ESSENTIAL_COMMUNICATION: 'guest-access-and-essential-communication',
+  ACTIVE_STAY_SUPPORT: 'active-stay-support',
+  BOOKING_INTEGRITY: 'booking-integrity',
+  AVAILABILITY_ACCURACY: 'availability-accuracy',
+  PAYMENT_AND_FINANCIAL_PROTECTION: 'payment-and-financial-protection',
+  PROPERTY_CONTINUITY: 'property-continuity',
+  REGULATORY_OBLIGATIONS: 'regulatory-obligations',
+  REVENUE_OPTIMIZATION: 'revenue-optimization',
+  ANALYTICS_AND_NONCRITICAL_PROCESSING: 'analytics-and-noncritical-processing'
+});
+
+export const OPERATIONAL_DECISION_RECORD_FIELDS = Object.freeze({
+  DECISION_IDENTIFIER: 'decision-identifier',
+  DECISION_STATEMENT: 'decision-statement',
+  DECISION_OWNER: 'decision-owner',
+  AUTHORITY_BASIS: 'authority-basis',
+  TIME: 'time',
+  SITUATION_CONTEXT: 'situation-context',
+  OPTIONS_CONSIDERED: 'options-considered',
+  EVIDENCE_USED: 'evidence-used',
+  RISKS: 'risks',
+  CONSTRAINTS: 'constraints',
+  EXPECTED_OUTCOME: 'expected-outcome',
+  REQUIRED_ACTIONS: 'required-actions',
+  VERIFICATION_CRITERIA: 'verification-criteria',
+  REVERSAL_OR_COMPENSATION_PATH: 'reversal-or-compensation-path',
+  REVIEW_REQUIREMENT: 'review-requirement'
+});
+
+export const OPERATIONAL_DECISION_CLASSES = Object.freeze({
+  PREAUTHORIZED_DECISIONS: 'preauthorized-decisions',
+  DELEGATED_DECISIONS: 'delegated-decisions',
+  COORDINATED_DECISIONS: 'coordinated-decisions',
+  CONTROLLED_DECISIONS: 'controlled-decisions',
+  EMERGENCY_DECISIONS: 'emergency-decisions'
+});
+
+export const OPERATIONAL_ACTION_CONTROL_FIELDS = Object.freeze({
+  ACTION_OWNER: 'action-owner',
+  AUTHORIZED_SCOPE: 'authorized-scope',
+  TARGET: 'target',
+  EXPECTED_OUTCOME: 'expected-outcome',
+  PRECONDITIONS: 'preconditions',
+  RISK: 'risk',
+  DEPENDENCIES: 'dependencies',
+  START_AND_COMPLETION_TIME: 'start-and-completion-time',
+  VERIFICATION_METHOD: 'verification-method',
+  REVERSAL_OR_COMPENSATION: 'reversal-or-compensation',
+  EVIDENCE_PRODUCED: 'evidence-produced'
+});
+
+export const OPERATIONAL_GUARDRAILS = Object.freeze({
+  LEAST_PRIVILEGE: 'least-privilege',
+  TENANT_AND_PROPERTY_ISOLATION: 'tenant-and-property-isolation',
+  ENVIRONMENT_SEPARATION: 'environment-separation',
+  CHANGE_AUTHORIZATION: 'change-authorization',
+  RATE_AND_IMPACT_LIMITS: 'rate-and-impact-limits',
+  SENSITIVE_DATA_PROTECTION: 'sensitive-data-protection',
+  SEGREGATION_OF_DUTIES: 'segregation-of-duties',
+  APPROVED_AUTOMATION_SCOPE: 'approved-automation-scope',
+  REVERSIBILITY_WHERE_PRACTICAL: 'reversibility-where-practical',
+  EVIDENCE_CAPTURE: 'evidence-capture',
+  COMMUNICATION_OBLIGATIONS: 'communication-obligations',
+  STOP_CONDITIONS: 'stop-conditions'
+});
+
+export const ESCALATION_INCREASES = Object.freeze({
+  EXPERTISE: 'expertise',
+  COORDINATION: 'coordination',
+  AUTHORITY: 'authority',
+  RESOURCES: 'resources',
+  COMMUNICATION: 'communication',
+  BUSINESS_PARTICIPATION: 'business-participation',
+  SECURITY_INVOLVEMENT: 'security-involvement',
+  EXECUTIVE_OVERSIGHT: 'executive-oversight',
+  EXTERNAL_ENGAGEMENT: 'external-engagement'
+});
+
+export const COMMAND_ESCALATION_TRIGGERS = Object.freeze({
+  INCREASED_IMPACT: 'increased-impact',
+  EXPANDING_SCOPE: 'expanding-scope',
+  MISSED_RESPONSE_OR_RECOVERY_OBJECTIVES: 'missed-response-or-recovery-objectives',
+  FAILED_RECOVERY: 'failed-recovery',
+  UNKNOWN_OWNERSHIP: 'unknown-ownership',
+  CONFLICTING_DECISIONS: 'conflicting-decisions',
+  INSUFFICIENT_AUTHORITY: 'insufficient-authority',
+  CROSS_TENANT_EFFECTS: 'cross-tenant-effects',
+  SECURITY_OR_COMPLIANCE_IMPLICATIONS: 'security-or-compliance-implications',
+  LOSS_OF_SITUATIONAL_AWARENESS: 'loss-of-situational-awareness',
+  RESOURCE_EXHAUSTION: 'resource-exhaustion',
+  EXTERNAL_DEPENDENCY_FAILURE: 'external-dependency-failure'
+});
+
+export const COMMAND_DE_ESCALATION_CRITERIA = Object.freeze({
+  IMPACT_CONTAINED: 'impact-contained',
+  RECOVERY_STABLE: 'recovery-stable',
+  COMMAND_COMPLEXITY_REDUCED: 'command-complexity-reduced',
+  REQUIRED_AUTHORITY_DECREASES: 'required-authority-decreases',
+  OUTSTANDING_ACTIONS_FIT_LOWER_COMMAND_LEVEL: 'outstanding-actions-fit-lower-command-level',
+  COMMUNICATION_OBLIGATIONS_SATISFIED: 'communication-obligations-satisfied',
+  OWNERSHIP_ACCEPTED_BY_RECEIVING_LEVEL: 'ownership-accepted-by-receiving-level'
+});
+
+export const OPERATIONAL_COMMUNICATION_CLASSES = Object.freeze({
+  INTERNAL_OPERATIONAL_COORDINATION: 'internal-operational-coordination',
+  LEADERSHIP_UPDATES: 'leadership-updates',
+  TENANT_COMMUNICATION: 'tenant-communication',
+  PROPERTY_COMMUNICATION: 'property-communication',
+  GUEST_COMMUNICATION: 'guest-communication',
+  PARTNER_COMMUNICATION: 'partner-communication',
+  SECURITY_NOTIFICATION: 'security-notification',
+  REGULATORY_COMMUNICATION: 'regulatory-communication',
+  RECOVERY_CONFIRMATION: 'recovery-confirmation',
+  POST_EVENT_REPORTING: 'post-event-reporting'
+});
+
+export const COMMUNICATION_CADENCE_FACTORS = Object.freeze({
+  COMMAND_LEVEL: 'command-level',
+  RATE_OF_CHANGE: 'rate-of-change',
+  BUSINESS_IMPACT: 'business-impact',
+  STAKEHOLDER_NEED: 'stakeholder-need',
+  REGULATORY_OBLIGATIONS: 'regulatory-obligations',
+  RECOVERY_PROGRESS: 'recovery-progress',
+  UNCERTAINTY: 'uncertainty'
+});
+
+export const OPERATIONAL_TIMELINE_EVENTS = Object.freeze({
+  DETECTION: 'detection',
+  DECLARATION: 'declaration',
+  PRIORITY_CHANGES: 'priority-changes',
+  COMMAND_ASSIGNMENTS: 'command-assignments',
+  SIGNIFICANT_EVIDENCE: 'significant-evidence',
+  DECISIONS: 'decisions',
+  ACTIONS: 'actions',
+  ESCALATIONS: 'escalations',
+  COMMUNICATIONS: 'communications',
+  RECOVERY_MILESTONES: 'recovery-milestones',
+  VERIFICATION: 'verification',
+  TRANSITION_AND_CLOSURE: 'transition-and-closure'
+});
+
+export const SITUATION_REVIEW_CYCLE_STAGES = Object.freeze({
+  CURRENT_STATE: 'Current State',
+  NEW_EVIDENCE: 'New Evidence',
+  IMPACT_AND_RISK_REASSESSMENT: 'Impact and Risk Reassessment',
+  DECISION_REVIEW: 'Decision Review',
+  ACTION_COORDINATION: 'Action Coordination',
+  OUTCOME_VERIFICATION: 'Outcome Verification',
+  NEXT_REVIEW: 'Next Review'
+});
+
+export const AI_ASSISTED_COMMAND_SUPPORT_TYPES = Object.freeze({
+  EVIDENCE_CORRELATION: 'evidence-correlation',
+  SITUATION_SUMMARIZATION: 'situation-summarization',
+  IMPACT_INFERENCE: 'impact-inference',
+  DEPENDENCY_MAPPING: 'dependency-mapping',
+  PRIORITY_RECOMMENDATIONS: 'priority-recommendations',
+  OPTION_ANALYSIS: 'option-analysis',
+  ACTION_RECOMMENDATIONS: 'action-recommendations',
+  TIMELINE_MAINTENANCE: 'timeline-maintenance',
+  COMMUNICATION_DRAFTING: 'communication-drafting',
+  RISK_IDENTIFICATION: 'risk-identification',
+  RECOVERY_VERIFICATION: 'recovery-verification',
+  POST_EVENT_ANALYSIS: 'post-event-analysis'
+});
+
+export const AUTONOMOUS_OPERATIONAL_ACTION_CRITERIA = Object.freeze({
+  PREAUTHORIZED: 'preauthorized',
+  LOW_RISK: 'low-risk',
+  BOUNDED_IN_SCOPE: 'bounded-in-scope',
+  TENANT_ISOLATED: 'tenant-isolated',
+  OBSERVABLE: 'observable',
+  REVERSIBLE_OR_COMPENSATABLE: 'reversible-or-compensatable',
+  RATE_LIMITED: 'rate-limited',
+  VERIFIABLE: 'verifiable',
+  ATTRIBUTABLE: 'attributable',
+  SUBJECT_TO_STOP_CONDITIONS: 'subject-to-stop-conditions'
+});
+
+export const AUTONOMOUS_ACTION_ESCALATION_TRIGGERS = Object.freeze({
+  CONFIDENCE_INSUFFICIENT: 'confidence-insufficient',
+  IMPACT_EXPANDS: 'impact-expands',
+  VERIFICATION_FAILS: 'verification-fails',
+  REQUIRED_AUTHORITY_EXCEEDED: 'required-authority-exceeded',
+  SECURITY_CONCERNS_ARISE: 'security-concerns-arise',
+  REPEATED_ATTEMPTS_FAIL: 'repeated-attempts-fail',
+  HUMAN_INTERVENTION_REQUESTED: 'human-intervention-requested'
+});
+
+export const MULTI_TENANT_COMMAND_SCOPES = Object.freeze({
+  SINGLE_PROPERTY_SITUATIONS: 'single-property-situations',
+  MULTI_PROPERTY_WITHIN_ONE_TENANT: 'multi-property-within-one-tenant',
+  SINGLE_TENANT_SHARED_SERVICE_SITUATIONS: 'single-tenant-shared-service-situations',
+  MULTI_TENANT_PLATFORM_SITUATIONS: 'multi-tenant-platform-situations',
+  ENTERPRISE_WIDE_SITUATIONS: 'enterprise-wide-situations',
+  EXTERNAL_ECOSYSTEM_SITUATIONS: 'external-ecosystem-situations'
+});
+
+export const PROPERTY_COORDINATION_CONTEXT = Object.freeze({
+  GUEST_IMPACT: 'guest-impact',
+  FACILITY_CONDITIONS: 'facility-conditions',
+  LOCAL_STAFFING: 'local-staffing',
+  LOCAL_REGULATIONS: 'local-regulations',
+  PHYSICAL_ACCESS: 'physical-access',
+  LOCAL_COMMUNICATION_CHANNELS: 'local-communication-channels',
+  LOCAL_BUSINESS_PRIORITIES: 'local-business-priorities',
+  AVAILABLE_MANUAL_ALTERNATIVES: 'available-manual-alternatives'
+});
+
+export const EXTERNAL_COORDINATION_PARTNERS = Object.freeze({
+  PAYMENT_PROVIDERS: 'payment-providers',
+  MESSAGING_PLATFORMS: 'messaging-platforms',
+  ONLINE_TRAVEL_AGENCIES: 'online-travel-agencies',
+  IDENTITY_PROVIDERS: 'identity-providers',
+  AI_PROVIDERS: 'ai-providers',
+  INFRASTRUCTURE_PROVIDERS: 'infrastructure-providers',
+  PROPERTY_SYSTEMS: 'property-systems',
+  REGULATORY_BODIES: 'regulatory-bodies',
+  EMERGENCY_SERVICES: 'emergency-services'
+});
+
+export const RECOVERY_VERIFICATION_DIMENSIONS = Object.freeze({
+  BUSINESS_OUTCOME_RESTORATION: 'business-outcome-restoration',
+  GUEST_JOURNEY_COMPLETION: 'guest-journey-completion',
+  PROPERTY_OPERATION_RESTORATION: 'property-operation-restoration',
+  SERVICE_HEALTH: 'service-health',
+  WORKFLOW_COMPLETION: 'workflow-completion',
+  AI_QUALITY_AND_SAFETY: 'ai-quality-and-safety',
+  DATA_CONSISTENCY: 'data-consistency',
+  INTEGRATION_DELIVERY: 'integration-delivery',
+  SECURITY_POSTURE: 'security-posture',
+  CAPACITY_STABILITY: 'capacity-stability',
+  ABSENCE_OF_HIDDEN_DEGRADATION: 'absence-of-hidden-degradation',
+  STAKEHOLDER_CONFIRMATION: 'stakeholder-confirmation'
+});
+
+export const OPERATIONAL_TRANSITION_CRITERIA = Object.freeze({
+  IMMEDIATE_IMPACT_RESOLVED_OR_ACCEPTED: 'immediate-impact-resolved-or-accepted',
+  RECOVERY_VERIFIED: 'recovery-verified',
+  RESIDUAL_RISK_HAS_OWNER: 'residual-risk-has-owner',
+  TEMPORARY_CONTROLS_DOCUMENTED: 'temporary-controls-documented',
+  OUTSTANDING_WORK_TRANSFERRED: 'outstanding-work-transferred',
+  STAKEHOLDERS_INFORMED: 'stakeholders-informed',
+  EVIDENCE_PRESERVED: 'evidence-preserved',
+  REVIEW_OBLIGATIONS_SCHEDULED: 'review-obligations-scheduled'
+});
+
+export const POST_EVENT_LEARNING_AREAS = Object.freeze({
+  DETECTION: 'detection',
+  SITUATIONAL_AWARENESS: 'situational-awareness',
+  OWNERSHIP: 'ownership',
+  DECISION_QUALITY: 'decision-quality',
+  RESPONSE_TIMING: 'response-timing',
+  COMMUNICATION: 'communication',
+  AUTOMATION: 'automation',
+  DEPENDENCIES: 'dependencies',
+  RECOVERY: 'recovery',
+  BUSINESS_CONTINUITY: 'business-continuity',
+  ARCHITECTURE: 'architecture',
+  POLICIES: 'policies',
+  DOCUMENTATION: 'documentation',
+  TRAINING: 'training',
+  CAPACITY: 'capacity'
+});
+
+export const COMMAND_CONTROL_QUALITY_ATTRIBUTES = Object.freeze({
+  RESPONSIVENESS: 'responsiveness',
+  ACCOUNTABILITY: 'accountability',
+  COORDINATION: 'coordination',
+  RELIABILITY: 'reliability',
+  RESILIENCE: 'resilience',
+  TRACEABILITY: 'traceability',
+  EXPLAINABILITY: 'explainability',
+  SECURITY: 'security',
+  SCALABILITY: 'scalability',
+  ADAPTABILITY: 'adaptability',
+  BUSINESS_CONTINUITY: 'business-continuity',
+  STAKEHOLDER_TRUST: 'stakeholder-trust'
+});
+
+export const COMMAND_CONTROL_ARCHITECTURAL_RULES = Object.freeze({
+  DEFINE_ACCOUNTABLE_COMMAND_OWNER: 'define-accountable-command-owner',
+  PRIORITIZE_BUSINESS_AND_GUEST_OUTCOMES: 'prioritize-business-and-guest-outcomes',
+  MAINTAIN_SHARED_SITUATIONAL_AWARENESS: 'maintain-shared-situational-awareness',
+  MAKE_DECISION_AUTHORITY_EXPLICIT: 'make-decision-authority-explicit',
+  COORDINATE_FEDERATED_EXECUTION: 'coordinate-federated-execution',
+  RECORD_MATERIAL_DECISIONS_AND_ACTIONS: 'record-material-decisions-and-actions',
+  PRESERVE_TENANT_AND_PROPERTY_ISOLATION: 'preserve-tenant-and-property-isolation',
+  KEEP_GUARDRAILS_ACTIVE_DURING_URGENCY: 'keep-guardrails-active-during-urgency',
+  SUPPORT_ESCALATION_AND_DE_ESCALATION: 'support-escalation-and-de-escalation',
+  TREAT_COMMUNICATION_AS_OPERATIONAL_CAPABILITY: 'treat-communication-as-operational-capability',
+  BOUND_AND_GOVERN_AI_AND_AUTOMATION: 'bound-and-govern-ai-and-automation',
+  VERIFY_RECOVERY_WITH_BUSINESS_AND_TECHNICAL_EVIDENCE: 'verify-recovery-with-business-and-technical-evidence',
+  PRESERVE_AUTHORITATIVE_OPERATIONAL_TIMELINE: 'preserve-authoritative-operational-timeline',
+  TRANSFER_RESIDUAL_WORK_BEFORE_CLOSURE: 'transfer-residual-work-before-closure',
+  CONVERT_OPERATIONAL_EXPERIENCE_INTO_IMPROVEMENT: 'convert-operational-experience-into-improvement',
+  REMAIN_VENDOR_NEUTRAL_AND_TECHNOLOGY_INDEPENDENT: 'remain-vendor-neutral-and-technology-independent'
+});
+
+export const FUTURE_COMMAND_CONTROL_CAPABILITIES = Object.freeze({
+  PREDICTIVE_SITUATION_FORMATION: 'predictive-situation-formation',
+  AI_ASSISTED_INCIDENT_COMMAND: 'ai-assisted-incident-command',
+  DYNAMIC_COMMAND_STRUCTURES: 'dynamic-command-structures',
+  AUTOMATED_DEPENDENCY_AWARE_COORDINATION: 'automated-dependency-aware-coordination',
+  OPERATIONAL_DIGITAL_TWINS: 'operational-digital-twins',
+  BUSINESS_IMPACT_SIMULATION: 'business-impact-simulation',
+  POLICY_DRIVEN_AUTONOMOUS_RESPONSE: 'policy-driven-autonomous-response',
+  CROSS_PROPERTY_RESPONSE_OPTIMIZATION: 'cross-property-response-optimization',
+  SEMANTIC_OPERATIONAL_TIMELINES: 'semantic-operational-timelines',
+  ADAPTIVE_COMMUNICATION: 'adaptive-communication',
+  FEDERATED_CROSS_ENTERPRISE_COMMAND: 'federated-cross-enterprise-command'
 });

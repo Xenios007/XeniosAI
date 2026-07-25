@@ -101,7 +101,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-011 Enterprise Operations`
 - Completed: `ARCH-011-01 Enterprise Operations Overview`
 - Completed: `ARCH-011-02 Operating Model`
-- Next: `ARCH-011-03 Operations Command and Control`
+- Completed: `ARCH-011-03 Operations Command and Control`
+- Next: `ARCH-011-04 Service Operations`
 
 ## Notes
 
