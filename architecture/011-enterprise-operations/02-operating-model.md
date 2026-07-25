@@ -538,7 +538,7 @@ Automation authority must be constrained by:
 * Identity
 * Permission
 * Risk
-* confidence
+* Confidence
 * tenant and property boundaries
 * reversibility
 * rate and impact limits
