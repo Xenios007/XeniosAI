@@ -1,6 +1,7 @@
 export {
   AGENT_COLLABORATION_OBSERVABILITY_INTERACTIONS,
   AGENT_OBSERVABILITY_INFORMATION,
+  AI_ASSISTED_OBSERVABILITY_CAPABILITIES,
   AI_ACCOUNTABILITY_DISTINCTIONS,
   AI_SECURITY_OBSERVABILITY_ACTIVITIES,
   API_OBSERVABILITY_CHARACTERISTICS,
@@ -20,6 +21,7 @@ export {
   AI_OBSERVABILITY_RELATIONSHIP_STAGES,
   AI_PERFORMANCE_OBSERVABILITY_CHARACTERISTICS,
   AI_TOOL_OBSERVABILITY_ACTIVITIES,
+  AUTONOMOUS_OPERATIONAL_INTELLIGENCE_CAPABILITIES,
   BUSINESS_CAPABILITY_EVIDENCE_TYPES,
   BUSINESS_CAPABILITY_EXAMPLES,
   BUSINESS_CONTEXT_ELEMENTS,
@@ -37,6 +39,8 @@ export {
   BUSINESS_OUTCOME_EXAMPLES,
   BUSINESS_PROCESS_EXAMPLES,
   CUSTOMER_JOURNEY_OBSERVABILITY_STAGES,
+  CROSS_ENTERPRISE_OBSERVABILITY_SCOPES,
+  ENTERPRISE_DIGITAL_TWIN_APPLICATIONS,
   ENTERPRISE_VISIBILITY_ELEMENTS,
   EVENT_OBSERVABILITY_LIFECYCLE_STAGES,
   EXTERNAL_INTEGRATION_OBSERVABILITY_TYPES,
@@ -44,9 +48,21 @@ export {
   FUTURE_BUSINESS_OBSERVABILITY_CAPABILITIES,
   FUTURE_INTEGRATION_OBSERVABILITY_CAPABILITIES,
   FUTURE_OBSERVABILITY_GOVERNANCE_CAPABILITIES,
+  FUTURE_OBSERVABILITY_ARCHITECTURAL_RULES,
+  FUTURE_OBSERVABILITY_ARCHITECTURAL_INDEPENDENCE_FACTORS,
+  FUTURE_OBSERVABILITY_BUSINESS_VALUE_IMPROVEMENTS,
   FUTURE_SECURITY_OBSERVABILITY_CAPABILITIES,
   FUTURE_OBSERVABILITY_CAPABILITIES,
+  FUTURE_OBSERVABILITY_ENTERPRISE_LEARNING_AREAS,
+  FUTURE_OBSERVABILITY_EVOLUTION_MODEL_STAGES,
+  FUTURE_OBSERVABILITY_EVOLUTION_OBJECTIVES,
+  FUTURE_OBSERVABILITY_EVOLUTION_PRINCIPLES,
+  FUTURE_OBSERVABILITY_GOVERNANCE_EVOLUTION_CAPABILITIES,
+  FUTURE_OBSERVABILITY_INCREMENTAL_EVOLUTION_ENABLERS,
+  FUTURE_OBSERVABILITY_INNOVATION_AREAS,
   FUTURE_OBSERVABILITY_PRINCIPLE_CAPABILITIES,
+  FUTURE_OBSERVABILITY_RELATIONSHIP_STAGES,
+  FUTURE_OBSERVABILITY_VISION_CHARACTERISTICS,
   OBSERVABILITY_ARCHITECTURE_ERROR_CODES,
   OBSERVABILITY_CONSISTENCY_AREAS,
   OBSERVABILITY_CORRELATION_TARGETS,
@@ -97,6 +113,7 @@ export {
   OPERATIONAL_PERFORMANCE_EVIDENCE_TYPES,
   OPERATIONAL_RELIABILITY_OBSERVATIONS,
   OPERATIONAL_VISIBILITY_DOMAINS,
+  PREDICTIVE_ENTERPRISE_INTELLIGENCE_CAPABILITIES,
   DISTRIBUTED_DIAGNOSTIC_CAPABILITIES,
   FUTURE_OPERATIONAL_OBSERVABILITY_CAPABILITIES,
   FUTURE_SERVICE_OBSERVABILITY_CAPABILITIES,
@@ -161,6 +178,7 @@ export { AiObservabilityProfile } from './contracts/ai-observability-profile.js'
 export { AiOperationalEvidence } from './contracts/ai-operational-evidence.js';
 export { BusinessObservabilityProfile } from './contracts/business-observability-profile.js';
 export { BusinessOperationalEvidence } from './contracts/business-operational-evidence.js';
+export { FutureObservabilityEvolutionProfile } from './contracts/future-observability-evolution-profile.js';
 export { GovernedObservabilityEvidence } from './contracts/governed-observability-evidence.js';
 export { IntegrationObservabilityProfile } from './contracts/integration-observability-profile.js';
 export { IntegrationOperationalEvidence } from './contracts/integration-operational-evidence.js';
@@ -178,6 +196,7 @@ export { SecurityOperationalEvidence } from './contracts/security-operational-ev
 export { TelemetrySource } from './contracts/telemetry-source.js';
 export { AiObservabilityDescriptor } from './ai/ai-observability-descriptor.js';
 export { BusinessObservabilityDescriptor } from './business/business-observability-descriptor.js';
+export { FutureObservabilityEvolutionDescriptor } from './future/future-observability-evolution-descriptor.js';
 export { IntegrationObservabilityDescriptor } from './integration/integration-observability-descriptor.js';
 export { ObservabilityGovernanceDescriptor } from './governance/observability-governance-descriptor.js';
 export { ObservabilityOverviewDescriptor } from './overview/observability-overview-descriptor.js';
