@@ -98,10 +98,12 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-010-08 Operational Observability`
 - Completed: `ARCH-010-09 Observability Governance`
 - Completed: `ARCH-010-10 Future Observability Evolution`
-- Next: None - all documented architecture modules in `/architecture` are implemented.
+- Completed: `ARCH-011 Enterprise Operations`
+- Next: `ARCH-011-01 Enterprise Operations Overview`
 
 ## Notes
 
 - Work proceeds strictly in architectural order.
 - Only one architecture module is implemented per session.
 - Missing ADR references should be reported but do not block implementation unless the architecture becomes impossible to realize.
+- `ARCH-011` chapter files are listed in `architecture/011-enterprise-operations/README.md` but are not present locally yet.

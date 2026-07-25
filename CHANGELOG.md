@@ -1613,3 +1613,20 @@ Version: 0.89.0
 
 Status: Observability Architecture
 Version: 0.90.0
+
+---
+
+## [0.91.0] - ARCH-011 Enterprise Operations
+
+### Added
+- Enterprise operations objective, principle, domain, operational control loop, command and control capability, relationship flow, planned chapter, expected outcome, scope exclusion, and error-code constants.
+- Immutable contracts for enterprise operations profiles and enterprise operations validation results.
+- Enterprise Operations descriptor for documented root ARCH-011 metadata, profile validation, and architecture assertion.
+- Dependency-injection registration through `addEnterpriseOperations`.
+- Unit tests for enterprise operations objectives, principles, domains, control loop, command and control, profile validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Enterprise operations implementation from the root ARCH-011 README without implementing service-management products, orchestration platforms, monitoring vendors, ticketing systems, deployment tools, infrastructure providers, organizational charts, implementation runbooks, or property-specific operating procedures.
+
+Status: Enterprise Operations Architecture
+Version: 0.91.0
