@@ -1,0 +1,28 @@
+flowchart TD
+    A["Enterprise objectives and architecture"] --> B["Business and guest outcomes"]
+    B --> C["Enterprise operating model"]
+
+    C --> D["Business and property operations"]
+    C --> E["Platform and service operations"]
+    C --> F["AI, workflow, integration, and data operations"]
+    C --> G["Security and continuity operations"]
+
+    D --> H["Operational command and control"]
+    E --> H
+    F --> H
+    G --> H
+
+    H --> I["Governed decisions and actions"]
+    I --> J["Services, agents, workflows, integrations, and platform"]
+    J --> K["Operational evidence and outcomes"]
+
+    K --> L["Assurance, learning, and improvement"]
+    L --> A
+
+    M["Policies, authority, service commitments, and controls"] --> C
+    M --> H
+    M --> I
+
+    N["Tenants and properties"] --> B
+    N --> D
+    I --> N
