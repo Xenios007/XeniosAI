@@ -1,0 +1,28 @@
+flowchart TD
+    A["Identify critical business and guest outcomes"] --> B["Assess disruption impact over time"]
+    B --> C["Define tolerances, minimum service, and recovery objectives"]
+    C --> D["Design resilience, continuity, recovery, and provider strategies"]
+    D --> E["Prepare plans, people, data, capacity, properties, and alternatives"]
+    E --> F["Exercise and verify readiness"]
+
+    F --> G{"Disruption threatens normal operation?"}
+    G -- "No" --> H["Maintain readiness and continuous improvement"]
+    H --> A
+
+    G -- "Yes" --> I["Declare scope, authority, and continuity mode"]
+    I --> J["Contain impact and protect security, data, tenants, and properties"]
+    J --> K["Sustain minimum business service through degraded or alternate operation"]
+    K --> L["Recover capabilities in business priority and dependency order"]
+
+    L --> M{"Recovery objectives and business outcomes verified?"}
+    M -- "No" --> N["Reassess, escalate, allocate capacity, or change recovery strategy"]
+    N --> K
+
+    M -- "Yes" --> O["Process backlog and reconcile alternate activity"]
+    O --> P["Return progressively to normal operation"]
+    P --> Q{"Stable, secure, and fully reconciled?"}
+
+    Q -- "No" --> N
+    Q -- "Yes" --> R["Close continuity command and communicate restoration"]
+    R --> S["Review, learn, and improve resilience"]
+    S --> A
