@@ -1562,3 +1562,20 @@ Version: 0.86.0
 
 Status: Observability Architecture
 Version: 0.87.0
+
+---
+
+## [0.88.0] - ARCH-010 Operational Observability
+
+### Added
+- Operational observability objective, model, principle, visibility domain, proactive capability, correlation domain, improvement driver, health indicator, performance evidence, capacity, reliability, incident, diagnostic, operational evidence, governance, quality attribute, relationship flow, architectural rule, future capability, and error-code constants.
+- Immutable contracts for operational observability profiles and operational observability evidence.
+- Operational Observability descriptor for documented metadata, business-aligned profile validation, operational evidence validation, and architecture assertion.
+- Dependency-injection registration through `addObservabilityArchitecture`.
+- Unit tests for operational observability objectives, model, operational metadata, profile validation, evidence validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Operational observability governance without implementing monitoring products, infrastructure tooling, cloud platforms, analytics solutions, alerting systems, implementation technologies, or vendor-specific operations telemetry.
+
+Status: Observability Architecture
+Version: 0.88.0

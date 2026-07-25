@@ -3,6 +3,7 @@ import { AiObservabilityDescriptor } from './ai/ai-observability-descriptor.js';
 import { BusinessObservabilityDescriptor } from './business/business-observability-descriptor.js';
 import { IntegrationObservabilityDescriptor } from './integration/integration-observability-descriptor.js';
 import { ObservabilityOverviewDescriptor } from './overview/observability-overview-descriptor.js';
+import { OperationalObservabilityDescriptor } from './operational/operational-observability-descriptor.js';
 import { ObservabilityPrinciplesDescriptor } from './principles/observability-principles-descriptor.js';
 import { SecurityObservabilityDescriptor } from './security/security-observability-descriptor.js';
 import { ServiceObservabilityDescriptor } from './service/service-observability-descriptor.js';
@@ -19,6 +20,7 @@ export function addObservabilityArchitecture(services) {
   services.registerSingleton('AiObservabilityDescriptor', () => new AiObservabilityDescriptor());
   services.registerSingleton('IntegrationObservabilityDescriptor', () => new IntegrationObservabilityDescriptor());
   services.registerSingleton('SecurityObservabilityDescriptor', () => new SecurityObservabilityDescriptor());
+  services.registerSingleton('OperationalObservabilityDescriptor', () => new OperationalObservabilityDescriptor());
 
   return services;
 }

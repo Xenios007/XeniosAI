@@ -95,7 +95,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-010-05 AI Observability`
 - Completed: `ARCH-010-06 Integration Observability`
 - Completed: `ARCH-010-07 Security Observability`
-- Next: `ARCH-010-08 Operational Observability`
+- Completed: `ARCH-010-08 Operational Observability`
+- Next: `ARCH-010-09 Observability Governance`
 
 ## Notes
 

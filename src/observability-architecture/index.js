@@ -62,8 +62,26 @@ export {
   OBSERVABILITY_PRIVACY_SECURITY_REQUIREMENTS,
   OBSERVABILITY_QUALITY_ATTRIBUTES,
   OBSERVABILITY_RESPONSIBILITY_OWNERS,
+  OPERATIONAL_CAPACITY_OBSERVATIONS,
+  OPERATIONAL_CORRELATION_DOMAINS,
+  OPERATIONAL_DIAGNOSTIC_AREAS,
   OPERATIONAL_EVIDENCE_TYPES,
+  OPERATIONAL_HEALTH_INDICATORS,
+  OPERATIONAL_IMPROVEMENT_DRIVERS,
+  OPERATIONAL_INCIDENT_OBSERVATIONS,
+  OPERATIONAL_OBSERVABILITY_ARCHITECTURAL_RULES,
+  OPERATIONAL_OBSERVABILITY_EVIDENCE_TYPES,
+  OPERATIONAL_OBSERVABILITY_GOVERNANCE_ACTIVITIES,
+  OPERATIONAL_OBSERVABILITY_MODEL_STAGES,
+  OPERATIONAL_OBSERVABILITY_OBJECTIVES,
+  OPERATIONAL_OBSERVABILITY_PRINCIPLES,
+  OPERATIONAL_OBSERVABILITY_QUALITY_ATTRIBUTES,
+  OPERATIONAL_OBSERVABILITY_RELATIONSHIP_STAGES,
+  OPERATIONAL_PERFORMANCE_EVIDENCE_TYPES,
+  OPERATIONAL_RELIABILITY_OBSERVATIONS,
+  OPERATIONAL_VISIBILITY_DOMAINS,
   DISTRIBUTED_DIAGNOSTIC_CAPABILITIES,
+  FUTURE_OPERATIONAL_OBSERVABILITY_CAPABILITIES,
   FUTURE_SERVICE_OBSERVABILITY_CAPABILITIES,
   HUMAN_OVERSIGHT_ACTIVITIES,
   INTEGRATION_BUSINESS_COLLABORATION_TYPES,
@@ -116,6 +134,7 @@ export {
   SECURITY_OPERATIONAL_EVIDENCE_TYPES,
   SECURITY_RISK_VISIBILITY_TYPES,
   SECURITY_VISIBILITY_AREAS,
+  PROACTIVE_OPERATION_CAPABILITIES,
   ZERO_TRUST_OBSERVABILITY_ACTIVITIES,
   WORKFLOW_OBSERVABILITY_TYPES
 } from './constants.js';
@@ -129,6 +148,8 @@ export { ObservabilityDomain } from './contracts/observability-domain.js';
 export { ObservabilityPrinciple } from './contracts/observability-principle.js';
 export { ObservabilityResponsibility } from './contracts/observability-responsibility.js';
 export { ObservabilityValidationResult } from './contracts/observability-validation-result.js';
+export { OperationalObservabilityEvidence } from './contracts/operational-observability-evidence.js';
+export { OperationalObservabilityProfile } from './contracts/operational-observability-profile.js';
 export { ServiceObservabilityProfile } from './contracts/service-observability-profile.js';
 export { ServiceOperationalEvidence } from './contracts/service-operational-evidence.js';
 export { SecurityObservabilityProfile } from './contracts/security-observability-profile.js';
@@ -138,6 +159,7 @@ export { AiObservabilityDescriptor } from './ai/ai-observability-descriptor.js';
 export { BusinessObservabilityDescriptor } from './business/business-observability-descriptor.js';
 export { IntegrationObservabilityDescriptor } from './integration/integration-observability-descriptor.js';
 export { ObservabilityOverviewDescriptor } from './overview/observability-overview-descriptor.js';
+export { OperationalObservabilityDescriptor } from './operational/operational-observability-descriptor.js';
 export { ObservabilityPrinciplesDescriptor } from './principles/observability-principles-descriptor.js';
 export { ServiceObservabilityDescriptor } from './service/service-observability-descriptor.js';
 export { SecurityObservabilityDescriptor } from './security/security-observability-descriptor.js';

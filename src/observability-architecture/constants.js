@@ -10,7 +10,8 @@ export const OBSERVABILITY_ARCHITECTURE_ERROR_CODES = Object.freeze({
   SERVICE_OBSERVABILITY_INVALID: 'SERVICE_OBSERVABILITY_INVALID',
   AI_OBSERVABILITY_INVALID: 'AI_OBSERVABILITY_INVALID',
   INTEGRATION_OBSERVABILITY_INVALID: 'INTEGRATION_OBSERVABILITY_INVALID',
-  SECURITY_OBSERVABILITY_INVALID: 'SECURITY_OBSERVABILITY_INVALID'
+  SECURITY_OBSERVABILITY_INVALID: 'SECURITY_OBSERVABILITY_INVALID',
+  OPERATIONAL_OBSERVABILITY_INVALID: 'OPERATIONAL_OBSERVABILITY_INVALID'
 });
 
 export const OBSERVABILITY_OBJECTIVES = Object.freeze({
@@ -1088,4 +1089,181 @@ export const FUTURE_SECURITY_OBSERVABILITY_CAPABILITIES = Object.freeze({
   INTELLIGENT_POLICY_OPTIMIZATION: 'intelligent-policy-optimization',
   CROSS_ENTERPRISE_TRUST_ANALYTICS: 'cross-enterprise-trust-analytics',
   CONTINUOUS_SECURITY_ASSURANCE: 'continuous-security-assurance'
+});
+
+export const OPERATIONAL_OBSERVABILITY_OBJECTIVES = Object.freeze({
+  OPERATIONAL_TRANSPARENCY: 'operational-transparency',
+  ENTERPRISE_HEALTH_VISIBILITY: 'enterprise-health-visibility',
+  PERFORMANCE_UNDERSTANDING: 'performance-understanding',
+  CAPACITY_AWARENESS: 'capacity-awareness',
+  RELIABILITY_MONITORING: 'reliability-monitoring',
+  INCIDENT_SUPPORT: 'incident-support',
+  OPERATIONAL_OPTIMIZATION: 'operational-optimization',
+  CONTINUOUS_IMPROVEMENT: 'continuous-improvement'
+});
+
+export const OPERATIONAL_OBSERVABILITY_MODEL_STAGES = Object.freeze({
+  ENTERPRISE_OPERATION: 'Enterprise Operation',
+  OPERATIONAL_HEALTH: 'Operational Health',
+  OPERATIONAL_EVIDENCE: 'Operational Evidence',
+  OPERATIONAL_INSIGHT: 'Operational Insight',
+  CONTINUOUS_IMPROVEMENT: 'Continuous Improvement'
+});
+
+export const OPERATIONAL_OBSERVABILITY_PRINCIPLES = Object.freeze({
+  CONTINUOUS_OPERATIONAL_VISIBILITY: 'continuous-operational-visibility',
+  BUSINESS_ALIGNED_OPERATIONS: 'business-aligned-operations',
+  PROACTIVE_OPERATIONS: 'proactive-operations',
+  OPERATIONAL_CORRELATION: 'operational-correlation',
+  CONTINUOUS_IMPROVEMENT: 'continuous-improvement'
+});
+
+export const OPERATIONAL_VISIBILITY_DOMAINS = Object.freeze({
+  SERVICES: 'services',
+  AI_CAPABILITIES: 'ai-capabilities',
+  WORKFLOWS: 'workflows',
+  INTEGRATIONS: 'integrations',
+  INFRASTRUCTURE: 'infrastructure',
+  SECURITY: 'security',
+  BUSINESS_OPERATIONS: 'business-operations'
+});
+
+export const PROACTIVE_OPERATION_CAPABILITIES = Object.freeze({
+  EARLY_ANOMALY_DETECTION: 'early-anomaly-detection',
+  CAPACITY_PLANNING: 'capacity-planning',
+  TREND_ANALYSIS: 'trend-analysis',
+  PREDICTIVE_DIAGNOSTICS: 'predictive-diagnostics',
+  OPERATIONAL_OPTIMIZATION: 'operational-optimization'
+});
+
+export const OPERATIONAL_CORRELATION_DOMAINS = Object.freeze({
+  BUSINESS_TRANSACTIONS: 'business-transactions',
+  SERVICES: 'services',
+  AI_EXECUTION: 'ai-execution',
+  WORKFLOWS: 'workflows',
+  INTEGRATIONS: 'integrations',
+  INFRASTRUCTURE: 'infrastructure'
+});
+
+export const OPERATIONAL_IMPROVEMENT_DRIVERS = Object.freeze({
+  PROCESS_REFINEMENT: 'process-refinement',
+  PERFORMANCE_IMPROVEMENT: 'performance-improvement',
+  RELIABILITY_ENHANCEMENT: 'reliability-enhancement',
+  CAPACITY_OPTIMIZATION: 'capacity-optimization',
+  GOVERNANCE_EVOLUTION: 'governance-evolution'
+});
+
+export const OPERATIONAL_HEALTH_INDICATORS = Object.freeze({
+  AVAILABILITY: 'availability',
+  RESPONSIVENESS: 'responsiveness',
+  RELIABILITY: 'reliability',
+  STABILITY: 'stability',
+  RECOVERY: 'recovery',
+  BUSINESS_CONTINUITY: 'business-continuity'
+});
+
+export const OPERATIONAL_PERFORMANCE_EVIDENCE_TYPES = Object.freeze({
+  PROCESSING_DURATION: 'processing-duration',
+  THROUGHPUT: 'throughput',
+  QUEUE_PROGRESSION: 'queue-progression',
+  RESOURCE_UTILIZATION: 'resource-utilization',
+  WORKFLOW_DURATION: 'workflow-duration',
+  AI_EXECUTION_TIME: 'ai-execution-time'
+});
+
+export const OPERATIONAL_CAPACITY_OBSERVATIONS = Object.freeze({
+  RESOURCE_UTILIZATION: 'resource-utilization',
+  SERVICE_DEMAND: 'service-demand',
+  AI_WORKLOAD: 'ai-workload',
+  WORKFLOW_VOLUME: 'workflow-volume',
+  INTEGRATION_TRAFFIC: 'integration-traffic',
+  BUSINESS_GROWTH_TRENDS: 'business-growth-trends'
+});
+
+export const OPERATIONAL_RELIABILITY_OBSERVATIONS = Object.freeze({
+  RECOVERY_EVENTS: 'recovery-events',
+  SERVICE_DEGRADATION: 'service-degradation',
+  RETRY_BEHAVIOR: 'retry-behavior',
+  DEPENDENCY_HEALTH: 'dependency-health',
+  WORKFLOW_CONTINUITY: 'workflow-continuity',
+  BUSINESS_AVAILABILITY: 'business-availability'
+});
+
+export const OPERATIONAL_INCIDENT_OBSERVATIONS = Object.freeze({
+  DETECTION: 'detection',
+  CLASSIFICATION: 'classification',
+  ESCALATION: 'escalation',
+  RESOLUTION: 'resolution',
+  RECOVERY: 'recovery',
+  LESSONS_LEARNED: 'lessons-learned'
+});
+
+export const OPERATIONAL_DIAGNOSTIC_AREAS = Object.freeze({
+  SERVICE_BEHAVIOR: 'service-behavior',
+  AI_EXECUTION: 'ai-execution',
+  WORKFLOW_PROGRESSION: 'workflow-progression',
+  INTEGRATION_COLLABORATION: 'integration-collaboration',
+  INFRASTRUCTURE_IMPACT: 'infrastructure-impact',
+  BUSINESS_OUTCOMES: 'business-outcomes'
+});
+
+export const OPERATIONAL_OBSERVABILITY_EVIDENCE_TYPES = Object.freeze({
+  HEALTH_INDICATORS: 'health-indicators',
+  PERFORMANCE_MEASUREMENTS: 'performance-measurements',
+  CAPACITY_TRENDS: 'capacity-trends',
+  RECOVERY_EVENTS: 'recovery-events',
+  INCIDENT_RECORDS: 'incident-records',
+  RELIABILITY_METRICS: 'reliability-metrics'
+});
+
+export const OPERATIONAL_OBSERVABILITY_GOVERNANCE_ACTIVITIES = Object.freeze({
+  PERFORMANCE_EVALUATION: 'performance-evaluation',
+  CAPACITY_PLANNING: 'capacity-planning',
+  OPERATIONAL_REVIEW: 'operational-review',
+  SERVICE_MANAGEMENT: 'service-management',
+  RELIABILITY_ASSESSMENT: 'reliability-assessment',
+  CONTINUOUS_IMPROVEMENT: 'continuous-improvement'
+});
+
+export const OPERATIONAL_OBSERVABILITY_QUALITY_ATTRIBUTES = Object.freeze({
+  RELIABILITY: 'reliability',
+  AVAILABILITY: 'availability',
+  SCALABILITY: 'scalability',
+  MAINTAINABILITY: 'maintainability',
+  TRANSPARENCY: 'transparency',
+  RESILIENCE: 'resilience',
+  OPERATIONAL_MATURITY: 'operational-maturity',
+  BUSINESS_CONTINUITY: 'business-continuity'
+});
+
+export const OPERATIONAL_OBSERVABILITY_RELATIONSHIP_STAGES = Object.freeze({
+  BUSINESS_OPERATIONS: 'Business Operations',
+  SERVICES: 'Services',
+  AI: 'AI',
+  INTEGRATIONS: 'Integrations',
+  INFRASTRUCTURE: 'Infrastructure',
+  OPERATIONAL_EVIDENCE: 'Operational Evidence',
+  ENTERPRISE_OPERATIONS: 'Enterprise Operations'
+});
+
+export const OPERATIONAL_OBSERVABILITY_ARCHITECTURAL_RULES = Object.freeze({
+  OBSERVE_ENTERPRISE_OPERATIONS_CONTINUOUSLY: 'observe-enterprise-operations-continuously',
+  PRESERVE_BUSINESS_ALIGNMENT: 'preserve-business-alignment',
+  CORRELATE_OPERATIONAL_EVIDENCE: 'correlate-operational-evidence',
+  SUPPORT_PROACTIVE_OPERATIONS: 'support-proactive-operations',
+  ENABLE_CONTINUOUS_IMPROVEMENT: 'enable-continuous-improvement',
+  STRENGTHEN_OPERATIONAL_RESILIENCE: 'strengthen-operational-resilience',
+  PRESERVE_TECHNOLOGY_INDEPENDENCE: 'preserve-technology-independence',
+  REMAIN_VENDOR_NEUTRAL: 'remain-vendor-neutral'
+});
+
+export const FUTURE_OPERATIONAL_OBSERVABILITY_CAPABILITIES = Object.freeze({
+  AUTONOMOUS_OPERATIONAL_OPTIMIZATION: 'autonomous-operational-optimization',
+  AI_ASSISTED_INCIDENT_DIAGNOSTICS: 'ai-assisted-incident-diagnostics',
+  PREDICTIVE_CAPACITY_MANAGEMENT: 'predictive-capacity-management',
+  INTELLIGENT_WORKLOAD_BALANCING: 'intelligent-workload-balancing',
+  SELF_HEALING_ENTERPRISE_OPERATIONS: 'self-healing-enterprise-operations',
+  ADAPTIVE_OPERATIONAL_ANALYTICS: 'adaptive-operational-analytics',
+  CROSS_ENTERPRISE_OPERATIONAL_INTELLIGENCE: 'cross-enterprise-operational-intelligence',
+  CONTINUOUS_OPERATIONAL_ASSURANCE: 'continuous-operational-assurance'
 });
