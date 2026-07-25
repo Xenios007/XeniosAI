@@ -100,7 +100,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-010-10 Future Observability Evolution`
 - Completed: `ARCH-011 Enterprise Operations`
 - Completed: `ARCH-011-01 Enterprise Operations Overview`
-- Next: `ARCH-011-02 Operating Model`
+- Completed: `ARCH-011-02 Operating Model`
+- Next: `ARCH-011-03 Operations Command and Control`
 
 ## Notes
 

@@ -1647,3 +1647,20 @@ Version: 0.91.0
 
 Status: Enterprise Operations Architecture
 Version: 0.92.0
+
+---
+
+## [0.93.0] - ARCH-011 Enterprise Operating Model
+
+### Added
+- Enterprise operating model objective, principle, federated structure, authority level, authority responsibility, responsibility type, role, engagement model, service commitment, handoff, operating rhythm, forum, communication, automation, AI-assisted operations, multi-tenant scope, partner agreement, readiness, maturity, relationship flow, quality attribute, architectural rule, and future capability constants.
+- Immutable contract for enterprise operating model profiles.
+- Enterprise Operating Model descriptor for documented metadata, operating model profile validation, and architecture assertion.
+- Dependency-injection registration through `addEnterpriseOperations`.
+- Unit tests for operating model metadata, validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Enterprise operating model implementation without introducing organizational charts, staffing arrangements, vendor-specific behavior, operational products, unrestricted automation authority, or anonymous accountability.
+
+Status: Enterprise Operations Architecture
+Version: 0.93.0
