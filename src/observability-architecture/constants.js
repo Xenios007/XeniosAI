@@ -6,7 +6,8 @@ export const OBSERVABILITY_ARCHITECTURE_ERROR_CODES = Object.freeze({
   OBSERVABILITY_RESPONSIBILITY_INVALID: 'OBSERVABILITY_RESPONSIBILITY_INVALID',
   TELEMETRY_SOURCE_INVALID: 'TELEMETRY_SOURCE_INVALID',
   OPERATIONAL_EVIDENCE_INVALID: 'OPERATIONAL_EVIDENCE_INVALID',
-  BUSINESS_OBSERVABILITY_INVALID: 'BUSINESS_OBSERVABILITY_INVALID'
+  BUSINESS_OBSERVABILITY_INVALID: 'BUSINESS_OBSERVABILITY_INVALID',
+  SERVICE_OBSERVABILITY_INVALID: 'SERVICE_OBSERVABILITY_INVALID'
 });
 
 export const OBSERVABILITY_OBJECTIVES = Object.freeze({
@@ -367,4 +368,183 @@ export const FUTURE_BUSINESS_OBSERVABILITY_CAPABILITIES = Object.freeze({
   BUSINESS_DIGITAL_TWINS: 'business-digital-twins',
   ADAPTIVE_OPERATIONAL_INTELLIGENCE: 'adaptive-operational-intelligence',
   CROSS_ENTERPRISE_BUSINESS_VISIBILITY: 'cross-enterprise-business-visibility'
+});
+
+export const SERVICE_OBSERVABILITY_OBJECTIVES = Object.freeze({
+  SERVICE_TRANSPARENCY: 'service-transparency',
+  DISTRIBUTED_VISIBILITY: 'distributed-visibility',
+  OPERATIONAL_DIAGNOSTICS: 'operational-diagnostics',
+  SERVICE_ACCOUNTABILITY: 'service-accountability',
+  PERFORMANCE_UNDERSTANDING: 'performance-understanding',
+  BUSINESS_CORRELATION: 'business-correlation',
+  CONTINUOUS_OPTIMIZATION: 'continuous-optimization',
+  ARCHITECTURAL_SUSTAINABILITY: 'architectural-sustainability'
+});
+
+export const SERVICE_OBSERVABILITY_MODEL_STAGES = Object.freeze({
+  BUSINESS_REQUEST: 'Business Request',
+  SERVICE: 'Service',
+  SERVICE_INTERACTION: 'Service Interaction',
+  BUSINESS_RESPONSE: 'Business Response',
+  OPERATIONAL_EVIDENCE: 'Operational Evidence'
+});
+
+export const SERVICE_OBSERVABILITY_PRINCIPLES = Object.freeze({
+  SERVICE_AUTONOMY: 'service-autonomy',
+  BUSINESS_CORRELATION: 'business-correlation',
+  LIFECYCLE_VISIBILITY: 'lifecycle-visibility',
+  INTERACTION_VISIBILITY: 'interaction-visibility',
+  INDEPENDENT_DIAGNOSTICS: 'independent-diagnostics'
+});
+
+export const SERVICE_OBSERVABILITY_RESPONSIBILITIES = Object.freeze({
+  OPERATIONAL_STATE: 'operational-state',
+  BUSINESS_ACTIVITY: 'business-activity',
+  SERVICE_INTERACTIONS: 'service-interactions',
+  PROCESSING_LIFECYCLE: 'processing-lifecycle',
+  ERROR_CONDITIONS: 'error-conditions',
+  PERFORMANCE_CHARACTERISTICS: 'performance-characteristics'
+});
+
+export const SERVICE_BUSINESS_IDENTIFIERS = Object.freeze({
+  BUSINESS_CAPABILITY: 'business-capability',
+  TRANSACTION_IDENTIFIER: 'transaction-identifier',
+  WORKFLOW_IDENTIFIER: 'workflow-identifier',
+  CUSTOMER_IDENTIFIER: 'customer-identifier',
+  BUSINESS_REQUEST: 'business-request'
+});
+
+export const SERVICE_LIFECYCLE_VISIBILITY_STAGES = Object.freeze({
+  REQUEST: 'Request',
+  VALIDATION: 'Validation',
+  EXECUTION: 'Execution',
+  RESPONSE: 'Response',
+  COMPLETION: 'Completion'
+});
+
+export const SERVICE_INTERACTION_TYPES = Object.freeze({
+  SERVICE_TO_SERVICE_COMMUNICATION: 'service-to-service-communication',
+  API_INVOCATION: 'api-invocation',
+  EVENT_PUBLICATION: 'event-publication',
+  WORKFLOW_PARTICIPATION: 'workflow-participation',
+  AI_COLLABORATION: 'ai-collaboration',
+  EXTERNAL_INTEGRATION: 'external-integration'
+});
+
+export const SERVICE_DIAGNOSTIC_SUPPORT_AREAS = Object.freeze({
+  FAULT_ISOLATION: 'fault-isolation',
+  OPERATIONAL_SUPPORT: 'operational-support',
+  RECOVERY_PLANNING: 'recovery-planning',
+  PERFORMANCE_ANALYSIS: 'performance-analysis'
+});
+
+export const SERVICE_STATE_VISIBILITY_STATES = Object.freeze({
+  STARTING: 'starting',
+  AVAILABLE: 'available',
+  BUSY: 'busy',
+  WAITING: 'waiting',
+  DEGRADED: 'degraded',
+  RECOVERING: 'recovering',
+  STOPPED: 'stopped'
+});
+
+export const SERVICE_PERFORMANCE_CHARACTERISTICS = Object.freeze({
+  PROCESSING_DURATION: 'processing-duration',
+  REQUEST_VOLUME: 'request-volume',
+  RESPONSE_TIME: 'response-time',
+  THROUGHPUT: 'throughput',
+  RESOURCE_UTILIZATION: 'resource-utilization',
+  ERROR_FREQUENCY: 'error-frequency'
+});
+
+export const SERVICE_COLLABORATION_INTERACTIONS = Object.freeze({
+  API_REQUESTS: 'api-requests',
+  EVENT_CONSUMPTION: 'event-consumption',
+  EVENT_PUBLICATION: 'event-publication',
+  WORKFLOW_EXECUTION: 'workflow-execution',
+  AI_SERVICE_INVOCATION: 'ai-service-invocation',
+  EXTERNAL_SERVICE_COMMUNICATION: 'external-service-communication'
+});
+
+export const SERVICE_ERROR_OBSERVABILITY_CHARACTERISTICS = Object.freeze({
+  ERROR_CATEGORY: 'error-category',
+  IMPACT: 'impact',
+  RECOVERY_OUTCOME: 'recovery-outcome',
+  BUSINESS_EFFECT: 'business-effect',
+  DEPENDENCY_INVOLVEMENT: 'dependency-involvement'
+});
+
+export const SERVICE_DEPENDENCY_TYPES = Object.freeze({
+  BUSINESS_SERVICES: 'business-services',
+  AI_SERVICES: 'ai-services',
+  INTEGRATION_SERVICES: 'integration-services',
+  KNOWLEDGE_SERVICES: 'knowledge-services',
+  IDENTITY_SERVICES: 'identity-services',
+  EXTERNAL_SYSTEMS: 'external-systems'
+});
+
+export const DISTRIBUTED_DIAGNOSTIC_CAPABILITIES = Object.freeze({
+  REQUEST_TRACING: 'request-tracing',
+  DEPENDENCY_ANALYSIS: 'dependency-analysis',
+  FAILURE_ISOLATION: 'failure-isolation',
+  WORKFLOW_PROGRESSION: 'workflow-progression',
+  BUSINESS_IMPACT_ASSESSMENT: 'business-impact-assessment'
+});
+
+export const SERVICE_OPERATIONAL_EVIDENCE_TYPES = Object.freeze({
+  SERVICE_LIFECYCLE_EVENTS: 'service-lifecycle-events',
+  BUSINESS_INTERACTIONS: 'business-interactions',
+  PROCESSING_MILESTONES: 'processing-milestones',
+  STATE_TRANSITIONS: 'state-transitions',
+  PERFORMANCE_MEASUREMENTS: 'performance-measurements',
+  DEPENDENCY_INTERACTIONS: 'dependency-interactions'
+});
+
+export const SERVICE_OBSERVABILITY_GOVERNANCE_ACTIVITIES = Object.freeze({
+  SERVICE_ACCOUNTABILITY: 'service-accountability',
+  PERFORMANCE_EVALUATION: 'performance-evaluation',
+  OPERATIONAL_REVIEW: 'operational-review',
+  CAPACITY_PLANNING: 'capacity-planning',
+  CONTINUOUS_IMPROVEMENT: 'continuous-improvement'
+});
+
+export const SERVICE_OBSERVABILITY_QUALITY_ATTRIBUTES = Object.freeze({
+  TRANSPARENCY: 'transparency',
+  TRACEABILITY: 'traceability',
+  RELIABILITY: 'reliability',
+  EXPLAINABILITY: 'explainability',
+  ACCOUNTABILITY: 'accountability',
+  MAINTAINABILITY: 'maintainability',
+  SCALABILITY: 'scalability',
+  OPERATIONAL_EXCELLENCE: 'operational-excellence'
+});
+
+export const SERVICE_OBSERVABILITY_RELATIONSHIP_STAGES = Object.freeze({
+  BUSINESS_CAPABILITY: 'Business Capability',
+  SERVICE: 'Service',
+  SERVICE_INTERACTION: 'Service Interaction',
+  OPERATIONAL_EVIDENCE: 'Operational Evidence',
+  ENTERPRISE_OBSERVABILITY: 'Enterprise Observability'
+});
+
+export const SERVICE_OBSERVABILITY_ARCHITECTURAL_RULES = Object.freeze({
+  PRESERVE_SERVICE_AUTONOMY: 'preserve-service-autonomy',
+  CORRELATE_SERVICE_ACTIVITY_WITH_BUSINESS_CONTEXT: 'correlate-service-activity-with-business-context',
+  OBSERVE_COMPLETE_SERVICE_LIFECYCLES: 'observe-complete-service-lifecycles',
+  EXPOSE_SERVICE_INTERACTIONS: 'expose-service-interactions',
+  SUPPORT_DISTRIBUTED_DIAGNOSTICS: 'support-distributed-diagnostics',
+  ENABLE_OPERATIONAL_GOVERNANCE: 'enable-operational-governance',
+  PRESERVE_TECHNOLOGY_INDEPENDENCE: 'preserve-technology-independence',
+  REMAIN_VENDOR_NEUTRAL: 'remain-vendor-neutral'
+});
+
+export const FUTURE_SERVICE_OBSERVABILITY_CAPABILITIES = Object.freeze({
+  AI_ASSISTED_SERVICE_DIAGNOSTICS: 'ai-assisted-service-diagnostics',
+  PREDICTIVE_SERVICE_HEALTH_ANALYSIS: 'predictive-service-health-analysis',
+  AUTONOMOUS_ANOMALY_DETECTION: 'autonomous-anomaly-detection',
+  SEMANTIC_SERVICE_TELEMETRY: 'semantic-service-telemetry',
+  SELF_OPTIMIZING_SERVICES: 'self-optimizing-services',
+  ADAPTIVE_OBSERVABILITY: 'adaptive-observability',
+  INTELLIGENT_DEPENDENCY_ANALYSIS: 'intelligent-dependency-analysis',
+  AUTONOMOUS_OPERATIONAL_RECOMMENDATIONS: 'autonomous-operational-recommendations'
 });

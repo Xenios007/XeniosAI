@@ -91,7 +91,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-010-01 Observability Overview`
 - Completed: `ARCH-010-02 Observability Principles`
 - Completed: `ARCH-010-03 Business Observability`
-- Next: `ARCH-010-04 Service Observability`
+- Completed: `ARCH-010-04 Service Observability`
+- Next: `ARCH-010-05 AI Observability`
 
 ## Notes
 

@@ -141,5 +141,6 @@ The repository currently includes automated unit tests for:
 - `ARCH-010-01 Observability Overview` in `tests/observability-architecture/`
 - `ARCH-010-02 Observability Principles` in `tests/observability-architecture/`
 - `ARCH-010-03 Business Observability` in `tests/observability-architecture/`
+- `ARCH-010-04 Service Observability` in `tests/observability-architecture/`
 
 These tests validate reusable platform capabilities and channel-facing behavior without introducing business logic.

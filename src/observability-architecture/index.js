@@ -37,7 +37,27 @@ export {
   OBSERVABILITY_PRIVACY_SECURITY_REQUIREMENTS,
   OBSERVABILITY_QUALITY_ATTRIBUTES,
   OBSERVABILITY_RESPONSIBILITY_OWNERS,
-  OPERATIONAL_EVIDENCE_TYPES
+  OPERATIONAL_EVIDENCE_TYPES,
+  DISTRIBUTED_DIAGNOSTIC_CAPABILITIES,
+  FUTURE_SERVICE_OBSERVABILITY_CAPABILITIES,
+  SERVICE_BUSINESS_IDENTIFIERS,
+  SERVICE_COLLABORATION_INTERACTIONS,
+  SERVICE_DEPENDENCY_TYPES,
+  SERVICE_DIAGNOSTIC_SUPPORT_AREAS,
+  SERVICE_ERROR_OBSERVABILITY_CHARACTERISTICS,
+  SERVICE_INTERACTION_TYPES,
+  SERVICE_LIFECYCLE_VISIBILITY_STAGES,
+  SERVICE_OBSERVABILITY_ARCHITECTURAL_RULES,
+  SERVICE_OBSERVABILITY_GOVERNANCE_ACTIVITIES,
+  SERVICE_OBSERVABILITY_MODEL_STAGES,
+  SERVICE_OBSERVABILITY_OBJECTIVES,
+  SERVICE_OBSERVABILITY_PRINCIPLES,
+  SERVICE_OBSERVABILITY_QUALITY_ATTRIBUTES,
+  SERVICE_OBSERVABILITY_RELATIONSHIP_STAGES,
+  SERVICE_OBSERVABILITY_RESPONSIBILITIES,
+  SERVICE_OPERATIONAL_EVIDENCE_TYPES,
+  SERVICE_PERFORMANCE_CHARACTERISTICS,
+  SERVICE_STATE_VISIBILITY_STATES
 } from './constants.js';
 export { BusinessObservabilityProfile } from './contracts/business-observability-profile.js';
 export { BusinessOperationalEvidence } from './contracts/business-operational-evidence.js';
@@ -45,8 +65,11 @@ export { ObservabilityDomain } from './contracts/observability-domain.js';
 export { ObservabilityPrinciple } from './contracts/observability-principle.js';
 export { ObservabilityResponsibility } from './contracts/observability-responsibility.js';
 export { ObservabilityValidationResult } from './contracts/observability-validation-result.js';
+export { ServiceObservabilityProfile } from './contracts/service-observability-profile.js';
+export { ServiceOperationalEvidence } from './contracts/service-operational-evidence.js';
 export { TelemetrySource } from './contracts/telemetry-source.js';
 export { BusinessObservabilityDescriptor } from './business/business-observability-descriptor.js';
 export { ObservabilityOverviewDescriptor } from './overview/observability-overview-descriptor.js';
 export { ObservabilityPrinciplesDescriptor } from './principles/observability-principles-descriptor.js';
+export { ServiceObservabilityDescriptor } from './service/service-observability-descriptor.js';
 export { addObservabilityArchitecture } from './service-registration.js';

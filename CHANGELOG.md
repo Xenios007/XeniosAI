@@ -1494,3 +1494,20 @@ Version: 0.82.0
 
 Status: Observability Architecture
 Version: 0.83.0
+
+---
+
+## [0.84.0] - ARCH-010 Service Observability
+
+### Added
+- Service observability objective, model, principle, responsibility, business identifier, lifecycle, interaction, diagnostic support, state, performance, collaboration, error, dependency, distributed diagnostic, operational evidence, governance, quality attribute, relationship flow, architectural rule, future capability, and error-code constants.
+- Immutable contracts for service observability profiles and service operational evidence.
+- Service Observability descriptor for documented metadata, autonomous service profile validation, operational evidence validation, and architecture assertion.
+- Dependency-injection registration through `addObservabilityArchitecture`.
+- Unit tests for service observability objectives, model, service metadata, profile validation, evidence validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Service observability governance without implementing frameworks, logging libraries, monitoring platforms, telemetry collectors, vendor technologies, runtime instrumentation, or implementation-specific diagnostic behavior.
+
+Status: Observability Architecture
+Version: 0.84.0
