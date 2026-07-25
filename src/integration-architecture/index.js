@@ -31,9 +31,11 @@ export {
   AI_KNOWLEDGE_INTEGRATION_SOURCES,
   AI_SERVICE_INTEGRATION_EXAMPLES,
   AI_TOOL_INTEGRATION_TYPES,
+  AI_DRIVEN_INTEGRATION_EVOLUTION_CAPABILITIES,
   AVAILABILITY_EVALUATION_FACTORS,
   CONTROLLED_DEPENDENCY_TARGETS,
   ENTERPRISE_CONNECTIVITY_TARGETS,
+  ENTERPRISE_ECOSYSTEM_EVOLUTION_CAPABILITIES,
   ENTERPRISE_INTEGRATION_MODEL_STAGES,
   EVENT_CATEGORIES,
   EVENT_LIFECYCLE_STAGES,
@@ -54,9 +56,16 @@ export {
   FUTURE_AI_INTEGRATION_DIRECTIONS,
   FUTURE_API_ARCHITECTURE_DIRECTIONS,
   FUTURE_EXTERNAL_SYSTEM_INTEGRATION_DIRECTIONS,
+  FUTURE_INTEGRATION_ARCHITECTURAL_RULES,
+  FUTURE_INTEGRATION_EVOLUTION_CAPABILITIES,
+  FUTURE_INTEGRATION_EVOLUTION_MODEL_STAGES,
+  FUTURE_INTEGRATION_EVOLUTION_OBJECTIVES,
+  FUTURE_INTEGRATION_EVOLUTION_RELATIONSHIP_FLOW_STAGES,
   FUTURE_INTEGRATION_OVERVIEW_DIRECTIONS,
   FUTURE_INTEGRATION_GOVERNANCE_DIRECTIONS,
   FUTURE_INTEGRATION_PRINCIPLE_DIRECTIONS,
+  FUTURE_INTEGRATION_SUCCESS_CHARACTERISTICS,
+  FUTURE_INTEGRATION_VISION_CHARACTERISTICS,
   FUTURE_MESSAGING_EVENT_DIRECTIONS,
   FUTURE_RELIABILITY_RESILIENCE_DIRECTIONS,
   FUTURE_WORKFLOW_PROCESS_DIRECTIONS,
@@ -74,6 +83,7 @@ export {
   INTEGRATION_DECISION_MODEL_STAGES,
   INTEGRATION_DOMAIN_NAMES,
   INTEGRATION_GOVERNANCE_FOUNDATIONS,
+  INTEGRATION_GOVERNANCE_EVOLUTION_CAPABILITIES,
   INTEGRATION_AI_GOVERNANCE_ACTIVITIES,
   INTEGRATION_COMPLIANCE_ALIGNMENT_AREAS,
   INTEGRATION_CONTRACT_LIFECYCLE_STAGES,
@@ -87,7 +97,9 @@ export {
   INTEGRATION_GOVERNANCE_RELATIONSHIP_FLOW_STAGES,
   INTEGRATION_GOVERNANCE_SECURITY_CONTROLS,
   INTEGRATION_LIFECYCLE_STAGES,
+  INTEGRATION_KNOWLEDGE_EVOLUTION_CAPABILITIES,
   INTEGRATION_OBJECTIVES,
+  INTEGRATION_OPERATIONAL_EVOLUTION_CAPABILITIES,
   INTEGRATION_PARTICIPANT_TYPES,
   INTEGRATION_PRINCIPLE_GOVERNANCE_ACTIVITIES,
   INTEGRATION_PRINCIPLE_NAMES,
@@ -100,6 +112,8 @@ export {
   INTEGRATION_OBSERVABILITY_INFORMATION,
   INTEGRATION_RELATIONSHIP_FLOW_STAGES,
   INTEGRATION_SECURITY_REQUIREMENTS,
+  INTEGRATION_SECURITY_EVOLUTION_CAPABILITIES,
+  INTEGRATION_SUSTAINABILITY_FACTORS,
   INTEGRATION_TREATMENT_PRINCIPLES,
   LOOSE_COUPLING_AVOIDED_ASSUMPTIONS,
   MESSAGE_CATEGORIES,
@@ -131,6 +145,7 @@ export {
   RESILIENT_DEPENDENCY_TYPES,
   RETRY_CONSIDERATIONS,
   STANDARDIZATION_BENEFITS,
+  STRATEGIC_INTEGRATION_EVOLUTION_PRINCIPLES,
   TECHNOLOGY_INDEPENDENCE_TARGETS,
   TIMEOUT_MANAGEMENT_SUPPORTS,
   VERSION_COMPATIBILITY_REQUIREMENTS,
@@ -163,6 +178,7 @@ export {
 export { AiIntegrationProfile } from './contracts/ai-integration-profile.js';
 export { ApiContractProfile } from './contracts/api-contract-profile.js';
 export { ExternalSystemIntegrationProfile } from './contracts/external-system-integration-profile.js';
+export { FutureIntegrationEvolutionProfile } from './contracts/future-integration-evolution-profile.js';
 export { IntegrationArchitectureValidationResult } from './contracts/integration-architecture-validation-result.js';
 export { IntegrationContractBoundary } from './contracts/integration-contract-boundary.js';
 export { IntegrationDecisionModel } from './contracts/integration-decision-model.js';
@@ -176,6 +192,7 @@ export { WorkflowProcessProfile } from './contracts/workflow-process-profile.js'
 export { AiIntegrationArchitectureDescriptor } from './ai/ai-integration-architecture-descriptor.js';
 export { ApiArchitectureDescriptor } from './api/api-architecture-descriptor.js';
 export { ExternalSystemIntegrationDescriptor } from './external/external-system-integration-descriptor.js';
+export { FutureIntegrationEvolutionDescriptor } from './future/future-integration-evolution-descriptor.js';
 export { IntegrationGovernanceDescriptor } from './governance/integration-governance-descriptor.js';
 export { MessagingEventArchitectureDescriptor } from './messaging/messaging-event-architecture-descriptor.js';
 export { IntegrationOverviewDescriptor } from './overview/integration-overview-descriptor.js';

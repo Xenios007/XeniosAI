@@ -2,6 +2,7 @@ import { ServiceCollection } from '../foundation/di/service-collection.js';
 import { ApiArchitectureDescriptor } from './api/api-architecture-descriptor.js';
 import { AiIntegrationArchitectureDescriptor } from './ai/ai-integration-architecture-descriptor.js';
 import { ExternalSystemIntegrationDescriptor } from './external/external-system-integration-descriptor.js';
+import { FutureIntegrationEvolutionDescriptor } from './future/future-integration-evolution-descriptor.js';
 import { IntegrationGovernanceDescriptor } from './governance/integration-governance-descriptor.js';
 import { MessagingEventArchitectureDescriptor } from './messaging/messaging-event-architecture-descriptor.js';
 import { IntegrationOverviewDescriptor } from './overview/integration-overview-descriptor.js';
@@ -23,6 +24,7 @@ export function addIntegrationArchitecture(services) {
   services.registerSingleton('AiIntegrationArchitectureDescriptor', () => new AiIntegrationArchitectureDescriptor());
   services.registerSingleton('IntegrationGovernanceDescriptor', () => new IntegrationGovernanceDescriptor());
   services.registerSingleton('ReliabilityResilienceDescriptor', () => new ReliabilityResilienceDescriptor());
+  services.registerSingleton('FutureIntegrationEvolutionDescriptor', () => new FutureIntegrationEvolutionDescriptor());
 
   return services;
 }
