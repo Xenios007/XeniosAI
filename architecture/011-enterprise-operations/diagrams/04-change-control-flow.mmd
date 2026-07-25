@@ -1,0 +1,32 @@
+flowchart TD
+    A["Business or operational need"] --> B["Record scope, value, owner, and affected boundaries"]
+    B --> C["Classify change type and risk"]
+    C --> D["Assess business, service, security, data, AI, workflow, integration, and capacity impact"]
+
+    D --> E{"Eligible standard change?"}
+    E -- "Yes" --> F["Apply preauthorized change model"]
+    E -- "No" --> G["Obtain proportionate change authority"]
+
+    F --> H["Schedule, communicate, and verify operational readiness"]
+    G --> H
+
+    H --> I{"Ready and recovery path valid?"}
+    I -- "No" --> J["Defer, redesign, or escalate"]
+    J --> D
+
+    I -- "Yes" --> K["Implement or deploy within approved scope"]
+    K --> L{"Stop condition triggered?"}
+
+    L -- "Yes" --> M["Pause, roll back, compensate, or invoke emergency control"]
+    M --> N["Verify recovery and initiate incident review if required"]
+
+    L -- "No" --> O["Verify technical, security, data, and business outcomes"]
+    O --> P{"Verification successful?"}
+
+    P -- "No" --> M
+    P -- "Yes" --> Q["Release progressively and observe"]
+    Q --> R{"Stable across target scope?"}
+
+    R -- "No" --> M
+    R -- "Yes" --> S["Close change and capture evidence"]
+    S --> T["Review outcome and improve change model"]
