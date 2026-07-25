@@ -93,7 +93,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-010-03 Business Observability`
 - Completed: `ARCH-010-04 Service Observability`
 - Completed: `ARCH-010-05 AI Observability`
-- Next: `ARCH-010-06 Integration Observability`
+- Completed: `ARCH-010-06 Integration Observability`
+- Next: `ARCH-010-07 Security Observability`
 
 ## Notes
 

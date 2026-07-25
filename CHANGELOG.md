@@ -1528,3 +1528,20 @@ Version: 0.84.0
 
 Status: Observability Architecture
 Version: 0.85.0
+
+---
+
+## [0.86.0] - ARCH-010 Integration Observability
+
+### Added
+- Integration observability objective, model, principle, collaboration, correlation span, contract visibility, context, API, event lifecycle, workflow, external integration, distributed diagnostic, dependency, operational evidence, governance, quality attribute, relationship flow, architectural rule, future capability, and error-code constants.
+- Immutable contracts for integration observability profiles and integration operational evidence.
+- Integration Observability descriptor for documented metadata, collaboration-first profile validation, operational evidence validation, and architecture assertion.
+- Dependency-injection registration through `addObservabilityArchitecture`.
+- Unit tests for integration observability objectives, model, integration metadata, profile validation, evidence validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Integration observability governance without implementing messaging platforms, API gateways, integration middleware, tracing frameworks, monitoring products, implementation technologies, protocol-level tracing, or vendor-specific observability behavior.
+
+Status: Observability Architecture
+Version: 0.86.0

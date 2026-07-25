@@ -8,7 +8,8 @@ export const OBSERVABILITY_ARCHITECTURE_ERROR_CODES = Object.freeze({
   OPERATIONAL_EVIDENCE_INVALID: 'OPERATIONAL_EVIDENCE_INVALID',
   BUSINESS_OBSERVABILITY_INVALID: 'BUSINESS_OBSERVABILITY_INVALID',
   SERVICE_OBSERVABILITY_INVALID: 'SERVICE_OBSERVABILITY_INVALID',
-  AI_OBSERVABILITY_INVALID: 'AI_OBSERVABILITY_INVALID'
+  AI_OBSERVABILITY_INVALID: 'AI_OBSERVABILITY_INVALID',
+  INTEGRATION_OBSERVABILITY_INVALID: 'INTEGRATION_OBSERVABILITY_INVALID'
 });
 
 export const OBSERVABILITY_OBJECTIVES = Object.freeze({
@@ -728,4 +729,175 @@ export const FUTURE_AI_OBSERVABILITY_CAPABILITIES = Object.freeze({
   ADAPTIVE_OBSERVABILITY: 'adaptive-observability',
   INTELLIGENT_DECISION_VALIDATION: 'intelligent-decision-validation',
   CROSS_ENTERPRISE_AI_TRANSPARENCY: 'cross-enterprise-ai-transparency'
+});
+
+export const INTEGRATION_OBSERVABILITY_OBJECTIVES = Object.freeze({
+  ENTERPRISE_INTERACTION_VISIBILITY: 'enterprise-interaction-visibility',
+  DISTRIBUTED_DIAGNOSTICS: 'distributed-diagnostics',
+  END_TO_END_CORRELATION: 'end-to-end-correlation',
+  WORKFLOW_TRANSPARENCY: 'workflow-transparency',
+  API_VISIBILITY: 'api-visibility',
+  EVENT_TRACEABILITY: 'event-traceability',
+  OPERATIONAL_GOVERNANCE: 'operational-governance',
+  CONTINUOUS_OPTIMIZATION: 'continuous-optimization'
+});
+
+export const INTEGRATION_OBSERVABILITY_MODEL_STAGES = Object.freeze({
+  BUSINESS_REQUEST: 'Business Request',
+  INTEGRATION_CONTRACT: 'Integration Contract',
+  BUSINESS_COLLABORATION: 'Business Collaboration',
+  BUSINESS_OUTCOME: 'Business Outcome',
+  OPERATIONAL_EVIDENCE: 'Operational Evidence'
+});
+
+export const INTEGRATION_OBSERVABILITY_PRINCIPLES = Object.freeze({
+  OBSERVE_BUSINESS_COLLABORATION: 'observe-business-collaboration',
+  END_TO_END_CORRELATION: 'end-to-end-correlation',
+  CONTRACT_CENTRIC_VISIBILITY: 'contract-centric-visibility',
+  PRESERVE_SERVICE_AUTONOMY: 'preserve-service-autonomy',
+  BUSINESS_CONTEXT_PRESERVATION: 'business-context-preservation'
+});
+
+export const INTEGRATION_BUSINESS_COLLABORATION_TYPES = Object.freeze({
+  SERVICE_COOPERATION: 'service-cooperation',
+  WORKFLOW_PROGRESSION: 'workflow-progression',
+  AI_PARTICIPATION: 'ai-participation',
+  EXTERNAL_INTERACTION: 'external-interaction',
+  BUSINESS_COORDINATION: 'business-coordination'
+});
+
+export const INTEGRATION_CORRELATION_SPANS = Object.freeze({
+  BUSINESS_REQUESTS: 'business-requests',
+  APIS: 'apis',
+  EVENTS: 'events',
+  WORKFLOWS: 'workflows',
+  AI_ACTIVITIES: 'ai-activities',
+  EXTERNAL_SYSTEMS: 'external-systems',
+  BUSINESS_OUTCOMES: 'business-outcomes'
+});
+
+export const INTEGRATION_CONTRACT_VISIBILITY_AREAS = Object.freeze({
+  BUSINESS_CAPABILITIES: 'business-capabilities',
+  PUBLISHED_CONTRACTS: 'published-contracts',
+  WORKFLOW_TRANSITIONS: 'workflow-transitions',
+  EVENT_EXCHANGES: 'event-exchanges',
+  SERVICE_INTERACTIONS: 'service-interactions'
+});
+
+export const INTEGRATION_CONTEXT_ELEMENTS = Object.freeze({
+  BUSINESS_CAPABILITY: 'business-capability',
+  WORKFLOW_IDENTIFIER: 'workflow-identifier',
+  TRANSACTION_IDENTIFIER: 'transaction-identifier',
+  CUSTOMER_IDENTIFIER: 'customer-identifier',
+  INTEGRATION_CONTRACT: 'integration-contract'
+});
+
+export const API_OBSERVABILITY_CHARACTERISTICS = Object.freeze({
+  BUSINESS_CAPABILITY_INVOKED: 'business-capability-invoked',
+  REQUEST_LIFECYCLE: 'request-lifecycle',
+  RESPONSE_LIFECYCLE: 'response-lifecycle',
+  BUSINESS_OUTCOME: 'business-outcome',
+  CONSUMER_PARTICIPATION: 'consumer-participation',
+  OPERATIONAL_STATUS: 'operational-status'
+});
+
+export const EVENT_OBSERVABILITY_LIFECYCLE_STAGES = Object.freeze({
+  BUSINESS_EVENT: 'Business Event',
+  PUBLICATION: 'Publication',
+  DISTRIBUTION: 'Distribution',
+  CONSUMPTION: 'Consumption',
+  BUSINESS_EFFECT: 'Business Effect'
+});
+
+export const WORKFLOW_OBSERVABILITY_TYPES = Object.freeze({
+  ACTIVITY_EXECUTION: 'activity-execution',
+  AI_PARTICIPATION: 'ai-participation',
+  HUMAN_APPROVAL: 'human-approval',
+  WAITING_STATES: 'waiting-states',
+  COMPLETION: 'completion',
+  EXCEPTIONS: 'exceptions'
+});
+
+export const EXTERNAL_INTEGRATION_OBSERVABILITY_TYPES = Object.freeze({
+  PARTNER_INTERACTIONS: 'partner-interactions',
+  CLOUD_SERVICES: 'cloud-services',
+  GOVERNMENT_SYSTEMS: 'government-systems',
+  THIRD_PARTY_AI: 'third-party-ai',
+  ENTERPRISE_INTEGRATIONS: 'enterprise-integrations'
+});
+
+export const INTEGRATION_DISTRIBUTED_DIAGNOSTIC_CAPABILITIES = Object.freeze({
+  REQUEST_PROGRESSION: 'request-progression',
+  EVENT_PROPAGATION: 'event-propagation',
+  DEPENDENCY_ANALYSIS: 'dependency-analysis',
+  FAILURE_ISOLATION: 'failure-isolation',
+  BUSINESS_IMPACT_ASSESSMENT: 'business-impact-assessment'
+});
+
+export const INTEGRATION_DEPENDENCY_TYPES = Object.freeze({
+  INTERNAL_SERVICES: 'internal-services',
+  AI_PROVIDERS: 'ai-providers',
+  KNOWLEDGE_SERVICES: 'knowledge-services',
+  EXTERNAL_PLATFORMS: 'external-platforms',
+  IDENTITY_SYSTEMS: 'identity-systems',
+  NOTIFICATION_SERVICES: 'notification-services'
+});
+
+export const INTEGRATION_OPERATIONAL_EVIDENCE_TYPES = Object.freeze({
+  API_INTERACTIONS: 'api-interactions',
+  BUSINESS_EVENTS: 'business-events',
+  WORKFLOW_TRANSITIONS: 'workflow-transitions',
+  SERVICE_COLLABORATION: 'service-collaboration',
+  AI_INTERACTIONS: 'ai-interactions',
+  EXTERNAL_EXCHANGES: 'external-exchanges'
+});
+
+export const INTEGRATION_OBSERVABILITY_GOVERNANCE_ACTIVITIES = Object.freeze({
+  CONTRACT_COMPLIANCE: 'contract-compliance',
+  OPERATIONAL_REVIEW: 'operational-review',
+  PARTNER_ACCOUNTABILITY: 'partner-accountability',
+  LIFECYCLE_VISIBILITY: 'lifecycle-visibility',
+  PERFORMANCE_ANALYSIS: 'performance-analysis',
+  CONTINUOUS_IMPROVEMENT: 'continuous-improvement'
+});
+
+export const INTEGRATION_OBSERVABILITY_QUALITY_ATTRIBUTES = Object.freeze({
+  TRACEABILITY: 'traceability',
+  TRANSPARENCY: 'transparency',
+  RELIABILITY: 'reliability',
+  EXPLAINABILITY: 'explainability',
+  ACCOUNTABILITY: 'accountability',
+  INTEROPERABILITY: 'interoperability',
+  OPERATIONAL_MATURITY: 'operational-maturity',
+  ENTERPRISE_RESILIENCE: 'enterprise-resilience'
+});
+
+export const INTEGRATION_OBSERVABILITY_RELATIONSHIP_STAGES = Object.freeze({
+  BUSINESS_CAPABILITY: 'Business Capability',
+  INTEGRATION_CONTRACT: 'Integration Contract',
+  BUSINESS_COLLABORATION: 'Business Collaboration',
+  OPERATIONAL_EVIDENCE: 'Operational Evidence',
+  ENTERPRISE_INSIGHT: 'Enterprise Insight'
+});
+
+export const INTEGRATION_OBSERVABILITY_ARCHITECTURAL_RULES = Object.freeze({
+  OBSERVE_BUSINESS_COLLABORATION_RATHER_THAN_PROTOCOLS: 'observe-business-collaboration-rather-than-protocols',
+  CORRELATE_INTERACTIONS_END_TO_END: 'correlate-interactions-end-to-end',
+  PRESERVE_BUSINESS_CONTEXT: 'preserve-business-context',
+  RESPECT_SERVICE_AUTONOMY: 'respect-service-autonomy',
+  OBSERVE_WORKFLOWS_APIS_EVENTS_AND_EXTERNAL_INTERACTIONS: 'observe-workflows-apis-events-and-external-interactions',
+  SUPPORT_DISTRIBUTED_DIAGNOSTICS: 'support-distributed-diagnostics',
+  STRENGTHEN_GOVERNANCE: 'strengthen-governance',
+  REMAIN_VENDOR_AND_TECHNOLOGY_NEUTRAL: 'remain-vendor-and-technology-neutral'
+});
+
+export const FUTURE_INTEGRATION_OBSERVABILITY_CAPABILITIES = Object.freeze({
+  AI_ASSISTED_INTERACTION_ANALYSIS: 'ai-assisted-interaction-analysis',
+  SEMANTIC_CORRELATION: 'semantic-correlation',
+  AUTONOMOUS_DEPENDENCY_MAPPING: 'autonomous-dependency-mapping',
+  PREDICTIVE_WORKFLOW_DIAGNOSTICS: 'predictive-workflow-diagnostics',
+  INTELLIGENT_PARTNER_OBSERVABILITY: 'intelligent-partner-observability',
+  CROSS_ENTERPRISE_TRACING: 'cross-enterprise-tracing',
+  ADAPTIVE_OPERATIONAL_INTELLIGENCE: 'adaptive-operational-intelligence',
+  SELF_OPTIMIZING_INTEGRATION_VISIBILITY: 'self-optimizing-integration-visibility'
 });
