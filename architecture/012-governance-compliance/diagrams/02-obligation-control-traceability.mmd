@@ -1,0 +1,20 @@
+flowchart TD
+    A["Authoritative obligation source"] --> B["Qualified interpretation"]
+    B --> C["Applicability by entity, jurisdiction, tenant, property, data, AI use, and time"]
+    C --> D["Normalized compliance requirement"]
+    D --> E["Policy requirement"]
+    E --> F["Technology-neutral control objective"]
+    F --> G["Control implementation"]
+
+    G --> H["Service, data, AI, workflow, integration, supplier, tenant, or property"]
+    H --> I["Evidence with identity, scope, time, and provenance"]
+    I --> J["Assessment and assurance"]
+    J --> K{"Requirement satisfied?"}
+
+    K -- "Yes" --> L["Current compliance posture and attestation"]
+    K -- "No" --> M["Finding, compensating control, exception, or remediation"]
+
+    M --> G
+
+    L -. "Traceability and impact analysis" .-> A
+    M -. "Traceability and impact analysis" .-> A

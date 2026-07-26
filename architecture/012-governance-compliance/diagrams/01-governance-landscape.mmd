@@ -1,0 +1,25 @@
+flowchart TD
+    A["Enterprise purpose, values, and strategy"] --> B["Legal, regulatory, contractual, ethical, and internal obligations"]
+    A --> C["Enterprise objectives and risk appetite"]
+
+    B --> D["Governance operating model"]
+    C --> D
+
+    D --> E["Policies, standards, and decision rights"]
+    D --> F["Enterprise risk management"]
+
+    E --> G["Control objectives and accountable ownership"]
+    F --> G
+
+    G --> H["Services, data, AI, workflows, integrations, suppliers, tenants, and properties"]
+    H --> I["Operational evidence and outcomes"]
+
+    I --> J["Assurance, audit, attestation, and review"]
+    J --> K{"Required outcome demonstrated?"}
+
+    K -- "Yes" --> L["Verified governance and compliance posture"]
+    K -- "No" --> M["Finding, exception, risk decision, or remediation"]
+
+    M --> N["Controlled improvement to policy, controls, architecture, and operations"]
+    L --> N
+    N --> A

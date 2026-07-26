@@ -1,0 +1,28 @@
+flowchart TD
+    A["Define assurance or audit objective"] --> B["Confirm authority, independence, scope, criteria, period, and materiality"]
+    B --> C["Identify obligations, risks, controls, systems, tenants, properties, and suppliers"]
+    C --> D["Collect and validate evidence"]
+    D --> E["Evaluate control design"]
+
+    E --> F{"Design effective?"}
+    F -- "No" --> G["Record design finding"]
+    F -- "Yes" --> H["Test implementation and operating effectiveness"]
+
+    H --> I{"Control operated effectively?"}
+    I -- "No" --> J["Record operating finding"]
+    I -- "Yes" --> K["Form scoped assurance conclusion"]
+
+    G --> L["Discuss observation and obtain management response"]
+    J --> L
+    K --> M["Issue assurance report or attestation"]
+
+    L --> N["Contain risk and define remediation"]
+    N --> O["Implement through controlled change"]
+    O --> P["Retest and verify evidence"]
+
+    P --> Q{"Required outcome achieved?"}
+    Q -- "No" --> N
+    Q -- "Yes" --> R["Authorized finding closure"]
+
+    M --> S["Monitor validity and material change"]
+    R --> S

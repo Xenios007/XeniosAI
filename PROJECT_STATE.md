@@ -36,8 +36,8 @@ Update this file after every successful implementation session.
 ## Implementation Coverage
 
 - Completed through: `ARCH-011-10 Future Operations Evolution`
-- Next documented implementation module: none available locally after `ARCH-011`
-- Reason: `ARCH-012 Governance & Compliance` is referenced by `ARCH-011-10`, but no local `/architecture/012-*` directory exists yet.
+- Next documented implementation module: `ARCH-012-01 Governance & Compliance Overview`
+- Reason: `architecture/012-governance-compliance/01-governance-compliance-overview.md` is available locally.
 
 ## Latest Verification
 
@@ -51,7 +51,7 @@ Update this file after every successful implementation session.
 ## Current Technical Debt
 
 - Pre-existing changelog entries label Observability Overview/Principles as `ARCH-009`, while their source documents are `ARCH-010-01` and `ARCH-010-02`.
-- `ARCH-012` through `ARCH-020` are referenced by `ARCH-011-10` but are not present locally under `/architecture`.
+- `ARCH-013` through `ARCH-020` are referenced by `ARCH-011-10` but are not present locally under `/architecture`.
 
 ## Session Rules
 
@@ -67,4 +67,4 @@ Architecture documents must not be changed during implementation unless explicit
 
 ## Recommended Next Action
 
-Recommended next architecture module: `ARCH-012 Governance & Compliance`.
+Recommended next architecture module: `ARCH-012-01 Governance & Compliance Overview`.
