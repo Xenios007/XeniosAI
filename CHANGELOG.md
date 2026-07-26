@@ -1817,3 +1817,20 @@ Version: 0.101.0
 
 Status: Governance and Compliance Architecture
 Version: 0.102.0
+
+---
+
+## [0.103.0] - ARCH-012 Governance Operating Model
+
+### Added
+- Governance operating model objective, principle, federation scope, governance level, authority, role, responsibility, decision right, decision class, delegated authority, automated authority, forum, charter, assurance, lifecycle, decision record, escalation, emergency governance, rhythm, information, reporting, attestation, tenant, property, supplier, cross-tenant, governance service, effectiveness, maturity, review-trigger, quality-attribute, architectural-rule, and future-capability constants.
+- Immutable contract for governance operating model profiles.
+- Governance Operating Model descriptor for documented metadata, profile validation, and architecture assertion.
+- Dependency-injection registration through `addGovernanceCompliance`.
+- Unit tests for operating-model metadata, validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Federated governance as a technology-neutral and vendor-neutral operating model without prescribing organization charts, legal board structures, committee names, staffing models, or vendor products.
+
+Status: Governance and Compliance Architecture
+Version: 0.103.0

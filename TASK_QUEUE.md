@@ -110,7 +110,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-011-09 Operations Governance`
 - Completed: `ARCH-011-10 Future Operations Evolution`
 - Completed: `ARCH-012-01 Governance & Compliance Overview`
-- Next: `ARCH-012-02 Governance Operating Model`
+- Completed: `ARCH-012-02 Governance Operating Model`
+- Next: `ARCH-012-03 Policy Architecture`
 
 ## Notes
 
