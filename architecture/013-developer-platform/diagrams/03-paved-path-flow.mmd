@@ -1,0 +1,27 @@
+flowchart TD
+    A["Authorized intent and capability type"] --> B["Discover architecture, existing services, and approved paved paths"]
+    B --> C{"Paved path fits the need?"}
+
+    C -- "Yes" --> D["Select paved-path and template versions"]
+    D --> E["Establish identity, ownership, metadata, tenant/property scope, and controls"]
+    E --> F["Create isolated source and development environment"]
+    F --> G["Build, test, evaluate, secure, and produce evidence"]
+    G --> H{"Required outcomes satisfied?"}
+
+    H -- "No" --> I["Remediate or request a scoped exception"]
+    I --> G
+    H -- "Yes" --> J["Review, authorize, release, and deliver progressively"]
+    J --> K["Operate, support, measure, and collect feedback"]
+    K --> L["Improve and version the paved path"]
+    L --> B
+
+    C -- "No" --> M["Describe unsupported need, impact, risk, and mandatory outcomes"]
+    M --> N["Architecture review, ADR, or exception workflow"]
+    N --> O{"Controlled variation authorized?"}
+    O -- "No" --> P["Stop, redesign, or defer"]
+    O -- "Yes" --> Q["Use supported escape path with ownership, evidence, review, and expiration"]
+    Q --> F
+
+    K --> R{"Recurring escape-path demand?"}
+    R -- "Yes" --> L
+    R -- "No" --> K
