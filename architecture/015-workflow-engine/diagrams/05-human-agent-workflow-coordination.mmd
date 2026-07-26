@@ -1,0 +1,67 @@
+flowchart TD
+    Trigger["Authorized Business Intent or Event"]
+    Admission["Admission and Context Binding"]
+    Runtime["Deterministic Workflow Runtime"]
+    State["Durable Execution State"]
+    Select{"Eligible Task Type"}
+
+    subgraph ServicePath["Service Task"]
+        ServiceTask["Versioned Service Command"]
+        Domain["Authoritative Domain Service"]
+        DomainResult["Domain Outcome and Evidence"]
+    end
+
+    subgraph HumanPath["Human Task"]
+        Assign["Authenticated Assignment"]
+        Human["Authorized Human Decision"]
+        HumanResult["Attributable Decision Contract"]
+    end
+
+    subgraph AgentPath["Agent Task"]
+        AgentContract["Bounded Agent Contract"]
+        Agent["ARCH-014 Agent Execution"]
+        AgentResult["Proposed Result, Uncertainty, and Evidence"]
+    end
+
+    Validate["Validate Identity, Authority, Scope, Contract, and Evidence"]
+    Decision{"Result Accepted?"}
+    Advance["Apply Deterministic Transition"]
+    Wait["Wait, Escalate, Retry, or Reconcile"]
+    Outcome["Confirmed Business Outcome"]
+    Audit["Workflow History and Assurance Evidence"]
+
+    Trigger --> Admission
+    Admission --> Runtime
+    Runtime <--> State
+    Runtime --> Select
+
+    Select -- "Service" --> ServiceTask
+    ServiceTask --> Domain
+    Domain --> DomainResult
+    DomainResult --> Validate
+
+    Select -- "Human" --> Assign
+    Assign --> Human
+    Human --> HumanResult
+    HumanResult --> Validate
+
+    Select -- "Agent" --> AgentContract
+    AgentContract --> Agent
+    Agent --> AgentResult
+    AgentResult --> Validate
+
+    Validate --> Decision
+    Decision -- "Yes" --> Advance
+    Advance --> State
+    Advance --> Outcome
+    Decision -- "No or uncertain" --> Wait
+    Wait --> Runtime
+
+    State --> Audit
+    DomainResult --> Audit
+    HumanResult --> Audit
+    AgentResult --> Audit
+
+    Admission -. "Binds tenant and property" .-> Select
+    Runtime -. "Owns process state" .-> Audit
+    Domain -. "Owns business truth" .-> Outcome
