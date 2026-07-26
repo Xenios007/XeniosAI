@@ -1,0 +1,61 @@
+flowchart TD
+    Requested["Requested"]
+    Admission{"Identity, Authority, Policy, and Scope Valid?"}
+    Denied["Denied or Deferred"]
+    Initialized["Initialized and Version Bound"]
+    Running["Running"]
+    Task["Create or Dispatch Eligible Task"]
+    Result{"Validated Result or Trigger"}
+    Waiting["Durable Waiting"]
+    Resume["Resume from Event, Timer, Human, or Agent Result"]
+    More{"Completion Criteria Met?"}
+    Completing["Completing and Reconciling"]
+    Completed["Completed"]
+    Failure{"Failure Classification"}
+    Retry["Retry or Alternate Path"]
+    Compensating["Compensating"]
+    Cancelling["Cancelling"]
+    Failed["Failed"]
+    Cancelled["Cancelled"]
+    Expired["Expired"]
+    Suspended["Suspended"]
+    Terminated["Terminated"]
+
+    Requested --> Admission
+    Admission -- "No" --> Denied
+    Admission -- "Yes" --> Initialized
+    Initialized --> Running
+    Running --> Task
+    Task --> Result
+
+    Result -- "Wait required" --> Waiting
+    Waiting --> Resume
+    Resume --> Running
+
+    Result -- "Success" --> More
+    More -- "No" --> Running
+    More -- "Yes" --> Completing
+    Completing --> Completed
+
+    Result -- "Failure or uncertainty" --> Failure
+    Failure -- "Retryable" --> Retry
+    Retry --> Running
+    Failure -- "Compensation required" --> Compensating
+    Compensating -- "Resolved" --> Failed
+    Compensating -- "Escalated" --> Suspended
+    Failure -- "Terminal" --> Failed
+
+    Running -- "Authorized cancel" --> Cancelling
+    Waiting -- "Authorized cancel" --> Cancelling
+    Cancelling -- "Effects resolved" --> Cancelled
+    Cancelling -- "Compensation required" --> Compensating
+
+    Waiting -- "Deadline exceeded" --> Expired
+    Running -- "Operational suspension" --> Suspended
+    Suspended -- "Authorized resume" --> Running
+    Suspended -- "Governed termination" --> Terminated
+
+    Completed -. "Terminal" .-> Terminated
+    Failed -. "Terminal" .-> Terminated
+    Cancelled -. "Terminal" .-> Terminated
+    Expired -. "Terminal" .-> Terminated
