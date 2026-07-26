@@ -11,9 +11,9 @@ Update this file after every successful implementation session.
 - Architecture source of truth: `/architecture`
 - Implementation guide: `IMPLEMENTATION_GUIDE.md`
 - Task queue: `TASK_QUEUE.md`
-- Current implementation state: `ARCH-012-02 Governance Operating Model` is implemented.
-- Latest successful implementation module: `ARCH-012-02 Governance Operating Model`
-- Latest successful commit: current implementation commit for `ARCH-012-02 Governance Operating Model`
+- Current implementation state: `ARCH-012-03 Policy Architecture` is implemented.
+- Latest successful implementation module: `ARCH-012-03 Policy Architecture`
+- Latest successful commit: current implementation commit for `ARCH-012-03 Policy Architecture`
 - Latest push status: pushed to `master`
 - Build status: passing
 - Test status: passing
@@ -36,16 +36,16 @@ Update this file after every successful implementation session.
 
 ## Implementation Coverage
 
-- Completed through: `ARCH-012-02 Governance Operating Model`
-- Next documented implementation module: `ARCH-012-03 Policy Architecture`
-- Reason: `architecture/012-governance-compliance/03-policy-architecture.md` is available locally.
+- Completed through: `ARCH-012-03 Policy Architecture`
+- Next documented implementation module: `ARCH-012-04 Enterprise Risk Management`
+- Reason: `architecture/012-governance-compliance/04-enterprise-risk-management.md` is available locally.
 
 ## Latest Verification
 
-- Focused test: `npm.cmd test -- tests/governance-compliance/governance-operating-model.test.js`
+- Focused test: `npm.cmd test -- tests/governance-compliance/policy-architecture.test.js`
 - Focused test result: passed, 6/6
 - Full test: `npm.cmd test`
-- Full test result: passed, 756/756
+- Full test result: passed, 762/762
 - Build command: `npm.cmd run build`
 - Build result: passed
 
@@ -68,4 +68,4 @@ Architecture documents must not be changed during implementation unless explicit
 
 ## Recommended Next Action
 
-Recommended next architecture module: `ARCH-012-03 Policy Architecture`.
+Recommended next architecture module: `ARCH-012-04 Enterprise Risk Management`.

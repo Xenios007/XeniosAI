@@ -54,6 +54,33 @@ export {
   OBLIGATION_INTERPRETATION_FIELDS,
   OBLIGATION_SOURCES,
   OPERATING_MODEL_REVIEW_TRIGGERS,
+  FUTURE_POLICY_ARCHITECTURE_CAPABILITIES,
+  POLICY_APPLICABILITY_ATTRIBUTES,
+  POLICY_ARCHITECTURE_ARCHITECTURAL_RULES,
+  POLICY_ARCHITECTURE_OBJECTIVES,
+  POLICY_ARCHITECTURE_PRINCIPLES,
+  POLICY_ARCHITECTURE_QUALITY_ATTRIBUTES,
+  POLICY_ARTIFACT_TYPES,
+  POLICY_AS_CODE_REQUIREMENTS,
+  POLICY_ASSURANCE_AREAS,
+  POLICY_CONFLICT_RESOLUTION_STEPS,
+  POLICY_DECISION_POINTS,
+  POLICY_DOMAINS,
+  POLICY_ENFORCEMENT_TYPES,
+  POLICY_EVALUATION_RESULT_FIELDS,
+  POLICY_EVIDENCE_TYPES,
+  POLICY_EXCEPTION_FIELDS,
+  POLICY_HIERARCHY_LEVELS,
+  POLICY_IMPLEMENTATION_MECHANISMS,
+  POLICY_LIFECYCLE_STAGES,
+  POLICY_METRICS,
+  POLICY_NEED_SOURCES,
+  POLICY_OWNERSHIP_ROLES,
+  POLICY_PRECEDENCE_LEVELS,
+  POLICY_QUALITY_ATTRIBUTES,
+  POLICY_RECORD_FIELDS,
+  POLICY_SCOPE_TYPES,
+  POLICY_STATUSES,
   PROPERTY_GOVERNANCE_MODEL_FIELDS,
   SUPPLIER_GOVERNANCE_MODEL_ROLES,
   TENANT_GOVERNANCE_MODEL_FIELDS,
@@ -62,6 +89,8 @@ export {
 export { GovernanceOperatingModelProfile } from './contracts/governance-operating-model-profile.js';
 export { GovernanceComplianceOverviewProfile } from './contracts/governance-compliance-overview-profile.js';
 export { GovernanceComplianceValidationResult } from './contracts/governance-compliance-validation-result.js';
+export { PolicyArchitectureProfile } from './contracts/policy-architecture-profile.js';
 export { GovernanceOperatingModelDescriptor } from './operating-model/governance-operating-model-descriptor.js';
 export { GovernanceComplianceOverviewDescriptor } from './overview/governance-compliance-overview-descriptor.js';
+export { PolicyArchitectureDescriptor } from './policy-architecture/policy-architecture-descriptor.js';
 export { addGovernanceCompliance } from './service-registration.js';

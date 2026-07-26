@@ -161,5 +161,6 @@ The repository currently includes automated unit tests for:
 - `ARCH-011-10 Future Operations Evolution` in `tests/enterprise-operations/`
 - `ARCH-012-01 Governance & Compliance Overview` in `tests/governance-compliance/`
 - `ARCH-012-02 Governance Operating Model` in `tests/governance-compliance/`
+- `ARCH-012-03 Policy Architecture` in `tests/governance-compliance/`
 
 These tests validate reusable platform capabilities and channel-facing behavior without introducing business logic.

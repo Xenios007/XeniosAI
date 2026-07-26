@@ -1834,3 +1834,20 @@ Version: 0.102.0
 
 Status: Governance and Compliance Architecture
 Version: 0.103.0
+
+---
+
+## [0.104.0] - ARCH-012 Policy Architecture
+
+### Added
+- Policy architecture objective, principle, hierarchy, artifact, domain, ownership, record, lifecycle, need source, status, applicability, scope, precedence, conflict-resolution, implementation, enforcement, decision-point, policy-as-code, evaluation-result, exception, evidence, assurance, metric, quality-attribute, architectural-rule, and future-capability constants.
+- Immutable contract for policy architecture profiles.
+- Policy Architecture descriptor for documented metadata, profile validation, and architecture assertion.
+- Dependency-injection registration through `addGovernanceCompliance`.
+- Unit tests for policy architecture metadata, validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Policy Architecture as a technology-independent, vendor-neutral governance structure without providing specific legal interpretations, prescribing implementation technologies, or implementing a runtime policy engine.
+
+Status: Governance and Compliance Architecture
+Version: 0.104.0

@@ -1,6 +1,7 @@
 export const GOVERNANCE_COMPLIANCE_ERROR_CODES = Object.freeze({
   GOVERNANCE_COMPLIANCE_OVERVIEW_INVALID: 'GOVERNANCE_COMPLIANCE_OVERVIEW_INVALID',
-  GOVERNANCE_OPERATING_MODEL_INVALID: 'GOVERNANCE_OPERATING_MODEL_INVALID'
+  GOVERNANCE_OPERATING_MODEL_INVALID: 'GOVERNANCE_OPERATING_MODEL_INVALID',
+  POLICY_ARCHITECTURE_INVALID: 'POLICY_ARCHITECTURE_INVALID'
 });
 
 export const GOVERNANCE_COMPLIANCE_OVERVIEW_OBJECTIVES = Object.freeze({
@@ -889,4 +890,448 @@ export const FUTURE_GOVERNANCE_OPERATING_MODEL_CAPABILITIES = Object.freeze({
   POLICY_AWARE_OPERATIONAL_AGENTS: 'policy-aware-operational-agents',
   GOVERNANCE_DIGITAL_TWINS: 'governance-digital-twins',
   ADAPTIVE_GOVERNANCE_RHYTHMS: 'adaptive-governance-rhythms'
+});
+
+export const POLICY_ARCHITECTURE_OBJECTIVES = Object.freeze({
+  CLEAR_AUTHORIZED_ENTERPRISE_INTENT: 'clear-authorized-enterprise-intent',
+  CONSISTENT_DECISION_BOUNDARIES: 'consistent-decision-boundaries',
+  TRACEABILITY_TO_OBLIGATIONS_AND_RISKS: 'traceability-to-obligations-and-risks',
+  EXPLICIT_APPLICABILITY: 'explicit-applicability',
+  REUSABLE_POLICY_REQUIREMENTS: 'reusable-policy-requirements',
+  CONTROLLED_TENANT_AND_PROPERTY_SPECIALIZATION: 'controlled-tenant-and-property-specialization',
+  GOVERNABLE_AUTOMATED_ENFORCEMENT: 'governable-automated-enforcement',
+  RELIABLE_POLICY_EVIDENCE: 'reliable-policy-evidence',
+  VERSIONED_AND_REVIEWABLE_POLICY: 'versioned-and-reviewable-policy',
+  TIMELY_RESPONSE_TO_CHANGE: 'timely-response-to-regulatory-and-architectural-change',
+  POLICY_CONFLICT_RESOLUTION: 'policy-conflict-resolution',
+  PROPORTIONATE_EXCEPTIONS: 'proportionate-exceptions',
+  CONTINUOUS_POLICY_IMPROVEMENT: 'continuous-policy-improvement',
+  VENDOR_NEUTRAL_POLICY_CAPABILITIES: 'vendor-neutral-policy-capabilities'
+});
+
+export const POLICY_ARCHITECTURE_PRINCIPLES = Object.freeze({
+  PURPOSE_BEFORE_RULE: 'purpose-before-rule',
+  AUTHORITY_MUST_BE_EXPLICIT: 'authority-must-be-explicit',
+  POLICY_IS_TECHNOLOGY_INDEPENDENT: 'policy-is-technology-independent',
+  APPLICABILITY_MUST_BE_DETERMINABLE: 'applicability-must-be-determinable',
+  LOWER_LEVEL_RULES_ALIGN_UPWARD: 'lower-level-rules-align-upward',
+  CONTROLS_IMPLEMENT_POLICY: 'controls-implement-policy',
+  EXCEPTIONS_ARE_GOVERNED: 'exceptions-are-governed',
+  POLICY_MUST_BE_UNDERSTANDABLE: 'policy-must-be-understandable',
+  CHANGE_MUST_BE_CONTROLLED: 'change-must-be-controlled'
+});
+
+export const POLICY_HIERARCHY_LEVELS = Object.freeze({
+  ENTERPRISE_PURPOSE_AND_VALUES: 'Enterprise Purpose and Values',
+  ARCHITECTURAL_AND_GOVERNANCE_PRINCIPLES: 'Architectural and Governance Principles',
+  ENTERPRISE_POLICIES: 'Enterprise Policies',
+  DOMAIN_STANDARDS: 'Domain Standards',
+  TENANT_POLICIES_AND_PROPERTY_STANDARDS: 'Tenant Policies and Property Standards',
+  PROCEDURES_RUNBOOKS_AND_CONTROL_SPECIFICATIONS: 'Procedures, Runbooks, and Control Specifications',
+  CONFIGURATIONS_RULES_AND_AUTOMATED_ENFORCEMENT: 'Configurations, Rules, and Automated Enforcement'
+});
+
+export const POLICY_ARTIFACT_TYPES = Object.freeze({
+  PRINCIPLE: 'principle',
+  POLICY: 'policy',
+  STANDARD: 'standard',
+  RULE: 'rule',
+  GUIDELINE: 'guideline',
+  PROCEDURE: 'procedure',
+  RUNBOOK: 'runbook',
+  CONTROL_SPECIFICATION: 'control-specification',
+  CONFIGURATION_CONSTRAINT: 'configuration-constraint',
+  DECISION_TABLE: 'decision-table'
+});
+
+export const POLICY_DOMAINS = Object.freeze({
+  ENTERPRISE_GOVERNANCE: 'enterprise-governance',
+  ARCHITECTURE: 'architecture',
+  RISK: 'risk',
+  COMPLIANCE: 'compliance',
+  SECURITY: 'security',
+  PRIVACY: 'privacy',
+  DATA: 'data',
+  AI_AND_ETHICS: 'ai-and-ethics',
+  IDENTITY_AND_ACCESS: 'identity-and-access',
+  SERVICE_OPERATIONS: 'service-operations',
+  INCIDENT_RESPONSE: 'incident-response',
+  CHANGE_AND_RELEASE: 'change-and-release',
+  CAPACITY: 'capacity',
+  CONTINUITY: 'continuity',
+  INTEGRATION: 'integration',
+  WORKFLOW: 'workflow',
+  SUPPLIER_MANAGEMENT: 'supplier-management',
+  TENANT_ADMINISTRATION: 'tenant-administration',
+  PROPERTY_OPERATIONS: 'property-operations',
+  EVIDENCE_AND_RECORDS: 'evidence-and-records',
+  ACCEPTABLE_USE: 'acceptable-use',
+  FINANCIAL_AND_COMMERCIAL_ACTIVITY: 'financial-and-commercial-activity',
+  HUMAN_RESOURCES_WHERE_APPLICABLE: 'human-resources-where-applicable'
+});
+
+export const POLICY_OWNERSHIP_ROLES = Object.freeze({
+  POLICY_OWNER: 'policy-owner',
+  POLICY_APPROVER: 'policy-approver',
+  POLICY_STEWARD: 'policy-steward',
+  OBLIGATION_OWNER: 'obligation-owner',
+  CONTROL_OWNER: 'control-owner',
+  ASSURANCE_PROVIDER: 'assurance-provider',
+  APPLICABILITY_OWNER: 'applicability-owner'
+});
+
+export const POLICY_RECORD_FIELDS = Object.freeze({
+  POLICY_IDENTIFIER: 'policy-identifier',
+  TITLE: 'title',
+  PURPOSE: 'purpose',
+  AUTHORITY: 'authority',
+  OWNER: 'owner',
+  APPROVER: 'approver',
+  VERSION: 'version',
+  STATUS: 'status',
+  EFFECTIVE_DATE: 'effective-date',
+  REVIEW_DATE: 'review-date',
+  SCOPE: 'scope',
+  APPLICABILITY: 'applicability',
+  REQUIREMENTS: 'requirements',
+  PROHIBITIONS: 'prohibitions',
+  ROLES: 'roles',
+  EXCEPTIONS: 'exceptions',
+  EVIDENCE: 'evidence',
+  ENFORCEMENT: 'enforcement',
+  RELATED_OBLIGATIONS: 'related-obligations',
+  RELATED_RISKS: 'related-risks',
+  RELATED_CONTROLS: 'related-controls',
+  RELATED_STANDARDS_AND_PROCEDURES: 'related-standards-and-procedures',
+  CONFLICTS_AND_PRECEDENCE: 'conflicts-and-precedence',
+  COMMUNICATION: 'communication',
+  CHANGE_HISTORY: 'change-history',
+  RETIREMENT_PROVISIONS: 'retirement-provisions'
+});
+
+export const POLICY_LIFECYCLE_STAGES = Object.freeze({
+  IDENTIFY_NEED: 'Identify Need',
+  ESTABLISH_AUTHORITY_AND_OWNERSHIP: 'Establish Authority and Ownership',
+  ANALYZE_OBLIGATIONS_RISKS_AND_ARCHITECTURE: 'Analyze Obligations, Risks, and Architecture',
+  DRAFT_POLICY_AND_APPLICABILITY: 'Draft Policy and Applicability',
+  CONSULT_AFFECTED_STAKEHOLDERS: 'Consult Affected Stakeholders',
+  ASSESS_IMPACT_AND_CONFLICTS: 'Assess Impact and Conflicts',
+  APPROVE: 'Approve',
+  PUBLISH_AND_COMMUNICATE: 'Publish and Communicate',
+  IMPLEMENT_CONTROLS_AND_PROCEDURES: 'Implement Controls and Procedures',
+  MONITOR_AND_ASSURE: 'Monitor and Assure',
+  REVIEW_AND_CHANGE: 'Review and Change',
+  RETIRE_OR_REPLACE: 'Retire or Replace'
+});
+
+export const POLICY_NEED_SOURCES = Object.freeze({
+  ENTERPRISE_STRATEGY: 'enterprise-strategy',
+  LEGAL_OR_REGULATORY_OBLIGATION: 'legal-or-regulatory-obligation',
+  CONTRACTUAL_COMMITMENT: 'contractual-commitment',
+  ARCHITECTURE_DECISION: 'architecture-decision',
+  RISK: 'risk',
+  SECURITY_REQUIREMENT: 'security-requirement',
+  PRIVACY_REQUIREMENT: 'privacy-requirement',
+  AI_USE: 'ai-use',
+  NEW_TENANT_OR_JURISDICTION: 'new-tenant-or-jurisdiction',
+  SUPPLIER_RELATIONSHIP: 'supplier-relationship',
+  INCIDENT_OR_FINDING: 'incident-or-finding',
+  AUDIT: 'audit',
+  NEW_SERVICE_OR_PLATFORM_CAPABILITY: 'new-service-or-platform-capability',
+  GOVERNANCE_MATURITY: 'governance-maturity',
+  ETHICAL_COMMITMENT: 'ethical-commitment'
+});
+
+export const POLICY_STATUSES = Object.freeze({
+  PROPOSED: 'proposed',
+  DRAFT: 'draft',
+  UNDER_CONSULTATION: 'under-consultation',
+  UNDER_REVIEW: 'under-review',
+  APPROVED: 'approved',
+  PUBLISHED: 'published',
+  EFFECTIVE: 'effective',
+  TEMPORARILY_SUSPENDED: 'temporarily-suspended',
+  SUPERSEDED: 'superseded',
+  RETIRED: 'retired',
+  ARCHIVED: 'archived'
+});
+
+export const POLICY_APPLICABILITY_ATTRIBUTES = Object.freeze({
+  LEGAL_ENTITY: 'legal-entity',
+  JURISDICTION: 'jurisdiction',
+  TENANT: 'tenant',
+  ORGANIZATION: 'organization',
+  PROPERTY: 'property',
+  BUSINESS_CAPABILITY: 'business-capability',
+  SERVICE: 'service',
+  USER_ROLE: 'user-role',
+  GUEST_CATEGORY: 'guest-category',
+  DATA_CLASSIFICATION: 'data-classification',
+  AI_RISK_CLASS: 'ai-risk-class',
+  WORKFLOW: 'workflow',
+  INTEGRATION: 'integration',
+  PROVIDER: 'provider',
+  ENVIRONMENT: 'environment',
+  TRANSACTION: 'transaction',
+  GEOGRAPHY: 'geography',
+  TIME_PERIOD: 'time-period',
+  CONTRACT: 'contract',
+  SERVICE_TIER: 'service-tier'
+});
+
+export const POLICY_SCOPE_TYPES = Object.freeze({
+  ENTERPRISE_WIDE: 'enterprise-wide',
+  PLATFORM_WIDE: 'platform-wide',
+  DOMAIN_SPECIFIC: 'domain-specific',
+  SERVICE_SPECIFIC: 'service-specific',
+  TENANT_SPECIFIC: 'tenant-specific',
+  PROPERTY_SPECIFIC: 'property-specific',
+  JURISDICTION_SPECIFIC: 'jurisdiction-specific',
+  DATA_SPECIFIC: 'data-specific',
+  AI_USE_SPECIFIC: 'ai-use-specific',
+  SUPPLIER_SPECIFIC: 'supplier-specific',
+  ENVIRONMENT_SPECIFIC: 'environment-specific'
+});
+
+export const POLICY_PRECEDENCE_LEVELS = Object.freeze({
+  LAW_AND_REGULATION: 'applicable-law-and-regulation',
+  BINDING_CONTRACTUAL_OBLIGATIONS: 'binding-contractual-obligations',
+  ENTERPRISE_PRINCIPLES_AND_POLICY: 'enterprise-principles-and-mandatory-policy',
+  DOMAIN_STANDARDS: 'domain-standards',
+  TENANT_POLICY: 'tenant-policy',
+  PROPERTY_PROCEDURES: 'property-procedures',
+  SERVICE_PROCEDURES: 'service-procedures',
+  AUTOMATED_RULES_AND_CONFIGURATION: 'automated-rules-and-configuration'
+});
+
+export const POLICY_CONFLICT_RESOLUTION_STEPS = Object.freeze({
+  IDENTIFY_AUTHORITATIVE_SOURCES: 'identify-authoritative-sources',
+  CONFIRM_APPLICABILITY: 'confirm-applicability',
+  ENGAGE_QUALIFIED_OWNERS: 'engage-qualified-owners',
+  ASSESS_IMPACT: 'assess-business-legal-security-privacy-ai-data-and-operational-impact',
+  IDENTIFY_OPTIONS: 'identify-options',
+  DETERMINE_SEPARATION_REQUIRED: 'determine-whether-separation-is-required',
+  ASSIGN_DECISION_AUTHORITY: 'assign-decision-authority',
+  RECORD_DECISION_AND_RATIONALE: 'record-decision-and-rationale',
+  UPDATE_POLICY_OR_IMPLEMENTATION: 'update-policy-or-implementation',
+  MONITOR_CONTINUING_VALIDITY: 'monitor-continuing-validity'
+});
+
+export const POLICY_IMPLEMENTATION_MECHANISMS = Object.freeze({
+  ARCHITECTURE: 'architecture',
+  SERVICE_DESIGN: 'service-design',
+  ACCESS_CONTROL: 'access-control',
+  DATA_CONTROLS: 'data-controls',
+  AI_GUARDRAILS: 'ai-guardrails',
+  WORKFLOW: 'workflow',
+  OPERATIONAL_PROCESS: 'operational-process',
+  TRAINING: 'training',
+  CONTRACT: 'contract',
+  SUPPLIER_REQUIREMENT: 'supplier-requirement',
+  TENANT_CONFIGURATION: 'tenant-configuration',
+  PROPERTY_PROCEDURE: 'property-procedure',
+  AUTOMATED_VALIDATION: 'automated-validation',
+  MONITORING: 'monitoring',
+  ASSURANCE: 'assurance'
+});
+
+export const POLICY_ENFORCEMENT_TYPES = Object.freeze({
+  PREVENTIVE: 'preventive',
+  DETECTIVE: 'detective',
+  CORRECTIVE: 'corrective',
+  ADVISORY: 'advisory',
+  APPROVAL_BASED: 'approval-based',
+  AUTOMATED: 'automated',
+  MANUAL: 'manual',
+  CONTRACTUAL: 'contractual',
+  ARCHITECTURAL: 'architectural'
+});
+
+export const POLICY_DECISION_POINTS = Object.freeze({
+  DESIGN_TIME: 'design-time',
+  BUILD_TIME: 'build-time',
+  DEPLOYMENT_TIME: 'deployment-time',
+  CONFIGURATION_TIME: 'configuration-time',
+  ACCESS_TIME: 'access-time',
+  REQUEST_TIME: 'request-time',
+  WORKFLOW_TRANSITION: 'workflow-transition',
+  AI_TOOL_INVOCATION: 'ai-tool-invocation',
+  DATA_USE: 'data-use',
+  INTEGRATION_EXCHANGE: 'integration-exchange',
+  CHANGE_APPROVAL: 'change-approval',
+  INCIDENT_RESPONSE: 'incident-response',
+  CONTINUITY_ACTIVATION: 'continuity-activation',
+  SUPPLIER_ONBOARDING: 'supplier-onboarding',
+  TENANT_ONBOARDING: 'tenant-onboarding',
+  PROPERTY_OPERATION: 'property-operation',
+  AUDIT_OR_ASSURANCE: 'audit-or-assurance'
+});
+
+export const POLICY_AS_CODE_REQUIREMENTS = Object.freeze({
+  TRACEABLE_TO_APPROVED_POLICY: 'traceable-to-approved-policy',
+  VERSIONED: 'versioned',
+  REVIEWED: 'reviewed',
+  TESTED: 'tested',
+  AUTHORIZED: 'authorized',
+  OBSERVABLE: 'observable',
+  EXPLAINABLE: 'explainable',
+  SECURE: 'secure',
+  SCOPED: 'scoped',
+  REVERSIBLE: 'reversible',
+  INDEPENDENTLY_ASSURED: 'independently-assured-where-appropriate'
+});
+
+export const POLICY_EVALUATION_RESULT_FIELDS = Object.freeze({
+  POLICY_IDENTIFIER: 'policy-identifier',
+  POLICY_VERSION: 'policy-version',
+  TARGET: 'target',
+  APPLICABILITY: 'applicability',
+  INPUT_FACTS: 'input-facts',
+  DECISION: 'decision',
+  REASON: 'reason',
+  AUTHORITY: 'authority',
+  CONFIDENCE_IF_INFERENCE_USED: 'confidence-if-inference-used',
+  CONDITIONS: 'conditions',
+  REQUIRED_ACTION: 'required-action',
+  EVIDENCE_REFERENCE: 'evidence-reference',
+  TIME: 'time',
+  EXPIRATION: 'expiration',
+  APPEAL_OR_ESCALATION: 'appeal-or-escalation'
+});
+
+export const POLICY_EXCEPTION_FIELDS = Object.freeze({
+  POLICY_AND_REQUIREMENT: 'policy-and-requirement',
+  SCOPE: 'scope',
+  TARGET: 'target',
+  BUSINESS_JUSTIFICATION: 'business-justification',
+  RISK: 'risk',
+  OWNER: 'owner',
+  EXCEPTION_AUTHORITY: 'exception-authority',
+  COMPENSATING_CONTROLS: 'compensating-controls',
+  MONITORING: 'monitoring',
+  START_DATE: 'start-date',
+  EXPIRATION: 'expiration',
+  REMEDIATION_PLAN: 'remediation-plan',
+  EVIDENCE: 'evidence',
+  REVIEW: 'review',
+  CLOSURE: 'closure'
+});
+
+export const POLICY_EVIDENCE_TYPES = Object.freeze({
+  APPROVAL: 'approval',
+  PUBLICATION: 'publication',
+  COMMUNICATION: 'communication',
+  ACKNOWLEDGMENT: 'acknowledgment',
+  TRAINING: 'training',
+  CONTROL_EXECUTION: 'control-execution',
+  CONFIGURATION: 'configuration',
+  ACCESS_DECISIONS: 'access-decisions',
+  AI_DECISIONS: 'ai-decisions',
+  WORKFLOW_DECISIONS: 'workflow-decisions',
+  EXCEPTIONS: 'exceptions',
+  ASSESSMENTS: 'assessments',
+  FINDINGS: 'findings',
+  REMEDIATION: 'remediation',
+  REVIEW: 'review',
+  RETIREMENT: 'retirement'
+});
+
+export const POLICY_ASSURANCE_AREAS = Object.freeze({
+  AUTHORITY: 'authority',
+  COMPLETENESS: 'completeness',
+  ALIGNMENT: 'alignment',
+  APPLICABILITY: 'applicability',
+  IMPLEMENTATION: 'implementation',
+  COMMUNICATION: 'communication',
+  CONTROL_EFFECTIVENESS: 'control-effectiveness',
+  EVIDENCE: 'evidence',
+  EXCEPTION_DISCIPLINE: 'exception-discipline',
+  REVIEW_TIMELINESS: 'review-timeliness',
+  CONFLICT_MANAGEMENT: 'conflict-management',
+  RETIREMENT: 'retirement'
+});
+
+export const POLICY_METRICS = Object.freeze({
+  VALID_OWNERS: 'policies-with-valid-owners',
+  REVIEWED_ON_TIME: 'policies-reviewed-on-time',
+  APPLICABILITY_COMPLETENESS: 'applicability-completeness',
+  CONTROL_MAPPING: 'control-mapping',
+  TRAINING_COMPLETION: 'training-completion',
+  ENFORCEMENT_COVERAGE: 'enforcement-coverage',
+  POLICY_VIOLATIONS: 'policy-violations',
+  EXCEPTIONS: 'exceptions',
+  EXCEPTION_AGE: 'exception-age',
+  CONFLICTS: 'conflicts',
+  FINDINGS: 'findings',
+  REMEDIATION: 'remediation',
+  SUPERSEDED_RULE_REMOVAL: 'superseded-rule-removal',
+  POLICY_COMPREHENSION: 'policy-comprehension',
+  DECISION_CONSISTENCY: 'decision-consistency'
+});
+
+export const POLICY_QUALITY_ATTRIBUTES = Object.freeze({
+  AUTHORIZED: 'authorized',
+  PURPOSEFUL: 'purposeful',
+  CLEAR: 'clear',
+  CONSISTENT: 'consistent',
+  TRACEABLE: 'traceable',
+  APPLICABLE: 'applicable',
+  TESTABLE: 'testable',
+  IMPLEMENTABLE: 'implementable',
+  EVIDENCE_AWARE: 'evidence-aware',
+  EXCEPTION_AWARE: 'exception-aware',
+  MAINTAINABLE: 'maintainable',
+  TECHNOLOGY_INDEPENDENT: 'technology-independent'
+});
+
+export const POLICY_ARCHITECTURE_QUALITY_ATTRIBUTES = Object.freeze({
+  CONSISTENCY: 'consistency',
+  ACCOUNTABILITY: 'accountability',
+  EXPLAINABILITY: 'explainability',
+  TRACEABILITY: 'traceability',
+  AUDITABILITY: 'auditability',
+  SECURITY: 'security',
+  PRIVACY: 'privacy',
+  ADAPTABILITY: 'adaptability',
+  SCALABILITY: 'scalability',
+  INTEROPERABILITY: 'interoperability',
+  TENANT_ISOLATION: 'tenant-isolation',
+  ENTERPRISE_TRUST: 'enterprise-trust'
+});
+
+export const POLICY_ARCHITECTURE_ARCHITECTURAL_RULES = Object.freeze({
+  DEFINE_PURPOSE_AND_AUTHORITY: 'define-policy-purpose-and-authority',
+  MAINTAIN_POLICY_HIERARCHY: 'maintain-clear-policy-hierarchy',
+  DISTINGUISH_ARTIFACT_TYPES: 'distinguish-policy-artifact-types',
+  ASSIGN_ACCOUNTABLE_OWNERSHIP: 'assign-accountable-ownership',
+  DEFINE_SCOPE_AND_APPLICABILITY: 'define-scope-and-applicability-explicitly',
+  MAINTAIN_TRACEABILITY: 'maintain-traceability-to-obligations-risks-controls-and-evidence',
+  RESOLVE_CONFLICTS_AUTHORIZED: 'resolve-conflicts-through-qualified-and-authorized-decisions',
+  ALIGN_LOWER_LEVEL_RULES: 'ensure-lower-level-rules-align-upward',
+  GOVERN_MACHINE_READABLE_POLICY: 'govern-machine-readable-policy-and-policy-as-code',
+  PRESERVE_HUMAN_READABLE_AUTHORITY: 'preserve-human-readable-authority-and-explainability',
+  GOVERN_AI_INFERENCE: 'govern-ai-assisted-policy-inference',
+  SUPPORT_SPECIALIZATION_WITHOUT_WEAKENING: 'support-tenant-and-property-specialization-without-weakening-controls',
+  TREAT_EXCEPTIONS_AS_TEMPORARY: 'treat-exceptions-as-temporary-and-risk-managed',
+  VERSION_AND_CORRELATE_EVIDENCE: 'version-policy-and-correlate-evidence-to-effective-versions',
+  ASSESS_IMPACT_BEFORE_CHANGE: 'assess-impact-before-policy-change',
+  RETIRE_RELATED_CONTROLS_AND_RULES: 'retire-related-controls-and-rules-when-policy-is-retired',
+  MEASURE_EFFECTIVENESS: 'measure-effectiveness-rather-than-policy-volume',
+  REMAIN_VENDOR_AND_TECHNOLOGY_NEUTRAL: 'remain-vendor-neutral-and-technology-independent'
+});
+
+export const FUTURE_POLICY_ARCHITECTURE_CAPABILITIES = Object.freeze({
+  SEMANTIC_POLICY_MODELS: 'semantic-policy-models',
+  MACHINE_READABLE_OBLIGATIONS: 'machine-readable-obligations',
+  AUTOMATED_APPLICABILITY: 'automated-applicability',
+  POLICY_CONFLICT_DETECTION: 'policy-conflict-detection',
+  NATURAL_LANGUAGE_POLICY_ASSISTANCE: 'natural-language-policy-assistance',
+  CONTINUOUS_POLICY_ENFORCEMENT: 'continuous-policy-enforcement',
+  POLICY_SIMULATION: 'policy-simulation',
+  DYNAMIC_TENANT_SPECIALIZATION: 'dynamic-tenant-specialization',
+  EXECUTABLE_DECISION_RIGHTS: 'executable-decision-rights',
+  REAL_TIME_EXCEPTION_MONITORING: 'real-time-exception-monitoring',
+  CONTINUOUS_POLICY_ASSURANCE: 'continuous-policy-assurance',
+  POLICY_DIGITAL_TWINS: 'policy-digital-twins',
+  AI_ASSISTED_POLICY_IMPACT_ANALYSIS: 'ai-assisted-policy-impact-analysis'
 });
