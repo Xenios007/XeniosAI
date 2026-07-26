@@ -1,0 +1,24 @@
+flowchart TD
+    A["Enterprise objective"] --> B["Identify uncertain event, cause, and potential impact"]
+    B --> C["Assign accountable Risk Owner"]
+    C --> D["Assess inherent likelihood, impact, velocity, and duration"]
+    D --> E["Compare with appetite and tolerance"]
+
+    E --> F["Design or identify controls and treatment"]
+    F --> G["Implement and operate controls"]
+    G --> H["Collect evidence and assess control effectiveness"]
+    H --> I["Assess residual risk"]
+
+    I --> J{"Within authorized tolerance?"}
+    J -- "Yes" --> K["Monitor indicators and review"]
+    J -- "No" --> L{"Treatment available and required?"}
+
+    L -- "Yes" --> M["Avoid, reduce, transfer, share, or add controls"]
+    M --> G
+
+    L -- "No" --> N["Escalate for authorized risk acceptance or activity termination"]
+    N --> K
+
+    K --> O{"Risk, obligation, architecture, or evidence changed?"}
+    O -- "No" --> K
+    O -- "Yes" --> B
