@@ -1766,3 +1766,20 @@ Version: 0.98.0
 
 Status: Enterprise Operations Architecture
 Version: 0.99.0
+
+---
+
+## [0.100.0] - ARCH-011 Operations Governance
+
+### Added
+- Operations governance objective, principle, governance-domain, governance-level, policy, policy-hierarchy, policy-lifecycle, decision-right, delegated-authority, responsibility, service-governance, service-review, operational-risk, risk-record, risk-treatment, risk-acceptance, control, evidence, assurance, exception, noncompliance, incident-governance, problem-governance, change-governance, capacity-governance, continuity-governance, AI-governance, automation-governance, workflow-governance, integration-governance, data-governance, security-governance, tenant-governance, property-governance, supplier-governance, forum, reporting, measure, scorecard, review-cycle, maturity, improvement, boundary, quality-attribute, architectural-rule, and future-capability constants.
+- Immutable contract for operations governance profiles.
+- Operations Governance descriptor for documented metadata, profile validation, and architecture assertion.
+- Dependency-injection registration through `addEnterpriseOperations`.
+- Unit tests for operations governance metadata, validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Operations governance as technology-neutral, vendor-neutral architecture without prescribing governance platforms, audit products, service-management frameworks, organizational committees, or regulatory standards.
+
+Status: Enterprise Operations Architecture
+Version: 0.100.0

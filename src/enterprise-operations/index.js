@@ -342,6 +342,59 @@ export {
   TIME_BASED_IMPACT_DIMENSIONS,
   WORKFLOW_CONTINUITY_REQUIREMENTS
 } from './constants.js';
+export {
+  AI_OPERATIONS_GOVERNANCE_CONTROLS,
+  ASSURANCE_RESPONSIBILITY_LINES,
+  ASSURANCE_TYPES,
+  AUTOMATION_GOVERNANCE_FIELDS,
+  CAPACITY_GOVERNANCE_FIELDS,
+  CHANGE_GOVERNANCE_FIELDS,
+  CONTROL_EVIDENCE_TYPES,
+  CONTROL_IMPLEMENTATION_MECHANISMS,
+  CONTROL_RECORD_FIELDS,
+  CONTINUITY_GOVERNANCE_FIELDS,
+  DATA_OPERATIONS_GOVERNANCE_FIELDS,
+  DECISION_RIGHTS_FIELDS,
+  DELEGATED_AUTHORITY_REQUIREMENTS,
+  EXCEPTION_RECORD_FIELDS,
+  FUTURE_OPERATIONS_GOVERNANCE_CAPABILITIES,
+  GOVERNANCE_FORUM_TYPES,
+  GOVERNANCE_IMPROVEMENT_SOURCES,
+  GOVERNANCE_RESPONSIBILITY_ROLES,
+  GOVERNANCE_REVIEW_CYCLE_STAGES,
+  INCIDENT_GOVERNANCE_FIELDS,
+  INTEGRATION_GOVERNANCE_FIELDS,
+  NONCOMPLIANCE_MANAGEMENT_STEPS,
+  OPERATIONAL_CONTROL_TYPES,
+  OPERATIONAL_MATURITY_ASSESSMENT_AREAS,
+  OPERATIONAL_MATURITY_LEVELS,
+  OPERATIONAL_POLICY_AREAS,
+  OPERATIONAL_REPORT_DIMENSIONS,
+  OPERATIONAL_REPORTING_AUDIENCES,
+  OPERATIONAL_RISK_RECORD_FIELDS,
+  OPERATIONAL_RISK_SOURCES,
+  OPERATIONAL_RISK_TREATMENTS,
+  OPERATIONAL_SCORECARD_DIMENSIONS,
+  OPERATIONS_GOVERNANCE_ARCHITECTURAL_RULES,
+  OPERATIONS_GOVERNANCE_BOUNDARY_EXCLUSIONS,
+  OPERATIONS_GOVERNANCE_DOMAINS,
+  OPERATIONS_GOVERNANCE_LEVELS,
+  OPERATIONS_GOVERNANCE_MEASURES,
+  OPERATIONS_GOVERNANCE_OBJECTIVES,
+  OPERATIONS_GOVERNANCE_PRINCIPLES,
+  OPERATIONS_GOVERNANCE_QUALITY_ATTRIBUTES,
+  POLICY_HIERARCHY_LEVELS,
+  POLICY_LIFECYCLE_STAGES,
+  PROBLEM_GOVERNANCE_REQUIREMENTS,
+  PROPERTY_GOVERNANCE_FIELDS,
+  RISK_ACCEPTANCE_FIELDS,
+  SECURITY_OPERATIONS_GOVERNANCE_FIELDS,
+  SERVICE_GOVERNANCE_REQUIREMENTS,
+  SERVICE_REVIEW_INPUTS_GOVERNANCE,
+  SUPPLIER_GOVERNANCE_FIELDS,
+  TENANT_GOVERNANCE_FIELDS,
+  WORKFLOW_GOVERNANCE_FIELDS
+} from './constants.js';
 export { CapacityPerformanceManagementProfile } from './contracts/capacity-performance-management-profile.js';
 export { ChangeReleaseOperationsProfile } from './contracts/change-release-operations-profile.js';
 export { ContinuityResilienceOperationsProfile } from './contracts/continuity-resilience-operations-profile.js';
@@ -351,6 +404,7 @@ export { EnterpriseOperationsProfile } from './contracts/enterprise-operations-p
 export { EnterpriseOperationsValidationResult } from './contracts/enterprise-operations-validation-result.js';
 export { IncidentProblemManagementProfile } from './contracts/incident-problem-management-profile.js';
 export { OperationsCommandControlProfile } from './contracts/operations-command-control-profile.js';
+export { OperationsGovernanceProfile } from './contracts/operations-governance-profile.js';
 export { ServiceOperationsProfile } from './contracts/service-operations-profile.js';
 export { CapacityPerformanceManagementDescriptor } from './capacity-performance-management/capacity-performance-management-descriptor.js';
 export { ChangeReleaseOperationsDescriptor } from './change-release-operations/change-release-operations-descriptor.js';
@@ -358,6 +412,7 @@ export { ContinuityResilienceOperationsDescriptor } from './continuity-resilienc
 export { EnterpriseOperationsDescriptor } from './enterprise-operations-descriptor.js';
 export { IncidentProblemManagementDescriptor } from './incident-problem-management/incident-problem-management-descriptor.js';
 export { OperationsCommandControlDescriptor } from './command-control/operations-command-control-descriptor.js';
+export { OperationsGovernanceDescriptor } from './operations-governance/operations-governance-descriptor.js';
 export { EnterpriseOperatingModelDescriptor } from './operating-model/enterprise-operating-model-descriptor.js';
 export { EnterpriseOperationsOverviewDescriptor } from './overview/enterprise-operations-overview-descriptor.js';
 export { ServiceOperationsDescriptor } from './service-operations/service-operations-descriptor.js';
