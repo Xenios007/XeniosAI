@@ -1,0 +1,29 @@
+flowchart TD
+    A["Enterprise purpose, tenant commitments, property outcomes, human accountability, and responsible-AI principles"] --> B["Agent identity, ownership, intended goals, prohibited behavior, risk, impact, autonomy, and lifecycle"]
+    B --> C["Policies, decision rights, control objectives, authority, oversight, evidence, and assurance requirements"]
+    C --> D["Design, implement, test, simulate, red-team, evaluate, and establish operational readiness"]
+    D --> E{"Security, privacy, quality, isolation, resilience, cost, and governance thresholds satisfied?"}
+
+    E -- "No" --> F["Record findings, reduce scope or autonomy, remediate, or approve a time-bounded exception with compensating controls"]
+    F --> D
+    E -- "Yes" --> G["Approve exact version, models, tools, environment, tenant/property scope, autonomy, and validity"]
+    G --> H["Activate progressively through shadow, read-only, recommendation, approval, bounded execution, and wider eligible scope"]
+    H --> I["Observe business outcomes, agent quality, runtime health, tool effects, security, cost, incidents, and human intervention"]
+
+    I --> J{"Control, quality, and business outcomes remain acceptable?"}
+    J -- "Yes" --> K["Continue operation and produce evidence for service review and assurance"]
+    K --> L["Improve evaluations, context, tools, controls, runbooks, architecture, and agent design through governed change"]
+    L --> D
+
+    J -- "No" --> M["Contain by tenant, property, version, autonomy, tool, model, provider, or action class"]
+    M --> N["Investigate, preserve evidence, reconcile effects, communicate, and identify root cause"]
+    N --> O{"Safe restoration remains justified?"}
+    O -- "Yes" --> F
+    O -- "No" --> P["Deprecate or retire, migrate dependents, revoke access, dispose governed state, and preserve required records"]
+
+    subgraph ASSURANCE["Independent and continuous assurance"]
+        Q["Policy tests, control monitoring, audit evidence, human review, red teaming, exceptions, issues, and remediation verification"]
+    end
+
+    Q --> E
+    I --> Q
