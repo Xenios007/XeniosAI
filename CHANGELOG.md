@@ -1800,3 +1800,20 @@ Version: 0.100.0
 
 Status: Enterprise Operations Architecture
 Version: 0.101.0
+
+---
+
+## [0.102.0] - ARCH-012 Governance and Compliance Overview
+
+### Added
+- Governance and compliance objective, landscape, domain, governing actor, ownership, artifact, obligation, interpretation, applicability, traceability, control, evidence, lifecycle, decision authority, AI governance, human oversight, compliance posture, third-party lifecycle, reporting, architecture boundary, quality-attribute, architectural-rule, and future-capability constants.
+- Immutable contract for governance and compliance overview profiles.
+- Governance and Compliance Overview descriptor for documented metadata, profile validation, and architecture assertion.
+- Dependency-injection registration through `addGovernanceCompliance`.
+- Unit tests for overview metadata, validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Governance and compliance as a continuous, technology-neutral, vendor-neutral enterprise capability without providing legal advice, guaranteeing certification, replacing domain architectures, or prescribing governance products.
+
+Status: Governance and Compliance Architecture
+Version: 0.102.0
