@@ -1,0 +1,29 @@
+flowchart TD
+    A["Propose business purpose, expected value, sponsor, and reason an agent is appropriate"] --> B["Design identity, ownership, goals, prohibited behavior, autonomy, authority, data, tools, and oversight"]
+    B --> C["Classify business impact, AI risk, tenant/property scope, reversibility, and assurance needs"]
+    C --> D["Implement versioned definition, policies, instructions, tool contracts, tests, evidence, and runbooks"]
+    D --> E["Evaluate quality, grounding, safety, security, privacy, isolation, resilience, cost, and operations"]
+    E --> F{"Required outcomes satisfied?"}
+
+    F -- "No" --> G["Record findings and return to design or implementation"]
+    G --> B
+    F -- "Yes" --> H["Obtain architecture, security, governance, operational, and accountable-owner approval"]
+    H --> I{"Exact version and scope approved?"}
+
+    I -- "No" --> G
+    I -- "Yes" --> J["Register identity, version, ownership, dependencies, lifecycle, and evidence"]
+    J --> K["Release trusted artifacts and activate progressively by environment, tenant, property, cohort, and autonomy"]
+    K --> L["Operate, observe, evaluate, support, and collect business and control evidence"]
+
+    L --> M{"Continue, improve, restrict, suspend, deprecate, or retire?"}
+    M -- "Continue" --> L
+    M -- "Improve" --> B
+    M -- "Restrict or suspend" --> N["Stop new work, control in-progress executions, revoke access, investigate, and remediate"]
+    N --> O{"Secure restoration approved?"}
+    O -- "Yes" --> K
+    O -- "No" --> P["Deprecate with successor, migration, support, communication, and end dates"]
+
+    M -- "Deprecate" --> P
+    M -- "Retire" --> Q["Resolve executions and dependencies, revoke credentials, dispose state, preserve evidence, and close operations"]
+    P --> Q
+    Q --> R["Archive required identity, approval, evaluation, incident, change, and retirement records"]
