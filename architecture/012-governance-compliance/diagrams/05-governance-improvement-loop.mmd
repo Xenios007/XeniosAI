@@ -1,0 +1,18 @@
+flowchart TD
+    A["Enterprise purpose, obligations, and risk appetite"] --> B["Governance operating model and policies"]
+    B --> C["Risk decisions, controls, and delegated authority"]
+    C --> D["Architecture, services, data, AI, workflows, operations, tenants, and properties"]
+    D --> E["Evidence, incidents, changes, complaints, and outcomes"]
+
+    E --> F["Monitoring, assurance, audit, and stakeholder review"]
+    F --> G["Risks, findings, exceptions, emerging obligations, and improvement opportunities"]
+    G --> H["Prioritize and assign accountable action"]
+    H --> I["Remediate through policy, control, architecture, operational, or capability change"]
+    I --> J["Verify outcome and residual risk"]
+
+    J --> K{"Effective and sustainable?"}
+    K -- "No" --> G
+    K -- "Yes" --> L["Update governance knowledge, maturity, and reusable controls"]
+    L --> A
+
+    M["Regulatory, supplier, tenant, property, and AI change"] --> G
