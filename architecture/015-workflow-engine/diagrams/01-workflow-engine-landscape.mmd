@@ -1,0 +1,73 @@
+flowchart TD
+    subgraph Initiators["Workflow Initiators"]
+        User["Users and Operators"]
+        Services["Business and Platform Services"]
+        Events["Events and Schedules"]
+        AI["AI Orchestrator and Agents"]
+    end
+
+    subgraph Control["Workflow Control Plane"]
+        Registry["Definition Registry"]
+        Validator["Definition Validator"]
+        Policy["Identity, Policy, and Admission"]
+        Operations["Operations and Observability"]
+    end
+
+    subgraph Runtime["Durable Workflow Runtime"]
+        Controller["Runtime Controller"]
+        State["Authoritative Execution State"]
+        TaskControl["Task and Activity Control"]
+        EventTimer["Event, Signal, and Timer Control"]
+        Recovery["Retry, Reconciliation, and Compensation"]
+    end
+
+    subgraph Participants["Governed Participants"]
+        Workers["Authorized Workers"]
+        Humans["Authenticated Humans"]
+        Agents["Bounded AI Agents"]
+        Adapters["Integration Adapters"]
+    end
+
+    subgraph Outcomes["Authoritative Outcomes"]
+        Domain["Domain Services"]
+        Providers["External Providers"]
+        Property["Property-Local Systems"]
+        Evidence["Evidence and Assurance"]
+    end
+
+    User --> Policy
+    Services --> Policy
+    Events --> Policy
+    AI --> Policy
+
+    Registry --> Validator
+    Validator --> Policy
+    Policy --> Controller
+    Operations <--> Controller
+
+    Controller <--> State
+    Controller --> TaskControl
+    Controller <--> EventTimer
+    Controller <--> Recovery
+
+    TaskControl --> Workers
+    TaskControl --> Humans
+    TaskControl --> Agents
+    TaskControl --> Adapters
+
+    Workers --> Domain
+    Humans --> Controller
+    Agents --> Controller
+    Adapters --> Providers
+    Adapters --> Property
+
+    Domain --> EventTimer
+    Providers --> EventTimer
+    Property --> EventTimer
+
+    State --> Evidence
+    Operations --> Evidence
+    Recovery --> Evidence
+
+    Domain -. "Owns business truth" .-> Evidence
+    State -. "Owns durable process state" .-> Evidence
