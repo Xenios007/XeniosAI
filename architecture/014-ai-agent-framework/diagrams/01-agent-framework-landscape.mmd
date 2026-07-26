@@ -1,0 +1,51 @@
+flowchart TD
+    A["People, services, workflows, events, and other authorized agents"] --> B["Agent Control Plane"]
+    B --> C["Agent Runtime"]
+    C --> D["Intelligence and Context Plane"]
+    D --> E["Governed Capability Plane"]
+    E --> F["Business services, workflows, knowledge, memory, data, integrations, and external systems"]
+    F --> G["Business outcomes, evidence, operations, and feedback"]
+    G --> B
+
+    subgraph CONTROL["Agent Control Plane"]
+        B1["Registry, identity, version, lifecycle, ownership, risk, authority, policy, autonomy, and admission"]
+    end
+
+    B --> B1
+    B1 --> C
+
+    subgraph RUNTIME["Agent Runtime"]
+        C1["Execution, goal, plan, tasks, state, limits, scheduling, checkpoints, waits, cancellation, and recovery"]
+    end
+
+    C --> C1
+    C1 --> D
+
+    subgraph INTELLIGENCE["Intelligence and Context Plane"]
+        D1["Reasoning and planning"]
+        D2["Authorized context, knowledge, and memory"]
+        D3["Human decisions and multi-agent coordination"]
+    end
+
+    D --> D1
+    D --> D2
+    D --> D3
+
+    D1 --> E
+    D2 --> E
+    D3 --> E
+
+    subgraph CAPABILITIES["Governed Capability Plane"]
+        E1["Tool Gateway, APIs, workflows, business actions, and controlled environments"]
+    end
+
+    E --> E1
+    E1 --> F
+
+    subgraph ASSURANCE["Continuous guardrails"]
+        H["Security, privacy, tenant/property isolation, evaluation, observability, assurance, and human accountability"]
+    end
+
+    H --> B
+    H --> C
+    H --> E
