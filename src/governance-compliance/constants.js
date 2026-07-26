@@ -4,7 +4,8 @@ export const GOVERNANCE_COMPLIANCE_ERROR_CODES = Object.freeze({
   POLICY_ARCHITECTURE_INVALID: 'POLICY_ARCHITECTURE_INVALID',
   ENTERPRISE_RISK_MANAGEMENT_INVALID: 'ENTERPRISE_RISK_MANAGEMENT_INVALID',
   COMPLIANCE_CONTROL_FRAMEWORK_INVALID: 'COMPLIANCE_CONTROL_FRAMEWORK_INVALID',
-  PRIVACY_DATA_GOVERNANCE_INVALID: 'PRIVACY_DATA_GOVERNANCE_INVALID'
+  PRIVACY_DATA_GOVERNANCE_INVALID: 'PRIVACY_DATA_GOVERNANCE_INVALID',
+  AI_ETHICAL_GOVERNANCE_INVALID: 'AI_ETHICAL_GOVERNANCE_INVALID'
 });
 
 export const GOVERNANCE_COMPLIANCE_OVERVIEW_OBJECTIVES = Object.freeze({
@@ -3152,4 +3153,977 @@ export const FUTURE_PRIVACY_DATA_GOVERNANCE_CAPABILITIES = Object.freeze({
   CONTINUOUS_PRIVACY_RISK_MONITORING: 'continuous-privacy-risk-monitoring',
   DATA_GOVERNANCE_DIGITAL_TWINS: 'data-governance-digital-twins',
   CROSS_PROPERTY_PRIVACY_INTELLIGENCE: 'cross-property-privacy-intelligence-with-protected-aggregation'
+});
+
+export const AI_ETHICAL_GOVERNANCE_OBJECTIVES = Object.freeze({
+  ACCOUNTABLE_AI_OWNERSHIP: 'accountable-ai-ownership',
+  PURPOSE_LIMITED_AI_USE: 'purpose-limited-ai-use',
+  EXPLICIT_PROHIBITED_USES: 'explicit-prohibited-uses',
+  RISK_PROPORTIONATE_CONTROLS: 'risk-proportionate-controls',
+  GOVERNED_MODEL_AND_PROVIDER_SELECTION: 'governed-model-and-provider-selection',
+  BOUNDED_AGENT_AUTHORITY: 'bounded-agent-authority',
+  MEANINGFUL_HUMAN_OVERSIGHT: 'meaningful-human-oversight',
+  SAFE_TOOL_EXECUTION: 'safe-tool-execution',
+  RELIABLE_QUALITY_EVALUATION: 'reliable-quality-evaluation',
+  FAIRNESS_AND_HARM_PREVENTION: 'fairness-and-harm-prevention',
+  EXPLAINABLE_CONSEQUENTIAL_OUTCOMES: 'explainable-consequential-outcomes',
+  PRIVACY_PRESERVING_AI_USE: 'privacy-preserving-ai-use',
+  SECURE_AI_OPERATION: 'secure-ai-operation',
+  TENANT_AND_PROPERTY_AWARE_CONTROLS: 'tenant-and-property-aware-controls',
+  EFFECTIVE_INCIDENT_RESPONSE: 'effective-incident-response',
+  LIFECYCLE_TRACEABILITY: 'lifecycle-traceability',
+  CONTINUOUS_EVIDENCE_AND_ASSURANCE: 'continuous-evidence-and-assurance',
+  VENDOR_NEUTRAL_AI_GOVERNANCE_CAPABILITIES: 'vendor-neutral-ai-governance-capabilities'
+});
+
+export const AI_ETHICAL_GOVERNANCE_PRINCIPLES = Object.freeze({
+  AI_HAS_NO_INHERENT_AUTHORITY: 'ai-has-no-inherent-authority',
+  PURPOSE_BEFORE_CAPABILITY: 'purpose-before-capability',
+  HUMAN_ACCOUNTABILITY: 'human-accountability',
+  RISK_PROPORTIONATE_GOVERNANCE: 'risk-proportionate-governance',
+  MINIMUM_NECESSARY_AUTONOMY: 'minimum-necessary-autonomy',
+  EVIDENCE_BEFORE_TRUST: 'evidence-before-trust',
+  EXPLAINABILITY_PROPORTIONATE_TO_IMPACT: 'explainability-proportionate-to-impact',
+  SAFE_FAILURE: 'safe-failure',
+  PRIVACY_AND_SECURITY_BY_DESIGN: 'privacy-and-security-by-design',
+  CONTINUOUS_GOVERNANCE: 'continuous-governance'
+});
+
+export const AI_ETHICAL_GOVERNANCE_MODEL_STAGES = Object.freeze({
+  BUSINESS_PURPOSE_AND_ETHICAL_BOUNDARIES: 'Business Purpose and Ethical Boundaries',
+  AI_USE_CASE_AND_RISK_CLASSIFICATION: 'AI Use-Case and Risk Classification',
+  ASSESSMENT: 'Model, Provider, Data, Agent, Tool, and Workflow Assessment',
+  AUTHORITY_GUARDRAILS_AND_HUMAN_OVERSIGHT: 'Authority, Guardrails, and Human Oversight',
+  EVALUATION_AND_OPERATIONAL_READINESS: 'Evaluation and Operational Readiness',
+  DEPLOYMENT_AND_CONTROLLED_OPERATION: 'Deployment and Controlled Operation',
+  MONITORING_EVIDENCE_INCIDENT_AND_CHANGE: 'Monitoring, Evidence, Incident, and Change',
+  RESTRICTION_IMPROVEMENT_REPLACEMENT_OR_RETIREMENT: 'Restriction, Improvement, Replacement, or Retirement'
+});
+
+export const AI_GOVERNANCE_ROLES = Object.freeze({
+  AI_USE_CASE_OWNER: 'ai-use-case-owner',
+  AI_SYSTEM_OWNER: 'ai-system-owner',
+  MODEL_OWNER: 'model-owner',
+  AGENT_OWNER: 'agent-owner',
+  TOOL_OWNER: 'tool-owner',
+  DATA_OWNER: 'data-owner',
+  AI_RISK_OWNER: 'ai-risk-owner',
+  AI_GOVERNANCE_AUTHORITY: 'ai-governance-authority',
+  HUMAN_OVERSIGHT_OWNER: 'human-oversight-owner',
+  AI_EVALUATOR: 'ai-evaluator',
+  SECURITY_AND_PRIVACY_AUTHORITIES: 'security-and-privacy-authorities',
+  TENANT_AI_AUTHORITY: 'tenant-ai-authority'
+});
+
+export const AI_SYSTEM_INVENTORY_FIELDS = Object.freeze({
+  AI_SYSTEM_IDENTIFIER: 'ai-system-identifier',
+  NAME: 'name',
+  PURPOSE: 'purpose',
+  OWNER: 'owner',
+  BUSINESS_CAPABILITY: 'business-capability',
+  AFFECTED_USERS: 'affected-users',
+  TENANTS_AND_PROPERTIES: 'tenants-and-properties',
+  MODELS: 'models',
+  PROVIDERS: 'providers',
+  AGENTS: 'agents',
+  PROMPTS: 'prompts',
+  CONTEXT_SOURCES: 'context-sources',
+  MEMORY: 'memory',
+  TOOLS: 'tools',
+  WORKFLOWS: 'workflows',
+  DATA: 'data',
+  DECISIONS: 'decisions',
+  OUTPUTS: 'outputs',
+  AUTONOMY_LEVEL: 'autonomy-level',
+  RISK_CLASS: 'risk-class',
+  HUMAN_OVERSIGHT: 'human-oversight',
+  EVALUATION: 'evaluation',
+  MONITORING: 'monitoring',
+  SECURITY: 'security',
+  PRIVACY: 'privacy',
+  SERVICE_COMMITMENTS: 'service-commitments',
+  INCIDENTS: 'incidents',
+  CHANGES: 'changes',
+  LIFECYCLE_STATE: 'lifecycle-state'
+});
+
+export const AI_USE_CASE_FIELDS = Object.freeze({
+  BUSINESS_PROBLEM: 'business-problem',
+  INTENDED_OUTCOME: 'intended-outcome',
+  USERS: 'users',
+  AFFECTED_PEOPLE: 'affected-people',
+  DECISION_OR_ACTION: 'decision-or-action',
+  DATA: 'data',
+  MODEL_CAPABILITY: 'model-capability',
+  AGENT_BEHAVIOR: 'agent-behavior',
+  TOOLS: 'tools',
+  AUTONOMY: 'autonomy',
+  HUMAN_ROLE: 'human-role',
+  BENEFITS: 'benefits',
+  RISKS: 'risks',
+  FAILURE_MODES: 'failure-modes',
+  PROHIBITED_BEHAVIOR: 'prohibited-behavior',
+  EVALUATION: 'evaluation',
+  EVIDENCE: 'evidence',
+  EXIT: 'exit'
+});
+
+export const AI_RISK_CLASSIFICATION_FACTORS = Object.freeze({
+  IMPACT_ON_PEOPLE: 'impact-on-people',
+  GUEST_IMPACT: 'guest-impact',
+  PROPERTY_IMPACT: 'property-impact',
+  FINANCIAL_EFFECT: 'financial-effect',
+  SECURITY: 'security',
+  PRIVACY: 'privacy',
+  DATA_SENSITIVITY: 'data-sensitivity',
+  DECISION_CONSEQUENCE: 'decision-consequence',
+  TOOL_AUTHORITY: 'tool-authority',
+  AUTONOMY: 'autonomy',
+  REVERSIBILITY: 'reversibility',
+  SCALE: 'scale',
+  TENANT_SCOPE: 'tenant-scope',
+  VULNERABILITY_OF_AFFECTED_PEOPLE: 'vulnerability-of-affected-people',
+  FAIRNESS: 'fairness',
+  TRANSPARENCY: 'transparency',
+  PROVIDER_DEPENDENCY: 'provider-dependency',
+  REGULATORY_APPLICABILITY: 'regulatory-applicability',
+  HUMAN_OVERSIGHT: 'human-oversight',
+  FAILURE_DETECTABILITY: 'failure-detectability'
+});
+
+export const AI_RISK_CLASSES = Object.freeze({
+  MINIMAL: 'minimal-risk',
+  LIMITED: 'limited-risk',
+  SIGNIFICANT: 'significant-risk',
+  HIGH: 'high-risk',
+  PROHIBITED: 'prohibited'
+});
+
+export const AI_IMPACT_ASSESSMENT_FIELDS = Object.freeze({
+  PURPOSE_AND_NECESSITY: 'purpose-and-necessity',
+  EXPECTED_BENEFIT: 'expected-benefit',
+  AFFECTED_PEOPLE: 'affected-people',
+  DATA: 'data',
+  PRIVACY: 'privacy',
+  SECURITY: 'security',
+  FAIRNESS: 'fairness',
+  TRANSPARENCY: 'transparency',
+  DECISION_CONSEQUENCE: 'decision-consequence',
+  AUTONOMY: 'autonomy',
+  HUMAN_OVERSIGHT: 'human-oversight',
+  TOOL_USE: 'tool-use',
+  PROVIDER: 'provider',
+  FAILURE_MODES: 'failure-modes',
+  MISUSE: 'misuse',
+  ABUSE: 'abuse',
+  SCALE: 'scale',
+  TENANT_AND_PROPERTY_SCOPE: 'tenant-and-property-scope',
+  ALTERNATIVES: 'alternatives',
+  RESIDUAL_RISK: 'residual-risk',
+  APPROVAL: 'approval',
+  REVIEW_TRIGGER: 'review-trigger'
+});
+
+export const AI_INTENDED_USE_FIELDS = Object.freeze({
+  PERMITTED_TASKS: 'permitted-tasks',
+  PERMITTED_USERS: 'permitted-users',
+  PERMITTED_TENANTS_AND_PROPERTIES: 'permitted-tenants-and-properties',
+  PERMITTED_DATA: 'permitted-data',
+  PERMITTED_TOOLS: 'permitted-tools',
+  PERMITTED_DECISIONS: 'permitted-decisions',
+  AUTONOMY: 'autonomy',
+  REQUIRED_OVERSIGHT: 'required-oversight',
+  OPERATING_CONDITIONS: 'operating-conditions',
+  EXPECTED_QUALITY: 'expected-quality',
+  KNOWN_LIMITATIONS: 'known-limitations',
+  PROHIBITED_EXTENSIONS: 'prohibited-extensions'
+});
+
+export const AI_PROHIBITED_USE_CATEGORIES = Object.freeze({
+  ACTS_WITHOUT_REQUIRED_AUTHORITY: 'acts-without-required-authority',
+  DECEIVES_ABOUT_MATERIAL_AI_INVOLVEMENT: 'deceives-about-material-ai-involvement',
+  BYPASSES_SECURITY_OR_TENANT_ISOLATION: 'bypasses-security-or-tenant-isolation',
+  USES_DATA_WITHOUT_AUTHORIZED_PURPOSE: 'uses-data-without-authorized-purpose',
+  MAKES_PROHIBITED_DISCRIMINATORY_DECISIONS: 'makes-prohibited-discriminatory-decisions',
+  MANIPULATES_VULNERABLE_PEOPLE: 'manipulates-vulnerable-people',
+  EXECUTES_UNBOUNDED_HIGH_IMPACT_TOOLS: 'executes-unbounded-high-impact-tools',
+  CONCEALS_UNCERTAINTY: 'conceals-uncertainty',
+  CREATES_IRREVERSIBLE_HARM_WITHOUT_OVERSIGHT: 'creates-irreversible-harm-without-oversight',
+  CIRCUMVENTS_LAWS_POLICY_OR_HUMAN_REVIEW: 'circumvents-laws-policy-or-human-review',
+  FABRICATES_COMPLIANCE_EVIDENCE: 'fabricates-compliance-evidence',
+  SUPPRESSES_INCIDENTS_OR_FINDINGS: 'suppresses-incidents-or-findings',
+  SELF_MODIFIES_PRODUCTION_POLICY_WITHOUT_AUTHORITY: 'self-modifies-production-policy-without-authority'
+});
+
+export const AI_MODEL_GOVERNANCE_FIELDS = Object.freeze({
+  PURPOSE_SUITABILITY: 'purpose-suitability',
+  OWNER: 'owner',
+  VERSION: 'version',
+  PROVIDER: 'provider',
+  CAPABILITY: 'capability',
+  LIMITATIONS: 'limitations',
+  TRAINING_DATA_INFORMATION: 'training-data-information',
+  EVALUATION: 'evaluation',
+  SAFETY: 'safety',
+  SECURITY: 'security',
+  PRIVACY: 'privacy',
+  FAIRNESS: 'fairness',
+  EXPLAINABILITY: 'explainability',
+  COST: 'cost',
+  LATENCY: 'latency',
+  AVAILABILITY: 'availability',
+  RESIDENCY: 'residency',
+  CONTRACT: 'contract',
+  CHANGE: 'change',
+  MONITORING: 'monitoring',
+  RETIREMENT: 'retirement'
+});
+
+export const AI_MODEL_SELECTION_FACTORS = Object.freeze({
+  TASK_REQUIREMENTS: 'task-requirements',
+  QUALITY: 'quality',
+  SAFETY: 'safety',
+  CONTEXT_NEEDS: 'context-needs',
+  TOOL_USE: 'tool-use',
+  PRIVACY: 'privacy',
+  SECURITY: 'security',
+  EXPLAINABILITY: 'explainability',
+  BIAS: 'bias',
+  LANGUAGE: 'language',
+  LATENCY: 'latency',
+  COST: 'cost',
+  PROVIDER_RELIABILITY: 'provider-reliability',
+  DATA_HANDLING: 'data-handling',
+  RESIDENCY: 'residency',
+  PORTABILITY: 'portability',
+  EVALUATION_EVIDENCE: 'evaluation-evidence'
+});
+
+export const AI_MODEL_VERSIONING_FIELDS = Object.freeze({
+  VERSION_IDENTITY: 'version-identity',
+  EFFECTIVE_PERIOD: 'effective-period',
+  EVALUATION: 'evaluation',
+  COMPATIBILITY: 'compatibility',
+  PROMPT_IMPACT: 'prompt-impact',
+  AGENT_IMPACT: 'agent-impact',
+  TOOL_IMPACT: 'tool-impact',
+  TENANT_IMPACT: 'tenant-impact',
+  CHANGE_AUTHORIZATION: 'change-authorization',
+  ROLLBACK_OR_SUBSTITUTION: 'rollback-or-substitution',
+  MONITORING: 'monitoring',
+  EVIDENCE: 'evidence'
+});
+
+export const AI_PROVIDER_GOVERNANCE_FIELDS = Object.freeze({
+  DUE_DILIGENCE: 'due-diligence',
+  CONTRACT: 'contract',
+  DATA_USE: 'data-use',
+  TRAINING_USE: 'training-use',
+  RETENTION: 'retention',
+  LOCATION: 'location',
+  SECURITY: 'security',
+  PRIVACY: 'privacy',
+  MODEL_CHANGES: 'model-changes',
+  AVAILABILITY: 'availability',
+  CAPACITY: 'capacity',
+  SAFETY: 'safety',
+  EVIDENCE: 'evidence',
+  INCIDENT_NOTIFICATION: 'incident-notification',
+  SUBPROCESSORS: 'subprocessors',
+  PORTABILITY: 'portability',
+  EXIT: 'exit'
+});
+
+export const AI_AGENT_GOVERNANCE_FIELDS = Object.freeze({
+  AGENT_IDENTITY: 'agent-identity',
+  OWNER: 'owner',
+  PURPOSE: 'purpose',
+  ROLE: 'role',
+  TENANT_AND_PROPERTY_SCOPE: 'tenant-and-property-scope',
+  MODELS: 'models',
+  PROMPTS: 'prompts',
+  CONTEXT: 'context',
+  MEMORY: 'memory',
+  TOOLS: 'tools',
+  PERMISSIONS: 'permissions',
+  AUTONOMY: 'autonomy',
+  COORDINATION: 'coordination',
+  POLICIES: 'policies',
+  SAFETY_LIMITS: 'safety-limits',
+  STOP_CONDITIONS: 'stop-conditions',
+  HUMAN_ESCALATION: 'human-escalation',
+  MONITORING: 'monitoring',
+  EVALUATION: 'evaluation',
+  EVIDENCE: 'evidence',
+  LIFECYCLE_STATE: 'lifecycle-state'
+});
+
+export const MULTI_AGENT_GOVERNANCE_FIELDS = Object.freeze({
+  COORDINATION_OWNER: 'coordination-owner',
+  AGENT_ROLES: 'agent-roles',
+  SHARED_CONTEXT: 'shared-context',
+  INFORMATION_BOUNDARIES: 'information-boundaries',
+  DECISION_AUTHORITY: 'decision-authority',
+  CONFLICT_RESOLUTION: 'conflict-resolution',
+  TOOL_ARBITRATION: 'tool-arbitration',
+  ACTION_LIMITS: 'action-limits',
+  EVIDENCE_CORRELATION: 'evidence-correlation',
+  FAILURE_HANDLING: 'failure-handling',
+  HUMAN_TAKEOVER: 'human-takeover'
+});
+
+export const PROMPT_GOVERNANCE_REQUIREMENTS = Object.freeze({
+  OWNED: 'owned',
+  VERSIONED: 'versioned',
+  REVIEWED: 'reviewed',
+  TESTED: 'tested',
+  CLASSIFIED: 'classified',
+  PROTECTED: 'protected',
+  TRACEABLE: 'traceable',
+  TENANT_SCOPED: 'tenant-scoped',
+  CHANGE_CONTROLLED: 'change-controlled',
+  MONITORED: 'monitored',
+  RETIRABLE: 'retirable'
+});
+
+export const AI_CONTEXT_GOVERNANCE_REQUIREMENTS = Object.freeze({
+  PURPOSE_RELEVANT: 'purpose-relevant',
+  MINIMAL: 'minimal',
+  AUTHORIZED: 'authorized',
+  ACCURATE_ENOUGH: 'accurate-enough',
+  CLASSIFIED: 'classified',
+  TENANT_ISOLATED: 'tenant-isolated',
+  TIME_APPROPRIATE: 'time-appropriate',
+  SOURCE_TRACEABLE: 'source-traceable',
+  PROTECTED: 'protected',
+  RETAINED_APPROPRIATELY: 'retained-appropriately'
+});
+
+export const AI_MEMORY_GOVERNANCE_FIELDS = Object.freeze({
+  PURPOSE: 'purpose',
+  SCOPE: 'scope',
+  TENANT: 'tenant',
+  PROPERTY: 'property',
+  USER: 'user',
+  DURATION: 'duration',
+  SOURCE: 'source',
+  CONFIDENCE: 'confidence',
+  ACCESS: 'access',
+  SHARING: 'sharing',
+  UPDATE: 'update',
+  CORRECTION: 'correction',
+  DELETION: 'deletion',
+  RETRIEVAL: 'retrieval',
+  EVIDENCE: 'evidence'
+});
+
+export const AI_TOOL_GOVERNANCE_FIELDS = Object.freeze({
+  TOOL_IDENTITY: 'tool-identity',
+  OWNER: 'owner',
+  PURPOSE: 'purpose',
+  CONTRACT: 'contract',
+  INPUTS: 'inputs',
+  OUTPUTS: 'outputs',
+  PERMISSIONS: 'permissions',
+  TARGET_SCOPE: 'target-scope',
+  TENANT_BOUNDARY: 'tenant-boundary',
+  PRECONDITIONS: 'preconditions',
+  RISK: 'risk',
+  SIDE_EFFECTS: 'side-effects',
+  IDEMPOTENCY: 'idempotency',
+  RATE_LIMITS: 'rate-limits',
+  APPROVAL: 'approval',
+  VERIFICATION: 'verification',
+  COMPENSATION: 'compensation',
+  EVIDENCE: 'evidence',
+  FAILURE_HANDLING: 'failure-handling',
+  RETIREMENT: 'retirement'
+});
+
+export const AI_TOOL_INVOCATION_FIELDS = Object.freeze({
+  AGENT_OR_ACTOR: 'agent-or-actor',
+  USER_OR_DELEGATED_AUTHORITY: 'user-or-delegated-authority',
+  TOOL: 'tool',
+  PURPOSE: 'purpose',
+  TARGET: 'target',
+  TENANT_AND_PROPERTY_SCOPE: 'tenant-and-property-scope',
+  INPUT: 'input',
+  POLICY_DECISION: 'policy-decision',
+  APPROVAL: 'approval',
+  ACTION: 'action',
+  OUTPUT: 'output',
+  SIDE_EFFECT: 'side-effect',
+  VERIFICATION: 'verification',
+  ERROR: 'error',
+  TIME: 'time',
+  EVIDENCE: 'evidence'
+});
+
+export const AI_AUTONOMY_LEVELS = Object.freeze({
+  LEVEL_0_INFORMATIONAL: 'level-0-informational',
+  LEVEL_1_ADVISORY: 'level-1-advisory',
+  LEVEL_2_HUMAN_APPROVED_EXECUTION: 'level-2-human-approved-execution',
+  LEVEL_3_SUPERVISED_ACTION: 'level-3-supervised-action',
+  LEVEL_4_BOUNDED_AUTONOMOUS_ACTION: 'level-4-bounded-autonomous-action',
+  LEVEL_5_ADAPTIVE_BOUNDED_AUTONOMY: 'level-5-adaptive-bounded-autonomy'
+});
+
+export const AI_HUMAN_OVERSIGHT_MODES = Object.freeze({
+  REVIEW: 'review',
+  APPROVAL: 'approval',
+  CONFIRMATION: 'confirmation',
+  MONITORING: 'monitoring',
+  INTERVENTION: 'intervention',
+  APPEAL: 'appeal',
+  OVERRIDE: 'override',
+  SHUTDOWN: 'shutdown',
+  POST_ACTION_REVIEW: 'post-action-review'
+});
+
+export const MEANINGFUL_OVERSIGHT_REQUIREMENTS = Object.freeze({
+  ADEQUATE_INFORMATION: 'adequate-information',
+  APPROPRIATE_EXPERTISE: 'appropriate-expertise',
+  TIME: 'time',
+  AUTHORITY: 'authority',
+  INDEPENDENCE: 'independence',
+  UNDERSTANDING_OF_UNCERTAINTY: 'understanding-of-uncertainty',
+  ABILITY_TO_DISAGREE: 'ability-to-disagree',
+  ABILITY_TO_STOP_OR_REVERSE: 'ability-to-stop-or-reverse',
+  EVIDENCE: 'evidence',
+  ACCOUNTABILITY: 'accountability'
+});
+
+export const AUTOMATION_BIAS_CONTROLS = Object.freeze({
+  CLEAR_UNCERTAINTY: 'clear-uncertainty',
+  ALTERNATIVE_OPTIONS: 'alternative-options',
+  INDEPENDENT_EVIDENCE: 'independent-evidence',
+  TRAINING: 'training',
+  DELIBERATE_REVIEW_FOR_HIGH_IMPACT_CASES: 'deliberate-review-for-high-impact-cases',
+  AVOIDING_FALSE_PRECISION: 'avoiding-false-precision',
+  TRACKING_DISAGREEMENT: 'tracking-disagreement',
+  MEASURING_OVERRIDE_QUALITY: 'measuring-override-quality',
+  RECOURSE: 'recourse',
+  SEPARATION_OF_RECOMMENDATION_AND_APPROVAL: 'separation-of-recommendation-and-approval'
+});
+
+export const AI_SAFETY_RISK_AREAS = Object.freeze({
+  HARMFUL_OUTPUT: 'harmful-output',
+  UNSAFE_ACTION: 'unsafe-action',
+  POLICY_VIOLATION: 'policy-violation',
+  EXCESSIVE_AUTONOMY: 'excessive-autonomy',
+  TOOL_MISUSE: 'tool-misuse',
+  DATA_LEAKAGE: 'data-leakage',
+  MANIPULATION: 'manipulation',
+  ADVERSARIAL_INPUT: 'adversarial-input',
+  PROMPT_INJECTION: 'prompt-injection',
+  CASCADING_AGENTS: 'cascading-agents',
+  UNCONTROLLED_RETRIES: 'uncontrolled-retries',
+  UNSAFE_FALLBACK: 'unsafe-fallback',
+  HIDDEN_FAILURE: 'hidden-failure'
+});
+
+export const AI_ROBUSTNESS_EVALUATION_SCENARIOS = Object.freeze({
+  NORMAL_USE: 'normal-use',
+  EDGE_CASES: 'edge-cases',
+  AMBIGUOUS_INPUT: 'ambiguous-input',
+  ADVERSARIAL_INPUT: 'adversarial-input',
+  MISSING_CONTEXT: 'missing-context',
+  INCORRECT_CONTEXT: 'incorrect-context',
+  PROVIDER_FAILURE: 'provider-failure',
+  TOOL_FAILURE: 'tool-failure',
+  INTEGRATION_FAILURE: 'integration-failure',
+  LONG_CONVERSATIONS: 'long-conversations',
+  MULTI_LANGUAGE_USE: 'multi-language-use',
+  DEMAND_SPIKES: 'demand-spikes',
+  DISTRIBUTION_SHIFT: 'distribution-shift'
+});
+
+export const AI_QUALITY_DIMENSIONS = Object.freeze({
+  CORRECTNESS: 'correctness',
+  RELEVANCE: 'relevance',
+  COMPLETENESS: 'completeness',
+  CONSISTENCY: 'consistency',
+  GROUNDEDNESS: 'groundedness',
+  HELPFULNESS: 'helpfulness',
+  SAFETY: 'safety',
+  POLICY_COMPLIANCE: 'policy-compliance',
+  TOOL_SUCCESS: 'tool-success',
+  TASK_COMPLETION: 'task-completion',
+  APPROPRIATE_UNCERTAINTY: 'appropriate-uncertainty',
+  USER_EXPERIENCE: 'user-experience',
+  COST_AND_LATENCY: 'cost-and-latency'
+});
+
+export const AI_EVALUATION_FIELDS = Object.freeze({
+  PURPOSE: 'purpose',
+  USE_CASE: 'use-case',
+  RISK_CLASS: 'risk-class',
+  CRITERIA: 'criteria',
+  DATA: 'data',
+  SCENARIOS: 'scenarios',
+  BASELINE: 'baseline',
+  THRESHOLD: 'threshold',
+  EVALUATOR: 'evaluator',
+  INDEPENDENCE: 'independence',
+  FREQUENCY: 'frequency',
+  RESULTS: 'results',
+  LIMITATIONS: 'limitations',
+  APPROVAL: 'approval',
+  REMEDIATION: 'remediation',
+  RETEST: 'retest'
+});
+
+export const AI_EVALUATION_DATA_REQUIREMENTS = Object.freeze({
+  PURPOSE_APPROPRIATE: 'purpose-appropriate',
+  REPRESENTATIVE: 'representative',
+  GOVERNED: 'governed',
+  SECURE: 'secure',
+  PRIVACY_RESPECTING: 'privacy-respecting',
+  TENANT_ISOLATED: 'tenant-isolated',
+  VERSIONED: 'versioned',
+  QUALITY_CONTROLLED: 'quality-controlled',
+  FREE_FROM_INAPPROPRIATE_LEAKAGE: 'free-from-inappropriate-leakage',
+  DOCUMENTED_FOR_LIMITATIONS: 'documented-for-limitations'
+});
+
+export const AI_FAIRNESS_FACTORS = Object.freeze({
+  AFFECTED_GROUPS: 'affected-groups',
+  POTENTIAL_DISADVANTAGE: 'potential-disadvantage',
+  DATA_REPRESENTATION: 'data-representation',
+  PROXY_VARIABLES: 'proxy-variables',
+  DECISION_IMPACT: 'decision-impact',
+  ERROR_DISTRIBUTION: 'error-distribution',
+  ACCESS: 'access',
+  EXCLUSION: 'exclusion',
+  RECOURSE: 'recourse',
+  CONTEXT: 'context',
+  JURISDICTION: 'jurisdiction',
+  LEGITIMATE_BUSINESS_OBJECTIVE: 'legitimate-business-objective'
+});
+
+export const AI_NONDISCRIMINATION_FACTORS = Object.freeze({
+  DIRECT_DISCRIMINATION: 'direct-discrimination',
+  INDIRECT_DISCRIMINATION: 'indirect-discrimination',
+  PROXY_EFFECTS: 'proxy-effects',
+  HISTORICAL_BIAS: 'historical-bias',
+  UNEQUAL_ERROR: 'unequal-error',
+  DIFFERENTIAL_ACCESS: 'differential-access',
+  UNJUSTIFIED_PERSONALIZATION: 'unjustified-personalization',
+  PROPERTY_OR_GEOGRAPHIC_PROXY: 'property-or-geographic-proxy',
+  ACCESSIBILITY: 'accessibility'
+});
+
+export const AI_TRANSPARENCY_DISCLOSURES = Object.freeze({
+  AI_PARTICIPATION: 'ai-participation',
+  PURPOSE: 'purpose',
+  DATA_USE: 'data-use',
+  DECISION_ROLE: 'decision-role',
+  LIMITATIONS: 'limitations',
+  HUMAN_OVERSIGHT: 'human-oversight',
+  AVAILABLE_RECOURSE: 'available-recourse',
+  MATERIAL_AUTOMATED_ACTION: 'material-automated-action',
+  PROVIDER_USE: 'provider-use'
+});
+
+export const AI_EXPLAINABILITY_AUDIENCES = Object.freeze({
+  GUEST: 'guest',
+  TENANT_USER: 'tenant-user',
+  PROPERTY_OPERATOR: 'property-operator',
+  SERVICE_OWNER: 'service-owner',
+  GOVERNANCE_AUTHORITY: 'governance-authority',
+  AUDITOR: 'auditor',
+  REGULATOR: 'regulator',
+  DEVELOPER: 'developer',
+  INCIDENT_RESPONDER: 'incident-responder'
+});
+
+export const AI_TRACEABILITY_STAGES = Object.freeze({
+  USE_CASE: 'Use Case',
+  AI_COMPONENTS: 'Model, Agent, Prompt, Context, Memory, and Tools',
+  POLICY_AND_AUTHORITY: 'Policy and Authority',
+  INPUT_AND_EXECUTION: 'Input and Execution',
+  OUTPUT_DECISION_OR_ACTION: 'Output, Decision, or Action',
+  HUMAN_OVERSIGHT: 'Human Oversight',
+  OUTCOME_AND_EVIDENCE: 'Outcome and Evidence'
+});
+
+export const AI_PRIVACY_GOVERNANCE_AREAS = Object.freeze({
+  PURPOSE: 'purpose',
+  MINIMIZATION: 'minimization',
+  CONTEXT: 'context',
+  PROVIDER_PROCESSING: 'provider-processing',
+  TRAINING_USE: 'training-use',
+  RETENTION: 'retention',
+  MEMORY: 'memory',
+  INFERENCE: 'inference',
+  SENSITIVE_DATA: 'sensitive-data',
+  RIGHTS: 'rights',
+  CROSS_BORDER_MOVEMENT: 'cross-border-movement',
+  TENANT_ISOLATION: 'tenant-isolation',
+  DELETION: 'deletion'
+});
+
+export const AI_SECURITY_RISK_AREAS = Object.freeze({
+  PROMPT_INJECTION: 'prompt-injection',
+  DATA_POISONING: 'data-poisoning',
+  MODEL_THEFT: 'model-theft',
+  TOOL_ABUSE: 'tool-abuse',
+  AGENT_IMPERSONATION: 'agent-impersonation',
+  CONTEXT_MANIPULATION: 'context-manipulation',
+  MEMORY_POISONING: 'memory-poisoning',
+  SUPPLY_CHAIN: 'supply-chain',
+  PROVIDER_COMPROMISE: 'provider-compromise',
+  UNAUTHORIZED_MODEL_ACCESS: 'unauthorized-model-access',
+  OUTPUT_EXPLOITATION: 'output-exploitation',
+  DENIAL_OF_SERVICE: 'denial-of-service'
+});
+
+export const CONSEQUENTIAL_DECISION_AREAS = Object.freeze({
+  ACCESS: 'access',
+  SAFETY: 'safety',
+  BOOKING: 'booking',
+  PRICING: 'pricing',
+  PAYMENT: 'payment',
+  GUEST_TREATMENT: 'guest-treatment',
+  PROPERTY_OPERATIONS: 'property-operations',
+  EMPLOYMENT: 'employment',
+  PRIVACY: 'privacy',
+  SECURITY: 'security',
+  CONTRACTUAL_RIGHTS: 'contractual-rights',
+  SIGNIFICANT_FINANCIAL_OUTCOMES: 'significant-financial-outcomes'
+});
+
+export const AI_RECOURSE_OPTIONS = Object.freeze({
+  HUMAN_REVIEW: 'human-review',
+  CORRECTION: 'correction',
+  APPEAL: 'appeal',
+  ALTERNATIVE_PROCESS: 'alternative-process',
+  EXPLANATION: 'explanation',
+  COMPLAINT: 'complaint',
+  COMPENSATION_WHERE_APPLICABLE: 'compensation-where-applicable',
+  DECISION_REVERSAL: 'decision-reversal',
+  DATA_CORRECTION: 'data-correction',
+  ESCALATION: 'escalation'
+});
+
+export const ETHICAL_REVIEW_FACTORS = Object.freeze({
+  RESPECTS_HUMAN_DIGNITY: 'respects-human-dignity',
+  AVOIDS_UNJUSTIFIED_HARM: 'avoids-unjustified-harm',
+  PRESERVES_MEANINGFUL_AGENCY: 'preserves-meaningful-agency',
+  AVOIDS_DECEPTION: 'avoids-deception',
+  SUPPORTS_FAIRNESS: 'supports-fairness',
+  PROTECTS_PRIVACY: 'protects-privacy',
+  IS_PROPORTIONATE: 'is-proportionate',
+  PROVIDES_TRANSPARENCY: 'provides-transparency',
+  PROVIDES_RECOURSE: 'provides-recourse',
+  USES_DATA_RESPONSIBLY: 'uses-data-responsibly',
+  AVOIDS_EXPLOITATION: 'avoids-exploitation',
+  ALIGNS_WITH_ENTERPRISE_VALUES: 'aligns-with-enterprise-values'
+});
+
+export const ETHICAL_DECISION_RECORD_FIELDS = Object.freeze({
+  USE_CASE: 'use-case',
+  AFFECTED_PEOPLE: 'affected-people',
+  BENEFIT: 'benefit',
+  POTENTIAL_HARM: 'potential-harm',
+  ALTERNATIVES: 'alternatives',
+  DATA: 'data',
+  AUTONOMY: 'autonomy',
+  FAIRNESS: 'fairness',
+  TRANSPARENCY: 'transparency',
+  OVERSIGHT: 'oversight',
+  RECOURSE: 'recourse',
+  STAKEHOLDER_CONSULTATION: 'stakeholder-consultation',
+  DECISION_AUTHORITY: 'decision-authority',
+  CONDITIONS: 'conditions',
+  REVIEW: 'review'
+});
+
+export const AI_LIFECYCLE_STATES = Object.freeze({
+  PROPOSED: 'proposed',
+  ASSESSING: 'assessing',
+  DESIGNING: 'designing',
+  EVALUATING: 'evaluating',
+  APPROVED_FOR_TESTING: 'approved-for-testing',
+  APPROVED_FOR_LIMITED_USE: 'approved-for-limited-use',
+  PRODUCTION: 'production',
+  RESTRICTED: 'restricted',
+  SUSPENDED: 'suspended',
+  UNDER_REMEDIATION: 'under-remediation',
+  DEPRECATED: 'deprecated',
+  RETIRING: 'retiring',
+  RETIRED: 'retired',
+  PROHIBITED: 'prohibited'
+});
+
+export const AI_OPERATIONAL_READINESS_FIELDS = Object.freeze({
+  APPROVED_PURPOSE: 'approved-purpose',
+  OWNER: 'owner',
+  RISK_CLASSIFICATION: 'risk-classification',
+  MODEL_AND_PROVIDER_APPROVAL: 'model-and-provider-approval',
+  DATA_AUTHORIZATION: 'data-authorization',
+  AGENT_IDENTITY: 'agent-identity',
+  TOOL_PERMISSIONS: 'tool-permissions',
+  AUTONOMY: 'autonomy',
+  HUMAN_OVERSIGHT: 'human-oversight',
+  EVALUATION: 'evaluation',
+  SAFETY_CONTROLS: 'safety-controls',
+  SECURITY: 'security',
+  PRIVACY: 'privacy',
+  MONITORING: 'monitoring',
+  INCIDENT_RESPONSE: 'incident-response',
+  CAPACITY: 'capacity',
+  CONTINUITY: 'continuity',
+  ROLLBACK_OR_RESTRICTION: 'rollback-or-restriction',
+  EVIDENCE: 'evidence',
+  TENANT_AND_PROPERTY_SCOPE: 'tenant-and-property-scope',
+  KNOWN_LIMITATIONS: 'known-limitations'
+});
+
+export const AI_MONITORING_AREAS = Object.freeze({
+  QUALITY: 'quality',
+  SAFETY: 'safety',
+  POLICY_COMPLIANCE: 'policy-compliance',
+  TOOL_USE: 'tool-use',
+  AUTONOMY: 'autonomy',
+  DATA_USE: 'data-use',
+  PRIVACY: 'privacy',
+  SECURITY: 'security',
+  FAIRNESS: 'fairness',
+  EXPLAINABILITY: 'explainability',
+  DRIFT: 'drift',
+  COST: 'cost',
+  LATENCY: 'latency',
+  PROVIDER_CHANGE: 'provider-change',
+  HUMAN_OVERRIDES: 'human-overrides',
+  INCIDENTS: 'incidents',
+  TENANT_DIFFERENCES: 'tenant-differences',
+  PROPERTY_IMPACT: 'property-impact'
+});
+
+export const AI_DRIFT_AREAS = Object.freeze({
+  MODEL_BEHAVIOR: 'model-behavior',
+  DATA: 'data',
+  PROMPTS: 'prompts',
+  CONTEXT: 'context',
+  USER_BEHAVIOR: 'user-behavior',
+  TOOL_BEHAVIOR: 'tool-behavior',
+  PROVIDER_CHANGES: 'provider-changes',
+  ENVIRONMENT: 'environment',
+  LANGUAGE: 'language',
+  TENANT_USE: 'tenant-use',
+  THREAT_PATTERNS: 'threat-patterns',
+  QUALITY_EXPECTATIONS: 'quality-expectations'
+});
+
+export const AI_CHANGE_TYPES = Object.freeze({
+  MODEL: 'model',
+  PROVIDER: 'provider',
+  VERSION: 'version',
+  PROMPT: 'prompt',
+  POLICY: 'policy',
+  CONTEXT_SOURCE: 'context-source',
+  MEMORY: 'memory',
+  TOOL: 'tool',
+  PERMISSION: 'permission',
+  AUTONOMY: 'autonomy',
+  WORKFLOW: 'workflow',
+  EVALUATION_THRESHOLD: 'evaluation-threshold',
+  SAFETY_CONTROL: 'safety-control',
+  TENANT_SETTING: 'tenant-setting'
+});
+
+export const AI_INCIDENT_TYPES = Object.freeze({
+  HARMFUL_OUTPUT: 'harmful-output',
+  UNSAFE_ACTION: 'unsafe-action',
+  INCORRECT_CONSEQUENTIAL_DECISION: 'incorrect-consequential-decision',
+  DATA_LEAKAGE: 'data-leakage',
+  TENANT_BOUNDARY_FAILURE: 'tenant-boundary-failure',
+  TOOL_MISUSE: 'tool-misuse',
+  PROMPT_INJECTION: 'prompt-injection',
+  MODEL_QUALITY_COLLAPSE: 'model-quality-collapse',
+  PROVIDER_FAILURE: 'provider-failure',
+  COST_ANOMALY: 'cost-anomaly',
+  LOSS_OF_EXPLAINABILITY: 'loss-of-explainability',
+  UNCONTROLLED_AGENT_BEHAVIOR: 'uncontrolled-agent-behavior',
+  POLICY_VIOLATION: 'policy-violation'
+});
+
+export const AI_INCIDENT_RESPONSE_ACTIONS = Object.freeze({
+  CONTAIN: 'contain',
+  REDUCE_AUTONOMY: 'reduce-autonomy',
+  DISABLE_TOOLS_OR_AGENTS: 'disable-tools-or-agents',
+  PRESERVE_EVIDENCE: 'preserve-evidence',
+  ASSESS_AFFECTED_PEOPLE: 'assess-affected-people',
+  PROTECT_DATA: 'protect-data',
+  NOTIFY_OWNERS: 'notify-owners',
+  RESTORE_SAFE_SERVICE: 'restore-safe-service',
+  PROVIDE_RECOURSE: 'provide-recourse',
+  CREATE_FINDINGS_AND_REMEDIATION: 'create-findings-and-remediation',
+  REEVALUATE_RISK_AND_APPROVAL: 'reevaluate-risk-and-approval'
+});
+
+export const TENANT_AI_GOVERNANCE_FIELDS = Object.freeze({
+  PERMITTED_USE_CASES: 'permitted-use-cases',
+  TENANT_AI_AUTHORITY: 'tenant-ai-authority',
+  DATA_USE: 'data-use',
+  MODEL_AND_PROVIDER_OPTIONS: 'model-and-provider-options',
+  AGENT_PERMISSIONS: 'agent-permissions',
+  TOOL_ACCESS: 'tool-access',
+  AUTONOMY_LIMITS: 'autonomy-limits',
+  PROPERTY_DELEGATION: 'property-delegation',
+  USER_DISCLOSURE: 'user-disclosure',
+  MONITORING: 'monitoring',
+  EVIDENCE: 'evidence',
+  INCIDENT_COMMUNICATION: 'incident-communication',
+  EXIT: 'exit'
+});
+
+export const PROPERTY_AI_GOVERNANCE_FACTORS = Object.freeze({
+  GUEST_INTERACTION: 'guest-interaction',
+  STAFF_COMPETENCE: 'staff-competence',
+  LOCAL_PROCESS: 'local-process',
+  PHYSICAL_CONSEQUENCES: 'physical-consequences',
+  CONNECTIVITY: 'connectivity',
+  MANUAL_FALLBACK: 'manual-fallback',
+  LOCAL_REGULATION: 'local-regulation',
+  TENANT_POLICY: 'tenant-policy',
+  DISCLOSURE: 'disclosure',
+  ESCALATION: 'escalation',
+  RECOURSE: 'recourse'
+});
+
+export const AI_SUPPLIER_GOVERNANCE_FIELDS = Object.freeze({
+  MODEL_BEHAVIOR: 'model-behavior',
+  DATA_USE: 'data-use',
+  RETENTION: 'retention',
+  TRAINING: 'training',
+  SECURITY: 'security',
+  PRIVACY: 'privacy',
+  CAPACITY: 'capacity',
+  AVAILABILITY: 'availability',
+  VERSION_CHANGE: 'version-change',
+  SAFETY: 'safety',
+  EVIDENCE: 'evidence',
+  INCIDENT_NOTIFICATION: 'incident-notification',
+  SUBPROCESSORS: 'subprocessors',
+  INTELLECTUAL_PROPERTY_CONSIDERATIONS: 'intellectual-property-considerations',
+  PORTABILITY: 'portability',
+  EXIT: 'exit'
+});
+
+export const AI_GOVERNANCE_EVIDENCE_TYPES = Object.freeze({
+  PURPOSE_APPROVAL: 'purpose-approval',
+  RISK_CLASSIFICATION: 'risk-classification',
+  IMPACT_ASSESSMENT: 'impact-assessment',
+  MODEL_SELECTION: 'model-selection',
+  PROVIDER_REVIEW: 'provider-review',
+  EVALUATION: 'evaluation',
+  PROMPT_VERSION: 'prompt-version',
+  AGENT_CONFIGURATION: 'agent-configuration',
+  TOOL_AUTHORIZATION: 'tool-authorization',
+  DATA_AUTHORIZATION: 'data-authorization',
+  HUMAN_OVERSIGHT: 'human-oversight',
+  POLICY_DECISIONS: 'policy-decisions',
+  EXECUTIONS: 'executions',
+  INCIDENTS: 'incidents',
+  CHANGES: 'changes',
+  MONITORING: 'monitoring',
+  COMPLAINTS: 'complaints',
+  RECOURSE: 'recourse',
+  RETIREMENT: 'retirement'
+});
+
+export const AI_ASSURANCE_AREAS = Object.freeze({
+  GOVERNANCE_DESIGN: 'governance-design',
+  INVENTORY_COMPLETENESS: 'inventory-completeness',
+  PURPOSE_ALIGNMENT: 'purpose-alignment',
+  RISK_CLASSIFICATION: 'risk-classification',
+  MODEL_SUITABILITY: 'model-suitability',
+  DATA_AUTHORIZATION: 'data-authorization',
+  TOOL_CONTROLS: 'tool-controls',
+  HUMAN_OVERSIGHT: 'human-oversight',
+  EVALUATION_QUALITY: 'evaluation-quality',
+  SAFETY: 'safety',
+  FAIRNESS: 'fairness',
+  EXPLAINABILITY: 'explainability',
+  SECURITY: 'security',
+  MONITORING: 'monitoring',
+  INCIDENT_RESPONSE: 'incident-response',
+  CHANGE: 'change',
+  EVIDENCE: 'evidence',
+  TENANT_ISOLATION: 'tenant-isolation'
+});
+
+export const AI_GOVERNANCE_MEASURES = Object.freeze({
+  AI_SYSTEMS_INVENTORIED: 'ai-systems-inventoried',
+  USE_CASES_CLASSIFIED: 'use-cases-classified',
+  ASSESSMENTS_CURRENT: 'assessments-current',
+  MODELS_AND_PROVIDERS_APPROVED: 'models-and-providers-approved',
+  AGENTS_WITH_OWNERS: 'agents-with-owners',
+  TOOLS_WITH_SCOPED_AUTHORITY: 'tools-with-scoped-authority',
+  EVALUATION_ATTAINMENT: 'evaluation-attainment',
+  SAFETY_FAILURES: 'safety-failures',
+  HUMAN_OVERRIDE: 'human-override',
+  RECOURSE: 'recourse',
+  AI_INCIDENTS: 'ai-incidents',
+  DRIFT: 'drift',
+  TENANT_EXCEPTIONS: 'tenant-exceptions',
+  PROVIDER_CHANGES: 'provider-changes',
+  FINDINGS: 'findings',
+  REMEDIATION: 'remediation',
+  RETIRED_AI_SYSTEMS: 'retired-ai-systems'
+});
+
+export const AI_ETHICAL_GOVERNANCE_QUALITY_ATTRIBUTES = Object.freeze({
+  SAFETY: 'safety',
+  ACCOUNTABILITY: 'accountability',
+  EXPLAINABILITY: 'explainability',
+  FAIRNESS: 'fairness',
+  PRIVACY: 'privacy',
+  SECURITY: 'security',
+  RELIABILITY: 'reliability',
+  TRANSPARENCY: 'transparency',
+  TRACEABILITY: 'traceability',
+  ADAPTABILITY: 'adaptability',
+  TENANT_ISOLATION: 'tenant-isolation',
+  ENTERPRISE_TRUST: 'enterprise-trust'
+});
+
+export const AI_ETHICAL_GOVERNANCE_ARCHITECTURAL_RULES = Object.freeze({
+  DEFINE_APPROVED_PURPOSE_FOR_EVERY_AI_USE: 'define-approved-purpose-for-every-ai-use',
+  ASSIGN_ACCOUNTABLE_OWNERS: 'assign-accountable-owners',
+  CLASSIFY_RISK_AND_IMPACT: 'classify-risk-and-impact',
+  DEFINE_PROHIBITED_USE: 'define-prohibited-use',
+  GOVERN_AI_COMPONENTS_AND_WORKFLOWS: 'govern-models-providers-agents-prompts-context-memory-tools-and-workflows',
+  GRANT_MINIMUM_NECESSARY_AUTONOMY: 'grant-minimum-necessary-autonomy',
+  REQUIRE_EXPLICIT_AUTHORITY_FOR_CONSEQUENTIAL_ACTION: 'require-explicit-authority-for-consequential-action',
+  DESIGN_MEANINGFUL_HUMAN_OVERSIGHT: 'design-meaningful-human-oversight',
+  EVALUATE_QUALITY_SAFETY_ROBUSTNESS_FAIRNESS_PRIVACY_SECURITY_AND_EXPLAINABILITY: 'evaluate-quality-safety-robustness-fairness-privacy-security-and-explainability',
+  PROVIDE_RECOURSE_FOR_CONSEQUENTIAL_OUTCOMES: 'provide-recourse-for-consequential-outcomes-where-appropriate',
+  PRESERVE_TENANT_AND_PROPERTY_BOUNDARIES: 'preserve-tenant-and-property-boundaries',
+  MONITOR_BEHAVIOR_AND_DRIFT_CONTINUOUSLY: 'monitor-behavior-and-drift-continuously',
+  GOVERN_MATERIAL_AI_CHANGE: 'govern-material-ai-change',
+  CONTAIN_AI_INCIDENTS_AND_PRESERVE_EVIDENCE: 'contain-ai-incidents-and-preserve-evidence',
+  REQUIRE_LIFECYCLE_CONTROL_THROUGH_RETIREMENT: 'require-lifecycle-control-through-retirement',
+  DISTINGUISH_CONFIDENCE_FROM_AUTHORITY_AND_CORRECTNESS: 'distinguish-confidence-from-authority-and-correctness',
+  INTEGRATE_QUALIFIED_JUDGMENT: 'integrate-qualified-ethical-legal-privacy-security-and-domain-judgment',
+  REMAIN_VENDOR_AND_TECHNOLOGY_NEUTRAL: 'remain-vendor-neutral-and-technology-independent'
+});
+
+export const FUTURE_AI_ETHICAL_GOVERNANCE_CAPABILITIES = Object.freeze({
+  MACHINE_READABLE_AI_POLICIES: 'machine-readable-ai-policies',
+  CONTINUOUS_AI_ASSURANCE: 'continuous-ai-assurance',
+  AUTOMATED_EVALUATION_ORCHESTRATION: 'automated-evaluation-orchestration',
+  SEMANTIC_AI_INVENTORIES: 'semantic-ai-inventories',
+  REAL_TIME_AUTONOMY_CONTROL: 'real-time-autonomy-control',
+  AI_RISK_DIGITAL_TWINS: 'ai-risk-digital-twins',
+  CROSS_AGENT_GOVERNANCE: 'cross-agent-governance',
+  DYNAMIC_HUMAN_OVERSIGHT: 'dynamic-human-oversight',
+  PRIVACY_PRESERVING_EVALUATION: 'privacy-preserving-evaluation',
+  CONTINUOUS_FAIRNESS_ANALYSIS: 'continuous-fairness-analysis',
+  AUTOMATED_TOOL_RISK_ASSESSMENT: 'automated-tool-risk-assessment',
+  MODEL_AND_PROVIDER_PORTABILITY: 'model-and-provider-portability',
+  GOVERNED_SELF_IMPROVING_AGENTS: 'governed-self-improving-agents',
+  CROSS_PROPERTY_AI_GOVERNANCE_INTELLIGENCE: 'cross-property-ai-governance-intelligence'
 });

@@ -1902,3 +1902,20 @@ Version: 0.106.0
 
 Status: Governance and Compliance Architecture
 Version: 0.107.0
+
+---
+
+## [0.108.0] - ARCH-012 AI and Ethical Governance
+
+### Added
+- AI and ethical governance objective, principle, model, role, inventory, use-case, risk, impact-assessment, intended-use, prohibited-use, model, provider, agent, prompt, context, memory, tool, autonomy, oversight, automation-bias, safety, robustness, quality, evaluation, fairness, nondiscrimination, transparency, explainability, traceability, privacy, security, recourse, ethical-review, lifecycle, readiness, monitoring, drift, change, incident, tenant, property, supplier, evidence, assurance, measure, quality-attribute, architectural-rule, and future-capability constants.
+- Immutable contract for AI and ethical governance profiles.
+- AI and Ethical Governance descriptor for documented metadata, profile validation, and architecture assertion.
+- Dependency-injection registration through `addGovernanceCompliance`.
+- Unit tests for AI/ethical governance metadata, validation, incomplete metadata rejection, and DI access.
+
+### Established
+- AI and Ethical Governance as a purpose-bound, risk-proportionate, human-accountable, technology-neutral, vendor-neutral governance architecture without prescribing models, AI providers, ethics frameworks, evaluation tools, jurisdictions, or implementing the future `ARCH-014 AI Agent Framework`.
+
+Status: Governance and Compliance Architecture
+Version: 0.108.0
