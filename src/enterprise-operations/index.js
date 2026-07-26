@@ -395,6 +395,53 @@ export {
   TENANT_GOVERNANCE_FIELDS,
   WORKFLOW_GOVERNANCE_FIELDS
 } from './constants.js';
+export {
+  ADAPTIVE_BEHAVIOR_FIELDS,
+  ADAPTIVE_OPERATION_TARGETS,
+  AI_ASSISTED_COMMAND_CAPABILITIES,
+  ARCHITECTURE_EVOLUTION_GOVERNANCE_REQUIREMENTS,
+  AUTONOMOUS_OPERATIONS_FAILURE_HANDLING,
+  AUTONOMY_SUITABILITY_CRITERIA,
+  CONTINUOUS_CONTROL_VERIFICATION_CAPABILITIES,
+  CROSS_PROPERTY_INTELLIGENCE_CAPABILITIES,
+  DIGITAL_OPERATIONAL_TWIN_USES,
+  EXECUTABLE_POLICY_AREAS,
+  FEDERATED_OPERATIONS_PARTICIPANTS,
+  FUTURE_ARCHITECTURE_RELATIONSHIPS,
+  FUTURE_CAPABILITY_ROADMAP_SEQUENCE,
+  FUTURE_OPERATIONS_ARCHITECTURAL_RULES,
+  FUTURE_OPERATIONS_EVOLUTION_PRINCIPLES,
+  FUTURE_OPERATIONS_EVOLUTION_RISKS,
+  FUTURE_OPERATIONS_EXPLAINABILITY_FIELDS,
+  FUTURE_OPERATIONS_LONG_TERM_QUALITY_ATTRIBUTES,
+  FUTURE_OPERATIONS_TRANSITION_CRITERIA,
+  FUTURE_OPERATIONS_TRUST_FACTORS,
+  FUTURE_OPERATIONS_VISION_CAPABILITIES,
+  HUMAN_OPERATION_STRENGTHS,
+  INTELLIGENT_CAPACITY_CAPABILITIES,
+  INTELLIGENT_CHANGE_RELEASE_CAPABILITIES,
+  INTELLIGENT_INCIDENT_CAPABILITIES,
+  INTELLIGENT_PROBLEM_CAPABILITIES,
+  INTELLIGENT_RESILIENCE_CAPABILITIES,
+  MACHINE_OPERATION_STRENGTHS,
+  MULTI_AGENT_OPERATIONS_REQUIREMENTS,
+  OPERATIONAL_AGENT_REQUIREMENTS,
+  OPERATIONAL_AGENT_SPECIALIZATIONS,
+  OPERATIONAL_AUTONOMY_LEVELS,
+  OPERATIONAL_MEMORY_ITEMS,
+  OPERATIONS_EVOLUTION_DRIVERS,
+  OPERATIONS_EVOLUTION_FOUNDATIONS,
+  OPERATIONS_EVOLUTION_MATURITY_STAGES,
+  PREDICTION_RECORD_FIELDS,
+  PREDICTIVE_OPERATIONS_CAPABILITIES,
+  PRESCRIPTIVE_OPERATION_RECOMMENDATIONS,
+  PROPERTY_SPECIFIC_EVOLUTION_FACTORS,
+  PROVIDER_PORTABILITY_TARGETS,
+  SELF_IMPROVING_OPERATION_REQUIREMENTS,
+  SELF_IMPROVING_OPERATION_TARGETS,
+  SEMANTIC_OPERATIONAL_KNOWLEDGE_ENTITIES,
+  TENANT_SPECIFIC_EVOLUTION_FACTORS
+} from './constants.js';
 export { CapacityPerformanceManagementProfile } from './contracts/capacity-performance-management-profile.js';
 export { ChangeReleaseOperationsProfile } from './contracts/change-release-operations-profile.js';
 export { ContinuityResilienceOperationsProfile } from './contracts/continuity-resilience-operations-profile.js';
@@ -402,6 +449,7 @@ export { EnterpriseOperatingModelProfile } from './contracts/enterprise-operatin
 export { EnterpriseOperationsOverviewProfile } from './contracts/enterprise-operations-overview-profile.js';
 export { EnterpriseOperationsProfile } from './contracts/enterprise-operations-profile.js';
 export { EnterpriseOperationsValidationResult } from './contracts/enterprise-operations-validation-result.js';
+export { FutureOperationsEvolutionProfile } from './contracts/future-operations-evolution-profile.js';
 export { IncidentProblemManagementProfile } from './contracts/incident-problem-management-profile.js';
 export { OperationsCommandControlProfile } from './contracts/operations-command-control-profile.js';
 export { OperationsGovernanceProfile } from './contracts/operations-governance-profile.js';
@@ -410,6 +458,7 @@ export { CapacityPerformanceManagementDescriptor } from './capacity-performance-
 export { ChangeReleaseOperationsDescriptor } from './change-release-operations/change-release-operations-descriptor.js';
 export { ContinuityResilienceOperationsDescriptor } from './continuity-resilience-operations/continuity-resilience-operations-descriptor.js';
 export { EnterpriseOperationsDescriptor } from './enterprise-operations-descriptor.js';
+export { FutureOperationsEvolutionDescriptor } from './future-operations-evolution/future-operations-evolution-descriptor.js';
 export { IncidentProblemManagementDescriptor } from './incident-problem-management/incident-problem-management-descriptor.js';
 export { OperationsCommandControlDescriptor } from './command-control/operations-command-control-descriptor.js';
 export { OperationsGovernanceDescriptor } from './operations-governance/operations-governance-descriptor.js';

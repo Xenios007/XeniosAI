@@ -4,6 +4,7 @@ import { ChangeReleaseOperationsDescriptor } from './change-release-operations/c
 import { OperationsCommandControlDescriptor } from './command-control/operations-command-control-descriptor.js';
 import { ContinuityResilienceOperationsDescriptor } from './continuity-resilience-operations/continuity-resilience-operations-descriptor.js';
 import { EnterpriseOperationsDescriptor } from './enterprise-operations-descriptor.js';
+import { FutureOperationsEvolutionDescriptor } from './future-operations-evolution/future-operations-evolution-descriptor.js';
 import { IncidentProblemManagementDescriptor } from './incident-problem-management/incident-problem-management-descriptor.js';
 import { EnterpriseOperatingModelDescriptor } from './operating-model/enterprise-operating-model-descriptor.js';
 import { OperationsGovernanceDescriptor } from './operations-governance/operations-governance-descriptor.js';
@@ -25,6 +26,7 @@ export function addEnterpriseOperations(services) {
   services.registerSingleton('CapacityPerformanceManagementDescriptor', () => new CapacityPerformanceManagementDescriptor());
   services.registerSingleton('ContinuityResilienceOperationsDescriptor', () => new ContinuityResilienceOperationsDescriptor());
   services.registerSingleton('OperationsGovernanceDescriptor', () => new OperationsGovernanceDescriptor());
+  services.registerSingleton('FutureOperationsEvolutionDescriptor', () => new FutureOperationsEvolutionDescriptor());
 
   return services;
 }

@@ -108,7 +108,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-011-07 Capacity and Performance Management`
 - Completed: `ARCH-011-08 Continuity and Resilience Operations`
 - Completed: `ARCH-011-09 Operations Governance`
-- Next: `ARCH-011-10 Future Operations Evolution`
+- Completed: `ARCH-011-10 Future Operations Evolution`
+- Next: `ARCH-012 Governance & Compliance` (pending local architecture document)
 
 ## Notes
 
