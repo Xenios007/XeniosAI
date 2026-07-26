@@ -1,0 +1,51 @@
+flowchart TD
+    Intent["Persist Logical Task Intent"]
+    Dispatch["Dispatch Authorized Attempt"]
+    Execute["Worker Invokes Owning Service or Provider"]
+    Response{"Outcome Known?"}
+    Validate["Validate Result and Domain Evidence"]
+    Success["Record Task Completion"]
+    Reconcile["Reconcile with Authoritative Owner"]
+    Reconciled{"Authoritative Outcome"}
+    Failure["Classify Normalized Failure"]
+    Retryable{"Safe and Retryable?"}
+    Budget{"Attempts and Deadline Available?"}
+    Delay["Schedule Bounded Backoff"]
+    Alternate["Use Approved Alternate Path"]
+    Compensate{"Completed Effects Require Compensation?"}
+    DomainComp["Invoke Domain-Defined Compensation"]
+    CompResult{"Compensation Outcome"}
+    Escalate["Escalate for Human or Operational Decision"]
+    Close["Persist Final State and Evidence"]
+
+    Intent --> Dispatch
+    Dispatch --> Execute
+    Execute --> Response
+
+    Response -- "Yes" --> Validate
+    Validate -- "Valid success" --> Success
+    Success --> Close
+    Validate -- "Failure" --> Failure
+    Validate -- "Conflict" --> Reconcile
+
+    Response -- "No or uncertain" --> Reconcile
+    Reconcile --> Reconciled
+    Reconciled -- "Completed" --> Success
+    Reconciled -- "Rejected or failed" --> Failure
+    Reconciled -- "Still uncertain" --> Escalate
+
+    Failure --> Retryable
+    Retryable -- "Yes" --> Budget
+    Budget -- "Yes" --> Delay
+    Delay --> Dispatch
+    Budget -- "No" --> Compensate
+    Retryable -- "Approved alternate" --> Alternate
+    Alternate --> Dispatch
+    Retryable -- "No" --> Compensate
+
+    Compensate -- "No completed effect" --> Close
+    Compensate -- "Yes" --> DomainComp
+    DomainComp --> CompResult
+    CompResult -- "Completed" --> Close
+    CompResult -- "Failed or partial" --> Escalate
+    Escalate --> Close
