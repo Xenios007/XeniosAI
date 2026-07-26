@@ -1,7 +1,8 @@
 export const GOVERNANCE_COMPLIANCE_ERROR_CODES = Object.freeze({
   GOVERNANCE_COMPLIANCE_OVERVIEW_INVALID: 'GOVERNANCE_COMPLIANCE_OVERVIEW_INVALID',
   GOVERNANCE_OPERATING_MODEL_INVALID: 'GOVERNANCE_OPERATING_MODEL_INVALID',
-  POLICY_ARCHITECTURE_INVALID: 'POLICY_ARCHITECTURE_INVALID'
+  POLICY_ARCHITECTURE_INVALID: 'POLICY_ARCHITECTURE_INVALID',
+  ENTERPRISE_RISK_MANAGEMENT_INVALID: 'ENTERPRISE_RISK_MANAGEMENT_INVALID'
 });
 
 export const GOVERNANCE_COMPLIANCE_OVERVIEW_OBJECTIVES = Object.freeze({
@@ -1334,4 +1335,468 @@ export const FUTURE_POLICY_ARCHITECTURE_CAPABILITIES = Object.freeze({
   CONTINUOUS_POLICY_ASSURANCE: 'continuous-policy-assurance',
   POLICY_DIGITAL_TWINS: 'policy-digital-twins',
   AI_ASSISTED_POLICY_IMPACT_ANALYSIS: 'ai-assisted-policy-impact-analysis'
+});
+
+export const ENTERPRISE_RISK_MANAGEMENT_OBJECTIVES = Object.freeze({
+  BUSINESS_ALIGNED_RISK_DECISIONS: 'business-aligned-risk-decisions',
+  CONSISTENT_RISK_LANGUAGE: 'consistent-risk-language',
+  EXPLICIT_RISK_OWNERSHIP: 'explicit-risk-ownership',
+  CLEAR_APPETITE_AND_TOLERANCE: 'clear-appetite-and-tolerance',
+  TRACEABLE_RISK_ASSESSMENT: 'traceable-risk-assessment',
+  PROPORTIONATE_TREATMENT: 'proportionate-treatment',
+  TRANSPARENT_RESIDUAL_RISK: 'transparent-residual-risk',
+  AUTHORIZED_RISK_ACCEPTANCE: 'authorized-risk-acceptance',
+  CROSS_DOMAIN_AGGREGATION: 'cross-domain-aggregation',
+  EARLY_ESCALATION: 'early-escalation',
+  TENANT_AND_PROPERTY_AWARENESS: 'tenant-and-property-awareness',
+  SUPPLIER_AND_CONCENTRATION_RISK_VISIBILITY: 'supplier-and-concentration-risk-visibility',
+  AI_AND_EMERGING_RISK_GOVERNANCE: 'ai-and-emerging-risk-governance',
+  EVIDENCE_BASED_MONITORING: 'evidence-based-monitoring',
+  CONTINUOUS_RISK_IMPROVEMENT: 'continuous-risk-improvement',
+  VENDOR_NEUTRAL_RISK_CAPABILITIES: 'vendor-neutral-risk-capabilities'
+});
+
+export const ENTERPRISE_RISK_MANAGEMENT_PRINCIPLES = Object.freeze({
+  RISK_IS_UNCERTAINTY_ABOUT_OBJECTIVES: 'risk-is-uncertainty-about-objectives',
+  OWNERSHIP_IS_MANDATORY: 'ownership-is-mandatory',
+  APPETITE_GUIDES_DECISIONS: 'appetite-guides-decisions',
+  INHERENT_AND_RESIDUAL_RISK_ARE_DISTINCT: 'inherent-and-residual-risk-are-distinct',
+  EVIDENCE_SUPPORTS_ASSESSMENT: 'evidence-supports-assessment',
+  TREATMENT_MUST_BE_PROPORTIONATE: 'treatment-must-be-proportionate',
+  AGGREGATION_MATTERS: 'aggregation-matters',
+  RISK_ACCEPTANCE_IS_ACTIVE_DECISION: 'risk-acceptance-is-active-decision',
+  RISK_CHANGES_OVER_TIME: 'risk-changes-over-time'
+});
+
+export const RISK_MODEL_STAGES = Object.freeze({
+  ENTERPRISE_OBJECTIVE: 'Enterprise Objective',
+  UNCERTAIN_EVENT_OR_CONDITION: 'Uncertain Event or Condition',
+  CAUSE_OR_DRIVER: 'Cause or Driver',
+  POTENTIAL_OUTCOME_AND_IMPACT: 'Potential Outcome and Impact',
+  INHERENT_RISK: 'Inherent Risk',
+  CONTROLS_AND_TREATMENT: 'Controls and Treatment',
+  RESIDUAL_RISK: 'Residual Risk',
+  DECISION_MONITORING_AND_REVIEW: 'Decision, Monitoring, and Review'
+});
+
+export const RISK_TAXONOMY_CATEGORIES = Object.freeze({
+  STRATEGIC: 'strategic-risk',
+  BUSINESS_AND_HOSPITALITY: 'business-and-hospitality-risk',
+  ARCHITECTURE: 'architecture-risk',
+  OPERATIONAL: 'operational-risk',
+  SERVICE: 'service-risk',
+  SECURITY: 'security-risk',
+  PRIVACY: 'privacy-risk',
+  DATA: 'data-risk',
+  AI: 'ai-risk',
+  WORKFLOW: 'workflow-risk',
+  INTEGRATION: 'integration-risk',
+  COMPLIANCE_AND_LEGAL: 'compliance-and-legal-risk',
+  FINANCIAL: 'financial-risk',
+  RESILIENCE_AND_CONTINUITY: 'resilience-and-continuity-risk',
+  SUPPLIER_AND_THIRD_PARTY: 'supplier-and-third-party-risk',
+  PEOPLE_AND_ORGANIZATIONAL: 'people-and-organizational-risk',
+  REPUTATIONAL: 'reputational-risk'
+});
+
+export const RISK_APPETITE_FACTORS = Object.freeze({
+  ENTERPRISE_STRATEGY: 'enterprise-strategy',
+  GUEST_TRUST: 'guest-trust',
+  SAFETY: 'safety',
+  SECURITY: 'security',
+  PRIVACY: 'privacy',
+  AI_AUTONOMY: 'ai-autonomy',
+  DATA_SENSITIVITY: 'data-sensitivity',
+  TENANT_COMMITMENTS: 'tenant-commitments',
+  FINANCIAL_CAPACITY: 'financial-capacity',
+  RESILIENCE: 'resilience',
+  REGULATORY_OBLIGATIONS: 'regulatory-obligations',
+  REPUTATION: 'reputation',
+  GROWTH: 'growth',
+  INNOVATION: 'innovation'
+});
+
+export const RISK_TOLERANCE_EXPRESSIONS = Object.freeze({
+  QUALITATIVE_BOUNDARIES: 'qualitative-boundaries',
+  QUANTITATIVE_THRESHOLDS: 'quantitative-thresholds',
+  SERVICE_OBJECTIVES: 'service-objectives',
+  INCIDENT_THRESHOLDS: 'incident-thresholds',
+  DATA_LOSS_LIMITS: 'data-loss-limits',
+  AI_AUTONOMY_LIMITS: 'ai-autonomy-limits',
+  PRIVACY_CONSTRAINTS: 'privacy-constraints',
+  CAPACITY_HEADROOM: 'capacity-headroom',
+  FINANCIAL_EXPOSURE: 'financial-exposure',
+  RECOVERY_OBJECTIVES: 'recovery-objectives',
+  SUPPLIER_CONCENTRATION_LIMITS: 'supplier-concentration-limits',
+  EXCEPTION_LIMITS: 'exception-limits'
+});
+
+export const RISK_APPETITE_HIERARCHY_LEVELS = Object.freeze({
+  ENTERPRISE_RISK_APPETITE: 'Enterprise Risk Appetite',
+  RISK_DOMAIN_APPETITE: 'Risk-Domain Appetite',
+  BUSINESS_AND_PLATFORM_TOLERANCES: 'Business and Platform Tolerances',
+  TENANT_AND_PROPERTY_LIMITS: 'Tenant and Property Limits',
+  SERVICE_AI_DATA_WORKFLOW_AND_SUPPLIER_BOUNDARIES: 'Service, AI, Data, Workflow, and Supplier Boundaries'
+});
+
+export const RISK_IDENTIFICATION_SOURCES = Object.freeze({
+  STRATEGY: 'strategy',
+  ARCHITECTURE_REVIEW: 'architecture-review',
+  BUSINESS_IMPACT_ANALYSIS: 'business-impact-analysis',
+  THREAT_MODELING: 'threat-modeling',
+  PRIVACY_ASSESSMENT: 'privacy-assessment',
+  AI_ASSESSMENT: 'ai-assessment',
+  SERVICE_REVIEW: 'service-review',
+  INCIDENT_AND_PROBLEM_MANAGEMENT: 'incident-and-problem-management',
+  CHANGE_AND_RELEASE_ASSESSMENT: 'change-and-release-assessment',
+  CAPACITY_REVIEW: 'capacity-review',
+  CONTINUITY_EXERCISE: 'continuity-exercise',
+  SUPPLIER_DUE_DILIGENCE: 'supplier-due-diligence',
+  COMPLIANCE_ASSESSMENT: 'compliance-assessment',
+  AUDIT: 'audit',
+  TENANT_ONBOARDING: 'tenant-onboarding',
+  PROPERTY_ONBOARDING: 'property-onboarding',
+  DATA_GOVERNANCE: 'data-governance',
+  OPERATIONAL_OBSERVATION: 'operational-observation',
+  EMERGING_TECHNOLOGY_REVIEW: 'emerging-technology-review',
+  REGULATORY_CHANGE: 'regulatory-change',
+  SCENARIO_ANALYSIS: 'scenario-analysis'
+});
+
+export const RISK_RECORD_FIELDS = Object.freeze({
+  RISK_IDENTIFIER: 'risk-identifier',
+  TITLE: 'title',
+  STATEMENT: 'statement',
+  OBJECTIVE_AFFECTED: 'objective-affected',
+  OWNER: 'owner',
+  PRIMARY_CATEGORY: 'primary-category',
+  SECONDARY_CATEGORIES: 'secondary-categories',
+  SCOPE: 'scope',
+  TENANT_AND_PROPERTY_APPLICABILITY: 'tenant-and-property-applicability',
+  CAUSES: 'causes',
+  POTENTIAL_EVENTS: 'potential-events',
+  IMPACTS: 'impacts',
+  TIME_HORIZON: 'time-horizon',
+  INHERENT_LIKELIHOOD: 'inherent-likelihood',
+  INHERENT_IMPACT: 'inherent-impact',
+  INHERENT_RISK: 'inherent-risk',
+  CURRENT_CONTROLS: 'current-controls',
+  CONTROL_EFFECTIVENESS: 'control-effectiveness',
+  RESIDUAL_LIKELIHOOD: 'residual-likelihood',
+  RESIDUAL_IMPACT: 'residual-impact',
+  RESIDUAL_RISK: 'residual-risk',
+  APPETITE_AND_TOLERANCE: 'appetite-and-tolerance',
+  TREATMENT: 'treatment',
+  ACTIONS: 'actions',
+  INDICATORS: 'indicators',
+  DEPENDENCIES: 'dependencies',
+  RELATED_OBLIGATIONS: 'related-obligations',
+  RELATED_INCIDENTS_AND_FINDINGS: 'related-incidents-and-findings',
+  ACCEPTANCE_AUTHORITY: 'acceptance-authority',
+  REVIEW_DATE: 'review-date',
+  EVIDENCE: 'evidence',
+  ASSUMPTIONS: 'assumptions',
+  UNCERTAINTY: 'uncertainty',
+  STATUS: 'status'
+});
+
+export const RISK_LIFECYCLE_STAGES = Object.freeze({
+  IDENTIFY: 'Identify',
+  DESCRIBE_AND_CLASSIFY: 'Describe and Classify',
+  ASSIGN_OWNERSHIP: 'Assign Ownership',
+  ASSESS_INHERENT_RISK: 'Assess Inherent Risk',
+  EVALUATE_CONTROLS: 'Evaluate Controls',
+  ASSESS_RESIDUAL_RISK: 'Assess Residual Risk',
+  COMPARE_WITH_APPETITE_AND_TOLERANCE: 'Compare with Appetite and Tolerance',
+  TREAT_ACCEPT_AVOID_TRANSFER_OR_ESCALATE: 'Treat, Accept, Avoid, Transfer, or Escalate',
+  MONITOR_AND_REPORT: 'Monitor and Report',
+  REVIEW_REASSESS_AND_CLOSE: 'Review, Reassess, and Close'
+});
+
+export const CONTROL_EFFECTIVENESS_FACTORS = Object.freeze({
+  DESIGN: 'design',
+  COVERAGE: 'coverage',
+  IMPLEMENTATION: 'implementation',
+  OPERATION: 'operation',
+  EVIDENCE: 'evidence',
+  RELIABILITY: 'reliability',
+  TIMELINESS: 'timeliness',
+  SCOPE: 'scope',
+  FAILURE_HANDLING: 'failure-handling',
+  INDEPENDENCE: 'independence',
+  KNOWN_EXCEPTIONS: 'known-exceptions'
+});
+
+export const RESIDUAL_RISK_FACTORS = Object.freeze({
+  CONTROL_EFFECTIVENESS: 'control-effectiveness',
+  KNOWN_FINDINGS: 'known-findings',
+  EXCEPTIONS: 'exceptions',
+  TEMPORARY_MEASURES: 'temporary-measures',
+  SUPPLIER_DEPENDENCIES: 'supplier-dependencies',
+  UNCERTAINTY: 'uncertainty',
+  EVIDENCE_QUALITY: 'evidence-quality',
+  CHANGE_SINCE_LAST_REVIEW: 'change-since-last-review'
+});
+
+export const LIKELIHOOD_FACTORS = Object.freeze({
+  HISTORICAL_FREQUENCY: 'historical-frequency',
+  THREAT_ACTIVITY: 'threat-activity',
+  EXPOSURE: 'exposure',
+  CONTROL_RELIABILITY: 'control-reliability',
+  COMPLEXITY: 'complexity',
+  CHANGE_RATE: 'change-rate',
+  PROVIDER_DEPENDENCY: 'provider-dependency',
+  HUMAN_FACTORS: 'human-factors',
+  AI_UNCERTAINTY: 'ai-uncertainty',
+  DEMAND: 'demand',
+  ENVIRONMENTAL_CONDITIONS: 'environmental-conditions',
+  SCENARIO_PLAUSIBILITY: 'scenario-plausibility'
+});
+
+export const IMPACT_FACTORS = Object.freeze({
+  GUEST_HARM: 'guest-harm',
+  PROPERTY_DISRUPTION: 'property-disruption',
+  TENANT_DISRUPTION: 'tenant-disruption',
+  REVENUE_LOSS: 'revenue-loss',
+  BOOKING_OR_PAYMENT_FAILURE: 'booking-or-payment-failure',
+  SAFETY: 'safety',
+  SECURITY_COMPROMISE: 'security-compromise',
+  PRIVACY_HARM: 'privacy-harm',
+  DATA_LOSS: 'data-loss',
+  AI_HARM: 'ai-harm',
+  SERVICE_UNAVAILABILITY: 'service-unavailability',
+  COMPLIANCE_BREACH: 'compliance-breach',
+  LEGAL_CONSEQUENCE: 'legal-consequence',
+  RECOVERY_COST: 'recovery-cost',
+  SUPPLIER_IMPACT: 'supplier-impact',
+  REPUTATION: 'reputation',
+  STRATEGIC_DELAY: 'strategic-delay'
+});
+
+export const RISK_TREATMENT_STRATEGIES = Object.freeze({
+  AVOID: 'avoid',
+  REDUCE: 'reduce',
+  TRANSFER: 'transfer',
+  SHARE: 'share',
+  ACCEPT: 'accept',
+  MONITOR: 'monitor'
+});
+
+export const RISK_TREATMENT_PLAN_FIELDS = Object.freeze({
+  RISK: 'risk',
+  SELECTED_STRATEGY: 'selected-strategy',
+  TARGET_RESIDUAL_RISK: 'target-residual-risk',
+  ACTIONS: 'actions',
+  CONTROL_CHANGES: 'control-changes',
+  ARCHITECTURE_CHANGES: 'architecture-changes',
+  OWNER: 'owner',
+  RESOURCES: 'resources',
+  DEPENDENCIES: 'dependencies',
+  MILESTONES: 'milestones',
+  TARGET_DATE: 'target-date',
+  EVIDENCE: 'evidence',
+  VERIFICATION: 'verification',
+  INTERIM_CONTROLS: 'interim-controls',
+  ESCALATION: 'escalation',
+  EXPECTED_COST_AND_BENEFIT: 'expected-cost-and-benefit'
+});
+
+export const RISK_ACCEPTANCE_FIELDS = Object.freeze({
+  RISK_STATEMENT: 'risk-statement',
+  SCOPE: 'scope',
+  RESIDUAL_EXPOSURE: 'residual-exposure',
+  EVIDENCE: 'evidence',
+  BUSINESS_JUSTIFICATION: 'business-justification',
+  CURRENT_CONTROLS: 'current-controls',
+  CONDITIONS: 'conditions',
+  MONITORING: 'monitoring',
+  COMPENSATING_CONTROLS: 'compensating-controls',
+  ACCEPTANCE_AUTHORITY: 'acceptance-authority',
+  EFFECTIVE_DATE: 'effective-date',
+  EXPIRATION_OR_REVIEW: 'expiration-or-review',
+  REASSESSMENT_TRIGGERS: 'reassessment-triggers',
+  COMMUNICATION: 'communication',
+  REMEDIATION_IF_TEMPORARY: 'remediation-if-temporary'
+});
+
+export const RISK_ESCALATION_TRIGGERS = Object.freeze({
+  RESIDUAL_RISK_EXCEEDS_TOLERANCE: 'residual-risk-exceeds-tolerance',
+  AUTHORITY_INSUFFICIENT: 'authority-insufficient',
+  IMPACT_EXPANDS: 'impact-expands',
+  EVIDENCE_INADEQUATE: 'evidence-inadequate',
+  CONTROL_EFFECTIVENESS_DECLINES: 'control-effectiveness-declines',
+  FINDING_OVERDUE: 'finding-overdue',
+  EXCEPTION_EXPIRES: 'exception-expires',
+  SUPPLIER_FAILS: 'supplier-fails',
+  RISK_BECOMES_CROSS_TENANT: 'risk-becomes-cross-tenant',
+  SECURITY_OR_PRIVACY_IMPLICATIONS_EMERGE: 'security-or-privacy-implications-emerge',
+  AI_AUTONOMY_INCREASES: 'ai-autonomy-increases',
+  MULTIPLE_RISKS_AGGREGATE: 'multiple-risks-aggregate',
+  CRISIS_CONDITION_DEVELOPS: 'crisis-condition-develops'
+});
+
+export const RISK_AGGREGATION_DIMENSIONS = Object.freeze({
+  COMMON_DEPENDENCIES: 'common-dependencies',
+  SHARED_PROVIDERS: 'shared-providers',
+  SHARED_SERVICES: 'shared-services',
+  TENANTS: 'tenants',
+  PROPERTIES: 'properties',
+  BUSINESS_CAPABILITIES: 'business-capabilities',
+  DATA: 'data',
+  AI_PROVIDERS_AND_MODELS: 'ai-providers-and-models',
+  REGIONS: 'regions',
+  SUPPLIERS: 'suppliers',
+  TIME_PERIODS: 'time-periods',
+  CONTROL_FAILURES: 'control-failures',
+  SCENARIOS: 'scenarios'
+});
+
+export const CONCENTRATION_RISK_SOURCES = Object.freeze({
+  CLOUD_PROVIDER: 'cloud-provider',
+  REGION: 'region',
+  AI_PROVIDER: 'ai-provider',
+  MODEL_FAMILY: 'model-family',
+  MESSAGING_CHANNEL: 'messaging-channel',
+  PAYMENT_PROVIDER: 'payment-provider',
+  IDENTITY_PROVIDER: 'identity-provider',
+  DATA_PLATFORM: 'data-platform',
+  SUPPLIER: 'supplier',
+  KEY_PERSON: 'key-person',
+  CONTROL: 'control',
+  SERVICE: 'service',
+  TENANT_SEGMENT: 'tenant-segment'
+});
+
+export const DEPENDENCY_RISK_FIELDS = Object.freeze({
+  UPSTREAM_SERVICE: 'upstream-service',
+  DOWNSTREAM_IMPACT: 'downstream-impact',
+  OWNERSHIP: 'ownership',
+  COMMITMENT: 'commitment',
+  FAILURE_MODES: 'failure-modes',
+  CONTROL: 'control',
+  ALTERNATIVE: 'alternative',
+  RECOVERY: 'recovery',
+  EVIDENCE: 'evidence',
+  CHANGE_NOTIFICATION: 'change-notification',
+  CONCENTRATION: 'concentration'
+});
+
+export const EMERGING_RISK_SOURCES = Object.freeze({
+  NEW_AI_CAPABILITY: 'new-ai-capability',
+  REGULATORY_CHANGE: 'regulatory-change',
+  NEW_THREAT: 'new-threat',
+  NEW_BUSINESS_MODEL: 'new-business-model',
+  NEW_JURISDICTION: 'new-jurisdiction',
+  NEW_TENANT_TYPE: 'new-tenant-type',
+  RAPID_SCALE: 'rapid-scale',
+  SUPPLIER_CHANGE: 'supplier-change',
+  SOCIAL_EXPECTATION: 'social-expectation',
+  TECHNOLOGY_CONCENTRATION: 'technology-concentration',
+  CLIMATE_OR_ENVIRONMENTAL_CONDITIONS: 'climate-or-environmental-conditions',
+  GEOPOLITICAL_CONDITIONS: 'geopolitical-conditions'
+});
+
+export const RISK_INDICATORS = Object.freeze({
+  INCIDENT_TRENDS: 'incident-trends',
+  CONTROL_FAILURES: 'control-failures',
+  FINDINGS: 'findings',
+  EXCEPTION_GROWTH: 'exception-growth',
+  AI_QUALITY_CHANGES: 'ai-quality-changes',
+  SECURITY_EVENTS: 'security-events',
+  PRIVACY_REQUESTS: 'privacy-requests',
+  CAPACITY_HEADROOM: 'capacity-headroom',
+  RECOVERY_TEST_FAILURES: 'recovery-test-failures',
+  SUPPLIER_DEGRADATION: 'supplier-degradation',
+  TENANT_COMPLAINTS: 'tenant-complaints',
+  PROPERTY_DISRUPTION: 'property-disruption',
+  CHANGE_FAILURES: 'change-failures',
+  DATA_QUALITY_DECLINE: 'data-quality-decline',
+  STAFF_TURNOVER: 'staff-turnover',
+  COST_ANOMALIES: 'cost-anomalies'
+});
+
+export const RISK_REGISTER_CAPABILITIES = Object.freeze({
+  STABLE_IDENTIFIERS: 'stable-identifiers',
+  OWNERSHIP: 'ownership',
+  TAXONOMY: 'taxonomy',
+  SCOPE: 'scope',
+  ASSESSMENT: 'assessment',
+  TREATMENT: 'treatment',
+  EVIDENCE: 'evidence',
+  DEPENDENCIES: 'dependencies',
+  AGGREGATION: 'aggregation',
+  REVIEW: 'review',
+  HISTORY: 'history',
+  CLOSURE: 'closure',
+  ACCESS_CONTROL: 'access-control',
+  TENANT_ISOLATION: 'tenant-isolation'
+});
+
+export const RISK_MEASURES = Object.freeze({
+  RISKS_WITH_OWNERS: 'risks-with-owners',
+  RISKS_ABOVE_APPETITE: 'risks-above-appetite',
+  OVERDUE_TREATMENTS: 'overdue-treatments',
+  ACCEPTED_RISK_AGE: 'accepted-risk-age',
+  CONTROL_EFFECTIVENESS_DECLINE: 'control-effectiveness-decline',
+  RISK_CONCENTRATION: 'risk-concentration',
+  EMERGING_RISKS: 'emerging-risks',
+  RISK_RELATED_INCIDENTS: 'risk-related-incidents',
+  FINDINGS_LINKED_TO_RISKS: 'findings-linked-to-risks',
+  EXCEPTIONS_LINKED_TO_RISKS: 'exceptions-linked-to-risks',
+  SUPPLIER_RISK: 'supplier-risk',
+  TENANT_AND_PROPERTY_RISK: 'tenant-and-property-risk',
+  SCENARIO_COVERAGE: 'scenario-coverage',
+  REVIEW_TIMELINESS: 'review-timeliness',
+  FORECAST_ACCURACY: 'forecast-accuracy'
+});
+
+export const ENTERPRISE_RISK_MANAGEMENT_QUALITY_ATTRIBUTES = Object.freeze({
+  ACCOUNTABILITY: 'accountability',
+  RESILIENCE: 'resilience',
+  SECURITY: 'security',
+  PRIVACY: 'privacy',
+  PREDICTABILITY: 'predictability',
+  ADAPTABILITY: 'adaptability',
+  TRACEABILITY: 'traceability',
+  TRANSPARENCY: 'transparency',
+  SCALABILITY: 'scalability',
+  EXPLAINABILITY: 'explainability',
+  TENANT_ISOLATION: 'tenant-isolation',
+  ENTERPRISE_TRUST: 'enterprise-trust'
+});
+
+export const ENTERPRISE_RISK_MANAGEMENT_ARCHITECTURAL_RULES = Object.freeze({
+  CONNECT_RISK_TO_OBJECTIVE: 'connect-every-risk-to-enterprise-objective',
+  ASSIGN_RISK_OWNER: 'assign-one-accountable-risk-owner',
+  MAINTAIN_TAXONOMY: 'maintain-consistent-risk-taxonomy',
+  DEFINE_APPETITE_TOLERANCE_AND_CAPACITY: 'define-appetite-tolerance-and-capacity',
+  DISTINGUISH_INHERENT_AND_RESIDUAL_RISK: 'distinguish-inherent-and-residual-risk',
+  EVALUATE_CONTROL_EFFECTIVENESS: 'evaluate-actual-control-effectiveness',
+  RECORD_EVIDENCE_ASSUMPTIONS_UNCERTAINTY_AND_TIME: 'record-evidence-assumptions-uncertainty-and-time-horizon',
+  APPLY_PROPORTIONATE_TREATMENT: 'apply-treatment-proportionate-to-risk',
+  REQUIRE_ACCEPTANCE_AUTHORITY: 'require-explicit-authority-for-risk-acceptance',
+  PREVENT_PASSIVE_ACCEPTANCE: 'prevent-passive-acceptance-through-delay',
+  AGGREGATE_CORRELATED_AND_CONCENTRATED_RISK: 'aggregate-correlated-and-concentrated-risk',
+  GOVERN_EMERGING_RISK: 'govern-emerging-risk',
+  INTEGRATE_DOMAIN_RISKS: 'integrate-security-privacy-ai-operational-supplier-tenant-and-property-risk',
+  USE_SCENARIO_AND_STRESS_ANALYSIS: 'use-scenario-and-stress-analysis-where-appropriate',
+  MONITOR_INDICATORS_AND_EXPOSURE: 'monitor-indicators-and-changing-exposure',
+  MAINTAIN_TRACEABLE_RISK_RECORDS: 'maintain-traceable-risk-records',
+  CLOSE_WITH_EVIDENCE_AND_AUTHORITY: 'close-risks-only-with-evidence-and-authority',
+  REMAIN_VENDOR_AND_TECHNOLOGY_NEUTRAL: 'remain-vendor-neutral-and-technology-independent'
+});
+
+export const FUTURE_ENTERPRISE_RISK_MANAGEMENT_CAPABILITIES = Object.freeze({
+  SEMANTIC_RISK_MODELS: 'semantic-risk-models',
+  AI_ASSISTED_RISK_IDENTIFICATION: 'ai-assisted-risk-identification',
+  PREDICTIVE_RISK_INDICATORS: 'predictive-risk-indicators',
+  DYNAMIC_RISK_AGGREGATION: 'dynamic-risk-aggregation',
+  REAL_TIME_RESIDUAL_RISK_POSTURE: 'real-time-residual-risk-posture',
+  AUTOMATED_CONTROL_EFFECTIVENESS_CORRELATION: 'automated-control-effectiveness-correlation',
+  SCENARIO_DIGITAL_TWINS: 'scenario-digital-twins',
+  CROSS_PROPERTY_RISK_INTELLIGENCE: 'cross-property-risk-intelligence',
+  CONTINUOUS_SUPPLIER_RISK_ANALYSIS: 'continuous-supplier-risk-analysis',
+  ADAPTIVE_RISK_TOLERANCE: 'adaptive-risk-tolerance',
+  MACHINE_READABLE_ACCEPTANCE_AUTHORITY: 'machine-readable-acceptance-authority',
+  GOVERNED_AUTONOMOUS_RISK_RESPONSE: 'governed-autonomous-risk-response'
 });

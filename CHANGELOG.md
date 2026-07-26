@@ -1851,3 +1851,20 @@ Version: 0.103.0
 
 Status: Governance and Compliance Architecture
 Version: 0.104.0
+
+---
+
+## [0.105.0] - ARCH-012 Enterprise Risk Management
+
+### Added
+- Enterprise risk objective, principle, model, taxonomy, appetite, tolerance, hierarchy, identification, record, lifecycle, control-effectiveness, residual-risk, likelihood, impact, treatment, acceptance, escalation, aggregation, concentration, dependency, emerging-risk, indicator, register, measure, quality-attribute, architectural-rule, and future-capability constants.
+- Immutable contract for enterprise risk management profiles.
+- Enterprise Risk Management descriptor for documented metadata, profile validation, and architecture assertion.
+- Dependency-injection registration through `addGovernanceCompliance`.
+- Unit tests for enterprise risk metadata, validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Enterprise Risk Management as a business-first, technology-neutral, vendor-neutral governance structure without prescribing risk-management products, quantitative models, scoring methods, insurance arrangements, regulatory frameworks, financial models, or legal conclusions.
+
+Status: Governance and Compliance Architecture
+Version: 0.105.0

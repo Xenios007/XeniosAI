@@ -5,13 +5,22 @@ export {
   ATTESTATION_FIELDS,
   AUTOMATED_AUTHORITY_REQUIREMENTS,
   COMPLIANCE_POSTURE_STATES,
+  CONCENTRATION_RISK_SOURCES,
+  CONTROL_EFFECTIVENESS_FACTORS,
   CORE_GOVERNANCE_ROLES,
   CROSS_TENANT_GOVERNANCE_TRIGGERS,
   DECISION_RIGHT_FIELDS,
   DELEGATED_AUTHORITY_REQUIREMENTS,
+  DEPENDENCY_RISK_FIELDS,
+  EMERGING_RISK_SOURCES,
   EMERGENCY_GOVERNANCE_FIELDS,
+  ENTERPRISE_RISK_MANAGEMENT_ARCHITECTURAL_RULES,
+  ENTERPRISE_RISK_MANAGEMENT_OBJECTIVES,
+  ENTERPRISE_RISK_MANAGEMENT_PRINCIPLES,
+  ENTERPRISE_RISK_MANAGEMENT_QUALITY_ATTRIBUTES,
   EXTERNAL_ASSURANCE_PROVIDERS,
   FORUM_CHARTER_FIELDS,
+  FUTURE_ENTERPRISE_RISK_MANAGEMENT_CAPABILITIES,
   FUTURE_GOVERNANCE_COMPLIANCE_CAPABILITIES,
   FUTURE_GOVERNANCE_OPERATING_MODEL_CAPABILITIES,
   GOVERNANCE_ARCHITECTURE_BOUNDARIES,
@@ -51,6 +60,8 @@ export {
   GOVERNANCE_TRACEABILITY_STAGES,
   GOVERNING_ACTORS,
   HUMAN_OVERSIGHT_REQUIREMENTS,
+  IMPACT_FACTORS,
+  LIKELIHOOD_FACTORS,
   OBLIGATION_INTERPRETATION_FIELDS,
   OBLIGATION_SOURCES,
   OPERATING_MODEL_REVIEW_TRIGGERS,
@@ -82,6 +93,23 @@ export {
   POLICY_SCOPE_TYPES,
   POLICY_STATUSES,
   PROPERTY_GOVERNANCE_MODEL_FIELDS,
+  RESIDUAL_RISK_FACTORS,
+  RISK_ACCEPTANCE_FIELDS,
+  RISK_AGGREGATION_DIMENSIONS,
+  RISK_APPETITE_FACTORS,
+  RISK_APPETITE_HIERARCHY_LEVELS,
+  RISK_ESCALATION_TRIGGERS,
+  RISK_IDENTIFICATION_SOURCES,
+  RISK_INDICATORS,
+  RISK_LIFECYCLE_STAGES,
+  RISK_MEASURES,
+  RISK_MODEL_STAGES,
+  RISK_RECORD_FIELDS,
+  RISK_REGISTER_CAPABILITIES,
+  RISK_TAXONOMY_CATEGORIES,
+  RISK_TOLERANCE_EXPRESSIONS,
+  RISK_TREATMENT_PLAN_FIELDS,
+  RISK_TREATMENT_STRATEGIES,
   SUPPLIER_GOVERNANCE_MODEL_ROLES,
   TENANT_GOVERNANCE_MODEL_FIELDS,
   THIRD_PARTY_GOVERNANCE_LIFECYCLE_STAGES
@@ -89,7 +117,9 @@ export {
 export { GovernanceOperatingModelProfile } from './contracts/governance-operating-model-profile.js';
 export { GovernanceComplianceOverviewProfile } from './contracts/governance-compliance-overview-profile.js';
 export { GovernanceComplianceValidationResult } from './contracts/governance-compliance-validation-result.js';
+export { EnterpriseRiskManagementProfile } from './contracts/enterprise-risk-management-profile.js';
 export { PolicyArchitectureProfile } from './contracts/policy-architecture-profile.js';
+export { EnterpriseRiskManagementDescriptor } from './enterprise-risk-management/enterprise-risk-management-descriptor.js';
 export { GovernanceOperatingModelDescriptor } from './operating-model/governance-operating-model-descriptor.js';
 export { GovernanceComplianceOverviewDescriptor } from './overview/governance-compliance-overview-descriptor.js';
 export { PolicyArchitectureDescriptor } from './policy-architecture/policy-architecture-descriptor.js';

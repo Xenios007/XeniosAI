@@ -112,7 +112,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-012-01 Governance & Compliance Overview`
 - Completed: `ARCH-012-02 Governance Operating Model`
 - Completed: `ARCH-012-03 Policy Architecture`
-- Next: `ARCH-012-04 Enterprise Risk Management`
+- Completed: `ARCH-012-04 Enterprise Risk Management`
+- Next: `ARCH-012-05 Compliance and Control Framework`
 
 ## Notes
 
