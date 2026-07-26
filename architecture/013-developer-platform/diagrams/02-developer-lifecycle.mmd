@@ -1,0 +1,28 @@
+flowchart TD
+    A["Enter with verified identity, role, and scope"] --> B["Discover business purpose, architecture, ownership, and existing capabilities"]
+    B --> C{"Supported paved path available?"}
+
+    C -- "Yes" --> D["Create or change project, service, or capability"]
+    C -- "No" --> E["Initiate architecture decision or governed exception"]
+    E --> F{"Variation authorized?"}
+    F -- "No" --> G["Stop, clarify, redesign, or defer"]
+    F -- "Yes" --> D
+
+    D --> H["Develop with isolated source, environment, configuration, and safe data"]
+    H --> I["Build trusted artifact and run required tests and AI evaluations"]
+    I --> J{"Quality, security, governance, and readiness satisfied?"}
+
+    J -- "No" --> K["Remediate findings, update design, or obtain a scoped exception"]
+    K --> H
+    J -- "Yes" --> L["Review and obtain accountable authorization"]
+
+    L --> M["Deliver progressively to explicit environment, tenant, and property scope"]
+    M --> N{"Technical and business outcomes verified?"}
+    N -- "No" --> O["Hold, roll back, roll forward, compensate, or escalate"]
+    O --> H
+    N -- "Yes" --> P["Own, observe, support, and operate"]
+
+    P --> Q{"Continue, improve, deprecate, or retire?"}
+    Q -- "Improve" --> B
+    Q -- "Continue" --> P
+    Q -- "Deprecate or retire" --> R["Migrate consumers, dispose resources and data, preserve evidence, and close lifecycle"]
