@@ -1868,3 +1868,20 @@ Version: 0.104.0
 
 Status: Governance and Compliance Architecture
 Version: 0.105.0
+
+---
+
+## [0.106.0] - ARCH-012 Compliance and Control Framework
+
+### Added
+- Compliance and control objective, principle, model, obligation source, obligation type, obligation record, lifecycle, applicability, requirement, control objective, implementation, control type, execution model, control family, control record, control design, effectiveness, testing, posture, continuous compliance, framework governance, control lifecycle, measure, quality-attribute, architectural-rule, and future-capability constants.
+- Immutable contract for compliance and control framework profiles.
+- Compliance and Control Framework descriptor for documented metadata, profile validation, and architecture assertion.
+- Dependency-injection registration through `addGovernanceCompliance`.
+- Unit tests for compliance/control metadata, validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Compliance and Control Framework as a traceable, technology-neutral, vendor-neutral control architecture without providing legal advice, certifying compliance, prescribing regulatory standards, audit frameworks, governance products, or jurisdictions.
+
+Status: Governance and Compliance Architecture
+Version: 0.106.0

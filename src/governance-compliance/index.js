@@ -5,8 +5,34 @@ export {
   ATTESTATION_FIELDS,
   AUTOMATED_AUTHORITY_REQUIREMENTS,
   COMPLIANCE_POSTURE_STATES,
+  COMPLIANCE_APPLICABILITY_DIMENSIONS,
+  COMPLIANCE_APPLICABILITY_STATES,
+  COMPLIANCE_CONTROL_ARCHITECTURAL_RULES,
+  COMPLIANCE_CONTROL_FRAMEWORK_OBJECTIVES,
+  COMPLIANCE_CONTROL_FRAMEWORK_PRINCIPLES,
+  COMPLIANCE_CONTROL_MEASURES,
+  COMPLIANCE_CONTROL_QUALITY_ATTRIBUTES,
+  COMPLIANCE_CONTROL_RECORD_FIELDS,
+  COMPLIANCE_CONTROL_TYPES,
+  COMPLIANCE_MODEL_STAGES,
+  COMPLIANCE_OBLIGATION_LIFECYCLE_STAGES,
+  COMPLIANCE_OBLIGATION_RECORD_FIELDS,
+  COMPLIANCE_OBLIGATION_SOURCES,
+  COMPLIANCE_OBLIGATION_TYPES,
+  COMPLIANCE_POSTURE_STATES_DETAIL,
+  COMPLIANCE_REQUIREMENT_FIELDS,
   CONCENTRATION_RISK_SOURCES,
+  CONTINUOUS_COMPLIANCE_CAPABILITIES,
   CONTROL_EFFECTIVENESS_FACTORS,
+  CONTROL_DESIGN_EFFECTIVENESS_FACTORS,
+  CONTROL_DESIGN_FIELDS,
+  CONTROL_EXECUTION_MODELS,
+  CONTROL_FAMILIES,
+  CONTROL_FRAMEWORK_GOVERNANCE_FIELDS,
+  CONTROL_IMPLEMENTATION_MECHANISMS,
+  CONTROL_LIFECYCLE_STAGES,
+  CONTROL_OBJECTIVE_QUALITIES,
+  CONTROL_TESTING_FIELDS,
   CORE_GOVERNANCE_ROLES,
   CROSS_TENANT_GOVERNANCE_TRIGGERS,
   DECISION_RIGHT_FIELDS,
@@ -20,6 +46,8 @@ export {
   ENTERPRISE_RISK_MANAGEMENT_QUALITY_ATTRIBUTES,
   EXTERNAL_ASSURANCE_PROVIDERS,
   FORUM_CHARTER_FIELDS,
+  DESIGN_EFFECTIVENESS_STATES,
+  FUTURE_COMPLIANCE_CONTROL_CAPABILITIES,
   FUTURE_ENTERPRISE_RISK_MANAGEMENT_CAPABILITIES,
   FUTURE_GOVERNANCE_COMPLIANCE_CAPABILITIES,
   FUTURE_GOVERNANCE_OPERATING_MODEL_CAPABILITIES,
@@ -65,6 +93,7 @@ export {
   OBLIGATION_INTERPRETATION_FIELDS,
   OBLIGATION_SOURCES,
   OPERATING_MODEL_REVIEW_TRIGGERS,
+  OPERATING_EFFECTIVENESS_FACTORS,
   FUTURE_POLICY_ARCHITECTURE_CAPABILITIES,
   POLICY_APPLICABILITY_ATTRIBUTES,
   POLICY_ARCHITECTURE_ARCHITECTURAL_RULES,
@@ -114,11 +143,13 @@ export {
   TENANT_GOVERNANCE_MODEL_FIELDS,
   THIRD_PARTY_GOVERNANCE_LIFECYCLE_STAGES
 } from './constants.js';
+export { ComplianceControlFrameworkProfile } from './contracts/compliance-control-framework-profile.js';
 export { GovernanceOperatingModelProfile } from './contracts/governance-operating-model-profile.js';
 export { GovernanceComplianceOverviewProfile } from './contracts/governance-compliance-overview-profile.js';
 export { GovernanceComplianceValidationResult } from './contracts/governance-compliance-validation-result.js';
 export { EnterpriseRiskManagementProfile } from './contracts/enterprise-risk-management-profile.js';
 export { PolicyArchitectureProfile } from './contracts/policy-architecture-profile.js';
+export { ComplianceControlFrameworkDescriptor } from './compliance-control-framework/compliance-control-framework-descriptor.js';
 export { EnterpriseRiskManagementDescriptor } from './enterprise-risk-management/enterprise-risk-management-descriptor.js';
 export { GovernanceOperatingModelDescriptor } from './operating-model/governance-operating-model-descriptor.js';
 export { GovernanceComplianceOverviewDescriptor } from './overview/governance-compliance-overview-descriptor.js';

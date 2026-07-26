@@ -11,9 +11,9 @@ Update this file after every successful implementation session.
 - Architecture source of truth: `/architecture`
 - Implementation guide: `IMPLEMENTATION_GUIDE.md`
 - Task queue: `TASK_QUEUE.md`
-- Current implementation state: `ARCH-012-04 Enterprise Risk Management` is implemented.
-- Latest successful implementation module: `ARCH-012-04 Enterprise Risk Management`
-- Latest successful commit: current implementation commit for `ARCH-012-04 Enterprise Risk Management`
+- Current implementation state: `ARCH-012-05 Compliance and Control Framework` is implemented.
+- Latest successful implementation module: `ARCH-012-05 Compliance and Control Framework`
+- Latest successful commit: current implementation commit for `ARCH-012-05 Compliance and Control Framework`
 - Latest push status: pushed to `master`
 - Build status: passing
 - Test status: passing
@@ -36,16 +36,16 @@ Update this file after every successful implementation session.
 
 ## Implementation Coverage
 
-- Completed through: `ARCH-012-04 Enterprise Risk Management`
-- Next documented implementation module: `ARCH-012-05 Compliance and Control Framework`
-- Reason: `architecture/012-governance-compliance/05-compliance-and-control-framework.md` is available locally.
+- Completed through: `ARCH-012-05 Compliance and Control Framework`
+- Next documented implementation module: `ARCH-012-06 Privacy and Data Governance`
+- Reason: `architecture/012-governance-compliance/06-privacy-and-data-governance.md` is available locally.
 
 ## Latest Verification
 
-- Focused test: `npm.cmd test -- tests/governance-compliance/enterprise-risk-management.test.js`
+- Focused test: `npm.cmd test -- tests/governance-compliance/compliance-control-framework.test.js`
 - Focused test result: passed, 6/6
 - Full test: `npm.cmd test`
-- Full test result: passed, 768/768
+- Full test result: passed, 774/774
 - Build command: `npm.cmd run build`
 - Build result: passed
 
@@ -68,4 +68,4 @@ Architecture documents must not be changed during implementation unless explicit
 
 ## Recommended Next Action
 
-Recommended next architecture module: `ARCH-012-05 Compliance and Control Framework`.
+Recommended next architecture module: `ARCH-012-06 Privacy and Data Governance`.
