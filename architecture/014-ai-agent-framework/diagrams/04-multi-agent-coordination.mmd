@@ -1,0 +1,33 @@
+flowchart TD
+    A["Authorized shared goal, accountable owner, tenant/property scope, constraints, and total limits"] --> B{"Multiple agents provide measurable value over a simpler design?"}
+
+    B -- "No" --> C["Use one agent, deterministic service, or workflow"]
+    B -- "Yes" --> D["Select bounded topology, coordinator, specialist roles, review model, and failure policy"]
+    D --> E["Decompose work into independently owned and verifiable tasks"]
+    E --> F["Create delegation contracts with task, delegate identity, attenuated authority, minimal context, limits, deadline, return contract, and cancellation"]
+    F --> G{"Delegation admission valid?"}
+
+    G -- "No" --> H["Reject, redesign, request human decision, or stop"]
+    G -- "Yes" --> I["Specialists execute bounded child tasks with isolated state, context, tools, tenant/property scope, and evidence"]
+
+    I --> J["Return structured results, sources, assumptions, tool outcomes, uncertainty, side effects, and evidence"]
+    J --> K["Coordinator validates contract conformance, attribution, authority, completion, and resource use"]
+    K --> L{"Results complete and consistent?"}
+
+    L -- "No: missing" --> M["Wait within deadline, retry safely, select an approved alternate, reduce scope, or escalate"]
+    M --> I
+    L -- "No: conflict" --> N["Prefer authoritative state and policy, use independent verification, or request a human decision"]
+    N --> K
+
+    L -- "Yes" --> O["Aggregate accepted contributions while preserving provenance, disagreement, tenant/property scope, and rejected results"]
+    O --> P{"Shared completion criteria verified?"}
+    P -- "No" --> E
+    P -- "Yes" --> Q["Produce attributable outcome, close child work, release resources, and preserve coordination evidence"]
+
+    subgraph CONTROL["Coordination controls"]
+        R["Bound depth, fan-out, messages, time, cost, parallelism, retries, and further delegation"]
+        S["Propagate pause, cancellation, suspension, authority revocation, failure, and human takeover"]
+    end
+
+    R --> F
+    S --> I
