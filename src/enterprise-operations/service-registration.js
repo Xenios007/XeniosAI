@@ -1,4 +1,5 @@
 import { ServiceCollection } from '../foundation/di/service-collection.js';
+import { CapacityPerformanceManagementDescriptor } from './capacity-performance-management/capacity-performance-management-descriptor.js';
 import { ChangeReleaseOperationsDescriptor } from './change-release-operations/change-release-operations-descriptor.js';
 import { OperationsCommandControlDescriptor } from './command-control/operations-command-control-descriptor.js';
 import { EnterpriseOperationsDescriptor } from './enterprise-operations-descriptor.js';
@@ -19,6 +20,7 @@ export function addEnterpriseOperations(services) {
   services.registerSingleton('ServiceOperationsDescriptor', () => new ServiceOperationsDescriptor());
   services.registerSingleton('IncidentProblemManagementDescriptor', () => new IncidentProblemManagementDescriptor());
   services.registerSingleton('ChangeReleaseOperationsDescriptor', () => new ChangeReleaseOperationsDescriptor());
+  services.registerSingleton('CapacityPerformanceManagementDescriptor', () => new CapacityPerformanceManagementDescriptor());
 
   return services;
 }

@@ -1732,3 +1732,20 @@ Version: 0.96.0
 
 Status: Enterprise Operations Architecture
 Version: 0.97.0
+
+---
+
+## [0.98.0] - ARCH-011 Capacity and Performance Management
+
+### Added
+- Capacity and performance objective, principle, domain, demand source, demand dimension, demand profile, planning horizon, forecast, capacity plan, performance objective, performance indicator, baseline, limit, usable capacity, headroom, allocation, tenant fairness, property prioritization, scaling, elasticity, admission control, backpressure, backlog, graceful degradation, isolation, AI, workflow, integration, data, human, provider, performance testing, change validation, event, cost, reservation, review, optimization, risk, measure, governance, quality-attribute, architectural-rule, and future-capability constants.
+- Immutable contract for capacity and performance management profiles.
+- Capacity and Performance Management descriptor for documented metadata, profile validation, and architecture assertion.
+- Dependency-injection registration through `addEnterpriseOperations`.
+- Unit tests for capacity/performance metadata, validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Capacity and performance management as technology-neutral, vendor-neutral architecture without prescribing cloud providers, infrastructure products, performance tools, model providers, scaling technologies, detailed deployment topology, or observability tooling.
+
+Status: Enterprise Operations Architecture
+Version: 0.98.0

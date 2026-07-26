@@ -242,6 +242,55 @@ export {
   SECURITY_CHANGE_REQUIREMENTS,
   WORKFLOW_CHANGE_CONSIDERATIONS
 } from './constants.js';
+export {
+  ADMISSION_CONTROL_ACTIONS,
+  AI_CAPACITY_FACTORS,
+  AI_PERFORMANCE_FACTORS,
+  BACKLOG_MANAGEMENT_DIMENSIONS,
+  BACKPRESSURE_FAILURE_MODES,
+  CAPACITY_BASELINE_CONDITIONS,
+  CAPACITY_CHANGE_VALIDATION_TRIGGERS,
+  CAPACITY_COST_EFFICIENCY_FACTORS,
+  CAPACITY_DEMAND_DIMENSIONS,
+  CAPACITY_DEMAND_PROFILES,
+  CAPACITY_DEMAND_SOURCES,
+  CAPACITY_DOMAINS,
+  CAPACITY_EVENT_TYPES,
+  CAPACITY_FORECAST_INPUTS,
+  CAPACITY_FORECAST_SCENARIOS,
+  CAPACITY_HEADROOM_FACTORS,
+  CAPACITY_LIMIT_TYPES,
+  CAPACITY_PERFORMANCE_ARCHITECTURAL_RULES,
+  CAPACITY_PERFORMANCE_GOVERNANCE_AREAS,
+  CAPACITY_PERFORMANCE_MEASURES,
+  CAPACITY_PERFORMANCE_OBJECTIVES,
+  CAPACITY_PERFORMANCE_PRINCIPLES,
+  CAPACITY_PERFORMANCE_QUALITY_ATTRIBUTES,
+  CAPACITY_PLAN_FIELDS,
+  CAPACITY_PLANNING_HORIZONS,
+  CAPACITY_RESERVATION_REASONS,
+  CAPACITY_REVIEW_INPUTS,
+  CAPACITY_RISK_TRIGGERS,
+  CAPACITY_SCALING_ACTIONS,
+  DATA_CAPACITY_FACTORS,
+  ELASTICITY_POLICY_FIELDS,
+  EXTERNAL_PROVIDER_CAPACITY_CONSTRAINTS,
+  FUTURE_CAPACITY_PERFORMANCE_CAPABILITIES,
+  GRACEFUL_DEGRADATION_OPTIONS,
+  HUMAN_CAPACITY_FACTORS,
+  INTEGRATION_CAPACITY_FACTORS,
+  PERFORMANCE_INDICATORS,
+  PERFORMANCE_ISOLATION_DIMENSIONS,
+  PERFORMANCE_OBJECTIVE_EXAMPLES,
+  PERFORMANCE_OPTIMIZATION_TARGETS,
+  PERFORMANCE_TESTING_SCENARIOS,
+  PROPERTY_PRIORITIZATION_FACTORS,
+  RESOURCE_ALLOCATION_QUALITIES,
+  TENANT_FAIRNESS_CONTROLS,
+  USABLE_CAPACITY_FACTORS,
+  WORKFLOW_CAPACITY_FACTORS
+} from './constants.js';
+export { CapacityPerformanceManagementProfile } from './contracts/capacity-performance-management-profile.js';
 export { ChangeReleaseOperationsProfile } from './contracts/change-release-operations-profile.js';
 export { EnterpriseOperatingModelProfile } from './contracts/enterprise-operating-model-profile.js';
 export { EnterpriseOperationsOverviewProfile } from './contracts/enterprise-operations-overview-profile.js';
@@ -250,6 +299,7 @@ export { EnterpriseOperationsValidationResult } from './contracts/enterprise-ope
 export { IncidentProblemManagementProfile } from './contracts/incident-problem-management-profile.js';
 export { OperationsCommandControlProfile } from './contracts/operations-command-control-profile.js';
 export { ServiceOperationsProfile } from './contracts/service-operations-profile.js';
+export { CapacityPerformanceManagementDescriptor } from './capacity-performance-management/capacity-performance-management-descriptor.js';
 export { ChangeReleaseOperationsDescriptor } from './change-release-operations/change-release-operations-descriptor.js';
 export { EnterpriseOperationsDescriptor } from './enterprise-operations-descriptor.js';
 export { IncidentProblemManagementDescriptor } from './incident-problem-management/incident-problem-management-descriptor.js';

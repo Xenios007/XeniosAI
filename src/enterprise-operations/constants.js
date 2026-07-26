@@ -5,7 +5,8 @@ export const ENTERPRISE_OPERATIONS_ERROR_CODES = Object.freeze({
   OPERATIONS_COMMAND_CONTROL_INVALID: 'OPERATIONS_COMMAND_CONTROL_INVALID',
   SERVICE_OPERATIONS_INVALID: 'SERVICE_OPERATIONS_INVALID',
   INCIDENT_PROBLEM_MANAGEMENT_INVALID: 'INCIDENT_PROBLEM_MANAGEMENT_INVALID',
-  CHANGE_RELEASE_OPERATIONS_INVALID: 'CHANGE_RELEASE_OPERATIONS_INVALID'
+  CHANGE_RELEASE_OPERATIONS_INVALID: 'CHANGE_RELEASE_OPERATIONS_INVALID',
+  CAPACITY_PERFORMANCE_MANAGEMENT_INVALID: 'CAPACITY_PERFORMANCE_MANAGEMENT_INVALID'
 });
 
 export const ENTERPRISE_OPERATIONS_OBJECTIVES = Object.freeze({
@@ -3338,4 +3339,685 @@ export const FUTURE_CHANGE_RELEASE_CAPABILITIES = Object.freeze({
   SEMANTIC_CHANGE_RECORDS: 'semantic-change-records',
   CONTINUOUS_READINESS_VERIFICATION: 'continuous-readiness-verification',
   SELF_IMPROVING_CHANGE_MODELS: 'self-improving-change-models'
+});
+
+export const CAPACITY_PERFORMANCE_OBJECTIVES = Object.freeze({
+  SUFFICIENT_CAPACITY_FOR_BUSINESS_DEMAND: 'sufficient-capacity-for-business-demand',
+  PREDICTABLE_GUEST_AND_OPERATOR_EXPERIENCE: 'predictable-guest-and-operator-experience',
+  SCALABLE_MULTI_TENANT_MULTI_PROPERTY_OPERATIONS: 'scalable-multi-tenant-multi-property-operations',
+  EARLY_CAPACITY_RISK_IDENTIFICATION: 'early-capacity-risk-identification',
+  BUSINESS_ALIGNED_PERFORMANCE_OBJECTIVES: 'business-aligned-performance-objectives',
+  FAIR_RESOURCE_ALLOCATION: 'fair-resource-allocation',
+  SAFE_SCALING_AND_DEGRADATION: 'safe-scaling-and-degradation',
+  PROTECTED_CRITICAL_WORKLOADS: 'protected-critical-workloads',
+  EFFICIENT_RESOURCE_USE: 'efficient-resource-use',
+  CONTROLLED_AI_AND_EXTERNAL_PROVIDER_CONSUMPTION: 'controlled-ai-and-external-provider-consumption',
+  RESILIENT_DEMAND_SPIKES: 'resilient-demand-spikes',
+  EVIDENCE_BASED_INVESTMENT_DECISIONS: 'evidence-based-investment-decisions',
+  CONTINUOUS_OPTIMIZATION: 'continuous-optimization',
+  VENDOR_NEUTRAL_CAPACITY_CAPABILITIES: 'vendor-neutral-capacity-capabilities'
+});
+
+export const CAPACITY_PERFORMANCE_PRINCIPLES = Object.freeze({
+  BUSINESS_DEMAND_DRIVES_CAPACITY: 'business-demand-drives-capacity',
+  END_TO_END_PERFORMANCE: 'end-to-end-performance',
+  CAPACITY_BEFORE_SATURATION: 'capacity-before-saturation',
+  ELASTICITY_WITH_GUARDRAILS: 'elasticity-with-guardrails',
+  FAIRNESS_WITH_BUSINESS_PRIORITY: 'fairness-with-business-priority',
+  DEGRADE_GRACEFULLY: 'degrade-gracefully',
+  COST_IS_OPERATIONAL_CONSTRAINT: 'cost-is-operational-constraint',
+  EVIDENCE_BASED_PLANNING: 'evidence-based-planning',
+  PROVIDER_INDEPENDENCE: 'provider-independence'
+});
+
+export const CAPACITY_DOMAINS = Object.freeze({
+  BUSINESS_CAPACITY: 'business-capacity',
+  SERVICE_CAPACITY: 'service-capacity',
+  AI_CAPACITY: 'ai-capacity',
+  WORKFLOW_CAPACITY: 'workflow-capacity',
+  INTEGRATION_CAPACITY: 'integration-capacity',
+  DATA_CAPACITY: 'data-capacity',
+  PLATFORM_CAPACITY: 'platform-capacity',
+  HUMAN_OPERATIONAL_CAPACITY: 'human-operational-capacity'
+});
+
+export const CAPACITY_DEMAND_SOURCES = Object.freeze({
+  GUEST_INTERACTIONS: 'guest-interactions',
+  BOOKING_SEARCHES_AND_TRANSACTIONS: 'booking-searches-and-transactions',
+  AVAILABILITY_SYNCHRONIZATION: 'availability-synchronization',
+  PRICING_CALCULATION: 'pricing-calculation',
+  MESSAGING_CHANNELS: 'messaging-channels',
+  PROPERTY_OPERATIONS: 'property-operations',
+  TENANT_ONBOARDING: 'tenant-onboarding',
+  PROPERTY_ONBOARDING: 'property-onboarding',
+  AI_CONVERSATIONS: 'ai-conversations',
+  AGENT_EXECUTION: 'agent-execution',
+  WORKFLOW_SCHEDULES: 'workflow-schedules',
+  EXTERNAL_EVENTS: 'external-events',
+  DATA_PROCESSING: 'data-processing',
+  ANALYTICS: 'analytics',
+  SECURITY_CONTROLS: 'security-controls',
+  OBSERVABILITY: 'observability',
+  RELEASES_AND_MIGRATIONS: 'releases-and-migrations',
+  RECOVERY_ACTIVITY: 'recovery-activity',
+  SEASONAL_EVENTS: 'seasonal-events',
+  MARKETING_CAMPAIGNS: 'marketing-campaigns',
+  PARTNER_BEHAVIOR: 'partner-behavior',
+  REGULATORY_PROCESSES: 'regulatory-processes'
+});
+
+export const CAPACITY_DEMAND_DIMENSIONS = Object.freeze({
+  VOLUME: 'volume',
+  CONCURRENCY: 'concurrency',
+  ARRIVAL_RATE: 'arrival-rate',
+  COMPLETION_RATE: 'completion-rate',
+  DURATION: 'duration',
+  PAYLOAD_SIZE: 'payload-size',
+  COMPLEXITY: 'complexity',
+  PRIORITY: 'priority',
+  TENANT: 'tenant',
+  PROPERTY: 'property',
+  CHANNEL: 'channel',
+  GEOGRAPHY: 'geography',
+  TIME: 'time',
+  SEASON: 'season',
+  WORKFLOW_TYPE: 'workflow-type',
+  AI_MODEL_OR_AGENT: 'ai-model-or-agent',
+  EXTERNAL_PROVIDER: 'external-provider',
+  DATA_CLASS: 'data-class',
+  SERVICE_DEPENDENCY: 'service-dependency'
+});
+
+export const CAPACITY_DEMAND_PROFILES = Object.freeze({
+  STEADY_BASELINE: 'steady-baseline',
+  DAILY_PEAK: 'daily-peak',
+  WEEKLY_CYCLE: 'weekly-cycle',
+  SEASONAL_PEAK: 'seasonal-peak',
+  EVENT_DRIVEN_BURST: 'event-driven-burst',
+  CAMPAIGN_DRIVEN_GROWTH: 'campaign-driven-growth',
+  PROPERTY_ONBOARDING_SURGE: 'property-onboarding-surge',
+  TENANT_MIGRATION: 'tenant-migration',
+  RECOVERY_BACKLOG: 'recovery-backlog',
+  EXTERNAL_PROVIDER_RETRY_STORM: 'external-provider-retry-storm',
+  SECURITY_EVENT: 'security-event',
+  MAJOR_INCIDENT: 'major-incident',
+  DISASTER_RECOVERY_ACTIVATION: 'disaster-recovery-activation',
+  LONG_TERM_GROWTH: 'long-term-growth'
+});
+
+export const CAPACITY_PLANNING_HORIZONS = Object.freeze({
+  IMMEDIATE: 'immediate',
+  TACTICAL: 'tactical',
+  STRATEGIC: 'strategic'
+});
+
+export const CAPACITY_FORECAST_INPUTS = Object.freeze({
+  HISTORICAL_DEMAND: 'historical-demand',
+  BUSINESS_PLANS: 'business-plans',
+  TENANT_PIPELINE: 'tenant-pipeline',
+  PROPERTY_PIPELINE: 'property-pipeline',
+  SEASONAL_PATTERNS: 'seasonal-patterns',
+  CHANNEL_GROWTH: 'channel-growth',
+  PRODUCT_ADOPTION: 'product-adoption',
+  SERVICE_TRENDS: 'service-trends',
+  AI_USAGE: 'ai-usage',
+  DATA_GROWTH: 'data-growth',
+  EXTERNAL_PROVIDER_LIMITS: 'external-provider-limits',
+  INCIDENT_AND_RECOVERY_HISTORY: 'incident-and-recovery-history',
+  SCENARIO_ASSUMPTIONS: 'scenario-assumptions'
+});
+
+export const CAPACITY_FORECAST_SCENARIOS = Object.freeze({
+  EXPECTED: 'expected',
+  HIGH_GROWTH: 'high-growth',
+  SEASONAL_PEAK: 'seasonal-peak',
+  PROVIDER_DEGRADATION: 'provider-degradation',
+  RECOVERY_SURGE: 'recovery-surge',
+  MULTI_TENANT_INCIDENT: 'multi-tenant-incident',
+  STRATEGIC_EXPANSION: 'strategic-expansion'
+});
+
+export const CAPACITY_PLAN_FIELDS = Object.freeze({
+  BUSINESS_ASSUMPTIONS: 'business-assumptions',
+  DEMAND_FORECASTS: 'demand-forecasts',
+  SERVICE_AND_DEPENDENCY_SCOPE: 'service-and-dependency-scope',
+  CURRENT_CAPACITY: 'current-capacity',
+  USABLE_CAPACITY: 'usable-capacity',
+  RESERVED_CAPACITY: 'reserved-capacity',
+  PERFORMANCE_OBJECTIVES: 'performance-objectives',
+  BOTTLENECKS: 'bottlenecks',
+  PROVIDER_CONSTRAINTS: 'provider-constraints',
+  HUMAN_CONSTRAINTS: 'human-constraints',
+  SCALING_OPTIONS: 'scaling-options',
+  COST_IMPLICATIONS: 'cost-implications',
+  RISKS: 'risks',
+  DECISION_POINTS: 'decision-points',
+  REQUIRED_CHANGES: 'required-changes',
+  OWNERS: 'owners',
+  REVIEW_DATES: 'review-dates'
+});
+
+export const PERFORMANCE_OBJECTIVE_EXAMPLES = Object.freeze({
+  GUEST_RESPONSE_TIME: 'guest-response-time',
+  BOOKING_COMPLETION_TIME: 'booking-completion-time',
+  AVAILABILITY_FRESHNESS: 'availability-freshness',
+  PRICING_RESPONSE: 'pricing-response',
+  MESSAGE_DELIVERY: 'message-delivery',
+  WORKFLOW_DEADLINE: 'workflow-deadline',
+  INTEGRATION_DELIVERY: 'integration-delivery',
+  AI_RESPONSE_TIME: 'ai-response-time',
+  PROPERTY_OPERATION_COMPLETION: 'property-operation-completion',
+  RECOVERY_PROCESSING: 'recovery-processing',
+  DATA_QUERY_RESPONSIVENESS: 'data-query-responsiveness'
+});
+
+export const PERFORMANCE_INDICATORS = Object.freeze({
+  END_TO_END_DURATION: 'end-to-end-duration',
+  QUEUE_DELAY: 'queue-delay',
+  PROCESSING_DURATION: 'processing-duration',
+  THROUGHPUT: 'throughput',
+  CONCURRENCY: 'concurrency',
+  COMPLETION_RATE: 'completion-rate',
+  TIMEOUT_RATE: 'timeout-rate',
+  RETRY_RATE: 'retry-rate',
+  ERROR_RATE: 'error-rate',
+  TAIL_LATENCY: 'tail-latency',
+  DATA_FRESHNESS: 'data-freshness',
+  AI_TIME_TO_FIRST_RESPONSE: 'ai-time-to-first-response',
+  AI_COMPLETION_TIME: 'ai-completion-time',
+  WORKFLOW_AGE: 'workflow-age',
+  INTEGRATION_LAG: 'integration-lag',
+  RESOURCE_SATURATION: 'resource-saturation',
+  USER_ABANDONMENT: 'user-abandonment',
+  MANUAL_FALLBACK_DEMAND: 'manual-fallback-demand'
+});
+
+export const CAPACITY_BASELINE_CONDITIONS = Object.freeze({
+  NORMAL_OPERATIONS: 'normal-operations',
+  PEAK_OPERATIONS: 'peak-operations',
+  DEGRADED_DEPENDENCIES: 'degraded-dependencies',
+  PROGRESSIVE_RELEASES: 'progressive-releases',
+  RECOVERY_ACTIVITY: 'recovery-activity',
+  TENANT_ONBOARDING: 'tenant-onboarding',
+  PROPERTY_ONBOARDING: 'property-onboarding',
+  AI_PROVIDER_VARIATION: 'ai-provider-variation',
+  WORKFLOW_BACKLOGS: 'workflow-backlogs',
+  EXTERNAL_RATE_LIMITS: 'external-rate-limits'
+});
+
+export const CAPACITY_LIMIT_TYPES = Object.freeze({
+  HARD_LIMIT: 'hard-limit',
+  SOFT_LIMIT: 'soft-limit',
+  OPERATIONAL_TARGET: 'operational-target',
+  SCALING_THRESHOLD: 'scaling-threshold',
+  DEGRADATION_THRESHOLD: 'degradation-threshold',
+  ADMISSION_CONTROL_THRESHOLD: 'admission-control-threshold',
+  SAFETY_MARGIN: 'safety-margin',
+  RECOVERY_THRESHOLD: 'recovery-threshold',
+  PROVIDER_QUOTA: 'provider-quota',
+  CONTRACTUAL_LIMIT: 'contractual-limit',
+  COST_LIMIT: 'cost-limit'
+});
+
+export const USABLE_CAPACITY_FACTORS = Object.freeze({
+  RESILIENCE_RESERVE: 'resilience-reserve',
+  FAILOVER_REQUIREMENTS: 'failover-requirements',
+  MAINTENANCE: 'maintenance',
+  RECOVERY: 'recovery',
+  TENANT_ISOLATION: 'tenant-isolation',
+  SECURITY_OVERHEAD: 'security-overhead',
+  OBSERVABILITY_OVERHEAD: 'observability-overhead',
+  PERFORMANCE_VARIABILITY: 'performance-variability',
+  PROVIDER_CONSTRAINTS: 'provider-constraints',
+  DATA_REPLICATION: 'data-replication',
+  PEAK_UNCERTAINTY: 'peak-uncertainty',
+  SAFE_OPERATING_MARGIN: 'safe-operating-margin'
+});
+
+export const CAPACITY_HEADROOM_FACTORS = Object.freeze({
+  BUSINESS_CRITICALITY: 'business-criticality',
+  SCALING_SPEED: 'scaling-speed',
+  DEMAND_VARIABILITY: 'demand-variability',
+  FORECAST_CONFIDENCE: 'forecast-confidence',
+  DEPENDENCY_RISK: 'dependency-risk',
+  RECOVERY_REQUIREMENTS: 'recovery-requirements',
+  PROVIDER_LIMITS: 'provider-limits',
+  TENANT_SCOPE: 'tenant-scope',
+  COST_TOLERANCE: 'cost-tolerance'
+});
+
+export const RESOURCE_ALLOCATION_QUALITIES = Object.freeze({
+  POLICY_DRIVEN: 'policy-driven',
+  BUSINESS_ALIGNED: 'business-aligned',
+  TENANT_AWARE: 'tenant-aware',
+  PRIORITY_AWARE: 'priority-aware',
+  OBSERVABLE: 'observable',
+  AUDITABLE: 'auditable',
+  ADJUSTABLE: 'adjustable',
+  PROTECTED_FROM_STARVATION: 'protected-from-starvation',
+  COMPATIBLE_WITH_SERVICE_COMMITMENTS: 'compatible-with-service-commitments'
+});
+
+export const TENANT_FAIRNESS_CONTROLS = Object.freeze({
+  TENANT_QUOTAS: 'tenant-quotas',
+  RATE_BOUNDARIES: 'rate-boundaries',
+  CONCURRENCY_LIMITS: 'concurrency-limits',
+  RESERVED_MINIMUMS: 'reserved-minimums',
+  PRIORITY_CLASSES: 'priority-classes',
+  BURST_ALLOWANCES: 'burst-allowances',
+  COST_ATTRIBUTION: 'cost-attribution',
+  ISOLATION: 'isolation',
+  BACKPRESSURE: 'backpressure',
+  ADMISSION_CONTROL: 'admission-control'
+});
+
+export const PROPERTY_PRIORITIZATION_FACTORS = Object.freeze({
+  ACTIVE_STAYS: 'active-stays',
+  ARRIVALS_AND_DEPARTURES: 'arrivals-and-departures',
+  BOOKING_ACTIVITY: 'booking-activity',
+  GUEST_EMERGENCIES: 'guest-emergencies',
+  LOCAL_OUTAGES: 'local-outages',
+  PROPERTY_SIZE: 'property-size',
+  OPERATIONAL_SCHEDULE: 'operational-schedule',
+  TENANT_POLICY: 'tenant-policy',
+  LOCAL_MANUAL_ALTERNATIVES: 'local-manual-alternatives'
+});
+
+export const CAPACITY_SCALING_ACTIONS = Object.freeze({
+  INCREASING_RESOURCES: 'increasing-resources',
+  ADDING_PARALLEL_CAPACITY: 'adding-parallel-capacity',
+  PARTITIONING_WORKLOAD: 'partitioning-workload',
+  DISTRIBUTING_WORKLOAD: 'distributing-workload',
+  REDUCING_NONCRITICAL_DEMAND: 'reducing-noncritical-demand',
+  SHIFTING_SCHEDULES: 'shifting-schedules',
+  USING_ALTERNATE_PROVIDERS: 'using-alternate-providers',
+  INCREASING_HUMAN_CAPACITY: 'increasing-human-capacity',
+  CHANGING_EXECUTION_PRIORITY: 'changing-execution-priority',
+  ACTIVATING_RESERVED_CAPACITY: 'activating-reserved-capacity'
+});
+
+export const ELASTICITY_POLICY_FIELDS = Object.freeze({
+  SIGNALS: 'signals',
+  THRESHOLDS: 'thresholds',
+  MINIMUM_AND_MAXIMUM_CAPACITY: 'minimum-and-maximum-capacity',
+  SCALING_RATE: 'scaling-rate',
+  COOLDOWN: 'cooldown',
+  TENANT_SCOPE: 'tenant-scope',
+  PRIORITY: 'priority',
+  COST_BOUNDARIES: 'cost-boundaries',
+  PROVIDER_LIMITS: 'provider-limits',
+  FAILURE_HANDLING: 'failure-handling',
+  VERIFICATION: 'verification',
+  HUMAN_ESCALATION: 'human-escalation'
+});
+
+export const ADMISSION_CONTROL_ACTIONS = Object.freeze({
+  REJECT_NONCRITICAL_WORK: 'reject-noncritical-work',
+  DEFER_WORK: 'defer-work',
+  QUEUE_WORK: 'queue-work',
+  LIMIT_CONCURRENCY: 'limit-concurrency',
+  LIMIT_TENANT_BURSTS: 'limit-tenant-bursts',
+  REQUIRE_RETRY: 'require-retry',
+  RESTRICT_EXPENSIVE_OPERATIONS: 'restrict-expensive-operations',
+  REDUCE_AI_CONTEXT_OR_CAPABILITY: 'reduce-ai-context-or-capability',
+  SHIFT_TO_ALTERNATE_CHANNELS: 'shift-to-alternate-channels',
+  PRIORITIZE_ACTIVE_GUEST_OPERATIONS: 'prioritize-active-guest-operations',
+  ACTIVATE_MANUAL_HANDLING: 'activate-manual-handling'
+});
+
+export const BACKPRESSURE_FAILURE_MODES = Object.freeze({
+  UNBOUNDED_QUEUES: 'unbounded-queues',
+  RETRY_STORMS: 'retry-storms',
+  CASCADING_FAILURE: 'cascading-failure',
+  MEMORY_EXHAUSTION: 'memory-exhaustion',
+  PROVIDER_LIMIT_VIOLATION: 'provider-limit-violation',
+  HIDDEN_LATENCY_GROWTH: 'hidden-latency-growth',
+  DATA_LOSS_RISK: 'data-loss-risk'
+});
+
+export const BACKLOG_MANAGEMENT_DIMENSIONS = Object.freeze({
+  AGE: 'age',
+  PRIORITY: 'priority',
+  BUSINESS_DEADLINE: 'business-deadline',
+  TENANT: 'tenant',
+  PROPERTY: 'property',
+  WORK_TYPE: 'work-type',
+  RETRY_COUNT: 'retry-count',
+  FAILURE_REASON: 'failure-reason',
+  RESOURCE_COST: 'resource-cost',
+  EXPIRATION: 'expiration',
+  COMPENSATION_NEED: 'compensation-need'
+});
+
+export const GRACEFUL_DEGRADATION_OPTIONS = Object.freeze({
+  DEFERRING_ANALYTICS: 'deferring-analytics',
+  REDUCING_REFRESH_FREQUENCY: 'reducing-refresh-frequency',
+  LIMITING_NONCRITICAL_AUTOMATION: 'limiting-noncritical-automation',
+  REDUCING_AI_AUTONOMY: 'reducing-ai-autonomy',
+  USING_SMALLER_OR_ALTERNATE_MODELS: 'using-smaller-or-alternate-models',
+  SHORTENING_CONTEXT_WITHIN_POLICY: 'shortening-context-within-policy',
+  DISABLING_OPTIONAL_FEATURES: 'disabling-optional-features',
+  PRIORITIZING_CRITICAL_WORKFLOWS: 'prioritizing-critical-workflows',
+  SERVING_CACHED_INFORMATION: 'serving-cached-information',
+  SWITCHING_TO_MANUAL_OPERATIONS: 'switching-to-manual-operations',
+  RESTRICTING_TENANT_BURSTS: 'restricting-tenant-bursts'
+});
+
+export const PERFORMANCE_ISOLATION_DIMENSIONS = Object.freeze({
+  TENANTS: 'tenants',
+  PROPERTIES: 'properties',
+  BUSINESS_CAPABILITIES: 'business-capabilities',
+  SERVICES: 'services',
+  AI_AGENTS: 'ai-agents',
+  WORKFLOW_CLASSES: 'workflow-classes',
+  INTEGRATIONS: 'integrations',
+  DATA_WORKLOADS: 'data-workloads',
+  BACKGROUND_PROCESSING: 'background-processing',
+  RECOVERY_PROCESSING: 'recovery-processing',
+  ADMINISTRATIVE_WORK: 'administrative-work'
+});
+
+export const AI_CAPACITY_FACTORS = Object.freeze({
+  MODEL_AND_PROVIDER_QUOTAS: 'model-and-provider-quotas',
+  CONCURRENT_REQUESTS: 'concurrent-requests',
+  CONTEXT_SIZE: 'context-size',
+  TOKEN_OR_COMPUTE_CONSUMPTION: 'token-or-compute-consumption',
+  TOOL_EXECUTION: 'tool-execution',
+  MULTI_STEP_REASONING: 'multi-step-reasoning',
+  AGENT_COORDINATION: 'agent-coordination',
+  EVALUATION: 'evaluation',
+  SAFETY_PROCESSING: 'safety-processing',
+  LATENCY: 'latency',
+  COST: 'cost',
+  PROVIDER_VARIATION: 'provider-variation',
+  FALLBACK_CAPACITY: 'fallback-capacity'
+});
+
+export const AI_PERFORMANCE_FACTORS = Object.freeze({
+  RESPONSE_LATENCY: 'response-latency',
+  TIME_TO_FIRST_OUTPUT: 'time-to-first-output',
+  TASK_COMPLETION: 'task-completion',
+  QUALITY: 'quality',
+  TOOL_SUCCESS: 'tool-success',
+  SAFETY: 'safety',
+  COST: 'cost',
+  RETRY_BEHAVIOR: 'retry-behavior',
+  HUMAN_ESCALATION: 'human-escalation',
+  PROVIDER_AVAILABILITY: 'provider-availability'
+});
+
+export const WORKFLOW_CAPACITY_FACTORS = Object.freeze({
+  ACTIVE_INSTANCES: 'active-instances',
+  LONG_RUNNING_STATE: 'long-running-state',
+  SCHEDULED_TRIGGERS: 'scheduled-triggers',
+  TIMERS: 'timers',
+  EVENT_VOLUME: 'event-volume',
+  PARALLEL_BRANCHES: 'parallel-branches',
+  RETRIES: 'retries',
+  COMPENSATION: 'compensation',
+  MANUAL_TASKS: 'manual-tasks',
+  DEADLINES: 'deadlines',
+  BACKLOG_RECOVERY: 'backlog-recovery'
+});
+
+export const INTEGRATION_CAPACITY_FACTORS = Object.freeze({
+  PROVIDER_QUOTAS: 'provider-quotas',
+  CONNECTION_LIMITS: 'connection-limits',
+  API_RATES: 'api-rates',
+  EVENT_VOLUME: 'event-volume',
+  MESSAGE_SIZE: 'message-size',
+  DELIVERY_WINDOWS: 'delivery-windows',
+  RETRY_BEHAVIOR: 'retry-behavior',
+  BATCH_CONSTRAINTS: 'batch-constraints',
+  RECONCILIATION: 'reconciliation',
+  PARTNER_MAINTENANCE: 'partner-maintenance',
+  AUTHENTICATION_LIMITS: 'authentication-limits'
+});
+
+export const DATA_CAPACITY_FACTORS = Object.freeze({
+  TRANSACTION_VOLUME: 'transaction-volume',
+  STORAGE_GROWTH: 'storage-growth',
+  QUERY_DEMAND: 'query-demand',
+  INDEX_GROWTH: 'index-growth',
+  ANALYTICS: 'analytics',
+  REPLICATION: 'replication',
+  BACKUP: 'backup',
+  RECOVERY: 'recovery',
+  RETENTION: 'retention',
+  ARCHIVAL: 'archival',
+  DATA_MIGRATION: 'data-migration',
+  TENANT_ISOLATION: 'tenant-isolation'
+});
+
+export const HUMAN_CAPACITY_FACTORS = Object.freeze({
+  SUPPORT_VOLUME: 'support-volume',
+  INCIDENT_CONCURRENCY: 'incident-concurrency',
+  CHANGE_SCHEDULE: 'change-schedule',
+  PROPERTY_COVERAGE: 'property-coverage',
+  SPECIALIST_AVAILABILITY: 'specialist-availability',
+  APPROVAL_DEMAND: 'approval-demand',
+  MANUAL_WORKFLOW_TASKS: 'manual-workflow-tasks',
+  TRAINING: 'training',
+  FATIGUE: 'fatigue',
+  HANDOFFS: 'handoffs',
+  CRISIS_RESERVE: 'crisis-reserve'
+});
+
+export const EXTERNAL_PROVIDER_CAPACITY_CONSTRAINTS = Object.freeze({
+  CONTRACTUAL_QUOTAS: 'contractual-quotas',
+  PROVIDER_RATE_LIMITS: 'provider-rate-limits',
+  REGIONAL_AVAILABILITY: 'regional-availability',
+  COST: 'cost',
+  SUPPORT_RESPONSE: 'support-response',
+  MAINTENANCE_WINDOWS: 'maintenance-windows',
+  MODEL_ACCESS: 'model-access',
+  CHANNEL_RESTRICTIONS: 'channel-restrictions',
+  PARTNER_PROCESSING_LIMITS: 'partner-processing-limits'
+});
+
+export const PERFORMANCE_TESTING_SCENARIOS = Object.freeze({
+  NORMAL_DEMAND: 'normal-demand',
+  PEAK_DEMAND: 'peak-demand',
+  BURST: 'burst',
+  SUSTAINED_LOAD: 'sustained-load',
+  CAPACITY_LIMITS: 'capacity-limits',
+  DEPENDENCY_DEGRADATION: 'dependency-degradation',
+  PROVIDER_CONSTRAINTS: 'provider-constraints',
+  MULTI_TENANT_CONTENTION: 'multi-tenant-contention',
+  FAILOVER: 'failover',
+  RECOVERY_BACKLOG: 'recovery-backlog',
+  DATA_GROWTH: 'data-growth',
+  AI_WORKLOAD_VARIATION: 'ai-workload-variation',
+  WORKFLOW_CONCURRENCY: 'workflow-concurrency',
+  INTEGRATION_THROTTLING: 'integration-throttling'
+});
+
+export const CAPACITY_CHANGE_VALIDATION_TRIGGERS = Object.freeze({
+  NEW_TENANT_OR_PROPERTY_COHORTS: 'new-tenant-or-property-cohorts',
+  NEW_SERVICES: 'new-services',
+  AI_MODEL_CHANGES: 'ai-model-changes',
+  WORKFLOW_CHANGES: 'workflow-changes',
+  INTEGRATION_CHANGES: 'integration-changes',
+  DATA_MIGRATIONS: 'data-migrations',
+  MAJOR_RELEASES: 'major-releases',
+  INFRASTRUCTURE_CHANGES: 'infrastructure-changes',
+  SECURITY_CONTROLS: 'security-controls',
+  OBSERVABILITY_CHANGES: 'observability-changes',
+  CONTINUITY_CHANGES: 'continuity-changes'
+});
+
+export const CAPACITY_EVENT_TYPES = Object.freeze({
+  ADVISORY_EVENT: 'advisory-event',
+  SCALING_ACTION: 'scaling-action',
+  DEMAND_RESTRICTION: 'demand-restriction',
+  CAPACITY_RESERVATION: 'capacity-reservation',
+  DEGRADED_MODE: 'degraded-mode',
+  INCIDENT: 'incident',
+  MAJOR_INCIDENT: 'major-incident',
+  CONTINUITY_ACTION: 'continuity-action',
+  PROVIDER_ESCALATION: 'provider-escalation',
+  INVESTMENT_DECISION: 'investment-decision'
+});
+
+export const CAPACITY_COST_EFFICIENCY_FACTORS = Object.freeze({
+  BUSINESS_VALUE: 'business-value',
+  SERVICE_COMMITMENT: 'service-commitment',
+  RESILIENCE: 'resilience',
+  PERFORMANCE: 'performance',
+  GROWTH: 'growth',
+  COST: 'cost',
+  OPERATIONAL_COMPLEXITY: 'operational-complexity',
+  PROVIDER_CONCENTRATION: 'provider-concentration',
+  ENVIRONMENTAL_EFFICIENCY: 'environmental-efficiency'
+});
+
+export const CAPACITY_RESERVATION_REASONS = Object.freeze({
+  CRITICAL_BUSINESS_SERVICES: 'critical-business-services',
+  FAILOVER: 'failover',
+  RECOVERY: 'recovery',
+  SECURITY_RESPONSE: 'security-response',
+  PEAK_SEASONS: 'peak-seasons',
+  TENANT_COMMITMENTS: 'tenant-commitments',
+  PROPERTY_EMERGENCIES: 'property-emergencies',
+  MAJOR_RELEASES: 'major-releases',
+  DATA_MIGRATION: 'data-migration',
+  AI_FALLBACK: 'ai-fallback',
+  EXTERNAL_PROVIDER_LOSS: 'external-provider-loss'
+});
+
+export const CAPACITY_REVIEW_INPUTS = Object.freeze({
+  BUSINESS_DEMAND: 'business-demand',
+  FORECAST_ACCURACY: 'forecast-accuracy',
+  CURRENT_UTILIZATION: 'current-utilization',
+  USABLE_CAPACITY: 'usable-capacity',
+  HEADROOM: 'headroom',
+  SERVICE_PERFORMANCE: 'service-performance',
+  TENANT_FAIRNESS: 'tenant-fairness',
+  PROPERTY_DEMAND: 'property-demand',
+  AI_CONSUMPTION: 'ai-consumption',
+  WORKFLOW_BACKLOG: 'workflow-backlog',
+  INTEGRATION_CONSTRAINTS: 'integration-constraints',
+  DATA_GROWTH: 'data-growth',
+  HUMAN_CAPACITY: 'human-capacity',
+  PROVIDER_RISK: 'provider-risk',
+  COST: 'cost',
+  PLANNED_CHANGES: 'planned-changes',
+  REQUIRED_DECISIONS: 'required-decisions'
+});
+
+export const PERFORMANCE_OPTIMIZATION_TARGETS = Object.freeze({
+  BUSINESS_PROCESS: 'business-process',
+  SERVICE_INTERACTION: 'service-interaction',
+  DATA_ACCESS: 'data-access',
+  AI_MODEL_OR_CONTEXT: 'ai-model-or-context',
+  WORKFLOW_DESIGN: 'workflow-design',
+  INTEGRATION_PATTERN: 'integration-pattern',
+  SCHEDULING: 'scheduling',
+  CACHING: 'caching',
+  CONCURRENCY: 'concurrency',
+  CAPACITY_ALLOCATION: 'capacity-allocation',
+  USER_EXPERIENCE: 'user-experience',
+  MANUAL_ACTIVITY: 'manual-activity'
+});
+
+export const CAPACITY_RISK_TRIGGERS = Object.freeze({
+  FORECAST_DEMAND_EXCEEDS_PLANNED_SUPPLY: 'forecast-demand-exceeds-planned-supply',
+  HEADROOM_INSUFFICIENT: 'headroom-insufficient',
+  SCALING_SLOWER_THAN_DEMAND_GROWTH: 'scaling-slower-than-demand-growth',
+  PROVIDER_QUOTA_CONSTRAINED: 'provider-quota-constrained',
+  HUMAN_COVERAGE_INADEQUATE: 'human-coverage-inadequate',
+  SHARED_SERVICE_CONCENTRATION_RISK: 'shared-service-concentration-risk',
+  FAILOVER_CANNOT_MEET_COMMITMENTS: 'failover-cannot-meet-commitments',
+  COST_LIMITS_PREVENT_REQUIRED_CAPACITY: 'cost-limits-prevent-required-capacity',
+  DEMAND_POORLY_UNDERSTOOD: 'demand-poorly-understood',
+  PERFORMANCE_OBJECTIVES_REPEATEDLY_MISSED: 'performance-objectives-repeatedly-missed'
+});
+
+export const CAPACITY_PERFORMANCE_MEASURES = Object.freeze({
+  DEMAND_VOLUME_AND_GROWTH: 'demand-volume-and-growth',
+  FORECAST_ACCURACY: 'forecast-accuracy',
+  USABLE_CAPACITY: 'usable-capacity',
+  HEADROOM: 'headroom',
+  SATURATION_FREQUENCY: 'saturation-frequency',
+  SCALING_SUCCESS: 'scaling-success',
+  ADMISSION_CONTROL_FREQUENCY: 'admission-control-frequency',
+  BACKLOG_SIZE_AND_AGE: 'backlog-size-and-age',
+  TENANT_FAIRNESS: 'tenant-fairness',
+  PROPERTY_SERVICE_IMPACT: 'property-service-impact',
+  PROVIDER_QUOTA_USE: 'provider-quota-use',
+  HUMAN_SUPPORT_LOAD: 'human-support-load',
+  CAPACITY_RELATED_INCIDENTS: 'capacity-related-incidents',
+  PERFORMANCE_OBJECTIVE_ATTAINMENT: 'performance-objective-attainment',
+  COST_PER_BUSINESS_OUTCOME: 'cost-per-business-outcome',
+  RECOVERY_CAPACITY: 'recovery-capacity',
+  RESERVED_CAPACITY_ADEQUACY: 'reserved-capacity-adequacy'
+});
+
+export const CAPACITY_PERFORMANCE_GOVERNANCE_AREAS = Object.freeze({
+  FORECAST_ASSUMPTIONS: 'forecast-assumptions',
+  PERFORMANCE_OBJECTIVES: 'performance-objectives',
+  CAPACITY_MODELS: 'capacity-models',
+  HEADROOM: 'headroom',
+  ALLOCATION: 'allocation',
+  TENANT_FAIRNESS: 'tenant-fairness',
+  PRIORITY: 'priority',
+  SCALING_LIMITS: 'scaling-limits',
+  ADMISSION_CONTROL: 'admission-control',
+  PROVIDER_QUOTAS: 'provider-quotas',
+  COST_BOUNDARIES: 'cost-boundaries',
+  CAPACITY_RISK: 'capacity-risk',
+  TESTING: 'testing',
+  REVIEW: 'review',
+  INVESTMENT_DECISIONS: 'investment-decisions'
+});
+
+export const CAPACITY_PERFORMANCE_QUALITY_ATTRIBUTES = Object.freeze({
+  SCALABILITY: 'scalability',
+  PERFORMANCE: 'performance',
+  RELIABILITY: 'reliability',
+  AVAILABILITY: 'availability',
+  RESILIENCE: 'resilience',
+  EFFICIENCY: 'efficiency',
+  PREDICTABILITY: 'predictability',
+  FAIRNESS: 'fairness',
+  ADAPTABILITY: 'adaptability',
+  RECOVERABILITY: 'recoverability',
+  TENANT_ISOLATION: 'tenant-isolation',
+  BUSINESS_CONTINUITY: 'business-continuity'
+});
+
+export const CAPACITY_PERFORMANCE_ARCHITECTURAL_RULES = Object.freeze({
+  DERIVE_CAPACITY_FROM_BUSINESS_DEMAND: 'derive-capacity-from-business-demand',
+  MEASURE_PERFORMANCE_END_TO_END: 'measure-performance-end-to-end',
+  MODEL_ALL_CAPACITY_DOMAINS: 'model-all-capacity-domains',
+  DEFINE_PERFORMANCE_OBJECTIVES_AND_CAPACITY_LIMITS: 'define-performance-objectives-and-capacity-limits',
+  PRESERVE_SAFE_OPERATING_HEADROOM: 'preserve-safe-operating-headroom',
+  FORECAST_ACROSS_ALL_HORIZONS: 'forecast-across-all-horizons',
+  ALLOCATE_SHARED_CAPACITY_THROUGH_POLICY: 'allocate-shared-capacity-through-policy',
+  PROTECT_TENANT_AND_PROPERTY_WORKLOADS: 'protect-tenant-and-property-workloads',
+  GOVERN_ELASTICITY_AND_AUTOMATED_SCALING: 'govern-elasticity-and-automated-scaling',
+  USE_ADMISSION_CONTROL_AND_BACKPRESSURE: 'use-admission-control-and-backpressure',
+  DESIGN_GRACEFUL_DEGRADATION: 'design-graceful-degradation',
+  PROTECT_CRITICAL_WORKLOADS: 'protect-critical-workloads',
+  VALIDATE_CAPACITY_BEFORE_MATERIAL_CHANGE: 'validate-capacity-before-material-change',
+  ACCOUNT_FOR_FAILOVER_AND_RECOVERY_DEMAND: 'account-for-failover-and-recovery-demand',
+  BALANCE_COST_WITH_SERVICE_QUALITY_AND_RESILIENCE: 'balance-cost-with-service-quality-and-resilience',
+  RECORD_AND_GOVERN_CAPACITY_RISK: 'record-and-govern-capacity-risk',
+  REVIEW_AND_OPTIMIZE_CONTINUOUSLY: 'review-and-optimize-continuously',
+  REMAIN_VENDOR_NEUTRAL_AND_TECHNOLOGY_INDEPENDENT: 'remain-vendor-neutral-and-technology-independent'
+});
+
+export const FUTURE_CAPACITY_PERFORMANCE_CAPABILITIES = Object.freeze({
+  AI_ASSISTED_DEMAND_FORECASTING: 'ai-assisted-demand-forecasting',
+  PREDICTIVE_SATURATION_PREVENTION: 'predictive-saturation-prevention',
+  INTENT_BASED_CAPACITY_ALLOCATION: 'intent-based-capacity-allocation',
+  AUTONOMOUS_BOUNDED_SCALING: 'autonomous-bounded-scaling',
+  DYNAMIC_PERFORMANCE_BUDGETS: 'dynamic-performance-budgets',
+  CROSS_PROPERTY_DEMAND_OPTIMIZATION: 'cross-property-demand-optimization',
+  OPERATIONAL_DIGITAL_TWINS: 'operational-digital-twins',
+  CAPACITY_MARKET_ABSTRACTION: 'capacity-market-abstraction',
+  ADAPTIVE_TENANT_FAIRNESS: 'adaptive-tenant-fairness',
+  SEMANTIC_WORKLOAD_CLASSIFICATION: 'semantic-workload-classification',
+  CARBON_AWARE_SCHEDULING: 'carbon-aware-scheduling',
+  SELF_OPTIMIZING_SERVICE_PERFORMANCE: 'self-optimizing-service-performance'
 });

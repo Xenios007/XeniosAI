@@ -105,7 +105,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-011-04 Service Operations`
 - Completed: `ARCH-011-05 Incident and Problem Management`
 - Completed: `ARCH-011-06 Change and Release Operations`
-- Next: `ARCH-011-07 Capacity and Performance Management`
+- Completed: `ARCH-011-07 Capacity and Performance Management`
+- Next: `ARCH-011-08 Continuity and Resilience Operations`
 
 ## Notes
 
