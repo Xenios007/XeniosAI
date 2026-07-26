@@ -152,5 +152,6 @@ The repository currently includes automated unit tests for:
 - `ARCH-011-01 Enterprise Operations Overview` in `tests/enterprise-operations/`
 - `ARCH-011-02 Operating Model` in `tests/enterprise-operations/`
 - `ARCH-011-03 Operations Command and Control` in `tests/enterprise-operations/`
+- `ARCH-011-04 Service Operations` in `tests/enterprise-operations/`
 
 These tests validate reusable platform capabilities and channel-facing behavior without introducing business logic.

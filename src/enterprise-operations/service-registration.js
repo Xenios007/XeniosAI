@@ -3,6 +3,7 @@ import { OperationsCommandControlDescriptor } from './command-control/operations
 import { EnterpriseOperationsDescriptor } from './enterprise-operations-descriptor.js';
 import { EnterpriseOperatingModelDescriptor } from './operating-model/enterprise-operating-model-descriptor.js';
 import { EnterpriseOperationsOverviewDescriptor } from './overview/enterprise-operations-overview-descriptor.js';
+import { ServiceOperationsDescriptor } from './service-operations/service-operations-descriptor.js';
 
 export function addEnterpriseOperations(services) {
   if (!(services instanceof ServiceCollection)) {
@@ -13,6 +14,7 @@ export function addEnterpriseOperations(services) {
   services.registerSingleton('EnterpriseOperationsOverviewDescriptor', () => new EnterpriseOperationsOverviewDescriptor());
   services.registerSingleton('EnterpriseOperatingModelDescriptor', () => new EnterpriseOperatingModelDescriptor());
   services.registerSingleton('OperationsCommandControlDescriptor', () => new OperationsCommandControlDescriptor());
+  services.registerSingleton('ServiceOperationsDescriptor', () => new ServiceOperationsDescriptor());
 
   return services;
 }

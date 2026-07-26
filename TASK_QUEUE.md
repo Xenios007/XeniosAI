@@ -102,7 +102,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-011-01 Enterprise Operations Overview`
 - Completed: `ARCH-011-02 Operating Model`
 - Completed: `ARCH-011-03 Operations Command and Control`
-- Next: `ARCH-011-04 Service Operations`
+- Completed: `ARCH-011-04 Service Operations`
+- Next: `ARCH-011-05 Incident and Problem Management`
 
 ## Notes
 

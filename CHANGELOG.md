@@ -1681,3 +1681,20 @@ Version: 0.93.0
 
 Status: Enterprise Operations Architecture
 Version: 0.94.0
+
+---
+
+## [0.95.0] - ARCH-011 Service Operations
+
+### Added
+- Service operations objective, principle, lifecycle, classification, service type, ownership, supporting role, service catalog, commitment, indicator, lifecycle state, readiness, health, event, request, support, dependency, shared-service, degraded-mode, restoration, recovery-verification, maintenance, configuration, AI/workflow/integration/data service, multi-tenant, property-facing, performance-review, improvement, retirement, quality-attribute, architectural-rule, and future-capability constants.
+- Immutable contract for service operations profiles.
+- Service Operations descriptor for documented metadata, profile validation, and architecture assertion.
+- Dependency-injection registration through `addEnterpriseOperations`.
+- Unit tests for service operations metadata, validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Service operations as business-aligned, technology-neutral, vendor-neutral operational architecture without prescribing a service-management framework, ticketing platform, monitoring product, organizational team structure, technical-availability-only success, or anonymous technical component ownership.
+
+Status: Enterprise Operations Architecture
+Version: 0.95.0
