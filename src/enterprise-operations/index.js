@@ -290,8 +290,61 @@ export {
   USABLE_CAPACITY_FACTORS,
   WORKFLOW_CAPACITY_FACTORS
 } from './constants.js';
+export {
+  AI_CONTINUITY_OPTIONS,
+  AI_CONTINUITY_RISKS,
+  BACKUP_OPERATION_REQUIREMENTS,
+  BUSINESS_IMPACT_ANALYSIS_DIMENSIONS,
+  CONTINUITY_ACTIVATION_TRIGGERS,
+  CONTINUITY_AUTHORITY_LEVELS,
+  CONTINUITY_BACKLOG_RECOVERY_CONTROLS,
+  CONTINUITY_COMMAND_FIELDS,
+  CONTINUITY_COMMUNICATION_FIELDS,
+  CONTINUITY_EXERCISE_TYPES,
+  CONTINUITY_INCIDENT_TRANSITIONS,
+  CONTINUITY_OPERATING_MODES,
+  CONTINUITY_PLAN_FIELDS,
+  CONTINUITY_RESILIENCE_ARCHITECTURAL_RULES,
+  CONTINUITY_RESILIENCE_GOVERNANCE_AREAS,
+  CONTINUITY_RESILIENCE_MEASURES,
+  CONTINUITY_RESILIENCE_OBJECTIVES,
+  CONTINUITY_RESILIENCE_PRINCIPLES,
+  CONTINUITY_RESILIENCE_QUALITY_ATTRIBUTES,
+  CONTINUITY_TOLERANCE_TYPES,
+  CRITICAL_BUSINESS_SERVICE_EXAMPLES,
+  CRITICAL_SERVICE_RECORD_FIELDS,
+  DATA_CONTINUITY_PROTECTIONS,
+  DISASTER_RECOVERY_OPERATION_FIELDS,
+  EXERCISE_DESIGN_FIELDS,
+  EXTERNAL_PROVIDER_CONTINUITY_FIELDS,
+  FAILBACK_PLAN_FIELDS,
+  FUTURE_CONTINUITY_RESILIENCE_CAPABILITIES,
+  HUMAN_CONTINUITY_FACTORS,
+  INTEGRATION_CONTINUITY_OPTIONS,
+  INTEGRATION_CONTINUITY_RISKS,
+  MULTI_TENANT_RECOVERY_FACTORS,
+  PLATFORM_CONTINUITY_CAPABILITIES,
+  PROPERTY_CONTINUITY_CONSIDERATIONS,
+  PROVIDER_CONCENTRATION_RISK_CONTROLS,
+  RECOVERY_DEPENDENCY_AREAS,
+  RECOVERY_OBJECTIVE_TYPES,
+  RECOVERY_PRIORITIES,
+  RECONCILIATION_REQUIREMENTS,
+  RESILIENCE_ASSESSMENT_AREAS,
+  RESILIENCE_LIFECYCLE_STAGES,
+  RESILIENCE_STRATEGIES,
+  RESILIENCE_VALIDATION_AREAS,
+  RESTORATION_STEPS,
+  RETURN_TO_NORMAL_CRITERIA,
+  SECURITY_CONTINUITY_CONTROLS,
+  SERVICE_CONTINUITY_FIELDS,
+  TENANT_CONTINUITY_FIELDS,
+  TIME_BASED_IMPACT_DIMENSIONS,
+  WORKFLOW_CONTINUITY_REQUIREMENTS
+} from './constants.js';
 export { CapacityPerformanceManagementProfile } from './contracts/capacity-performance-management-profile.js';
 export { ChangeReleaseOperationsProfile } from './contracts/change-release-operations-profile.js';
+export { ContinuityResilienceOperationsProfile } from './contracts/continuity-resilience-operations-profile.js';
 export { EnterpriseOperatingModelProfile } from './contracts/enterprise-operating-model-profile.js';
 export { EnterpriseOperationsOverviewProfile } from './contracts/enterprise-operations-overview-profile.js';
 export { EnterpriseOperationsProfile } from './contracts/enterprise-operations-profile.js';
@@ -301,6 +354,7 @@ export { OperationsCommandControlProfile } from './contracts/operations-command-
 export { ServiceOperationsProfile } from './contracts/service-operations-profile.js';
 export { CapacityPerformanceManagementDescriptor } from './capacity-performance-management/capacity-performance-management-descriptor.js';
 export { ChangeReleaseOperationsDescriptor } from './change-release-operations/change-release-operations-descriptor.js';
+export { ContinuityResilienceOperationsDescriptor } from './continuity-resilience-operations/continuity-resilience-operations-descriptor.js';
 export { EnterpriseOperationsDescriptor } from './enterprise-operations-descriptor.js';
 export { IncidentProblemManagementDescriptor } from './incident-problem-management/incident-problem-management-descriptor.js';
 export { OperationsCommandControlDescriptor } from './command-control/operations-command-control-descriptor.js';

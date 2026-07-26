@@ -1749,3 +1749,20 @@ Version: 0.97.0
 
 Status: Enterprise Operations Architecture
 Version: 0.98.0
+
+---
+
+## [0.99.0] - ARCH-011 Continuity and Resilience Operations
+
+### Added
+- Continuity and resilience objective, principle, lifecycle, critical-service, critical-service record, impact-analysis, time-based impact, tolerance, recovery-objective, strategy, plan, operating-mode, activation, authority, command, service-continuity, AI-continuity, workflow-continuity, integration-continuity, data-continuity, platform-continuity, security-continuity, human-continuity, property-continuity, tenant-continuity, multi-tenant recovery, provider-continuity, concentration-risk, disaster-recovery, backup, restoration, recovery-priority, recovery-dependency, backlog-recovery, reconciliation, return-to-normal, failback, communication, exercise, validation, assessment, incident-transition, measure, governance, quality-attribute, architectural-rule, and future-capability constants.
+- Immutable contract for continuity and resilience operations profiles.
+- Continuity and Resilience Operations descriptor for documented metadata, profile validation, and architecture assertion.
+- Dependency-injection registration through `addEnterpriseOperations`.
+- Unit tests for continuity/resilience metadata, validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Continuity and resilience operations as technology-neutral, vendor-neutral architecture without prescribing cloud providers, backup products, disaster-recovery platforms, organizational structures, or detailed deployment mechanisms.
+
+Status: Enterprise Operations Architecture
+Version: 0.99.0

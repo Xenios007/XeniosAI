@@ -6,7 +6,8 @@ export const ENTERPRISE_OPERATIONS_ERROR_CODES = Object.freeze({
   SERVICE_OPERATIONS_INVALID: 'SERVICE_OPERATIONS_INVALID',
   INCIDENT_PROBLEM_MANAGEMENT_INVALID: 'INCIDENT_PROBLEM_MANAGEMENT_INVALID',
   CHANGE_RELEASE_OPERATIONS_INVALID: 'CHANGE_RELEASE_OPERATIONS_INVALID',
-  CAPACITY_PERFORMANCE_MANAGEMENT_INVALID: 'CAPACITY_PERFORMANCE_MANAGEMENT_INVALID'
+  CAPACITY_PERFORMANCE_MANAGEMENT_INVALID: 'CAPACITY_PERFORMANCE_MANAGEMENT_INVALID',
+  CONTINUITY_RESILIENCE_OPERATIONS_INVALID: 'CONTINUITY_RESILIENCE_OPERATIONS_INVALID'
 });
 
 export const ENTERPRISE_OPERATIONS_OBJECTIVES = Object.freeze({
@@ -4020,4 +4021,745 @@ export const FUTURE_CAPACITY_PERFORMANCE_CAPABILITIES = Object.freeze({
   SEMANTIC_WORKLOAD_CLASSIFICATION: 'semantic-workload-classification',
   CARBON_AWARE_SCHEDULING: 'carbon-aware-scheduling',
   SELF_OPTIMIZING_SERVICE_PERFORMANCE: 'self-optimizing-service-performance'
+});
+
+export const CONTINUITY_RESILIENCE_OBJECTIVES = Object.freeze({
+  PROTECT_CRITICAL_GUEST_AND_BUSINESS_OUTCOMES: 'protect-critical-guest-and-business-outcomes',
+  DEFINED_DISRUPTION_TOLERANCE: 'defined-disruption-tolerance',
+  COORDINATED_CONTINUITY_ACTIVATION: 'coordinated-continuity-activation',
+  SAFE_DEGRADED_OPERATING_MODES: 'safe-degraded-operating-modes',
+  BUSINESS_ALIGNED_RECOVERY_PRIORITIES: 'business-aligned-recovery-priorities',
+  RELIABLE_DATA_AND_SERVICE_RESTORATION: 'reliable-data-and-service-restoration',
+  TENANT_AND_PROPERTY_ISOLATION_DURING_RECOVERY: 'tenant-and-property-isolation-during-recovery',
+  PROVIDER_AND_DEPENDENCY_RESILIENCE: 'provider-and-dependency-resilience',
+  HUMAN_AND_AUTOMATED_CONTINUITY: 'human-and-automated-continuity',
+  VERIFIED_RETURN_TO_STABLE_SERVICE: 'verified-return-to-stable-service',
+  SCALABLE_MULTI_PROPERTY_RECOVERY: 'scalable-multi-property-recovery',
+  REGULAR_TESTING_AND_EVIDENCE: 'regular-testing-and-evidence',
+  CONTINUOUS_RESILIENCE_IMPROVEMENT: 'continuous-resilience-improvement',
+  VENDOR_NEUTRAL_CONTINUITY_CAPABILITIES: 'vendor-neutral-continuity-capabilities'
+});
+
+export const CONTINUITY_RESILIENCE_PRINCIPLES = Object.freeze({
+  BUSINESS_OUTCOMES_DEFINE_RESILIENCE: 'business-outcomes-define-resilience',
+  ASSUME_DISRUPTION: 'assume-disruption',
+  CONTINUE_BEFORE_FULL_RESTORATION: 'continue-before-full-restoration',
+  CONTAIN_THE_BLAST_RADIUS: 'contain-the-blast-radius',
+  RECOVER_IN_BUSINESS_PRIORITY_ORDER: 'recover-in-business-priority-order',
+  DATA_INTEGRITY_BEFORE_SPEED: 'data-integrity-before-speed',
+  PRACTICE_BEFORE_CRISIS: 'practice-before-crisis',
+  EXPLICIT_AUTHORITY: 'explicit-authority',
+  LEARN_AND_ADAPT: 'learn-and-adapt'
+});
+
+export const RESILIENCE_LIFECYCLE_STAGES = Object.freeze({
+  UNDERSTAND_CRITICAL_OUTCOMES: 'Understand Critical Outcomes',
+  ASSESS_DISRUPTION_RISK: 'Assess Disruption Risk',
+  DEFINE_TOLERANCES_AND_OBJECTIVES: 'Define Tolerances and Objectives',
+  DESIGN_RESILIENCE_AND_CONTINUITY_STRATEGIES: 'Design Resilience and Continuity Strategies',
+  PREPARE_PLANS_PEOPLE_DATA_AND_CAPABILITIES: 'Prepare Plans, People, Data, and Capabilities',
+  EXERCISE_AND_VALIDATE: 'Exercise and Validate',
+  ACTIVATE_WHEN_REQUIRED: 'Activate when Required',
+  CONTINUE_AND_RECOVER: 'Continue and Recover',
+  VERIFY_AND_RECONCILE: 'Verify and Reconcile',
+  RETURN_TO_NORMAL: 'Return to Normal',
+  LEARN_AND_IMPROVE: 'Learn and Improve'
+});
+
+export const CRITICAL_BUSINESS_SERVICE_EXAMPLES = Object.freeze({
+  GUEST_ACCESS_AND_ESSENTIAL_COMMUNICATION: 'guest-access-and-essential-communication',
+  ACTIVE_STAY_SUPPORT: 'active-stay-support',
+  BOOKING_INTEGRITY: 'booking-integrity',
+  AVAILABILITY_MANAGEMENT: 'availability-management',
+  PRICING_INTEGRITY: 'pricing-integrity',
+  PAYMENT_PROTECTION: 'payment-protection',
+  PROPERTY_OPERATIONS: 'property-operations',
+  IDENTITY_AND_AUTHORIZATION: 'identity-and-authorization',
+  SECURITY_RESPONSE: 'security-response',
+  DATA_PROTECTION: 'data-protection',
+  CRITICAL_CHANNEL_COMMUNICATION: 'critical-channel-communication',
+  EMERGENCY_PROPERTY_COORDINATION: 'emergency-property-coordination'
+});
+
+export const CRITICAL_SERVICE_RECORD_FIELDS = Object.freeze({
+  SERVICE_NAME_AND_PURPOSE: 'service-name-and-purpose',
+  BUSINESS_OWNER: 'business-owner',
+  OPERATIONAL_OWNER: 'operational-owner',
+  GUESTS_AND_USERS_SERVED: 'guests-and-users-served',
+  TENANT_AND_PROPERTY_SCOPE: 'tenant-and-property-scope',
+  CRITICAL_TIME_PERIODS: 'critical-time-periods',
+  MAXIMUM_TOLERABLE_DISRUPTION: 'maximum-tolerable-disruption',
+  MINIMUM_ACCEPTABLE_SERVICE: 'minimum-acceptable-service',
+  RECOVERY_TIME_OBJECTIVE: 'recovery-time-objective',
+  RECOVERY_POINT_OBJECTIVE: 'recovery-point-objective',
+  DEPENDENCIES: 'dependencies',
+  DATA_REQUIREMENTS: 'data-requirements',
+  SECURITY_REQUIREMENTS: 'security-requirements',
+  PEOPLE_AND_PROPERTY_DEPENDENCIES: 'people-and-property-dependencies',
+  EXTERNAL_PROVIDERS: 'external-providers',
+  CONTINUITY_STRATEGY: 'continuity-strategy',
+  RECOVERY_STRATEGY: 'recovery-strategy',
+  COMMUNICATION_OBLIGATIONS: 'communication-obligations',
+  TESTING_REQUIREMENTS: 'testing-requirements',
+  RESIDUAL_RISKS: 'residual-risks'
+});
+
+export const BUSINESS_IMPACT_ANALYSIS_DIMENSIONS = Object.freeze({
+  GUEST_IMPACT: 'guest-impact',
+  PROPERTY_IMPACT: 'property-impact',
+  TENANT_IMPACT: 'tenant-impact',
+  REVENUE: 'revenue',
+  BOOKING_INTEGRITY: 'booking-integrity',
+  ACTIVE_STAYS: 'active-stays',
+  SAFETY: 'safety',
+  SECURITY: 'security',
+  DATA: 'data',
+  COMPLIANCE: 'compliance',
+  REPUTATION: 'reputation',
+  EXTERNAL_OBLIGATIONS: 'external-obligations',
+  MANUAL_WORKLOAD: 'manual-workload',
+  DEPENDENCY_PROPAGATION: 'dependency-propagation',
+  RECOVERY_COMPLEXITY: 'recovery-complexity'
+});
+
+export const TIME_BASED_IMPACT_DIMENSIONS = Object.freeze({
+  IMMEDIATE_IMPACT: 'immediate-impact',
+  SHORT_DISRUPTION_IMPACT: 'short-disruption-impact',
+  PROLONGED_DISRUPTION_IMPACT: 'prolonged-disruption-impact',
+  TIME_CRITICAL_DEADLINES: 'time-critical-deadlines',
+  IRREVERSIBLE_THRESHOLDS: 'irreversible-thresholds',
+  BACKLOG_GROWTH: 'backlog-growth',
+  RECOVERY_WORKLOAD: 'recovery-workload',
+  REGULATORY_DEADLINES: 'regulatory-deadlines',
+  GUEST_JOURNEY_MILESTONES: 'guest-journey-milestones',
+  PROPERTY_OPERATING_WINDOWS: 'property-operating-windows'
+});
+
+export const CONTINUITY_TOLERANCE_TYPES = Object.freeze({
+  DURATION: 'duration',
+  TRANSACTION_LOSS: 'transaction-loss',
+  DATA_LOSS: 'data-loss',
+  BACKLOG: 'backlog',
+  GUEST_DELAY: 'guest-delay',
+  PROPERTY_DELAY: 'property-delay',
+  REDUCED_FUNCTIONALITY: 'reduced-functionality',
+  MANUAL_WORKLOAD: 'manual-workload',
+  AI_QUALITY: 'ai-quality',
+  INTEGRATION_DELAY: 'integration-delay',
+  SECURITY_EXPOSURE: 'security-exposure',
+  FINANCIAL_IMPACT: 'financial-impact',
+  TENANT_SCOPE: 'tenant-scope'
+});
+
+export const RECOVERY_OBJECTIVE_TYPES = Object.freeze({
+  RECOVERY_TIME_OBJECTIVE: 'recovery-time-objective',
+  RECOVERY_POINT_OBJECTIVE: 'recovery-point-objective',
+  MAXIMUM_TOLERABLE_DISRUPTION: 'maximum-tolerable-disruption',
+  MINIMUM_BUSINESS_CONTINUITY_OBJECTIVE: 'minimum-business-continuity-objective',
+  RECOVERY_CAPACITY_OBJECTIVE: 'recovery-capacity-objective'
+});
+
+export const RESILIENCE_STRATEGIES = Object.freeze({
+  REDUNDANCY: 'redundancy',
+  ISOLATION: 'isolation',
+  DISTRIBUTION: 'distribution',
+  FAILOVER: 'failover',
+  GRACEFUL_DEGRADATION: 'graceful-degradation',
+  QUEUEING: 'queueing',
+  BACKPRESSURE: 'backpressure',
+  ALTERNATE_PROVIDERS: 'alternate-providers',
+  MANUAL_PROCEDURES: 'manual-procedures',
+  LOCAL_PROPERTY_OPERATION: 'local-property-operation',
+  CACHED_OR_LAST_KNOWN_INFORMATION: 'cached-or-last-known-information',
+  RESERVED_CAPACITY: 'reserved-capacity',
+  REDUCED_AI_AUTONOMY: 'reduced-ai-autonomy',
+  WORKFLOW_COMPENSATION: 'workflow-compensation',
+  DATA_BACKUP_AND_REPLICATION: 'data-backup-and-replication',
+  CROSS_REGION_OR_ALTERNATE_ENVIRONMENT_RECOVERY: 'cross-region-or-alternate-environment-recovery',
+  SUPPLIER_SUBSTITUTION: 'supplier-substitution',
+  STAFF_CROSS_TRAINING: 'staff-cross-training'
+});
+
+export const CONTINUITY_PLAN_FIELDS = Object.freeze({
+  SCOPE: 'scope',
+  CRITICAL_OUTCOMES: 'critical-outcomes',
+  ACTIVATION_CRITERIA: 'activation-criteria',
+  AUTHORITY: 'authority',
+  COMMAND_STRUCTURE: 'command-structure',
+  PARTICIPANTS: 'participants',
+  MINIMUM_SERVICE: 'minimum-service',
+  CONTINUITY_PROCEDURES: 'continuity-procedures',
+  DEPENDENCIES: 'dependencies',
+  DATA_REQUIREMENTS: 'data-requirements',
+  SECURITY_CONTROLS: 'security-controls',
+  TENANT_AND_PROPERTY_BOUNDARIES: 'tenant-and-property-boundaries',
+  MANUAL_ALTERNATIVES: 'manual-alternatives',
+  COMMUNICATION: 'communication',
+  RECOVERY_OBJECTIVES: 'recovery-objectives',
+  RESOURCE_REQUIREMENTS: 'resource-requirements',
+  EXTERNAL_COORDINATION: 'external-coordination',
+  VERIFICATION: 'verification',
+  RECONCILIATION: 'reconciliation',
+  RETURN_TO_NORMAL_CRITERIA: 'return-to-normal-criteria',
+  EXERCISE_SCHEDULE: 'exercise-schedule',
+  EVIDENCE_AND_MAINTENANCE_OWNER: 'evidence-and-maintenance-owner'
+});
+
+export const CONTINUITY_OPERATING_MODES = Object.freeze({
+  NORMAL_MODE: 'normal-mode',
+  HEIGHTENED_READINESS: 'heightened-readiness',
+  DEGRADED_MODE: 'degraded-mode',
+  CONTINUITY_MODE: 'continuity-mode',
+  RECOVERY_MODE: 'recovery-mode',
+  RETURN_TO_NORMAL_MODE: 'return-to-normal-mode'
+});
+
+export const CONTINUITY_ACTIVATION_TRIGGERS = Object.freeze({
+  RECOVERY_OBJECTIVES_AT_RISK: 'recovery-objectives-at-risk',
+  PROLONGED_SERVICE_DISRUPTION: 'prolonged-service-disruption',
+  REGIONAL_OR_PROVIDER_FAILURE: 'regional-or-provider-failure',
+  DATA_CENTER_OR_ENVIRONMENT_LOSS: 'data-center-or-environment-loss',
+  CRITICAL_DATA_UNAVAILABILITY: 'critical-data-unavailability',
+  CYBERSECURITY_EVENT: 'cybersecurity-event',
+  INTEGRATION_ECOSYSTEM_FAILURE: 'integration-ecosystem-failure',
+  COMMUNICATIONS_CHANNEL_LOSS: 'communications-channel-loss',
+  PROPERTY_CONNECTIVITY_FAILURE: 'property-connectivity-failure',
+  WORKFORCE_UNAVAILABILITY: 'workforce-unavailability',
+  FACILITY_DISRUPTION: 'facility-disruption',
+  NATURAL_DISASTER: 'natural-disaster',
+  REGULATORY_ACTION: 'regulatory-action',
+  SUPPLY_CHAIN_DISRUPTION: 'supply-chain-disruption',
+  MULTIPLE_SIMULTANEOUS_INCIDENTS: 'multiple-simultaneous-incidents',
+  CRISIS_DECLARATION: 'crisis-declaration'
+});
+
+export const CONTINUITY_AUTHORITY_LEVELS = Object.freeze({
+  SERVICE_OWNER: 'service-owner',
+  PROPERTY_OPERATIONS_OWNER: 'property-operations-owner',
+  TENANT_OPERATIONS_OWNER: 'tenant-operations-owner',
+  INCIDENT_COMMANDER: 'incident-commander',
+  ENTERPRISE_OPERATIONS_OWNER: 'enterprise-operations-owner',
+  CRISIS_AUTHORITY: 'crisis-authority'
+});
+
+export const CONTINUITY_COMMAND_FIELDS = Object.freeze({
+  ACCOUNTABLE_LEADER: 'accountable-leader',
+  BUSINESS_PRIORITIES: 'business-priorities',
+  ACTIVE_MODE: 'active-mode',
+  SCOPE: 'scope',
+  DECISION_AUTHORITY: 'decision-authority',
+  RESOURCE_ALLOCATION: 'resource-allocation',
+  SERVICE_PRIORITIES: 'service-priorities',
+  PROPERTY_PRIORITIES: 'property-priorities',
+  SECURITY_CONSTRAINTS: 'security-constraints',
+  COMMUNICATION: 'communication',
+  RECOVERY_SEQUENCING: 'recovery-sequencing',
+  REASSESSMENT_CADENCE: 'reassessment-cadence',
+  EXIT_CRITERIA: 'exit-criteria'
+});
+
+export const SERVICE_CONTINUITY_FIELDS = Object.freeze({
+  MINIMUM_ACCEPTABLE_FUNCTIONALITY: 'minimum-acceptable-functionality',
+  DEPENDENCY_ALTERNATIVES: 'dependency-alternatives',
+  DEGRADED_MODES: 'degraded-modes',
+  FAILOVER_BEHAVIOR: 'failover-behavior',
+  STATE_RECOVERY: 'state-recovery',
+  CAPACITY: 'capacity',
+  SUPPORT: 'support',
+  COMMUNICATION: 'communication',
+  RECOVERY_ORDER: 'recovery-order',
+  VERIFICATION: 'verification',
+  RETURN_TO_NORMAL: 'return-to-normal'
+});
+
+export const AI_CONTINUITY_RISKS = Object.freeze({
+  MODEL_PROVIDER_FAILURE: 'model-provider-failure',
+  MODEL_QUALITY_DEGRADATION: 'model-quality-degradation',
+  TOOL_UNAVAILABILITY: 'tool-unavailability',
+  CONTEXT_SOURCE_FAILURE: 'context-source-failure',
+  SAFETY_CONTROL_FAILURE: 'safety-control-failure',
+  QUOTA_EXHAUSTION: 'quota-exhaustion',
+  COST_CONSTRAINT: 'cost-constraint',
+  LATENCY_DEGRADATION: 'latency-degradation',
+  AGENT_COORDINATION_FAILURE: 'agent-coordination-failure'
+});
+
+export const AI_CONTINUITY_OPTIONS = Object.freeze({
+  ALTERNATE_MODEL_OR_PROVIDER: 'alternate-model-or-provider',
+  REDUCED_CONTEXT: 'reduced-context',
+  REDUCED_AUTONOMY: 'reduced-autonomy',
+  RESTRICTED_TOOL_ACCESS: 'restricted-tool-access',
+  RULE_BASED_FALLBACK: 'rule-based-fallback',
+  CACHED_APPROVED_RESPONSES: 'cached-approved-responses',
+  HUMAN_APPROVAL: 'human-approval',
+  MANUAL_HANDLING: 'manual-handling',
+  SUSPENDING_NONCRITICAL_AI_CAPABILITIES: 'suspending-noncritical-ai-capabilities'
+});
+
+export const WORKFLOW_CONTINUITY_REQUIREMENTS = Object.freeze({
+  DURABLE_STATE: 'durable-state',
+  BUSINESS_INVARIANTS: 'business-invariants',
+  DEADLINES: 'deadlines',
+  IN_FLIGHT_INSTANCES: 'in-flight-instances',
+  RETRY_LIMITS: 'retry-limits',
+  COMPENSATION: 'compensation',
+  MANUAL_TASKS: 'manual-tasks',
+  VERSION_COMPATIBILITY: 'version-compatibility',
+  EVENT_ORDERING: 'event-ordering',
+  RECOVERY_OWNERSHIP: 'recovery-ownership',
+  RECONCILIATION: 'reconciliation'
+});
+
+export const INTEGRATION_CONTINUITY_RISKS = Object.freeze({
+  PROVIDER_UNAVAILABILITY: 'provider-unavailability',
+  AUTHENTICATION_FAILURE: 'authentication-failure',
+  NETWORK_FAILURE: 'network-failure',
+  CONTRACT_INCOMPATIBILITY: 'contract-incompatibility',
+  RATE_LIMITATION: 'rate-limitation',
+  DELIVERY_BACKLOG: 'delivery-backlog',
+  DUPLICATE_OR_OUT_OF_ORDER_MESSAGES: 'duplicate-or-out-of-order-messages',
+  CREDENTIAL_COMPROMISE: 'credential-compromise',
+  PARTNER_DISASTER: 'partner-disaster',
+  CHANNEL_LOSS: 'channel-loss'
+});
+
+export const INTEGRATION_CONTINUITY_OPTIONS = Object.freeze({
+  BUFFERING: 'buffering',
+  CONTROLLED_RETRY: 'controlled-retry',
+  ALTERNATE_PROVIDER: 'alternate-provider',
+  ALTERNATE_CHANNEL: 'alternate-channel',
+  MANUAL_EXCHANGE: 'manual-exchange',
+  DEFERRED_DELIVERY: 'deferred-delivery',
+  RECONCILIATION: 'reconciliation',
+  REDUCED_SCOPE: 'reduced-scope',
+  PROPERTY_LOCAL_PROCEDURE: 'property-local-procedure'
+});
+
+export const DATA_CONTINUITY_PROTECTIONS = Object.freeze({
+  AVAILABILITY: 'availability',
+  INTEGRITY: 'integrity',
+  CONFIDENTIALITY: 'confidentiality',
+  DOMAIN_INVARIANTS: 'domain-invariants',
+  TRANSACTION_CONSISTENCY: 'transaction-consistency',
+  TENANT_ISOLATION: 'tenant-isolation',
+  LINEAGE: 'lineage',
+  RETENTION: 'retention',
+  BACKUP: 'backup',
+  RECOVERY: 'recovery',
+  RECONCILIATION: 'reconciliation',
+  EVIDENCE: 'evidence'
+});
+
+export const PLATFORM_CONTINUITY_CAPABILITIES = Object.freeze({
+  IDENTITY: 'identity',
+  AUTHORIZATION: 'authorization',
+  CONFIGURATION: 'configuration',
+  RUNTIME: 'runtime',
+  MESSAGING: 'messaging',
+  STORAGE: 'storage',
+  NETWORK: 'network',
+  DEPLOYMENT: 'deployment',
+  OBSERVABILITY: 'observability',
+  SECRETS: 'secrets',
+  SERVICE_DISCOVERY: 'service-discovery',
+  SCHEDULING: 'scheduling'
+});
+
+export const SECURITY_CONTINUITY_CONTROLS = Object.freeze({
+  IDENTITY: 'identity',
+  LEAST_PRIVILEGE: 'least-privilege',
+  TENANT_ISOLATION: 'tenant-isolation',
+  SECRETS_PROTECTION: 'secrets-protection',
+  ENCRYPTION: 'encryption',
+  AUDIT: 'audit',
+  EVIDENCE: 'evidence',
+  SECURITY_MONITORING: 'security-monitoring',
+  INCIDENT_RESPONSE: 'incident-response',
+  APPROVAL_CONTROLS: 'approval-controls'
+});
+
+export const HUMAN_CONTINUITY_FACTORS = Object.freeze({
+  KEY_PERSON_DEPENDENCY: 'key-person-dependency',
+  ON_CALL_COVERAGE: 'on-call-coverage',
+  CROSS_TRAINING: 'cross-training',
+  ALTERNATE_ROLES: 'alternate-roles',
+  DELEGATED_AUTHORITY: 'delegated-authority',
+  REMOTE_OPERATIONS: 'remote-operations',
+  COMMUNICATION_ALTERNATIVES: 'communication-alternatives',
+  FATIGUE: 'fatigue',
+  CRISIS_STAFFING: 'crisis-staffing',
+  PARTNER_SUPPORT: 'partner-support',
+  MANUAL_WORK_CAPACITY: 'manual-work-capacity'
+});
+
+export const PROPERTY_CONTINUITY_CONSIDERATIONS = Object.freeze({
+  GUEST_ACCESS: 'guest-access',
+  ACTIVE_STAYS: 'active-stays',
+  ARRIVALS_AND_DEPARTURES: 'arrivals-and-departures',
+  LOCAL_STAFF: 'local-staff',
+  BUILDING_SYSTEMS: 'building-systems',
+  PHYSICAL_KEYS_OR_ACCESS_ALTERNATIVES: 'physical-keys-or-access-alternatives',
+  LOCAL_CONNECTIVITY: 'local-connectivity',
+  POWER: 'power',
+  LOCAL_PAYMENT: 'local-payment',
+  MANUAL_BOOKING_RECORDS: 'manual-booking-records',
+  EMERGENCY_CONTACTS: 'emergency-contacts',
+  LOCAL_REGULATIONS: 'local-regulations',
+  GUEST_COMMUNICATION: 'guest-communication'
+});
+
+export const TENANT_CONTINUITY_FIELDS = Object.freeze({
+  TENANT_SPECIFIC_PRIORITIES: 'tenant-specific-priorities',
+  CRITICAL_PROPERTIES: 'critical-properties',
+  TENANT_COMMUNICATION: 'tenant-communication',
+  TENANT_ADMINISTRATORS: 'tenant-administrators',
+  DATA_AND_CONFIGURATION: 'data-and-configuration',
+  TENANT_SPECIFIC_INTEGRATIONS: 'tenant-specific-integrations',
+  MANUAL_ALTERNATIVES: 'manual-alternatives',
+  RECOVERY_ORDER: 'recovery-order',
+  SERVICE_COMMITMENTS: 'service-commitments',
+  RISK_ACCEPTANCE: 'risk-acceptance'
+});
+
+export const MULTI_TENANT_RECOVERY_FACTORS = Object.freeze({
+  SAFETY: 'safety',
+  ACTIVE_GUEST_IMPACT: 'active-guest-impact',
+  CRITICAL_BUSINESS_SERVICES: 'critical-business-services',
+  CONTRACTUAL_COMMITMENTS: 'contractual-commitments',
+  PROPERTY_CONDITIONS: 'property-conditions',
+  TENANT_SCOPE: 'tenant-scope',
+  DEPENDENCY_ORDER: 'dependency-order',
+  AVAILABLE_ALTERNATIVES: 'available-alternatives',
+  RECOVERY_FAIRNESS: 'recovery-fairness',
+  REGULATORY_OBLIGATIONS: 'regulatory-obligations'
+});
+
+export const EXTERNAL_PROVIDER_CONTINUITY_FIELDS = Object.freeze({
+  PROVIDER_CRITICALITY: 'provider-criticality',
+  CONTRACT_AND_COMMITMENT: 'contract-and-commitment',
+  FAILURE_MODES: 'failure-modes',
+  HEALTH_EVIDENCE: 'health-evidence',
+  ESCALATION: 'escalation',
+  ALTERNATE_PROVIDER: 'alternate-provider',
+  DATA_PORTABILITY: 'data-portability',
+  CREDENTIAL_READINESS: 'credential-readiness',
+  SWITCHING_PROCEDURE: 'switching-procedure',
+  RETURN_PROCEDURE: 'return-procedure',
+  RECONCILIATION: 'reconciliation',
+  EXIT_STRATEGY: 'exit-strategy'
+});
+
+export const PROVIDER_CONCENTRATION_RISK_CONTROLS = Object.freeze({
+  IDENTIFIED: 'identified',
+  MEASURED: 'measured',
+  OWNED: 'owned',
+  TESTED: 'tested',
+  REDUCED_WHERE_JUSTIFIED: 'reduced-where-justified',
+  SUPPORTED_BY_CONTINUITY_STRATEGY: 'supported-by-continuity-strategy',
+  ACCEPTED_ONLY_BY_APPROPRIATE_AUTHORITY: 'accepted-only-by-appropriate-authority'
+});
+
+export const DISASTER_RECOVERY_OPERATION_FIELDS = Object.freeze({
+  DISASTER_CRITERIA: 'disaster-criteria',
+  AUTHORITY: 'authority',
+  TARGET_ENVIRONMENT: 'target-environment',
+  RECOVERY_SEQUENCE: 'recovery-sequence',
+  DEPENDENCIES: 'dependencies',
+  IDENTITY_AND_SECURITY: 'identity-and-security',
+  DATA_RESTORATION: 'data-restoration',
+  NETWORK_AND_INTEGRATION_RESTORATION: 'network-and-integration-restoration',
+  CAPACITY: 'capacity',
+  SERVICE_ACTIVATION: 'service-activation',
+  TENANT_AND_PROPERTY_COORDINATION: 'tenant-and-property-coordination',
+  VERIFICATION: 'verification',
+  FAILBACK: 'failback',
+  EVIDENCE: 'evidence'
+});
+
+export const BACKUP_OPERATION_REQUIREMENTS = Object.freeze({
+  DEFINED_DATA_SCOPE: 'defined-data-scope',
+  FREQUENCY_ALIGNED_WITH_RECOVERY_OBJECTIVES: 'frequency-aligned-with-recovery-objectives',
+  ISOLATION_FROM_PRIMARY_FAILURE: 'isolation-from-primary-failure',
+  SECURITY_AND_ENCRYPTION: 'security-and-encryption',
+  TENANT_PROTECTION: 'tenant-protection',
+  INTEGRITY_CHECKING: 'integrity-checking',
+  RETENTION: 'retention',
+  ACCESS_CONTROL: 'access-control',
+  CATALOGING: 'cataloging',
+  MONITORING: 'monitoring',
+  RESTORATION_TESTING: 'restoration-testing',
+  LIFECYCLE_OWNERSHIP: 'lifecycle-ownership'
+});
+
+export const RESTORATION_STEPS = Object.freeze({
+  CONFIRM_AUTHORITY_AND_TARGET: 'Confirm authority and target',
+  PRESERVE_EVIDENCE: 'Preserve evidence',
+  ESTABLISH_SECURE_RECOVERY_CAPABILITY: 'Establish secure recovery capability',
+  RESTORE_DEPENDENCIES_IN_REQUIRED_ORDER: 'Restore dependencies in required order',
+  RESTORE_DATA_AND_STATE: 'Restore data and state',
+  VALIDATE_INTEGRITY: 'Validate integrity',
+  ACTIVATE_MINIMUM_SERVICES: 'Activate minimum services',
+  VERIFY_CRITICAL_BUSINESS_OUTCOMES: 'Verify critical business outcomes',
+  EXPAND_CAPABILITY_PROGRESSIVELY: 'Expand capability progressively',
+  PROCESS_BACKLOG_SAFELY: 'Process backlog safely',
+  RECONCILE_ALTERNATE_OPERATIONS: 'Reconcile alternate operations',
+  MONITOR_STABILITY: 'Monitor stability'
+});
+
+export const RECOVERY_PRIORITIES = Object.freeze({
+  SAFETY_AND_SECURITY: 'safety-and-security',
+  IDENTITY_AND_AUTHORIZATION: 'identity-and-authorization',
+  DATA_INTEGRITY: 'data-integrity',
+  GUEST_ACCESS_AND_ACTIVE_STAY_SUPPORT: 'guest-access-and-active-stay-support',
+  CRITICAL_BOOKING_AND_AVAILABILITY: 'critical-booking-and-availability',
+  PROPERTY_OPERATIONS: 'property-operations',
+  PAYMENTS_AND_FINANCIAL_PROTECTION: 'payments-and-financial-protection',
+  ESSENTIAL_COMMUNICATION: 'essential-communication',
+  CRITICAL_INTEGRATIONS_AND_WORKFLOWS: 'critical-integrations-and-workflows',
+  SUPPORTING_SERVICES: 'supporting-services',
+  DEFERRED_AND_NONCRITICAL_CAPABILITIES: 'deferred-and-noncritical-capabilities'
+});
+
+export const RECOVERY_DEPENDENCY_AREAS = Object.freeze({
+  BUSINESS_SERVICES: 'business-services',
+  PLATFORM_SERVICES: 'platform-services',
+  IDENTITY: 'identity',
+  SECURITY: 'security',
+  DATA: 'data',
+  MESSAGING: 'messaging',
+  AI: 'ai',
+  WORKFLOWS: 'workflows',
+  INTEGRATIONS: 'integrations',
+  EXTERNAL_PROVIDERS: 'external-providers',
+  NETWORK: 'network',
+  HUMAN_ROLES: 'human-roles',
+  PROPERTY_PROCEDURES: 'property-procedures'
+});
+
+export const CONTINUITY_BACKLOG_RECOVERY_CONTROLS = Object.freeze({
+  BUSINESS_PRIORITY: 'business-priority',
+  GUEST_DEADLINES: 'guest-deadlines',
+  TENANT_AND_PROPERTY_SCOPE: 'tenant-and-property-scope',
+  AGE: 'age',
+  DATA_CONSISTENCY: 'data-consistency',
+  DEPENDENCY_LIMITS: 'dependency-limits',
+  RATE_CONSTRAINTS: 'rate-constraints',
+  CAPACITY_RESERVATION: 'capacity-reservation',
+  DUPLICATE_PROTECTION: 'duplicate-protection',
+  RECONCILIATION: 'reconciliation',
+  EXPIRATION_AND_COMPENSATION: 'expiration-and-compensation'
+});
+
+export const RECONCILIATION_REQUIREMENTS = Object.freeze({
+  IDENTIFY_ALTERNATE_ACTIVITY: 'identify-alternate-activity',
+  CORRELATE_RECORDS: 'correlate-records',
+  DETECT_CONFLICTS: 'detect-conflicts',
+  PRESERVE_BUSINESS_INVARIANTS: 'preserve-business-invariants',
+  RESOLVE_DUPLICATES: 'resolve-duplicates',
+  COMPLETE_OR_COMPENSATE_WORKFLOWS: 'complete-or-compensate-workflows',
+  CONFIRM_INTEGRATION_DELIVERY: 'confirm-integration-delivery',
+  VALIDATE_FINANCIAL_EFFECTS: 'validate-financial-effects',
+  PROTECT_AUDIT_HISTORY: 'protect-audit-history',
+  OBTAIN_BUSINESS_APPROVAL_WHERE_REQUIRED: 'obtain-business-approval-where-required'
+});
+
+export const RETURN_TO_NORMAL_CRITERIA = Object.freeze({
+  PRIMARY_CAPABILITIES_STABLE: 'primary-capabilities-stable',
+  BUSINESS_OUTCOMES_VERIFIED: 'business-outcomes-verified',
+  DATA_RECONCILED: 'data-reconciled',
+  SECURITY_POSTURE_CONFIRMED: 'security-posture-confirmed',
+  BACKLOGS_CONTROLLED: 'backlogs-controlled',
+  DEPENDENCIES_STABLE: 'dependencies-stable',
+  SUPPORT_READY: 'support-ready',
+  TEMPORARY_RISKS_OWNED: 'temporary-risks-owned',
+  STAKEHOLDERS_INFORMED: 'stakeholders-informed',
+  CONTINUITY_ACTIONS_TRANSFERRED_OR_CLOSED: 'continuity-actions-transferred-or-closed',
+  OBSERVATION_PERIOD_COMPLETED: 'observation-period-completed'
+});
+
+export const FAILBACK_PLAN_FIELDS = Object.freeze({
+  AUTHORITY: 'authority',
+  TIMING: 'timing',
+  DATA_SYNCHRONIZATION: 'data-synchronization',
+  STATE_COMPATIBILITY: 'state-compatibility',
+  TENANT_AND_PROPERTY_IMPACT: 'tenant-and-property-impact',
+  SERVICE_SEQUENCING: 'service-sequencing',
+  INTEGRATION_BEHAVIOR: 'integration-behavior',
+  VERIFICATION: 'verification',
+  ROLLBACK: 'rollback',
+  COMMUNICATION: 'communication'
+});
+
+export const CONTINUITY_COMMUNICATION_FIELDS = Object.freeze({
+  CURRENT_OPERATING_MODE: 'current-operating-mode',
+  AFFECTED_SERVICES: 'affected-services',
+  BUSINESS_AND_GUEST_IMPACT: 'business-and-guest-impact',
+  AVAILABLE_ALTERNATIVES: 'available-alternatives',
+  REQUIRED_LOCAL_ACTION: 'required-local-action',
+  DATA_OR_SECURITY_CONSIDERATIONS: 'data-or-security-considerations',
+  RECOVERY_PRIORITY: 'recovery-priority',
+  EXPECTED_UPDATES: 'expected-updates',
+  RETURN_TO_NORMAL_PROGRESS: 'return-to-normal-progress'
+});
+
+export const CONTINUITY_EXERCISE_TYPES = Object.freeze({
+  PLAN_REVIEW: 'plan-review',
+  WALKTHROUGH: 'walkthrough',
+  TABLETOP_EXERCISE: 'tabletop-exercise',
+  TECHNICAL_RECOVERY_TEST: 'technical-recovery-test',
+  BACKUP_RESTORATION_TEST: 'backup-restoration-test',
+  DEPENDENCY_FAILURE_EXERCISE: 'dependency-failure-exercise',
+  PROVIDER_FAILOVER_EXERCISE: 'provider-failover-exercise',
+  PROPERTY_CONTINUITY_EXERCISE: 'property-continuity-exercise',
+  TENANT_CONTINUITY_EXERCISE: 'tenant-continuity-exercise',
+  COMMUNICATION_EXERCISE: 'communication-exercise',
+  MAJOR_INCIDENT_SIMULATION: 'major-incident-simulation',
+  FULL_OR_PARTIAL_CONTINUITY_EXERCISE: 'full-or-partial-continuity-exercise'
+});
+
+export const EXERCISE_DESIGN_FIELDS = Object.freeze({
+  OBJECTIVE: 'objective',
+  SCENARIO: 'scenario',
+  SCOPE: 'scope',
+  PARTICIPANTS: 'participants',
+  ASSUMPTIONS: 'assumptions',
+  INJECTED_CONDITIONS: 'injected-conditions',
+  SUCCESS_CRITERIA: 'success-criteria',
+  SAFETY_CONTROLS: 'safety-controls',
+  EVIDENCE: 'evidence',
+  OBSERVERS: 'observers',
+  STOP_CONDITIONS: 'stop-conditions',
+  REVIEW_METHOD: 'review-method'
+});
+
+export const RESILIENCE_VALIDATION_AREAS = Object.freeze({
+  FAILURE_CONTAINMENT: 'failure-containment',
+  DEGRADED_OPERATION: 'degraded-operation',
+  RECOVERY_OBJECTIVES: 'recovery-objectives',
+  DATA_INTEGRITY: 'data-integrity',
+  TENANT_ISOLATION: 'tenant-isolation',
+  PROPERTY_PROCEDURES: 'property-procedures',
+  PROVIDER_ALTERNATIVES: 'provider-alternatives',
+  HUMAN_COVERAGE: 'human-coverage',
+  SECURITY_CONTROLS: 'security-controls',
+  BACKLOG_RECOVERY: 'backlog-recovery',
+  RETURN_TO_NORMAL: 'return-to-normal',
+  EVIDENCE_QUALITY: 'evidence-quality'
+});
+
+export const RESILIENCE_ASSESSMENT_AREAS = Object.freeze({
+  CRITICAL_BUSINESS_SERVICES: 'critical-business-services',
+  ARCHITECTURE: 'architecture',
+  SERVICES: 'services',
+  DATA: 'data',
+  AI: 'ai',
+  WORKFLOWS: 'workflows',
+  INTEGRATIONS: 'integrations',
+  PLATFORM: 'platform',
+  SECURITY: 'security',
+  PROVIDERS: 'providers',
+  PEOPLE: 'people',
+  PROPERTIES: 'properties',
+  TENANTS: 'tenants',
+  COMMUNICATIONS: 'communications',
+  RECOVERY_CAPACITY: 'recovery-capacity'
+});
+
+export const CONTINUITY_INCIDENT_TRANSITIONS = Object.freeze({
+  NORMAL_RESTORATION: 'normal-restoration',
+  ACTIVATE_DEGRADED_MODE: 'activate-degraded-mode',
+  ACTIVATE_SERVICE_CONTINUITY: 'activate-service-continuity',
+  ACTIVATE_PROPERTY_CONTINUITY: 'activate-property-continuity',
+  ACTIVATE_TENANT_CONTINUITY: 'activate-tenant-continuity',
+  ACTIVATE_ENTERPRISE_CONTINUITY: 'activate-enterprise-continuity',
+  ESCALATE_TO_CRISIS: 'escalate-to-crisis',
+  TRANSITION_TO_RECOVERY_AND_RETURN_TO_NORMAL: 'transition-to-recovery-and-return-to-normal'
+});
+
+export const CONTINUITY_RESILIENCE_MEASURES = Object.freeze({
+  CRITICAL_SERVICES_ASSESSED: 'critical-services-assessed',
+  PLANS_CURRENT: 'plans-current',
+  EXERCISES_COMPLETED: 'exercises-completed',
+  EXERCISE_SUCCESS: 'exercise-success',
+  RECOVERY_TIME_ATTAINMENT: 'recovery-time-attainment',
+  RECOVERY_POINT_ATTAINMENT: 'recovery-point-attainment',
+  MAXIMUM_DISRUPTION_COMPLIANCE: 'maximum-disruption-compliance',
+  BACKUP_RESTORATION_SUCCESS: 'backup-restoration-success',
+  FAILOVER_SUCCESS: 'failover-success',
+  RECONCILIATION_COMPLETION: 'reconciliation-completion',
+  CONTINUITY_ACTIVATION_FREQUENCY: 'continuity-activation-frequency',
+  PROVIDER_ALTERNATIVE_READINESS: 'provider-alternative-readiness',
+  TENANT_AND_PROPERTY_COVERAGE: 'tenant-and-property-coverage',
+  RECOVERY_BACKLOG: 'recovery-backlog',
+  IMPROVEMENT_ACTION_COMPLETION: 'improvement-action-completion',
+  RESIDUAL_RESILIENCE_RISK: 'residual-resilience-risk'
+});
+
+export const CONTINUITY_RESILIENCE_GOVERNANCE_AREAS = Object.freeze({
+  CRITICAL_SERVICE_CLASSIFICATION: 'critical-service-classification',
+  IMPACT_ANALYSIS: 'impact-analysis',
+  TOLERANCES: 'tolerances',
+  RECOVERY_OBJECTIVES: 'recovery-objectives',
+  STRATEGIES: 'strategies',
+  PLANS: 'plans',
+  ACTIVATION_AUTHORITY: 'activation-authority',
+  RECOVERY_PRIORITIES: 'recovery-priorities',
+  SECURITY: 'security',
+  PROVIDER_RISK: 'provider-risk',
+  TESTING: 'testing',
+  EVIDENCE: 'evidence',
+  RESIDUAL_RISK: 'residual-risk',
+  RETURN_TO_NORMAL: 'return-to-normal',
+  IMPROVEMENT: 'improvement'
+});
+
+export const CONTINUITY_RESILIENCE_QUALITY_ATTRIBUTES = Object.freeze({
+  RESILIENCE: 'resilience',
+  AVAILABILITY: 'availability',
+  RECOVERABILITY: 'recoverability',
+  RELIABILITY: 'reliability',
+  SECURITY: 'security',
+  INTEGRITY: 'integrity',
+  SCALABILITY: 'scalability',
+  ADAPTABILITY: 'adaptability',
+  ACCOUNTABILITY: 'accountability',
+  TRACEABILITY: 'traceability',
+  TENANT_ISOLATION: 'tenant-isolation',
+  BUSINESS_CONTINUITY: 'business-continuity'
+});
+
+export const CONTINUITY_RESILIENCE_ARCHITECTURAL_RULES = Object.freeze({
+  DEFINE_RESILIENCE_THROUGH_CRITICAL_BUSINESS_OUTCOMES: 'define-resilience-through-critical-business-outcomes',
+  IDENTIFY_CRITICAL_BUSINESS_SERVICES: 'identify-critical-business-services',
+  PERFORM_TIME_BASED_BUSINESS_IMPACT_ANALYSIS: 'perform-time-based-business-impact-analysis',
+  DEFINE_AUTHORIZED_TOLERANCES_AND_OBJECTIVES: 'define-authorized-tolerances-and-objectives',
+  DESIGN_SAFE_DEGRADED_AND_CONTINUITY_MODES: 'design-safe-degraded-and-continuity-modes',
+  PRESERVE_SECURITY_DATA_INTEGRITY_AND_TENANT_ISOLATION: 'preserve-security-data-integrity-and-tenant-isolation',
+  ASSIGN_EXPLICIT_ACTIVATION_AND_RECOVERY_AUTHORITY: 'assign-explicit-activation-and-recovery-authority',
+  COORDINATE_CONTINUITY_THROUGH_COMMAND_AND_CONTROL: 'coordinate-continuity-through-command-and-control',
+  INCLUDE_ALL_OPERATIONAL_DOMAINS: 'include-all-operational-domains',
+  RECOVER_IN_BUSINESS_PRIORITY_AND_DEPENDENCY_ORDER: 'recover-in-business-priority-and-dependency-order',
+  MAINTAIN_SUFFICIENT_RECOVERY_CAPACITY: 'maintain-sufficient-recovery-capacity',
+  TEST_BACKUPS_THROUGH_RESTORATION: 'test-backups-through-restoration',
+  RECONCILE_ALTERNATE_OPERATIONS_AND_DIVERGENT_STATE: 'reconcile-alternate-operations-and-divergent-state',
+  GOVERN_FAILBACK_AS_CHANGE: 'govern-failback-as-change',
+  VERIFY_BUSINESS_OUTCOMES_BEFORE_RETURN_TO_NORMAL: 'verify-business-outcomes-before-return-to-normal',
+  EXERCISE_CONTINUITY_REGULARLY: 'exercise-continuity-regularly',
+  RECORD_AND_ADDRESS_RESILIENCE_WEAKNESSES: 'record-and-address-resilience-weaknesses',
+  REMAIN_VENDOR_NEUTRAL_AND_TECHNOLOGY_INDEPENDENT: 'remain-vendor-neutral-and-technology-independent'
+});
+
+export const FUTURE_CONTINUITY_RESILIENCE_CAPABILITIES = Object.freeze({
+  PREDICTIVE_RESILIENCE_ANALYSIS: 'predictive-resilience-analysis',
+  AI_ASSISTED_CONTINUITY_COMMAND: 'ai-assisted-continuity-command',
+  AUTONOMOUS_BOUNDED_FAILOVER: 'autonomous-bounded-failover',
+  DIGITAL_TWIN_DISRUPTION_SIMULATION: 'digital-twin-disruption-simulation',
+  DYNAMIC_RECOVERY_PRIORITIZATION: 'dynamic-recovery-prioritization',
+  CROSS_PROPERTY_CONTINUITY_OPTIMIZATION: 'cross-property-continuity-optimization',
+  SEMANTIC_DEPENDENCY_RECOVERY: 'semantic-dependency-recovery',
+  ADAPTIVE_RECOVERY_OBJECTIVES: 'adaptive-recovery-objectives',
+  AUTOMATED_RECONCILIATION: 'automated-reconciliation',
+  FEDERATED_PROVIDER_PORTABILITY: 'federated-provider-portability',
+  SELF_VALIDATING_CONTINUITY_PLANS: 'self-validating-continuity-plans',
+  CONTINUOUS_RESILIENCE_VERIFICATION: 'continuous-resilience-verification'
 });

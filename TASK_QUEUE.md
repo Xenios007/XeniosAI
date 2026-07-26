@@ -106,7 +106,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-011-05 Incident and Problem Management`
 - Completed: `ARCH-011-06 Change and Release Operations`
 - Completed: `ARCH-011-07 Capacity and Performance Management`
-- Next: `ARCH-011-08 Continuity and Resilience Operations`
+- Completed: `ARCH-011-08 Continuity and Resilience Operations`
+- Next: `ARCH-011-09 Operations Governance`
 
 ## Notes
 
