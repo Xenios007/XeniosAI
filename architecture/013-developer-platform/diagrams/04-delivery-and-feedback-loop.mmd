@@ -1,0 +1,32 @@
+flowchart TD
+    A["Approved source, trusted artifact, provenance, and quality evidence"] --> B["Release manifest and configuration compatibility"]
+    B --> C["Target environment, tenant, property, cohort, and change scope"]
+    C --> D{"Operational readiness and authority valid?"}
+
+    D -- "No" --> E["Block, remediate, refresh evidence, or obtain a scoped decision"]
+    E --> B
+    D -- "Yes" --> F["Progressive delivery with explicit observation window"]
+
+    F --> G["Observe service health, business outcomes, AI behavior, security, capacity, and tenant/property impact"]
+    G --> H{"Verification and stop conditions"}
+
+    H -- "Pass" --> I{"More authorized scope remains?"}
+    I -- "Yes" --> F
+    I -- "No" --> J["Complete release, communicate, and preserve evidence"]
+
+    H -- "Hold" --> K["Pause exposure and request accountable decision"]
+    K --> H
+
+    H -- "Fail" --> L{"Recovery strategy"}
+    L -- "Rollback" --> M["Restore previous trusted artifact, configuration, or exposure"]
+    L -- "Roll forward" --> N["Deliver validated corrective release"]
+    L -- "Compensate" --> O["Reverse or offset irreversible business effects"]
+
+    M --> P["Verify recovery and reconcile partial state"]
+    N --> P
+    O --> P
+
+    J --> Q["Operations, incidents, support, adoption, and production feedback"]
+    P --> Q
+    Q --> R["Improve architecture, paved paths, tests, controls, capacity, and documentation"]
+    R --> A
