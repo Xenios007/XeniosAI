@@ -141,6 +141,8 @@ export {
   WORKFLOW_SERVICE_HEALTH_DIMENSIONS
 } from './constants.js';
 export {
+  AI_CHANGE_ASSESSMENT_DIMENSIONS,
+  AI_CHANGE_TYPES,
   AI_INCIDENT_CONTROLS,
   AI_INCIDENT_TYPES,
   CONTRIBUTING_CONDITION_TYPES,
@@ -193,6 +195,54 @@ export {
   WORKAROUND_FIELDS,
   WORKFLOW_INCIDENT_TYPES
 } from './constants.js';
+export {
+  CHANGE_AUTHORITY_LEVELS,
+  CHANGE_CLASSIFICATION_DIMENSIONS,
+  CHANGE_COLLISION_FACTORS,
+  CHANGE_EXAMPLES,
+  CHANGE_FREEZE_CONDITIONS,
+  CHANGE_IMPACT_DIMENSIONS,
+  CHANGE_IMPLEMENTATION_CONTROLS,
+  CHANGE_LIFECYCLE_STAGES,
+  CHANGE_OBSERVATION_CHECKS,
+  CHANGE_READINESS_REQUIREMENTS,
+  CHANGE_RECORD_FIELDS,
+  CHANGE_RELEASE_ARCHITECTURAL_RULES,
+  CHANGE_RELEASE_GOVERNANCE_AREAS,
+  CHANGE_RELEASE_MEASURES,
+  CHANGE_RELEASE_OBJECTIVES,
+  CHANGE_RELEASE_PRINCIPLES,
+  CHANGE_RELEASE_QUALITY_ATTRIBUTES,
+  CHANGE_RELEASE_ROLES,
+  CHANGE_RISK_FACTORS,
+  CHANGE_STATES,
+  CHANGE_STOP_CONDITIONS,
+  CHANGE_TYPES,
+  CHANGE_VERIFICATION_DIMENSIONS,
+  CHANGE_WINDOW_FACTORS,
+  COMPENSATION_EXAMPLES,
+  CONFIGURATION_CHANGE_REQUIREMENTS,
+  DATA_CHANGE_PROTECTIONS,
+  DATA_CHANGE_TYPES,
+  DEPLOYMENT_RELEASE_SEPARATION_CONTROLS,
+  EMERGENCY_CHANGE_FIELDS,
+  FAILED_CHANGE_REQUIREMENTS,
+  FUTURE_CHANGE_RELEASE_CAPABILITIES,
+  INTEGRATION_CHANGE_ASSESSMENT_DIMENSIONS,
+  MULTI_TENANT_CHANGE_REQUIREMENTS,
+  POST_CHANGE_REVIEW_TRIGGERS,
+  PROGRESSION_CRITERIA,
+  PROGRESSIVE_INTRODUCTION_SCOPES,
+  PROPERTY_CHANGE_CONSIDERATIONS,
+  RELEASE_COMMUNICATION_FIELDS,
+  RELEASE_COMPOSITION_FACTORS,
+  RELEASE_MODELS,
+  RELEASE_RECORD_FIELDS,
+  ROLLBACK_PLAN_FIELDS,
+  SECURITY_CHANGE_REQUIREMENTS,
+  WORKFLOW_CHANGE_CONSIDERATIONS
+} from './constants.js';
+export { ChangeReleaseOperationsProfile } from './contracts/change-release-operations-profile.js';
 export { EnterpriseOperatingModelProfile } from './contracts/enterprise-operating-model-profile.js';
 export { EnterpriseOperationsOverviewProfile } from './contracts/enterprise-operations-overview-profile.js';
 export { EnterpriseOperationsProfile } from './contracts/enterprise-operations-profile.js';
@@ -200,6 +250,7 @@ export { EnterpriseOperationsValidationResult } from './contracts/enterprise-ope
 export { IncidentProblemManagementProfile } from './contracts/incident-problem-management-profile.js';
 export { OperationsCommandControlProfile } from './contracts/operations-command-control-profile.js';
 export { ServiceOperationsProfile } from './contracts/service-operations-profile.js';
+export { ChangeReleaseOperationsDescriptor } from './change-release-operations/change-release-operations-descriptor.js';
 export { EnterpriseOperationsDescriptor } from './enterprise-operations-descriptor.js';
 export { IncidentProblemManagementDescriptor } from './incident-problem-management/incident-problem-management-descriptor.js';
 export { OperationsCommandControlDescriptor } from './command-control/operations-command-control-descriptor.js';

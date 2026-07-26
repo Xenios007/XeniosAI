@@ -1715,3 +1715,20 @@ Version: 0.95.0
 
 Status: Enterprise Operations Architecture
 Version: 0.96.0
+
+---
+
+## [0.97.0] - ARCH-011 Change and Release Operations
+
+### Added
+- Change and release objective, principle, change example, release record, change type, classification, change record, lifecycle, state, role, authority, risk, impact, collision, window, freeze, readiness, release composition, release model, progressive introduction, deployment/release separation, implementation control, verification, rollback, compensation, stop condition, failed change, emergency change, configuration, data, AI, workflow, integration, security, tenant, property, communication, review, measure, governance, quality-attribute, architectural-rule, and future-capability constants.
+- Immutable contract for change and release operations profiles.
+- Change and Release Operations descriptor for documented metadata, profile validation, and architecture assertion.
+- Dependency-injection registration through `addEnterpriseOperations`.
+- Unit tests for change/release metadata, validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Change and release operations as technology-neutral, vendor-neutral architecture without prescribing source-control platforms, deployment tools, release products, infrastructure providers, organizational approval boards, SDLC details, or pipeline products.
+
+Status: Enterprise Operations Architecture
+Version: 0.97.0

@@ -104,7 +104,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-011-03 Operations Command and Control`
 - Completed: `ARCH-011-04 Service Operations`
 - Completed: `ARCH-011-05 Incident and Problem Management`
-- Next: `ARCH-011-06 Change and Release Operations`
+- Completed: `ARCH-011-06 Change and Release Operations`
+- Next: `ARCH-011-07 Capacity and Performance Management`
 
 ## Notes
 

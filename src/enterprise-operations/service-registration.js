@@ -1,4 +1,5 @@
 import { ServiceCollection } from '../foundation/di/service-collection.js';
+import { ChangeReleaseOperationsDescriptor } from './change-release-operations/change-release-operations-descriptor.js';
 import { OperationsCommandControlDescriptor } from './command-control/operations-command-control-descriptor.js';
 import { EnterpriseOperationsDescriptor } from './enterprise-operations-descriptor.js';
 import { IncidentProblemManagementDescriptor } from './incident-problem-management/incident-problem-management-descriptor.js';
@@ -17,6 +18,7 @@ export function addEnterpriseOperations(services) {
   services.registerSingleton('OperationsCommandControlDescriptor', () => new OperationsCommandControlDescriptor());
   services.registerSingleton('ServiceOperationsDescriptor', () => new ServiceOperationsDescriptor());
   services.registerSingleton('IncidentProblemManagementDescriptor', () => new IncidentProblemManagementDescriptor());
+  services.registerSingleton('ChangeReleaseOperationsDescriptor', () => new ChangeReleaseOperationsDescriptor());
 
   return services;
 }
