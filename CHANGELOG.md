@@ -1698,3 +1698,20 @@ Version: 0.94.0
 
 Status: Enterprise Operations Architecture
 Version: 0.95.0
+
+---
+
+## [0.96.0] - ARCH-011 Incident and Problem Management
+
+### Added
+- Incident and problem management objective, principle, incident example, problem example, detection source, incident record, classification, impact, urgency, priority, lifecycle, state, role, diagnosis, containment, workaround, restoration, recovery verification, observation, major incident, crisis transition, communication, evidence, specialized incident, problem identification, problem record, root-cause analysis, known-error, remediation, post-incident review, recurring incident, multi-tenant, property, external-provider, measure, governance, quality-attribute, architectural-rule, and future-capability constants.
+- Immutable contract for incident and problem management profiles.
+- Incident and Problem Management descriptor for documented metadata, profile validation, and architecture assertion.
+- Dependency-injection registration through `addEnterpriseOperations`.
+- Unit tests for incident/problem metadata, validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Incident restoration and problem prevention as related but distinct capabilities without replacing `ARCH-008` security incident authority or `ARCH-011-03` command structures.
+
+Status: Enterprise Operations Architecture
+Version: 0.96.0

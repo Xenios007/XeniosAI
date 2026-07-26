@@ -140,13 +140,68 @@ export {
   TIME_BOUND_OPERATING_REQUIREMENTS,
   WORKFLOW_SERVICE_HEALTH_DIMENSIONS
 } from './constants.js';
+export {
+  AI_INCIDENT_CONTROLS,
+  AI_INCIDENT_TYPES,
+  CONTRIBUTING_CONDITION_TYPES,
+  CRISIS_CONTINUITY_TRANSITION_CRITERIA,
+  DATA_INCIDENT_TYPES,
+  EXTERNAL_PROVIDER_PROBLEM_REQUIREMENTS,
+  FUTURE_INCIDENT_PROBLEM_CAPABILITIES,
+  INCIDENT_CLASSIFICATION_DIMENSIONS,
+  INCIDENT_COMMUNICATION_FIELDS,
+  INCIDENT_CONTAINMENT_OPTIONS,
+  INCIDENT_DETECTION_SOURCES,
+  INCIDENT_DIAGNOSIS_ACTIVITIES,
+  INCIDENT_EVIDENCE_TYPES,
+  INCIDENT_EXAMPLES,
+  INCIDENT_IMPACT_DIMENSIONS,
+  INCIDENT_LIFECYCLE_STAGES,
+  INCIDENT_MEASURES,
+  INCIDENT_PRIORITY_USES,
+  INCIDENT_PROBLEM_ARCHITECTURAL_RULES,
+  INCIDENT_PROBLEM_GOVERNANCE_AREAS,
+  INCIDENT_PROBLEM_OBJECTIVES,
+  INCIDENT_PROBLEM_PRINCIPLES,
+  INCIDENT_PROBLEM_QUALITY_ATTRIBUTES,
+  INCIDENT_RECORD_FIELDS,
+  INCIDENT_RECOVERY_VERIFICATION_DIMENSIONS,
+  INCIDENT_RESTORATION_OPTIONS,
+  INCIDENT_ROLES,
+  INCIDENT_STATES,
+  INCIDENT_URGENCY_FACTORS,
+  INTEGRATION_INCIDENT_TYPES,
+  KNOWN_ERROR_FIELDS,
+  MAJOR_INCIDENT_REQUIREMENTS,
+  MULTI_TENANT_INCIDENT_REQUIREMENTS,
+  POST_INCIDENT_REVIEW_AREAS,
+  POST_INCIDENT_REVIEW_CULTURE_ATTRIBUTES,
+  POST_RESTORATION_OBSERVATION_CHECKS,
+  PROBLEM_EXAMPLES,
+  PROBLEM_IDENTIFICATION_SOURCES,
+  PROBLEM_LIFECYCLE_STAGES,
+  PROBLEM_MEASURES,
+  PROBLEM_PRIORITY_FACTORS,
+  PROBLEM_RECORD_FIELDS,
+  PROBLEM_REMEDIATION_TYPES,
+  PROPERTY_INCIDENT_CONTEXT,
+  RECURRING_INCIDENT_TRIGGERS,
+  REMEDIATION_VERIFICATION_CRITERIA,
+  ROOT_CAUSE_ANALYSIS_DIMENSIONS,
+  SECURITY_INCIDENT_REQUIREMENTS,
+  TENANT_PROPERTY_INCIDENT_COMMUNICATION_FIELDS,
+  WORKAROUND_FIELDS,
+  WORKFLOW_INCIDENT_TYPES
+} from './constants.js';
 export { EnterpriseOperatingModelProfile } from './contracts/enterprise-operating-model-profile.js';
 export { EnterpriseOperationsOverviewProfile } from './contracts/enterprise-operations-overview-profile.js';
 export { EnterpriseOperationsProfile } from './contracts/enterprise-operations-profile.js';
 export { EnterpriseOperationsValidationResult } from './contracts/enterprise-operations-validation-result.js';
+export { IncidentProblemManagementProfile } from './contracts/incident-problem-management-profile.js';
 export { OperationsCommandControlProfile } from './contracts/operations-command-control-profile.js';
 export { ServiceOperationsProfile } from './contracts/service-operations-profile.js';
 export { EnterpriseOperationsDescriptor } from './enterprise-operations-descriptor.js';
+export { IncidentProblemManagementDescriptor } from './incident-problem-management/incident-problem-management-descriptor.js';
 export { OperationsCommandControlDescriptor } from './command-control/operations-command-control-descriptor.js';
 export { EnterpriseOperatingModelDescriptor } from './operating-model/enterprise-operating-model-descriptor.js';
 export { EnterpriseOperationsOverviewDescriptor } from './overview/enterprise-operations-overview-descriptor.js';

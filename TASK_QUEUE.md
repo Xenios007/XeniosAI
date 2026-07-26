@@ -103,7 +103,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-011-02 Operating Model`
 - Completed: `ARCH-011-03 Operations Command and Control`
 - Completed: `ARCH-011-04 Service Operations`
-- Next: `ARCH-011-05 Incident and Problem Management`
+- Completed: `ARCH-011-05 Incident and Problem Management`
+- Next: `ARCH-011-06 Change and Release Operations`
 
 ## Notes
 
