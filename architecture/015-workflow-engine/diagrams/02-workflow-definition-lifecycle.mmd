@@ -1,0 +1,50 @@
+flowchart TD
+    Start["Business Need"]
+    Propose["Propose Definition"]
+    Design["Design Process and Contracts"]
+    Classify["Classify Risk, Data, Tenant, and Property"]
+    Implement["Implement Versioned Definition"]
+    Validate["Validate Semantics, Policy, and Compatibility"]
+    Test["Test Paths, Failure, Recovery, and Controls"]
+    Review{"Required Reviews Complete?"}
+    Rework["Rework Definition"]
+    Approve["Approve Exact Version"]
+    Register["Register Immutable Version"]
+    Release["Release to Approved Scope"]
+    Activate{"Activation Readiness Met?"}
+    Operate["Operate and Observe"]
+    Improve{"Change Required?"}
+    NewVersion["Create New Version"]
+    Suspend["Suspend or Restrict"]
+    Deprecate["Deprecate"]
+    Drain["Drain or Govern Migration"]
+    Retire["Retire and Preserve Evidence"]
+
+    Start --> Propose
+    Propose --> Design
+    Design --> Classify
+    Classify --> Implement
+    Implement --> Validate
+    Validate --> Test
+    Test --> Review
+
+    Review -- "No" --> Rework
+    Rework --> Design
+    Review -- "Yes" --> Approve
+    Approve --> Register
+    Register --> Release
+    Release --> Activate
+
+    Activate -- "No" --> Rework
+    Activate -- "Yes" --> Operate
+
+    Operate --> Improve
+    Improve -- "Material change" --> NewVersion
+    NewVersion --> Design
+    Improve -- "Continue" --> Operate
+    Improve -- "Risk or incident" --> Suspend
+    Suspend --> Rework
+    Suspend --> Deprecate
+    Operate -- "End of life" --> Deprecate
+    Deprecate --> Drain
+    Drain --> Retire
