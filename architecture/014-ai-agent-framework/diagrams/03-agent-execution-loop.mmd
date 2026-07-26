@@ -1,0 +1,31 @@
+flowchart TD
+    A["Receive requested goal and triggering actor"] --> B["Resolve active agent definition and exact version"]
+    B --> C["Authenticate initiator and establish represented principal, tenant, property, environment, and purpose"]
+    C --> D{"Admission, authority, policy, lifecycle, capacity, and suspension checks pass?"}
+
+    D -- "No" --> E["Deny, defer, request a decision, or stop safely with attributable reason"]
+    D -- "Yes" --> F["Create execution identity, authoritative state, limits, checkpoint policy, and correlation"]
+    F --> G["Select eligible task from the active validated plan"]
+    G --> H["Assemble minimal authorized context with provenance, trust, freshness, knowledge, memory, state, and tool contracts"]
+    H --> I["Perform one bounded reasoning or governed action step"]
+    I --> J["Validate contract, authority, business result, side effects, safety, and evidence"]
+    J --> K{"Step result valid?"}
+
+    K -- "No" --> L{"Recoverable within goal, authority, and limits?"}
+    L -- "Yes" --> M["Reconcile effects, retry safely, use an approved alternative, or create a validated plan revision"]
+    M --> G
+    L -- "No" --> N["Pause, escalate, compensate through the owning service or workflow, fail, or terminate safely"]
+
+    K -- "Yes" --> O["Commit state, side-effect ledger, evidence, limit consumption, and checkpoint"]
+    O --> P{"Execution disposition"}
+
+    P -- "Continue" --> G
+    P -- "Wait" --> Q["Wait for authorized input, approval, dependency, event, schedule, or workflow callback"]
+    Q --> R["Revalidate identity, authority, lifecycle, state, side effects, limits, and context"]
+    R --> G
+
+    P -- "Replan" --> M
+    P -- "Cancel or suspend" --> N
+    P -- "Completion proposed" --> S{"Independent completion criteria and authoritative outcomes verified?"}
+    S -- "No" --> M
+    S -- "Yes" --> T["Finalize result, evidence, notifications, resource release, credential revocation, and terminal state"]
