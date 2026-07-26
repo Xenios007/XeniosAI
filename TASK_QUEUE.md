@@ -116,7 +116,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-012-05 Compliance and Control Framework`
 - Completed: `ARCH-012-06 Privacy and Data Governance`
 - Completed: `ARCH-012-07 AI and Ethical Governance`
-- Next: `ARCH-012-08 Assurance, Audit, and Evidence`
+- Completed: `ARCH-012-08 Assurance, Audit, and Evidence`
+- Next: `ARCH-012-09 Exceptions, Issues, and Remediation`
 
 ## Notes
 

@@ -1919,3 +1919,20 @@ Version: 0.107.0
 
 Status: Governance and Compliance Architecture
 Version: 0.108.0
+
+---
+
+## [0.109.0] - ARCH-012 Assurance, Audit, and Evidence
+
+### Added
+- Assurance, audit, and evidence objective, principle, evidence model, evidence type, evidence record, evidence role, provenance, chain-of-custody, integrity, quality, completeness, trusted-time, correlation, access, minimization, retention, disposal, disclosure, lifecycle, assurance, independence, engagement, criteria, control assessment, testing, sampling, continuous assurance, validity, audit, finding, management response, attestation, reliance, supplier assurance, AI evidence assistance, reporting, measure, governance, quality-attribute, architectural-rule, and future-capability constants.
+- Immutable contract for assurance, audit, and evidence profiles.
+- Assurance, Audit, and Evidence descriptor for documented metadata, profile validation, and architecture assertion.
+- Dependency-injection registration through `addGovernanceCompliance`.
+- Unit tests for assurance/audit/evidence metadata, validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Assurance, Audit, and Evidence as a technology-neutral, vendor-neutral architecture for trustworthy evidence, proportionate assurance, independent audit, and governed reliance without prescribing logging products, governance platforms, audit tools, evidence repositories, certification schemes, audit firms, or regulatory frameworks.
+
+Status: Governance and Compliance Architecture
+Version: 0.109.0

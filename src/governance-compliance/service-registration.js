@@ -1,5 +1,6 @@
 import { ServiceCollection } from '../foundation/di/service-collection.js';
 import { AiEthicalGovernanceDescriptor } from './ai-ethical-governance/ai-ethical-governance-descriptor.js';
+import { AssuranceAuditEvidenceDescriptor } from './assurance-audit-evidence/assurance-audit-evidence-descriptor.js';
 import { ComplianceControlFrameworkDescriptor } from './compliance-control-framework/compliance-control-framework-descriptor.js';
 import { EnterpriseRiskManagementDescriptor } from './enterprise-risk-management/enterprise-risk-management-descriptor.js';
 import { GovernanceOperatingModelDescriptor } from './operating-model/governance-operating-model-descriptor.js';
@@ -19,6 +20,7 @@ export function addGovernanceCompliance(services) {
   services.registerSingleton('ComplianceControlFrameworkDescriptor', () => new ComplianceControlFrameworkDescriptor());
   services.registerSingleton('PrivacyDataGovernanceDescriptor', () => new PrivacyDataGovernanceDescriptor());
   services.registerSingleton('AiEthicalGovernanceDescriptor', () => new AiEthicalGovernanceDescriptor());
+  services.registerSingleton('AssuranceAuditEvidenceDescriptor', () => new AssuranceAuditEvidenceDescriptor());
 
   return services;
 }

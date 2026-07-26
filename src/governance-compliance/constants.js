@@ -5,7 +5,8 @@ export const GOVERNANCE_COMPLIANCE_ERROR_CODES = Object.freeze({
   ENTERPRISE_RISK_MANAGEMENT_INVALID: 'ENTERPRISE_RISK_MANAGEMENT_INVALID',
   COMPLIANCE_CONTROL_FRAMEWORK_INVALID: 'COMPLIANCE_CONTROL_FRAMEWORK_INVALID',
   PRIVACY_DATA_GOVERNANCE_INVALID: 'PRIVACY_DATA_GOVERNANCE_INVALID',
-  AI_ETHICAL_GOVERNANCE_INVALID: 'AI_ETHICAL_GOVERNANCE_INVALID'
+  AI_ETHICAL_GOVERNANCE_INVALID: 'AI_ETHICAL_GOVERNANCE_INVALID',
+  ASSURANCE_AUDIT_EVIDENCE_INVALID: 'ASSURANCE_AUDIT_EVIDENCE_INVALID'
 });
 
 export const GOVERNANCE_COMPLIANCE_OVERVIEW_OBJECTIVES = Object.freeze({
@@ -4126,4 +4127,838 @@ export const FUTURE_AI_ETHICAL_GOVERNANCE_CAPABILITIES = Object.freeze({
   MODEL_AND_PROVIDER_PORTABILITY: 'model-and-provider-portability',
   GOVERNED_SELF_IMPROVING_AGENTS: 'governed-self-improving-agents',
   CROSS_PROPERTY_AI_GOVERNANCE_INTELLIGENCE: 'cross-property-ai-governance-intelligence'
+});
+
+export const ASSURANCE_AUDIT_EVIDENCE_OBJECTIVES = Object.freeze({
+  TRUSTWORTHY_EVIDENCE_BY_DESIGN: 'trustworthy-evidence-by-design',
+  COMPLETE_PROVENANCE: 'complete-provenance',
+  PROTECTED_CHAIN_OF_CUSTODY: 'protected-chain-of-custody',
+  EVIDENCE_FIT_FOR_PURPOSE: 'evidence-fit-for-purpose',
+  CLEAR_EVIDENCE_OWNERSHIP: 'clear-evidence-ownership',
+  PROPORTIONATE_ASSURANCE: 'proportionate-assurance',
+  INDEPENDENT_CHALLENGE: 'independent-challenge',
+  CONSISTENT_CONTROL_ASSESSMENT: 'consistent-control-assessment',
+  EFFICIENT_AUDIT_READINESS: 'efficient-audit-readiness',
+  CONTINUOUS_ASSURANCE_WHERE_PRACTICAL: 'continuous-assurance-where-practical',
+  TRANSPARENT_LIMITATIONS: 'transparent-limitations',
+  RELIABLE_ATTESTATIONS: 'reliable-attestations',
+  TENANT_AND_PROPERTY_EVIDENCE_ISOLATION: 'tenant-and-property-evidence-isolation',
+  SUPPLIER_EVIDENCE_EVALUATION: 'supplier-evidence-evaluation',
+  AI_AND_AUTOMATED_DECISION_TRACEABILITY: 'ai-and-automated-decision-traceability',
+  TIMELY_FINDINGS_AND_FOLLOW_UP: 'timely-findings-and-follow-up',
+  VENDOR_NEUTRAL_ASSURANCE_CAPABILITIES: 'vendor-neutral-assurance-capabilities'
+});
+
+export const ASSURANCE_AUDIT_EVIDENCE_PRINCIPLES = Object.freeze({
+  EVIDENCE_DESIGNED_NOT_RECONSTRUCTED: 'evidence-designed-not-reconstructed',
+  EVIDENCE_FIT_FOR_PURPOSE: 'evidence-fit-for-purpose',
+  PROVENANCE_CREATES_TRUST: 'provenance-creates-trust',
+  INDEPENDENCE_PROPORTIONATE_TO_RISK: 'independence-proportionate-to-risk',
+  ASSURANCE_NOT_ABSOLUTE: 'assurance-not-absolute',
+  AUDIT_DOES_NOT_CREATE_COMPLIANCE: 'audit-does-not-create-compliance',
+  EVIDENCE_MUST_BE_PROTECTED: 'evidence-must-be-protected',
+  ONE_EVIDENCE_SOURCE_MANY_CONCLUSIONS: 'one-evidence-source-many-conclusions',
+  AUTOMATED_EVIDENCE_REQUIRES_ASSURANCE: 'automated-evidence-requires-assurance'
+});
+
+export const EVIDENCE_MODEL_STAGES = Object.freeze({
+  GOVERNED_EVENT_DECISION_STATE_OR_CONTROL: 'Governed Event, Decision, State, or Control',
+  EVIDENCE_GENERATION: 'Evidence Generation',
+  IDENTITY_TIME_SCOPE_AND_PROVENANCE: 'Identity, Time, Scope, and Provenance',
+  PROTECTION_STORAGE_AND_RETENTION: 'Protection, Storage, and Retention',
+  CORRELATION_AND_CONTEXT: 'Correlation and Context',
+  ASSESSMENT_ASSURANCE_OR_AUDIT: 'Assessment, Assurance, or Audit',
+  CONCLUSION_FINDING_ATTESTATION_OR_DECISION: 'Conclusion, Finding, Attestation, or Decision'
+});
+
+export const ASSURANCE_EVIDENCE_TYPES = Object.freeze({
+  DOCUMENTARY: 'documentary-evidence',
+  TRANSACTION: 'transaction-evidence',
+  DECISION: 'decision-evidence',
+  IDENTITY_AND_ACCESS: 'identity-and-access-evidence',
+  CONTROL: 'control-evidence',
+  OPERATIONAL: 'operational-evidence',
+  SECURITY: 'security-evidence',
+  PRIVACY_AND_DATA: 'privacy-and-data-evidence',
+  AI: 'ai-evidence',
+  SUPPLIER: 'supplier-evidence',
+  PHYSICAL_AND_PROPERTY: 'physical-and-property-evidence',
+  TEST_AND_EXERCISE: 'test-and-exercise-evidence'
+});
+
+export const EVIDENCE_RECORD_FIELDS = Object.freeze({
+  EVIDENCE_IDENTIFIER: 'evidence-identifier',
+  EVIDENCE_TYPE: 'evidence-type',
+  SOURCE: 'source',
+  CREATOR: 'creator',
+  OWNER: 'owner',
+  CUSTODIAN: 'custodian',
+  CREATION_TIME: 'creation-time',
+  EVENT_TIME: 'event-time',
+  COLLECTION_TIME: 'collection-time',
+  SCOPE: 'scope',
+  TENANT_AND_PROPERTY: 'tenant-and-property',
+  RELATED_OBLIGATION: 'related-obligation',
+  RELATED_RISK: 'related-risk',
+  RELATED_POLICY: 'related-policy',
+  RELATED_CONTROL: 'related-control',
+  RELATED_SERVICE_OR_SYSTEM: 'related-service-or-system',
+  AI_INVOLVEMENT: 'ai-involvement',
+  DATA_CLASSIFICATION: 'data-classification',
+  INTEGRITY_PROTECTION: 'integrity-protection',
+  PROVENANCE: 'provenance',
+  STORAGE: 'storage',
+  ACCESS: 'access',
+  RETENTION: 'retention',
+  LEGAL_OR_GOVERNANCE_HOLD: 'legal-or-governance-hold',
+  ASSURANCE_USE: 'assurance-use',
+  LIMITATIONS: 'limitations',
+  LIFECYCLE_STATE: 'lifecycle-state'
+});
+
+export const EVIDENCE_ROLES = Object.freeze({
+  EVIDENCE_OWNER: 'evidence-owner',
+  EVIDENCE_PRODUCER: 'evidence-producer',
+  EVIDENCE_CUSTODIAN: 'evidence-custodian',
+  EVIDENCE_CONSUMER: 'evidence-consumer',
+  ASSURANCE_PROVIDER: 'assurance-provider'
+});
+
+export const EVIDENCE_PROVENANCE_FIELDS = Object.freeze({
+  ORIGIN: 'origin',
+  CREATOR_IDENTITY: 'creator-identity',
+  SOURCE_SYSTEM: 'source-system',
+  TIME: 'time',
+  TRIGGER: 'trigger',
+  INPUTS: 'inputs',
+  PROCESSING: 'processing',
+  TRANSFORMATIONS: 'transformations',
+  COLLECTION_METHOD: 'collection-method',
+  STORAGE: 'storage',
+  TRANSFERS: 'transfers',
+  ACCESS: 'access',
+  CORRECTIONS: 'corrections',
+  DERIVED_EVIDENCE: 'derived-evidence',
+  CURRENT_VERSION: 'current-version'
+});
+
+export const CHAIN_OF_CUSTODY_TRIGGERS = Object.freeze({
+  SECURITY_INVESTIGATION: 'security-investigation',
+  PRIVACY_INCIDENT: 'privacy-incident',
+  LEGAL_MATTER: 'legal-matter',
+  REGULATORY_RESPONSE: 'regulatory-response',
+  DISCIPLINARY_PROCESS: 'disciplinary-process',
+  SIGNIFICANT_AUDIT: 'significant-audit',
+  FRAUD_INVESTIGATION: 'fraud-investigation',
+  HIGH_IMPACT_AI_INCIDENT: 'high-impact-ai-incident',
+  CRITICAL_DATA_INCIDENT: 'critical-data-incident'
+});
+
+export const EVIDENCE_INTEGRITY_CONTROLS = Object.freeze({
+  VERIFIED_IDENTITY: 'verified-identity',
+  TRUSTED_TIME: 'trusted-time',
+  IMMUTABLE_OR_APPEND_ONLY_RECORDS: 'immutable-or-append-only-records',
+  CRYPTOGRAPHIC_INTEGRITY: 'cryptographic-integrity',
+  VERSION_CONTROL: 'version-control',
+  ACCESS_CONTROL: 'access-control',
+  SEGREGATION_OF_DUTIES: 'segregation-of-duties',
+  TAMPER_DETECTION: 'tamper-detection',
+  BACKUP: 'backup',
+  REPLICATION: 'replication',
+  RECONCILIATION: 'reconciliation',
+  CHANGE_HISTORY: 'change-history',
+  INDEPENDENT_VERIFICATION: 'independent-verification'
+});
+
+export const EVIDENCE_QUALITY_ATTRIBUTES = Object.freeze({
+  AUTHENTICITY: 'authenticity',
+  ACCURACY: 'accuracy',
+  COMPLETENESS: 'completeness',
+  RELEVANCE: 'relevance',
+  TIMELINESS: 'timeliness',
+  CONSISTENCY: 'consistency',
+  TRACEABILITY: 'traceability',
+  RELIABILITY: 'reliability',
+  UNDERSTANDABILITY: 'understandability',
+  AVAILABILITY: 'availability',
+  REPRODUCIBILITY: 'reproducibility'
+});
+
+export const EVIDENCE_COMPLETENESS_DIMENSIONS = Object.freeze({
+  POPULATION: 'population',
+  TIME_PERIOD: 'time-period',
+  SCOPE: 'scope',
+  TENANT: 'tenant',
+  PROPERTY: 'property',
+  ENVIRONMENT: 'environment',
+  SERVICE: 'service',
+  CONTROL_EXECUTION: 'control-execution',
+  EXCEPTIONS: 'exceptions',
+  FAILURES: 'failures',
+  OVERRIDES: 'overrides',
+  MISSING_RECORDS: 'missing-records',
+  SUPPLIER_COVERAGE: 'supplier-coverage',
+  AI_AND_MANUAL_ACTIVITY: 'ai-and-manual-activity'
+});
+
+export const TRUSTED_TIME_CORRELATION_AREAS = Object.freeze({
+  BUSINESS_EVENTS: 'business-events',
+  SERVICE_INTERACTIONS: 'service-interactions',
+  AI_ACTIONS: 'ai-actions',
+  WORKFLOW_TRANSITIONS: 'workflow-transitions',
+  SECURITY_EVENTS: 'security-events',
+  CHANGES: 'changes',
+  INCIDENTS: 'incidents',
+  ACCESS: 'access',
+  SUPPLIER_ACTIVITY: 'supplier-activity',
+  PROPERTY_ACTIVITY: 'property-activity'
+});
+
+export const EVIDENCE_CORRELATION_IDENTIFIERS = Object.freeze({
+  BUSINESS_TRANSACTION: 'business-transaction',
+  GUEST_JOURNEY: 'guest-journey',
+  BOOKING: 'booking',
+  TENANT: 'tenant',
+  PROPERTY: 'property',
+  SERVICE: 'service',
+  WORKFLOW: 'workflow',
+  AGENT: 'agent',
+  TOOL_INVOCATION: 'tool-invocation',
+  INTEGRATION_EXCHANGE: 'integration-exchange',
+  CHANGE: 'change',
+  INCIDENT: 'incident',
+  RISK: 'risk',
+  CONTROL: 'control',
+  OBLIGATION: 'obligation',
+  FINDING: 'finding',
+  EXCEPTION: 'exception'
+});
+
+export const EVIDENCE_ACCESS_REQUIREMENTS = Object.freeze({
+  VERIFIED_IDENTITY: 'verified-identity',
+  AUTHORIZED_PURPOSE: 'authorized-purpose',
+  LEAST_PRIVILEGE: 'least-privilege',
+  TENANT_AND_PROPERTY_SCOPE: 'tenant-and-property-scope',
+  DATA_CLASSIFICATION: 'data-classification',
+  INVESTIGATION_RESTRICTIONS: 'investigation-restrictions',
+  SEPARATION_OF_DUTIES: 'separation-of-duties',
+  TIME_LIMITATION: 'time-limitation',
+  MONITORING: 'monitoring',
+  REVIEW: 'review',
+  REVOCATION: 'revocation',
+  DISCLOSURE_CONTROL: 'disclosure-control'
+});
+
+export const EVIDENCE_MINIMIZATION_FACTORS = Object.freeze({
+  PURPOSE: 'purpose',
+  REQUIRED_FIELDS: 'required-fields',
+  SENSITIVE_CONTENT: 'sensitive-content',
+  RETENTION: 'retention',
+  SAMPLING: 'sampling',
+  REDACTION: 'redaction',
+  TOKENIZATION: 'tokenization',
+  AGGREGATION: 'aggregation',
+  TENANT_ISOLATION: 'tenant-isolation',
+  AI_PROMPTS_AND_OUTPUTS: 'ai-prompts-and-outputs',
+  SECURITY_INVESTIGATION_NEEDS: 'security-investigation-needs',
+  LEGAL_OBLIGATIONS: 'legal-obligations'
+});
+
+export const EVIDENCE_RETENTION_FACTORS = Object.freeze({
+  OBLIGATION: 'obligation',
+  CONTROL_PURPOSE: 'control-purpose',
+  AUDIT_NEED: 'audit-need',
+  SECURITY_NEED: 'security-need',
+  PRIVACY: 'privacy',
+  CONTRACT: 'contract',
+  OPERATIONAL_VALUE: 'operational-value',
+  LEGAL_OR_GOVERNANCE_HOLD: 'legal-or-governance-hold',
+  TENANT_REQUIREMENT: 'tenant-requirement',
+  PROPERTY_REQUIREMENT: 'property-requirement',
+  RISK: 'risk',
+  COST: 'cost'
+});
+
+export const EVIDENCE_DISPOSAL_SCOPES = Object.freeze({
+  PRIMARY_RECORDS: 'primary-records',
+  REPLICAS: 'replicas',
+  BACKUPS: 'backups',
+  EXPORTS: 'exports',
+  AUDITOR_COPIES: 'auditor-copies',
+  SUPPLIER_COPIES: 'supplier-copies',
+  PROPERTY_COPIES: 'property-copies',
+  DERIVED_REPORTS: 'derived-reports',
+  AI_MEMORY: 'ai-memory',
+  SEARCH_INDEXES: 'search-indexes',
+  TEMPORARY_WORKSPACES: 'temporary-workspaces'
+});
+
+export const EVIDENCE_DISCLOSURE_RECIPIENTS = Object.freeze({
+  GOVERNING_AUTHORITIES: 'governing-authorities',
+  MANAGEMENT: 'management',
+  CONTROL_OWNERS: 'control-owners',
+  ASSURANCE_PROVIDERS: 'assurance-providers',
+  AUDITORS: 'auditors',
+  TENANTS: 'tenants',
+  CUSTOMERS: 'customers',
+  SUPPLIERS: 'suppliers',
+  REGULATORS: 'regulators',
+  LEGAL_AUTHORITIES: 'legal-authorities',
+  AFFECTED_INDIVIDUALS: 'affected-individuals'
+});
+
+export const EVIDENCE_LIFECYCLE_STAGES = Object.freeze({
+  DEFINE_EVIDENCE_REQUIREMENT: 'Define Evidence Requirement',
+  GENERATE_OR_COLLECT: 'Generate or Collect',
+  VALIDATE_IDENTITY_SCOPE_AND_INTEGRITY: 'Validate Identity, Scope, and Integrity',
+  CLASSIFY_AND_PROTECT: 'Classify and Protect',
+  STORE_AND_CORRELATE: 'Store and Correlate',
+  USE_FOR_MONITORING_ASSURANCE_OR_AUDIT: 'Use for Monitoring, Assurance, or Audit',
+  RETAIN_HOLD_ARCHIVE_OR_DISPOSE: 'Retain, Hold, Archive, or Dispose'
+});
+
+export const ASSURANCE_EVALUATION_AREAS = Object.freeze({
+  GOVERNANCE_DESIGN: 'governance-design',
+  POLICY_IMPLEMENTATION: 'policy-implementation',
+  RISK_MANAGEMENT: 'risk-management',
+  CONTROL_DESIGN: 'control-design',
+  CONTROL_OPERATION: 'control-operation',
+  COMPLIANCE_POSTURE: 'compliance-posture',
+  ARCHITECTURE_ALIGNMENT: 'architecture-alignment',
+  SERVICE_OUTCOMES: 'service-outcomes',
+  SECURITY: 'security',
+  PRIVACY: 'privacy',
+  AI_GOVERNANCE: 'ai-governance',
+  DATA_GOVERNANCE: 'data-governance',
+  SUPPLIER_PERFORMANCE: 'supplier-performance',
+  TENANT_ISOLATION: 'tenant-isolation',
+  CONTINUITY: 'continuity',
+  REMEDIATION: 'remediation'
+});
+
+export const ASSURANCE_LEVELS = Object.freeze({
+  MANAGEMENT: 'management-assurance',
+  SPECIALIST: 'specialist-assurance',
+  INDEPENDENT_INTERNAL: 'independent-internal-assurance',
+  INDEPENDENT_EXTERNAL: 'independent-external-assurance'
+});
+
+export const ASSURANCE_INDEPENDENCE_FACTORS = Object.freeze({
+  DESIGNED_CONTROL: 'designed-the-control',
+  OPERATES_CONTROL: 'operates-the-control',
+  OWNS_OUTCOME: 'owns-the-outcome',
+  CREATED_EVIDENCE: 'created-the-evidence',
+  REPORTS_TO_SUBJECT: 'reports-to-the-subject',
+  COMMERCIAL_INTEREST: 'has-commercial-interest',
+  SUFFICIENT_EXPERTISE: 'has-sufficient-expertise',
+  REPORTS_WITHOUT_INTERFERENCE: 'can-report-without-interference',
+  ACCESS_TO_RELEVANT_EVIDENCE: 'has-access-to-relevant-evidence'
+});
+
+export const ASSURANCE_ENGAGEMENT_FIELDS = Object.freeze({
+  OBJECTIVE: 'objective',
+  SCOPE: 'scope',
+  CRITERIA: 'criteria',
+  PERIOD: 'period',
+  ASSURANCE_PROVIDER: 'assurance-provider',
+  INDEPENDENCE: 'independence',
+  STAKEHOLDERS: 'stakeholders',
+  OBLIGATIONS: 'obligations',
+  RISKS: 'risks',
+  CONTROLS: 'controls',
+  EVIDENCE: 'evidence',
+  SAMPLING: 'sampling',
+  MATERIALITY: 'materiality',
+  METHODS: 'methods',
+  LIMITATIONS: 'limitations',
+  REPORTING: 'reporting',
+  FINDINGS: 'findings',
+  FOLLOW_UP: 'follow-up',
+  RELIANCE: 'reliance'
+});
+
+export const ASSURANCE_CRITERIA_QUALITIES = Object.freeze({
+  RELEVANT: 'relevant',
+  COMPLETE_ENOUGH: 'complete-enough',
+  NEUTRAL: 'neutral',
+  UNDERSTANDABLE: 'understandable',
+  TESTABLE: 'testable',
+  AUTHORIZED: 'authorized',
+  TRACEABLE: 'traceable',
+  APPROPRIATE_TO_SCOPE: 'appropriate-to-scope'
+});
+
+export const CONTROL_ASSESSMENT_AREAS = Object.freeze({
+  DESIGN_EFFECTIVENESS: 'design-effectiveness',
+  IMPLEMENTATION: 'implementation',
+  OPERATING_EFFECTIVENESS: 'operating-effectiveness',
+  EVIDENCE_QUALITY: 'evidence-quality',
+  SCOPE: 'scope',
+  FREQUENCY: 'frequency',
+  EXCEPTIONS: 'exceptions',
+  OVERRIDES: 'overrides',
+  FAILURES: 'failures',
+  DEPENDENCIES: 'dependencies',
+  AUTOMATION: 'automation',
+  TENANT_COVERAGE: 'tenant-coverage',
+  SUPPLIER_RELIANCE: 'supplier-reliance',
+  CHANGE: 'change'
+});
+
+export const ASSESSMENT_LIFECYCLE_STAGES = Object.freeze({
+  PLAN: 'Plan',
+  CONFIRM_CRITERIA_AND_SCOPE: 'Confirm Criteria and Scope',
+  UNDERSTAND_CONTROL_AND_RISK: 'Understand Control and Risk',
+  EVALUATE_DESIGN: 'Evaluate Design',
+  SELECT_POPULATION_AND_EVIDENCE: 'Select Population and Evidence',
+  TEST_IMPLEMENTATION_AND_OPERATION: 'Test Implementation and Operation',
+  EVALUATE_EXCEPTIONS: 'Evaluate Exceptions',
+  CONCLUDE_AND_REPORT: 'Conclude and Report',
+  TRACK_FINDINGS_AND_RETEST: 'Track Findings and Retest'
+});
+
+export const ASSURANCE_TEST_METHODS = Object.freeze({
+  INQUIRY: 'inquiry',
+  OBSERVATION: 'observation',
+  INSPECTION: 'inspection',
+  REPERFORMANCE: 'reperformance',
+  RECALCULATION: 'recalculation',
+  CONFIGURATION_REVIEW: 'configuration-review',
+  DATA_ANALYSIS: 'data-analysis',
+  TRANSACTION_TRACING: 'transaction-tracing',
+  AUTOMATED_VALIDATION: 'automated-validation',
+  SIMULATION: 'simulation',
+  TECHNICAL_TESTING: 'technical-testing',
+  RECOVERY_EXERCISE: 'recovery-exercise',
+  AI_EVALUATION: 'ai-evaluation',
+  SUPPLIER_EVIDENCE_REVIEW: 'supplier-evidence-review'
+});
+
+export const SAMPLING_FIELDS = Object.freeze({
+  POPULATION: 'population',
+  OBJECTIVE: 'objective',
+  METHOD: 'method',
+  SIZE: 'size',
+  PERIOD: 'period',
+  STRATIFICATION: 'stratification',
+  RISK_FOCUS: 'risk-focus',
+  RANDOMNESS: 'randomness',
+  EXCEPTIONS: 'exceptions',
+  PROJECTION_LIMITATIONS: 'projection-limitations'
+});
+
+export const FULL_POPULATION_TESTING_VALIDATIONS = Object.freeze({
+  POPULATION_COMPLETENESS: 'population-completeness',
+  DATA_INTEGRITY: 'data-integrity',
+  QUERY_LOGIC: 'query-logic',
+  CRITERIA: 'criteria',
+  SCOPE: 'scope',
+  EXCLUSIONS: 'exclusions',
+  FALSE_POSITIVES: 'false-positives',
+  FALSE_NEGATIVES: 'false-negatives',
+  TOOL_CHANGE: 'tool-change',
+  REPRODUCIBILITY: 'reproducibility'
+});
+
+export const CONTINUOUS_ASSURANCE_CAPABILITIES_DETAIL = Object.freeze({
+  CONTROL_EXECUTION_VALIDATION: 'control-execution-validation',
+  ACCESS_POLICY_VALIDATION: 'access-policy-validation',
+  CONFIGURATION_COMPLIANCE: 'configuration-compliance',
+  TENANT_ISOLATION_CHECKS: 'tenant-isolation-checks',
+  AI_POLICY_MONITORING: 'ai-policy-monitoring',
+  DATA_RETENTION_MONITORING: 'data-retention-monitoring',
+  BACKUP_RESTORATION_VALIDATION: 'backup-restoration-validation',
+  EXCEPTION_EXPIRATION_MONITORING: 'exception-expiration-monitoring',
+  SUPPLIER_ASSURANCE_VALIDITY: 'supplier-assurance-validity',
+  EVIDENCE_COMPLETENESS_CHECKS: 'evidence-completeness-checks',
+  FINDING_REMEDIATION_VERIFICATION: 'finding-remediation-verification'
+});
+
+export const ASSURANCE_VALIDITY_FIELDS = Object.freeze({
+  EFFECTIVE_DATE: 'effective-date',
+  PERIOD_COVERED: 'period-covered',
+  SCOPE: 'scope',
+  CRITERIA: 'criteria',
+  EVIDENCE: 'evidence',
+  ASSUMPTIONS: 'assumptions',
+  LIMITATIONS: 'limitations',
+  MATERIAL_CHANGES_SINCE_ASSESSMENT: 'material-changes-since-assessment',
+  EXPIRATION_OR_REVIEW_TRIGGER: 'expiration-or-review-trigger',
+  RELIANCE_CONDITIONS: 'reliance-conditions'
+});
+
+export const AUDIT_PRINCIPLES = Object.freeze({
+  RISK_BASED: 'risk-based',
+  EVIDENCE_BASED: 'evidence-based',
+  OBJECTIVE: 'objective',
+  COMPETENT: 'competent',
+  INDEPENDENT: 'independent',
+  SCOPED: 'scoped',
+  TRACEABLE: 'traceable',
+  PROPORTIONATE: 'proportionate',
+  TRANSPARENT_LIMITATIONS: 'transparent-about-limitations',
+  FOLLOWED_THROUGH_REMEDIATION: 'followed-through-remediation'
+});
+
+export const AUDIT_UNIVERSE_AREAS = Object.freeze({
+  ENTERPRISE_GOVERNANCE: 'enterprise-governance',
+  ARCHITECTURE: 'architecture',
+  RISK: 'risk',
+  COMPLIANCE: 'compliance',
+  SECURITY: 'security',
+  PRIVACY: 'privacy',
+  DATA: 'data',
+  AI: 'ai',
+  OPERATIONS: 'operations',
+  SERVICES: 'services',
+  WORKFLOWS: 'workflows',
+  INTEGRATIONS: 'integrations',
+  DEPLOYMENT: 'deployment',
+  CONTINUITY: 'continuity',
+  SUPPLIERS: 'suppliers',
+  TENANTS: 'tenants',
+  PROPERTIES: 'properties',
+  FINANCIAL_AND_COMMERCIAL_PROCESSES: 'financial-and-commercial-processes',
+  EVIDENCE_AND_RECORDS: 'evidence-and-records',
+  REMEDIATION: 'remediation'
+});
+
+export const AUDIT_PLANNING_FACTORS = Object.freeze({
+  ENTERPRISE_OBJECTIVES: 'enterprise-objectives',
+  RISK_APPETITE: 'risk-appetite',
+  RESIDUAL_RISK: 'residual-risk',
+  OBLIGATIONS: 'obligations',
+  MATERIAL_CHANGES: 'material-changes',
+  INCIDENTS: 'incidents',
+  FINDINGS: 'findings',
+  EXCEPTIONS: 'exceptions',
+  SUPPLIER_CONCENTRATION: 'supplier-concentration',
+  AI_AUTONOMY: 'ai-autonomy',
+  DATA_SENSITIVITY: 'data-sensitivity',
+  TENANT_IMPACT: 'tenant-impact',
+  PROPERTY_IMPACT: 'property-impact',
+  TIME_SINCE_PRIOR_AUDIT: 'time-since-prior-audit',
+  ASSURANCE_COVERAGE: 'assurance-coverage',
+  MANAGEMENT_CONCERN: 'management-concern'
+});
+
+export const AUDIT_PLAN_FIELDS = Object.freeze({
+  AUDIT_IDENTIFIER: 'audit-identifier',
+  OBJECTIVE: 'objective',
+  SCOPE: 'scope',
+  CRITERIA: 'criteria',
+  PERIOD: 'period',
+  RISKS: 'risks',
+  STAKEHOLDERS: 'stakeholders',
+  AUDIT_TEAM: 'audit-team',
+  INDEPENDENCE: 'independence',
+  SKILLS: 'skills',
+  EVIDENCE_NEEDS: 'evidence-needs',
+  ACCESS: 'access',
+  SAMPLING: 'sampling',
+  TIMELINE: 'timeline',
+  COMMUNICATION: 'communication',
+  DELIVERABLES: 'deliverables',
+  LIMITATIONS: 'limitations',
+  FOLLOW_UP: 'follow-up'
+});
+
+export const AUDIT_LIFECYCLE_STAGES = Object.freeze({
+  PLAN_AND_AUTHORIZE: 'Plan and Authorize',
+  UNDERSTAND_SCOPE_AND_CONTROLS: 'Understand Scope and Controls',
+  COLLECT_AND_VALIDATE_EVIDENCE: 'Collect and Validate Evidence',
+  TEST_AND_ANALYZE: 'Test and Analyze',
+  DISCUSS_OBSERVATIONS: 'Discuss Observations',
+  CONCLUDE_AND_REPORT: 'Conclude and Report',
+  MANAGEMENT_RESPONSE: 'Management Response',
+  REMEDIATION_AND_FOLLOW_UP: 'Remediation and Follow-Up',
+  CLOSE_OR_ESCALATE: 'Close or Escalate'
+});
+
+export const AUDIT_EVIDENCE_QUALITIES = Object.freeze({
+  SUFFICIENT: 'sufficient',
+  APPROPRIATE: 'appropriate',
+  RELEVANT: 'relevant',
+  RELIABLE: 'reliable',
+  TRACEABLE: 'traceable',
+  PROTECTED: 'protected',
+  CORROBORATED: 'corroborated'
+});
+
+export const AUDIT_FINDING_FIELDS = Object.freeze({
+  CRITERIA: 'criteria',
+  CONDITION: 'condition',
+  CAUSE_OR_CONTRIBUTING_FACTORS: 'cause-or-contributing-factors',
+  EFFECT_OR_RISK: 'effect-or-risk',
+  EVIDENCE: 'evidence',
+  SCOPE: 'scope',
+  PRIORITY: 'priority',
+  OWNER: 'owner',
+  MANAGEMENT_RESPONSE: 'management-response',
+  REMEDIATION: 'remediation',
+  TARGET_DATE: 'target-date',
+  VERIFICATION: 'verification',
+  RESIDUAL_RISK: 'residual-risk',
+  CLOSURE_AUTHORITY: 'closure-authority'
+});
+
+export const MANAGEMENT_RESPONSE_FIELDS = Object.freeze({
+  AGREEMENT_OR_DISAGREEMENT: 'agreement-or-disagreement',
+  RATIONALE: 'rationale',
+  RISK_VIEW: 'risk-view',
+  IMMEDIATE_CONTAINMENT: 'immediate-containment',
+  REMEDIATION: 'remediation',
+  OWNER: 'owner',
+  TARGET_DATE: 'target-date',
+  RESOURCES: 'resources',
+  DEPENDENCIES: 'dependencies',
+  INTERIM_CONTROLS: 'interim-controls',
+  ACCEPTANCE_AUTHORITY: 'acceptance-authority-if-risk-remains'
+});
+
+export const AUDIT_REPORT_FIELDS = Object.freeze({
+  OBJECTIVE: 'objective',
+  SCOPE: 'scope',
+  CRITERIA: 'criteria',
+  PERIOD: 'period',
+  METHOD: 'method',
+  ASSURANCE_LEVEL: 'assurance-level',
+  EXECUTIVE_SUMMARY: 'executive-summary',
+  FINDINGS: 'findings',
+  POSITIVE_OBSERVATIONS: 'positive-observations',
+  LIMITATIONS: 'limitations',
+  MANAGEMENT_RESPONSES: 'management-responses',
+  REQUIRED_FOLLOW_UP: 'required-follow-up',
+  DISTRIBUTION: 'distribution',
+  CONFIDENTIALITY: 'confidentiality'
+});
+
+export const AUDIT_FOLLOW_UP_FIELDS = Object.freeze({
+  REMEDIATION_IMPLEMENTATION: 'remediation-implementation',
+  CONTROL_EFFECTIVENESS: 'control-effectiveness',
+  EVIDENCE: 'evidence',
+  SCOPE: 'scope',
+  RESIDUAL_RISK: 'residual-risk',
+  RECURRENCE: 'recurrence',
+  CLOSURE_AUTHORITY: 'closure-authority',
+  CONTINUING_LIMITATIONS: 'continuing-limitations'
+});
+
+export const ATTESTATION_TYPES = Object.freeze({
+  CONTROL_OWNER: 'control-owner-attestation',
+  MANAGEMENT_COMPLIANCE: 'management-compliance-attestation',
+  TENANT_CONTROL: 'tenant-control-attestation',
+  SUPPLIER: 'supplier-attestation',
+  AI_GOVERNANCE: 'ai-governance-attestation',
+  DATA_DELETION: 'data-deletion-attestation',
+  CONTINUITY_READINESS: 'continuity-readiness-attestation'
+});
+
+export const ATTESTATION_RECORD_FIELDS_DETAIL = Object.freeze({
+  ATTESTOR: 'attestor',
+  AUTHORITY: 'authority',
+  COMPETENCE: 'competence',
+  SCOPE: 'scope',
+  CRITERIA: 'criteria',
+  PERIOD: 'period',
+  EVIDENCE_BASIS: 'evidence-basis',
+  EXCEPTIONS: 'exceptions',
+  FINDINGS: 'findings',
+  LIMITATIONS: 'limitations',
+  DATE: 'date',
+  VALIDITY: 'validity',
+  REVOCATION_CONDITIONS: 'revocation-conditions',
+  FOLLOW_UP: 'follow-up'
+});
+
+export const RELIANCE_EVALUATION_FIELDS = Object.freeze({
+  PROVIDER_INDEPENDENCE: 'provider-independence',
+  COMPETENCE: 'competence',
+  SCOPE: 'scope',
+  CRITERIA: 'criteria',
+  PERIOD: 'period',
+  EVIDENCE: 'evidence',
+  EXCEPTIONS: 'exceptions',
+  SUBSERVICE_ORGANIZATIONS: 'subservice-organizations',
+  MATERIAL_CHANGES: 'material-changes',
+  RELEVANCE: 'relevance',
+  TENANT_COVERAGE: 'tenant-coverage',
+  RELIANCE_LIMITATIONS: 'reliance-limitations'
+});
+
+export const SUPPLIER_ASSURANCE_EVIDENCE_TYPES = Object.freeze({
+  DUE_DILIGENCE: 'due-diligence',
+  INDEPENDENT_REPORTS: 'independent-reports',
+  CERTIFICATIONS: 'certifications',
+  SECURITY_TESTS: 'security-tests',
+  PRIVACY_ASSESSMENTS: 'privacy-assessments',
+  AI_PROVIDER_EVALUATIONS: 'ai-provider-evaluations',
+  SERVICE_PERFORMANCE: 'service-performance',
+  CONTINUITY_TESTS: 'continuity-tests',
+  INCIDENT_HISTORY: 'incident-history',
+  CONTRACTUAL_ATTESTATIONS: 'contractual-attestations',
+  AUDIT_RIGHTS: 'audit-rights',
+  SUBPROCESSOR_EVIDENCE: 'subprocessor-evidence'
+});
+
+export const ASSURANCE_DOMAIN_AREAS = Object.freeze({
+  AI_ASSURANCE: 'ai-assurance',
+  PRIVACY_ASSURANCE: 'privacy-assurance',
+  SECURITY_ASSURANCE: 'security-assurance',
+  OPERATIONAL_ASSURANCE: 'operational-assurance',
+  TENANT_ASSURANCE: 'tenant-assurance',
+  PROPERTY_ASSURANCE: 'property-assurance',
+  SUPPLIER_ASSURANCE: 'supplier-assurance'
+});
+
+export const EXTERNAL_EVIDENCE_PACKAGE_REQUIREMENTS = Object.freeze({
+  AUTHORIZED: 'authorized',
+  SCOPED: 'scoped',
+  ACCURATE: 'accurate',
+  CURRENT: 'current',
+  MINIMAL: 'minimal',
+  PROTECTED: 'protected',
+  TRACEABLE: 'traceable',
+  REVIEWED: 'reviewed',
+  CONSISTENT_WITH_ACTUAL_POSTURE: 'consistent-with-actual-posture',
+  EXPLICIT_ABOUT_LIMITATIONS: 'explicit-about-limitations'
+});
+
+export const AI_EVIDENCE_ASSISTANCE_USES = Object.freeze({
+  CLASSIFICATION: 'evidence-classification',
+  CORRELATION: 'evidence-correlation',
+  SUMMARIZATION: 'evidence-summarization',
+  GAP_DETECTION: 'gap-detection',
+  SAMPLING_SUPPORT: 'sampling-support',
+  AUDIT_PREPARATION: 'audit-preparation',
+  DRAFT_REPORTING: 'draft-reporting',
+  FINDING_CORRELATION: 'finding-correlation'
+});
+
+export const ASSURANCE_FINDING_AREAS = Object.freeze({
+  GOVERNANCE_DESIGN: 'governance-design',
+  POLICY: 'policy',
+  RISK: 'risk',
+  CONTROL_DESIGN: 'control-design',
+  CONTROL_OPERATION: 'control-operation',
+  EVIDENCE: 'evidence',
+  SCOPE: 'scope',
+  OWNERSHIP: 'ownership',
+  INDEPENDENCE: 'independence',
+  TENANT_COVERAGE: 'tenant-coverage',
+  SUPPLIER_RELIANCE: 'supplier-reliance',
+  AI_BEHAVIOR: 'ai-behavior',
+  PRIVACY: 'privacy',
+  SECURITY: 'security',
+  REMEDIATION: 'remediation'
+});
+
+export const ASSURANCE_REPORT_FIELDS = Object.freeze({
+  OBJECTIVE: 'objective',
+  SCOPE: 'scope',
+  CRITERIA: 'criteria',
+  PROVIDER: 'provider',
+  INDEPENDENCE: 'independence',
+  PERIOD: 'period',
+  EVIDENCE: 'evidence',
+  PROCEDURES: 'procedures',
+  CONCLUSION: 'conclusion',
+  FINDINGS: 'findings',
+  LIMITATIONS: 'limitations',
+  RELIANCE: 'reliance',
+  FOLLOW_UP: 'follow-up'
+});
+
+export const ASSURANCE_AUDIT_EVIDENCE_MEASURES = Object.freeze({
+  REQUIRED_EVIDENCE_GENERATED: 'required-evidence-generated',
+  EVIDENCE_COMPLETENESS: 'evidence-completeness',
+  EVIDENCE_INTEGRITY_FAILURES: 'evidence-integrity-failures',
+  EVIDENCE_ACCESS_VIOLATIONS: 'evidence-access-violations',
+  ASSURANCE_COVERAGE: 'assurance-coverage',
+  ASSESSMENTS_CURRENT: 'assessments-current',
+  CONTROL_TEST_COMPLETION: 'control-test-completion',
+  DESIGN_EFFECTIVENESS: 'design-effectiveness',
+  OPERATING_EFFECTIVENESS: 'operating-effectiveness',
+  AUDIT_PLAN_COMPLETION: 'audit-plan-completion',
+  FINDINGS: 'findings',
+  REPEAT_FINDINGS: 'repeat-findings',
+  REMEDIATION_VERIFICATION: 'remediation-verification',
+  ATTESTATIONS_CURRENT: 'attestations-current',
+  SUPPLIER_ASSURANCE_COVERAGE: 'supplier-assurance-coverage',
+  TENANT_ASSURANCE_DELIVERY: 'tenant-assurance-delivery',
+  AI_ASSURANCE_COVERAGE: 'ai-assurance-coverage',
+  ASSURANCE_INVALIDATED_BY_CHANGE: 'assurance-invalidated-by-change'
+});
+
+export const ASSURANCE_AUDIT_EVIDENCE_GOVERNANCE_AREAS = Object.freeze({
+  EVIDENCE_STANDARDS: 'evidence-standards',
+  OWNERSHIP: 'ownership',
+  INTEGRITY: 'integrity',
+  ACCESS: 'access',
+  RETENTION: 'retention',
+  DISCLOSURE: 'disclosure',
+  INDEPENDENCE: 'independence',
+  ASSURANCE_METHODOLOGY: 'assurance-methodology',
+  SAMPLING: 'sampling',
+  CRITERIA: 'criteria',
+  REPORTING: 'reporting',
+  ATTESTATION: 'attestation',
+  RELIANCE: 'reliance',
+  FINDINGS: 'findings',
+  FOLLOW_UP: 'follow-up',
+  CONTINUOUS_ASSURANCE: 'continuous-assurance'
+});
+
+export const ASSURANCE_AUDIT_EVIDENCE_QUALITY_ATTRIBUTES = Object.freeze({
+  TRUSTWORTHINESS: 'trustworthiness',
+  INTEGRITY: 'integrity',
+  AUTHENTICITY: 'authenticity',
+  TRACEABILITY: 'traceability',
+  AUDITABILITY: 'auditability',
+  ACCOUNTABILITY: 'accountability',
+  CONFIDENTIALITY: 'confidentiality',
+  AVAILABILITY: 'availability',
+  EXPLAINABILITY: 'explainability',
+  INDEPENDENCE: 'independence',
+  SCALABILITY: 'scalability',
+  TENANT_ISOLATION: 'tenant-isolation'
+});
+
+export const ASSURANCE_AUDIT_EVIDENCE_ARCHITECTURAL_RULES = Object.freeze({
+  GENERATE_EVIDENCE_BY_DESIGN: 'generate-evidence-by-design',
+  ASSIGN_EVIDENCE_OWNERSHIP_AND_CUSTODY: 'assign-evidence-ownership-and-custody',
+  PRESERVE_PROVENANCE_AND_INTEGRITY: 'preserve-provenance-and-integrity',
+  PROTECT_EVIDENCE_BY_SENSITIVITY_AND_TENANT_SCOPE: 'protect-evidence-by-sensitivity-and-tenant-scope',
+  MINIMIZE_EVIDENCE_TO_AUTHORIZED_PURPOSE: 'minimize-evidence-to-authorized-purpose',
+  DEFINE_RETENTION_AND_DISPOSAL: 'define-retention-and-disposal',
+  CORRELATE_USING_STABLE_IDENTIFIERS: 'correlate-evidence-using-stable-identifiers',
+  MATCH_ASSURANCE_INDEPENDENCE_TO_RISK_AND_RELIANCE: 'match-assurance-independence-to-risk-and-reliance',
+  STATE_CRITERIA_SCOPE_PERIOD_EVIDENCE_AND_LIMITATIONS: 'state-criteria-scope-period-evidence-and-limitations',
+  EVALUATE_DESIGN_AND_OPERATING_EFFECTIVENESS_SEPARATELY: 'evaluate-control-design-and-operating-effectiveness-separately',
+  GOVERN_SAMPLING_AND_AUTOMATED_TESTING: 'govern-sampling-and-automated-testing',
+  CONTINUOUS_ASSURANCE_SUPPLEMENTS_INDEPENDENT_JUDGMENT: 'continuous-assurance-supplements-independent-judgment',
+  GOVERN_AUDIT_LIFECYCLE: 'govern-audit-planning-execution-reporting-and-follow-up',
+  EVALUATE_EXTERNAL_ATTESTATIONS_BEFORE_RELIANCE: 'evaluate-external-attestations-before-reliance',
+  COVER_ENTERPRISE_ASSURANCE_DOMAINS: 'cover-ai-privacy-security-operations-suppliers-tenants-and-properties',
+  PREVENT_AI_EVIDENCE_FABRICATION: 'prevent-ai-from-fabricating-or-obscuring-evidence',
+  REQUIRE_VERIFIED_REMEDIATION: 'require-verified-remediation-for-significant-findings',
+  AVOID_UNSUPPORTED_ASSURANCE_CLAIMS: 'avoid-unsupported-assurance-compliance-or-certification-claims',
+  REMAIN_VENDOR_AND_TECHNOLOGY_NEUTRAL: 'remain-vendor-neutral-and-technology-independent'
+});
+
+export const FUTURE_ASSURANCE_AUDIT_EVIDENCE_CAPABILITIES = Object.freeze({
+  SEMANTIC_EVIDENCE_MODELS: 'semantic-evidence-models',
+  AUTOMATED_PROVENANCE: 'automated-provenance',
+  CRYPTOGRAPHICALLY_VERIFIABLE_EVIDENCE: 'cryptographically-verifiable-evidence',
+  CONTINUOUS_CONTROL_ASSURANCE: 'continuous-control-assurance',
+  AI_ASSISTED_EVIDENCE_CORRELATION: 'ai-assisted-evidence-correlation',
+  FULL_POPULATION_TESTING: 'full-population-testing',
+  DYNAMIC_AUDIT_PLANNING: 'dynamic-audit-planning',
+  CONTINUOUS_SUPPLIER_ASSURANCE: 'continuous-supplier-assurance',
+  REAL_TIME_TENANT_ASSURANCE: 'real-time-tenant-assurance',
+  PRIVACY_PRESERVING_AUDIT: 'privacy-preserving-audit',
+  AUTOMATED_ASSURANCE_INVALIDATION_AFTER_CHANGE: 'automated-assurance-invalidation-after-change',
+  ASSURANCE_DIGITAL_TWINS: 'assurance-digital-twins',
+  MACHINE_READABLE_ATTESTATIONS: 'machine-readable-attestations',
+  GOVERNED_AUTONOMOUS_EVIDENCE_COLLECTION: 'governed-autonomous-evidence-collection'
 });
