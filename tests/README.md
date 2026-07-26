@@ -164,5 +164,6 @@ The repository currently includes automated unit tests for:
 - `ARCH-012-03 Policy Architecture` in `tests/governance-compliance/`
 - `ARCH-012-04 Enterprise Risk Management` in `tests/governance-compliance/`
 - `ARCH-012-05 Compliance and Control Framework` in `tests/governance-compliance/`
+- `ARCH-012-06 Privacy and Data Governance` in `tests/governance-compliance/`
 
 These tests validate reusable platform capabilities and channel-facing behavior without introducing business logic.

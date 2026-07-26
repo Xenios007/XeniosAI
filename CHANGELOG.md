@@ -1885,3 +1885,20 @@ Version: 0.105.0
 
 Status: Governance and Compliance Architecture
 Version: 0.106.0
+
+---
+
+## [0.107.0] - ARCH-012 Privacy and Data Governance
+
+### Added
+- Privacy and data governance objective, principle, model, data-domain, role, inventory, classification, personal-data, sensitive-data, purpose, authorized-basis, lifecycle, collection, minimization, anonymization, transparency, access, quality, metadata, lineage, sharing, residency, retention, rights, AI data, tenant, property, supplier, risk, assessment, incident, evidence, assurance, measure, quality-attribute, architectural-rule, and future-capability constants.
+- Immutable contract for privacy and data governance profiles.
+- Privacy and Data Governance descriptor for documented metadata, profile validation, and architecture assertion.
+- Dependency-injection registration through `addGovernanceCompliance`.
+- Unit tests for privacy/data governance metadata, validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Privacy and Data Governance as a purpose-bound, tenant-isolated, technology-neutral, vendor-neutral data governance architecture without providing legal advice or prescribing privacy laws, data platforms, catalog products, consent products, residency technologies, or regulatory frameworks.
+
+Status: Governance and Compliance Architecture
+Version: 0.107.0

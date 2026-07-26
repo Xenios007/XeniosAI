@@ -114,7 +114,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-012-03 Policy Architecture`
 - Completed: `ARCH-012-04 Enterprise Risk Management`
 - Completed: `ARCH-012-05 Compliance and Control Framework`
-- Next: `ARCH-012-06 Privacy and Data Governance`
+- Completed: `ARCH-012-06 Privacy and Data Governance`
+- Next: `ARCH-012-07 AI and Ethical Governance`
 
 ## Notes
 

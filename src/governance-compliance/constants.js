@@ -3,7 +3,8 @@ export const GOVERNANCE_COMPLIANCE_ERROR_CODES = Object.freeze({
   GOVERNANCE_OPERATING_MODEL_INVALID: 'GOVERNANCE_OPERATING_MODEL_INVALID',
   POLICY_ARCHITECTURE_INVALID: 'POLICY_ARCHITECTURE_INVALID',
   ENTERPRISE_RISK_MANAGEMENT_INVALID: 'ENTERPRISE_RISK_MANAGEMENT_INVALID',
-  COMPLIANCE_CONTROL_FRAMEWORK_INVALID: 'COMPLIANCE_CONTROL_FRAMEWORK_INVALID'
+  COMPLIANCE_CONTROL_FRAMEWORK_INVALID: 'COMPLIANCE_CONTROL_FRAMEWORK_INVALID',
+  PRIVACY_DATA_GOVERNANCE_INVALID: 'PRIVACY_DATA_GOVERNANCE_INVALID'
 });
 
 export const GOVERNANCE_COMPLIANCE_OVERVIEW_OBJECTIVES = Object.freeze({
@@ -2289,4 +2290,866 @@ export const FUTURE_COMPLIANCE_CONTROL_CAPABILITIES = Object.freeze({
   POLICY_AWARE_OPERATIONAL_AGENTS: 'policy-aware-operational-agents',
   COMPLIANCE_DIGITAL_TWINS: 'compliance-digital-twins',
   GOVERNED_AUTONOMOUS_REMEDIATION: 'governed-autonomous-remediation'
+});
+
+export const PRIVACY_DATA_GOVERNANCE_OBJECTIVES = Object.freeze({
+  CLEAR_DATA_ACCOUNTABILITY: 'clear-data-accountability',
+  AUTHORIZED_AND_TRANSPARENT_DATA_USE: 'authorized-and-transparent-data-use',
+  PURPOSE_LIMITATION: 'purpose-limitation',
+  DATA_MINIMIZATION: 'data-minimization',
+  CONSISTENT_CLASSIFICATION: 'consistent-classification',
+  RELIABLE_DATA_QUALITY: 'reliable-data-quality',
+  END_TO_END_LINEAGE: 'end-to-end-lineage',
+  LEAST_PRIVILEGE_ACCESS: 'least-privilege-access',
+  STRONG_TENANT_ISOLATION: 'strong-tenant-isolation',
+  GOVERNED_DATA_SHARING: 'governed-data-sharing',
+  JURISDICTION_AWARE_RESIDENCY_AND_TRANSFER: 'jurisdiction-aware-residency-and-transfer',
+  ENFORCEABLE_RETENTION_AND_DELETION: 'enforceable-retention-and-deletion',
+  EFFECTIVE_RIGHTS_HANDLING: 'effective-rights-handling',
+  RESPONSIBLE_AI_DATA_USE: 'responsible-ai-data-use',
+  SUPPLIER_ACCOUNTABILITY: 'supplier-accountability',
+  PRIVACY_RISK_MANAGEMENT: 'privacy-risk-management',
+  TRUSTWORTHY_EVIDENCE: 'trustworthy-evidence',
+  VENDOR_NEUTRAL_GOVERNANCE_CAPABILITIES: 'vendor-neutral-governance-capabilities'
+});
+
+export const PRIVACY_DATA_GOVERNANCE_PRINCIPLES = Object.freeze({
+  DATA_HAS_ACCOUNTABLE_OWNER: 'data-has-accountable-owner',
+  PURPOSE_BEFORE_PROCESSING: 'purpose-before-processing',
+  MINIMIZE_DATA: 'minimize-data',
+  PROTECT_INDIVIDUALS: 'protect-individuals',
+  PRESERVE_TENANT_ISOLATION: 'preserve-tenant-isolation',
+  QUALITY_MATCHES_PURPOSE: 'quality-matches-purpose',
+  LINEAGE_CREATES_ACCOUNTABILITY: 'lineage-creates-accountability',
+  RETENTION_IS_INTENTIONAL: 'retention-is-intentional',
+  AI_DOES_NOT_CREATE_NEW_RIGHTS: 'ai-does-not-create-new-rights',
+  PRIVACY_AND_SECURITY_WORK_TOGETHER: 'privacy-and-security-work-together'
+});
+
+export const PRIVACY_DATA_GOVERNANCE_MODEL_STAGES = Object.freeze({
+  BUSINESS_PURPOSE_AND_OBLIGATION: 'Business Purpose and Obligation',
+  DATA_OWNERSHIP_AND_CLASSIFICATION: 'Data Ownership and Classification',
+  AUTHORIZED_COLLECTION_AND_USE: 'Authorized Collection and Use',
+  ACCESS_PROCESSING_SHARING_AND_AI_USE: 'Access, Processing, Sharing, and AI Use',
+  QUALITY_LINEAGE_SECURITY_AND_TENANT_ISOLATION: 'Quality, Lineage, Security, and Tenant Isolation',
+  RETENTION_RIGHTS_DELETION_AND_EXIT: 'Retention, Rights, Deletion, and Exit',
+  EVIDENCE_ASSURANCE_RISK_AND_IMPROVEMENT: 'Evidence, Assurance, Risk, and Improvement'
+});
+
+export const DATA_GOVERNANCE_DOMAINS = Object.freeze({
+  BUSINESS_DATA: 'business-data-governance',
+  OPERATIONAL_DATA: 'operational-data-governance',
+  SECURITY_DATA: 'security-data-governance',
+  AI_DATA: 'ai-data-governance',
+  ANALYTICAL_DATA: 'analytical-data-governance',
+  GOVERNANCE_EVIDENCE: 'governance-evidence',
+  TENANT_AND_PROPERTY_DATA: 'tenant-and-property-data-governance'
+});
+
+export const DATA_ROLES = Object.freeze({
+  DATA_OWNER: 'data-owner',
+  DATA_STEWARD: 'data-steward',
+  DATA_CUSTODIAN: 'data-custodian',
+  DATA_CONSUMER: 'data-consumer',
+  PRIVACY_AUTHORITY: 'privacy-authority',
+  TENANT_DATA_AUTHORITY: 'tenant-data-authority',
+  PROPERTY_DATA_STEWARD: 'property-data-steward'
+});
+
+export const DATA_INVENTORY_FIELDS = Object.freeze({
+  DATA_IDENTIFIER: 'data-identifier',
+  DATA_DOMAIN: 'data-domain',
+  DESCRIPTION: 'description',
+  OWNER: 'owner',
+  STEWARD: 'steward',
+  TENANT_OR_ENTERPRISE_OWNERSHIP: 'tenant-or-enterprise-ownership',
+  SOURCE: 'source',
+  PURPOSE: 'purpose',
+  CLASSIFICATION: 'classification',
+  PERSONAL_DATA_STATUS: 'personal-data-status',
+  SENSITIVE_DATA_STATUS: 'sensitive-data-status',
+  DATA_SUBJECT_OR_ENTITY_CATEGORY: 'data-subject-or-entity-category',
+  SERVICES: 'services',
+  AI_USES: 'ai-uses',
+  WORKFLOWS: 'workflows',
+  INTEGRATIONS: 'integrations',
+  SUPPLIERS: 'suppliers',
+  STORAGE_LOCATIONS: 'storage-locations',
+  JURISDICTIONS: 'jurisdictions',
+  LINEAGE: 'lineage',
+  QUALITY_RULES: 'quality-rules',
+  ACCESS: 'access',
+  SHARING: 'sharing',
+  RETENTION: 'retention',
+  DELETION: 'deletion',
+  BACKUP: 'backup',
+  RECOVERY: 'recovery',
+  EVIDENCE: 'evidence',
+  LIFECYCLE_STATE: 'lifecycle-state'
+});
+
+export const DATA_CLASSIFICATION_CLASSES = Object.freeze({
+  PUBLIC: 'public',
+  INTERNAL: 'internal',
+  CONFIDENTIAL: 'confidential',
+  RESTRICTED: 'restricted',
+  HIGHLY_RESTRICTED: 'highly-restricted'
+});
+
+export const DATA_CLASSIFICATION_LABELS = Object.freeze({
+  PERSONAL_DATA: 'personal-data',
+  SENSITIVE_PERSONAL_DATA: 'sensitive-personal-data',
+  PAYMENT_RELATED_DATA: 'payment-related-data',
+  AUTHENTICATION_DATA: 'authentication-data',
+  SECURITY_DATA: 'security-data',
+  TENANT_CONFIDENTIAL: 'tenant-confidential',
+  PROPERTY_CONFIDENTIAL: 'property-confidential',
+  AI_CONTEXT: 'ai-context',
+  LEGAL_OR_AUDIT_HOLD: 'legal-or-audit-hold',
+  OPERATIONAL_EVIDENCE: 'operational-evidence',
+  PUBLICLY_SOURCED: 'publicly-sourced',
+  DERIVED_OR_INFERRED: 'derived-or-inferred'
+});
+
+export const PERSONAL_DATA_CATEGORIES = Object.freeze({
+  IDENTITY: 'identity',
+  CONTACT: 'contact',
+  BOOKING: 'booking',
+  STAY: 'stay',
+  COMMUNICATION: 'communication',
+  PREFERENCE: 'preference',
+  DEVICE: 'device',
+  LOCATION: 'location',
+  PAYMENT_ADJACENT: 'payment-adjacent',
+  SUPPORT: 'support',
+  BEHAVIORAL: 'behavioral',
+  INFERRED: 'inferred',
+  EMPLOYEE: 'employee',
+  SUPPLIER_CONTACT: 'supplier-contact',
+  SECURITY_AND_ACCESS: 'security-and-access'
+});
+
+export const SENSITIVE_DATA_CATEGORIES = Object.freeze({
+  AUTHENTICATION_CREDENTIALS: 'authentication-credentials',
+  GOVERNMENT_IDENTIFIERS: 'government-identifiers',
+  FINANCIAL_DETAILS: 'financial-details',
+  HEALTH_OR_ACCESSIBILITY_INFORMATION: 'health-or-accessibility-information',
+  PRECISE_LOCATION: 'precise-location',
+  SECURITY_INVESTIGATION_DATA: 'security-investigation-data',
+  PRIVATE_COMMUNICATIONS: 'private-communications',
+  BIOMETRIC_DATA: 'biometric-data',
+  CHILDREN_DATA: 'children-data',
+  SPECIAL_CATEGORY_PERSONAL_DATA: 'special-category-personal-data',
+  HIGHLY_SENSITIVE_TENANT_OR_PROPERTY_DATA: 'highly-sensitive-tenant-or-property-data'
+});
+
+export const DATA_PURPOSE_FIELDS = Object.freeze({
+  BUSINESS_PURPOSE: 'business-purpose',
+  DATA_REQUIRED: 'data-required',
+  DATA_SUBJECTS_OR_ENTITIES: 'data-subjects-or-entities',
+  OWNER: 'owner',
+  AUTHORITY_OR_AUTHORIZED_BASIS: 'authority-or-authorized-basis',
+  CONSUMERS: 'consumers',
+  AI_USE: 'ai-use',
+  SHARING: 'sharing',
+  RETENTION: 'retention',
+  EXPECTED_OUTCOME: 'expected-outcome',
+  RISK: 'risk',
+  TRANSPARENCY: 'transparency',
+  RIGHTS_HANDLING: 'rights-handling',
+  END_CONDITION: 'end-condition'
+});
+
+export const AUTHORIZED_BASIS_FIELDS = Object.freeze({
+  JURISDICTION: 'jurisdiction',
+  APPLICABILITY: 'applicability',
+  PURPOSE: 'purpose',
+  DATA: 'data',
+  CONDITIONS: 'conditions',
+  LIMITATIONS: 'limitations',
+  EVIDENCE: 'evidence',
+  EXPIRATION: 'expiration',
+  WITHDRAWAL_OR_OBJECTION_HANDLING: 'withdrawal-or-objection-handling'
+});
+
+export const DATA_LIFECYCLE_STAGES = Object.freeze({
+  PLAN_PURPOSE: 'Plan Purpose',
+  COLLECT_OR_RECEIVE: 'Collect or Receive',
+  VALIDATE_AND_CLASSIFY: 'Validate and Classify',
+  STORE_AND_PROTECT: 'Store and Protect',
+  USE_ANALYZE_OR_INFER: 'Use, Analyze, or Infer',
+  SHARE_OR_TRANSFER: 'Share or Transfer',
+  RETAIN_OR_ARCHIVE: 'Retain or Archive',
+  DELETE_ANONYMIZE_RETURN_OR_DISPOSE: 'Delete, Anonymize, Return, or Dispose'
+});
+
+export const DATA_COLLECTION_QUALITIES = Object.freeze({
+  PURPOSEFUL: 'purposeful',
+  TRANSPARENT: 'transparent',
+  AUTHORIZED: 'authorized',
+  MINIMAL: 'minimal',
+  ACCURATE_ENOUGH: 'accurate-enough',
+  SECURE: 'secure',
+  TENANT_SCOPED: 'tenant-scoped',
+  SOURCE_TRACEABLE: 'source-traceable',
+  TIME_BOUNDED: 'time-bounded',
+  EVIDENCE_GENERATING: 'evidence-generating'
+});
+
+export const DATA_MINIMIZATION_LEVERS = Object.freeze({
+  FIELDS_COLLECTED: 'fields-collected',
+  PRECISION: 'precision',
+  FREQUENCY: 'frequency',
+  HISTORICAL_DEPTH: 'historical-depth',
+  NUMBER_OF_RECIPIENTS: 'number-of-recipients',
+  RETENTION: 'retention',
+  CONTEXT_PROVIDED_TO_AI: 'context-provided-to-ai',
+  COPIES: 'copies',
+  REPLICATION: 'replication',
+  IDENTIFIABILITY: 'identifiability',
+  ACCESS_DURATION: 'access-duration'
+});
+
+export const ANONYMIZATION_PSEUDONYMIZATION_FIELDS = Object.freeze({
+  METHOD: 'method',
+  OWNER: 'owner',
+  RE_IDENTIFICATION_RISK: 're-identification-risk',
+  KEY_SEPARATION: 'key-separation',
+  AUTHORIZED_RE_LINKING: 'authorized-re-linking',
+  PURPOSE: 'purpose',
+  VALIDATION: 'validation',
+  ONGOING_RISK: 'ongoing-risk',
+  SUPPLIER_ACCESS: 'supplier-access',
+  EVIDENCE: 'evidence'
+});
+
+export const TRANSPARENCY_FIELDS = Object.freeze({
+  DATA_USED: 'data-used',
+  PURPOSE: 'purpose',
+  CONTROLLER: 'controller',
+  RECIPIENTS: 'recipients',
+  RETENTION: 'retention',
+  AI_PARTICIPATION: 'ai-participation',
+  AUTOMATED_DECISIONS: 'automated-decisions',
+  CHOICES: 'choices',
+  RIGHTS: 'rights',
+  CONTACT_AND_RECOURSE: 'contact-and-recourse',
+  MATERIAL_CHANGES: 'material-changes'
+});
+
+export const DATA_ACCESS_REQUIREMENTS = Object.freeze({
+  VERIFIED_IDENTITY: 'verified-identity',
+  LEAST_PRIVILEGE: 'least-privilege',
+  AUTHORIZED_PURPOSE: 'authorized-purpose',
+  ROLE_AND_ATTRIBUTE_CONSTRAINTS: 'role-and-attribute-constraints',
+  TENANT_AND_PROPERTY_SCOPE: 'tenant-and-property-scope',
+  TIME_LIMITATION: 'time-limitation',
+  SENSITIVE_DATA_RESTRICTIONS: 'sensitive-data-restrictions',
+  SEPARATION_OF_DUTIES: 'separation-of-duties',
+  MONITORING: 'monitoring',
+  REVIEW: 'review',
+  REVOCATION: 'revocation',
+  EVIDENCE: 'evidence'
+});
+
+export const PURPOSE_AWARE_ACCESS_DIMENSIONS = Object.freeze({
+  REQUESTED_PURPOSE: 'requested-purpose',
+  DATA_CATEGORY: 'data-category',
+  TENANT: 'tenant',
+  PROPERTY: 'property',
+  SERVICE: 'service',
+  AI_AGENT: 'ai-agent',
+  TOOL: 'tool',
+  WORKFLOW: 'workflow',
+  TIME: 'time',
+  ENVIRONMENT: 'environment',
+  RISK: 'risk',
+  CONSENT_OR_AUTHORIZATION_CONDITION: 'consent-or-authorization-condition'
+});
+
+export const DATA_QUALITY_DIMENSIONS = Object.freeze({
+  ACCURACY: 'accuracy',
+  COMPLETENESS: 'completeness',
+  CONSISTENCY: 'consistency',
+  TIMELINESS: 'timeliness',
+  VALIDITY: 'validity',
+  UNIQUENESS: 'uniqueness',
+  INTEGRITY: 'integrity',
+  RELEVANCE: 'relevance'
+});
+
+export const DATA_QUALITY_RULE_FIELDS = Object.freeze({
+  DATA_ELEMENT: 'data-element',
+  PURPOSE: 'purpose',
+  DIMENSION: 'dimension',
+  EXPECTED_CONDITION: 'expected-condition',
+  THRESHOLD: 'threshold',
+  OWNER: 'owner',
+  TRIGGER: 'trigger',
+  EVIDENCE: 'evidence',
+  FAILURE_HANDLING: 'failure-handling',
+  CORRECTION: 'correction',
+  ESCALATION: 'escalation',
+  REVIEW: 'review'
+});
+
+export const DATA_METADATA_FIELDS = Object.freeze({
+  MEANING: 'meaning',
+  OWNER: 'owner',
+  CLASSIFICATION: 'classification',
+  PURPOSE: 'purpose',
+  SOURCE: 'source',
+  FORMAT: 'format',
+  SCHEMA: 'schema',
+  QUALITY: 'quality',
+  LINEAGE: 'lineage',
+  ACCESS: 'access',
+  RETENTION: 'retention',
+  JURISDICTION: 'jurisdiction',
+  TENANT: 'tenant',
+  AI_USE: 'ai-use',
+  LIFECYCLE: 'lifecycle'
+});
+
+export const DATA_LINEAGE_FIELDS = Object.freeze({
+  ORIGIN: 'origin',
+  COLLECTION_METHOD: 'collection-method',
+  TRANSFORMATIONS: 'transformations',
+  ENRICHMENT: 'enrichment',
+  INFERENCE: 'inference',
+  MOVEMENT: 'movement',
+  STORAGE: 'storage',
+  CONSUMERS: 'consumers',
+  AI_USES: 'ai-uses',
+  SHARING: 'sharing',
+  RETENTION: 'retention',
+  DELETION: 'deletion',
+  EVIDENCE: 'evidence'
+});
+
+export const DERIVED_INFERRED_DATA_FIELDS = Object.freeze({
+  SOURCE_DATA: 'source-data',
+  DERIVATION: 'derivation',
+  PURPOSE: 'purpose',
+  CONFIDENCE: 'confidence',
+  SENSITIVITY: 'sensitivity',
+  OWNER: 'owner',
+  USE: 'use',
+  DISCLOSURE: 'disclosure',
+  RETENTION: 'retention',
+  RIGHTS_IMPACT: 'rights-impact',
+  AI_INVOLVEMENT: 'ai-involvement',
+  VALIDATION: 'validation',
+  RECOURSE: 'recourse'
+});
+
+export const DATA_SHARING_FIELDS = Object.freeze({
+  PURPOSE: 'purpose',
+  SENDER: 'sender',
+  RECIPIENT: 'recipient',
+  DATA: 'data',
+  CLASSIFICATION: 'classification',
+  AUTHORITY: 'authority',
+  CONTRACT: 'contract',
+  JURISDICTION: 'jurisdiction',
+  SECURITY: 'security',
+  RETENTION: 'retention',
+  FURTHER_SHARING: 'further-sharing',
+  DELETION: 'deletion',
+  EVIDENCE: 'evidence',
+  INCIDENT_OBLIGATIONS: 'incident-obligations',
+  EXIT: 'exit'
+});
+
+export const DATA_DISCLOSURE_CLASSES = Object.freeze({
+  INTERNAL: 'internal',
+  TENANT_AUTHORIZED: 'tenant-authorized',
+  PROPERTY_AUTHORIZED: 'property-authorized',
+  SUPPLIER: 'supplier',
+  PARTNER: 'partner',
+  GUEST_OR_INDIVIDUAL: 'guest-or-individual',
+  LEGAL_OR_REGULATORY: 'legal-or-regulatory',
+  EMERGENCY: 'emergency',
+  PUBLIC: 'public'
+});
+
+export const DATA_RESIDENCY_FIELDS = Object.freeze({
+  DATA_CATEGORY: 'data-category',
+  REQUIRED_OR_PREFERRED_LOCATION: 'required-or-preferred-location',
+  LEGAL_ENTITY: 'legal-entity',
+  TENANT: 'tenant',
+  JURISDICTION: 'jurisdiction',
+  PRIMARY_STORAGE: 'primary-storage',
+  REPLICAS: 'replicas',
+  BACKUPS: 'backups',
+  LOGS: 'logs',
+  AI_PROVIDERS: 'ai-providers',
+  SUPPORT_ACCESS: 'support-access',
+  TRANSFERS: 'transfers',
+  EXCEPTIONS: 'exceptions',
+  EVIDENCE: 'evidence'
+});
+
+export const CROSS_BORDER_MOVEMENT_VECTORS = Object.freeze({
+  STORAGE: 'storage',
+  REPLICATION: 'replication',
+  BACKUP: 'backup',
+  SUPPORT: 'support',
+  INTEGRATION: 'integration',
+  AI_PROVIDER: 'ai-provider',
+  ANALYTICS: 'analytics',
+  REMOTE_ACCESS: 'remote-access',
+  SUPPLIER_PROCESSING: 'supplier-processing',
+  INCIDENT_RESPONSE: 'incident-response'
+});
+
+export const RETENTION_BASIS_FACTORS = Object.freeze({
+  PURPOSE: 'purpose',
+  OBLIGATION: 'obligation',
+  CONTRACT: 'contract',
+  RISK: 'risk',
+  OPERATIONAL_NEED: 'operational-need',
+  RIGHTS: 'rights',
+  SECURITY: 'security',
+  LITIGATION_OR_LEGAL_HOLD: 'litigation-or-legal-hold',
+  TENANT_REQUIREMENT: 'tenant-requirement',
+  PROPERTY_REQUIREMENT: 'property-requirement',
+  COST: 'cost',
+  ARCHIVAL_VALUE: 'archival-value'
+});
+
+export const RETENTION_SCHEDULE_FIELDS = Object.freeze({
+  DATA_SCOPE: 'data-scope',
+  TRIGGER: 'trigger',
+  DURATION: 'duration',
+  ARCHIVE: 'archive',
+  DELETION: 'deletion',
+  EXCEPTIONS: 'exceptions',
+  HOLD: 'hold',
+  OWNER: 'owner',
+  EVIDENCE: 'evidence',
+  REVIEW: 'review'
+});
+
+export const DATA_HOLD_FIELDS = Object.freeze({
+  AUTHORITY: 'authority',
+  SCOPE: 'scope',
+  DATA: 'data',
+  CUSTODIAN: 'custodian',
+  START: 'start',
+  REASON: 'reason',
+  ACCESS: 'access',
+  SECURITY: 'security',
+  REVIEW: 'review',
+  RELEASE: 'release',
+  DELETION_RESUMPTION: 'deletion-resumption',
+  EVIDENCE: 'evidence'
+});
+
+export const DATA_DELETION_SCOPES = Object.freeze({
+  PRIMARY_STORES: 'primary-stores',
+  REPLICAS: 'replicas',
+  CACHES: 'caches',
+  SEARCH_INDEXES: 'search-indexes',
+  LOGS: 'logs',
+  AI_MEMORY: 'ai-memory',
+  EMBEDDINGS: 'embeddings',
+  ANALYTICS: 'analytics',
+  BACKUPS: 'backups',
+  SUPPLIERS: 'suppliers',
+  EXPORTS: 'exports',
+  PROPERTY_COPIES: 'property-copies',
+  DERIVED_DATA: 'derived-data'
+});
+
+export const DATA_RETURN_PORTABILITY_FIELDS = Object.freeze({
+  IDENTITY_VERIFICATION: 'identity-verification',
+  SCOPE: 'scope',
+  FORMAT: 'format',
+  SECURITY: 'security',
+  DATA_LINEAGE: 'data-lineage',
+  THIRD_PARTY_DATA_SEPARATION: 'third-party-data-separation',
+  TENANT_ISOLATION: 'tenant-isolation',
+  TIMING: 'timing',
+  EVIDENCE: 'evidence',
+  DELETION_AFTER_RETURN: 'deletion-after-return',
+  CONTRACTUAL_CONDITIONS: 'contractual-conditions'
+});
+
+export const INDIVIDUAL_RIGHTS = Object.freeze({
+  ACCESS: 'access',
+  CORRECTION: 'correction',
+  DELETION: 'deletion',
+  RESTRICTION: 'restriction',
+  OBJECTION: 'objection',
+  PORTABILITY: 'portability',
+  WITHDRAWAL: 'withdrawal',
+  INFORMATION: 'information',
+  REVIEW_OF_AUTOMATED_DECISION: 'review-of-automated-decision',
+  COMPLAINT_OR_RECOURSE: 'complaint-or-recourse'
+});
+
+export const RIGHTS_HANDLING_FIELDS = Object.freeze({
+  REQUEST_INTAKE: 'request-intake',
+  IDENTITY_VERIFICATION: 'identity-verification',
+  APPLICABILITY: 'applicability',
+  SCOPE: 'scope',
+  SEARCH: 'search',
+  EXCEPTIONS: 'exceptions',
+  RESPONSE: 'response',
+  DEADLINE: 'deadline',
+  EVIDENCE: 'evidence',
+  ESCALATION: 'escalation',
+  SUPPLIER_COORDINATION: 'supplier-coordination',
+  TENANT_COORDINATION: 'tenant-coordination'
+});
+
+export const AUTOMATED_DECISION_FIELDS = Object.freeze({
+  PURPOSE: 'purpose',
+  DATA: 'data',
+  LOGIC_OR_MEANINGFUL_EXPLANATION: 'logic-or-meaningful-explanation',
+  AI_INVOLVEMENT: 'ai-involvement',
+  IMPACT: 'impact',
+  ACCURACY: 'accuracy',
+  FAIRNESS: 'fairness',
+  HUMAN_OVERSIGHT: 'human-oversight',
+  CHALLENGE: 'challenge',
+  RECOURSE: 'recourse',
+  EVIDENCE: 'evidence',
+  MONITORING: 'monitoring',
+  JURISDICTIONAL_APPLICABILITY: 'jurisdictional-applicability'
+});
+
+export const AI_DATA_GOVERNANCE_CATEGORIES = Object.freeze({
+  TRAINING_DATA: 'training-data',
+  FINE_TUNING_DATA: 'fine-tuning-data',
+  EVALUATION_DATA: 'evaluation-data',
+  PROMPT_DATA: 'prompt-data',
+  CONTEXT: 'context',
+  TOOL_RESULTS: 'tool-results',
+  OUTPUTS: 'outputs',
+  EMBEDDINGS: 'embeddings',
+  AGENT_MEMORY: 'agent-memory',
+  CONVERSATION_HISTORY: 'conversation-history',
+  FEEDBACK: 'feedback',
+  SYNTHETIC_DATA: 'synthetic-data',
+  INFERRED_DATA: 'inferred-data',
+  PROVIDER_RETENTION: 'provider-retention'
+});
+
+export const AI_PROVIDER_DATA_USE_FIELDS = Object.freeze({
+  PURPOSE: 'purpose',
+  DATA_CLASSIFICATION: 'data-classification',
+  TENANT_AUTHORIZATION: 'tenant-authorization',
+  PROVIDER_TERMS: 'provider-terms',
+  PROVIDER_RETENTION: 'provider-retention',
+  TRAINING_USE: 'training-use',
+  LOCATION: 'location',
+  SECURITY: 'security',
+  SUBPROCESSORS: 'subprocessors',
+  MODEL_BEHAVIOR: 'model-behavior',
+  LOGGING: 'logging',
+  DELETION: 'deletion',
+  INCIDENT_RESPONSE: 'incident-response',
+  EXIT: 'exit'
+});
+
+export const AGENT_MEMORY_GOVERNANCE_FIELDS = Object.freeze({
+  PURPOSE: 'purpose',
+  SCOPE: 'scope',
+  TENANT: 'tenant',
+  PROPERTY: 'property',
+  DURATION: 'duration',
+  RETRIEVAL: 'retrieval',
+  MODIFICATION: 'modification',
+  DELETION: 'deletion',
+  PROVENANCE: 'provenance',
+  CONFIDENCE: 'confidence',
+  ACCESS: 'access',
+  CROSS_SESSION_USE: 'cross-session-use',
+  CROSS_AGENT_SHARING: 'cross-agent-sharing',
+  EVIDENCE: 'evidence'
+});
+
+export const TENANT_DATA_GOVERNANCE_FIELDS = Object.freeze({
+  TENANT_OWNERSHIP: 'tenant-ownership',
+  ENTERPRISE_PROCESSING_RESPONSIBILITIES: 'enterprise-processing-responsibilities',
+  TENANT_ADMINISTRATORS: 'tenant-administrators',
+  TENANT_PURPOSES: 'tenant-purposes',
+  TENANT_ACCESS: 'tenant-access',
+  PROPERTY_DELEGATION: 'property-delegation',
+  INTEGRATIONS: 'integrations',
+  AI_USE: 'ai-use',
+  SHARING: 'sharing',
+  RETENTION: 'retention',
+  EXPORT: 'export',
+  DELETION: 'deletion',
+  EVIDENCE: 'evidence',
+  EXIT: 'exit'
+});
+
+export const CROSS_TENANT_DATA_USE_CONDITIONS = Object.freeze({
+  AUTHORIZED_PURPOSE: 'authorized-purpose',
+  GOVERNED_AGGREGATION_OR_ANONYMIZATION: 'governed-aggregation-or-anonymization',
+  CONTRACT_AND_POLICY_ALLOWANCE: 'contract-and-policy-allowance',
+  PRIVACY_AND_SECURITY_RISK_ASSESSMENT: 'privacy-and-security-risk-assessment',
+  TENANT_BOUNDARY_PROTECTION: 'tenant-boundary-protection',
+  RE_IDENTIFICATION_RISK_CONTROL: 're-identification-risk-control',
+  EVIDENCE_RETENTION: 'evidence-retention',
+  APPROPRIATE_TRANSPARENCY: 'appropriate-transparency'
+});
+
+export const PROPERTY_DATA_GOVERNANCE_FIELDS = Object.freeze({
+  PROPERTY_OWNER: 'property-owner',
+  TENANT_RELATIONSHIP: 'tenant-relationship',
+  LOCAL_DATA: 'local-data',
+  GUEST_RECORDS: 'guest-records',
+  STAFF_ACCESS: 'staff-access',
+  PHYSICAL_RECORDS: 'physical-records',
+  MANUAL_OPERATIONS: 'manual-operations',
+  LOCAL_INTEGRATIONS: 'local-integrations',
+  RETENTION: 'retention',
+  LOCAL_OBLIGATIONS: 'local-obligations',
+  INCIDENT_RESPONSE: 'incident-response',
+  CONTINUITY: 'continuity',
+  RECONCILIATION: 'reconciliation'
+});
+
+export const SUPPLIER_PROCESSOR_GOVERNANCE_FIELDS = Object.freeze({
+  DUE_DILIGENCE: 'due-diligence',
+  PURPOSE: 'purpose',
+  DATA_SCOPE: 'data-scope',
+  ROLE: 'role',
+  CONTRACT: 'contract',
+  SECURITY: 'security',
+  PRIVACY: 'privacy',
+  LOCATION: 'location',
+  SUBPROCESSORS: 'subprocessors',
+  ACCESS: 'access',
+  RETENTION: 'retention',
+  DELETION: 'deletion',
+  INCIDENT_NOTIFICATION: 'incident-notification',
+  EVIDENCE: 'evidence',
+  AUDIT_OR_ASSURANCE: 'audit-or-assurance',
+  CHANGE: 'change',
+  EXIT: 'exit'
+});
+
+export const PRIVACY_RISK_HARMS = Object.freeze({
+  UNAUTHORIZED_ACCESS: 'unauthorized-access',
+  UNFAIR_USE: 'unfair-use',
+  LACK_OF_TRANSPARENCY: 'lack-of-transparency',
+  EXCESSIVE_COLLECTION: 'excessive-collection',
+  INACCURATE_DATA: 'inaccurate-data',
+  SENSITIVE_INFERENCE: 'sensitive-inference',
+  RE_IDENTIFICATION: 're-identification',
+  UNWANTED_DISCLOSURE: 'unwanted-disclosure',
+  INDEFINITE_RETENTION: 'indefinite-retention',
+  LOSS_OF_CHOICE: 'loss-of-choice',
+  AUTOMATED_DECISIONS: 'automated-decisions',
+  CROSS_BORDER_TRANSFER: 'cross-border-transfer',
+  TENANT_LEAKAGE: 'tenant-leakage',
+  SURVEILLANCE: 'surveillance',
+  MANIPULATION: 'manipulation',
+  EXCLUSION: 'exclusion'
+});
+
+export const PRIVACY_IMPACT_ASSESSMENT_TRIGGERS = Object.freeze({
+  NEW_DATA_PURPOSE: 'new-data-purpose',
+  SENSITIVE_DATA: 'sensitive-data',
+  LARGE_SCALE_PROCESSING: 'large-scale-processing',
+  AI_INFERENCE: 'ai-inference',
+  CONSEQUENTIAL_AUTOMATED_DECISION: 'consequential-automated-decision',
+  NEW_PROVIDER: 'new-provider',
+  CROSS_BORDER_TRANSFER: 'cross-border-transfer',
+  CROSS_TENANT_USE: 'cross-tenant-use',
+  NEW_MONITORING: 'new-monitoring',
+  NEW_INTEGRATION: 'new-integration',
+  MATERIAL_DATA_COMBINATION: 'material-data-combination',
+  NEW_PROPERTY_OR_JURISDICTION: 'new-property-or-jurisdiction',
+  HIGH_RISK_PROCESSING: 'high-risk-processing'
+});
+
+export const PRIVACY_IMPACT_ASSESSMENT_FIELDS = Object.freeze({
+  PURPOSE: 'purpose',
+  NECESSITY: 'necessity',
+  PROPORTIONALITY: 'proportionality',
+  DATA_FLOWS: 'data-flows',
+  INDIVIDUALS: 'individuals',
+  RISKS: 'risks',
+  CONTROLS: 'controls',
+  RESIDUAL_RISK: 'residual-risk',
+  CONSULTATION: 'consultation',
+  DECISION: 'decision',
+  REVIEW: 'review'
+});
+
+export const DATA_PROTECTION_BY_DESIGN_CONTROLS = Object.freeze({
+  MINIMIZATION: 'minimization',
+  PURPOSE_CONSTRAINTS: 'purpose-constraints',
+  DEFAULT_RESTRICTIONS: 'default-restrictions',
+  TENANT_ISOLATION: 'tenant-isolation',
+  LEAST_PRIVILEGE: 'least-privilege',
+  ENCRYPTION: 'encryption',
+  PSEUDONYMIZATION: 'pseudonymization',
+  RETENTION_AUTOMATION: 'retention-automation',
+  RIGHTS_SUPPORT: 'rights-support',
+  EVIDENCE: 'evidence',
+  SAFE_AI_CONTEXT: 'safe-ai-context',
+  SECURE_SHARING: 'secure-sharing',
+  DELETION: 'deletion',
+  SUPPLIER_CONTROLS: 'supplier-controls'
+});
+
+export const DATA_INCIDENT_TYPES = Object.freeze({
+  LOSS: 'loss',
+  CORRUPTION: 'corruption',
+  UNAUTHORIZED_ACCESS: 'unauthorized-access',
+  UNAUTHORIZED_DISCLOSURE: 'unauthorized-disclosure',
+  INCORRECT_USE: 'incorrect-use',
+  PRIVACY_BREACH: 'privacy-breach',
+  RIGHTS_FAILURE: 'rights-failure',
+  RETENTION_FAILURE: 'retention-failure',
+  DELETION_FAILURE: 'deletion-failure',
+  CROSS_TENANT_EXPOSURE: 'cross-tenant-exposure',
+  AI_LEAKAGE: 'ai-leakage',
+  SUPPLIER_INCIDENT: 'supplier-incident'
+});
+
+export const DATA_INCIDENT_ASSESSMENT_FIELDS = Object.freeze({
+  DATA: 'data',
+  CLASSIFICATION: 'classification',
+  INDIVIDUALS_OR_ENTITIES: 'individuals-or-entities',
+  TENANTS_AND_PROPERTIES: 'tenants-and-properties',
+  SCOPE: 'scope',
+  CAUSE: 'cause',
+  EXPOSURE: 'exposure',
+  SECURITY: 'security',
+  PRIVACY_HARM: 'privacy-harm',
+  DATA_INTEGRITY: 'data-integrity',
+  JURISDICTION: 'jurisdiction',
+  NOTIFICATION_OBLIGATION: 'notification-obligation',
+  CONTAINMENT: 'containment',
+  RECOVERY: 'recovery',
+  EVIDENCE: 'evidence',
+  REMEDIATION: 'remediation'
+});
+
+export const DATA_GOVERNANCE_EVIDENCE_TYPES = Object.freeze({
+  OWNERSHIP: 'ownership',
+  CLASSIFICATION: 'classification',
+  PURPOSE: 'purpose',
+  ACCESS_DECISIONS: 'access-decisions',
+  DATA_FLOWS: 'data-flows',
+  LINEAGE: 'lineage',
+  QUALITY: 'quality',
+  SHARING: 'sharing',
+  TRANSFER: 'transfer',
+  RETENTION: 'retention',
+  DELETION: 'deletion',
+  RIGHTS_REQUESTS: 'rights-requests',
+  AI_USE: 'ai-use',
+  SUPPLIER_PROCESSING: 'supplier-processing',
+  ASSESSMENTS: 'assessments',
+  INCIDENTS: 'incidents',
+  EXCEPTIONS: 'exceptions',
+  TRAINING: 'training',
+  ASSURANCE: 'assurance'
+});
+
+export const PRIVACY_DATA_ASSURANCE_AREAS = Object.freeze({
+  INVENTORY_COMPLETENESS: 'inventory-completeness',
+  OWNERSHIP: 'ownership',
+  CLASSIFICATION: 'classification',
+  PURPOSE: 'purpose',
+  MINIMIZATION: 'minimization',
+  ACCESS: 'access',
+  QUALITY: 'quality',
+  LINEAGE: 'lineage',
+  SHARING: 'sharing',
+  RESIDENCY: 'residency',
+  RETENTION: 'retention',
+  DELETION: 'deletion',
+  RIGHTS: 'rights',
+  AI_USE: 'ai-use',
+  SUPPLIER_CONTROLS: 'supplier-controls',
+  TENANT_ISOLATION: 'tenant-isolation',
+  EVIDENCE: 'evidence',
+  FINDINGS: 'findings',
+  REMEDIATION: 'remediation'
+});
+
+export const DATA_GOVERNANCE_MEASURES = Object.freeze({
+  DATA_DOMAINS_WITH_OWNERS: 'data-domains-with-owners',
+  CLASSIFICATION_COMPLETENESS: 'classification-completeness',
+  PURPOSE_COVERAGE: 'purpose-coverage',
+  ACCESS_REVIEW_COMPLETION: 'access-review-completion',
+  QUALITY_RULE_ATTAINMENT: 'quality-rule-attainment',
+  LINEAGE_COVERAGE: 'lineage-coverage',
+  RETENTION_COMPLIANCE: 'retention-compliance',
+  DELETION_COMPLETION: 'deletion-completion',
+  RIGHTS_REQUEST_TIMELINESS: 'rights-request-timeliness',
+  PRIVACY_ASSESSMENTS: 'privacy-assessments',
+  DATA_INCIDENTS: 'data-incidents',
+  CROSS_TENANT_EXCEPTIONS: 'cross-tenant-exceptions',
+  SUPPLIER_COVERAGE: 'supplier-coverage',
+  AI_DATA_USE_REVIEWS: 'ai-data-use-reviews',
+  DATA_FINDINGS: 'data-findings',
+  REMEDIATION_AGE: 'remediation-age'
+});
+
+export const PRIVACY_DATA_GOVERNANCE_QUALITY_ATTRIBUTES = Object.freeze({
+  PRIVACY: 'privacy',
+  SECURITY: 'security',
+  INTEGRITY: 'integrity',
+  CONFIDENTIALITY: 'confidentiality',
+  AVAILABILITY: 'availability',
+  ACCURACY: 'accuracy',
+  TRACEABILITY: 'traceability',
+  ACCOUNTABILITY: 'accountability',
+  TRANSPARENCY: 'transparency',
+  PORTABILITY: 'portability',
+  SCALABILITY: 'scalability',
+  TENANT_ISOLATION: 'tenant-isolation',
+  ENTERPRISE_TRUST: 'enterprise-trust'
+});
+
+export const PRIVACY_DATA_GOVERNANCE_ARCHITECTURAL_RULES = Object.freeze({
+  ASSIGN_ACCOUNTABLE_DATA_OWNERS: 'assign-accountable-data-owners',
+  DEFINE_AUTHORIZED_PURPOSE_BEFORE_PROCESSING: 'define-authorized-purpose-before-processing',
+  MINIMIZE_COLLECTION_USE_SHARING_AND_RETENTION: 'minimize-data-collection-use-sharing-and-retention',
+  CLASSIFY_DATA_CONSISTENTLY: 'classify-data-consistently',
+  PROTECT_SENSITIVE_AND_PERSONAL_DATA: 'protect-sensitive-and-personal-data',
+  ENFORCE_LEAST_PRIVILEGE_AND_PURPOSE_AWARE_ACCESS: 'enforce-least-privilege-and-purpose-aware-access',
+  PRESERVE_TENANT_AND_PROPERTY_BOUNDARIES: 'preserve-tenant-and-property-boundaries',
+  MAINTAIN_QUALITY_APPROPRIATE_TO_PURPOSE: 'maintain-quality-appropriate-to-purpose',
+  MAINTAIN_MATERIAL_METADATA_AND_LINEAGE: 'maintain-material-metadata-and-lineage',
+  GOVERN_DERIVED_AND_INFERRED_DATA: 'govern-derived-and-inferred-data',
+  CONTROL_SHARING_SUPPLIERS_RESIDENCY_AND_CROSS_BORDER_MOVEMENT: 'control-sharing-suppliers-residency-and-cross-border-movement',
+  DEFINE_RETENTION_HOLD_DELETION_RETURN_AND_EXIT: 'define-retention-hold-deletion-return-and-exit',
+  SUPPORT_APPLICABLE_INDIVIDUAL_RIGHTS: 'support-applicable-individual-rights',
+  GOVERN_AUTOMATED_DECISIONS_AND_AI_DATA_LIFECYCLES: 'govern-automated-decisions-and-ai-data-throughout-lifecycles',
+  ASSESS_HIGH_RISK_PROCESSING_BEFORE_PRODUCTION: 'assess-high-risk-processing-before-production',
+  INTEGRATE_PRIVACY_SECURITY_AND_DATA_INCIDENT_RESPONSE: 'integrate-privacy-security-and-data-incident-response',
+  DESIGN_TRUSTWORTHY_EVIDENCE_INTO_DATA_OPERATIONS: 'design-trustworthy-evidence-into-data-operations',
+  AVOID_LEGAL_INTERPRETATION_WITHOUT_QUALIFIED_AUTHORITY: 'avoid-interpreting-legal-requirements-without-qualified-authority',
+  REMAIN_VENDOR_AND_TECHNOLOGY_NEUTRAL: 'remain-vendor-neutral-and-technology-independent'
+});
+
+export const FUTURE_PRIVACY_DATA_GOVERNANCE_CAPABILITIES = Object.freeze({
+  SEMANTIC_DATA_INVENTORIES: 'semantic-data-inventories',
+  AUTOMATED_CLASSIFICATION: 'automated-classification',
+  PURPOSE_AWARE_AUTHORIZATION: 'purpose-aware-authorization',
+  MACHINE_READABLE_PROCESSING_RECORDS: 'machine-readable-processing-records',
+  CONTINUOUS_LINEAGE: 'continuous-lineage',
+  PRIVACY_PRESERVING_ANALYTICS: 'privacy-preserving-analytics',
+  FEDERATED_LEARNING: 'federated-learning',
+  SYNTHETIC_DATA_GOVERNANCE: 'synthetic-data-governance',
+  AUTOMATED_RETENTION: 'automated-retention',
+  VERIFIABLE_DELETION: 'verifiable-deletion',
+  DYNAMIC_RESIDENCY_CONTROL: 'dynamic-residency-control',
+  AI_ASSISTED_RIGHTS_HANDLING: 'ai-assisted-rights-handling',
+  CONTINUOUS_PRIVACY_RISK_MONITORING: 'continuous-privacy-risk-monitoring',
+  DATA_GOVERNANCE_DIGITAL_TWINS: 'data-governance-digital-twins',
+  CROSS_PROPERTY_PRIVACY_INTELLIGENCE: 'cross-property-privacy-intelligence-with-protected-aggregation'
 });
