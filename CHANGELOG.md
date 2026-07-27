@@ -1983,3 +1983,20 @@ Version: 0.111.0
 
 Status: Architecture Synchronization
 Version: 0.112.0
+
+---
+
+## [0.113.0] - ARCH-013 Developer Platform Overview
+
+### Added
+- Developer platform objective, user, landscape, capability-domain, control-plane, control-loop, product, paved-path, template, self-service, platform-service, metadata, architecture-integration, human/AI journey, authority, attribution, build/artifact, quality, environment, delivery, readiness, portal, catalog, documentation, tenant/property, security, governance, feedback, measure, relationship, boundary, quality-attribute, architectural-rule, and future-capability constants.
+- Immutable contract for Developer Platform Overview profiles.
+- Developer Platform Overview descriptor for documented metadata, profile validation, and architecture assertion.
+- Dependency-injection registration through `addDeveloperPlatform`.
+- Unit tests for overview metadata, validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Developer Platform Overview as a technology-independent, vendor-neutral internal product architecture for governed self-service, architecture-driven development, paved paths, explicit AI-agent authority, tenant/property boundaries, operational readiness, evidence, and outcome-based measurement without selecting tools or replacing architecture, ADRs, code review, or Enterprise Operations.
+
+Status: Developer Platform Architecture
+Version: 0.113.0

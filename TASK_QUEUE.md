@@ -119,7 +119,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-012-08 Assurance, Audit, and Evidence`
 - Completed: `ARCH-012-09 Exceptions, Issues, and Remediation`
 - Completed: `ARCH-012-10 Future Governance Evolution`
-- Next: `ARCH-013-01 Developer Platform Overview`
+- Completed: `ARCH-013-01 Developer Platform Overview`
+- Next: `ARCH-013-02 Developer Experience and Journeys`
 
 ## Notes
 
