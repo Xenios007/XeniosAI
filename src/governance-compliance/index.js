@@ -357,12 +357,60 @@ export {
   UNAUTHORIZED_CONDITION_ACTIONS,
   EXTERNAL_EVIDENCE_PACKAGE_REQUIREMENTS,
   FULL_POPULATION_TESTING_VALIDATIONS,
-  AI_EVIDENCE_ASSISTANCE_USES
+  AI_ASSISTED_GOVERNANCE_USES,
+  AI_EVIDENCE_ASSISTANCE_USES,
+  AUTOMATED_GOVERNANCE_FAILURE_HANDLING,
+  AUTONOMOUS_GOVERNANCE_EXAMPLES,
+  AUTONOMOUS_GOVERNANCE_SUITABILITY_CRITERIA,
+  AUTONOMOUS_REMEDIATION_ACTIONS,
+  AUTONOMOUS_REMEDIATION_FIELDS,
+  CONTINUOUS_ASSURANCE_ADAPTATION_FACTORS,
+  CONTINUOUS_CONTROL_VERIFICATION_TARGETS,
+  CONTROL_DRIFT_SOURCES,
+  DYNAMIC_APPLICABILITY_CONTEXTS,
+  DYNAMIC_AUDIT_PLANNING_FACTORS,
+  FEDERATED_TENANT_GOVERNANCE_REQUIREMENTS,
+  FUTURE_CONTINUOUS_COMPLIANCE_COMPONENTS,
+  FUTURE_EXECUTABLE_POLICY_USES,
+  FUTURE_GOVERNANCE_ARCHITECTURAL_RULES,
+  FUTURE_GOVERNANCE_ARCHITECTURE_RELATIONSHIPS,
+  FUTURE_GOVERNANCE_CAPABILITY_ROADMAP_SEQUENCE,
+  FUTURE_GOVERNANCE_EVOLUTION_PRINCIPLES,
+  FUTURE_GOVERNANCE_EVOLUTION_RISKS,
+  FUTURE_GOVERNANCE_EXPLAINABILITY_FIELDS,
+  FUTURE_GOVERNANCE_LONG_TERM_QUALITY_ATTRIBUTES,
+  FUTURE_GOVERNANCE_TRANSITION_CRITERIA,
+  FUTURE_GOVERNANCE_TRUST_FACTORS,
+  FUTURE_GOVERNANCE_VISION_CAPABILITIES,
+  FUTURE_POLICY_CONFLICT_TYPES,
+  GOVERNANCE_AGENT_REQUIREMENTS,
+  GOVERNANCE_AGENT_SPECIALIZATIONS,
+  GOVERNANCE_DIGITAL_TWIN_USES,
+  GOVERNANCE_EVOLUTION_DRIVERS,
+  GOVERNANCE_EVOLUTION_LIFECYCLE_STAGES,
+  GOVERNANCE_EVOLUTION_MATURITY_STAGES,
+  GOVERNANCE_HUMAN_STRENGTHS,
+  GOVERNANCE_KNOWLEDGE_GRAPH_STAGES,
+  GOVERNANCE_MACHINE_STRENGTHS,
+  GOVERNANCE_MEMORY_ITEMS,
+  GOVERNANCE_SELF_IMPROVEMENT_TARGETS,
+  MACHINE_READABLE_ATTESTATION_FIELDS,
+  MACHINE_READABLE_OBLIGATION_FIELDS,
+  OBLIGATION_CHANGE_INTELLIGENCE_CAPABILITIES,
+  POLICY_SIMULATION_FACTORS,
+  PREDICTIVE_RISK_GOVERNANCE_SIGNALS,
+  PRESCRIPTIVE_RISK_RECOMMENDATIONS,
+  PRIVACY_PRESERVING_ASSURANCE_METHODS,
+  PROPERTY_GOVERNANCE_INTELLIGENCE_CAPABILITIES,
+  REAL_TIME_GOVERNANCE_POSTURE_FIELDS,
+  SEMANTIC_GOVERNANCE_CONCEPTS,
+  SUPPLIER_PLUGIN_GOVERNANCE_CAPABILITIES
 } from './constants.js';
 export { AiEthicalGovernanceProfile } from './contracts/ai-ethical-governance-profile.js';
 export { AssuranceAuditEvidenceProfile } from './contracts/assurance-audit-evidence-profile.js';
 export { ComplianceControlFrameworkProfile } from './contracts/compliance-control-framework-profile.js';
 export { ExceptionsIssuesRemediationProfile } from './contracts/exceptions-issues-remediation-profile.js';
+export { FutureGovernanceEvolutionProfile } from './contracts/future-governance-evolution-profile.js';
 export { PrivacyDataGovernanceProfile } from './contracts/privacy-data-governance-profile.js';
 export { GovernanceOperatingModelProfile } from './contracts/governance-operating-model-profile.js';
 export { GovernanceComplianceOverviewProfile } from './contracts/governance-compliance-overview-profile.js';
@@ -373,6 +421,7 @@ export { AiEthicalGovernanceDescriptor } from './ai-ethical-governance/ai-ethica
 export { AssuranceAuditEvidenceDescriptor } from './assurance-audit-evidence/assurance-audit-evidence-descriptor.js';
 export { ComplianceControlFrameworkDescriptor } from './compliance-control-framework/compliance-control-framework-descriptor.js';
 export { ExceptionsIssuesRemediationDescriptor } from './exceptions-issues-remediation/exceptions-issues-remediation-descriptor.js';
+export { FutureGovernanceEvolutionDescriptor } from './future-governance-evolution/future-governance-evolution-descriptor.js';
 export { PrivacyDataGovernanceDescriptor } from './privacy-data-governance/privacy-data-governance-descriptor.js';
 export { EnterpriseRiskManagementDescriptor } from './enterprise-risk-management/enterprise-risk-management-descriptor.js';
 export { GovernanceOperatingModelDescriptor } from './operating-model/governance-operating-model-descriptor.js';

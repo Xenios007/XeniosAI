@@ -168,5 +168,6 @@ The repository currently includes automated unit tests for:
 - `ARCH-012-07 AI and Ethical Governance` in `tests/governance-compliance/`
 - `ARCH-012-08 Assurance, Audit, and Evidence` in `tests/governance-compliance/`
 - `ARCH-012-09 Exceptions, Issues, and Remediation` in `tests/governance-compliance/`
+- `ARCH-012-10 Future Governance Evolution` in `tests/governance-compliance/`
 
 These tests validate reusable platform capabilities and channel-facing behavior without introducing business logic.
