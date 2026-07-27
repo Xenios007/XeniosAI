@@ -3,6 +3,7 @@ import { AiEthicalGovernanceDescriptor } from './ai-ethical-governance/ai-ethica
 import { AssuranceAuditEvidenceDescriptor } from './assurance-audit-evidence/assurance-audit-evidence-descriptor.js';
 import { ComplianceControlFrameworkDescriptor } from './compliance-control-framework/compliance-control-framework-descriptor.js';
 import { EnterpriseRiskManagementDescriptor } from './enterprise-risk-management/enterprise-risk-management-descriptor.js';
+import { ExceptionsIssuesRemediationDescriptor } from './exceptions-issues-remediation/exceptions-issues-remediation-descriptor.js';
 import { GovernanceOperatingModelDescriptor } from './operating-model/governance-operating-model-descriptor.js';
 import { GovernanceComplianceOverviewDescriptor } from './overview/governance-compliance-overview-descriptor.js';
 import { PolicyArchitectureDescriptor } from './policy-architecture/policy-architecture-descriptor.js';
@@ -21,6 +22,7 @@ export function addGovernanceCompliance(services) {
   services.registerSingleton('PrivacyDataGovernanceDescriptor', () => new PrivacyDataGovernanceDescriptor());
   services.registerSingleton('AiEthicalGovernanceDescriptor', () => new AiEthicalGovernanceDescriptor());
   services.registerSingleton('AssuranceAuditEvidenceDescriptor', () => new AssuranceAuditEvidenceDescriptor());
+  services.registerSingleton('ExceptionsIssuesRemediationDescriptor', () => new ExceptionsIssuesRemediationDescriptor());
 
   return services;
 }

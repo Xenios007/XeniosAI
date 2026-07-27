@@ -1936,3 +1936,20 @@ Version: 0.108.0
 
 Status: Governance and Compliance Architecture
 Version: 0.109.0
+
+---
+
+## [0.110.0] - ARCH-012 Exceptions, Issues, and Remediation
+
+### Added
+- Exceptions, issues, remediation, containment, root-cause, corrective-action, preventive-action, interim-control, retest, closure, risk-acceptance, reopening, systemic-issue, unauthorized-condition, reporting, measure, governance, quality-attribute, architectural-rule, and future-capability constants.
+- Immutable contract for exceptions, issues, and remediation profiles.
+- Exceptions, Issues, and Remediation descriptor for documented metadata, profile validation, and architecture assertion.
+- Dependency-injection registration through `addGovernanceCompliance`.
+- Unit tests for exceptions/issues/remediation metadata, validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Exceptions, Issues, and Remediation as a technology-neutral, vendor-neutral governance architecture for temporary authorized exceptions, accountable issue ownership, evidence-based remediation closure, overdue risk decisions, and recurring/systemic escalation without prescribing case-management tools, audit platforms, ticketing systems, risk products, or regulatory frameworks.
+
+Status: Governance and Compliance Architecture
+Version: 0.110.0
