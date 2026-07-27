@@ -1970,3 +1970,16 @@ Version: 0.110.0
 
 Status: Governance and Compliance Architecture
 Version: 0.111.0
+
+---
+
+## [0.112.0] - Pull ARCH-013 Developer Platform Architecture
+
+### Added
+- `architecture/013-developer-platform` architecture package from `origin/main`, including chapters `ARCH-013-01` through `ARCH-013-10` and related Mermaid diagrams.
+
+### Updated
+- Local implementation tracking now points to `ARCH-013-01 Developer Platform Overview` as the next architecture module.
+
+Status: Architecture Synchronization
+Version: 0.112.0

@@ -1,0 +1,51 @@
+flowchart TD
+    A["Enterprise architecture, ADRs, security, operations, and governance"] --> B["Developer Experience Plane"]
+    B --> C["Developer Control Plane"]
+    C --> D["Execution Capabilities"]
+    D --> E["Governed Platform Resources"]
+    E --> F["Services, applications, workflows, agents, integrations, tenants, and properties"]
+    F --> G["Operations, evidence, outcomes, and feedback"]
+    G --> A
+
+    subgraph ACTORS["Authorized contributors"]
+        H["Human developers, reviewers, owners, and operators"]
+        I["AI implementation agents with human sponsors"]
+    end
+
+    H --> B
+    I --> B
+
+    subgraph EXPERIENCE["Experience Plane capabilities"]
+        B1["Portal, catalog, documentation, search, support, and self-service"]
+    end
+
+    B --> B1
+    B1 --> C
+
+    subgraph CONTROL["Control Plane capabilities"]
+        C1["Identity, context, lifecycle, policy, orchestration, status, and evidence correlation"]
+    end
+
+    C --> C1
+    C1 --> D
+
+    subgraph EXECUTION["Execution capabilities"]
+        D1["Source and collaboration"]
+        D2["Build, dependency, artifact, test, and quality"]
+        D3["Environment, configuration, release, and delivery"]
+    end
+
+    D --> D1
+    D --> D2
+    D --> D3
+
+    D1 --> E
+    D2 --> E
+    D3 --> E
+
+    subgraph RESOURCES["Governed resources"]
+        E1["Projects, repositories, revisions, artifacts, environments, releases, documentation, and evidence"]
+    end
+
+    E --> E1
+    E1 --> F

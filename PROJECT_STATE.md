@@ -37,8 +37,8 @@ Update this file after every successful implementation session.
 ## Implementation Coverage
 
 - Completed through: `ARCH-012-10 Future Governance Evolution`
-- Next documented implementation module: none available locally
-- Reason: `ARCH-013 Developer Platform` is the next architecture dependency, but no `architecture/013-*` directory is present locally.
+- Next documented implementation module: `ARCH-013-01 Developer Platform Overview`
+- Reason: `architecture/013-developer-platform/01-developer-platform-overview.md` is available locally.
 
 ## Latest Verification
 
@@ -52,7 +52,7 @@ Update this file after every successful implementation session.
 ## Current Technical Debt
 
 - Pre-existing changelog entries label Observability Overview/Principles as `ARCH-009`, while their source documents are `ARCH-010-01` and `ARCH-010-02`.
-- `ARCH-013` through `ARCH-020` are referenced by `ARCH-011-10` and `ARCH-012-10` but are not present locally under `/architecture`.
+- `ARCH-014` through `ARCH-020` are referenced by `ARCH-011-10` and `ARCH-012-10` but are not present locally under `/architecture`.
 - `ARCH-014 AI Agent Framework` is referenced by `ARCH-012-07` and `ARCH-012-10` but is not present locally under `/architecture`.
 
 ## Session Rules
@@ -69,4 +69,4 @@ Architecture documents must not be changed during implementation unless explicit
 
 ## Recommended Next Action
 
-Recommended next architecture module: `ARCH-013 Developer Platform` after pulling its architecture locally.
+Recommended next architecture module: `ARCH-013-01 Developer Platform Overview`.

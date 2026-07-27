@@ -1,0 +1,32 @@
+flowchart TD
+    A["Human defines intent, accountable outcome, and decision boundaries"] --> B["Delegation contract"]
+    B --> C["AI agent resolves identity, repository, task, architecture, tools, data, and scope"]
+    C --> D["Inspect existing implementation, tests, dependencies, and unowned changes"]
+    D --> E["Plan and perform bounded isolated changes"]
+    E --> F["Build, test, evaluate, and prepare attributable evidence"]
+    F --> G{"Stop condition or human decision required?"}
+
+    G -- "Yes" --> H["Stop safely and report conflict, risk, uncertainty, partial effects, and required decision"]
+    H --> I["Human clarifies, authorizes, redirects, remediates, or cancels"]
+    I --> B
+
+    G -- "No" --> J["Prepare reviewable change, assumptions, tests, evidence, and outcome report"]
+    J --> K["Human or independently authorized reviewer evaluates architecture, quality, security, and risk"]
+    K --> L{"Approved within scope?"}
+
+    L -- "No" --> M["Request remediation or reject"]
+    M --> E
+    L -- "Yes" --> N["Authorized commit, integration, release, or delivery"]
+    N --> O["Verify developer, service, tenant, property, and business outcomes"]
+    O --> P["Operate, learn, and improve delegation, controls, paved paths, and tests"]
+    P --> A
+
+    subgraph GUARDRAILS["Continuous guardrails"]
+        Q["Least privilege and tenant/property isolation"]
+        R["Secret, network, and tool restrictions"]
+        S["Architecture authority, audit, evidence, revocation, and human accountability"]
+    end
+
+    Q --> C
+    R --> C
+    S --> C
