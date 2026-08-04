@@ -1,6 +1,6 @@
 # XeniosAI Architecture Index
 
-**Version:** 1.0
+**Version:** 1.1
 
 **Status:** Active
 
@@ -25,7 +25,7 @@ The index prevents module-name drift, duplicated scope, skipped architecture, an
 Every module must preserve:
 
 * Architecture-Driven Development
-* Business-first and hospitality-first design
+* Business-first design with an industry-neutral platform core and hospitality-first reference validation
 * TOGAF alignment
 * Domain-Driven Design
 * Clean Architecture
@@ -50,7 +50,7 @@ Architecture modules define business capabilities, boundaries, contracts, contro
 | --- | --- | --- | --- |
 | ARCH-001–010 | Core Platform | Establish the platform's structure, services, intelligence, information flow, domain, deployment, security, integration, and observability foundations. | Complete |
 | ARCH-011–020 | Application Platform | Turn the core into an operable, governed, programmable, multi-tenant, extensible application platform with reference implementations. | Complete |
-| ARCH-021–030 | Enterprise Features | Deliver enterprise hospitality capabilities and business outcomes on top of the application platform. | Planned |
+| ARCH-021–030 | Enterprise Features | Deliver reusable enterprise capabilities, governed intelligent experiences, and composable industry solutions on top of the application platform. | Planned |
 | ARCH-031–040 | Developer Ecosystem | Enable developers, partners, and solution providers to discover, build, validate, publish, operate, and federate XeniosAI solutions. | Planned |
 
 ---
@@ -95,93 +95,107 @@ The Application Platform converts core capabilities into governed operational se
 
 # Enterprise Features — ARCH-021–030
 
-Enterprise Features define business-facing capabilities. They consume platform services and must not duplicate the engines, controls, or infrastructure defined by ARCH-001–020.
+Enterprise Features define reusable business-facing capabilities. They consume the engines, services, contracts, controls, and infrastructure established by ARCH-001–020 without duplicating them.
 
-## ARCH-021 — Enterprise Identity & Access Management
+The Enterprise Features portfolio is industry neutral at its core. Hospitality remains the first reference and validation domain, but property, guest, reservation, and stay-specific semantics belong in governed industry solution packs rather than in the reusable platform kernel.
 
-**Directory:** `architecture/021-enterprise-identity-access-management/`
+## ARCH-021 — Experience, Conversation & Frontend Architecture
 
-Defines workforce, guest, partner, service, and agent identity lifecycles; federation; access packages; delegated administration; privileged access; consent; and identity governance.
+**Directory:** `architecture/021-experience-conversation-frontend/`
 
-ARCH-021 consumes the security controls of ARCH-008 and tenant boundaries of ARCH-018. It does not redefine cryptography, zero trust, or platform authorization primitives.
+Defines the user-facing architecture for conversational, administrative, operational, customer, partner, web, mobile, messaging, voice, kiosk, and future experiences.
 
-## ARCH-022 — Omnichannel Experience & Engagement
+Its scope includes conversation and chat experience; public customer experience; tenant administration; staff workspaces; streaming and tool-progress presentation; human handoff; confirmation before consequential actions; feedback capture; conversation history and search; responsive behavior; accessibility; localization; design tokens; reusable components; tenant branding; frontend composition and state; UI extension slots; and frontend security, observability, performance, offline behavior, and recovery.
 
-**Directory:** `architecture/022-omnichannel-experience-engagement/`
+ARCH-021 builds on the Experience and Conversation Layers in ARCH-002 and the orchestration lifecycle in ARCH-004. Frontends render capabilities and collect intent; they do not own authorization, business rules, pricing, availability, transactions, workflow state, or authoritative data.
 
-Defines consistent guest, staff, administrator, and partner journeys across web, mobile, messaging, voice, contact-center, kiosk, and future channels, including accessibility, localization, handoff, notification, and experience continuity.
+## ARCH-022 — Identity, Organizations & Access
 
-ARCH-022 builds on the Experience Layer in ARCH-002. It defines enterprise journeys and outcomes rather than low-level channel adapters.
+**Directory:** `architecture/022-identity-organizations-access/`
 
-## ARCH-023 — Property & Portfolio Management
+Defines customer, workforce, partner, developer, service, agent, organization, team, and machine identity lifecycles; federation; organization membership; access packages; delegated administration; privileged access; consent; and identity governance.
 
-**Directory:** `architecture/023-property-portfolio-management/`
+ARCH-022 consumes the security controls of ARCH-008 and tenant boundaries of ARCH-018. It does not redefine cryptography, Zero Trust, or low-level authorization enforcement.
 
-Defines properties, portfolios, organizations, spaces, inventory, amenities, policies, operating calendars, staff responsibilities, configuration inheritance, and cross-property administration.
+## ARCH-023 — Customer & Relationship Management
 
-ARCH-023 owns enterprise property semantics while preserving the tenant and property isolation established by ARCH-018.
+**Directory:** `architecture/023-customer-relationship-management/`
 
-## ARCH-024 — Reservation & Commerce
+Defines customers, organizations, contacts, relationships, preferences, consent, interaction history, segmentation, service history, loyalty concepts, retention, portability, and customer context across industries.
 
-**Directory:** `architecture/024-reservation-commerce/`
+Hospitality may specialize a customer as a guest, rental may specialize one as a renter, commerce may specialize one as a buyer, and support may specialize one as a requester. ARCH-023 distinguishes authoritative customer records from conversation history, bounded memory, and temporary context.
 
-Defines availability, quotations, carts, reservations, modifications, cancellations, add-ons, packages, order lifecycle, fulfillment, channel distribution, and commerce consistency.
+## ARCH-024 — Product, Catalog & Resource Management
 
-ARCH-024 keeps transactional decisions in deterministic domain services. AI may assist and orchestrate but does not own reservation or commercial state.
+**Directory:** `architecture/024-product-catalog-resource-management/`
 
-## ARCH-025 — Revenue, Pricing & Promotions
+Defines products, services, resources, catalogs, classifications, bundles, inventory references, attributes, availability inputs, policies, lifecycle, ownership, configuration inheritance, discovery, and industry-specific specialization.
 
-**Directory:** `architecture/025-revenue-pricing-promotions/`
+A resource may represent a room, property, vehicle, equipment item, inventory item, appointment capacity, service capability, or another governed business resource. Industry bounded contexts retain their own semantics rather than collapsing into one universal entity model.
 
-Defines rate plans, pricing rules, restrictions, promotions, forecasting inputs, revenue controls, recommendations, approval boundaries, experimentation, and explainable price decisions.
+## ARCH-025 — Commerce, Orders & Reservations
 
-ARCH-025 separates deterministic price calculation and governed commercial policy from predictive or generative assistance.
+**Directory:** `architecture/025-commerce-orders-reservations/`
 
-## ARCH-026 — Payments, Billing & Financial Operations
+Defines quotations, carts, orders, reservations, bookings, modifications, cancellations, add-ons, packages, fulfillment, allocation, channel distribution, consistency, compensation, and transaction lifecycle.
 
-**Directory:** `architecture/026-payments-billing-financial-operations/`
+Industry modules specialize the generic commercial lifecycle. Deterministic domain services remain authoritative for availability, acceptance, fulfillment, and state changes. AI may assist, explain, and orchestrate but does not own transactional state.
 
-Defines payment intent and settlement boundaries, refunds, deposits, invoicing, tenant subscription billing, usage charging, reconciliation, financial events, taxation interfaces, disputes, and financial controls.
+## ARCH-026 — Pricing, Billing & Payments
 
-ARCH-026 does not make XeniosAI a system of record for regulated banking functions. External financial providers remain behind governed integration contracts.
+**Directory:** `architecture/026-pricing-billing-payments/`
 
-## ARCH-027 — Guest, CRM & Loyalty
+Defines price lists, rate plans, rules, restrictions, promotions, recommendations, approval boundaries, subscriptions, usage charging, invoicing, payment intents, deposits, settlement, refunds, reconciliation, taxation interfaces, disputes, financial events, and financial controls.
 
-**Directory:** `architecture/027-guest-crm-loyalty/`
+Deterministic pricing and financial services remain authoritative. Predictive or generative systems may propose actions but cannot silently change prices, charges, settlement, or accounting state.
 
-Defines guest profiles, organizations, relationships, preferences, consent, service history, segmentation, loyalty, benefits, campaigns, retention, portability, and customer-service context.
+## ARCH-027 — Omnichannel Engagement & Collaboration
 
-ARCH-027 distinguishes authoritative customer records from the bounded memory and temporary context defined by ARCH-016.
+**Directory:** `architecture/027-omnichannel-engagement-collaboration/`
 
-## ARCH-028 — Analytics, Reporting & Decision Intelligence
+Defines coordinated communication and work across web, mobile, messaging, email, voice, telephone, contact center, notifications, campaigns, teams, tasks, queues, cases, approvals, service recovery, real-time collaboration, and human-agent handoffs.
 
-**Directory:** `architecture/028-analytics-reporting-decision-intelligence/`
+ARCH-027 uses ARCH-015 workflows and ARCH-014 agents. It owns business engagement and collaborative work rather than the underlying workflow, agent, or communication transport engines.
 
-Defines enterprise metrics, semantic measures, operational and executive reporting, analytical data products, forecasting, decision support, experimentation, insight provenance, and governed AI-assisted analysis.
+## ARCH-028 — Analytics & Decision Intelligence
 
-ARCH-028 consumes domain-owned facts and ARCH-010 telemetry without turning observability data or model output into ungoverned business truth.
+**Directory:** `architecture/028-analytics-decision-intelligence/`
 
-## ARCH-029 — Workforce Collaboration & Case Management
+Defines enterprise metrics, semantic measures, analytical data products, operational and executive reporting, forecasting, experimentation, recommendations, decision support, insight provenance, and governed AI-assisted analysis.
 
-**Directory:** `architecture/029-workforce-collaboration-case-management/`
+ARCH-028 consumes domain-owned facts and ARCH-010 telemetry without turning observability data, statistical inference, or model output into ungoverned business truth.
 
-Defines staff workspaces, teams, tasks, queues, cases, escalations, approvals, service recovery, real-time collaboration, knowledge-assisted resolution, and human-agent handoffs.
+## ARCH-029 — AI Model Operations, Evaluation & Continuous Learning
 
-ARCH-029 uses ARCH-015 workflows and ARCH-014 agents. It owns collaborative business work, not the underlying orchestration engines.
+**Directory:** `architecture/029-ai-model-operations-evaluation-learning/`
 
-## ARCH-030 — Enterprise AI Products & Automation
+Defines how XeniosAI selects, routes, evaluates, improves, promotes, monitors, and retires AI behavior across providers, models, prompts, retrieval configurations, tools, agents, and response policies.
 
-**Directory:** `architecture/030-enterprise-ai-products-automation/`
+Its scope includes provider-neutral model catalogs and capability profiles; provider adapters; task, quality, latency, cost, privacy, residency, and availability routing; version pinning; prompt lifecycle; response-quality objectives; customer feedback and operational signals; consent and privacy; tenant-specific and global learning boundaries; learning candidates; human review; evaluation datasets; offline replay; regression, safety, grounding, tool-use, tone, and task-success evaluation; shadow evaluation; controlled experiments; canary promotion; monitoring; rollback; improvement proposals; optional provider-supported training behind portable contracts; deprecation; and provider exit.
 
-Defines governed enterprise AI products such as AI Concierge, AI Receptionist, operations copilots, research assistants, recommendations, bounded autonomous operations, and cross-capability automation.
+Continuous learning is a governed evaluation-and-promotion loop. A customer message, model output, inferred preference, or successful interaction must not directly rewrite production prompts, approve knowledge, retrain a model, expand memory, change routing, or modify global behavior.
 
-ARCH-030 composes agents, workflows, tools, knowledge, memory, policies, and deterministic services into accountable business products. It does not create a second AI orchestrator, agent framework, or workflow engine.
+Conversation-derived material requires explicit purpose, lawful basis or consent where applicable, tenant isolation, privacy controls, provenance, retention, review, and deletion. Cross-tenant learning must use approved de-identified or aggregated evidence and must never expose one tenant's data or behavior to another.
+
+ARCH-029 builds on ARCH-004 orchestration, ARCH-010 observability, ARCH-011 operations, ARCH-012 governance, ARCH-014 agents, ARCH-016 knowledge and memory, and ARCH-018 multi-tenancy. It does not replace any of them.
+
+## ARCH-030 — Industry Solution Packs & Composable Applications
+
+**Directory:** `architecture/030-industry-solution-packs-composable-applications/`
+
+Defines how reusable platform and enterprise capabilities are assembled into governed industry applications, domain packs, configurations, policies, workflows, agents, knowledge, integrations, user experiences, tests, and operational profiles.
+
+The first solution pack remains hospitality and includes Casa Lluvia, property, room, guest, availability, rate, stay, reservation, pool, parking, authorization, notification, and property-operation capabilities.
+
+Future solution packs may support rental, commerce, customer service, professional services, and other approved industries without redesigning the core platform. Each pack must define bounded contexts, domain ownership, terminology, contracts, configuration, controls, quality attributes, conformance, migration, and exit.
+
+A solution pack composes existing platform capabilities. It must not fork the platform core, bypass tenant isolation, redefine shared authority, or introduce an unrestricted universal domain model.
 
 ---
 
 # Developer Ecosystem — ARCH-031–040
 
-Developer Ecosystem modules define how internal developers, tenants, partners, and approved third parties use and extend XeniosAI. They build on ARCH-013, ARCH-017, ARCH-019, and ARCH-020 without replacing them.
+Developer Ecosystem modules define how internal developers, tenants, partners, and approved third parties discover, build, test, publish, operate, and extend XeniosAI. They build on ARCH-013, ARCH-017, ARCH-019, ARCH-020, and ARCH-021–030 without replacing their authority.
 
 ## ARCH-031 — Developer Experience & Portal
 
@@ -191,13 +205,13 @@ Defines developer onboarding, identity, organizations, projects, application reg
 
 ARCH-031 is the developer-facing product surface over the internal platform capabilities defined by ARCH-013.
 
-## ARCH-032 — Design System & Frontend Platform
+## ARCH-032 — Application Framework & UI Extension Kit
 
-**Directory:** `architecture/032-design-system-frontend-platform/`
+**Directory:** `architecture/032-application-framework-ui-extension-kit/`
 
-Defines design tokens, components, interaction patterns, accessibility, localization, theming, tenant branding, frontend composition, UI extension slots, governance, and reusable experience foundations.
+Defines application shells, frontend SDKs, reusable conversation and administration components, routing, state integration, capability discovery, tenant theming, UI extension contracts, embedding, packaging, versioning, testing, accessibility conformance, and upgrade paths.
 
-ARCH-032 enables early runnable user interfaces while keeping business rules in services and channel behavior aligned with ARCH-022.
+ARCH-032 turns the experience and design foundations of ARCH-021 into developer-consumable application capabilities. It does not relocate business logic or authorization into client code.
 
 ## ARCH-033 — API Product Management & Discovery
 
@@ -207,13 +221,13 @@ Defines API products, catalogs, audience classification, discovery, subscription
 
 ARCH-033 operationalizes the contracts defined by ARCH-017; it does not redefine API semantics or service ownership.
 
-## ARCH-034 — Contract, Schema & Event Registry
+## ARCH-034 — Contract, Schema & Capability Registry
 
-**Directory:** `architecture/034-contract-schema-event-registry/`
+**Directory:** `architecture/034-contract-schema-capability-registry/`
 
-Defines governed registries for APIs, events, commands, queries, schemas, capabilities, compatibility, lineage, ownership, validation, discovery, deprecation, and machine-readable metadata.
+Defines governed registries for APIs, events, commands, queries, schemas, tools, agents, workflows, UI extensions, capabilities, compatibility, lineage, ownership, validation, discovery, deprecation, and machine-readable metadata.
 
-ARCH-034 provides shared discovery and assurance while domain owners retain authority over their contracts.
+ARCH-034 provides shared discovery and assurance while domain and platform owners retain authority over their contracts.
 
 ## ARCH-035 — CLI, IDE & Local Tooling
 
@@ -231,17 +245,17 @@ Defines local, ephemeral, shared, partner, and tenant development environments; 
 
 ARCH-036 builds on ARCH-013 delivery capabilities and ARCH-020 reference implementations while preventing development environments from becoming accidental production systems.
 
-## ARCH-037 — Testing, Evaluation & Conformance
+## ARCH-037 — Testing, Simulation & Conformance
 
-**Directory:** `architecture/037-testing-evaluation-conformance/`
+**Directory:** `architecture/037-testing-simulation-conformance/`
 
-Defines unit, contract, integration, workflow, security, tenant-isolation, resilience, AI evaluation, agent, knowledge, UI, performance, certification, and architecture-conformance capabilities.
+Defines unit, contract, integration, workflow, security, tenant-isolation, resilience, agent, knowledge, UI, performance, simulation, certification, and architecture-conformance capabilities for ecosystem developers.
 
-ARCH-037 turns approved requirements into repeatable ecosystem-wide quality evidence without transferring accountability away from solution owners.
+ARCH-037 provides repeatable developer and solution quality evidence. Production AI evaluation, feedback learning, model comparison, experimentation, and promotion remain governed by ARCH-029.
 
-## ARCH-038 — Connector & MCP Development
+## ARCH-038 — Connector, Tool & MCP Development
 
-**Directory:** `architecture/038-connector-mcp-development/`
+**Directory:** `architecture/038-connector-tool-mcp-development/`
 
 Defines connector kits, adapter patterns, tool contracts, Model Context Protocol clients and servers, capability discovery, authentication, consent, testing, certification, hosting, observability, and lifecycle management.
 
@@ -269,28 +283,30 @@ ARCH-040 completes the Developer Ecosystem by enabling decentralized participati
 
 The sequence is deliberate:
 
-1. Identity and access establish who may participate.
-2. Experience defines how participants engage.
-3. Property and portfolio establish the enterprise operating context.
-4. Reservation and commerce establish the primary transaction.
-5. Revenue and pricing govern commercial decisions.
-6. Payments and finance complete monetary operations.
-7. Guest, CRM, and loyalty establish durable customer relationships.
-8. Analytics turns governed facts into decision support.
-9. Collaboration organizes accountable human and agent work.
-10. Enterprise AI products compose these capabilities into bounded intelligent outcomes.
+1. Experience, conversation, and frontend architecture establish a usable, observable, accessible product surface early.
+2. Identity, organizations, and access establish who may participate and within which boundaries.
+3. Customer and relationship management establish durable, consent-aware business relationships.
+4. Product, catalog, and resource management define what the enterprise offers, allocates, or operates.
+5. Commerce, orders, and reservations define the primary transactional lifecycle.
+6. Pricing, billing, and payments govern commercial and monetary execution.
+7. Omnichannel engagement and collaboration coordinate communication, cases, people, workflows, and agents.
+8. Analytics and decision intelligence turn governed facts into accountable insight.
+9. AI model operations and continuous learning improve response quality through controlled evidence, evaluation, promotion, monitoring, and rollback.
+10. Industry solution packs compose the reusable capabilities into hospitality-first and future cross-industry applications.
 11. The developer portal exposes the platform to builders.
-12. The design system enables consistent user-facing solutions.
-13. API products make capabilities discoverable and consumable.
-14. Registries make contracts machine-discoverable and governable.
+12. The application framework and UI extension kit make approved experiences reusable.
+13. API products make business and platform capabilities discoverable and consumable.
+14. Registries make contracts, schemas, tools, and capabilities machine-discoverable and governable.
 15. Local tooling accelerates safe development.
 16. Sandboxes enable isolated experimentation and previews.
-17. Testing and conformance provide quality evidence.
-18. Connector and MCP development expands interoperability.
+17. Testing, simulation, and conformance provide ecosystem quality evidence.
+18. Connector, tool, and MCP development expand interoperability.
 19. Marketplace capabilities support governed distribution and commerce.
 20. Partner and ecosystem federation enable sustainable external scale.
 
 A later module may consume an earlier module but must not silently redefine its ownership or invariants.
+
+Hospitality remains the first production-shaped reference. Cross-industry reuse is achieved through stable platform contracts, bounded contexts, extension points, and solution packs rather than through generic entities that erase domain meaning.
 
 ---
 
@@ -345,10 +361,13 @@ When the user requests `continue`, `continue next`, or `auto continue`:
 
 * ARCH-001–010 define the platform foundation.
 * ARCH-011–020 define reusable application-platform capabilities.
-* ARCH-021–030 define enterprise hospitality products and business outcomes.
+* ARCH-021–030 define reusable enterprise capabilities, controlled AI improvement, and composable industry solutions.
 * ARCH-031–040 define the developer, partner, and marketplace ecosystem.
 * Business services remain authoritative for business rules and state.
 * AI remains a governed consumer and orchestrator of capabilities.
+* Customer conversations may generate learning candidates but never authorize uncontrolled live self-modification.
+* Model, prompt, knowledge, routing, tool, and workflow changes require evaluation, promotion controls, monitoring, and rollback.
+* Hospitality is the first validation domain; the reusable platform core remains applicable to other approved industries.
 * Platform engines are reused rather than duplicated by enterprise features.
 * Ecosystem surfaces expose governed contracts rather than internal implementations.
 * Every new capability requires explicit ownership, lifecycle, isolation, observability, evidence, and exit.
@@ -360,11 +379,11 @@ When the user requests `continue`, `continue next`, or `auto continue`:
 The next planned module is:
 
 ```text
-ARCH-021 — Enterprise Identity & Access Management
+ARCH-021 — Experience, Conversation & Frontend Architecture
 ```
 
 Canonical directory:
 
 ```text
-architecture/021-enterprise-identity-access-management/
+architecture/021-experience-conversation-frontend/
 ```
