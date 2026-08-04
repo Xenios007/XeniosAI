@@ -1,0 +1,42 @@
+stateDiagram-v2
+    state PackageLifecycle {
+        [*] --> Draft
+        Draft --> Built: immutable candidate
+        Built --> Validating: automated controls
+        Validating --> Review: risk-based review
+        Review --> Published: approval and signing
+        Review --> Draft: remediation
+        Published --> Deprecated: replacement announced
+        Published --> Suspended: material risk
+        Deprecated --> Retired: support ends
+        Suspended --> Published: verified remediation
+        Suspended --> Revoked: prohibited
+        Revoked --> Retired: evidence retained
+    }
+
+    state InstallationLifecycle {
+        [*] --> Requested
+        Requested --> Assessing: tenant scope and capability
+        Assessing --> Approved: informed consent
+        Approved --> Provisioning: resources and grants
+        Provisioning --> ValidatingInstall: readiness tests
+        ValidatingInstall --> Active: activation
+        ValidatingInstall --> Provisioning: remediation
+        Active --> Updating: compatible package selected
+        Updating --> ValidatingInstall: staged update
+        Active --> Restricted: capability reduced
+        Restricted --> Active: restriction cleared
+        Active --> SuspendedInstall: tenant or platform action
+        SuspendedInstall --> ValidatingInstall: reactivation
+        Active --> Uninstalling: removal requested
+        Restricted --> Uninstalling: removal requested
+        SuspendedInstall --> Uninstalling: closure
+        Uninstalling --> Retained: hold or retention
+        Uninstalling --> Removed: reconciled removal
+        Retained --> Removed: disposition complete
+        Removed --> [*]
+    }
+
+    Published --> Requested: package selected
+    Suspended --> SuspendedInstall: impact containment
+    Revoked --> SuspendedInstall: execution blocked
