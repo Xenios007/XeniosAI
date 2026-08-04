@@ -1,0 +1,19 @@
+flowchart TB
+    facts["Governed customer facts and outcomes"]
+    segment["Versioned segment evaluation"]
+    candidate["Candidate audience membership"]
+    recheck{"Current consent, suppression, preference, and eligibility pass?"}
+    engage["ARCH-027 bounded engagement"]
+    block["Exclude or route service-only path"]
+    outcome["Interaction and business outcome"]
+    improve["ARCH-028 measurement and ARCH-029 evaluation candidate"]
+
+    facts --> segment
+    segment --> candidate
+    candidate --> recheck
+    recheck -->|"Yes"| engage
+    recheck -->|"No"| block
+    engage --> outcome
+    outcome --> facts
+    outcome --> improve
+
