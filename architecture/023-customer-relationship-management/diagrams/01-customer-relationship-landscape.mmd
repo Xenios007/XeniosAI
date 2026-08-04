@@ -1,0 +1,23 @@
+flowchart TB
+    consumers["Experiences, staff, workflows, agents, and integrations"]
+    context["Purpose-bound Customer Context"]
+    crm["ARCH-023 Customer and Relationship Services"]
+    records["Profiles, relationships, preferences, interactions, segments"]
+    identity["ARCH-022 Identity and Access"]
+    business["ARCH-024–027 Business Authorities"]
+    intelligence["ARCH-028–029 Analytics and Learning"]
+    evidence["Provenance, consent, audit, retention, and rights evidence"]
+
+    consumers -->|"actor, tenant, purpose, fields"| context
+    context -->|"authorized projection"| consumers
+    context --> crm
+    crm --> records
+    context --> identity
+    context --> business
+    crm -->|"derived signals and candidates"| intelligence
+    intelligence -->|"labeled, governed outputs"| crm
+    identity --> evidence
+    business --> evidence
+    crm --> evidence
+    intelligence --> evidence
+
