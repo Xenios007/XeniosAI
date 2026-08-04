@@ -1,0 +1,19 @@
+stateDiagram-v2
+    [*] --> Prospective: explicit purpose
+    Prospective --> Verified: verify required links
+    Prospective --> Restricted: purpose withdrawn
+    Verified --> Active: relationship begins
+    Active --> Active: preferences and roles change
+    Active --> Disputed: correction requested
+    Disputed --> Active: correction approved
+    Disputed --> Restricted: use limited
+    Active --> Dormant: no current relationship
+    Dormant --> Active: relationship resumes
+    Active --> Former: relationship ends
+    Dormant --> Former: retention transition
+    Former --> Restricted: legal hold or rights review
+    Restricted --> Former: restriction resolved
+    Former --> Deleted: retention expires
+    Restricted --> Deleted: deletion approved
+    Deleted --> [*]
+
