@@ -1,0 +1,44 @@
+stateDiagram-v2
+    [*] --> Requested
+    Requested --> Assessed: profile assessed
+    Assessed --> Approved: accountable approval
+    Assessed --> Retired: request declined
+    Approved --> Provisioning: desired state accepted
+    Provisioning --> Validating: providers ready
+    Provisioning --> Provisioning: retry or resume
+    Validating --> Active: readiness evidence accepted
+    Validating --> Provisioning: remediation required
+
+    Active --> Restricted: partial containment
+    Restricted --> Active: restriction cleared
+    Active --> Suspended: service suspended
+    Restricted --> Suspended: full suspension
+    Suspended --> Validating: reactivation approved
+
+    Active --> Migrating: placement change approved
+    Restricted --> Migrating: controlled migration
+    Migrating --> Validating: target cutover complete
+    Migrating --> Active: rollback to source
+
+    Active --> Offboarding: termination effective
+    Restricted --> Offboarding: termination effective
+    Suspended --> Offboarding: closure approved
+    Offboarding --> Retained: hold or retention applies
+    Offboarding --> Retired: obligations complete
+    Retained --> Retired: disposition complete
+    Retired --> [*]
+
+    note right of Provisioning
+        Idempotent provider commands
+        Desired-state reconciliation
+    end note
+
+    note right of Validating
+        Isolation, identity, placement,
+        recovery, quota, and operations
+    end note
+
+    note right of Offboarding
+        Revoke, export, reconcile,
+        retain, erase, and evidence
+    end note
