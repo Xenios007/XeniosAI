@@ -1,0 +1,11 @@
+flowchart TD
+    Need["Documented administrative need"] --> Request["Request scope, purpose and duration"]
+    Request --> Eligibility["Validate eligible authority and conflicts"]
+    Eligibility --> Approval{"Approved?"}
+    Approval -->|No| Deny["Deny or narrow request"]
+    Approval -->|Yes| Activate["Create time-bound privileged session"]
+    Activate --> Use["Monitor attributable use"]
+    Use --> Expire["Expire or revoke automatically"]
+    Expire --> Review["Review actions, evidence and remaining access"]
+    Review --> Improve["Remediate policy, package or process"]
+
