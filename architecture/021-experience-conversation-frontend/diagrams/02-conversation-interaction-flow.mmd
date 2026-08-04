@@ -1,0 +1,17 @@
+flowchart TD
+    Input["User message or structured action"] --> Context["Validate channel, identity and tenant context"]
+    Context --> Need{"Enough information?"}
+    Need -->|No| Clarify["Ask focused clarification"]
+    Clarify --> Input
+    Need -->|Yes| Orchestrate["Assemble context and select capabilities"]
+    Orchestrate --> Execute["Query or execute governed tools"]
+    Execute --> Consequential{"Consequential change?"}
+    Consequential -->|Yes| Confirm["Present material details for confirmation"]
+    Confirm --> Approved{"Current proposal approved?"}
+    Approved -->|No| Cancel["Cancel or revise"]
+    Approved -->|Yes| Commit["Authoritative service or workflow executes"]
+    Consequential -->|No| Compose["Compose grounded response"]
+    Commit --> Compose
+    Compose --> Deliver["Stream and render accessible result"]
+    Deliver --> Feedback["Feedback, correction or handoff"]
+
