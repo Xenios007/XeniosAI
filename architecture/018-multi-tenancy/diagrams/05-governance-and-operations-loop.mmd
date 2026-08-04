@@ -1,0 +1,29 @@
+flowchart TB
+    GOVERN["Architecture, Risk, and Policy<br/>Principles, control objectives, profiles"]
+    TENANT["Tenant Profile and Obligations<br/>Tier, residency, isolation, retention"]
+    ENABLE["Developer Platform and Delivery<br/>Templates, libraries, policy, tests"]
+    RUN["Tenant-Aware Runtime and Operations<br/>Services, incidents, changes, recovery"]
+    EVIDENCE["Evidence and Measurement<br/>Isolation, access, service, usage, lifecycle"]
+    ASSURE["Assurance and Review<br/>Control tests, audit, tenant commitments"]
+    IMPROVE["Issues, Exceptions, and Remediation<br/>Contain, correct, verify, standardize"]
+
+    GOVERN --> TENANT
+    TENANT --> ENABLE
+    ENABLE --> RUN
+    RUN --> EVIDENCE
+    EVIDENCE --> ASSURE
+    ASSURE --> IMPROVE
+    IMPROVE --> GOVERN
+    IMPROVE -. "verified service correction" .-> RUN
+
+    classDef govern fill:#eee8ff,stroke:#6842a8,color:#261545
+    classDef delivery fill:#eef4ff,stroke:#3559a8,color:#13254b
+    classDef operate fill:#e6f6ef,stroke:#28785a,color:#123d2d
+    classDef assure fill:#fff4dc,stroke:#a66b00,color:#4a3000
+    classDef improve fill:#f8e9ec,stroke:#a54155,color:#4b1923
+
+    class GOVERN,TENANT govern
+    class ENABLE delivery
+    class RUN,EVIDENCE operate
+    class ASSURE assure
+    class IMPROVE improve
