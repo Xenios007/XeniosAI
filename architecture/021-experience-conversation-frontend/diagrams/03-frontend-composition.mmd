@@ -1,0 +1,20 @@
+flowchart TB
+    Shell["Application shell"]
+    Experience["Journey and experience composition"]
+    Presentation["Design system and presentation"]
+    State["Bounded interaction state"]
+    Adapters["Client domain adapters"]
+    Access["API, realtime, identity and telemetry access"]
+    Platform["Versioned platform capabilities"]
+
+    Shell --> Experience
+    Experience --> Presentation
+    Experience --> State
+    Presentation --> Adapters
+    State --> Adapters
+    Adapters --> Access
+    Access --> Platform
+
+    Extension["Capability-mediated UI extension"] --> Experience
+    Extension --> Presentation
+
