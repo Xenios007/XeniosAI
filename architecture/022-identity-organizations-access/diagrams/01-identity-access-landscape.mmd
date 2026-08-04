@@ -1,0 +1,24 @@
+flowchart TB
+    subgraph Identities["Identity classes"]
+        Human["Customer, workforce, partner and developer"]
+        Machine["Service, workload, application and device"]
+        Agent["AI agent and automation"]
+    end
+
+    Relationships["Organizations, memberships and delegations"]
+    Authn["Authentication and assurance"]
+    Policy["Authorization policy and obligations"]
+    Providers["Provider service enforcement"]
+    Protected["Tenant-scoped resources and actions"]
+    Evidence["Audit and decision evidence"]
+
+    Human --> Authn
+    Machine --> Authn
+    Agent --> Authn
+    Relationships --> Policy
+    Authn --> Policy
+    Policy --> Providers
+    Providers --> Protected
+    Policy --> Evidence
+    Providers --> Evidence
+
