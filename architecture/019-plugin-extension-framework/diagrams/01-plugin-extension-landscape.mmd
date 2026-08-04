@@ -1,0 +1,56 @@
+flowchart TB
+    subgraph CREATE["Publishers and Developer Platform"]
+        direction LR
+        PUBLISHER["First-Party, Tenant, Partner,<br/>Commercial, and Community Publishers"]
+        SDK["Plugin SDK, Sandbox,<br/>Tests, and Packaging"]
+        PIPELINE["Build, Provenance,<br/>Review, and Signing"]
+    end
+
+    subgraph CONTROL["Extension Control Plane"]
+        direction LR
+        REGISTRY["Extension Registry<br/>Identity, Packages, Advisories"]
+        MARKET["Marketplace<br/>Discovery and Commerce"]
+        INSTALL["Tenant Installation<br/>Configuration and Consent"]
+        GRANT["Capability, Policy,<br/>Entitlement, and Quota"]
+    end
+
+    subgraph RUNTIME["Extension Runtime Plane"]
+        direction LR
+        HOST["Isolated Extension Hosts"]
+        EXTENSION["Exact Package Execution"]
+        EVIDENCE["Health, Usage,<br/>Audit, and Evidence"]
+    end
+
+    subgraph POINTS["Owned Extension Points"]
+        direction LR
+        SERVICES["APIs, Events,<br/>and Domain Services"]
+        AUTOMATION["Workflows, Agents,<br/>Tools, and MCP"]
+        EXPERIENCE["Knowledge, UI,<br/>Devices, and Integrations"]
+    end
+
+    PUBLISHER --> SDK
+    SDK --> PIPELINE
+    PIPELINE --> REGISTRY
+    REGISTRY --> MARKET
+    MARKET --> INSTALL
+    REGISTRY --> INSTALL
+    INSTALL --> GRANT
+    GRANT --> HOST
+    REGISTRY --> HOST
+    HOST --> EXTENSION
+    EXTENSION --> SERVICES
+    EXTENSION --> AUTOMATION
+    EXTENSION --> EXPERIENCE
+    EXTENSION --> EVIDENCE
+    SERVICES --> EVIDENCE
+    EVIDENCE -. "assurance and advisories" .-> CONTROL
+
+    classDef create fill:#eef4ff,stroke:#3559a8,color:#13254b
+    classDef control fill:#eee8ff,stroke:#6842a8,color:#261545
+    classDef runtime fill:#e6f6ef,stroke:#28785a,color:#123d2d
+    classDef point fill:#fff4dc,stroke:#a66b00,color:#4a3000
+
+    class PUBLISHER,SDK,PIPELINE create
+    class REGISTRY,MARKET,INSTALL,GRANT control
+    class HOST,EXTENSION,EVIDENCE runtime
+    class SERVICES,AUTOMATION,EXPERIENCE point
