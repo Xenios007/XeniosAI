@@ -1,0 +1,33 @@
+flowchart TB
+    REQUEST["Portfolio Request<br/>Authenticated Tenant Context"]
+    POLICY["Membership, Property Scope,<br/>Policy, Entitlement, and Quota"]
+    SELECT["Select Authorized Properties"]
+
+    subgraph PROPERTY["Property-Scoped Execution"]
+        direction LR
+        P1["Property A<br/>Services and Integrations"]
+        P2["Property B<br/>Services and Integrations"]
+        PN["Property N<br/>Services and Integrations"]
+    end
+
+    WORKFLOW["Portfolio Workflow<br/>Timeout, Retry, and Partial Results"]
+    RESULT["Tenant-Safe Aggregated Result"]
+    OPS["Health, Capacity, Usage,<br/>Incident, and Evidence"]
+
+    REQUEST --> POLICY
+    POLICY --> SELECT
+    SELECT --> P1
+    SELECT --> P2
+    SELECT --> PN
+    P1 --> WORKFLOW
+    P2 --> WORKFLOW
+    PN --> WORKFLOW
+    WORKFLOW --> RESULT
+    RESULT --> OPS
+
+    classDef control fill:#eee8ff,stroke:#6842a8,color:#261545
+    classDef property fill:#e6f6ef,stroke:#28785a,color:#123d2d
+    classDef outcome fill:#fff4dc,stroke:#a66b00,color:#4a3000
+    class REQUEST,POLICY,SELECT control
+    class P1,P2,PN property
+    class WORKFLOW,RESULT,OPS outcome
