@@ -1,0 +1,138 @@
+flowchart TB
+    %% ARCH-017-05 — Governance and Feedback Loop
+
+    Purpose["Enterprise and Hospitality Purpose"]
+    Obligations["Architecture, Policy, Legal, Contractual, Tenant, and Property Obligations"]
+    Strategy["API and SDK Portfolio Strategy"]
+
+    Purpose --> Strategy
+    Obligations --> Strategy
+
+    subgraph Direction["Governance Direction and Accountability"]
+        Ownership["Accountable API and SDK Product Ownership"]
+        Classification["Audience, Data, Privilege, Criticality, and Change Classification"]
+        Risk["Risk, Control, and Service Commitment Decisions"]
+        Authority["Delegated Decision Rights and Escalation"]
+
+        Ownership --> Classification
+        Classification --> Risk
+        Risk --> Authority
+    end
+
+    Strategy --> Ownership
+
+    subgraph Definition["Governed Product and Contract Definition"]
+        ProductRecord["API Product and Consumer Registry"]
+        Contract["Approved Contract and Compatibility Boundary"]
+        SDKDeclaration["SDK Product, Runtime, Package, and Support Declaration"]
+        Controls["Security, Privacy, Tenant, Property, Test, and Operational Controls"]
+
+        ProductRecord --> Contract
+        Contract --> SDKDeclaration
+        Contract --> Controls
+        SDKDeclaration --> Controls
+    end
+
+    Authority --> ProductRecord
+
+    subgraph Lifecycle["Lifecycle Gates"]
+        DesignGate{"Design and Authority Accepted?"}
+        ReleaseGate{"Conformance and Readiness Accepted?"}
+        ChangeGate{"Compatibility and Consumer Impact Accepted?"}
+        RetirementGate{"Migration and Retirement Ready?"}
+
+        DesignGate -- "Yes" --> ReleaseGate
+        ReleaseGate -- "Material change" --> ChangeGate
+        ChangeGate -- "Continue or new version" --> ReleaseGate
+        ChangeGate -- "Deprecate" --> RetirementGate
+    end
+
+    Controls --> DesignGate
+    DesignGate -- "No" --> Rework["Rework Product, Contract, SDK, Controls, or Evidence"]
+    Rework --> ProductRecord
+
+    subgraph Execution["First Line — Delivery and Operation"]
+        Implement["Implement Provider, Gateway, SDK, Documentation, and Tests"]
+        Publish["Publish Verified Contract, Release, SDK, and Guidance"]
+        Adopt["Authorize and Onboard Consumers"]
+        Operate["Operate, Observe, Support, and Protect"]
+        Migrate["Migrate Consumers and Manage Deprecation"]
+
+        Implement --> Publish
+        Publish --> Adopt
+        Adopt --> Operate
+        Operate --> Migrate
+    end
+
+    ReleaseGate -- "Yes" --> Implement
+    ChangeGate -- "Breaking boundary" --> Migrate
+    RetirementGate -- "Not ready" --> Migrate
+
+    subgraph Evidence["Evidence and Feedback Sources"]
+        ConsumerEvidence["Consumer Experience, Adoption, Support, and Migration"]
+        OperationalEvidence["Health, Service Objectives, Capacity, Incidents, and Recovery"]
+        SecurityEvidence["Security, Privacy, Isolation, Package, and Access Evidence"]
+        ConformanceEvidence["Contract, SDK, Compatibility, Test, and Conformance Evidence"]
+        StakeholderEvidence["Tenant, Property, Partner, Developer, and Operator Feedback"]
+    end
+
+    Adopt --> ConsumerEvidence
+    Operate --> OperationalEvidence
+    Operate --> SecurityEvidence
+    Publish --> ConformanceEvidence
+    Migrate --> StakeholderEvidence
+
+    subgraph Oversight["Second and Third Lines — Oversight and Assurance"]
+        Specialist["Architecture, Security, Privacy, Data, Risk, Tenant, and Operations Challenge"]
+        Continuous["Continuous Control and Drift Assessment"]
+        Independent["Independent Assurance and Audit"]
+        Conclusion["Scoped Assurance Conclusion with Limitations"]
+
+        Specialist --> Conclusion
+        Continuous --> Conclusion
+        Independent --> Conclusion
+    end
+
+    ConsumerEvidence --> Continuous
+    OperationalEvidence --> Continuous
+    SecurityEvidence --> Specialist
+    ConformanceEvidence --> Specialist
+    StakeholderEvidence --> Specialist
+    ConformanceEvidence --> Independent
+
+    Conclusion --> Findings["Findings, Exceptions, Emerging Risks, and Improvement Opportunities"]
+
+    ExternalChange["Business, Regulation, Threat, Standard, Supplier, Tenant, Property, and Technology Change"]
+    ExternalChange --> Findings
+
+    Findings --> Prioritize{"Accountable Treatment Decision"}
+    Prioritize -- "Contain or remediate" --> Remediate["Controlled Product, Contract, SDK, Policy, or Operational Change"]
+    Prioritize -- "Temporary eligible deviation" --> Exception["Time-Bounded Exception with Compensating Controls"]
+    Prioritize -- "No longer justified" --> RetirementGate
+    Prioritize -- "Strategic opportunity" --> Roadmap["Evidence-Based Roadmap Evolution"]
+
+    Exception --> Monitor["Monitor Evidence, Expiry, and Remediation"]
+    Monitor -- "Expired, revoked, or ineffective" --> Remediate
+    Monitor -- "Extension requires new authority" --> Prioritize
+
+    Remediate --> Verify{"Outcome and Residual Risk Verified?"}
+    Verify -- "No" --> Findings
+    Verify -- "Yes" --> Improve["Update Registry, Standards, Controls, Tests, Documentation, and Lessons"]
+
+    RetirementGate -- "Yes" --> Retire["Retire Exposure, Packages, Access, Data, and Support"]
+    Retire --> Preserve["Preserve Required Evidence and Lessons"]
+    Preserve --> Improve
+
+    Roadmap --> Improve
+    Improve --> Strategy
+    Improve --> ProductRecord
+
+    Emergency["Material Security, Safety, Legal, Privacy, Tenant, or Integrity Risk"]
+    Emergency --> EmergencyAction["Emergency Restrict, Suspend, Revoke, Roll Back, or Retire"]
+    EmergencyAction --> OperationalEvidence
+    EmergencyAction --> Findings
+
+    Ownership -. "One accountable owner remains visible" .-> Prioritize
+    Authority -. "Human authority for material decisions" .-> Prioritize
+    EvidenceNote["Evidence supports decisions; it does not create authority or absolute assurance"]
+    EvidenceNote -. "Governing rule" .-> Conclusion
