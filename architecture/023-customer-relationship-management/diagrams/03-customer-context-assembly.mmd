@@ -1,0 +1,19 @@
+flowchart TB
+    request["Context request: actor, tenant, customer, purpose, fields"]
+    policy{"Identity, authorization, consent, and minimization pass?"}
+    sources["Profile, relationship, preference, and authoritative references"]
+    classify["Label source, freshness, restriction, confidence, and expiry"]
+    projection["Minimum necessary customer projection"]
+    consumer["Conversation, staff, workflow, or agent consumer"]
+    deny["Deny, minimize, challenge, or hand off"]
+    evidence["Decision and disclosure evidence"]
+
+    request --> policy
+    policy -->|"No"| deny
+    policy -->|"Yes"| sources
+    sources --> classify
+    classify --> projection
+    projection --> consumer
+    deny --> evidence
+    consumer --> evidence
+
