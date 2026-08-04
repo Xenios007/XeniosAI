@@ -1,0 +1,31 @@
+flowchart TB
+    STANDARDS["Architecture and Policy<br/>Extension points, capabilities, risk, controls"]
+    DELIVERY["Publisher and Developer Platform<br/>SDK, build, provenance, tests, review"]
+    CATALOG["Registry and Marketplace<br/>Packages, listings, certification, advisories"]
+    ADOPTION["Tenant Adoption<br/>Consent, configuration, grants, rollout"]
+    OPERATION["Runtime and Operations<br/>Hosts, providers, support, incidents"]
+    EVIDENCE["Evidence and Measurement<br/>Behavior, access, health, usage, lifecycle"]
+    ASSURANCE["Assurance and Governance<br/>Audit, trust signals, findings, exceptions"]
+    REMEDIATE["Remediation and Evolution<br/>Contain, patch, migrate, verify, standardize"]
+
+    STANDARDS --> DELIVERY
+    DELIVERY --> CATALOG
+    CATALOG --> ADOPTION
+    ADOPTION --> OPERATION
+    OPERATION --> EVIDENCE
+    EVIDENCE --> ASSURANCE
+    ASSURANCE --> REMEDIATE
+    REMEDIATE --> STANDARDS
+    REMEDIATE -. "verified package or host correction" .-> OPERATION
+
+    classDef govern fill:#eee8ff,stroke:#6842a8,color:#261545
+    classDef deliver fill:#eef4ff,stroke:#3559a8,color:#13254b
+    classDef operate fill:#e6f6ef,stroke:#28785a,color:#123d2d
+    classDef assure fill:#fff4dc,stroke:#a66b00,color:#4a3000
+    classDef improve fill:#f8e9ec,stroke:#a54155,color:#4b1923
+
+    class STANDARDS govern
+    class DELIVERY,CATALOG deliver
+    class ADOPTION,OPERATION,EVIDENCE operate
+    class ASSURANCE assure
+    class REMEDIATE improve
