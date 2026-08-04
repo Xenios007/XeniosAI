@@ -1,0 +1,37 @@
+flowchart TB
+    SELECT["Select Registry Package<br/>Exact version or approved policy"]
+    DISCLOSE["Review Publisher, Certification,<br/>Capabilities, Data, Network, and Cost"]
+    ASSESS["Assess Tenant, Property, Risk,<br/>Entitlement, Residency, and Capacity"]
+    EFFECTIVE["Calculate Effective Grant<br/>Request intersected with policy and authority"]
+    DECISION{"Authorized and Approved?"}
+    DENY["Reject or Return<br/>Actionable Remediation"]
+    PROVISION["Provision Installation<br/>Host, Storage, Secrets, Events, and Quotas"]
+    VALIDATE["Validate Isolation, Capability,<br/>Configuration, Health, and Uninstall"]
+    ACTIVE["Activate Exact Package<br/>and Configuration Versions"]
+    RUNTIME["Revalidate Grant, Tenant,<br/>Actor, Resource, and Package per Execution"]
+    EVIDENCE["Record Consent, Versions,<br/>Decisions, Health, Usage, and Evidence"]
+
+    SELECT --> DISCLOSE
+    DISCLOSE --> ASSESS
+    ASSESS --> EFFECTIVE
+    EFFECTIVE --> DECISION
+    DECISION -->|no| DENY
+    DECISION -->|yes| PROVISION
+    PROVISION --> VALIDATE
+    VALIDATE -->|failed| DENY
+    VALIDATE -->|passed| ACTIVE
+    ACTIVE --> RUNTIME
+    RUNTIME --> EVIDENCE
+    EVIDENCE -. "update, advisory, or review" .-> ASSESS
+
+    classDef input fill:#eef4ff,stroke:#3559a8,color:#13254b
+    classDef decision fill:#fff4dc,stroke:#a66b00,color:#4a3000
+    classDef action fill:#e6f6ef,stroke:#28785a,color:#123d2d
+    classDef deny fill:#f8e9ec,stroke:#a54155,color:#4b1923
+    classDef evidence fill:#eee8ff,stroke:#6842a8,color:#261545
+
+    class SELECT,DISCLOSE,ASSESS,EFFECTIVE input
+    class DECISION decision
+    class PROVISION,VALIDATE,ACTIVE,RUNTIME action
+    class DENY deny
+    class EVIDENCE evidence
