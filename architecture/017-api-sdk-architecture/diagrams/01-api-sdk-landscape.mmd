@@ -1,0 +1,136 @@
+flowchart TB
+    %% ARCH-017-01 — API & SDK Landscape
+
+    subgraph Consumers["Authorized Consumer Ecosystem"]
+        PeopleApps["People and Applications"]
+        ServicesFlows["Services and Workflows"]
+        AgentsExtensions["AI Agents and Approved Extensions"]
+        TenantPartners["Tenant, Property, and Partner Integrations"]
+    end
+
+    subgraph ProductPlane["API Product and Developer Experience Plane"]
+        ProductRegistry["API Product and Consumer Registry"]
+        ContractAuthority["Approved Contract Sources"]
+        PortalDocs["Catalog, Documentation, and Examples"]
+        AccessLifecycle["Access, Version, and Lifecycle Management"]
+        SupportFeedback["Support, Status, and Feedback"]
+    end
+
+    subgraph SDKPlane["SDK Production and Distribution"]
+        SDKFactory["SDK Factory"]
+        SDKQuality["Build, Test, Conformance, and Provenance"]
+        PackageDistribution["Governed Package Distribution"]
+        SupportedSDKs["Supported SDK Products"]
+    end
+
+    subgraph Edge["Governed API Gateway and Edge Boundary"]
+        Exposure["Exposure and Version Routing"]
+        EdgeAdmission["Authentication, Admission, Rate, and Abuse Controls"]
+        EdgeContext["Validated Correlation and Context Propagation"]
+    end
+
+    subgraph Trust["Shared Trust and Policy Capabilities"]
+        Identity["Identity and Credential Validation"]
+        Policy["Policy and Authorization Services"]
+        TenantContext["Tenant, Property, Purpose, and Delegation Context"]
+    end
+
+    subgraph Providers["Authoritative Provider Capabilities"]
+        DomainServices["Business and Domain Services"]
+        PlatformServices["Platform and Operational Services"]
+        IntelligenceServices["AI, Workflow, Knowledge, and Memory Services"]
+        IntegrationAdapters["Approved Integration and Property Adapters"]
+        ProviderBoundary["Provider Validation and Domain Enforcement"]
+    end
+
+    subgraph State["Provider-Owned State and Published Facts"]
+        ServiceState["Service-Owned Authoritative State"]
+        PublishedEvents["Versioned Events and Asynchronous Outcomes"]
+    end
+
+    subgraph CrossCutting["Cross-Cutting Enterprise Capabilities"]
+        Governance["Architecture, Governance, Risk, and Assurance"]
+        SecurityPrivacy["Security, Privacy, and Data Protection"]
+        TestEvidence["Testing, Conformance, and Evidence"]
+        Operations["Operations, Observability, Capacity, and Resilience"]
+    end
+
+    PeopleApps -->|"Discover and onboard"| PortalDocs
+    ServicesFlows -->|"Discover and onboard"| PortalDocs
+    AgentsExtensions -->|"Discover eligible tools"| PortalDocs
+    TenantPartners -->|"Discover and onboard"| PortalDocs
+
+    ProductRegistry --> ContractAuthority
+    ContractAuthority --> PortalDocs
+    ProductRegistry --> AccessLifecycle
+    AccessLifecycle --> SupportFeedback
+
+    ContractAuthority -->|"Authoritative inputs"| SDKFactory
+    SDKFactory --> SDKQuality
+    SDKQuality -->|"Verified artifacts"| PackageDistribution
+    PackageDistribution --> SupportedSDKs
+
+    SupportedSDKs -->|"Safe consumption"| PeopleApps
+    SupportedSDKs -->|"Safe consumption"| ServicesFlows
+    SupportedSDKs -->|"Bounded tool clients"| AgentsExtensions
+    SupportedSDKs -->|"Supported integration clients"| TenantPartners
+
+    PeopleApps -->|"Requests through published contracts"| Exposure
+    ServicesFlows -->|"Requests and subscriptions"| Exposure
+    AgentsExtensions -->|"Authorized tool requests"| Exposure
+    TenantPartners -->|"Approved integration requests"| Exposure
+
+    Exposure --> EdgeAdmission
+    EdgeAdmission --> EdgeContext
+    Identity --> EdgeAdmission
+    Policy --> EdgeAdmission
+    TenantContext --> EdgeContext
+
+    ContractAuthority -->|"Published versions"| Exposure
+    EdgeContext -->|"Routed request and validated context"| ProviderBoundary
+
+    Identity -->|"Trusted identity context"| ProviderBoundary
+    Policy -->|"Policy decision inputs"| ProviderBoundary
+    TenantContext -->|"Authorized scope"| ProviderBoundary
+    ContractAuthority -->|"Contract requirements"| ProviderBoundary
+
+    ProviderBoundary --> DomainServices
+    ProviderBoundary --> PlatformServices
+    ProviderBoundary --> IntelligenceServices
+    ProviderBoundary --> IntegrationAdapters
+
+    DomainServices -->|"Owns"| ServiceState
+    PlatformServices -->|"Owns"| ServiceState
+    IntelligenceServices -->|"Owns governed state"| ServiceState
+    IntegrationAdapters -->|"Uses published interfaces"| DomainServices
+
+    DomainServices -->|"Publishes facts"| PublishedEvents
+    PlatformServices -->|"Publishes facts"| PublishedEvents
+    IntelligenceServices -->|"Publishes governed outcomes"| PublishedEvents
+    PublishedEvents -->|"Authorized asynchronous consumption"| ProviderBoundary
+
+    Governance -. "Guardrails and decisions" .-> ProductPlane
+    Governance -. "Lifecycle and assurance" .-> SDKPlane
+    Governance -. "Exposure governance" .-> Edge
+    Governance -. "Provider governance" .-> Providers
+
+    SecurityPrivacy -. "Security and privacy controls" .-> Edge
+    SecurityPrivacy -. "Zero-trust enforcement" .-> Providers
+    SecurityPrivacy -. "Supply-chain controls" .-> SDKPlane
+
+    TestEvidence -. "Contract and conformance evidence" .-> ProductPlane
+    TestEvidence -. "Package and runtime evidence" .-> SDKPlane
+    TestEvidence -. "Provider conformance" .-> Providers
+
+    Operations -. "Health and service objectives" .-> Edge
+    Operations -. "Health, capacity, and recovery" .-> Providers
+    Operations -. "Distribution and support health" .-> SDKPlane
+
+    Edge -->|"Safe response or structured failure"| Consumers
+    Providers -->|"Outcomes, events, and evidence"| Operations
+    Operations -->|"Incidents, adoption, and performance feedback"| SupportFeedback
+    SupportFeedback -->|"Product and roadmap improvement"| ProductRegistry
+
+    ContractAuthority -. "Defines behavior" .-> SupportedSDKs
+    SupportedSDKs -. "Does not grant authority" .-> EdgeAdmission
+    ProviderBoundary -. "Owns authoritative decisions" .-> TestEvidence
