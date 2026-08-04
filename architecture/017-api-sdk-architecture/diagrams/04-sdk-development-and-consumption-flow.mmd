@@ -1,0 +1,148 @@
+flowchart TB
+    %% ARCH-017-04 — SDK Development and Consumption Flow
+
+    subgraph Authority["Authoritative Product and Contract Inputs"]
+        Product["Registered API Product and Owner"]
+        Contract["Approved API Contract Version"]
+        SDKDeclaration["SDK Product Declaration"]
+        SupportPolicy["Runtime, Compatibility, Security, and Support Policy"]
+
+        Product --> Contract
+        Product --> SDKDeclaration
+        Contract --> SDKDeclaration
+        SupportPolicy --> SDKDeclaration
+    end
+
+    subgraph Development["SDK Development"]
+        InputValidation{"Inputs Complete and Compatible?"}
+        GeneratedCore["Generate Contract-Derived Core"]
+        Handwritten["Develop Reviewed Handwritten Extensions"]
+        Assemble["Assemble Portable SDK Layers"]
+        Documentation["Generate and Author Versioned Documentation"]
+
+        InputValidation -- "Yes" --> GeneratedCore
+        SDKDeclaration --> Handwritten
+        GeneratedCore --> Assemble
+        Handwritten --> Assemble
+        Assemble --> Documentation
+    end
+
+    Contract --> InputValidation
+    SDKDeclaration --> InputValidation
+    SupportPolicy --> InputValidation
+
+    InputValidation -- "No" --> SourceCorrection["Correct Contract, Declaration, or Policy Source"]
+    SourceCorrection --> InputValidation
+
+    subgraph Verification["Build, Test, and Conformance"]
+        Reproducible["Reproducible Generation and Build"]
+        ContractTests["Contract and Provider Conformance"]
+        CompatibilityTests["Source, Runtime, and API Compatibility"]
+        SecurityTests["Security, Credential, Tenant, and Property Isolation"]
+        BehaviorTests["Error, Retry, Timeout, Cancellation, and Concurrency"]
+        PackageTests["Runtime Matrix, Installation, and Package Integrity"]
+        QualityGate{"All Required Evidence Accepted?"}
+
+        Reproducible --> ContractTests
+        ContractTests --> CompatibilityTests
+        CompatibilityTests --> SecurityTests
+        SecurityTests --> BehaviorTests
+        BehaviorTests --> PackageTests
+        PackageTests --> QualityGate
+    end
+
+    Assemble --> Reproducible
+    Documentation --> PackageTests
+
+    QualityGate -- "No" --> Defect["Owned Defect, Risk, or Time-Bounded Exception"]
+    Defect --> SourceCorrection
+
+    subgraph Supply["Package Supply and Distribution"]
+        Artifact["Immutable Distribution Unit"]
+        Provenance["Source, Contract, Dependency, Build, and Test Provenance"]
+        Integrity["Digest, Attestation, and Software Bill of Materials"]
+        ReleaseDecision{"Release Channel Authorized?"}
+        Registry["Governed Package Distribution"]
+        Published["Published SDK Version and Support Metadata"]
+
+        Artifact --> Provenance
+        Provenance --> Integrity
+        Integrity --> ReleaseDecision
+        ReleaseDecision -- "Yes" --> Registry
+        Registry --> Published
+    end
+
+    QualityGate -- "Yes" --> Artifact
+    ReleaseDecision -- "No" --> Defect
+
+    subgraph Consumer["Consumer Adoption and Configuration"]
+        Discover["Discover API, SDK, Documentation, and Lifecycle"]
+        Select["Select Supported SDK and Runtime Version"]
+        VerifyPackage{"Package Identity and Integrity Valid?"}
+        Install["Install Approved Package"]
+        Configure["Configure Endpoint, Credential Provider, and Safe Defaults"]
+        BindContext["Bind Authorized Tenant, Property, Purpose, and Delegation"]
+        Construct["Construct SDK Client"]
+        Use["Invoke Published API Operation"]
+
+        Discover --> Select
+        Select --> VerifyPackage
+        VerifyPackage -- "Yes" --> Install
+        Install --> Configure
+        Configure --> BindContext
+        BindContext --> Construct
+        Construct --> Use
+    end
+
+    Published --> Discover
+    Documentation --> Discover
+    VerifyPackage -- "No" --> Reject["Reject Installation and Report Integrity Failure"]
+
+    subgraph Runtime["Governed API Runtime"]
+        Gateway["API Gateway and Edge Admission"]
+        Provider["Provider Authorization and Contract Validation"]
+        Domain["Authoritative Domain Execution"]
+        Outcome["Safe Result, Accepted State, Event, or Structured Failure"]
+
+        Gateway --> Provider
+        Provider --> Domain
+        Domain --> Outcome
+    end
+
+    Use -->|"SDK request with explicit identity and context"| Gateway
+    Outcome -->|"Contract-conformant outcome"| Use
+    Provider -. "SDK possession does not grant authority" .-> Construct
+
+    subgraph Feedback["Operations, Support, and Lifecycle Feedback"]
+        Telemetry["Privacy-Safe SDK and API Telemetry"]
+        Adoption["Version Adoption and Migration State"]
+        Support["Defects, Documentation, and Consumer Support"]
+        Vulnerability["Dependency, Package, and Supply-Chain Findings"]
+        Evaluate{"Change, Restrict, Migrate, or Retire?"}
+        Improve["Update Contract, SDK, Tests, Documentation, or Policy"]
+        Deprecate["Deprecate, Revoke, or End Support with Notice"]
+
+        Telemetry --> Evaluate
+        Adoption --> Evaluate
+        Support --> Evaluate
+        Vulnerability --> Evaluate
+        Evaluate -- "Improve" --> Improve
+        Evaluate -- "Lifecycle or material risk" --> Deprecate
+    end
+
+    Use -. "Attempts, errors, retries, and versions" .-> Telemetry
+    Outcome -. "Provider outcomes and correlation" .-> Telemetry
+    Published -. "Lifecycle and package state" .-> Adoption
+    Reject --> Vulnerability
+    Consumer -. "Feedback and support context" .-> Support
+
+    Improve --> SDKDeclaration
+    Improve --> Contract
+    Improve --> SupportPolicy
+    Deprecate --> Published
+    Deprecate --> ConsumerMigration["Consumer Migration, Cleanup, and Evidence"]
+    ConsumerMigration --> Select
+
+    GeneratedCore -. "Traceable to contract" .-> Contract
+    Handwritten -. "Cannot redefine API semantics" .-> Contract
+    Registry -. "Distributes artifacts; does not create trust" .-> VerifyPackage
