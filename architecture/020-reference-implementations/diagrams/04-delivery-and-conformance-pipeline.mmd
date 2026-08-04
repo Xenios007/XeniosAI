@@ -1,0 +1,16 @@
+flowchart LR
+    SOURCE["Source and<br/>Architecture Trace"] --> BUILD["Immutable Build<br/>Inventory and Provenance"]
+    BUILD --> CONTRACT["Unit and<br/>Contract Tests"]
+    CONTRACT --> TENANT["Multi-Tenant and<br/>Integration Tests"]
+    TENANT --> AI["AI Evaluation and<br/>Workflow Tests"]
+    AI --> ASSURE["Security, Performance,<br/>and Resilience"]
+    ASSURE --> REPORT["Conformance Report<br/>Evidence and Exceptions"]
+    REPORT --> RELEASE["Progressive Release<br/>Health Gates"]
+    RELEASE --> VERIFY["Operational Verification<br/>or Rollback"]
+
+    classDef build fill:#eef4ff,stroke:#3559a8,color:#13254b
+    classDef test fill:#e6f6ef,stroke:#28785a,color:#123d2d
+    classDef gate fill:#fff4dc,stroke:#a66b00,color:#4a3000
+    class SOURCE,BUILD build
+    class CONTRACT,TENANT,AI,ASSURE test
+    class REPORT,RELEASE,VERIFY gate
