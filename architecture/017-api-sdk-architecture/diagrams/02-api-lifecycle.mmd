@@ -1,0 +1,113 @@
+flowchart TB
+    %% ARCH-017-02 — API Lifecycle
+
+    Need["Business or Platform Need"] --> ProductProposal
+
+    subgraph Product["API Product Lifecycle"]
+        direction LR
+        ProductProposal["Proposed"] --> ProductDesign["Defined"]
+        ProductDesign --> ProductRegistered["Registered"]
+        ProductRegistered --> ProductActive["Active"]
+        ProductActive --> ProductDeprecated["Deprecated"]
+        ProductDeprecated --> ProductRetired["Retired and Archived"]
+    end
+
+    subgraph Contract["Contract Lifecycle"]
+        direction LR
+        ContractDraft["Draft"] --> ContractReview["Reviewed"]
+        ContractReview --> ContractApproved["Approved"]
+        ContractApproved --> ContractPublished["Published and Supported"]
+        ContractPublished --> ContractDeprecated["Deprecated"]
+        ContractDeprecated --> ContractRetired["Retired"]
+    end
+
+    subgraph Release["Provider Release Lifecycle"]
+        direction LR
+        ReleasePlanned["Planned"] --> ReleaseVerified["Verified"]
+        ReleaseVerified --> ReleaseReleased["Released"]
+        ReleaseReleased --> ReleaseActive["Progressively Activated"]
+        ReleaseActive --> ReleaseRestricted["Restricted or Superseded"]
+        ReleaseRestricted --> ReleaseRetired["Retired"]
+    end
+
+    subgraph SDK["SDK Lifecycle"]
+        direction LR
+        SDKDeclared["Declared"] --> SDKBuilt["Built and Conformant"]
+        SDKBuilt --> SDKPublished["Published"]
+        SDKPublished --> SDKSupported["Supported"]
+        SDKSupported --> SDKDeprecated["Deprecated"]
+        SDKDeprecated --> SDKRetired["End of Support"]
+    end
+
+    subgraph Adoption["Consumer Adoption Lifecycle"]
+        direction LR
+        ConsumerKnown["Identified"] --> ConsumerOnboarded["Onboarded"]
+        ConsumerOnboarded --> ConsumerAdopted["Version Adopted"]
+        ConsumerAdopted --> ConsumerOperating["Operating"]
+        ConsumerOperating --> ConsumerMigrating["Migrating"]
+        ConsumerMigrating --> ConsumerExited["Exited and Cleaned Up"]
+    end
+
+    ProductDesign -->|"Requires explicit behavior"| ContractDraft
+    ContractApproved -->|"Authorizes implementation target"| ReleasePlanned
+    ContractApproved -->|"Authorizes SDK inputs"| SDKDeclared
+    ContractPublished -->|"Enables governed onboarding"| ConsumerOnboarded
+    ReleaseActive -->|"Supports product use"| ProductActive
+    SDKPublished -->|"Offers supported client"| ConsumerAdopted
+    ConsumerOperating -->|"Usage and outcome evidence"| ProductActive
+
+    subgraph ChangeControl["Change, Compatibility, and Migration Control"]
+        Change["Change Proposal"] --> Classify{"Compatibility Classification"}
+        Classify -- "Compatible" --> Compatible["Evolve within Supported Boundary"]
+        Classify -- "Conditional" --> Conditional["Apply Conditions and Consumer Validation"]
+        Classify -- "Breaking or Unknown" --> NewBoundary["Create New Compatibility Boundary"]
+        Conditional --> EvidenceGate{"Evidence and Conditions Met?"}
+        EvidenceGate -- "No" --> Change
+        EvidenceGate -- "Yes" --> Compatible
+        NewBoundary --> Coexist["Version Coexistence and Migration Plan"]
+        Coexist --> MigrationReady{"Migration and Retirement Ready?"}
+        MigrationReady -- "No" --> Coexist
+        MigrationReady -- "Yes" --> RetirementDecision["Authorize Superseded-Version Retirement"]
+    end
+
+    ProductActive -->|"Roadmap, feedback, risk, or incident"| Change
+    ContractPublished -->|"Contract change"| Change
+    ReleaseActive -->|"Implementation change"| Change
+    SDKSupported -->|"SDK or runtime change"| Change
+    ConsumerOperating -->|"Consumer need or defect"| Change
+
+    Compatible --> ContractReview
+    NewBoundary --> ContractDraft
+    Coexist --> ConsumerMigrating
+
+    RetirementDecision --> ContractDeprecated
+    RetirementDecision --> SDKDeprecated
+    RetirementDecision --> ProductDeprecated
+    ConsumerExited --> ProductRetired
+    ContractRetired --> ProductRetired
+    ReleaseRetired --> ProductRetired
+    SDKRetired --> ProductRetired
+
+    subgraph Governance["Lifecycle Governance and Evidence"]
+        Ownership["Accountable Ownership"]
+        Gates["Architecture, Security, Privacy, Tenant, and Operational Gates"]
+        Conformance["Compatibility, Test, Conformance, and Assurance Evidence"]
+        Communication["Consumer Inventory, Notice, Support, and Exceptions"]
+    end
+
+    Ownership -. "Decision authority" .-> ProductDesign
+    Gates -. "Approval conditions" .-> ContractApproved
+    Conformance -. "Release evidence" .-> ReleaseVerified
+    Conformance -. "Package evidence" .-> SDKBuilt
+    Communication -. "Adoption and migration evidence" .-> ConsumerMigrating
+    Gates -. "Retirement authority" .-> RetirementDecision
+
+    Emergency["Material Security, Safety, Legal, Privacy, or Integrity Risk"]
+    Emergency --> EmergencyAction["Emergency Restrict, Suspend, Revoke, or Retire"]
+    EmergencyAction --> ReleaseRestricted
+    EmergencyAction --> SDKDeprecated
+    EmergencyAction --> ConsumerMigrating
+    EmergencyAction -. "Retrospective review and remediation" .-> Change
+
+    ProductRetired --> Lessons["Preserve Evidence and Lessons"]
+    Lessons -->|"Future product and roadmap improvement"| Need
