@@ -1,0 +1,37 @@
+flowchart TB
+    REQUIREMENTS["Tenant Requirements<br/>Risk, residency, scale, service, recovery"]
+    PROFILE["Approved Isolation Profile"]
+    DECISION{"Placement Model"}
+
+    SHARED["Shared Logical<br/>Shared runtime and stores<br/>Tenant keys and policy"]
+    PARTITIONED["Partitioned<br/>Dedicated schema, shard,<br/>queue, index, or pool"]
+    DEDICATED["Dedicated<br/>Tenant-specific store, cell,<br/>account, or environment"]
+
+    INVARIANTS["Common Invariants<br/>Explicit context, provider validation,<br/>encryption, quotas, telemetry, recovery"]
+    PLACEMENT["Trusted Placement and Routing"]
+    OPERATIONS["Lifecycle, Operations, and Assurance"]
+    MIGRATION["Governed Migration and Reconciliation"]
+
+    REQUIREMENTS --> PROFILE
+    PROFILE --> DECISION
+    DECISION -->|standard risk and efficient scale| SHARED
+    DECISION -->|containment or predictable scale| PARTITIONED
+    DECISION -->|contract, sovereignty, or exceptional risk| DEDICATED
+
+    SHARED --> INVARIANTS
+    PARTITIONED --> INVARIANTS
+    DEDICATED --> INVARIANTS
+    INVARIANTS --> PLACEMENT
+    PLACEMENT --> OPERATIONS
+    OPERATIONS --> MIGRATION
+    MIGRATION -. "profile or placement change" .-> PROFILE
+
+    classDef input fill:#eef4ff,stroke:#3559a8,color:#13254b
+    classDef choice fill:#fff4dc,stroke:#a66b00,color:#4a3000
+    classDef model fill:#e6f6ef,stroke:#28785a,color:#123d2d
+    classDef control fill:#eee8ff,stroke:#6842a8,color:#261545
+
+    class REQUIREMENTS,PROFILE input
+    class DECISION choice
+    class SHARED,PARTITIONED,DEDICATED model
+    class INVARIANTS,PLACEMENT,OPERATIONS,MIGRATION control
