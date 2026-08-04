@@ -1,0 +1,38 @@
+sequenceDiagram
+    autonumber
+    actor Caller
+    participant Host as Extension Host
+    participant Control as Registry, Installation, and Policy
+    participant Runtime as Isolated Extension Runtime
+    participant Provider as Domain or Platform Provider
+    participant Resource as Tenant Resource
+    participant Evidence as Evidence and Usage
+
+    Caller->>Host: Invoke extension point with tenant context
+    Host->>Control: Verify package, installation, grant, policy, and budget
+    Control-->>Host: Exact digest and bounded execution authority
+
+    alt Admission denied or package suspended
+        Host-->>Caller: Stable tenant-safe denial
+        Host->>Evidence: Record admission decision
+    else Execution admitted
+        Host->>Runtime: Start bounded execution with mediated interfaces
+        Runtime->>Host: Request granted provider capability
+        Host->>Provider: Call with extension and tenant execution identity
+        Provider->>Provider: Validate actor, grant, resource ownership, and policy
+
+        alt Provider denies or runtime fails
+            Provider-->>Host: Classified failure
+            Host->>Runtime: Cancel, limit, or quarantine
+            Host->>Evidence: Record denial, failure, and resource use
+            Host-->>Caller: Contract-defined failure or safe omission
+        else Operation permitted
+            Provider->>Resource: Execute authoritative tenant operation
+            Resource-->>Provider: Tenant-bound result
+            Provider-->>Host: Validated response
+            Host->>Runtime: Return mediated result
+            Runtime-->>Host: Extension output
+            Host->>Evidence: Record package, grant, outcome, health, and usage
+            Host-->>Caller: Validated extension-point response
+        end
+    end
