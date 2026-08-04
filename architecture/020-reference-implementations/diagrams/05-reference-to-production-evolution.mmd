@@ -1,0 +1,26 @@
+stateDiagram-v2
+    [*] --> Candidate: business and architecture need
+    Candidate --> Scoped: scenario and profile approved
+    Scoped --> Implementing: trace and fixtures ready
+    Implementing --> Reference: conformance evidence accepted
+    Reference --> Maintained: released and supported
+    Maintained --> Adapting: production use selected
+    Adapting --> Productionizing: workload and risk assessment
+    Productionizing --> Pilot: controls and operations ready
+    Pilot --> Production: acceptance and service approval
+    Pilot --> Adapting: remediation required
+    Production --> Feedback: operating evidence
+    Feedback --> Maintained: reference improvement
+    Feedback --> Scoped: architecture change proposed
+    Maintained --> Retired: obsolete or replaced
+    Retired --> [*]
+
+    note right of Reference
+        Demonstrates one conformant realization
+        Does not imply production readiness
+    end note
+
+    note right of Productionizing
+        Business, data, security, capacity,
+        resilience, support, cost, and compliance
+    end note
