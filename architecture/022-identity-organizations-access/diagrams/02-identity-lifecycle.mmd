@@ -1,0 +1,17 @@
+stateDiagram-v2
+    [*] --> Proposed
+    Proposed --> Proofing
+    Proofing --> Active: requirements satisfied
+    Proofing --> Retired: abandoned or rejected
+    Active --> Restricted: risk or limited relationship
+    Restricted --> Active: conditions restored
+    Active --> Suspended: temporary containment
+    Restricted --> Suspended
+    Suspended --> Recovery: approved recovery
+    Recovery --> Active: assurance restored
+    Active --> Revoked: authority ended
+    Restricted --> Revoked
+    Suspended --> Revoked
+    Revoked --> Retired: disposition complete
+    Retired --> [*]
+
