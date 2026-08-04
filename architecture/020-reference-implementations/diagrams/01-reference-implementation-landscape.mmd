@@ -1,0 +1,34 @@
+flowchart TB
+    ARCH["ARCH-001 through ARCH-019<br/>Normative Architecture"]
+    PROFILE["Conformance Profiles<br/>Requirements, Controls, Quality, Tests"]
+    PATTERNS["Shared Reference Patterns<br/>Contracts, Services, Workflows, AI, Data"]
+
+    subgraph REFERENCES["Reference Portfolio"]
+        direction LR
+        CASA["Casa Lluvia<br/>Single Property"]
+        ENTERPRISE["Multi-Property<br/>Enterprise"]
+        CROSS["Cross-Cutting<br/>Pattern Examples"]
+    end
+
+    DELIVERY["Developer Platform<br/>Golden Paths and Environments"]
+    EVIDENCE["Conformance Evidence<br/>Tests, Evaluations, Security, Recovery"]
+    FEEDBACK["Architecture and Platform Feedback"]
+
+    ARCH --> PROFILE
+    PROFILE --> PATTERNS
+    PATTERNS --> CASA
+    PATTERNS --> ENTERPRISE
+    PATTERNS --> CROSS
+    DELIVERY --> REFERENCES
+    REFERENCES --> EVIDENCE
+    EVIDENCE --> FEEDBACK
+    FEEDBACK -. "governed change" .-> ARCH
+
+    classDef norm fill:#eee8ff,stroke:#6842a8,color:#261545
+    classDef ref fill:#e6f6ef,stroke:#28785a,color:#123d2d
+    classDef delivery fill:#eef4ff,stroke:#3559a8,color:#13254b
+    classDef evidence fill:#fff4dc,stroke:#a66b00,color:#4a3000
+    class ARCH,PROFILE,PATTERNS norm
+    class CASA,ENTERPRISE,CROSS ref
+    class DELIVERY delivery
+    class EVIDENCE,FEEDBACK evidence
