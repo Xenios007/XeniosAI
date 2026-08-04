@@ -1,0 +1,13 @@
+flowchart TD
+    Conversation["Customer conversation"] --> Trigger{"Resolution or escalation?"}
+    Trigger -->|Resolved| Feedback["Capture optional feedback and outcome"]
+    Trigger -->|Escalate| Package["Create consented handoff package"]
+    Package --> Queue["Route to accountable queue"]
+    Queue --> Human["Human validates context and acts"]
+    Human --> Resolution["Record authoritative resolution"]
+    Resolution --> Customer["Communicate result and next steps"]
+    Customer --> Feedback
+    Feedback --> Privacy["Privacy, tenant and retention controls"]
+    Privacy --> Candidate["Create governed improvement candidate"]
+    Candidate --> Evaluation["ARCH-029 evaluation and promotion"]
+
