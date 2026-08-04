@@ -1,0 +1,25 @@
+sequenceDiagram
+    autonumber
+    actor Guest
+    participant Channel as Channel Adapter
+    participant Gateway as Gateway and Tenant Context
+    participant AI as AI Orchestrator
+    participant Services as Availability and Pricing Services
+    participant Workflow as Reservation Workflow
+    participant External as Payment, Calendar, and Notification
+    participant Evidence as Telemetry and Evidence
+
+    Guest->>Channel: Ask availability and price
+    Channel->>Gateway: Normalized request
+    Gateway->>AI: Authorized tenant and property context
+    AI->>Services: Query authoritative availability and rate
+    Services-->>AI: Versioned itemized result
+    AI-->>Guest: Grounded answer and required next input
+    Guest->>Channel: Request reservation
+    Channel->>Gateway: Idempotent reservation command
+    Gateway->>Workflow: Start tenant-bound booking workflow
+    Workflow->>Services: Hold availability and confirm pricing
+    Workflow->>External: Coordinate deposit, guest details, and messages
+    External-->>Workflow: Correlated outcomes
+    Workflow-->>Guest: Confirmation or actionable exception
+    Workflow->>Evidence: Record state, events, health, and evidence
