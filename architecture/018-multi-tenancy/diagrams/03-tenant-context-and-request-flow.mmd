@@ -1,0 +1,32 @@
+sequenceDiagram
+    autonumber
+    actor Caller
+    participant Edge as Trust Edge
+    participant Control as Tenant Control Plane
+    participant Provider as Provider Service
+    participant Resource as Tenant Resource
+    participant Evidence as Evidence and Telemetry
+
+    Caller->>Edge: Authenticate and request tenant operation
+    Edge->>Control: Resolve tenant, membership, property, and lifecycle
+    Control-->>Edge: Validated scope, policy, entitlement, and placement
+
+    alt Missing, conflicting, or unauthorized scope
+        Edge-->>Caller: Deny without resource disclosure
+        Edge->>Evidence: Record denied context decision
+    else Trusted tenant context established
+        Edge->>Provider: Call with bounded context and correlation
+        Provider->>Control: Revalidate policy or current state as required
+        Control-->>Provider: Decision and authoritative references
+        Provider->>Provider: Validate resource tenant and property ownership
+
+        alt Ownership or authority mismatch
+            Provider-->>Caller: Deny with stable tenant-safe error
+            Provider->>Evidence: Record mismatch and security signal
+        else Operation permitted
+            Provider->>Resource: Execute in approved tenant placement
+            Resource-->>Provider: Tenant-bound result
+            Provider->>Evidence: Emit scoped telemetry, audit, event, and usage
+            Provider-->>Caller: Return tenant-bound response
+        end
+    end
