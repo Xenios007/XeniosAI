@@ -1,0 +1,131 @@
+flowchart TB
+    %% ARCH-017-03 — API Request and Policy Flow
+
+    subgraph Consumer["Identified Consumer Boundary"]
+        Intent["Business Intent"]
+        Client["Application, Service, Workflow, Agent, or Partner"]
+        SDK["Optional Supported SDK"]
+        Intent --> Client
+        Client -->|"Typed or structured request"| SDK
+    end
+
+    SDK -->|"No authority created"| Receive
+    Client -->|"Direct published-contract request"| Receive
+
+    subgraph Gateway["Governed API Gateway and Edge Boundary"]
+        Receive["Receive and Bound Request"]
+        Authenticate{"Identity Authenticated?"}
+        Expose{"Product, Version, and Operation Exposed?"}
+        Admit{"Rate, Quota, Size, and Abuse Admission?"}
+        Establish["Establish Correlation and Edge Context"]
+        Route["Route to Accountable Provider"]
+
+        Receive --> Authenticate
+        Authenticate -- "Yes" --> Expose
+        Expose -- "Yes" --> Admit
+        Admit -- "Yes" --> Establish
+        Establish --> Route
+    end
+
+    subgraph Trust["Trusted Identity and Policy Inputs"]
+        Identity["Consumer, Acting, and Workload Identity"]
+        Delegation["Purpose, Delegation, and Approval State"]
+        Scope["Tenant, Property, Environment, and Classification"]
+        EdgePolicy["Exposure, Rate, Quota, and Abuse Policy"]
+        ProviderPolicy["Operation, Resource, Field, and Domain Policy"]
+    end
+
+    Identity --> Authenticate
+    Delegation --> Establish
+    Scope --> Establish
+    EdgePolicy --> Expose
+    EdgePolicy --> Admit
+
+    subgraph Provider["Authoritative Provider Trust Boundary"]
+        ProviderReceive["Receive Routed Request and Context"]
+        Revalidate["Revalidate Identity, Context, and Contract Version"]
+        Authorize{"Operation and Resource Authorized?"}
+        BindScope{"Tenant and Property Scope Valid?"}
+        Validate{"Contract and Input Valid?"}
+        Preconditions{"Domain Preconditions and Policy Met?"}
+        Idempotency["Resolve Idempotency and Concurrency"]
+        Execute["Execute Authoritative Domain Capability"]
+
+        ProviderReceive --> Revalidate
+        Revalidate --> Authorize
+        Authorize -- "Yes" --> BindScope
+        BindScope -- "Yes" --> Validate
+        Validate -- "Yes" --> Preconditions
+        Preconditions -- "Yes" --> Idempotency
+        Idempotency --> Execute
+    end
+
+    Route --> ProviderReceive
+    Identity --> Revalidate
+    Delegation --> Authorize
+    Scope --> BindScope
+    ProviderPolicy --> Authorize
+    ProviderPolicy --> Preconditions
+    Contract["Approved API Contract"] --> Revalidate
+    Contract --> Validate
+    Contract --> Idempotency
+
+    subgraph Domain["Provider-Owned Domain and Integration"]
+        State["Service-Owned Authoritative State"]
+        Dependency["Approved API or Event Dependency"]
+        DomainResult["Domain Result and Published Fact"]
+
+        Execute -->|"Read or change through domain rules"| State
+        Execute -->|"Published interface only"| Dependency
+        State --> DomainResult
+        Dependency --> DomainResult
+    end
+
+    DomainResult --> Completion{"Completion Mode"}
+    Completion -- "Synchronous" --> OutputAuth["Authorize and Minimize Output"]
+    Completion -- "Accepted asynchronous work" --> AsyncState["Return Durable Operation Identity"]
+    Completion -- "Published event or callback" --> AsyncDelivery["Governed Delivery with Retry and Evidence"]
+
+    OutputAuth --> BuildResponse["Build Contract-Conformant Response"]
+    AsyncState --> BuildResponse
+    AsyncDelivery --> BuildResponse
+    BuildResponse --> GatewayResponse["Gateway Response Protection"]
+    GatewayResponse --> Result["Safe Success, Accepted State, or Structured Failure"]
+    Result --> Client
+
+    Authenticate -- "No" --> SafeFailure
+    Expose -- "No" --> SafeFailure
+    Admit -- "No" --> SafeFailure
+    Authorize -- "No" --> SafeFailure
+    BindScope -- "No" --> SafeFailure
+    Validate -- "No" --> SafeFailure
+    Preconditions -- "No" --> SafeFailure
+
+    SafeFailure["Classified Safe Failure with Correlation and Guidance"]
+    SafeFailure -. "No unintended domain side effect" .-> Result
+
+    subgraph Evidence["Observability, Security, and Evidence"]
+        Telemetry["Privacy-Safe Metrics, Logs, and Traces"]
+        Audit["Protected Security and Administrative Evidence"]
+        Health["Service Objectives, Capacity, and Incident Signals"]
+    end
+
+    Receive -. "Request outcome context" .-> Telemetry
+    Establish -. "Validated correlation" .-> Telemetry
+    ProviderReceive -. "Provider processing" .-> Telemetry
+    Execute -. "Domain outcome" .-> Telemetry
+    SafeFailure -. "Failure category" .-> Telemetry
+    BuildResponse -. "Completion outcome" .-> Telemetry
+
+    Authenticate -. "Identity evidence" .-> Audit
+    Authorize -. "Authorization evidence" .-> Audit
+    BindScope -. "Tenant and property evidence" .-> Audit
+    Execute -. "High-impact action evidence" .-> Audit
+
+    Telemetry --> Health
+    Audit --> Health
+    Health -. "Operational feedback and control improvement" .-> EdgePolicy
+    Health -. "Provider feedback and remediation" .-> ProviderPolicy
+
+    Note["Authentication establishes identity; provider authorization permits action; tenant and property binding constrains every resource and data path"]
+    Note -. "Non-negotiable trust model" .-> ProviderReceive
