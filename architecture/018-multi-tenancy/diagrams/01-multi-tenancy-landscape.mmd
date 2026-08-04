@@ -1,0 +1,77 @@
+flowchart TB
+    subgraph ACTORS["Tenant and Platform Actors"]
+        direction LR
+        USER["Tenant Users"]
+        TADMIN["Tenant and Property Admins"]
+        PARTNER["Partners and Integrations"]
+        OPERATOR["Platform Operators"]
+    end
+
+    subgraph EDGE["Experience and Trust Edge"]
+        direction LR
+        EXPERIENCE["Tenant-Aware Experiences"]
+        GATEWAY["API and Integration Gateway"]
+        SUPPORT["Scoped Support Access"]
+    end
+
+    subgraph CONTROL["Tenant Control Plane"]
+        direction LR
+        REGISTRY["Tenant Registry and Lifecycle"]
+        ACCESS["Membership and Policy"]
+        PROFILE["Configuration and Entitlements"]
+        PLACEMENT["Isolation, Placement, and Quotas"]
+    end
+
+    subgraph RUNTIME["Tenant-Aware Runtime"]
+        direction LR
+        SERVICES["Domain and Platform Services"]
+        AUTOMATION["Workflows and Agents"]
+        KNOWLEDGE["Knowledge and Memory"]
+        EXCHANGE["Events and Integrations"]
+    end
+
+    subgraph RESOURCES["Isolated Tenant Resources"]
+        direction LR
+        DATA["Data, Files, Caches, and Indexes"]
+        EXECUTION["Compute, Queues, and Model Capacity"]
+        EVIDENCE["Telemetry, Audit, Backup, and Usage"]
+    end
+
+    USER --> EXPERIENCE
+    TADMIN --> EXPERIENCE
+    PARTNER --> GATEWAY
+    OPERATOR --> SUPPORT
+
+    EXPERIENCE --> GATEWAY
+    SUPPORT --> GATEWAY
+    GATEWAY --> ACCESS
+    ACCESS --> REGISTRY
+    REGISTRY --> PROFILE
+    PROFILE --> PLACEMENT
+
+    GATEWAY --> SERVICES
+    PLACEMENT --> SERVICES
+    SERVICES --> AUTOMATION
+    SERVICES --> KNOWLEDGE
+    SERVICES --> EXCHANGE
+
+    SERVICES --> DATA
+    AUTOMATION --> EXECUTION
+    KNOWLEDGE --> DATA
+    EXCHANGE --> EXECUTION
+    DATA --> EVIDENCE
+    EXECUTION --> EVIDENCE
+
+    EVIDENCE -. "assurance and reconciliation" .-> CONTROL
+
+    classDef actor fill:#eef4ff,stroke:#3559a8,color:#13254b
+    classDef edge fill:#fff4dc,stroke:#a66b00,color:#4a3000
+    classDef control fill:#eee8ff,stroke:#6842a8,color:#261545
+    classDef runtime fill:#e6f6ef,stroke:#28785a,color:#123d2d
+    classDef resource fill:#f8e9ec,stroke:#a54155,color:#4b1923
+
+    class USER,TADMIN,PARTNER,OPERATOR actor
+    class EXPERIENCE,GATEWAY,SUPPORT edge
+    class REGISTRY,ACCESS,PROFILE,PLACEMENT control
+    class SERVICES,AUTOMATION,KNOWLEDGE,EXCHANGE runtime
+    class DATA,EXECUTION,EVIDENCE resource
