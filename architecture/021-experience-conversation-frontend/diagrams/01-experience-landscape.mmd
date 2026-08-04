@@ -1,0 +1,36 @@
+flowchart TB
+    subgraph Actors["Experience actors"]
+        Customer["Customers"]
+        Workforce["Workforce"]
+        Admin["Tenant and platform admins"]
+        Partner["Partners and developers"]
+    end
+
+    subgraph Surfaces["Experience surfaces"]
+        Chat["Conversational experiences"]
+        Apps["Customer and staff apps"]
+        Channels["Messaging, voice and embedded channels"]
+        Consoles["Administration and developer portals"]
+    end
+
+    Gateway["Gateway, identity and tenant context"]
+    Conversation["Conversation and interaction services"]
+    Intelligence["AI, workflow and knowledge capabilities"]
+    Domains["Authoritative domain services"]
+
+    Customer --> Chat
+    Customer --> Apps
+    Workforce --> Apps
+    Admin --> Consoles
+    Partner --> Consoles
+    Customer --> Channels
+
+    Chat --> Gateway
+    Apps --> Gateway
+    Channels --> Gateway
+    Consoles --> Gateway
+    Gateway --> Conversation
+    Conversation --> Intelligence
+    Intelligence --> Domains
+    Conversation --> Domains
+
