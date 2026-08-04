@@ -1,0 +1,12 @@
+flowchart TD
+    Request["Protected action request"] --> Authenticate["Authenticate principal and assurance"]
+    Authenticate --> Context["Resolve organization, tenant, relationship and resource context"]
+    Context --> Evaluate["Evaluate policy, ownership, delegation and risk"]
+    Evaluate --> Decision{"Decision"}
+    Decision -->|Deny| Deny["Return safe denial and evidence"]
+    Decision -->|Challenge| Challenge["Require stronger assurance or approval"]
+    Challenge --> Authenticate
+    Decision -->|Permit| Enforce["Provider enforces obligations and action"]
+    Enforce --> Result["Return authoritative result"]
+    Enforce --> Evidence["Record decision and enforcement evidence"]
+
