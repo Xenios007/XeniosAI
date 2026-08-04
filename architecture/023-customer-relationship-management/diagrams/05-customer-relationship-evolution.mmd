@@ -1,0 +1,20 @@
+flowchart TB
+    foundation["Horizon 1: Governed foundation"]
+    connected["Horizon 2: Connected relationships"]
+    intelligence["Horizon 3: Governed intelligence"]
+    adaptive["Horizon 4: Adaptive relationships"]
+    guardrails["Authority, consent, tenant isolation, provenance, rights, human accountability"]
+    evidence["Conformance, evaluation, approval, monitoring, rollback, and retirement evidence"]
+
+    foundation --> connected
+    connected --> intelligence
+    intelligence --> adaptive
+    guardrails --> foundation
+    guardrails --> connected
+    guardrails --> intelligence
+    guardrails --> adaptive
+    evidence --> foundation
+    evidence --> connected
+    evidence --> intelligence
+    evidence --> adaptive
+
