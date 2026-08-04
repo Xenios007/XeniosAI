@@ -440,7 +440,7 @@ Tenant administrators may install only extensions and capabilities permitted by 
 
 ---
 
-# Capability Model
+# Capability Grant Model
 
 Capabilities may cover:
 
