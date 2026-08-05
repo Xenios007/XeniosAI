@@ -1,0 +1,14 @@
+flowchart TB
+    base["Schema and base configuration"]
+    override["Tenant, catalog, channel, and resource overrides"]
+    resolve["Deterministic precedence and validation"]
+    availability["Authoritative capacity and operability query"]
+    response["Resolved offering with freshness and restrictions"]
+    reject["Conflict, invalid configuration, or unavailable authority"]
+    base --> resolve
+    override --> resolve
+    resolve --> availability
+    availability -->|"Valid"| response
+    resolve -->|"Invalid"| reject
+    availability -->|"Unknown"| reject
+
