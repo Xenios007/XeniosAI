@@ -1,0 +1,15 @@
+stateDiagram-v2
+    [*] --> Draft
+    Draft --> Quoted: calculate
+    Quoted --> AwaitingConfirmation: select
+    AwaitingConfirmation --> Accepted: confirm and validate
+    AwaitingConfirmation --> Expired: validity ends
+    Accepted --> Modifying: change requested
+    Modifying --> Accepted: change committed
+    Accepted --> Cancelling: cancel requested
+    Cancelling --> Cancelled: compensate and commit
+    Accepted --> Fulfilled: completion confirmed
+    Fulfilled --> [*]
+    Cancelled --> [*]
+    Expired --> [*]
+
