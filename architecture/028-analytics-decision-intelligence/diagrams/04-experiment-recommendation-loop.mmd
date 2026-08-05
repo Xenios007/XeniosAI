@@ -1,0 +1,14 @@
+flowchart TB
+    signals["Governed facts, outcomes, feedback, and telemetry"]
+    assess["Quality, privacy, safety, risk, and conformance assessment"]
+    approve{"Authorized approval or promotion?"}
+    release["Bounded release or operational action"]
+    monitor["Monitor objectives, drift, incidents, and customer impact"]
+    rollback["Stop, rollback, restrict, or remediate"]
+    signals --> assess
+    assess --> approve
+    approve -->|"Yes"| release
+    approve -->|"No"| rollback
+    release --> monitor
+    monitor -->|"Outside limits"| rollback
+
