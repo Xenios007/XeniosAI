@@ -1,0 +1,15 @@
+flowchart TB
+    request["Tenant, audience, channel, query, and context"]
+    policy{"Catalog visibility and policy pass?"}
+    classify["Taxonomy, facets, localization, and compatibility"]
+    sources["Catalog and resource projections"]
+    rank["Explainable discovery and ranking"]
+    result["Versioned results with freshness and authority links"]
+    deny["Deny or return minimized result"]
+    request --> policy
+    policy -->|"No"| deny
+    policy -->|"Yes"| classify
+    classify --> sources
+    sources --> rank
+    rank --> result
+
