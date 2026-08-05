@@ -1,0 +1,15 @@
+flowchart TB
+    builders["Internal, tenant, partner, and solution developers"]
+    experience["Portal, CLI, IDE, SDK, and machine discovery"]
+    capability["ARCH-034 Contract, Schema & Capability Registry"]
+    controls["Identity, projects, environments, policy, and quotas"]
+    providers["Platform, business, and ecosystem providers"]
+    evidence["Ownership, version, conformance, usage, and support evidence"]
+    builders --> experience
+    experience --> capability
+    capability --> controls
+    capability --> providers
+    controls --> evidence
+    providers --> evidence
+    capability --> evidence
+
