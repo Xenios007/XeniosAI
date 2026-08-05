@@ -1,0 +1,14 @@
+flowchart TB
+    foundation["Horizon 1: Deterministic transactions"]
+    distribution["Horizon 2: Reconciled omnichannel commerce"]
+    composition["Horizon 3: Composable allocation and fulfillment"]
+    adaptive["Horizon 4: Agent-assisted real-time commerce"]
+    guardrails["Authority, confirmation, idempotency, evidence, and rollback"]
+    foundation --> distribution
+    distribution --> composition
+    composition --> adaptive
+    guardrails --> foundation
+    guardrails --> distribution
+    guardrails --> composition
+    guardrails --> adaptive
+
