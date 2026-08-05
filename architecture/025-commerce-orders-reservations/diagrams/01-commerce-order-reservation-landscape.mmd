@@ -1,0 +1,18 @@
+flowchart TB
+    channels["Customer, staff, partner, and agent channels"]
+    intent["Intent, quote, and cart"]
+    commerce["Order and reservation authority"]
+    capacity["Hold and allocation authority"]
+    fulfillment["Fulfillment and compensation"]
+    neighbors["Catalog, pricing, payment, engagement, and industry services"]
+    evidence["Version, policy, confirmation, and audit evidence"]
+    channels --> intent
+    intent --> commerce
+    commerce --> capacity
+    capacity --> fulfillment
+    commerce --> neighbors
+    fulfillment --> neighbors
+    commerce --> evidence
+    capacity --> evidence
+    fulfillment --> evidence
+
