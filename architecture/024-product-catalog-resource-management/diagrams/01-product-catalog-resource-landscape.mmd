@@ -1,0 +1,16 @@
+flowchart TB
+    consumers["Customers, staff, agents, workflows, and integrations"]
+    discovery["Catalog discovery and configuration projections"]
+    catalog["Product, service, bundle, and catalog authority"]
+    resources["Resource types, instances, groups, and capabilities"]
+    neighbors["Commerce, pricing, engagement, and industry authorities"]
+    evidence["Version, provenance, tenant, policy, and audit evidence"]
+    consumers --> discovery
+    discovery --> catalog
+    discovery --> resources
+    catalog --> neighbors
+    resources --> neighbors
+    catalog --> evidence
+    resources --> evidence
+    neighbors --> evidence
+
