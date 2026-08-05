@@ -1,0 +1,75 @@
+# ARCH-027-02 — Channel, Conversation & Context Continuity
+
+**Document ID:** ARCH-027-02
+
+**Parent Document:** ARCH-027 — Omnichannel Engagement & Collaboration
+
+**Status:** Draft
+
+---
+
+# Purpose
+
+This chapter defines normalized channel identity, threads, continuity, correlation, transfer, and interaction history.
+
+---
+
+# Architectural Position
+
+Engagement owns coordinated communication and work, not the underlying channel transport, workflow engine, agent framework, customer truth, or transaction state.
+
+The capability consumes identity, tenancy, policy, workflow, integration, observability, knowledge, customer context, and neighboring domain state through versioned APIs and events. It owns only the state explicitly assigned here.
+
+Casa Lluvia validates Messenger and web continuity, booking follow-up, reminders, guest authorization coordination, complaints, exceptional requests, and human handoff.
+
+---
+
+# Responsibilities
+
+* Define authoritative aggregates, value objects, lifecycle states, commands, queries, and events for this capability.
+* Publish purpose-scoped contracts with tenant, actor, version, provenance, effective time, and correlation context.
+* Provide independently scalable command handling and read projections.
+* Govern extension points for industry packs, tenants, partners, and approved integrations.
+* Preserve correction, audit, retention, portability, recovery, and retirement behavior.
+
+---
+
+# Execution and Contracts
+
+Commands are authorized and validated by the provider that owns the affected resource. Queries expose minimum necessary projections with source, freshness, and restriction metadata. Events carry stable references and minimum facts; they do not transfer ownership.
+
+Cross-domain work uses ARCH-015 workflows, idempotent steps, outbox delivery, compensating actions, and reconciliation. Consumers never infer completion from an optimistic interface, generated response, model confidence, or transport acknowledgement.
+
+---
+
+# Governance and Controls
+
+* Default deny, least privilege, tenant isolation, and purpose limitation
+* Versioned schemas, compatibility policy, effective dating, and deprecation
+* Separation of duties for high-impact publication, promotion, financial, privacy, or administrative actions
+* Data minimization, provenance, classification, retention, correction, and deletion
+* Deterministic policy checks around AI-assisted recommendations and proposed actions
+* Human review and appeal wherever risk, uncertainty, or regulation requires it
+
+---
+
+# Failure and Recovery
+
+Partial failure is represented explicitly as pending, stale, restricted, degraded, failed, or compensating. The service never fabricates business state. Recovery uses idempotent retry, status queries, replay, reconciliation, quarantine, rollback, and operator runbooks.
+
+---
+
+# Observability and Assurance
+
+Telemetry records tenant reference, capability, operation, policy result, version, source freshness, latency, outcome, and correlation without copying protected payloads. Assurance includes contract, security, privacy, tenant-isolation, resilience, performance, accessibility where applicable, and architecture-conformance tests.
+
+---
+
+# Invariants
+
+* One authoritative owner exists for every material state transition.
+* Generated, inferred, cached, indexed, and replicated data remains distinguishable from source truth.
+* Tenant and industry extensions cannot weaken platform controls.
+* Every consequential change is attributable, versioned, observable, and recoverable.
+* AI behavior changes only through ARCH-029 evaluation and promotion.
+
