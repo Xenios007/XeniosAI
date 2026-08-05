@@ -1,0 +1,14 @@
+flowchart TB
+    foundation["Horizon 1: Reproducible foundations"]
+    automated["Horizon 2: Safe automation"]
+    intelligent["Horizon 3: Governed developer assistance"]
+    federated["Horizon 4: Portable federated tooling"]
+    guardrails["Least privilege, isolation, provenance, evidence, cleanup, and exit"]
+    foundation --> automated
+    automated --> intelligent
+    intelligent --> federated
+    guardrails --> foundation
+    guardrails --> automated
+    guardrails --> intelligent
+    guardrails --> federated
+
