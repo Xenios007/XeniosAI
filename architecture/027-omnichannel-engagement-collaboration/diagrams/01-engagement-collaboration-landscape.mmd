@@ -1,0 +1,15 @@
+flowchart TB
+    users["Customers, staff, partners, agents, and integrations"]
+    experience["Purpose-bound experience and API contracts"]
+    capability["ARCH-027 Omnichannel Engagement & Collaboration"]
+    platform["Identity, tenancy, workflow, knowledge, and observability"]
+    neighbors["Neighboring business and ecosystem authorities"]
+    evidence["Policy, version, provenance, outcome, and audit evidence"]
+    users --> experience
+    experience --> capability
+    capability --> platform
+    capability --> neighbors
+    platform --> evidence
+    neighbors --> evidence
+    capability --> evidence
+
