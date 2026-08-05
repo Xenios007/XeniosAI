@@ -1,0 +1,13 @@
+stateDiagram-v2
+    [*] --> Requested
+    Requested --> Provisioning: validate and approve
+    Provisioning --> Ready: create and verify
+    Provisioning --> Failed: compensate
+    Ready --> Active: use
+    Active --> Restricted: policy or incident
+    Restricted --> Active: remediate
+    Active --> Expiring: lifecycle limit
+    Expiring --> Retired: cleanup
+    Failed --> Retired: reconcile
+    Retired --> [*]
+
