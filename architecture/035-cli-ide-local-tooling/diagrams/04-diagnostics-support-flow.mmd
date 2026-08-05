@@ -1,0 +1,14 @@
+flowchart TB
+    artifact["Tool, environment, test, connector, or change"]
+    verify["Compatibility, security, privacy, isolation, and conformance"]
+    approve{"Quality gate and owner approval?"}
+    release["Publish, provision, certify, or promote"]
+    observe["Monitor use, drift, failure, cost, and impact"]
+    recover["Reject, quarantine, roll back, revoke, or clean up"]
+    artifact --> verify
+    verify --> approve
+    approve -->|"Yes"| release
+    approve -->|"No"| recover
+    release --> observe
+    observe -->|"Outside limits"| recover
+
