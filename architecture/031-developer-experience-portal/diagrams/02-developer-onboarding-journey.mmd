@@ -1,0 +1,13 @@
+stateDiagram-v2
+    [*] --> Discover
+    Discover --> Request: select capability
+    Request --> Review: submit requirements
+    Review --> Enabled: approve and provision
+    Review --> Rejected: deny with reason
+    Enabled --> Active: first successful use
+    Active --> Restricted: policy or incident
+    Restricted --> Active: remediate
+    Active --> Deprecated: replacement available
+    Deprecated --> Retired: migration complete
+    Retired --> [*]
+
