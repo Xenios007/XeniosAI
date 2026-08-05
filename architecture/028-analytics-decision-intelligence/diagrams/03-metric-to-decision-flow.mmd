@@ -1,0 +1,13 @@
+flowchart TB
+    request["Actor, tenant, purpose, input, and expected version"]
+    authorize{"Authorization and policy pass?"}
+    validate["Deterministic validation and authoritative source checks"]
+    execute["Commit or evaluate through owning capability"]
+    result["Versioned result, obligations, and evidence"]
+    deny["Deny, challenge, minimize, or hand off"]
+    request --> authorize
+    authorize -->|"No"| deny
+    authorize -->|"Yes"| validate
+    validate --> execute
+    execute --> result
+
