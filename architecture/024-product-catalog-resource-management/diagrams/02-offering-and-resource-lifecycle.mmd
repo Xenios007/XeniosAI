@@ -1,0 +1,12 @@
+stateDiagram-v2
+    [*] --> Draft
+    Draft --> Review: submit
+    Review --> Draft: changes required
+    Review --> Published: approve version
+    Published --> Suspended: restrict use
+    Suspended --> Published: restore
+    Published --> Superseded: publish replacement
+    Published --> Retired: end offering or resource
+    Superseded --> Retired: retention complete
+    Retired --> [*]
+
