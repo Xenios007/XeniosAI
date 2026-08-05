@@ -1,0 +1,16 @@
+flowchart TB
+    change["Authorized change or cancellation request"]
+    impact["Evaluate policy, capacity, price, payment, and fulfillment impact"]
+    confirm{"Customer or operator confirms plan?"}
+    execute["Commit new transaction version"]
+    compensate["Execute bounded compensation"]
+    reject["Reject or preserve current commitment"]
+    evidence["Record outcome and notify through engagement"]
+    change --> impact
+    impact --> confirm
+    confirm -->|"No"| reject
+    confirm -->|"Yes"| execute
+    execute --> compensate
+    compensate --> evidence
+    reject --> evidence
+
