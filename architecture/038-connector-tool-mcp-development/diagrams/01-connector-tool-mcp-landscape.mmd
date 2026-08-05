@@ -1,0 +1,15 @@
+flowchart TB
+    developer["Developer or automation"]
+    surfaces["CLI, IDE, portal, pipeline, or protocol client"]
+    capability["ARCH-038 Connector, Tool & MCP Development"]
+    controls["Identity, project, environment, policy, quota, and secrets"]
+    providers["Registries, platforms, services, and external providers"]
+    evidence["Version, provenance, result, diagnostics, and audit evidence"]
+    developer --> surfaces
+    surfaces --> capability
+    capability --> controls
+    capability --> providers
+    controls --> evidence
+    providers --> evidence
+    capability --> evidence
+
