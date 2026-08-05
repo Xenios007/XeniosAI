@@ -1,0 +1,15 @@
+flowchart TB
+    request["Actor, organization, project, application, environment, and purpose"]
+    discover["Discover registered capability and compatible version"]
+    authorize{"Policy, entitlement, and provider authorization pass?"}
+    provision["Issue bounded configuration or credential"]
+    use["Call provider through versioned contract"]
+    evidence["Usage, outcome, and audit evidence"]
+    deny["Deny, request approval, or provide remediation"]
+    request --> discover
+    discover --> authorize
+    authorize -->|"No"| deny
+    authorize -->|"Yes"| provision
+    provision --> use
+    use --> evidence
+
