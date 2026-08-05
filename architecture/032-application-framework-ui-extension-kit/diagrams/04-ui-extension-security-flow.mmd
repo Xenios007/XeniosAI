@@ -1,0 +1,14 @@
+flowchart TB
+    proposal["New or changed artifact"]
+    validate["Schema, compatibility, security, documentation, and conformance"]
+    approve{"Owner and governance approval?"}
+    publish["Publish version and notify consumers"]
+    observe["Monitor adoption, errors, support, and impact"]
+    rollback["Reject, restrict, supersede, or roll back"]
+    proposal --> validate
+    validate --> approve
+    approve -->|"Yes"| publish
+    approve -->|"No"| rollback
+    publish --> observe
+    observe -->|"Outside limits"| rollback
+
