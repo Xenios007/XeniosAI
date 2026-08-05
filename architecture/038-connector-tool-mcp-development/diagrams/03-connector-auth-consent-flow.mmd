@@ -1,0 +1,13 @@
+flowchart TB
+    input["Actor, project, environment, purpose, input, and versions"]
+    policy{"Authorization, safety, and policy pass?"}
+    validate["Validate contracts, configuration, dependencies, and data"]
+    execute["Run bounded operation"]
+    result["Artifact, environment, result, diagnostics, and evidence"]
+    deny["Deny, request approval, or provide remediation"]
+    input --> policy
+    policy -->|"No"| deny
+    policy -->|"Yes"| validate
+    validate --> execute
+    execute --> result
+
