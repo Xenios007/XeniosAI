@@ -1,0 +1,14 @@
+flowchart TB
+    foundation["Horizon 1: Governed foundation"]
+    connected["Horizon 2: Connected capabilities"]
+    intelligent["Horizon 3: Explainable intelligence"]
+    federated["Horizon 4: Portable and federated ecosystem"]
+    guardrails["Authority, tenant isolation, privacy, evidence, review, and rollback"]
+    foundation --> connected
+    connected --> intelligent
+    intelligent --> federated
+    guardrails --> foundation
+    guardrails --> connected
+    guardrails --> intelligent
+    guardrails --> federated
+
