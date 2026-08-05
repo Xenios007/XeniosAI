@@ -1,0 +1,15 @@
+flowchart TB
+    request["Availability request with resource, interval, quantity, and version"]
+    check{"Authoritative capacity available?"}
+    hold["Create expiring hold"]
+    confirm{"Commitment confirmed before expiry?"}
+    allocate["Allocate resource or capacity"]
+    release["Expire or release hold"]
+    conflict["Reject with current state"]
+    request --> check
+    check -->|"Yes"| hold
+    check -->|"No"| conflict
+    hold --> confirm
+    confirm -->|"Yes"| allocate
+    confirm -->|"No"| release
+
