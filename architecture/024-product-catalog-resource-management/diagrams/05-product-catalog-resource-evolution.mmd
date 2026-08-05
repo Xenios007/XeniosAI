@@ -1,0 +1,14 @@
+flowchart TB
+    foundation["Horizon 1: Governed definitions and resources"]
+    composition["Horizon 2: Composable catalogs and packages"]
+    federation["Horizon 3: Federated discovery and semantics"]
+    adaptive["Horizon 4: AI-assisted, real-time stewardship"]
+    guardrails["Authority, tenant isolation, provenance, review, and rollback"]
+    foundation --> composition
+    composition --> federation
+    federation --> adaptive
+    guardrails --> foundation
+    guardrails --> composition
+    guardrails --> federation
+    guardrails --> adaptive
+
