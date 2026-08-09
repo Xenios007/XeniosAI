@@ -69,3 +69,4 @@ The repository currently includes automated unit tests for:
 - `ARCH-013-09 Platform Operations and Adoption` in `tests/developer-platform/`
 - `ARCH-013-10 Future Developer Platform Evolution` in `tests/developer-platform/`
 - `ARCH-014-01 AI Agent Framework Overview` in `tests/ai-agent-framework/`
+- `ARCH-014-02 Agent Identity and Lifecycle` in `tests/ai-agent-framework/`

@@ -6,6 +6,23 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.11.0] - ARCH-014 Agent Identity and Lifecycle
+
+### Added
+- Agent identity and lifecycle metadata covering identity domains, participating actors, identity records, identifier requirements, ownership, registry authority, versioned elements, runtime credentials, execution identity, authority binding, delegation, propagation, lifecycle gates, activation scopes, evidence, observability, security threats, architectural rules, and boundaries.
+- Immutable contract for Agent Identity and Lifecycle profiles.
+- Agent Identity and Lifecycle descriptor for metadata exposure, profile validation, and architecture assertion.
+- Dependency-injection registration through `addAiAgentFramework`.
+- Unit tests for identity lifecycle metadata, validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Agent Identity and Lifecycle as a provider-independent architecture module that separates definition, version, execution, actor, authority, delegation, tenant/property, credential, lifecycle, evidence, and registry concerns without selecting identity-provider or registry product technologies.
+
+Status: AI Agent Framework Architecture
+Version: 0.11.0
+
+---
+
 ## [0.0.1] - Foundation
 
 ### Added

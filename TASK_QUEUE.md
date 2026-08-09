@@ -111,7 +111,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-013-09 Platform Operations and Adoption`
 - Completed: `ARCH-013-10 Future Developer Platform Evolution`
 - Completed: `ARCH-014-01 AI Agent Framework Overview`
-- Next: `ARCH-014-02 Agent Identity and Lifecycle`
+- Completed: `ARCH-014-02 Agent Identity and Lifecycle`
+- Next: `ARCH-014-03 Agent Runtime and Execution Model`
 
 ## Notes
 
