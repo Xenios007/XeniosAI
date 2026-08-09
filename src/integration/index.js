@@ -1,0 +1,15 @@
+export { COMMUNICATION_STYLES, INTEGRATION_ERROR_CODES, INTEGRATION_TYPES } from './constants.js';
+export { ProviderAdapter } from './adapters/provider-adapter.js';
+export { SimulatedProviderAdapter } from './adapters/simulated-provider-adapter.js';
+export { IntegrationContract } from './contracts/integration-contract.js';
+export { IntegrationEvent } from './contracts/integration-event.js';
+export { IntegrationMessage } from './contracts/integration-message.js';
+export { IntegrationRequest } from './contracts/integration-request.js';
+export { IntegrationResponse } from './contracts/integration-response.js';
+export { IntegrationError } from './errors/integration-error.js';
+export { InMemoryMessageBus } from './messaging/in-memory-message-bus.js';
+export { IntegrationRegistry } from './registry/integration-registry.js';
+export { CircuitBreaker } from './reliability/circuit-breaker.js';
+export { RetryPolicy } from './reliability/retry-policy.js';
+export { addIntegrationLayer } from './service-registration.js';
+export { IntegrationService } from './services/integration-service.js';
