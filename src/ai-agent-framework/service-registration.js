@@ -5,6 +5,7 @@ import { AgentRuntimeExecutionDescriptor } from './runtime-execution/agent-runti
 import { AgentReasoningPlanningDescriptor } from './reasoning-planning/agent-reasoning-planning-descriptor.js';
 import { ToolsActionsEnvironmentDescriptor } from './tools-actions-environment/tools-actions-environment-descriptor.js';
 import { MultiAgentCoordinationDescriptor } from './multi-agent-coordination/multi-agent-coordination-descriptor.js';
+import { MemoryKnowledgeContextDescriptor } from './memory-knowledge-context/memory-knowledge-context-descriptor.js';
 
 export function addAiAgentFramework(services) {
   if (!(services instanceof ServiceCollection)) {
@@ -17,6 +18,7 @@ export function addAiAgentFramework(services) {
   services.registerSingleton('AgentReasoningPlanningDescriptor', () => new AgentReasoningPlanningDescriptor());
   services.registerSingleton('ToolsActionsEnvironmentDescriptor', () => new ToolsActionsEnvironmentDescriptor());
   services.registerSingleton('MultiAgentCoordinationDescriptor', () => new MultiAgentCoordinationDescriptor());
+  services.registerSingleton('MemoryKnowledgeContextDescriptor', () => new MemoryKnowledgeContextDescriptor());
 
   return services;
 }

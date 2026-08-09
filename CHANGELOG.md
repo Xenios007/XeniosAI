@@ -6,6 +6,23 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.16.0] - ARCH-014 Agent Memory, Knowledge, and Context
+
+### Added
+- Agent Memory, Knowledge, and Context metadata covering information-domain separation, knowledge categories, memory categories, context layers, context assembly, context requests/packages, provenance, source authority, trust, freshness, relevance, minimization, context budgets, compression, memory retrieval, memory records, confidence, write-back validation, prohibited memory, correction, deletion, expiration, knowledge retrieval, publication boundaries, derived knowledge, execution-state references, caching, provider checks, contamination controls, prompt-injection signals, context failures, evidence, observability, evaluation, governance, quality attributes, architectural rules, and boundaries.
+- Immutable contract for Agent Memory, Knowledge, and Context profiles.
+- Agent Memory, Knowledge, and Context descriptor for metadata exposure, profile validation, and architecture assertion.
+- Dependency-injection registration through `addAiAgentFramework`.
+- Unit tests for memory/knowledge/context metadata, validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Agent Memory, Knowledge, and Context as a model-neutral architecture module that keeps context temporary and non-authoritative while preserving provenance, trust, freshness, tenant/property isolation, privacy, correction/deletion, governed memory write-back, and governed knowledge publication.
+
+Status: AI Agent Framework Architecture
+Version: 0.16.0
+
+---
+
 ## [0.15.0] - ARCH-014 Multi-Agent Coordination
 
 ### Added

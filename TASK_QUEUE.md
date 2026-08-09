@@ -116,7 +116,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-014-04 Agent Reasoning and Planning`
 - Completed: `ARCH-014-05 Tools, Actions, and Environment`
 - Completed: `ARCH-014-06 Multi-Agent Coordination`
-- Next: `ARCH-014-07 Agent Memory, Knowledge, and Context`
+- Completed: `ARCH-014-07 Agent Memory, Knowledge, and Context`
+- Next: `ARCH-014-08 Agent Security, Governance, and Assurance`
 
 ## Notes
 
