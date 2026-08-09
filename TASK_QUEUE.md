@@ -102,7 +102,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-012 Governance & Compliance`
 - Completed: `ARCH-013-01 Developer Platform Overview`
 - Completed: `ARCH-013-02 Developer Experience and Journeys`
-- Next: `ARCH-013-03 Platform Capability Model`
+- Completed: `ARCH-013-03 Platform Capability Model`
+- Next: `ARCH-013-04 Project and Service Lifecycle`
 
 ## Notes
 

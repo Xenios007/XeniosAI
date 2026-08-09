@@ -50,3 +50,20 @@ Version: 0.0.1
 
 Status: Developer Platform Architecture
 Version: 0.1.0
+
+---
+
+## [0.2.0] - ARCH-013 Platform Capability Model
+
+### Added
+- Platform capability model objective, principle, plane, domain, capability, request, contract, authority, metadata, scope, environment, human/AI participation, ownership, commitment, criticality, dependency, failure, observability, security, cost, portfolio, lifecycle, maturity, introduction, build-buy-integrate, deprecation, measure, governance, anti-pattern, architectural-rule, and future-capability metadata.
+- Immutable contract for Platform Capability Model profiles.
+- Platform Capability Model descriptor for metadata exposure, profile validation, and architecture assertion.
+- Dependency-injection registration through `addDeveloperPlatform`.
+- Unit tests for capability model metadata, validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Platform Capability Model as a technology-independent, vendor-neutral capability architecture that keeps capabilities distinct from tools, preserves explicit contracts and state authority, avoids a control-plane monolith, emits evidence during execution, preserves context, isolates failures, and prevents AI recommendations or credentials from becoming authority.
+
+Status: Developer Platform Architecture
+Version: 0.2.0

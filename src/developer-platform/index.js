@@ -51,3 +51,7 @@ export { addDeveloperPlatform } from './service-registration.js';
 export * from './experience-constants.js';
 export { DeveloperExperienceProfile } from './contracts/developer-experience-profile.js';
 export { DeveloperExperienceDescriptor } from './experience/developer-experience-descriptor.js';
+
+export * from './capability-model-constants.js';
+export { PlatformCapabilityModelProfile } from './contracts/platform-capability-model-profile.js';
+export { PlatformCapabilityModelDescriptor } from './capability-model/platform-capability-model-descriptor.js';
