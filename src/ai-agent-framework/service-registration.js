@@ -3,6 +3,7 @@ import { AgentFrameworkOverviewDescriptor } from './overview/agent-framework-ove
 import { AgentIdentityLifecycleDescriptor } from './identity-lifecycle/agent-identity-lifecycle-descriptor.js';
 import { AgentRuntimeExecutionDescriptor } from './runtime-execution/agent-runtime-execution-descriptor.js';
 import { AgentReasoningPlanningDescriptor } from './reasoning-planning/agent-reasoning-planning-descriptor.js';
+import { ToolsActionsEnvironmentDescriptor } from './tools-actions-environment/tools-actions-environment-descriptor.js';
 
 export function addAiAgentFramework(services) {
   if (!(services instanceof ServiceCollection)) {
@@ -13,6 +14,7 @@ export function addAiAgentFramework(services) {
   services.registerSingleton('AgentIdentityLifecycleDescriptor', () => new AgentIdentityLifecycleDescriptor());
   services.registerSingleton('AgentRuntimeExecutionDescriptor', () => new AgentRuntimeExecutionDescriptor());
   services.registerSingleton('AgentReasoningPlanningDescriptor', () => new AgentReasoningPlanningDescriptor());
+  services.registerSingleton('ToolsActionsEnvironmentDescriptor', () => new ToolsActionsEnvironmentDescriptor());
 
   return services;
 }

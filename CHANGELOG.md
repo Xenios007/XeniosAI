@@ -6,6 +6,23 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.14.0] - ARCH-014 Tools, Actions, and Environment
+
+### Added
+- Tools, Actions, and Environment metadata covering Tool Gateway mediation, registry records, tool identities, discovery constraints, versioned contracts, action classes, pre-invocation checks, authorization, approval, credential mediation, validation, result semantics, side effects, idempotency, reconciliation, compensation, invocation state, error normalization, environments, sandboxing, filesystem/network/data boundaries, lifecycle, evaluation, observability, evidence, operations, threats, quality attributes, architectural rules, and boundaries.
+- Immutable contract for Tools, Actions, and Environment profiles.
+- Tools, Actions, and Environment descriptor for metadata exposure, profile validation, and architecture assertion.
+- Dependency-injection registration through `addAiAgentFramework`.
+- Unit tests for tool/action/environment metadata, validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Tools, Actions, and Environment as a provider-neutral governed boundary where agents may propose actions but the Tool Gateway independently enforces identity, scope, authority, policy, approval, credentials, validation, environment controls, side-effect handling, evidence, and lifecycle.
+
+Status: AI Agent Framework Architecture
+Version: 0.14.0
+
+---
+
 ## [0.13.0] - ARCH-014 Agent Reasoning and Planning
 
 ### Added
