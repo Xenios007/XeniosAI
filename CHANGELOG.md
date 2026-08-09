@@ -6,6 +6,23 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.15.0] - ARCH-014 Multi-Agent Coordination
+
+### Added
+- Multi-Agent Coordination metadata covering selection criteria, inappropriate-use criteria, coordination goals, roles, patterns, topology, shared goals, task ownership, delegation contracts, authority attenuation, delegation admission, chain tracking, lifecycle, delegate selection, message contracts, message authorization, shared-state boundaries, concurrency, barriers, conflicts, independent review, result aggregation, failure propagation, cancellation, human supervision, takeover, security threats, evidence, observability, evaluation, operations, quality attributes, architectural rules, and boundaries.
+- Immutable contract for Multi-Agent Coordination profiles.
+- Multi-Agent Coordination descriptor for metadata exposure, profile validation, and architecture assertion.
+- Dependency-injection registration through `addAiAgentFramework`.
+- Unit tests for coordination metadata, validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Multi-Agent Coordination as an optional, bounded, model-neutral composition pattern where independently identifiable agents contribute specialized work through explicit contracts while preserving authority attenuation, task ownership, tenant/property isolation, attribution, human supervision, and deterministic shared state.
+
+Status: AI Agent Framework Architecture
+Version: 0.15.0
+
+---
+
 ## [0.14.0] - ARCH-014 Tools, Actions, and Environment
 
 ### Added

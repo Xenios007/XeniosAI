@@ -73,3 +73,4 @@ The repository currently includes automated unit tests for:
 - `ARCH-014-03 Agent Runtime and Execution Model` in `tests/ai-agent-framework/`
 - `ARCH-014-04 Agent Reasoning and Planning` in `tests/ai-agent-framework/`
 - `ARCH-014-05 Tools, Actions, and Environment` in `tests/ai-agent-framework/`
+- `ARCH-014-06 Multi-Agent Coordination` in `tests/ai-agent-framework/`

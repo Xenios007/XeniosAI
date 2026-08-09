@@ -115,7 +115,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-014-03 Agent Runtime and Execution Model`
 - Completed: `ARCH-014-04 Agent Reasoning and Planning`
 - Completed: `ARCH-014-05 Tools, Actions, and Environment`
-- Next: `ARCH-014-06 Multi-Agent Coordination`
+- Completed: `ARCH-014-06 Multi-Agent Coordination`
+- Next: `ARCH-014-07 Agent Memory, Knowledge, and Context`
 
 ## Notes
 
