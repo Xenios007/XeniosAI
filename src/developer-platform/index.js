@@ -47,3 +47,7 @@ export { DeveloperPlatformOverviewProfile } from './contracts/developer-platform
 export { DeveloperPlatformValidationResult } from './contracts/developer-platform-validation-result.js';
 export { DeveloperPlatformOverviewDescriptor } from './overview/developer-platform-overview-descriptor.js';
 export { addDeveloperPlatform } from './service-registration.js';
+
+export * from './experience-constants.js';
+export { DeveloperExperienceProfile } from './contracts/developer-experience-profile.js';
+export { DeveloperExperienceDescriptor } from './experience/developer-experience-descriptor.js';

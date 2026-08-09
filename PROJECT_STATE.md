@@ -55,12 +55,13 @@ Implementation must follow:
 
 Latest known implementation status:
 
+-   Current phase: ARCH-013 Developer Platform
 -   Build: Passing
 -   Architecture deviations: None
--   Latest reported commit:
-    -   `5cae050 Implement ARCH-002 Layer Interactions`
+-   Latest completed implementation target:
+    -   `ARCH-013-02 Developer Experience and Journeys`
 -   Latest recommended implementation target:
-    -   `ARCH-003-01 Service Landscape`
+    -   `ARCH-013-03 Platform Capability Model`
 
 ------------------------------------------------------------------------
 

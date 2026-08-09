@@ -100,35 +100,36 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-010-10 Future Observability Evolution`
 - Completed: `ARCH-011 Enterprise Operations`
 - Completed: `ARCH-012 Governance & Compliance`
-- Completed: `ARCH-013 Developer Platform`
-- Completed: `ARCH-014 AI Agent Framework`
-- Completed: `ARCH-015 Workflow Engine`
-- Completed: `ARCH-016 Knowledge & Memory`
-- Completed: `ARCH-017 API & SDK Architecture`
-- Completed: `ARCH-018 Multi-Tenancy`
-- Completed: `ARCH-019 Plugin & Extension Framework`
-- Completed: `ARCH-020 Reference Implementations`
-- Completed: `ARCH-021 Experience, Conversation & Frontend Architecture`
-- Completed: `ARCH-022 Identity, Organizations & Access`
-- Completed: `ARCH-023 Customer & Relationship Management`
-- Completed: `ARCH-024 Product, Catalog & Resource Management`
-- Completed: `ARCH-025 Commerce, Orders & Reservations`
-- Completed: `ARCH-026 Pricing, Billing & Payments`
-- Completed: `ARCH-027 Omnichannel Engagement & Collaboration`
-- Completed: `ARCH-028 Analytics & Decision Intelligence`
-- Completed: `ARCH-029 AI Model Operations, Evaluation & Continuous Learning`
-- Completed: `ARCH-030 Industry Solution Packs & Composable Applications`
-- Completed: `ARCH-031 Developer Experience & Portal`
-- Completed: `ARCH-032 Application Framework & UI Extension Kit`
-- Completed: `ARCH-033 API Product Management & Discovery`
-- Completed: `ARCH-034 Contract, Schema & Capability Registry`
-- Completed: `ARCH-035 CLI, IDE & Local Tooling`
-- Completed: `ARCH-036 Developer Environments & Sandboxes`
-- Completed: `ARCH-037 Testing, Simulation & Conformance`
-- Completed: `ARCH-038 Connector, Tool & MCP Development`
-- Completed: `ARCH-039 Marketplace, Publishing & Monetization`
-- Completed: `ARCH-040 Partner, Community & Ecosystem Federation`
-- Next: None - ARCH-001 through ARCH-040 are documented and complete.
+- Completed: `ARCH-013-01 Developer Platform Overview`
+- Completed: `ARCH-013-02 Developer Experience and Journeys`
+- Pending implementation: `ARCH-014 AI Agent Framework`
+- Pending implementation: `ARCH-015 Workflow Engine`
+- Pending implementation: `ARCH-016 Knowledge & Memory`
+- Pending implementation: `ARCH-017 API & SDK Architecture`
+- Pending implementation: `ARCH-018 Multi-Tenancy`
+- Pending implementation: `ARCH-019 Plugin & Extension Framework`
+- Pending implementation: `ARCH-020 Reference Implementations`
+- Pending implementation: `ARCH-021 Experience, Conversation & Frontend Architecture`
+- Pending implementation: `ARCH-022 Identity, Organizations & Access`
+- Pending implementation: `ARCH-023 Customer & Relationship Management`
+- Pending implementation: `ARCH-024 Product, Catalog & Resource Management`
+- Pending implementation: `ARCH-025 Commerce, Orders & Reservations`
+- Pending implementation: `ARCH-026 Pricing, Billing & Payments`
+- Pending implementation: `ARCH-027 Omnichannel Engagement & Collaboration`
+- Pending implementation: `ARCH-028 Analytics & Decision Intelligence`
+- Pending implementation: `ARCH-029 AI Model Operations, Evaluation & Continuous Learning`
+- Pending implementation: `ARCH-030 Industry Solution Packs & Composable Applications`
+- Pending implementation: `ARCH-031 Developer Experience & Portal`
+- Pending implementation: `ARCH-032 Application Framework & UI Extension Kit`
+- Pending implementation: `ARCH-033 API Product Management & Discovery`
+- Pending implementation: `ARCH-034 Contract, Schema & Capability Registry`
+- Pending implementation: `ARCH-035 CLI, IDE & Local Tooling`
+- Pending implementation: `ARCH-036 Developer Environments & Sandboxes`
+- Pending implementation: `ARCH-037 Testing, Simulation & Conformance`
+- Pending implementation: `ARCH-038 Connector, Tool & MCP Development`
+- Pending implementation: `ARCH-039 Marketplace, Publishing & Monetization`
+- Pending implementation: `ARCH-040 Partner, Community & Ecosystem Federation`
+- Next: `ARCH-013-03 Platform Capability Model`
 
 ## Notes
 
