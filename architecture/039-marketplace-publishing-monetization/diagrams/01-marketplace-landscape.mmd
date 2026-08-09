@@ -1,0 +1,15 @@
+flowchart TB
+    participants["Customers, tenants, developers, publishers, partners, and communities"]
+    discovery["Portal, marketplace, catalogs, programs, and community surfaces"]
+    capability["ARCH-039 Marketplace, Publishing & Monetization"]
+    trust["Identity, agreements, conformance, policy, and local grants"]
+    providers["Platform, business, financial, and federated providers"]
+    evidence["Provenance, version, decision, outcome, audit, and exit evidence"]
+    participants --> discovery
+    discovery --> capability
+    capability --> trust
+    capability --> providers
+    trust --> evidence
+    providers --> evidence
+    capability --> evidence
+
