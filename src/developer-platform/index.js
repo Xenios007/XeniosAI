@@ -71,3 +71,7 @@ export { DeliveryEnvironmentDescriptor } from './delivery-environment/delivery-e
 export * from './portal-catalog-constants.js';
 export { PortalCatalogProfile } from './contracts/portal-catalog-profile.js';
 export { PortalCatalogDescriptor } from './portal-catalog/portal-catalog-descriptor.js';
+
+export * from './developer-security-governance-constants.js';
+export { DeveloperSecurityGovernanceProfile } from './contracts/developer-security-governance-profile.js';
+export { DeveloperSecurityGovernanceDescriptor } from './security-governance/developer-security-governance-descriptor.js';

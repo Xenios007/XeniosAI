@@ -135,3 +135,20 @@ Version: 0.5.0
 
 Status: Developer Platform Architecture
 Version: 0.6.0
+
+---
+
+## [0.7.0] - ARCH-013 Developer Security and Governance
+
+### Added
+- Developer security and governance objective, principle, actor, identity, authorization, access-lifecycle, AI-delegation, separation-of-duties, source-security, secret-security, engineering-domain, AI-tool, stop-condition, threat-model, policy, risk/control/evidence, review, finding, exception, remediation, assurance, incident, supplier, observability, governance, maturity, measure, anti-pattern, architectural-rule, and future-capability metadata.
+- Immutable contract for Developer Security and Governance profiles.
+- Developer Security and Governance descriptor for metadata exposure, profile validation, and architecture assertion.
+- Dependency-injection registration through `addDeveloperPlatform`.
+- Unit tests for security/governance metadata, validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Developer Security and Governance as a technology-independent, vendor-neutral developer-platform concern that operationalizes `ARCH-008` and `ARCH-012` without replacing them, preserving explicit identity and authority, least privilege, Zero Trust, separation of duties, bounded AI delegation, secure paved paths, tenant/property isolation, evidence by design, temporary exceptions, verified findings, developer privacy, and governed third-party AI.
+
+Status: Developer Platform Architecture
+Version: 0.7.0
