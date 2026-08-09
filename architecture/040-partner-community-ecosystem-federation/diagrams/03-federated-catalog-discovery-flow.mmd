@@ -1,0 +1,13 @@
+flowchart TB
+    submit["Actor, organization, artifact or metadata, purpose, and versions"]
+    verify["Identity, provenance, contract, security, privacy, and compatibility checks"]
+    decide{"Authorized review and policy approval?"}
+    publish["Publish or federate discoverable metadata"]
+    grant["Local installation, entitlement, consent, and runtime grant"]
+    reject["Reject, request remediation, quarantine, or appeal"]
+    submit --> verify
+    verify --> decide
+    decide -->|"No"| reject
+    decide -->|"Yes"| publish
+    publish --> grant
+
