@@ -113,7 +113,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-014-01 AI Agent Framework Overview`
 - Completed: `ARCH-014-02 Agent Identity and Lifecycle`
 - Completed: `ARCH-014-03 Agent Runtime and Execution Model`
-- Next: `ARCH-014-04 Agent Reasoning and Planning`
+- Completed: `ARCH-014-04 Agent Reasoning and Planning`
+- Next: `ARCH-014-05 Tools, Actions, and Environment`
 
 ## Notes
 

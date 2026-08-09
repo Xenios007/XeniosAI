@@ -6,6 +6,23 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.13.0] - ARCH-014 Agent Reasoning and Planning
+
+### Added
+- Agent Reasoning and Planning metadata covering advisory reasoning responsibilities, authorized inputs, structured outputs, ambiguity handling, missing and conflicting information, reasoning modes, planning strategy, plan model, task dependencies, constraints, authority-aware planning, capability catalogs, plan selection, validation, approval, versioning, replanning, drift detection, uncertainty, grounding, truth hierarchy, validation, human decisions, instructions, model selection factors, multi-agent planning, stop conditions, loop detection, observability, evidence, evaluation, quality attributes, architectural rules, and boundaries.
+- Immutable contract for Agent Reasoning and Planning profiles.
+- Agent Reasoning and Planning descriptor for metadata exposure, profile validation, and architecture assertion.
+- Dependency-injection registration through `addAiAgentFramework`.
+- Unit tests for reasoning/planning metadata, validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Agent Reasoning and Planning as an advisory, model-neutral architecture module that can propose interpretations, plans, tasks, tools, delegations, completion, or escalation while deterministic platform controls retain authority, validation, runtime state, business truth, and durable workflow semantics.
+
+Status: AI Agent Framework Architecture
+Version: 0.13.0
+
+---
+
 ## [0.12.0] - ARCH-014 Agent Runtime and Execution Model
 
 ### Added
