@@ -63,3 +63,7 @@ export { ProjectServiceLifecycleDescriptor } from './lifecycle/project-service-l
 export * from './build-quality-constants.js';
 export { BuildTestQualityProfile } from './contracts/build-test-quality-profile.js';
 export { BuildTestQualityDescriptor } from './build-quality/build-test-quality-descriptor.js';
+
+export * from './delivery-environment-constants.js';
+export { DeliveryEnvironmentProfile } from './contracts/delivery-environment-profile.js';
+export { DeliveryEnvironmentDescriptor } from './delivery-environment/delivery-environment-descriptor.js';

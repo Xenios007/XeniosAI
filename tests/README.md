@@ -63,3 +63,4 @@ The repository currently includes automated unit tests for:
 - `ARCH-013-03 Platform Capability Model` in `tests/developer-platform/`
 - `ARCH-013-04 Project and Service Lifecycle` in `tests/developer-platform/`
 - `ARCH-013-05 Build, Test, and Quality` in `tests/developer-platform/`
+- `ARCH-013-06 Delivery and Environment Platform` in `tests/developer-platform/`

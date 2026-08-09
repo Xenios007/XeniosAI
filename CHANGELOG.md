@@ -101,3 +101,20 @@ Version: 0.3.0
 
 Status: Developer Platform Architecture
 Version: 0.4.0
+
+---
+
+## [0.5.0] - ARCH-013 Delivery and Environment Platform
+
+### Added
+- Delivery and environment objective, principle, environment-type, identity, metadata, request, provisioning, isolation, access, health, configuration, secret-reference, release, change, delivery, verification, stop-condition, evidence, governance, maturity, measure, anti-pattern, architectural-rule, and future-capability metadata.
+- Immutable contract for Delivery and Environment Platform profiles.
+- Delivery and Environment Platform descriptor for metadata exposure, profile validation, and architecture assertion.
+- Dependency-injection registration through `addDeveloperPlatform`.
+- Unit tests for delivery/environment metadata, validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Delivery and Environment Platform as a technology-independent, vendor-neutral developer-platform concern that preserves governed environments, externalized configuration, secret references, trusted artifact promotion, readiness before delivery, explicit tenant/property scope, progressive delivery, recovery design, stop conditions, delivery evidence, AI authority boundaries, and deployment portability.
+
+Status: Developer Platform Architecture
+Version: 0.5.0
