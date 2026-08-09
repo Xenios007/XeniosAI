@@ -7,6 +7,7 @@ import { BuildTestQualityDescriptor } from './build-quality/build-test-quality-d
 import { DeliveryEnvironmentDescriptor } from './delivery-environment/delivery-environment-descriptor.js';
 import { PortalCatalogDescriptor } from './portal-catalog/portal-catalog-descriptor.js';
 import { DeveloperSecurityGovernanceDescriptor } from './security-governance/developer-security-governance-descriptor.js';
+import { PlatformOperationsAdoptionDescriptor } from './operations-adoption/platform-operations-adoption-descriptor.js';
 
 export function addDeveloperPlatform(services) {
   if (!(services instanceof ServiceCollection)) {
@@ -21,6 +22,7 @@ export function addDeveloperPlatform(services) {
   services.registerSingleton('DeliveryEnvironmentDescriptor', () => new DeliveryEnvironmentDescriptor());
   services.registerSingleton('PortalCatalogDescriptor', () => new PortalCatalogDescriptor());
   services.registerSingleton('DeveloperSecurityGovernanceDescriptor', () => new DeveloperSecurityGovernanceDescriptor());
+  services.registerSingleton('PlatformOperationsAdoptionDescriptor', () => new PlatformOperationsAdoptionDescriptor());
 
   return services;
 }

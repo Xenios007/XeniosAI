@@ -66,3 +66,4 @@ The repository currently includes automated unit tests for:
 - `ARCH-013-06 Delivery and Environment Platform` in `tests/developer-platform/`
 - `ARCH-013-07 Developer Portal and Service Catalog` in `tests/developer-platform/`
 - `ARCH-013-08 Developer Security and Governance` in `tests/developer-platform/`
+- `ARCH-013-09 Platform Operations and Adoption` in `tests/developer-platform/`

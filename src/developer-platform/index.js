@@ -75,3 +75,7 @@ export { PortalCatalogDescriptor } from './portal-catalog/portal-catalog-descrip
 export * from './developer-security-governance-constants.js';
 export { DeveloperSecurityGovernanceProfile } from './contracts/developer-security-governance-profile.js';
 export { DeveloperSecurityGovernanceDescriptor } from './security-governance/developer-security-governance-descriptor.js';
+
+export * from './platform-operations-adoption-constants.js';
+export { PlatformOperationsAdoptionProfile } from './contracts/platform-operations-adoption-profile.js';
+export { PlatformOperationsAdoptionDescriptor } from './operations-adoption/platform-operations-adoption-descriptor.js';

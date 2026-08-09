@@ -152,3 +152,20 @@ Version: 0.6.0
 
 Status: Developer Platform Architecture
 Version: 0.7.0
+
+---
+
+## [0.8.0] - ARCH-013 Platform Operations and Adoption
+
+### Added
+- Platform operations and adoption objective, principle, product-ownership, ownership-role, service-commitment, critical-capability, command-control, control-loop, health, endpoint, observability, signal, log, status, incident, degraded-operation, operations-domain, support, knowledge, adoption, persona, value, onboarding, migration, enablement, feedback, AI-outcome, productivity, platform-value, measure, roadmap, backlog, governance, maturity, anti-pattern, architectural-rule, and future-capability metadata.
+- Immutable contract for Platform Operations and Adoption profiles.
+- Platform Operations and Adoption descriptor for metadata exposure, profile validation, and architecture assertion.
+- Dependency-injection registration through `addDeveloperPlatform`.
+- Unit tests for operations/adoption metadata, validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Platform Operations and Adoption as a technology-independent, vendor-neutral developer-platform concern that applies `ARCH-011` to the Developer Platform product, preserving production-product operations, explicit ownership, service commitments, outcome-connected health, integrated operations, alternate recovery paths, contextual support, governed adoption, safe-value measures, AI outcome quality metrics, developer privacy, tenant/property impact visibility, and continuous improvement.
+
+Status: Developer Platform Architecture
+Version: 0.8.0
