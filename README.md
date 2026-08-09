@@ -1,89 +1,174 @@
-# XeniosAI
+# Tests
 
-> **AI-Native Hospitality Operating System**
+## Purpose
 
-> ⚠️ **License Notice**
->
-> XeniosAI is publicly visible for transparency and collaboration, but it is **not open source**.
->
-> **All Rights Reserved.**
->
-> Commercial use, redistribution, modification, hosting, or creation of derivative works requires prior written permission from the copyright holder.
+The `tests` directory contains the verification assets for XeniosAI.
 
----
+Testing ensures that business logic, APIs, AI integrations, prompts, schemas, and deployment configurations remain reliable as the platform evolves.
 
-## Vision
+Testing is treated as a first-class engineering discipline rather than an afterthought.
 
-XeniosAI is an AI-native platform designed to power hospitality businesses through intelligent automation, natural language interaction, and modular business services.
+## Planned Contents
 
-Rather than building another chatbot, XeniosAI is being engineered as a complete hospitality operating system capable of understanding guests, automating operations, integrating with external services, and continuously improving through AI.
+- Unit Tests
+- Integration Tests
+- End-to-End Tests
+- API Contract Tests
+- AI Evaluation Tests
+- Prompt Regression Tests
+- Performance Tests
+- Security Tests
+- Load Tests
+- Deployment Verification
 
-The first production deployment is **Casa Lluvia**.
+## Design Principles
 
----
+- Every feature should have automated tests.
+- Business logic must be deterministic and testable.
+- AI behavior should be evaluated using repeatable evaluation suites.
+- Tests should run automatically in CI/CD pipelines.
+- Production defects should result in new regression tests.
 
-## Current Status
+## Test Pyramid
 
-**Project Phase:** Foundation Complete → Platform Architecture
+```
+                End-to-End
+             Integration Tests
+              Service Tests
+               Unit Tests
+```
 
-Current work includes:
+## Future Goals
 
-- Repository governance
-- Engineering standards
-- Architecture Decision Records (ADRs)
-- Platform architecture
-- AI orchestration design
-- Multi-channel messaging design
-- Knowledge system design
+- Continuous Integration
+- Continuous Testing
+- AI Prompt Evaluation
+- AI Regression Benchmarking
+- Property-specific Validation Suites
 
-No production services have been implemented yet. The repository is intentionally architecture-first.
+## Related Documents
 
----
+- api/
+- schemas/
+- deployment/
+- architecture/
+- tasks/
 
-## Long-Term Goals
+## Current Implementation
 
-- AI Receptionist
-- Booking Automation
-- Calendar Synchronization
-- Dynamic Pricing
-- Knowledge-driven Guest Support
-- WhatsApp Integration
-- Messenger Integration
-- Instagram Integration
-- Airbnb Integration
-- OTA Integrations
-- Multi-property Management
-- Analytics Dashboard
-- AI Operations Console
+The repository currently includes automated unit tests for:
 
----
+- `ARCH-002-02 Foundation Layer` in `tests/foundation/`
+- `ARCH-002-03 Experience Layer` in `tests/experience/`
+- `ARCH-002-04 Gateway Layer` in `tests/gateway/`
+- `ARCH-002-05 Conversation Layer` in `tests/conversation/`
+- `ARCH-002-06 AI Intelligence Layer` in `tests/ai/`
+- `ARCH-002-07 Business Services Layer` in `tests/business-services/`
+- `ARCH-002-08 Data Layer` in `tests/data/`
+- `ARCH-002-09 Integration Layer` in `tests/integration/`
+- `ARCH-002-10 Cross-Cutting Concerns` in `tests/cross-cutting/`
+- `ARCH-002-11 Layer Interactions` in `tests/layer-interactions/`
+- `ARCH-003-01 Service Landscape` in `tests/service-map/`
+- `ARCH-003-02 Service Catalog` in `tests/service-map/`
+- `ARCH-003-03 Service Ownership` in `tests/service-map/`
+- `ARCH-003-04 Service Dependencies` in `tests/service-map/`
+- `ARCH-003-05 Domain Boundaries` in `tests/service-map/`
+- `ARCH-003-06 Service Communication` in `tests/service-map/`
+- `ARCH-003-07 Service Lifecycle` in `tests/service-map/`
+- `ARCH-003-08 Service Versioning` in `tests/service-map/`
+- `ARCH-003-09 Service Governance` in `tests/service-map/`
+- `ARCH-003-10 Future Services` in `tests/service-map/`
+- `ARCH-004-01 Orchestrator Overview` in `tests/orchestrator/`
+- `ARCH-004-02 Request Lifecycle` in `tests/orchestrator/`
+- `ARCH-004-03 Reasoning Pipeline` in `tests/orchestrator/`
+- `ARCH-004-04 Tool Orchestration` in `tests/orchestrator/`
+- `ARCH-004-05 Memory Orchestration` in `tests/orchestrator/`
+- `ARCH-004-06 Context Management` in `tests/orchestrator/`
+- `ARCH-004-07 Decision Engine` in `tests/orchestrator/`
+- `ARCH-004-08 Agent Coordination` in `tests/orchestrator/`
+- `ARCH-004-09 Failure Recovery` in `tests/orchestrator/`
+- `ARCH-004-10 Future AI Capabilities` in `tests/orchestrator/`
+- `ARCH-005-01 Execution Overview` in `tests/data-flow/`
+- `ARCH-005-02 Command Flow` in `tests/data-flow/`
+- `ARCH-005-03 Query Flow` in `tests/data-flow/`
+- `ARCH-005-04 Event Flow` in `tests/data-flow/`
+- `ARCH-005-05 Workflow Orchestration` in `tests/data-flow/`
+- `ARCH-005-06 Service Integration` in `tests/data-flow/`
+- `ARCH-005-07 API Contracts` in `tests/data-flow/`
+- `ARCH-005-08 Messaging Patterns` in `tests/data-flow/`
+- `ARCH-005-09 Transaction Boundaries` in `tests/data-flow/`
+- `ARCH-005-10 Future Integration Capabilities` in `tests/data-flow/`
+- `ARCH-006-01 Domain Overview` in `tests/domain-model/`
+- `ARCH-006-02 Bounded Contexts` in `tests/domain-model/`
+- `ARCH-006-03 Core Entities` in `tests/domain-model/`
+- `ARCH-006-04 Value Objects` in `tests/domain-model/`
+- `ARCH-006-05 Aggregates` in `tests/domain-model/`
+- `ARCH-006-06 Domain Services` in `tests/domain-model/`
+- `ARCH-006-07 Domain Events` in `tests/domain-model/`
+- `ARCH-006-08 Domain Rules` in `tests/domain-model/`
+- `ARCH-006-09 Domain Lifecycle` in `tests/domain-model/`
+- `ARCH-006-10 Future Domain Evolution` in `tests/domain-model/`
+- `ARCH-007-01 Deployment Overview` in `tests/deployment-model/`
+- `ARCH-007-02 Environment Strategy` in `tests/deployment-model/`
+- `ARCH-007-03 Runtime Topology` in `tests/deployment-model/`
+- `ARCH-007-04 Compute Model` in `tests/deployment-model/`
+- `ARCH-007-05 Storage Topology` in `tests/deployment-model/`
+- `ARCH-007-06 Network Topology` in `tests/deployment-model/`
+- `ARCH-007-07 Service Deployment` in `tests/deployment-model/`
+- `ARCH-007-08 High Availability` in `tests/deployment-model/`
+- `ARCH-007-09 Disaster Recovery` in `tests/deployment-model/`
+- `ARCH-007-10 Future Deployment Evolution` in `tests/deployment-model/`
+- `ARCH-008-01 Security Overview` in `tests/security-architecture/`
+- `ARCH-008-02 Identity & Authentication` in `tests/security-architecture/`
+- `ARCH-008-03 Authorization Model` in `tests/security-architecture/`
+- `ARCH-008-04 Zero Trust Architecture` in `tests/security-architecture/`
+- `ARCH-008-05 Secrets & Key Management` in `tests/security-architecture/`
+- `ARCH-008-06 Cryptography & Data Protection` in `tests/security-architecture/`
+- `ARCH-008-07 AI Security` in `tests/security-architecture/`
+- `ARCH-008-08 Platform & Supply Chain Security` in `tests/security-architecture/`
+- `ARCH-008-09 Compliance & Governance` in `tests/security-architecture/`
+- `ARCH-008-10 Future Security Evolution` in `tests/security-architecture/`
+- `ARCH-009-01 Integration Overview` in `tests/integration-architecture/`
+- `ARCH-009-02 Integration Principles` in `tests/integration-architecture/`
+- `ARCH-009-03 API Architecture` in `tests/integration-architecture/`
+- `ARCH-009-04 Messaging & Event Architecture` in `tests/integration-architecture/`
+- `ARCH-009-05 Workflow & Process Integration` in `tests/integration-architecture/`
+- `ARCH-009-06 External System Integration` in `tests/integration-architecture/`
+- `ARCH-009-07 AI Integration Architecture` in `tests/integration-architecture/`
+- `ARCH-009-08 Integration Governance` in `tests/integration-architecture/`
+- `ARCH-009-09 Reliability & Resilience` in `tests/integration-architecture/`
+- `ARCH-009-10 Future Integration Evolution` in `tests/integration-architecture/`
+- `ARCH-010-01 Observability Overview` in `tests/observability-architecture/`
+- `ARCH-010-02 Observability Principles` in `tests/observability-architecture/`
+- `ARCH-010-03 Business Observability` in `tests/observability-architecture/`
+- `ARCH-010-04 Service Observability` in `tests/observability-architecture/`
+- `ARCH-010-05 AI Observability` in `tests/observability-architecture/`
+- `ARCH-010-06 Integration Observability` in `tests/observability-architecture/`
+- `ARCH-010-07 Security Observability` in `tests/observability-architecture/`
+- `ARCH-010-08 Operational Observability` in `tests/observability-architecture/`
+- `ARCH-010-09 Observability Governance` in `tests/observability-architecture/`
+- `ARCH-010-10 Future Observability Evolution` in `tests/observability-architecture/`
+- `ARCH-011 Enterprise Operations` in `tests/enterprise-operations/`
+- `ARCH-011-01 Enterprise Operations Overview` in `tests/enterprise-operations/`
+- `ARCH-011-02 Operating Model` in `tests/enterprise-operations/`
+- `ARCH-011-03 Operations Command and Control` in `tests/enterprise-operations/`
+- `ARCH-011-04 Service Operations` in `tests/enterprise-operations/`
+- `ARCH-011-05 Incident and Problem Management` in `tests/enterprise-operations/`
+- `ARCH-011-06 Change and Release Operations` in `tests/enterprise-operations/`
+- `ARCH-011-07 Capacity and Performance Management` in `tests/enterprise-operations/`
+- `ARCH-011-08 Continuity and Resilience Operations` in `tests/enterprise-operations/`
+- `ARCH-011-09 Operations Governance` in `tests/enterprise-operations/`
+- `ARCH-011-10 Future Operations Evolution` in `tests/enterprise-operations/`
+- `ARCH-012-01 Governance & Compliance Overview` in `tests/governance-compliance/`
+- `ARCH-012-02 Governance Operating Model` in `tests/governance-compliance/`
+- `ARCH-012-03 Policy Architecture` in `tests/governance-compliance/`
+- `ARCH-012-04 Enterprise Risk Management` in `tests/governance-compliance/`
+- `ARCH-012-05 Compliance and Control Framework` in `tests/governance-compliance/`
+- `ARCH-012-06 Privacy and Data Governance` in `tests/governance-compliance/`
+- `ARCH-012-07 AI and Ethical Governance` in `tests/governance-compliance/`
+- `ARCH-012-08 Assurance, Audit, and Evidence` in `tests/governance-compliance/`
+- `ARCH-012-09 Exceptions, Issues, and Remediation` in `tests/governance-compliance/`
+- `ARCH-012-10 Future Governance Evolution` in `tests/governance-compliance/`
+- `ARCH-013-01 Developer Platform Overview` in `tests/developer-platform/`
 
-## Core Principles
-
-- AI-first engineering
-- Tool-first architecture
-- Documentation before implementation
-- Repository as permanent memory
-- Platform separated from property deployments
-- Modular and domain-oriented services
-- Vendor independence where practical
-
----
-
-## Repository Structure
-
-```text
-.ai/
-adr/
-api/
-architecture/
-deployment/
-docs/
-examples/
-knowledge/
-prompts/
-properties/
-research/
-schemas/
-tasks/
-tests/
+These tests validate reusable platform capabilities and channel-facing behavior without introducing business logic.
