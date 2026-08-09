@@ -76,3 +76,4 @@ The repository currently includes automated unit tests for:
 - `ARCH-014-06 Multi-Agent Coordination` in `tests/ai-agent-framework/`
 - `ARCH-014-07 Agent Memory, Knowledge, and Context` in `tests/ai-agent-framework/`
 - `ARCH-014-08 Agent Security, Governance, and Assurance` in `tests/ai-agent-framework/`
+- `ARCH-014-09 Agent Operations, Observability, and Evaluation` in `tests/ai-agent-framework/`

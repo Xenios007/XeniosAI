@@ -1,0 +1,77 @@
+export class AgentOperationsObservabilityEvaluationProfile {
+  constructor({
+    operationsName,
+    operationalScope = [], ownershipRoles = [], responsibilities = [], readinessItems = [],
+    serviceModelFields = [], serviceCommitments = [], healthDimensions = [], healthStates = [],
+    healthStateActions = [], signalTypes = [], metrics = [], logEvents = [], prohibitedLogContent = [],
+    traceCorrelationPoints = [], domainEvents = [], auditEvents = [], businessOutcomes = [],
+    qualitySignals = [], dashboardFields = [], alertFields = [], alertConditions = [],
+    evaluationMethods = [], evaluationLayers = [], datasetFields = [], scenarioFields = [],
+    deterministicChecks = [], modelEvaluationControls = [], evaluationMetrics = [], releaseGateRequirements = [],
+    rolloutStages = [], driftAreas = [], driftResponses = [], incidentTypes = [], containmentActions = [],
+    changeFields = [], rollbackScopes = [], capacityDimensions = [], performanceDimensions = [],
+    costAttributionDimensions = [], continuityFailureModes = [], degradationModes = [],
+    recoveryRequirements = [], humanInterventionActions = [], runbookTopics = [], evidencePurposes = [],
+    feedbackSources = [], feedbackProcessingSteps = [], reviewDimensions = [], qualityAttributes = [],
+    architecturalRules = [], architectureBoundaries = [], businessOutcomeHealth = true,
+    correlatedEvidence = true, lifecycleEvaluation = true, ownedProductionAgents = true,
+    operationalReadinessBeforeActivation = true, serviceCommitmentsReflectBusinessRisk = true,
+    actionableHealthStates = true, tenantPropertyTelemetryScope = true, secretSafeLogs = true,
+    tracesPreserveScope = true, domainEventsMeaningful = true, auditEvidenceProtected = true,
+    technicalSuccessRequiresBusinessSuccess = true, scopedDashboardAccess = true, actionableAlerts = true,
+    multiMethodEvaluation = true, governedEvaluationData = true, deterministicControlsPreferDeterministicTests = true,
+    modelJudgesNotSoleHighRiskAssurance = true, thresholdsDefinedBeforeRelease = true,
+    criticalFailuresNotHiddenByAverages = true, regressionAfterMaterialChange = true,
+    shadowPreservesGovernance = true, controlledRolloutStopConditions = true, driftRequiresEvaluation = true,
+    scopedContainment = true, incidentsFeedRegression = true, providerModelChangesProduction = true,
+    rollbackReconcilesInProgress = true, costAttributed = true, degradationVisible = true,
+    safeRecovery = true, authorizedHumanIntervention = true, feedbackThroughGovernedChange = true,
+    periodicOperationalReview = true, infrastructureOnlyHealth = false, unrestrictedDeliberationObservability = false,
+    unownedActiveAgents = false, modelPerformanceOnlyCommitments = false, noisyUnactionableAlerts = false,
+    rawModelTokenEvents = false, productionDataCopiedWithoutGovernance = false, modelJudgeOnlyHighRiskControl = false,
+    averageScoreHidesCriticalFailures = false, materialChangeWithoutRegression = false,
+    operativeShadowActions = false, driftIgnored = false, broadContainmentOnly = false,
+    symptomOnlyProblemManagement = false, providerChangeNotProduction = false, rollbackIgnoresCompletedActions = false,
+    lowCostPoorOutcomeEfficient = false, invisibleMaterialDegradation = false,
+    agentFeedbackAutoModifiesBehavior = false, selectsObservabilityProduct = false,
+    selectsEvaluationProduct = false, definesModelTraining = false, selectsServiceManagementProduct = false,
+    replacesObservabilityArchitecture = false, replacesEnterpriseOperations = false,
+    replacesGovernanceCompliance = false
+  }) {
+    this.operationsName = operationsName;
+    for (const [key, value] of Object.entries({
+      operationalScope, ownershipRoles, responsibilities, readinessItems, serviceModelFields,
+      serviceCommitments, healthDimensions, healthStates, healthStateActions, signalTypes, metrics,
+      logEvents, prohibitedLogContent, traceCorrelationPoints, domainEvents, auditEvents, businessOutcomes,
+      qualitySignals, dashboardFields, alertFields, alertConditions, evaluationMethods, evaluationLayers,
+      datasetFields, scenarioFields, deterministicChecks, modelEvaluationControls, evaluationMetrics,
+      releaseGateRequirements, rolloutStages, driftAreas, driftResponses, incidentTypes, containmentActions,
+      changeFields, rollbackScopes, capacityDimensions, performanceDimensions, costAttributionDimensions,
+      continuityFailureModes, degradationModes, recoveryRequirements, humanInterventionActions, runbookTopics,
+      evidencePurposes, feedbackSources, feedbackProcessingSteps, reviewDimensions, qualityAttributes,
+      architecturalRules, architectureBoundaries
+    })) this[key] = Object.freeze([...value]);
+    for (const [key, value] of Object.entries({
+      businessOutcomeHealth, correlatedEvidence, lifecycleEvaluation, ownedProductionAgents,
+      operationalReadinessBeforeActivation, serviceCommitmentsReflectBusinessRisk, actionableHealthStates,
+      tenantPropertyTelemetryScope, secretSafeLogs, tracesPreserveScope, domainEventsMeaningful,
+      auditEvidenceProtected, technicalSuccessRequiresBusinessSuccess, scopedDashboardAccess,
+      actionableAlerts, multiMethodEvaluation, governedEvaluationData, deterministicControlsPreferDeterministicTests,
+      modelJudgesNotSoleHighRiskAssurance, thresholdsDefinedBeforeRelease, criticalFailuresNotHiddenByAverages,
+      regressionAfterMaterialChange, shadowPreservesGovernance, controlledRolloutStopConditions,
+      driftRequiresEvaluation, scopedContainment, incidentsFeedRegression, providerModelChangesProduction,
+      rollbackReconcilesInProgress, costAttributed, degradationVisible, safeRecovery,
+      authorizedHumanIntervention, feedbackThroughGovernedChange, periodicOperationalReview,
+      infrastructureOnlyHealth, unrestrictedDeliberationObservability, unownedActiveAgents,
+      modelPerformanceOnlyCommitments, noisyUnactionableAlerts, rawModelTokenEvents,
+      productionDataCopiedWithoutGovernance, modelJudgeOnlyHighRiskControl, averageScoreHidesCriticalFailures,
+      materialChangeWithoutRegression, operativeShadowActions, driftIgnored, broadContainmentOnly,
+      symptomOnlyProblemManagement, providerChangeNotProduction, rollbackIgnoresCompletedActions,
+      lowCostPoorOutcomeEfficient, invisibleMaterialDegradation, agentFeedbackAutoModifiesBehavior,
+      selectsObservabilityProduct, selectsEvaluationProduct, definesModelTraining,
+      selectsServiceManagementProduct, replacesObservabilityArchitecture, replacesEnterpriseOperations,
+      replacesGovernanceCompliance
+    })) this[key] = Boolean(value);
+    Object.freeze(this);
+  }
+}

@@ -6,6 +6,23 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.18.0] - ARCH-014 Agent Operations, Observability, and Evaluation
+
+### Added
+- Agent Operations, Observability, and Evaluation metadata covering operational scope, ownership, readiness, service commitments, health states, signals, metrics, logs, traces, domain events, audit events, business observability, quality observability, dashboards, alerts, evaluation methods, evaluation layers, datasets, scenarios, deterministic checks, model-based evaluation controls, release gates, controlled rollout, drift, incidents, containment, change, rollback, capacity, performance, cost, continuity, recovery, human intervention, runbooks, operational evidence, feedback, operational review, quality attributes, architectural rules, and boundaries.
+- Immutable contract for Agent Operations, Observability, and Evaluation profiles.
+- Agent Operations, Observability, and Evaluation descriptor for metadata exposure, profile validation, and architecture assertion.
+- Dependency-injection registration through `addAiAgentFramework`.
+- Unit tests for operations/observability/evaluation metadata, validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Agent Operations, Observability, and Evaluation as a business-first, model-neutral architecture module where agent health requires safe, authorized, reliable, useful outcomes; observability uses correlated evidence without unrestricted hidden reasoning; and evaluation remains a lifecycle control across design, release, rollout, production, drift, incident response, and governed change.
+
+Status: AI Agent Framework Architecture
+Version: 0.18.0
+
+---
+
 ## [0.17.0] - ARCH-014 Agent Security, Governance, and Assurance
 
 ### Added

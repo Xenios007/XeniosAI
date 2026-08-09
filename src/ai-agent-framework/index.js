@@ -6,6 +6,7 @@ export * from './tools-actions-environment-constants.js';
 export * from './multi-agent-coordination-constants.js';
 export * from './memory-knowledge-context-constants.js';
 export * from './security-governance-assurance-constants.js';
+export * from './operations-observability-evaluation-constants.js';
 export { AgentFrameworkValidationResult } from './contracts/agent-framework-validation-result.js';
 export { AgentFrameworkOverviewProfile } from './contracts/agent-framework-overview-profile.js';
 export { AgentIdentityLifecycleProfile } from './contracts/agent-identity-lifecycle-profile.js';
@@ -15,6 +16,7 @@ export { ToolsActionsEnvironmentProfile } from './contracts/tools-actions-enviro
 export { MultiAgentCoordinationProfile } from './contracts/multi-agent-coordination-profile.js';
 export { MemoryKnowledgeContextProfile } from './contracts/memory-knowledge-context-profile.js';
 export { AgentSecurityGovernanceAssuranceProfile } from './contracts/agent-security-governance-assurance-profile.js';
+export { AgentOperationsObservabilityEvaluationProfile } from './contracts/agent-operations-observability-evaluation-profile.js';
 export { AgentFrameworkOverviewDescriptor } from './overview/agent-framework-overview-descriptor.js';
 export { AgentIdentityLifecycleDescriptor } from './identity-lifecycle/agent-identity-lifecycle-descriptor.js';
 export { AgentRuntimeExecutionDescriptor } from './runtime-execution/agent-runtime-execution-descriptor.js';
@@ -23,4 +25,5 @@ export { ToolsActionsEnvironmentDescriptor } from './tools-actions-environment/t
 export { MultiAgentCoordinationDescriptor } from './multi-agent-coordination/multi-agent-coordination-descriptor.js';
 export { MemoryKnowledgeContextDescriptor } from './memory-knowledge-context/memory-knowledge-context-descriptor.js';
 export { AgentSecurityGovernanceAssuranceDescriptor } from './security-governance-assurance/agent-security-governance-assurance-descriptor.js';
+export { AgentOperationsObservabilityEvaluationDescriptor } from './operations-observability-evaluation/agent-operations-observability-evaluation-descriptor.js';
 export { addAiAgentFramework } from './service-registration.js';
