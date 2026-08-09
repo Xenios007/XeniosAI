@@ -169,3 +169,20 @@ Version: 0.7.0
 
 Status: Developer Platform Architecture
 Version: 0.8.0
+
+---
+
+## [0.9.0] - ARCH-013 Future Developer Platform Evolution
+
+### Added
+- Future Developer Platform Evolution objective, strategic-driver, invariant, horizon, capability-state, maturity-dimension, future-experience, intent-resolution, architecture-aware assistance, architecture-knowledge graph, human-AI role, agent-coordination, autonomy-level, autonomy-promotion, autonomy-demotion, future-capability area, digital-twin, federation, ecosystem, innovation-control, transition-architecture, governance, success-measure, risk, safeguard, anti-pattern, architectural-rule, and recommended-sequence metadata.
+- Immutable contract for Future Developer Platform Evolution profiles.
+- Future Developer Platform Evolution descriptor for metadata exposure, profile validation, and architecture assertion.
+- Dependency-injection registration through `addDeveloperPlatform`.
+- Unit tests for future-evolution metadata, validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Future Developer Platform Evolution as a directional, technology-independent, vendor-neutral developer-platform concern that preserves Architecture-Driven Development, evidence-backed maturity, optional future capabilities until proven, authoritative architecture sources, explicit autonomy levels, bounded multi-agent coordination, semantic-inference boundaries, digital twins as decision aids, common contracts for federation, controlled innovation, transition architecture, human accountability, tenant/property isolation, and AI-provider independence.
+
+Status: Developer Platform Architecture
+Version: 0.9.0

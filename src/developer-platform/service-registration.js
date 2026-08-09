@@ -8,6 +8,7 @@ import { DeliveryEnvironmentDescriptor } from './delivery-environment/delivery-e
 import { PortalCatalogDescriptor } from './portal-catalog/portal-catalog-descriptor.js';
 import { DeveloperSecurityGovernanceDescriptor } from './security-governance/developer-security-governance-descriptor.js';
 import { PlatformOperationsAdoptionDescriptor } from './operations-adoption/platform-operations-adoption-descriptor.js';
+import { FutureDeveloperPlatformEvolutionDescriptor } from './future-evolution/future-developer-platform-evolution-descriptor.js';
 
 export function addDeveloperPlatform(services) {
   if (!(services instanceof ServiceCollection)) {
@@ -23,6 +24,7 @@ export function addDeveloperPlatform(services) {
   services.registerSingleton('PortalCatalogDescriptor', () => new PortalCatalogDescriptor());
   services.registerSingleton('DeveloperSecurityGovernanceDescriptor', () => new DeveloperSecurityGovernanceDescriptor());
   services.registerSingleton('PlatformOperationsAdoptionDescriptor', () => new PlatformOperationsAdoptionDescriptor());
+  services.registerSingleton('FutureDeveloperPlatformEvolutionDescriptor', () => new FutureDeveloperPlatformEvolutionDescriptor());
 
   return services;
 }

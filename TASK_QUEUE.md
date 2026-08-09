@@ -109,7 +109,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-013-07 Developer Portal and Service Catalog`
 - Completed: `ARCH-013-08 Developer Security and Governance`
 - Completed: `ARCH-013-09 Platform Operations and Adoption`
-- Next: `ARCH-013-10 Future Developer Platform Evolution`
+- Completed: `ARCH-013-10 Future Developer Platform Evolution`
+- Next: `ARCH-014 AI Agent Framework`
 
 ## Notes
 
