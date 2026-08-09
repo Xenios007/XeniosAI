@@ -98,7 +98,37 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-010-08 Operational Observability`
 - Completed: `ARCH-010-09 Observability Governance`
 - Completed: `ARCH-010-10 Future Observability Evolution`
-- Next: None - all documented architecture modules in `/architecture` are implemented.
+- Completed: `ARCH-011 Enterprise Operations`
+- Completed: `ARCH-012 Governance & Compliance`
+- Completed: `ARCH-013 Developer Platform`
+- Completed: `ARCH-014 AI Agent Framework`
+- Completed: `ARCH-015 Workflow Engine`
+- Completed: `ARCH-016 Knowledge & Memory`
+- Completed: `ARCH-017 API & SDK Architecture`
+- Completed: `ARCH-018 Multi-Tenancy`
+- Completed: `ARCH-019 Plugin & Extension Framework`
+- Completed: `ARCH-020 Reference Implementations`
+- Completed: `ARCH-021 Experience, Conversation & Frontend Architecture`
+- Completed: `ARCH-022 Identity, Organizations & Access`
+- Completed: `ARCH-023 Customer & Relationship Management`
+- Completed: `ARCH-024 Product, Catalog & Resource Management`
+- Completed: `ARCH-025 Commerce, Orders & Reservations`
+- Completed: `ARCH-026 Pricing, Billing & Payments`
+- Completed: `ARCH-027 Omnichannel Engagement & Collaboration`
+- Completed: `ARCH-028 Analytics & Decision Intelligence`
+- Completed: `ARCH-029 AI Model Operations, Evaluation & Continuous Learning`
+- Completed: `ARCH-030 Industry Solution Packs & Composable Applications`
+- Completed: `ARCH-031 Developer Experience & Portal`
+- Completed: `ARCH-032 Application Framework & UI Extension Kit`
+- Completed: `ARCH-033 API Product Management & Discovery`
+- Completed: `ARCH-034 Contract, Schema & Capability Registry`
+- Completed: `ARCH-035 CLI, IDE & Local Tooling`
+- Completed: `ARCH-036 Developer Environments & Sandboxes`
+- Completed: `ARCH-037 Testing, Simulation & Conformance`
+- Completed: `ARCH-038 Connector, Tool & MCP Development`
+- Completed: `ARCH-039 Marketplace, Publishing & Monetization`
+- Completed: `ARCH-040 Partner, Community & Ecosystem Federation`
+- Next: None - ARCH-001 through ARCH-040 are documented and complete.
 
 ## Notes
 
