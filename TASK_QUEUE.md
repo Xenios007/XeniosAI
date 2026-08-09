@@ -117,7 +117,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-014-05 Tools, Actions, and Environment`
 - Completed: `ARCH-014-06 Multi-Agent Coordination`
 - Completed: `ARCH-014-07 Agent Memory, Knowledge, and Context`
-- Next: `ARCH-014-08 Agent Security, Governance, and Assurance`
+- Completed: `ARCH-014-08 Agent Security, Governance, and Assurance`
+- Next: `ARCH-014-09 Agent Operations, Observability, and Evaluation`
 
 ## Notes
 

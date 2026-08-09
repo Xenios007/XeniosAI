@@ -6,6 +6,23 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.17.0] - ARCH-014 Agent Security, Governance, and Assurance
+
+### Added
+- Agent Security, Governance, and Assurance metadata covering security objectives, governance objectives, trust model, security boundaries, threat actors, threat categories, least privilege, credentials, runtime controls, prompt-injection controls, data protection, model/provider controls, supply chain, secure failure, emergency suspension, governance lifecycle, inventory, risk and impact, decision rights, policies, enforcement, responsible AI, evidence, assurance, red-team scenarios, exceptions, findings, remediation, reassessment, monitoring, incident response, restoration, metrics, quality attributes, architectural rules, and boundaries.
+- Immutable contract for Agent Security, Governance, and Assurance profiles.
+- Agent Security, Governance, and Assurance descriptor for metadata exposure, profile validation, and architecture assertion.
+- Dependency-injection registration through `addAiAgentFramework`.
+- Unit tests for security/governance metadata, validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Agent Security, Governance, and Assurance as a model-neutral architecture module where agent output remains untrusted until deterministic platform controls validate authority, credentials stay out of prompts/context, tenant/property boundaries remain enforced, autonomy is governed, evidence is trustworthy, exceptions are controlled, and agents cannot accept their own risk.
+
+Status: AI Agent Framework Architecture
+Version: 0.17.0
+
+---
+
 ## [0.16.0] - ARCH-014 Agent Memory, Knowledge, and Context
 
 ### Added
