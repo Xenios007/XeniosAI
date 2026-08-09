@@ -1,12 +1,12 @@
 # XeniosAI Architecture Index
 
-**Version:** 1.1
+**Version:** 1.2
 
 **Status:** Active
 
 **Owner:** Enterprise Architecture Team
 
-**Last Updated:** 2026-08-05
+**Last Updated:** 2026-08-09
 
 ---
 
@@ -50,8 +50,8 @@ Architecture modules define business capabilities, boundaries, contracts, contro
 | --- | --- | --- | --- |
 | ARCH-001–010 | Core Platform | Establish the platform's structure, services, intelligence, information flow, domain, deployment, security, integration, and observability foundations. | Complete |
 | ARCH-011–020 | Application Platform | Turn the core into an operable, governed, programmable, multi-tenant, extensible application platform with reference implementations. | Complete |
-| ARCH-021–030 | Enterprise Features | Deliver reusable enterprise capabilities, governed intelligent experiences, and composable industry solutions on top of the application platform. | Planned |
-| ARCH-031–040 | Developer Ecosystem | Enable developers, partners, and solution providers to discover, build, validate, publish, operate, and federate XeniosAI solutions. | Planned |
+| ARCH-021–030 | Enterprise Features | Deliver reusable enterprise capabilities, governed intelligent experiences, and composable industry solutions on top of the application platform. | Complete |
+| ARCH-031–040 | Developer Ecosystem | Enable developers, partners, and solution providers to discover, build, validate, publish, operate, and federate XeniosAI solutions. | Complete |
 
 ---
 
