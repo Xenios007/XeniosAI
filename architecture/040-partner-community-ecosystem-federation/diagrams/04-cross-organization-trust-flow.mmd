@@ -1,0 +1,14 @@
+flowchart TB
+    use["Adoption, usage, support, financial, security, and community outcomes"]
+    monitor["Measure quality, fairness, obligations, risk, and federation health"]
+    review{"Within policy and agreement?"}
+    continue["Continue, renew, update, or expand"]
+    remediate["Correct, restrict, suspend, remove, migrate, or settle"]
+    evidence["Record decision, notification, appeal, and closure"]
+    use --> monitor
+    monitor --> review
+    review -->|"Yes"| continue
+    review -->|"No"| remediate
+    continue --> evidence
+    remediate --> evidence
+
