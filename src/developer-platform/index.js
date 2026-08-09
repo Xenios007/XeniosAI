@@ -59,3 +59,7 @@ export { PlatformCapabilityModelDescriptor } from './capability-model/platform-c
 export * from './lifecycle-constants.js';
 export { ProjectServiceLifecycleProfile } from './contracts/project-service-lifecycle-profile.js';
 export { ProjectServiceLifecycleDescriptor } from './lifecycle/project-service-lifecycle-descriptor.js';
+
+export * from './build-quality-constants.js';
+export { BuildTestQualityProfile } from './contracts/build-test-quality-profile.js';
+export { BuildTestQualityDescriptor } from './build-quality/build-test-quality-descriptor.js';

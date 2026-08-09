@@ -104,7 +104,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-013-02 Developer Experience and Journeys`
 - Completed: `ARCH-013-03 Platform Capability Model`
 - Completed: `ARCH-013-04 Project and Service Lifecycle`
-- Next: `ARCH-013-05 Build, Test, and Quality`
+- Completed: `ARCH-013-05 Build, Test, and Quality`
+- Next: `ARCH-013-06 Delivery and Environment Platform`
 
 ## Notes
 

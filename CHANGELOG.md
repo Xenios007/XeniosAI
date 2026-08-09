@@ -84,3 +84,20 @@ Version: 0.2.0
 
 Status: Developer Platform Architecture
 Version: 0.3.0
+
+---
+
+## [0.4.0] - ARCH-013 Build, Test, and Quality
+
+### Added
+- Build, test, and quality objective, principle, failure-class, build-state, build-request, build-definition, build-plan, isolation, reproducibility, dependency, artifact, test-level, test-selection, quality-attribute, AI-evaluation, quality-gate, evidence, governance, maturity, measure, anti-pattern, architectural-rule, and future-capability metadata.
+- Immutable contract for Build, Test, and Quality profiles.
+- Build, Test, and Quality descriptor for metadata exposure, profile validation, and architecture assertion.
+- Dependency-injection registration through `addDeveloperPlatform`.
+- Unit tests for build/test/quality metadata, validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Build, Test, and Quality as a technology-independent, vendor-neutral developer-platform concern that preserves declared inputs, build-once-promote, isolated execution, traceable artifacts, governed dependencies, deterministic business tests, AI evaluation context, tenant/property validation, flaky-test governance, explainable evidence-based gates, and AI self-approval boundaries.
+
+Status: Developer Platform Architecture
+Version: 0.4.0
