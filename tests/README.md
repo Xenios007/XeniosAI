@@ -53,3 +53,10 @@ Testing is treated as a first-class engineering discipline rather than an aftert
 - deployment/
 - architecture/
 - tasks/
+
+## Current Implementation
+
+The repository currently includes automated unit tests for:
+
+- `ARCH-013-01 Developer Platform Overview` in `tests/developer-platform/`
+- `ARCH-013-02 Developer Experience and Journeys` in `tests/developer-platform/`

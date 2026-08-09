@@ -33,3 +33,20 @@ The project follows the principle that architecture, documentation, and engineer
 
 Status: Foundation
 Version: 0.0.1
+
+---
+
+## [0.1.0] - ARCH-013 Developer Experience and Journeys
+
+### Added
+- Developer experience objective, principle, actor, context, journey stage, journey state, human journey, AI journey, paired journey, delegation, stop condition, interaction channel, experience contract, feedback class, measure, architectural rule, and future-capability metadata.
+- Immutable contract for Developer Experience and Journeys profiles.
+- Developer Experience descriptor for metadata exposure, profile validation, and architecture assertion.
+- Dependency-injection registration through `addDeveloperPlatform`.
+- Unit tests for developer journey metadata, validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Developer Experience and Journeys as an end-to-end, technology-independent, vendor-neutral product concern for human developers and authorized AI implementation agents, preserving explicit authority, accountability, tenant/property boundaries, evidence, recoverability, accessibility, and safe outcome-based measurement.
+
+Status: Developer Platform Architecture
+Version: 0.1.0
