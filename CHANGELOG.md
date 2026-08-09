@@ -6,6 +6,23 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.12.0] - ARCH-014 Agent Runtime and Execution Model
+
+### Added
+- Agent Runtime and Execution metadata covering admission, identity binding, logical runtime components, execution states, transition contracts, initialization, bounded steps, tasks, scheduling, isolation, concurrency, limits, context assembly, side effects, checkpoints, waits, cancellation, failures, recovery, completion validation, closure, runtime events, observability, evidence, quality attributes, architectural rules, and boundaries.
+- Immutable contract for Agent Runtime and Execution profiles.
+- Agent Runtime and Execution descriptor for metadata exposure, profile validation, and architecture assertion.
+- Dependency-injection registration through `addAiAgentFramework`.
+- Unit tests for runtime metadata, validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Agent Runtime and Execution as a deterministic, provider-neutral control-plane architecture that admits authorized goals, binds identity and authority, controls state outside model context, executes bounded steps, preserves tenant/property isolation, records evidence, and delegates durable process semantics to the Workflow Engine.
+
+Status: AI Agent Framework Architecture
+Version: 0.12.0
+
+---
+
 ## [0.11.0] - ARCH-014 Agent Identity and Lifecycle
 
 ### Added
