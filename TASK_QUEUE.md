@@ -103,7 +103,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-013-01 Developer Platform Overview`
 - Completed: `ARCH-013-02 Developer Experience and Journeys`
 - Completed: `ARCH-013-03 Platform Capability Model`
-- Next: `ARCH-013-04 Project and Service Lifecycle`
+- Completed: `ARCH-013-04 Project and Service Lifecycle`
+- Next: `ARCH-013-05 Build, Test, and Quality`
 
 ## Notes
 

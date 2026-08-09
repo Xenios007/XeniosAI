@@ -55,3 +55,7 @@ export { DeveloperExperienceDescriptor } from './experience/developer-experience
 export * from './capability-model-constants.js';
 export { PlatformCapabilityModelProfile } from './contracts/platform-capability-model-profile.js';
 export { PlatformCapabilityModelDescriptor } from './capability-model/platform-capability-model-descriptor.js';
+
+export * from './lifecycle-constants.js';
+export { ProjectServiceLifecycleProfile } from './contracts/project-service-lifecycle-profile.js';
+export { ProjectServiceLifecycleDescriptor } from './lifecycle/project-service-lifecycle-descriptor.js';

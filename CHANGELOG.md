@@ -67,3 +67,20 @@ Version: 0.1.0
 
 Status: Developer Platform Architecture
 Version: 0.2.0
+
+---
+
+## [0.3.0] - ARCH-013 Project and Service Lifecycle
+
+### Added
+- Project and service lifecycle objective, principle, concept, relationship, project-state, service-state, project-creation, project-type, identity, metadata, ownership, boundary, readiness, control, gate, event, command, authority-source, validation, failure-recovery, measure, governance, anti-pattern, architectural-rule, and future-capability metadata.
+- Immutable contract for Project and Service Lifecycle profiles.
+- Project and Service Lifecycle descriptor for metadata exposure, profile validation, and architecture assertion.
+- Dependency-injection registration through `addDeveloperPlatform`.
+- Unit tests for lifecycle metadata, validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Project and Service Lifecycle as a technology-independent, vendor-neutral developer-platform concern that preserves distinct project and service identities, accountable ownership, authoritative lifecycle state, operational metadata, architecture and ADR binding, readiness before production, tenant/property scope, governed deprecation and retirement, AI ownership boundaries, and retained evidence.
+
+Status: Developer Platform Architecture
+Version: 0.3.0
