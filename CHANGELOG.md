@@ -186,3 +186,20 @@ Version: 0.8.0
 
 Status: Developer Platform Architecture
 Version: 0.9.0
+
+---
+
+## [0.10.0] - ARCH-014 AI Agent Framework Overview
+
+### Added
+- AI Agent Framework overview objective, principle, non-agent boundary, agent-use criterion, logical-layer, framework-capability, definition-field, concept-identity, classification, autonomy-level, lifecycle, execution-state, execution-loop, goal, tool-boundary, human-participation, delegation, context, quality-attribute, architectural-rule, architecture-boundary, and future-capability metadata.
+- Immutable contract for AI Agent Framework Overview profiles.
+- AI Agent Framework Overview descriptor for metadata exposure, profile validation, and architecture assertion.
+- Dependency-injection registration through `addAiAgentFramework`.
+- Unit tests for overview metadata, validation, incomplete metadata rejection, and DI access.
+
+### Established
+- AI Agent Framework Overview as a technology-independent, vendor-neutral architecture module that treats agents as first-class platform identities with accountable ownership, versioned definitions, scoped authority, explicit autonomy, governed tool usage, deterministic business-service boundaries, Workflow Engine boundaries, authoritative state outside model context, bounded retries/delegation/budgets, human controls, attributable evidence, evaluation, suspension/stop controls, tenant isolation, trust classification, and model/provider neutrality.
+
+Status: AI Agent Framework Architecture
+Version: 0.10.0
