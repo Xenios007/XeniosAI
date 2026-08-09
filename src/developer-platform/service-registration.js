@@ -5,6 +5,7 @@ import { PlatformCapabilityModelDescriptor } from './capability-model/platform-c
 import { ProjectServiceLifecycleDescriptor } from './lifecycle/project-service-lifecycle-descriptor.js';
 import { BuildTestQualityDescriptor } from './build-quality/build-test-quality-descriptor.js';
 import { DeliveryEnvironmentDescriptor } from './delivery-environment/delivery-environment-descriptor.js';
+import { PortalCatalogDescriptor } from './portal-catalog/portal-catalog-descriptor.js';
 
 export function addDeveloperPlatform(services) {
   if (!(services instanceof ServiceCollection)) {
@@ -17,6 +18,7 @@ export function addDeveloperPlatform(services) {
   services.registerSingleton('ProjectServiceLifecycleDescriptor', () => new ProjectServiceLifecycleDescriptor());
   services.registerSingleton('BuildTestQualityDescriptor', () => new BuildTestQualityDescriptor());
   services.registerSingleton('DeliveryEnvironmentDescriptor', () => new DeliveryEnvironmentDescriptor());
+  services.registerSingleton('PortalCatalogDescriptor', () => new PortalCatalogDescriptor());
 
   return services;
 }

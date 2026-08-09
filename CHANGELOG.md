@@ -118,3 +118,20 @@ Version: 0.4.0
 
 Status: Developer Platform Architecture
 Version: 0.5.0
+
+---
+
+## [0.6.0] - ARCH-013 Developer Portal and Service Catalog
+
+### Added
+- Developer Portal and Service Catalog objective, principle, actor, channel, context, information-area, self-service, catalog-record, service-record, relationship, authority-source, registration, reconciliation, ownership, documentation, search, AI-discovery, security, governance, maturity, measure, anti-pattern, architectural-rule, and future-capability metadata.
+- Immutable contract for Developer Portal and Service Catalog profiles.
+- Developer Portal and Service Catalog descriptor for metadata exposure, profile validation, and architecture assertion.
+- Dependency-injection registration through `addDeveloperPlatform`.
+- Unit tests for portal/catalog metadata, validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Developer Portal and Service Catalog as a technology-independent, vendor-neutral developer-platform concern that preserves the portal as an experience layer, the catalog as a discovery authority, source/version/freshness/access visibility, typed relationships, distinct record types, governed self-service, tenant/property isolation, documentation lifecycle, cited AI assistance, privacy, and replaceable implementations.
+
+Status: Developer Platform Architecture
+Version: 0.6.0

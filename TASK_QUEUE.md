@@ -106,7 +106,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-013-04 Project and Service Lifecycle`
 - Completed: `ARCH-013-05 Build, Test, and Quality`
 - Completed: `ARCH-013-06 Delivery and Environment Platform`
-- Next: `ARCH-013-07 Developer Portal and Service Catalog`
+- Completed: `ARCH-013-07 Developer Portal and Service Catalog`
+- Next: `ARCH-013-08 Developer Security and Governance`
 
 ## Notes
 

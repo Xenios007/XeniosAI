@@ -67,3 +67,7 @@ export { BuildTestQualityDescriptor } from './build-quality/build-test-quality-d
 export * from './delivery-environment-constants.js';
 export { DeliveryEnvironmentProfile } from './contracts/delivery-environment-profile.js';
 export { DeliveryEnvironmentDescriptor } from './delivery-environment/delivery-environment-descriptor.js';
+
+export * from './portal-catalog-constants.js';
+export { PortalCatalogProfile } from './contracts/portal-catalog-profile.js';
+export { PortalCatalogDescriptor } from './portal-catalog/portal-catalog-descriptor.js';
