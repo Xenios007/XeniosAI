@@ -6,6 +6,23 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.23.0] - ARCH-015 Tasks, Activities, and Workers
+
+### Added
+- Tasks, Activities, and Workers metadata covering core work concepts and responsibilities, task identities and states, activity-attempt bindings and states, durable dispatch intent, queue capabilities and delivery models, worker identity and lifecycle, capability matching, leases, results, failures, dead-letter causes, backpressure actions, operations, quality attributes, architectural rules, and boundaries.
+- Immutable Tasks, Activities, and Workers profile validating ownership, identity, durability, worker trust, capability, isolation, lease, result, retry, dead-letter, load-control, drain, and evidence guarantees.
+- Tasks, Activities, and Workers descriptor for metadata exposure, profile validation, and architecture completeness assertions.
+- Dependency-injection registration and public exports through the Workflow Engine module.
+- Unit tests for task and attempt semantics, queue and worker controls, prohibited shortcuts, incomplete metadata rejection, immutability, and DI access.
+
+### Established
+- The Workflow Engine owns durable logical task truth while replaceable authenticated workers execute bounded attempts through durable dispatch, capability matching, task-scoped authority, leases, fencing, validated results, controlled retry, and reconciliation without treating queue delivery or worker assertions as completion.
+
+Status: Workflow Engine Architecture
+Version: 0.23.0
+
+---
+
 ## [0.22.0] - ARCH-015 Workflow Runtime and State Model
 
 ### Added
