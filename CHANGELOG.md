@@ -6,6 +6,23 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.21.0] - ARCH-015 Workflow Definition and Lifecycle
+
+### Added
+- Workflow Definition and Lifecycle metadata covering definition identities, ownership roles, classifications, canonical sections, participant contracts, process and reliability elements, triggers, validation areas, migration types, lifecycle states and gates, scoped activation, definition operations, quality attributes, architectural rules, and boundaries.
+- Immutable Workflow Definition and Lifecycle profile for validating required architecture behavior and rejecting prohibited definition, versioning, activation, migration, privacy, and runtime-boundary states.
+- Workflow Definition and Lifecycle descriptor for metadata exposure, profile validation, and architecture completeness assertions.
+- Dependency-injection registration and public exports through the Workflow Engine module.
+- Unit tests for lifecycle metadata, immutable profiles, boundary validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Every admitted workflow execution binds to an approved immutable effective definition version, with release separated from scoped activation and existing executions remaining on their original version unless an exceptional governed migration preserves history, authority, tenant/property boundaries, and evidence.
+
+Status: Workflow Engine Architecture
+Version: 0.21.0
+
+---
+
 ## [0.20.0] - ARCH-015 Workflow Engine Overview
 
 ### Added
