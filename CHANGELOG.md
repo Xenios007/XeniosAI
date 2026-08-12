@@ -6,6 +6,23 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.22.0] - ARCH-015 Workflow Runtime and State Model
+
+### Added
+- Workflow Runtime and State Model metadata covering runtime responsibilities and inputs, admission checks and outcomes, immutable execution bindings, logical components, lifecycle states, authoritative state fields and invariants, representation options, transition contracts, concurrency controls, task states, durable waits, failure classifications, operations, quality attributes, architectural rules, and boundaries.
+- Immutable Workflow Runtime and State profile validating deterministic transition, durability, idempotency, recovery, isolation, completion-evidence, side-effect-intent, and controlled-repair guarantees.
+- Workflow Runtime and State descriptor for metadata exposure, profile validation, and architecture completeness assertions.
+- Dependency-injection registration and public exports through the Workflow Engine module.
+- Unit tests for runtime metadata, immutable profiles, prohibited shortcuts, incomplete metadata rejection, and DI access.
+
+### Established
+- Each admitted workflow execution has an immutable identity and exact definition binding, advances through durable version-controlled authoritative state, records external intent before dispatch, reconciles uncertainty before repetition, and recovers from persisted state without allowing workers, agents, queues, or process memory to become state authority.
+
+Status: Workflow Engine Architecture
+Version: 0.22.0
+
+---
+
 ## [0.21.0] - ARCH-015 Workflow Definition and Lifecycle
 
 ### Added
