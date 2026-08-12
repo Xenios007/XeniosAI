@@ -12,9 +12,9 @@ Update this file after every successful implementation session.
 - Implementation guide: `IMPLEMENTATION_GUIDE.md`
 - Task queue: `TASK_QUEUE.md`
 - Current implementation phase: `ARCH-015 Workflow Engine`
-- Current implementation state: `ARCH-014-10 Future Agent Framework Evolution` is implemented.
-- Latest successful implementation module: `ARCH-014-10 Future Agent Framework Evolution`
-- Latest successful commit: current implementation commit for `ARCH-014-10 Future Agent Framework Evolution`
+- Current implementation state: `ARCH-015-01 Workflow Engine Overview` is implemented.
+- Latest successful implementation module: `ARCH-015-01 Workflow Engine Overview`
+- Latest successful commit: current implementation commit for `ARCH-015-01 Workflow Engine Overview`
 - Latest push status: pushed to `main`
 - Build status: passing
 - Test status: passing
@@ -39,16 +39,16 @@ Update this file after every successful implementation session.
 
 ## Implementation Coverage
 
-- Completed through: `ARCH-014-10 Future Agent Framework Evolution`
-- Next documented implementation module: `ARCH-015-01 Workflow Engine Overview`
-- Reason: `architecture/015-workflow-engine/01-workflow-engine-overview.md` is available locally.
+- Completed through: `ARCH-015-01 Workflow Engine Overview`
+- Next documented implementation module: `ARCH-015-02 Workflow Definition and Lifecycle`
+- Reason: `architecture/015-workflow-engine/02-workflow-definition-and-lifecycle.md` is available locally.
 
 ## Latest Verification
 
-- Focused test: `node --test tests/ai-agent-framework/future-agent-framework-evolution.test.js`
+- Focused test: `node --test tests/workflow-engine/workflow-engine-overview.test.js`
 - Focused test result: passed, 6/6
 - Full test: `npm.cmd test`
-- Full test result: passed, 924/924
+- Full test result: passed, 930/930
 - Build command: `npm.cmd run build`
 - Build result: passed
 
@@ -70,4 +70,4 @@ Architecture documents must not be changed during implementation unless explicit
 
 ## Recommended Next Action
 
-Recommended next architecture module: `ARCH-015-01 Workflow Engine Overview`.
+Recommended next architecture module: `ARCH-015-02 Workflow Definition and Lifecycle`.

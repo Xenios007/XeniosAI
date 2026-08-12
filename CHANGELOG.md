@@ -6,6 +6,23 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.20.0] - ARCH-015 Workflow Engine Overview
+
+### Added
+- Workflow Engine Overview metadata covering workflow properties, use and non-use criteria, architecture goals and principles, explicit concepts, logical planes, engine capabilities, actors, classifications, definition fields and lifecycle, execution identity and states, authoritative workflow state, operational controls, quality attributes, architectural rules, boundaries, and future directions.
+- Immutable Workflow Engine Overview profile and validation result contracts.
+- Workflow Engine Overview descriptor for metadata exposure, profile validation, and architecture assertion.
+- `addWorkflowEngine` dependency-injection registration and public module exports.
+- Unit tests for overview metadata, architecture-boundary validation, incomplete metadata rejection, and DI access.
+
+### Established
+- The Workflow Engine as the durable deterministic process system of record, coordinating services, humans, integrations, and bounded agents while domain services retain business rules and authoritative business state.
+
+Status: Workflow Engine Architecture
+Version: 0.20.0
+
+---
+
 ## [0.19.0] - ARCH-014 Future Agent Framework Evolution
 
 ### Added
