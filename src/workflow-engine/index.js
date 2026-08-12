@@ -1,8 +1,11 @@
 export * from './overview-constants.js';
 export * from './definition-lifecycle-constants.js';
+export * from './runtime-state-constants.js';
 export { WorkflowEngineValidationResult } from './contracts/workflow-engine-validation-result.js';
 export { WorkflowEngineOverviewProfile } from './contracts/workflow-engine-overview-profile.js';
 export { WorkflowDefinitionLifecycleProfile } from './contracts/workflow-definition-lifecycle-profile.js';
+export { WorkflowRuntimeStateProfile } from './contracts/workflow-runtime-state-profile.js';
 export { WorkflowEngineOverviewDescriptor } from './overview/workflow-engine-overview-descriptor.js';
 export { WorkflowDefinitionLifecycleDescriptor } from './definition-lifecycle/workflow-definition-lifecycle-descriptor.js';
+export { WorkflowRuntimeStateDescriptor } from './runtime-state/workflow-runtime-state-descriptor.js';
 export { addWorkflowEngine } from './service-registration.js';
