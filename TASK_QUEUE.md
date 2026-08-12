@@ -123,7 +123,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-015-01 Workflow Engine Overview`
 - Completed: `ARCH-015-02 Workflow Definition and Lifecycle`
 - Completed: `ARCH-015-03 Workflow Runtime and State Model`
-- Next: `ARCH-015-04 Tasks, Activities, and Workers`
+- Completed: `ARCH-015-04 Tasks, Activities, and Workers`
+- Next: `ARCH-015-05 Events, Timers, and Human Interaction`
 
 ## Notes
 
