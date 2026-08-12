@@ -7,6 +7,7 @@ export * from './multi-agent-coordination-constants.js';
 export * from './memory-knowledge-context-constants.js';
 export * from './security-governance-assurance-constants.js';
 export * from './operations-observability-evaluation-constants.js';
+export * from './future-evolution-constants.js';
 export { AgentFrameworkValidationResult } from './contracts/agent-framework-validation-result.js';
 export { AgentFrameworkOverviewProfile } from './contracts/agent-framework-overview-profile.js';
 export { AgentIdentityLifecycleProfile } from './contracts/agent-identity-lifecycle-profile.js';
@@ -17,6 +18,7 @@ export { MultiAgentCoordinationProfile } from './contracts/multi-agent-coordinat
 export { MemoryKnowledgeContextProfile } from './contracts/memory-knowledge-context-profile.js';
 export { AgentSecurityGovernanceAssuranceProfile } from './contracts/agent-security-governance-assurance-profile.js';
 export { AgentOperationsObservabilityEvaluationProfile } from './contracts/agent-operations-observability-evaluation-profile.js';
+export { FutureAgentFrameworkEvolutionProfile } from './contracts/future-agent-framework-evolution-profile.js';
 export { AgentFrameworkOverviewDescriptor } from './overview/agent-framework-overview-descriptor.js';
 export { AgentIdentityLifecycleDescriptor } from './identity-lifecycle/agent-identity-lifecycle-descriptor.js';
 export { AgentRuntimeExecutionDescriptor } from './runtime-execution/agent-runtime-execution-descriptor.js';
@@ -26,4 +28,5 @@ export { MultiAgentCoordinationDescriptor } from './multi-agent-coordination/mul
 export { MemoryKnowledgeContextDescriptor } from './memory-knowledge-context/memory-knowledge-context-descriptor.js';
 export { AgentSecurityGovernanceAssuranceDescriptor } from './security-governance-assurance/agent-security-governance-assurance-descriptor.js';
 export { AgentOperationsObservabilityEvaluationDescriptor } from './operations-observability-evaluation/agent-operations-observability-evaluation-descriptor.js';
+export { FutureAgentFrameworkEvolutionDescriptor } from './future-evolution/future-agent-framework-evolution-descriptor.js';
 export { addAiAgentFramework } from './service-registration.js';

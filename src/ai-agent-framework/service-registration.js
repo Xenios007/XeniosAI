@@ -8,6 +8,7 @@ import { MultiAgentCoordinationDescriptor } from './multi-agent-coordination/mul
 import { MemoryKnowledgeContextDescriptor } from './memory-knowledge-context/memory-knowledge-context-descriptor.js';
 import { AgentSecurityGovernanceAssuranceDescriptor } from './security-governance-assurance/agent-security-governance-assurance-descriptor.js';
 import { AgentOperationsObservabilityEvaluationDescriptor } from './operations-observability-evaluation/agent-operations-observability-evaluation-descriptor.js';
+import { FutureAgentFrameworkEvolutionDescriptor } from './future-evolution/future-agent-framework-evolution-descriptor.js';
 
 export function addAiAgentFramework(services) {
   if (!(services instanceof ServiceCollection)) {
@@ -23,6 +24,7 @@ export function addAiAgentFramework(services) {
   services.registerSingleton('MemoryKnowledgeContextDescriptor', () => new MemoryKnowledgeContextDescriptor());
   services.registerSingleton('AgentSecurityGovernanceAssuranceDescriptor', () => new AgentSecurityGovernanceAssuranceDescriptor());
   services.registerSingleton('AgentOperationsObservabilityEvaluationDescriptor', () => new AgentOperationsObservabilityEvaluationDescriptor());
+  services.registerSingleton('FutureAgentFrameworkEvolutionDescriptor', () => new FutureAgentFrameworkEvolutionDescriptor());
 
   return services;
 }

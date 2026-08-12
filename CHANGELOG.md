@@ -6,6 +6,23 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.19.0] - ARCH-014 Future Agent Framework Evolution
+
+### Added
+- Future Agent Framework Evolution metadata covering stable responsibilities, evolution objectives and principles, maturity horizons and gates, adaptive model routing, model portfolios and substitution, verified planning, simulation, proactive and long-running agents, dynamic autonomy, marketplaces, composition, temporary agents, continuous evaluation, red teaming, self-improvement proposals, autonomous maintenance, cross-tenant controls, multimodal and physical interaction, interoperability, ADR triggers, innovation sandboxes, staged adoption, risks, non-goals, architectural rules, and boundaries.
+- Immutable contract for Future Agent Framework Evolution profiles.
+- Future Agent Framework Evolution descriptor for metadata exposure, profile validation, and architecture assertion.
+- Dependency-injection registration through `addAiAgentFramework`.
+- Unit tests for evolution metadata, architecture-boundary validation, incomplete metadata rejection, and DI access.
+
+### Established
+- Future Agent Framework Evolution as an evidence-led, reversible, provider-neutral architecture module where stronger agent capabilities never absorb identity, authority, deterministic business ownership, workflow responsibility, tenant/property isolation, mediated tools, human control, or independent assurance.
+
+Status: AI Agent Framework Architecture
+Version: 0.19.0
+
+---
+
 ## [0.18.0] - ARCH-014 Agent Operations, Observability, and Evaluation
 
 ### Added
