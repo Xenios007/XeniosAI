@@ -6,6 +6,23 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.24.0] - ARCH-015 Events, Timers, and Human Interaction
+
+### Added
+- Events, Timers, and Human Interaction metadata covering interaction types, event contracts and acceptance, durable waits, correlation cardinality, arrival policies, durable timers and misfires, human-task state and assignment, decision contracts and multi-person approval, bounded agent tasks and results, operations, quality attributes, architectural rules, and boundaries.
+- Immutable Workflow Interaction profile validating source trust, scope, idempotency, durable time semantics, human accountability, agent boundaries, race resolution, recovery, privacy, and isolation guarantees.
+- Workflow Interaction descriptor for metadata exposure, profile validation, and architecture completeness assertions.
+- Dependency-injection registration and public exports through the Workflow Engine module.
+- Unit tests for event, timer, human, and agent interaction metadata, prohibited shortcuts, incomplete metadata rejection, immutability, and DI access.
+
+### Established
+- Events, signals, callbacks, timers, human decisions, and agent results remain advisory until fully authenticated, authorized, contract-valid, scope-valid, replay-safe, correlated to an active wait, and atomically committed through an expected-state transition.
+
+Status: Workflow Engine Architecture
+Version: 0.24.0
+
+---
+
 ## [0.23.0] - ARCH-015 Tasks, Activities, and Workers
 
 ### Added
