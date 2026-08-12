@@ -12,10 +12,10 @@ Update this file after every successful implementation session.
 - Implementation guide: `IMPLEMENTATION_GUIDE.md`
 - Task queue: `TASK_QUEUE.md`
 - Current implementation phase: `ARCH-015 Workflow Engine`
-- Current implementation state: `ARCH-015-01 Workflow Engine Overview` is implemented.
-- Latest successful implementation module: `ARCH-015-01 Workflow Engine Overview`
-- Latest successful commit: current implementation commit for `ARCH-015-01 Workflow Engine Overview`
-- Latest push status: pushed to `agent/implement-arch-015-01`
+- Current implementation state: `ARCH-015-02 Workflow Definition and Lifecycle` is implemented.
+- Latest successful implementation module: `ARCH-015-02 Workflow Definition and Lifecycle`
+- Latest successful commit: current implementation commit for `ARCH-015-02 Workflow Definition and Lifecycle`
+- Latest push status: pending push to `agent/implement-arch-015-02`
 - Build status: passing
 - Test status: passing
 - Architecture deviations: none
@@ -39,16 +39,16 @@ Update this file after every successful implementation session.
 
 ## Implementation Coverage
 
-- Completed through: `ARCH-015-01 Workflow Engine Overview`
-- Next documented implementation module: `ARCH-015-02 Workflow Definition and Lifecycle`
-- Reason: `architecture/015-workflow-engine/02-workflow-definition-and-lifecycle.md` is available locally.
+- Completed through: `ARCH-015-02 Workflow Definition and Lifecycle`
+- Next documented implementation module: `ARCH-015-03 Workflow Runtime and State Model`
+- Reason: `architecture/015-workflow-engine/03-workflow-runtime-and-state-model.md` is available locally.
 
 ## Latest Verification
 
-- Focused test: `node --test tests/workflow-engine/workflow-engine-overview.test.js`
+- Focused test: `node --test tests/workflow-engine/workflow-definition-lifecycle.test.js`
 - Focused test result: passed, 6/6
 - Full test: `npm.cmd test`
-- Full test result: passed, 930/930
+- Full test result: passed, 936/936
 - Build command: `npm.cmd run build`
 - Build result: passed
 
@@ -71,4 +71,4 @@ Architecture documents must not be changed during implementation unless explicit
 
 ## Recommended Next Action
 
-Recommended next architecture module: `ARCH-015-02 Workflow Definition and Lifecycle`.
+Recommended next architecture module: `ARCH-015-03 Workflow Runtime and State Model`.

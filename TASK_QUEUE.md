@@ -121,7 +121,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-014-09 Agent Operations, Observability, and Evaluation`
 - Completed: `ARCH-014-10 Future Agent Framework Evolution`
 - Completed: `ARCH-015-01 Workflow Engine Overview`
-- Next: `ARCH-015-02 Workflow Definition and Lifecycle`
+- Completed: `ARCH-015-02 Workflow Definition and Lifecycle`
+- Next: `ARCH-015-03 Workflow Runtime and State Model`
 
 ## Notes
 
