@@ -12,9 +12,9 @@ Update this file after every successful implementation session.
 - Implementation guide: `IMPLEMENTATION_GUIDE.md`
 - Task queue: `TASK_QUEUE.md`
 - Current implementation phase: `ARCH-015 Workflow Engine`
-- Current implementation state: `ARCH-015-05 Events, Timers, and Human Interaction` is implemented.
-- Latest successful implementation module: `ARCH-015-05 Events, Timers, and Human Interaction`
-- Latest successful commit: current implementation commit for `ARCH-015-05 Events, Timers, and Human Interaction`
+- Current implementation state: `ARCH-015-06 Reliability, Retries, and Compensation` is implemented.
+- Latest successful implementation module: `ARCH-015-06 Reliability, Retries, and Compensation`
+- Latest successful commit: current implementation commit for `ARCH-015-06 Reliability, Retries, and Compensation`
 - Latest push status: pushed to `main`
 - Build status: passing
 - Test status: passing
@@ -39,16 +39,16 @@ Update this file after every successful implementation session.
 
 ## Implementation Coverage
 
-- Completed through: `ARCH-015-05 Events, Timers, and Human Interaction`
-- Next documented implementation module: `ARCH-015-06 Reliability, Retries, and Compensation`
-- Reason: `architecture/015-workflow-engine/06-reliability-retries-and-compensation.md` is available locally.
+- Completed through: `ARCH-015-06 Reliability, Retries, and Compensation`
+- Next documented implementation module: `ARCH-015-07 Workflow Integration and Orchestration`
+- Reason: `architecture/015-workflow-engine/07-workflow-integration-and-orchestration.md` is available locally.
 
 ## Latest Verification
 
-- Focused test: `node --test tests/workflow-engine/workflow-interaction.test.js`
+- Focused test: `node --test tests/workflow-engine/workflow-reliability.test.js`
 - Focused test result: passed, 6/6
 - Full test: `npm.cmd test`
-- Full test result: passed, 954/954
+- Full test result: passed, 960/960
 - Build command: `npm.cmd run build`
 - Build result: passed
 
@@ -70,4 +70,4 @@ Architecture documents must not be changed during implementation unless explicit
 
 ## Recommended Next Action
 
-Recommended next architecture module: `ARCH-015-06 Reliability, Retries, and Compensation`.
+Recommended next architecture module: `ARCH-015-07 Workflow Integration and Orchestration`.

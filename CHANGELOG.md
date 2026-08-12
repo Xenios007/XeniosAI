@@ -6,6 +6,20 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.25.0] - ARCH-015 Reliability, Retries, and Compensation
+
+### Added
+- Reliability metadata covering failure domains and taxonomy, retry classifications and policies, retry budgets, idempotency scopes, side-effect classes, timeout layers, reconciliation outcomes, cancellation modes, compensation states, recovery types, operations, quality attributes, rules, and boundaries.
+- Immutable reliability profile and descriptor validation for bounded retries, uncertainty, reconciliation, domain-defined compensation, recovery, isolation, and evidence.
+- Workflow Engine exports, DI registration, and focused reliability tests.
+
+### Established
+- Uncertain material outcomes are reconciled against authoritative domain state before retry or compensation; retries remain bounded and engine-controlled, while partial and residual effects are recorded truthfully.
+
+Status: Workflow Engine Architecture
+Version: 0.25.0
+
+---
 ## [0.24.0] - ARCH-015 Events, Timers, and Human Interaction
 
 ### Added
