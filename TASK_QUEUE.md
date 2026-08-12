@@ -120,7 +120,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-014-08 Agent Security, Governance, and Assurance`
 - Completed: `ARCH-014-09 Agent Operations, Observability, and Evaluation`
 - Completed: `ARCH-014-10 Future Agent Framework Evolution`
-- Next: `ARCH-015-01 Workflow Engine Overview`
+- Completed: `ARCH-015-01 Workflow Engine Overview`
+- Next: `ARCH-015-02 Workflow Definition and Lifecycle`
 
 ## Notes
 
