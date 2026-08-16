@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.37.0] - ARCH-016 Knowledge & Memory Security, Governance, and Assurance
+
+### Added
+- Security and governance metadata covering objectives, subjects, protected resources, trust factors, separated capabilities, classifications, controls, risks, governance gates, assurance methods and scope, evidence contracts and types, degraded modes, quality attributes, architectural rules, and boundaries.
+- Immutable Knowledge & Memory Security and Governance profile validating Zero Trust, contextual authorization, separation of duties, isolation, classification inheritance, source integrity, malicious-content quarantine, prompt-injection and side-channel defenses, governed memory admission, privacy rights, risk and exception governance, evidence chain of custody, continuous assurance, and verified remediation.
+- Knowledge & Memory Security and Governance descriptor, module exports, dependency-injection registration, and focused unit tests.
+
+### Established
+- Knowledge, memory, context, representations, queries, results, and evidence are independently protected resources: utility, relevance, familiarity, identifiers, or provider capability never grant authority, and high-risk processing requires accountable governance and trustworthy evidence produced during normal operation.
+
+Status: Knowledge & Memory Architecture
+Version: 0.37.0
+
+---
+
 ## [0.36.0] - ARCH-016 Knowledge & Memory Integration and Interoperability
 
 ### Added
