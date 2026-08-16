@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.31.0] - ARCH-016 Knowledge Architecture and Lifecycle
+
+### Added
+- Knowledge lifecycle metadata covering objectives, the canonical model, source and knowledge states, contextual authority, scope, publication channels, representation states, lifecycle APIs and events, operational controls, quality attributes, architectural rules, and boundaries.
+- Immutable Knowledge Lifecycle profile validating stable identities, distinct version types, explicit eligibility, immutable publication, material-change versioning, provenance, derived-content labeling, isolation, inheritance, decision separation, representation readiness, lifecycle propagation, registry authority, version-aware citations, correction, retention, legal hold, reconciliation, and evidence.
+- Knowledge Lifecycle descriptor, module exports, dependency-injection registration, and focused unit tests.
+
+### Established
+- Acquisition, processing, indexing, embedding, or approval alone does not activate knowledge; publication and activation remain separate governed decisions, while suspension, supersession, expiry, withdrawal, and deletion propagate to every representation, citation, index, and cache.
+
+Status: Knowledge & Memory Architecture
+Version: 0.31.0
+
+---
+
 ## [0.30.0] - ARCH-016 Knowledge & Memory Overview
 
 ### Added

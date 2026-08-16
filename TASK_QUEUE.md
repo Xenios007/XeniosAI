@@ -131,7 +131,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-015-09 Workflow Operations, Observability, and Performance`
 - Completed: `ARCH-015-10 Future Workflow Evolution`
 - Completed: `ARCH-016-01 Knowledge & Memory Overview`
-- Next: `ARCH-016-02 Knowledge Architecture and Lifecycle`
+- Completed: `ARCH-016-02 Knowledge Architecture and Lifecycle`
+- Next: `ARCH-016-03 Knowledge Ingestion and Curation`
 
 ## Notes
 
