@@ -4,6 +4,7 @@ import { KnowledgeLifecycleDescriptor } from './lifecycle/knowledge-lifecycle-de
 import { KnowledgeIngestionCurationDescriptor } from './ingestion-curation/knowledge-ingestion-curation-descriptor.js';
 import { KnowledgeRetrievalGroundingDescriptor } from './retrieval-grounding/knowledge-retrieval-grounding-descriptor.js';
 import { MemoryLifecycleDescriptor } from './memory-lifecycle/memory-lifecycle-descriptor.js';
+import { ContextAssemblyOrchestrationDescriptor } from './context-assembly/context-assembly-orchestration-descriptor.js';
 
 export function addKnowledgeMemory(services) {
   if (!(services instanceof ServiceCollection)) {
@@ -14,5 +15,6 @@ export function addKnowledgeMemory(services) {
   services.registerSingleton('KnowledgeIngestionCurationDescriptor', () => new KnowledgeIngestionCurationDescriptor());
   services.registerSingleton('KnowledgeRetrievalGroundingDescriptor', () => new KnowledgeRetrievalGroundingDescriptor());
   services.registerSingleton('MemoryLifecycleDescriptor', () => new MemoryLifecycleDescriptor());
+  services.registerSingleton('ContextAssemblyOrchestrationDescriptor', () => new ContextAssemblyOrchestrationDescriptor());
   return services;
 }

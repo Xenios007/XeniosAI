@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.35.0] - ARCH-016 Context Assembly and Memory Orchestration
+
+### Added
+- Context metadata covering consumers, governed profiles and requests, independent layers, canonical assembly stages, candidate and memory-retrieval contracts, conflicts, protected budgets, immutable packages, statuses, operations, degraded modes, evaluation dimensions, quality attributes, architectural rules, and boundaries.
+- Immutable Context Assembly and Memory Orchestration profile validating authorization-before-acquisition, instruction and content separation, current domain authority, memory eligibility, attribution, conflict preservation, protected budget reduction, package binding and disposal, cache invalidation, candidate-only memory writeback, response validation, isolation, and safe degradation.
+- Context Assembly and Memory Orchestration descriptor, module exports, dependency-injection registration, and focused unit tests.
+
+### Established
+- Context is a temporary, minimum authorized working set for one operation: independent layers retain their authority and provenance, packages cannot cross request or scope boundaries, memory use cannot become reinforcement or admission, and missing context is reported rather than fabricated.
+
+Status: Knowledge & Memory Architecture
+Version: 0.35.0
+
+---
+
 ## [0.34.0] - ARCH-016 Memory Model and Lifecycle
 
 ### Added
