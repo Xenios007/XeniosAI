@@ -12,9 +12,9 @@ Update this file after every successful implementation session.
 - Implementation guide: `IMPLEMENTATION_GUIDE.md`
 - Task queue: `TASK_QUEUE.md`
 - Current implementation phase: `ARCH-016 Knowledge & Memory`
-- Current implementation state: `ARCH-015-10 Future Workflow Evolution` is implemented.
-- Latest successful implementation module: `ARCH-015-10 Future Workflow Evolution`
-- Latest successful commit: current implementation commit for `ARCH-015-10 Future Workflow Evolution`
+- Current implementation state: `ARCH-016-01 Knowledge & Memory Overview` is implemented.
+- Latest successful implementation module: `ARCH-016-01 Knowledge & Memory Overview`
+- Latest successful commit: current implementation commit for `ARCH-016-01 Knowledge & Memory Overview`
 - Latest push status: pushed to `main`
 - Build status: passing
 - Test status: passing
@@ -40,16 +40,16 @@ Update this file after every successful implementation session.
 
 ## Implementation Coverage
 
-- Completed through: `ARCH-015-10 Future Workflow Evolution`
-- Next documented implementation module: `ARCH-016-01 Knowledge & Memory Overview`
-- Reason: `architecture/016-knowledge-memory/01-knowledge-memory-overview.md` is available locally.
+- Completed through: `ARCH-016-01 Knowledge & Memory Overview`
+- Next documented implementation module: `ARCH-016-02 Knowledge Architecture and Lifecycle`
+- Reason: `architecture/016-knowledge-memory/02-knowledge-architecture-and-lifecycle.md` is available locally.
 
 ## Latest Verification
 
-- Focused test: `node --test tests/workflow-engine/workflow-future-evolution.test.js`
+- Focused test: `node --test tests/knowledge-memory/knowledge-memory-overview.test.js`
 - Focused test result: passed, 6/6
 - Full test: `npm.cmd test`
-- Full test result: passed, 984/984
+- Full test result: passed, 990/990
 - Build command: `npm.cmd run build`
 - Build result: passed
 
@@ -71,4 +71,4 @@ Architecture documents must not be changed during implementation unless explicit
 
 ## Recommended Next Action
 
-Recommended next architecture module: `ARCH-016-01 Knowledge & Memory Overview`.
+Recommended next architecture module: `ARCH-016-02 Knowledge Architecture and Lifecycle`.

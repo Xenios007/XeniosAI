@@ -6,6 +6,22 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.30.0] - ARCH-016 Knowledge & Memory Overview
+
+### Added
+- A new Knowledge & Memory module with independent validation contracts, public exports, and dependency registration.
+- Overview metadata covering objectives, exclusions, core concepts, authority precedence, freshness, authority classes, knowledge domains, memory categories and subjects, platform capabilities, retrieval methods, tenant scopes, degraded modes, quality attributes, architectural rules, and boundaries.
+- Immutable overview profile validating source attribution, purpose-bound memory, temporary context, provenance, authorization-before-retrieval, tenant and property isolation, memory admission, correction and forgetting, lifecycle propagation, prompt-injection boundaries, context minimization, citations, evaluation, and safe degradation.
+- Focused unit tests for semantics, prohibited ownership shortcuts, completeness, immutability, and dependency registration.
+
+### Established
+- Authoritative facts remain with domain services, knowledge remains attributable, memory remains purpose-bound and admitted, and context remains temporary; lower-authority or similarity-ranked information cannot silently become business truth.
+
+Status: Knowledge & Memory Architecture
+Version: 0.30.0
+
+---
+
 ## [0.29.0] - ARCH-015 Future Workflow Evolution
 
 ### Added
