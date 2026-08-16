@@ -12,9 +12,9 @@ Update this file after every successful implementation session.
 - Implementation guide: `IMPLEMENTATION_GUIDE.md`
 - Task queue: `TASK_QUEUE.md`
 - Current implementation phase: `ARCH-016 Knowledge & Memory`
-- Current implementation state: `ARCH-016-02 Knowledge Architecture and Lifecycle` is implemented.
-- Latest successful implementation module: `ARCH-016-02 Knowledge Architecture and Lifecycle`
-- Latest successful commit: current implementation commit for `ARCH-016-02 Knowledge Architecture and Lifecycle`
+- Current implementation state: `ARCH-016-03 Knowledge Ingestion and Curation` is implemented.
+- Latest successful implementation module: `ARCH-016-03 Knowledge Ingestion and Curation`
+- Latest successful commit: current implementation commit for `ARCH-016-03 Knowledge Ingestion and Curation`
 - Latest push status: pushed to `main`
 - Build status: passing
 - Test status: passing
@@ -40,16 +40,16 @@ Update this file after every successful implementation session.
 
 ## Implementation Coverage
 
-- Completed through: `ARCH-016-02 Knowledge Architecture and Lifecycle`
-- Next documented implementation module: `ARCH-016-03 Knowledge Ingestion and Curation`
-- Reason: `architecture/016-knowledge-memory/03-knowledge-ingestion-and-curation.md` is available locally.
+- Completed through: `ARCH-016-03 Knowledge Ingestion and Curation`
+- Next documented implementation module: `ARCH-016-04 Retrieval, Search, and Grounding`
+- Reason: `architecture/016-knowledge-memory/04-retrieval-search-and-grounding.md` is available locally.
 
 ## Latest Verification
 
-- Focused test: `node --test tests/knowledge-memory/knowledge-lifecycle.test.js`
+- Focused test: `node --test tests/knowledge-memory/knowledge-ingestion-curation.test.js`
 - Focused test result: passed, 6/6
 - Full test: `npm.cmd test`
-- Full test result: passed, 996/996
+- Full test result: passed, 1002/1002
 - Build command: `npm.cmd run build`
 - Build result: passed
 
@@ -71,4 +71,4 @@ Architecture documents must not be changed during implementation unless explicit
 
 ## Recommended Next Action
 
-Recommended next architecture module: `ARCH-016-03 Knowledge Ingestion and Curation`.
+Recommended next architecture module: `ARCH-016-04 Retrieval, Search, and Grounding`.

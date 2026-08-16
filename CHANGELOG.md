@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.32.0] - ARCH-016 Knowledge Ingestion and Curation
+
+### Added
+- Ingestion and curation metadata covering objectives, source and content classes, acquisition models, intake outcomes, quarantine, the canonical processing pipeline, chunking strategies, quality gates, processing states, normalized failures, APIs, events, quality attributes, architectural rules, and boundaries.
+- Immutable Knowledge Ingestion and Curation profile validating registered sources, authenticated and scope-bound intake, idempotent synchronization, quarantine, isolated processing, artifact preservation, actual type detection, structure and meaning preservation, metadata provenance, classification propagation, boundary-safe chunking, governed AI enrichment, accountable curation, quality gates, versioned reprocessing, bounded retry, temporary-data deletion, and provider governance.
+- Knowledge Ingestion and Curation descriptor, module exports, dependency-injection registration, and focused unit tests.
+
+### Established
+- Ingestion produces a governed publication candidate only: uploads, extraction, indexing, embeddings, AI enrichment, and quality-gate success never approve or activate knowledge, and unsafe or ambiguous content remains quarantined from ordinary processing and retrieval.
+
+Status: Knowledge & Memory Architecture
+Version: 0.32.0
+
+---
+
 ## [0.31.0] - ARCH-016 Knowledge Architecture and Lifecycle
 
 ### Added
