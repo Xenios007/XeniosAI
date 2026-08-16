@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.33.0] - ARCH-016 Retrieval, Search, and Grounding
+
+### Added
+- Retrieval metadata covering objectives, consumers, purposes, search methods, eligible-corpus constraints, search plans, candidates, result status, grounding packages, citations, degraded modes, timeouts, evaluation dimensions, quality attributes, architectural rules, and boundaries.
+- Immutable Knowledge Retrieval and Grounding profile validating authorization-before-search, side-channel resistance, lifecycle eligibility, explicit historical access, method selection, score compatibility, authoritative domain lookup, hybrid provenance, bounded personalization, conflict preservation, explicit insufficiency, stable citations, claim support, prompt-instruction separation, independent action authorization, projection reconciliation, and safe degradation.
+- Knowledge Retrieval and Grounding descriptor, module exports, dependency-injection registration, and focused unit tests.
+
+### Established
+- Retrieval discovers eligible evidence rather than truth or authority: unauthorized content never becomes a candidate, semantic similarity and rank remain method-specific signals, insufficiency and conflict stay explicit, and grounding cannot expand policy, tool, memory-write, tenant, property, or action authority.
+
+Status: Knowledge & Memory Architecture
+Version: 0.33.0
+
+---
+
 ## [0.32.0] - ARCH-016 Knowledge Ingestion and Curation
 
 ### Added

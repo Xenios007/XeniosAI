@@ -2,6 +2,7 @@ import { ServiceCollection } from '../foundation/di/service-collection.js';
 import { KnowledgeMemoryOverviewDescriptor } from './overview/knowledge-memory-overview-descriptor.js';
 import { KnowledgeLifecycleDescriptor } from './lifecycle/knowledge-lifecycle-descriptor.js';
 import { KnowledgeIngestionCurationDescriptor } from './ingestion-curation/knowledge-ingestion-curation-descriptor.js';
+import { KnowledgeRetrievalGroundingDescriptor } from './retrieval-grounding/knowledge-retrieval-grounding-descriptor.js';
 
 export function addKnowledgeMemory(services) {
   if (!(services instanceof ServiceCollection)) {
@@ -10,5 +11,6 @@ export function addKnowledgeMemory(services) {
   services.registerSingleton('KnowledgeMemoryOverviewDescriptor', () => new KnowledgeMemoryOverviewDescriptor());
   services.registerSingleton('KnowledgeLifecycleDescriptor', () => new KnowledgeLifecycleDescriptor());
   services.registerSingleton('KnowledgeIngestionCurationDescriptor', () => new KnowledgeIngestionCurationDescriptor());
+  services.registerSingleton('KnowledgeRetrievalGroundingDescriptor', () => new KnowledgeRetrievalGroundingDescriptor());
   return services;
 }
