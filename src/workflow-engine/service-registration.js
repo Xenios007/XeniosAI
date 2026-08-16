@@ -4,6 +4,7 @@ import { WorkflowEngineOverviewDescriptor } from './overview/workflow-engine-ove
 import { WorkflowInteractionDescriptor } from './interaction/workflow-interaction-descriptor.js';
 import { WorkflowIntegrationDescriptor } from './integration/workflow-integration-descriptor.js';
 import { WorkflowRuntimeStateDescriptor } from './runtime-state/workflow-runtime-state-descriptor.js';
+import { WorkflowSecurityGovernanceDescriptor } from './security-governance/workflow-security-governance-descriptor.js';
 import { WorkflowReliabilityDescriptor } from './reliability/workflow-reliability-descriptor.js';
 import { WorkflowTaskWorkerDescriptor } from './task-worker/workflow-task-worker-descriptor.js';
 
@@ -16,5 +17,6 @@ export function addWorkflowEngine(services) {
   services.registerSingleton('WorkflowInteractionDescriptor', () => new WorkflowInteractionDescriptor());
   services.registerSingleton('WorkflowReliabilityDescriptor', () => new WorkflowReliabilityDescriptor());
   services.registerSingleton('WorkflowIntegrationDescriptor', () => new WorkflowIntegrationDescriptor());
+  services.registerSingleton('WorkflowSecurityGovernanceDescriptor', () => new WorkflowSecurityGovernanceDescriptor());
   return services;
 }

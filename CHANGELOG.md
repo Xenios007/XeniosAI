@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.27.0] - ARCH-015 Workflow Security, Governance, and Assurance
+
+### Added
+- Security and governance metadata covering distinct workflow identities, security objectives, untrusted inputs, risk tiers, policy enforcement points, workflow threats, evidence records, assurance methods, operational controls, quality attributes, architectural rules, and scope boundaries.
+- Immutable Workflow Security Governance profile validating protected transitions, effective authority, delegation, tenant and property scope, definition governance, separation of duties, domain and agent ownership, credential mediation, human and agent controls, privacy, evidence, exceptions, assurance, incidents, and reconciled recovery.
+- Workflow Security Governance descriptor, public exports, dependency-injection registration, and focused unit tests.
+
+### Established
+- Every material workflow transition is authenticated, authorized, policy-checked, scope-bound, durably recorded, and evidence-producing; identifiers never grant authority, activated definitions remain immutable, and recovery uses authorized reconciliation rather than blind replay.
+
+Status: Workflow Engine Architecture
+Version: 0.27.0
+
+---
+
 ## [0.26.0] - ARCH-015 Workflow Integration and Orchestration
 
 ### Added
