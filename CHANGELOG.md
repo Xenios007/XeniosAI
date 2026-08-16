@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.34.0] - ARCH-016 Memory Model and Lifecycle
+
+### Added
+- Memory metadata covering objectives, types, scopes, record and candidate contracts, candidate sources, admission decisions, authority and sensitivity classes, lifecycle states and transitions, read and write boundaries, degraded modes, evaluation dimensions, quality attributes, architectural rules, and scope exclusions.
+- Immutable Memory Model and Lifecycle profile validating governed admission, authority boundaries, explicit scope and provenance, versioned transitions, confidence and conflict qualification, correction and deletion propagation, retention, legal hold, isolation, reconciliation, and safe degraded operation.
+- Memory Model and Lifecycle descriptor, module exports, dependency-injection registration, and focused unit tests.
+
+### Established
+- Memory is deliberate, purpose-bound contextual evidence: candidates remain separate until admission; it cannot grant authority or replace conversations, domain truth, workflow state, or agent state; and every admitted record remains correctable, disputable, expirable, deletable, and synchronized with its derived representations.
+
+Status: Knowledge & Memory Architecture
+Version: 0.34.0
+
+---
+
 ## [0.33.0] - ARCH-016 Retrieval, Search, and Grounding
 
 ### Added
