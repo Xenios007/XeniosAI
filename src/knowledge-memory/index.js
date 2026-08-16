@@ -6,6 +6,7 @@ export * from './memory-lifecycle-constants.js';
 export * from './context-assembly-orchestration-constants.js';
 export * from './integration-interoperability-constants.js';
 export * from './security-governance-assurance-constants.js';
+export * from './operations-observability-performance-constants.js';
 export { KnowledgeMemoryValidationResult } from './contracts/knowledge-memory-validation-result.js';
 export { KnowledgeMemoryOverviewProfile } from './contracts/knowledge-memory-overview-profile.js';
 export { KnowledgeLifecycleProfile } from './contracts/knowledge-lifecycle-profile.js';
@@ -15,6 +16,7 @@ export { MemoryLifecycleProfile } from './contracts/memory-lifecycle-profile.js'
 export { ContextAssemblyOrchestrationProfile } from './contracts/context-assembly-orchestration-profile.js';
 export { KnowledgeMemoryIntegrationProfile } from './contracts/integration-interoperability-profile.js';
 export { KnowledgeMemorySecurityGovernanceProfile } from './contracts/security-governance-assurance-profile.js';
+export { KnowledgeMemoryOperationsProfile } from './contracts/operations-observability-performance-profile.js';
 export { KnowledgeMemoryOverviewDescriptor } from './overview/knowledge-memory-overview-descriptor.js';
 export { KnowledgeLifecycleDescriptor } from './lifecycle/knowledge-lifecycle-descriptor.js';
 export { KnowledgeIngestionCurationDescriptor } from './ingestion-curation/knowledge-ingestion-curation-descriptor.js';
@@ -23,4 +25,5 @@ export { MemoryLifecycleDescriptor } from './memory-lifecycle/memory-lifecycle-d
 export { ContextAssemblyOrchestrationDescriptor } from './context-assembly/context-assembly-orchestration-descriptor.js';
 export { KnowledgeMemoryIntegrationDescriptor } from './integration/integration-interoperability-descriptor.js';
 export { KnowledgeMemorySecurityGovernanceDescriptor } from './security-governance/security-governance-assurance-descriptor.js';
+export { KnowledgeMemoryOperationsDescriptor } from './operations/operations-observability-performance-descriptor.js';
 export { addKnowledgeMemory } from './service-registration.js';

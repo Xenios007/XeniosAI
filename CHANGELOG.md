@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.38.0] - ARCH-016 Knowledge & Memory Operations, Observability, and Performance
+
+### Added
+- Operations metadata covering capabilities, service catalog and readiness contracts, multidimensional health, synchronization and processing, retrieval, memory and context operations, observability signals, correlation, alerts, outcome indicators, latency budgets, capacity and queue models, reliability mechanisms, degraded modes, recovery objectives, quality attributes, architectural rules, and boundaries.
+- Immutable Knowledge & Memory Operations profile validating outcome-based health, lifecycle visibility, protected telemetry, actionable alerting, tenant fairness, overload control, cache scope, correction and deletion priority, explicit degradation, governed backup, non-resurrecting restore, reconciliation, recovery exercises, provider fallback, controlled releases, and restricted administration.
+- Knowledge & Memory Operations descriptor, module exports, dependency-injection registration, and focused unit tests.
+
+### Established
+- Operational health is a governed end-to-end outcome rather than process uptime: freshness, authorization, citation, memory and context integrity, correction, deletion, isolation, capacity, providers, and recovery remain observable and correct during normal operation, overload, degradation, and restore.
+
+Status: Knowledge & Memory Architecture
+Version: 0.38.0
+
+---
+
 ## [0.37.0] - ARCH-016 Knowledge & Memory Security, Governance, and Assurance
 
 ### Added

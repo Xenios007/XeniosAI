@@ -1,0 +1,77 @@
+export class KnowledgeMemoryOperationsProfile {
+  constructor({
+    profileName,
+    objectives = [], operationalCapabilities = [], catalogFields = [], readinessRequirements = [],
+    healthDimensions = [], healthFields = [], synchronizationFields = [], processingStages = [],
+    retrievalSignals = [], memoryOperationAreas = [], contextOperationAreas = [],
+    observabilitySignals = [], metricDimensions = [], correlationIdentities = [], alertFields = [],
+    serviceLevelIndicators = [], latencyBudgetFields = [], capacityFactors = [], queueFields = [],
+    reliabilityMechanisms = [], degradedModes = [], degradedModeFields = [], recoveryObjectives = [],
+    qualityAttributes = [], architecturalRules = [], architectureBoundaries = [],
+    outcomeBasedHealth = true, accountableOwnership = true, readinessRequired = true,
+    healthSemanticsConsistent = true, publicHealthMinimized = true, sourceLifecycleOperated = true,
+    acceptanceDistinctFromPublication = true, quarantineIsolated = true, poisonItemsIsolated = true,
+    lifecycleVisible = true, representationsCompatible = true, retrievalQualityMonitored = true,
+    feedbackNonAuthoritative = true, memoryInspectionPrivileged = true, lifecycleJobsSafe = true,
+    contextLifecycleOperated = true, correctionPropagated = true, deletionPropagated = true,
+    integrationMonitored = true, evaluationGoverned = true, operationalToolingGoverned = true,
+    telemetryPurposeBound = true, telemetryMinimized = true, correlationEndToEnd = true,
+    telemetryGoverned = true, scopeAwareDiagnostics = true, alertsActionable = true,
+    anomalyNeedsInvestigation = true, outcomeSlos = true, lifecycleReliabilityMeasured = true,
+    latencyBudgeted = true, latencyComponentsSeparated = true, capacityModeled = true,
+    independentScaling = true, tenantFairness = true, overloadControlled = true,
+    lifecycleWorkPrioritized = true, optimizationPreservesControls = true, cacheScopeBound = true,
+    reliabilityMechanismsApplied = true, divergenceContained = true, degradedModesContracted = true,
+    safeDegradation = true, authoritativeStateBackedUp = true, backupsGoverned = true,
+    resurrectionPrevented = true, recoveryReconciled = true, recoveryExercised = true,
+    fallbackGoverned = true, releaseGoverned = true, administrationRestricted = true,
+    evidenceProtected = true, vendorNeutral = true, technologyIndependent = true,
+    processUptimeEqualsHealth = false, publicHealthExposesTopology = false,
+    acceptanceMeansPublication = false, quarantineRetrievable = false,
+    networkAccessMeansSynchronization = false, incompatibleRepresentationsMixed = false,
+    feedbackChangesAuthority = false, memoryInspectionUnprivileged = false,
+    telemetryCopiesProtectedContent = false, metricLabelsContainSensitiveIds = false,
+    anomalyProvesAbuse = false, securityBreachUsesErrorBudget = false, averagesOnly = false,
+    tenantCanExhaustSharedCapacity = false, propertyPriorityGrantsAccess = false,
+    cacheHitAuthorizes = false, optimizationWeakensLifecycle = false,
+    backpressureDelaysDeletionIndefinitely = false, restoreResurrectsRecords = false,
+    fallbackWeakensPolicy = false, administrationAllowsUnrestrictedBrowsing = false,
+    directDatabaseAccess = false, selectsOperationsProduct = false
+  }) {
+    this.profileName = profileName;
+    for (const [key, value] of Object.entries({
+      objectives, operationalCapabilities, catalogFields, readinessRequirements, healthDimensions,
+      healthFields, synchronizationFields, processingStages, retrievalSignals, memoryOperationAreas,
+      contextOperationAreas, observabilitySignals, metricDimensions, correlationIdentities,
+      alertFields, serviceLevelIndicators, latencyBudgetFields, capacityFactors, queueFields,
+      reliabilityMechanisms, degradedModes, degradedModeFields, recoveryObjectives,
+      qualityAttributes, architecturalRules, architectureBoundaries
+    })) this[key] = Object.freeze([...value]);
+    for (const [key, value] of Object.entries({
+      outcomeBasedHealth, accountableOwnership, readinessRequired, healthSemanticsConsistent,
+      publicHealthMinimized, sourceLifecycleOperated, acceptanceDistinctFromPublication,
+      quarantineIsolated, poisonItemsIsolated, lifecycleVisible, representationsCompatible,
+      retrievalQualityMonitored, feedbackNonAuthoritative, memoryInspectionPrivileged,
+      lifecycleJobsSafe, contextLifecycleOperated, correctionPropagated, deletionPropagated,
+      integrationMonitored, evaluationGoverned, operationalToolingGoverned,
+      telemetryPurposeBound, telemetryMinimized, correlationEndToEnd, telemetryGoverned,
+      scopeAwareDiagnostics, alertsActionable, anomalyNeedsInvestigation, outcomeSlos,
+      lifecycleReliabilityMeasured, latencyBudgeted, latencyComponentsSeparated, capacityModeled,
+      independentScaling, tenantFairness, overloadControlled, lifecycleWorkPrioritized,
+      optimizationPreservesControls, cacheScopeBound, reliabilityMechanismsApplied,
+      divergenceContained, degradedModesContracted, safeDegradation, authoritativeStateBackedUp,
+      backupsGoverned, resurrectionPrevented, recoveryReconciled, recoveryExercised,
+      fallbackGoverned, releaseGoverned, administrationRestricted, evidenceProtected,
+      vendorNeutral, technologyIndependent, processUptimeEqualsHealth,
+      publicHealthExposesTopology, acceptanceMeansPublication, quarantineRetrievable,
+      networkAccessMeansSynchronization, incompatibleRepresentationsMixed,
+      feedbackChangesAuthority, memoryInspectionUnprivileged, telemetryCopiesProtectedContent,
+      metricLabelsContainSensitiveIds, anomalyProvesAbuse, securityBreachUsesErrorBudget,
+      averagesOnly, tenantCanExhaustSharedCapacity, propertyPriorityGrantsAccess,
+      cacheHitAuthorizes, optimizationWeakensLifecycle, backpressureDelaysDeletionIndefinitely,
+      restoreResurrectsRecords, fallbackWeakensPolicy, administrationAllowsUnrestrictedBrowsing,
+      directDatabaseAccess, selectsOperationsProduct
+    })) this[key] = Boolean(value);
+    Object.freeze(this);
+  }
+}
