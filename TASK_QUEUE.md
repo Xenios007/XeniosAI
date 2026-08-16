@@ -126,7 +126,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-015-04 Tasks, Activities, and Workers`
 - Completed: `ARCH-015-05 Events, Timers, and Human Interaction`
 - Completed: `ARCH-015-06 Reliability, Retries, and Compensation`
-- Next: `ARCH-015-07 Workflow Integration and Orchestration`
+- Completed: `ARCH-015-07 Workflow Integration and Orchestration`
+- Next: `ARCH-015-08 Workflow Security, Governance, and Assurance`
 
 ## Notes
 

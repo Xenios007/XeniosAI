@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.26.0] - ARCH-015 Workflow Integration and Orchestration
+
+### Added
+- Integration metadata covering communication models, participating domains, contract fields, workflow initiators, normalized command outcomes and errors, child-workflow version binding, operational controls, quality attributes, architectural rules, and boundaries.
+- Immutable Workflow Integration profile validating contract-driven coordination, service and domain ownership, request and conversation boundaries, version binding, stable operation identity, independent authorization, tenant and property isolation, provider anti-corruption, child identity, governed human and agent participation, consistency, and evidence.
+- Workflow Integration descriptor, public exports, dependency-injection registration, and focused unit tests.
+
+### Established
+- Durable workflows coordinate independently owned capabilities only through published, versioned contracts and governed adapters; transport success never substitutes for authoritative business completion, and direct cross-service database access remains prohibited.
+
+Status: Workflow Engine Architecture
+Version: 0.26.0
+
+---
+
 ## [0.25.0] - ARCH-015 Reliability, Retries, and Compensation
 
 ### Added
