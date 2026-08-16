@@ -11,10 +11,10 @@ Update this file after every successful implementation session.
 - Architecture source of truth: `/architecture`
 - Implementation guide: `IMPLEMENTATION_GUIDE.md`
 - Task queue: `TASK_QUEUE.md`
-- Current implementation phase: `ARCH-016 Knowledge & Memory`
-- Current implementation state: `ARCH-016-09 Knowledge & Memory Operations, Observability, and Performance` is implemented.
-- Latest successful implementation module: `ARCH-016-09 Knowledge & Memory Operations, Observability, and Performance`
-- Latest successful commit: current implementation commit for `ARCH-016-09 Knowledge & Memory Operations, Observability, and Performance`
+- Current implementation phase: `ARCH-017 API & SDK Architecture`
+- Current implementation state: `ARCH-016-10 Future Knowledge & Memory Evolution` is implemented.
+- Latest successful implementation module: `ARCH-016-10 Future Knowledge & Memory Evolution`
+- Latest successful commit: current implementation commit for `ARCH-016-10 Future Knowledge & Memory Evolution`
 - Latest push status: pushed to `main`
 - Build status: passing
 - Test status: passing
@@ -37,19 +37,20 @@ Update this file after every successful implementation session.
 - Completed: `ARCH-013 Developer Platform`
 - Completed: `ARCH-014 AI Agent Framework`
 - Completed: `ARCH-015 Workflow Engine`
+- Completed: `ARCH-016 Knowledge & Memory`
 
 ## Implementation Coverage
 
-- Completed through: `ARCH-016-09 Knowledge & Memory Operations, Observability, and Performance`
-- Next documented implementation module: `ARCH-016-10 Future Knowledge & Memory Evolution`
-- Reason: `architecture/016-knowledge-memory/10-future-knowledge-memory-evolution.md` is available locally.
+- Completed through: `ARCH-016 Knowledge & Memory`
+- Next documented implementation module: `ARCH-017-01 API & SDK Overview`
+- Reason: `architecture/017-api-sdk-architecture/01-api-sdk-overview.md` is available locally.
 
 ## Latest Verification
 
-- Focused test: `node --test tests/knowledge-memory/operations-observability-performance.test.js`
+- Focused test: `node --test tests/knowledge-memory/future-evolution.test.js`
 - Focused test result: passed, 6/6
 - Full test: `npm.cmd test`
-- Full test result: passed, 1038/1038
+- Full test result: passed, 1044/1044
 - Build command: `npm.cmd run build`
 - Build result: passed
 
@@ -71,4 +72,4 @@ Architecture documents must not be changed during implementation unless explicit
 
 ## Recommended Next Action
 
-Recommended next architecture module: `ARCH-016-10 Future Knowledge & Memory Evolution`.
+Recommended next architecture module: `ARCH-017-01 API & SDK Overview`.

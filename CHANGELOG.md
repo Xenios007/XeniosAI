@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.39.0] - ARCH-016 Future Knowledge & Memory Evolution
+
+### Added
+- Evolution metadata covering enduring invariants, strategic drivers, goals, guardrails, maturity horizons and levels, future modalities and retrieval, memory and federation requirements, automation levels, experiment contracts, production promotion, incubation, future risks, anti-patterns, balanced value metrics, decision criteria, quality attributes, architectural rules, and boundaries.
+- Immutable Future Knowledge & Memory Evolution profile validating architecture-before-product, maturity gates, reversible experimentation, governed multimodal and adaptive capabilities, memory transparency, bounded federation and edge operation, protocol and extension governance, constrained automation and self-healing, isolated research, controlled pilots, lifecycle-preserving migration, provider exit, and intentional retirement.
+- Future Knowledge & Memory Evolution descriptor, module exports, dependency-injection registration, and focused unit tests.
+
+### Established
+- Future capability remains directional until it passes explicit experiment, maturity, promotion, migration, rollback, and retirement gates; advanced technology cannot bypass authority, isolation, memory admission, context boundaries, correction, deletion, evidence, or human accountability.
+
+Status: Knowledge & Memory Architecture complete
+Version: 0.39.0
+
+---
+
 ## [0.38.0] - ARCH-016 Knowledge & Memory Operations, Observability, and Performance
 
 ### Added

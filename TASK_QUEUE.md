@@ -139,7 +139,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-016-07 Knowledge & Memory Integration and Interoperability`
 - Completed: `ARCH-016-08 Knowledge & Memory Security, Governance, and Assurance`
 - Completed: `ARCH-016-09 Knowledge & Memory Operations, Observability, and Performance`
-- Next: `ARCH-016-10 Future Knowledge & Memory Evolution`
+- Completed: `ARCH-016-10 Future Knowledge & Memory Evolution`
+- Next: `ARCH-017-01 API & SDK Overview`
 
 ## Notes
 

@@ -8,6 +8,7 @@ import { ContextAssemblyOrchestrationDescriptor } from './context-assembly/conte
 import { KnowledgeMemoryIntegrationDescriptor } from './integration/integration-interoperability-descriptor.js';
 import { KnowledgeMemorySecurityGovernanceDescriptor } from './security-governance/security-governance-assurance-descriptor.js';
 import { KnowledgeMemoryOperationsDescriptor } from './operations/operations-observability-performance-descriptor.js';
+import { KnowledgeMemoryEvolutionDescriptor } from './future-evolution/future-evolution-descriptor.js';
 
 export function addKnowledgeMemory(services) {
   if (!(services instanceof ServiceCollection)) {
@@ -22,5 +23,6 @@ export function addKnowledgeMemory(services) {
   services.registerSingleton('KnowledgeMemoryIntegrationDescriptor', () => new KnowledgeMemoryIntegrationDescriptor());
   services.registerSingleton('KnowledgeMemorySecurityGovernanceDescriptor', () => new KnowledgeMemorySecurityGovernanceDescriptor());
   services.registerSingleton('KnowledgeMemoryOperationsDescriptor', () => new KnowledgeMemoryOperationsDescriptor());
+  services.registerSingleton('KnowledgeMemoryEvolutionDescriptor', () => new KnowledgeMemoryEvolutionDescriptor());
   return services;
 }

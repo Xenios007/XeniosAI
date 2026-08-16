@@ -7,6 +7,7 @@ export * from './context-assembly-orchestration-constants.js';
 export * from './integration-interoperability-constants.js';
 export * from './security-governance-assurance-constants.js';
 export * from './operations-observability-performance-constants.js';
+export * from './future-evolution-constants.js';
 export { KnowledgeMemoryValidationResult } from './contracts/knowledge-memory-validation-result.js';
 export { KnowledgeMemoryOverviewProfile } from './contracts/knowledge-memory-overview-profile.js';
 export { KnowledgeLifecycleProfile } from './contracts/knowledge-lifecycle-profile.js';
@@ -17,6 +18,7 @@ export { ContextAssemblyOrchestrationProfile } from './contracts/context-assembl
 export { KnowledgeMemoryIntegrationProfile } from './contracts/integration-interoperability-profile.js';
 export { KnowledgeMemorySecurityGovernanceProfile } from './contracts/security-governance-assurance-profile.js';
 export { KnowledgeMemoryOperationsProfile } from './contracts/operations-observability-performance-profile.js';
+export { KnowledgeMemoryEvolutionProfile } from './contracts/future-evolution-profile.js';
 export { KnowledgeMemoryOverviewDescriptor } from './overview/knowledge-memory-overview-descriptor.js';
 export { KnowledgeLifecycleDescriptor } from './lifecycle/knowledge-lifecycle-descriptor.js';
 export { KnowledgeIngestionCurationDescriptor } from './ingestion-curation/knowledge-ingestion-curation-descriptor.js';
@@ -26,4 +28,5 @@ export { ContextAssemblyOrchestrationDescriptor } from './context-assembly/conte
 export { KnowledgeMemoryIntegrationDescriptor } from './integration/integration-interoperability-descriptor.js';
 export { KnowledgeMemorySecurityGovernanceDescriptor } from './security-governance/security-governance-assurance-descriptor.js';
 export { KnowledgeMemoryOperationsDescriptor } from './operations/operations-observability-performance-descriptor.js';
+export { KnowledgeMemoryEvolutionDescriptor } from './future-evolution/future-evolution-descriptor.js';
 export { addKnowledgeMemory } from './service-registration.js';
