@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.40.0] - ARCH-017 API & SDK Overview
+
+### Added
+- A new API & SDK architecture module covering business drivers, objectives, architectural separations, core concepts and principles, API product contracts, consumers and audiences, interaction types, logical layers, platform capabilities, authority context, error classes, lifecycle, SDK capabilities and layers, operating roles, quality attributes, non-negotiable rules, boundaries, and expected outcomes.
+- Immutable API & SDK overview profile validating capability-first exposure, owned products, contract authority, bounded gateway responsibility, end-to-end tenant and property context, safe side effects and errors, compatibility migration, layered SDK semantics, version alignment, agent authority, protected telemetry, and reliable operations.
+- API & SDK validation result, overview descriptor, module exports, dependency-injection registration, and focused unit tests.
+
+### Established
+- APIs and SDKs are governed interface products: providers retain domain authority, gateways control exposure without absorbing business logic, and SDKs and generated artifacts remain traceable convenience layers rather than sources of contract or access authority.
+
+Status: API & SDK Architecture
+Version: 0.40.0
+
+---
+
 ## [0.39.0] - ARCH-016 Future Knowledge & Memory Evolution
 
 ### Added

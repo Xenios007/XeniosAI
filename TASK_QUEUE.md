@@ -140,7 +140,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-016-08 Knowledge & Memory Security, Governance, and Assurance`
 - Completed: `ARCH-016-09 Knowledge & Memory Operations, Observability, and Performance`
 - Completed: `ARCH-016-10 Future Knowledge & Memory Evolution`
-- Next: `ARCH-017-01 API & SDK Overview`
+- Completed: `ARCH-017-01 API & SDK Overview`
+- Next: `ARCH-017-02 API Product and Contract Model`
 
 ## Notes
 
