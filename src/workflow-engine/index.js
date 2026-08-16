@@ -6,6 +6,7 @@ export * from './interaction-constants.js';
 export * from './reliability-constants.js';
 export * from './integration-constants.js';
 export * from './security-governance-constants.js';
+export * from './operations-observability-constants.js';
 export { WorkflowEngineValidationResult } from './contracts/workflow-engine-validation-result.js';
 export { WorkflowEngineOverviewProfile } from './contracts/workflow-engine-overview-profile.js';
 export { WorkflowDefinitionLifecycleProfile } from './contracts/workflow-definition-lifecycle-profile.js';
@@ -15,6 +16,7 @@ export { WorkflowInteractionProfile } from './contracts/workflow-interaction-pro
 export { WorkflowReliabilityProfile } from './contracts/workflow-reliability-profile.js';
 export { WorkflowIntegrationProfile } from './contracts/workflow-integration-profile.js';
 export { WorkflowSecurityGovernanceProfile } from './contracts/workflow-security-governance-profile.js';
+export { WorkflowOperationsProfile } from './contracts/workflow-operations-profile.js';
 export { WorkflowEngineOverviewDescriptor } from './overview/workflow-engine-overview-descriptor.js';
 export { WorkflowDefinitionLifecycleDescriptor } from './definition-lifecycle/workflow-definition-lifecycle-descriptor.js';
 export { WorkflowRuntimeStateDescriptor } from './runtime-state/workflow-runtime-state-descriptor.js';
@@ -23,4 +25,5 @@ export { WorkflowInteractionDescriptor } from './interaction/workflow-interactio
 export { WorkflowReliabilityDescriptor } from './reliability/workflow-reliability-descriptor.js';
 export { WorkflowIntegrationDescriptor } from './integration/workflow-integration-descriptor.js';
 export { WorkflowSecurityGovernanceDescriptor } from './security-governance/workflow-security-governance-descriptor.js';
+export { WorkflowOperationsDescriptor } from './operations/workflow-operations-descriptor.js';
 export { addWorkflowEngine } from './service-registration.js';

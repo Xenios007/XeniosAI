@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.28.0] - ARCH-015 Workflow Operations, Observability, and Performance
+
+### Added
+- Operational metadata covering objectives, multidimensional health, health states, observability signals, correlation, service-level indicators, alert conditions, capacity dimensions, degradation modes, execution triage, operational actions, quality attributes, rules, and scope boundaries.
+- Immutable Workflow Operations profile validating accountable ownership, readiness, bounded telemetry cardinality, business-outcome semantics, tenant-safe operations, capacity fairness, tail-performance testing, declared degradation, reconciled recovery, single transition authority, controlled backlog recovery, bounded automation, advisory AI, and operational data governance.
+- Workflow Operations descriptor, public exports, dependency-injection registration, and focused unit tests.
+
+### Established
+- Workflow health is measured through business, execution, task, dependency, platform, security, and capacity dimensions; unknown health remains unknown, operations cannot mutate state directly, and recovery reconciles authoritative outcomes before retry or backlog release.
+
+Status: Workflow Engine Architecture
+Version: 0.28.0
+
+---
+
 ## [0.27.0] - ARCH-015 Workflow Security, Governance, and Assurance
 
 ### Added
