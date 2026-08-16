@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.36.0] - ARCH-016 Knowledge & Memory Integration and Interoperability
+
+### Added
+- Integration metadata covering participants, profiles, styles, canonical envelopes, capability and API contracts, response and error semantics, event delivery, governed connectors and checkpoints, bulk manifests, portability, degraded modes, quality attributes, architectural rules, and boundaries.
+- Immutable Knowledge & Memory Integration profile validating authoritative ownership, semantic compatibility, trusted identity and scope propagation, provenance, reference-first exchange, safe errors, idempotency, concurrency, versioning, backward compatibility, replay safety, connector governance, bulk control parity, portable lifecycle, correction and deletion propagation, reconciliation, and isolation.
+- Knowledge & Memory Integration descriptor, module exports, dependency-injection registration, and focused unit tests.
+
+### Established
+- Integration exchanges governed meaning rather than implementation or authority: independently owned services use versioned contracts, provider and transport details stay non-canonical, duplicate and replayed delivery is expected, and lifecycle state remains synchronized without direct database access.
+
+Status: Knowledge & Memory Architecture
+Version: 0.36.0
+
+---
+
 ## [0.35.0] - ARCH-016 Context Assembly and Memory Orchestration
 
 ### Added

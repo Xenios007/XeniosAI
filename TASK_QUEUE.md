@@ -136,7 +136,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-016-04 Retrieval, Search, and Grounding`
 - Completed: `ARCH-016-05 Memory Model and Lifecycle`
 - Completed: `ARCH-016-06 Context Assembly and Memory Orchestration`
-- Next: `ARCH-016-07 Knowledge & Memory Integration and Interoperability`
+- Completed: `ARCH-016-07 Knowledge & Memory Integration and Interoperability`
+- Next: `ARCH-016-08 Knowledge & Memory Security, Governance, and Assurance`
 
 ## Notes
 
