@@ -11,10 +11,10 @@ Update this file after every successful implementation session.
 - Architecture source of truth: `/architecture`
 - Implementation guide: `IMPLEMENTATION_GUIDE.md`
 - Task queue: `TASK_QUEUE.md`
-- Current implementation phase: `ARCH-015 Workflow Engine`
-- Current implementation state: `ARCH-015-09 Workflow Operations, Observability, and Performance` is implemented.
-- Latest successful implementation module: `ARCH-015-09 Workflow Operations, Observability, and Performance`
-- Latest successful commit: current implementation commit for `ARCH-015-09 Workflow Operations, Observability, and Performance`
+- Current implementation phase: `ARCH-016 Knowledge & Memory`
+- Current implementation state: `ARCH-015-10 Future Workflow Evolution` is implemented.
+- Latest successful implementation module: `ARCH-015-10 Future Workflow Evolution`
+- Latest successful commit: current implementation commit for `ARCH-015-10 Future Workflow Evolution`
 - Latest push status: pushed to `main`
 - Build status: passing
 - Test status: passing
@@ -36,19 +36,20 @@ Update this file after every successful implementation session.
 - Completed: `ARCH-012 Governance & Compliance`
 - Completed: `ARCH-013 Developer Platform`
 - Completed: `ARCH-014 AI Agent Framework`
+- Completed: `ARCH-015 Workflow Engine`
 
 ## Implementation Coverage
 
-- Completed through: `ARCH-015-09 Workflow Operations, Observability, and Performance`
-- Next documented implementation module: `ARCH-015-10 Future Workflow Evolution`
-- Reason: `architecture/015-workflow-engine/10-future-workflow-evolution.md` is available locally.
+- Completed through: `ARCH-015-10 Future Workflow Evolution`
+- Next documented implementation module: `ARCH-016-01 Knowledge & Memory Overview`
+- Reason: `architecture/016-knowledge-memory/01-knowledge-memory-overview.md` is available locally.
 
 ## Latest Verification
 
-- Focused test: `node --test tests/workflow-engine/workflow-operations.test.js`
+- Focused test: `node --test tests/workflow-engine/workflow-future-evolution.test.js`
 - Focused test result: passed, 6/6
 - Full test: `npm.cmd test`
-- Full test result: passed, 978/978
+- Full test result: passed, 984/984
 - Build command: `npm.cmd run build`
 - Build result: passed
 
@@ -70,4 +71,4 @@ Architecture documents must not be changed during implementation unless explicit
 
 ## Recommended Next Action
 
-Recommended next architecture module: `ARCH-015-10 Future Workflow Evolution`.
+Recommended next architecture module: `ARCH-016-01 Knowledge & Memory Overview`.

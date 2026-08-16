@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.29.0] - ARCH-015 Future Workflow Evolution
+
+### Added
+- Future-evolution metadata covering capability goals and guardrails, maturity stages, evolution horizons, canonical workflow semantics, semantic validation, bounded adaptation, migration patterns, technology assessment, adoption gates, stop criteria, quality attributes, architectural rules, and scope boundaries.
+- Immutable Future Workflow Evolution profile validating additive and reversible change, durable deterministic execution, ownership, semantic equivalence, version coexistence, reviewed agent proposals, portable packages, migration integrity, single transition authority, staged adoption, ADR decisions, explicit exit, isolation, accountability, and evidence.
+- Future Workflow Evolution descriptor, public exports, dependency-injection registration, and focused unit tests.
+
+### Established
+- Workflow evolution remains provider independent, evidence based, staged, reversible, and bounded by enduring domain, human, agent, tenant, property, security, recovery, and semantic-authority boundaries.
+
+Status: Workflow Engine Architecture Complete
+Version: 0.29.0
+
+---
+
 ## [0.28.0] - ARCH-015 Workflow Operations, Observability, and Performance
 
 ### Added

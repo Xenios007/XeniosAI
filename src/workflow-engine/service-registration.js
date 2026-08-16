@@ -7,6 +7,7 @@ import { WorkflowRuntimeStateDescriptor } from './runtime-state/workflow-runtime
 import { WorkflowSecurityGovernanceDescriptor } from './security-governance/workflow-security-governance-descriptor.js';
 import { WorkflowReliabilityDescriptor } from './reliability/workflow-reliability-descriptor.js';
 import { WorkflowOperationsDescriptor } from './operations/workflow-operations-descriptor.js';
+import { WorkflowFutureEvolutionDescriptor } from './future-evolution/workflow-future-evolution-descriptor.js';
 import { WorkflowTaskWorkerDescriptor } from './task-worker/workflow-task-worker-descriptor.js';
 
 export function addWorkflowEngine(services) {
@@ -20,5 +21,6 @@ export function addWorkflowEngine(services) {
   services.registerSingleton('WorkflowIntegrationDescriptor', () => new WorkflowIntegrationDescriptor());
   services.registerSingleton('WorkflowSecurityGovernanceDescriptor', () => new WorkflowSecurityGovernanceDescriptor());
   services.registerSingleton('WorkflowOperationsDescriptor', () => new WorkflowOperationsDescriptor());
+  services.registerSingleton('WorkflowFutureEvolutionDescriptor', () => new WorkflowFutureEvolutionDescriptor());
   return services;
 }
