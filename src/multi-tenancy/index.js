@@ -7,4 +7,7 @@ export { TenantDomainIsolationDescriptor } from './tenant-domain-isolation/tenan
 export * from './tenant-lifecycle-provisioning-constants.js';
 export { TenantLifecycleProvisioningProfile } from './contracts/tenant-lifecycle-provisioning-profile.js';
 export { TenantLifecycleProvisioningDescriptor } from './tenant-lifecycle-provisioning/tenant-lifecycle-provisioning-descriptor.js';
+export * from './identity-access-delegated-administration-constants.js';
+export { IdentityAccessDelegatedAdministrationProfile } from './contracts/identity-access-delegated-administration-profile.js';
+export { IdentityAccessDelegatedAdministrationDescriptor } from './identity-access-delegated-administration/identity-access-delegated-administration-descriptor.js';
 export { addMultiTenancy } from './service-registration.js';

@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.53.0] - ARCH-018 Identity, Access, and Delegated Administration
+
+### Added
+- Identity, Access, and Delegated Administration metadata covering access principles, identity categories, identity-to-membership cardinalities, tenant membership fields, membership lifecycle stages, federation requirements, just-in-time provisioning conditions, tenant selection controls, tenant context claims, authorization factors, resource ownership checks, role categories, property-scoped access grants, delegable responsibilities, delegation prohibitions, delegation rules, segregation-of-duties examples, workload identity controls, integration identity controls, workflow and agent authority elements, support session fields, emergency access requirements, cross-tenant capability requirements, session and token boundaries, caching prohibitions, access lifecycle triggers, protected access data types, access evidence types, access review areas, failure conditions, testing requirements, and architectural rules.
+- Immutable profile validation requiring identity-only authentication, membership- or workload-bound access, narrowing property scope, full-context authorization, non-expanding delegation, separated administrative access, fail-closed missing scope, change-triggered revocation, bounded agent authority, separate identity/membership lifecycles, explicit tenant selection, provider-validated ownership, minimized tenant context, transitively revocable delegation, scoped support sessions, and reviewed emergency access while rejecting implicit operator rights, header-based authority, delegation scope overreach, property-admin tenant-wide grants, automatic workload content access, revoked-authority refresh, cross-tenant cache reuse, tenant-admin cross-tenant grants, and child-workflow authority expansion.
+- Identity, Access, and Delegated Administration descriptor, module exports, dependency-injection registration, implementation documentation, and focused unit tests.
+
+### Established
+- Tenant access in XeniosAI is built from authenticated identity, explicit membership or workload binding, verified tenant and property context, resource ownership, purpose, policy, entitlement, and current lifecycle state, with delegated administration, support, emergency, workflow, agent, integration, and cross-tenant access using distinct, bounded, observable mechanisms.
+
+Status: Multi-Tenancy Architecture
+Version: 0.53.0
+
+---
+
 ## [0.52.0] - ARCH-018 Tenant Lifecycle and Provisioning
 
 ### Added
