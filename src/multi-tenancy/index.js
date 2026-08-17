@@ -25,4 +25,7 @@ export { ResourceGovernanceMeteringBillingDescriptor } from './resource-governan
 export * from './tenant-operations-governance-assurance-constants.js';
 export { TenantOperationsGovernanceAssuranceProfile } from './contracts/tenant-operations-governance-assurance-profile.js';
 export { TenantOperationsGovernanceAssuranceDescriptor } from './tenant-operations-governance-assurance/tenant-operations-governance-assurance-descriptor.js';
+export * from './future-multi-tenancy-evolution-constants.js';
+export { FutureMultiTenancyEvolutionProfile } from './contracts/future-multi-tenancy-evolution-profile.js';
+export { FutureMultiTenancyEvolutionDescriptor } from './future-multi-tenancy-evolution/future-multi-tenancy-evolution-descriptor.js';
 export { addMultiTenancy } from './service-registration.js';
