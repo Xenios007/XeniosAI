@@ -88,3 +88,4 @@ The repository currently includes automated unit tests for:
 - `ARCH-017-09 API & SDK Operations, Observability, and Performance` in `tests/api-sdk/`
 - `ARCH-017-10 Future API & SDK Evolution` in `tests/api-sdk/`
 - `ARCH-018-01 Multi-Tenancy Overview` in `tests/multi-tenancy/`
+- `ARCH-018-02 Tenant Domain and Isolation Model` in `tests/multi-tenancy/`

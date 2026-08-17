@@ -151,7 +151,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-017-09 API & SDK Operations, Observability, and Performance`
 - Completed: `ARCH-017-10 Future API & SDK Evolution`
 - Completed: `ARCH-018-01 Multi-Tenancy Overview`
-- Next: `ARCH-018-02 Tenant Domain and Isolation Model`
+- Completed: `ARCH-018-02 Tenant Domain and Isolation Model`
+- Next: `ARCH-018-03 Tenant Lifecycle and Provisioning`
 
 ## Notes
 

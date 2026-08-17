@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.51.0] - ARCH-018 Tenant Domain and Isolation Model
+
+### Added
+- Tenant Domain and Isolation Model metadata covering domain principles, canonical domain concepts, aggregate boundary rules, identifier and alias requirements, hierarchy levels, property transfer concerns, tenant registry fields, isolation objectives and dimensions, reference isolation models, isolation profile categories, isolation selection factors, placement attributes, tenant ownership checks, data modeling rules, scope classifications, cross-tenant scenarios, resilience recovery units, operational controls, assurance methods, failure conditions, architectural rules, and boundaries.
+- Immutable profile validation requiring stable opaque never-recycled identifiers, effective-dated ownership, acyclic bounded hierarchy, authoritative alias and registry state, versioned trusted placement, provider ownership validation, dedicated deployments retaining application controls, segregated cross-tenant operations, historical ownership preservation, boundary-preserving recovery, and negative multi-tenant testing while rejecting alias-as-identity, hierarchy- or relationship-granted access, client-chosen placement, default partition fallback, context-bypassing dedicated infrastructure, resource-identifier-as-ownership, registry secrets, general cross-tenant queries, single-tenant isolation proof, and history-rewriting transfers.
+- Tenant Domain and Isolation Model descriptor, module exports, dependency-injection registration, implementation documentation, and focused unit tests.
+
+### Established
+- Tenant is the primary customer trust boundary and property is a subordinate operational boundary; ownership and placement are distinct concepts governed by versioned, tested, evidence-producing isolation profiles across shared, partitioned, dedicated, and hybrid models.
+
+Status: Multi-Tenancy Architecture
+Version: 0.51.0
+
+---
+
 ## [0.50.0] - ARCH-018 Multi-Tenancy Overview
 
 ### Added
