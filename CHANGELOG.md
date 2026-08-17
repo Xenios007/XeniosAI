@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.61.0] - ARCH-019 Extension Domain and Classification
+
+### Added
+- Extension Domain and Classification metadata covering domain principles, core aggregates, supporting entities, package coordinate fields, extension contribution classes, publisher classifications, risk classification levels, extension-point categories, extension-point ownership responsibilities, composition models, authority validation checks, installation scope options, extension-owned data fields, dependency types, relationship model items, domain events, domain invariants, service boundaries, failure boundaries, governance ownership objects, and architectural rules.
+- Immutable profile validation requiring stable extension identity, immutable package versions, separated listings, scoped installations, distinct grants, attributable executions, domain-authoritative extension-point owners, capability-driven risk classification, preserved history, exact-digest locking, declared dependencies, minimal event metadata, restricted platform capabilities, reviewed ownership transfer, and prohibited undefined ordering while rejecting implicit relationship access, unauthorized publisher access to tenant data, automatic tenant-wide exposure, implicit dependent installation, listing-as-runtime-state, unbounded data ownership, handle-as-authorization, cross-service database reads, revoked-package execution, and first-party control waivers.
+- Extension Domain and Classification descriptor, contract, module exports, dependency-injection registration, implementation documentation, and focused unit tests.
+
+### Established
+- The ARCH-019 domain model separates what an extension is, how it is packaged, how it is presented, where it is installed, what it may do, and how it executes, preventing marketplace, publisher, package, and installation states from becoming accidental authority.
+
+Status: Plugin & Extension Framework
+Version: 0.61.0
+
+---
+
 ## [0.60.0] - ARCH-019 Plugin and Extension Overview
 
 ### Added
