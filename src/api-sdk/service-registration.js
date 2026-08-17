@@ -8,6 +8,7 @@ import { SdkArchitectureDistributionDescriptor } from './sdk-architecture-distri
 import { DeveloperExperienceConformanceDescriptor } from './developer-experience-conformance/developer-experience-conformance-descriptor.js';
 import { GovernanceAssuranceDescriptor } from './governance-assurance/governance-assurance-descriptor.js';
 import { OperationsObservabilityPerformanceDescriptor } from './operations-observability-performance/operations-observability-performance-descriptor.js';
+import { FutureApiSdkEvolutionDescriptor } from './future-evolution/future-api-sdk-evolution-descriptor.js';
 
 export function addApiSdk(services) {
   if (!(services instanceof ServiceCollection)) {
@@ -22,5 +23,6 @@ export function addApiSdk(services) {
   services.registerSingleton('DeveloperExperienceConformanceDescriptor', () => new DeveloperExperienceConformanceDescriptor());
   services.registerSingleton('GovernanceAssuranceDescriptor', () => new GovernanceAssuranceDescriptor());
   services.registerSingleton('OperationsObservabilityPerformanceDescriptor', () => new OperationsObservabilityPerformanceDescriptor());
+  services.registerSingleton('FutureApiSdkEvolutionDescriptor', () => new FutureApiSdkEvolutionDescriptor());
   return services;
 }

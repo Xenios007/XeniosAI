@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.49.0] - ARCH-017 Future API and SDK Evolution
+
+### Added
+- Future API and SDK Evolution metadata covering objectives, strategic drivers, enduring invariants, horizons, maturity, capability areas, experiment states, adoption gates, evidence, stop criteria, architectural rules, and boundaries.
+- Immutable evolution profile validation requiring business-first, evidence-backed, tenant-safe, provider-enforced, human-accountable, technology-neutral evolution while rejecting technology-first, authority-by-discovery, permanent-preview, autonomous-approval, untested-portability, and automatic-trust shortcuts.
+- Future evolution descriptor, module exports, dependency-injection registration, implementation documentation, and focused unit tests.
+
+### Established
+- API and SDK innovation is capability-led and evidence-based: experiments, pilots, AI assistance, richer interaction modes, federation, and portability remain bounded by invariants, adoption gates, migration, exit, support, and deliberate retirement.
+
+Status: API & SDK Architecture
+Version: 0.49.0
+
+---
+
 ## [0.48.0] - ARCH-017 API and SDK Operations, Observability, and Performance
 
 ### Added
