@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.44.0] - ARCH-017 API Security, Access, and Isolation
+
+### Added
+- API Security, Access, and Isolation metadata covering security objectives, identity domains, identity context, authentication classes, credential classes and requirements, authorization decision evidence, effective authority intersection factors, gateway and provider boundaries, delegation records, tenant and property isolation, data classification, validation controls, surface security for events/callbacks/streams/batches/files/caches/search/telemetry, automation access, privileged access, abuse controls, security tests, non-negotiable rules, and architecture boundaries.
+- Immutable API Security, Access, and Isolation profile validating zero-trust API boundary handling, fail-safe missing context, narrowest-authority access, provider revalidation, separation of authentication from authorization, bounded delegation, tenant/property claim validation, pre-candidate isolation, scoped caching, per-item batch authorization, data minimization, output authorization, safe request ambiguity handling, protected credentials, SDK security preservation, governed workflow/AI/agent access, privileged and emergency controls, protected telemetry/evidence, and supply-chain integrity.
+- API Security, Access, and Isolation descriptor, module exports, dependency-injection registration, implementation documentation, and focused unit tests.
+
+### Established
+- API security treats reachability, discovery, credential possession, SDK possession, identifier knowledge, partner status, plugin installation, workflow participation, agent capability, and model output as insufficient for authorization; provider validation and tenant/property isolation remain explicit at every material boundary.
+
+Status: API & SDK Architecture
+Version: 0.44.0
+
+---
+
 ## [0.43.0] - ARCH-017 API Lifecycle, Versioning, and Compatibility
 
 ### Added
