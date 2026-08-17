@@ -13,4 +13,7 @@ export { IdentityAccessDelegatedAdministrationDescriptor } from './identity-acce
 export * from './data-isolation-residency-portability-constants.js';
 export { DataIsolationResidencyPortabilityProfile } from './contracts/data-isolation-residency-portability-profile.js';
 export { DataIsolationResidencyPortabilityDescriptor } from './data-isolation-residency-portability/data-isolation-residency-portability-descriptor.js';
+export * from './configuration-entitlements-customization-constants.js';
+export { ConfigurationEntitlementsCustomizationProfile } from './contracts/configuration-entitlements-customization-profile.js';
+export { ConfigurationEntitlementsCustomizationDescriptor } from './configuration-entitlements-customization/configuration-entitlements-customization-descriptor.js';
 export { addMultiTenancy } from './service-registration.js';
