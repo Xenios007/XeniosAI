@@ -1,8 +1,11 @@
 export * from './overview-constants.js';
 export * from './product-contract-model-constants.js';
+export * from './design-interaction-patterns-constants.js';
 export { ApiSdkValidationResult } from './contracts/api-sdk-validation-result.js';
 export { ApiSdkOverviewProfile } from './contracts/api-sdk-overview-profile.js';
 export { ApiProductContractModelProfile } from './contracts/api-product-contract-model-profile.js';
+export { ApiDesignInteractionPatternsProfile } from './contracts/api-design-interaction-patterns-profile.js';
 export { ApiSdkOverviewDescriptor } from './overview/api-sdk-overview-descriptor.js';
 export { ApiProductContractModelDescriptor } from './product-contract-model/api-product-contract-model-descriptor.js';
+export { ApiDesignInteractionPatternsDescriptor } from './design-interaction-patterns/api-design-interaction-patterns-descriptor.js';
 export { addApiSdk } from './service-registration.js';

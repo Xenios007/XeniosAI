@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.42.0] - ARCH-017 API Design and Interaction Patterns
+
+### Added
+- API Design and Interaction Patterns metadata covering objectives, interaction classes, pattern selection, resources, representations, point and collection queries, pagination, filtering, sorting, search, consistency, commands, actions, completion distinctions, asynchronous and long-running operations, idempotency, concurrency, errors, partial outcomes, events, callbacks, streams, batches, correlation, rate limits, quotas, caching, composition, workflow and agent interaction, degraded operation, observability, evidence, conformance, pattern decisions, architectural rules, and boundaries.
+- Immutable API Design and Interaction Patterns profile validating capability-first design, explicit interaction semantics, stable classifications, bounded and authorized collections, scoped pagination, authorized search, declared consistency/freshness, intent-based commands/actions, distinct acceptance/completion, traceable async operations, contractual idempotency/concurrency, safe retry/cancellation, structured safe errors, replay-aware events, bounded streams, per-item batch controls, scoped caching, provider-preserving composition, workflow-owned state, agent authority boundaries, protected telemetry, and transport neutrality.
+- API Design and Interaction Patterns descriptor, module exports, dependency-injection registration, implementation documentation, and focused unit tests.
+
+### Established
+- API interactions are enterprise contracts that distinguish query, command, action, resource, event, callback, stream, batch, administrative, and operational semantics while preserving tenant/property isolation, provider ownership, completion clarity, evidence, recoverability, and vendor-neutral realization.
+
+Status: API & SDK Architecture
+Version: 0.42.0
+
+---
+
 ## [0.41.0] - ARCH-017 API Product and Contract Model
 
 ### Added
