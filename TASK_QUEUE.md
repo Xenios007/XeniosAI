@@ -162,7 +162,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-018-10 Future Multi-Tenancy Evolution`
 - Completed: `ARCH-019-01 Plugin and Extension Overview`
 - Completed: `ARCH-019-02 Extension Domain and Classification`
-- Next: `ARCH-019-03 Package, Manifest, Registry, and Provenance`
+- Completed: `ARCH-019-03 Package, Manifest, Registry, and Provenance`
+- Next: `ARCH-019-04 Extension Lifecycle, Distribution, and Compatibility`
 
 ## Notes
 

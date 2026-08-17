@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.62.0] - ARCH-019 Package, Manifest, Registry, and Provenance
+
+### Added
+- Package, Manifest, Registry, and Provenance metadata covering supply-chain principles, package contents, manifest fields, capability declaration types, data-handling declaration fields, configuration schema attributes, entry-point fields, package dependency types, dependency inventory fields, extension dependency requirements, publisher identity elements, publishing authority controls, build provenance links, supply-chain checks, signature verification checks, key lifecycle requirements, extension registry responsibilities, registry boundaries, registry namespace fields, package publication states, distribution verification checks, package advisory fields, emergency revocation actions, registry recovery coverage, supply-chain evidence types, and architectural rules.
+- Immutable profile validation requiring immutable digest-bound packages, authority-free manifests, separated publisher/runtime identity, traceable provenance, explicit dependencies, integrity-only signatures, authoritative registries, exact-digest distribution, rapidly actionable vulnerabilities, secret-free packages, mandatory-field validation, unloaded undeclared entry points, non-inherited capabilities, equally controlled private packages, and fail-closed registry unavailability while rejecting undeclared data collection, floating dependencies, name-implied ownership, reduced private-location controls, executable revoked bytes, signature-replaces-enforcement, and unaudited high-risk local publication.
+- Package, Manifest, Registry, and Provenance descriptor, contract, module exports, dependency-injection registration, implementation documentation, and focused unit tests.
+
+### Established
+- The extension supply chain establishes trustworthy identity and integrity without confusing them with runtime authority: immutable packages, declarative manifests, explicit dependencies, verified publishers, attestable builds, signatures, authoritative registries, advisories, and revocation make extension distribution reproducible and governable.
+
+Status: Plugin & Extension Framework
+Version: 0.62.0
+
+---
+
 ## [0.61.0] - ARCH-019 Extension Domain and Classification
 
 ### Added

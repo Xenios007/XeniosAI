@@ -5,4 +5,7 @@ export { PluginExtensionOverviewDescriptor } from './overview/plugin-extension-o
 export * from './extension-domain-classification-constants.js';
 export { ExtensionDomainClassificationProfile } from './contracts/extension-domain-classification-profile.js';
 export { ExtensionDomainClassificationDescriptor } from './extension-domain-classification/extension-domain-classification-descriptor.js';
+export * from './package-manifest-registry-provenance-constants.js';
+export { PackageManifestRegistryProvenanceProfile } from './contracts/package-manifest-registry-provenance-profile.js';
+export { PackageManifestRegistryProvenanceDescriptor } from './package-manifest-registry-provenance/package-manifest-registry-provenance-descriptor.js';
 export { addPluginExtensionFramework } from './service-registration.js';
