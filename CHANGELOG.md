@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.56.0] - ARCH-018 Tenant-Aware Runtime and Integration
+
+### Added
+- Tenant-Aware Runtime and Integration metadata covering runtime principles, context fields, trust boundaries, context establishment steps, context representations, experience layer requirements, gateway responsibilities, API scope classifications, SDK behaviors, provider responsibility steps, service-to-service propagated fields, data access patterns, cache access rules, event envelope fields, event consumption steps, batch job fields, workflow binding continuity, orchestrator binding targets, agent grant elements, memory scope levels, integration connection fields, outbound validation factors, extension runtime controls, operator tool capabilities, context expiry triggers, observability signals, failure behaviors, conformance testing areas, and architectural rules.
+- Immutable profile validation requiring explicit trusted context, provider revalidation, boundary survival, narrowing-only delegation, authoritative routing, minimized protected context, revocation invalidation, validation that bypasses caches/retries, tenant-safe telemetry, provider-owned validation, revalidating retries, fail-closed knowledge filtering, explicit extension grants, checkpointed revocation checks, and cross-checked payload identifiers while rejecting unsafe default tenants, client-input-as-authority, unvalidated header forwarding, SDK tenant inference, downstream authority minting, cross-tenant cache fallback, model-altered tenant context, default-tenant failure fallback, and hidden operator impersonation.
+- Tenant-Aware Runtime and Integration descriptor, module exports, dependency-injection registration, implementation documentation, and focused unit tests.
+
+### Established
+- The XeniosAI runtime preserves tenant scope from the first authenticated interaction through every service, data, message, workflow, AI, integration, extension, and operational boundary, making tenant isolation an execution invariant rather than an edge-only convention.
+
+Status: Multi-Tenancy Architecture
+Version: 0.56.0
+
+---
+
 ## [0.55.0] - ARCH-018 Configuration, Entitlements, and Customization
 
 ### Added

@@ -16,4 +16,7 @@ export { DataIsolationResidencyPortabilityDescriptor } from './data-isolation-re
 export * from './configuration-entitlements-customization-constants.js';
 export { ConfigurationEntitlementsCustomizationProfile } from './contracts/configuration-entitlements-customization-profile.js';
 export { ConfigurationEntitlementsCustomizationDescriptor } from './configuration-entitlements-customization/configuration-entitlements-customization-descriptor.js';
+export * from './tenant-aware-runtime-integration-constants.js';
+export { TenantAwareRuntimeIntegrationProfile } from './contracts/tenant-aware-runtime-integration-profile.js';
+export { TenantAwareRuntimeIntegrationDescriptor } from './tenant-aware-runtime-integration/tenant-aware-runtime-integration-descriptor.js';
 export { addMultiTenancy } from './service-registration.js';

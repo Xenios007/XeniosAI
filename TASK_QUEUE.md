@@ -156,7 +156,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-018-04 Identity, Access, and Delegated Administration`
 - Completed: `ARCH-018-05 Data Isolation, Residency, and Portability`
 - Completed: `ARCH-018-06 Configuration, Entitlements, and Customization`
-- Next: `ARCH-018-07 Tenant-Aware Runtime and Integration`
+- Completed: `ARCH-018-07 Tenant-Aware Runtime and Integration`
+- Next: `ARCH-018-08 Resource Governance, Metering, and Billing`
 
 ## Notes
 
