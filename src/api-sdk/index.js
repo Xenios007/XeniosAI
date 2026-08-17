@@ -5,6 +5,7 @@ export * from './lifecycle-versioning-compatibility-constants.js';
 export * from './security-access-isolation-constants.js';
 export * from './sdk-architecture-distribution-constants.js';
 export * from './developer-experience-conformance-constants.js';
+export * from './governance-assurance-constants.js';
 export { ApiSdkValidationResult } from './contracts/api-sdk-validation-result.js';
 export { ApiSdkOverviewProfile } from './contracts/api-sdk-overview-profile.js';
 export { ApiProductContractModelProfile } from './contracts/api-product-contract-model-profile.js';
@@ -13,6 +14,7 @@ export { ApiLifecycleVersioningCompatibilityProfile } from './contracts/api-life
 export { ApiSecurityAccessIsolationProfile } from './contracts/api-security-access-isolation-profile.js';
 export { SdkArchitectureDistributionProfile } from './contracts/sdk-architecture-distribution-profile.js';
 export { DeveloperExperienceConformanceProfile } from './contracts/developer-experience-conformance-profile.js';
+export { GovernanceAssuranceProfile } from './contracts/governance-assurance-profile.js';
 export { ApiSdkOverviewDescriptor } from './overview/api-sdk-overview-descriptor.js';
 export { ApiProductContractModelDescriptor } from './product-contract-model/api-product-contract-model-descriptor.js';
 export { ApiDesignInteractionPatternsDescriptor } from './design-interaction-patterns/api-design-interaction-patterns-descriptor.js';
@@ -20,4 +22,5 @@ export { ApiLifecycleVersioningCompatibilityDescriptor } from './lifecycle-versi
 export { ApiSecurityAccessIsolationDescriptor } from './security-access-isolation/api-security-access-isolation-descriptor.js';
 export { SdkArchitectureDistributionDescriptor } from './sdk-architecture-distribution/sdk-architecture-distribution-descriptor.js';
 export { DeveloperExperienceConformanceDescriptor } from './developer-experience-conformance/developer-experience-conformance-descriptor.js';
+export { GovernanceAssuranceDescriptor } from './governance-assurance/governance-assurance-descriptor.js';
 export { addApiSdk } from './service-registration.js';

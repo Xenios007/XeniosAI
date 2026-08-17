@@ -6,6 +6,7 @@ import { ApiLifecycleVersioningCompatibilityDescriptor } from './lifecycle-versi
 import { ApiSecurityAccessIsolationDescriptor } from './security-access-isolation/api-security-access-isolation-descriptor.js';
 import { SdkArchitectureDistributionDescriptor } from './sdk-architecture-distribution/sdk-architecture-distribution-descriptor.js';
 import { DeveloperExperienceConformanceDescriptor } from './developer-experience-conformance/developer-experience-conformance-descriptor.js';
+import { GovernanceAssuranceDescriptor } from './governance-assurance/governance-assurance-descriptor.js';
 
 export function addApiSdk(services) {
   if (!(services instanceof ServiceCollection)) {
@@ -18,5 +19,6 @@ export function addApiSdk(services) {
   services.registerSingleton('ApiSecurityAccessIsolationDescriptor', () => new ApiSecurityAccessIsolationDescriptor());
   services.registerSingleton('SdkArchitectureDistributionDescriptor', () => new SdkArchitectureDistributionDescriptor());
   services.registerSingleton('DeveloperExperienceConformanceDescriptor', () => new DeveloperExperienceConformanceDescriptor());
+  services.registerSingleton('GovernanceAssuranceDescriptor', () => new GovernanceAssuranceDescriptor());
   return services;
 }

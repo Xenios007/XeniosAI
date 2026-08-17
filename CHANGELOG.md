@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.47.0] - ARCH-017 API and SDK Governance and Assurance
+
+### Added
+- API and SDK Governance and Assurance metadata covering governance objectives, principles, definitions, lifecycle domains, governance levels, roles, decision records, decision classes, registration fields, policy instruments, classifications, risk factors, controls, review areas, lifecycle gates, change governance, assurance levels and methods, evidence records and quality, exceptions, issues, automation, reporting, maturity, rules, and boundaries.
+- Immutable Governance and Assurance profile validating accountable ownership, federated guardrails, governed contracts, risk-proportionate assurance, evidence-before-conclusion, distinct decision/execution/assurance, temporary exceptions, inspectable automation, controlled emergency authority, required registries, ownership integrity, versioned policy instruments, owned risk, traceable controls, owned detective findings, governed exposure, multidimensional compatibility, safe retirement, scoped assurance, protected evidence, lawful exceptions, validated remediation, safe automation failure, reviewed AI assistance, and visibility-preserving reports.
+- Governance and Assurance descriptor, module exports, dependency-injection registration, implementation documentation, and focused unit tests.
+
+### Established
+- API and SDK governance is federated but evidence-bound: discoverability, reachability, SDK possession, successful publication, or prior success never grant authority, and unknown ownership or compatibility escalates rather than defaulting to approval.
+
+Status: API & SDK Architecture
+Version: 0.47.0
+
+---
+
 ## [0.46.0] - ARCH-017 Developer Experience, Testing, and Conformance
 
 ### Added
