@@ -4,6 +4,7 @@ import { ApiProductContractModelDescriptor } from './product-contract-model/api-
 import { ApiDesignInteractionPatternsDescriptor } from './design-interaction-patterns/api-design-interaction-patterns-descriptor.js';
 import { ApiLifecycleVersioningCompatibilityDescriptor } from './lifecycle-versioning-compatibility/api-lifecycle-versioning-compatibility-descriptor.js';
 import { ApiSecurityAccessIsolationDescriptor } from './security-access-isolation/api-security-access-isolation-descriptor.js';
+import { SdkArchitectureDistributionDescriptor } from './sdk-architecture-distribution/sdk-architecture-distribution-descriptor.js';
 
 export function addApiSdk(services) {
   if (!(services instanceof ServiceCollection)) {
@@ -14,5 +15,6 @@ export function addApiSdk(services) {
   services.registerSingleton('ApiDesignInteractionPatternsDescriptor', () => new ApiDesignInteractionPatternsDescriptor());
   services.registerSingleton('ApiLifecycleVersioningCompatibilityDescriptor', () => new ApiLifecycleVersioningCompatibilityDescriptor());
   services.registerSingleton('ApiSecurityAccessIsolationDescriptor', () => new ApiSecurityAccessIsolationDescriptor());
+  services.registerSingleton('SdkArchitectureDistributionDescriptor', () => new SdkArchitectureDistributionDescriptor());
   return services;
 }

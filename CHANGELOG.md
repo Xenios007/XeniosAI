@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.45.0] - ARCH-017 SDK Architecture and Distribution
+
+### Added
+- SDK Architecture and Distribution metadata covering objectives, principles, core definitions, SDK declarations, audiences, logical layers, contract-derived elements, generation manifests, production flow, client configuration, behavior controls, extensions, test support, versioning and release fields, distribution controls, lifecycle controls, governance decisions, quality gates, required evidence, non-negotiable rules, and architecture boundaries.
+- Immutable SDK Architecture and Distribution profile validating authoritative API contracts, governed SDK products, explicit generated/handwritten boundaries, visible behavior, safe defaults, distribution as a security boundary, correlated lifecycles, deterministic generation, fail-closed production flow, explicit runtime matrix, credential-provider integration, tenant/property context preservation, provider-authoritative validation, safe telemetry, governed dependencies, repeatable builds, verifiable integrity, approved registries, gated stable publication, governed deprecation, observable retirement, incident response, and retained evidence.
+- SDK Architecture and Distribution descriptor, module exports, dependency-injection registration, implementation documentation, and focused unit tests.
+
+### Established
+- SDKs are governed API product derivatives: they improve developer consumption but do not replace API contracts, grant authority, move provider decisions into client code, weaken tenant/property isolation, or bypass package provenance and distribution controls.
+
+Status: API & SDK Architecture
+Version: 0.45.0
+
+---
+
 ## [0.44.0] - ARCH-017 API Security, Access, and Isolation
 
 ### Added
