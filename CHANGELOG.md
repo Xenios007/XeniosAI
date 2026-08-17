@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.43.0] - ARCH-017 API Lifecycle, Versioning, and Compatibility
+
+### Added
+- API Lifecycle, Versioning, and Compatibility metadata covering lifecycle objectives, distinct product/contract/release/SDK/consumer lifecycles, product lifecycle states, transition controls, gates, version identities, semantic-versioning components, compatibility boundaries, compatibility dimensions, compatible/conditional/breaking/unknown classifications, release and activation controls, parallel versions, version routing, migration, deprecation, exceptions, retirement, emergency response, rollback, orphan detection, observability, evidence, metrics, lifecycle operations, architectural rules, and boundaries.
+- Immutable API Lifecycle, Versioning, and Compatibility profile validating continuous ownership, distinct lifecycle identities, compatibility-boundary versioning, multidimensional compatibility assessment, immutable released behavior, backward compatibility where practical, major versions for breaking changes, evidence-based classification, controlled activation, bounded parallel support, explicit routing, owned migration, time-bounded exceptions, retirement readiness, reserved retired identities, governed emergency actions, protected evidence, artifact synchronization, and architecture review for major changes.
+- API Lifecycle, Versioning, and Compatibility descriptor, module exports, dependency-injection registration, implementation documentation, and focused unit tests.
+
+### Established
+- API evolution is governed as a product lifecycle rather than a code-release shortcut: versions communicate supported compatibility boundaries, unknown compatibility is not compatible, provider and SDK releases can evolve only within approved contracts, and retirement requires consumer, dependency, traffic, access, data, support, and evidence readiness.
+
+Status: API & SDK Architecture
+Version: 0.43.0
+
+---
+
 ## [0.42.0] - ARCH-017 API Design and Interaction Patterns
 
 ### Added

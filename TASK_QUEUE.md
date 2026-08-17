@@ -143,7 +143,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-017-01 API & SDK Overview`
 - Completed: `ARCH-017-02 API Product and Contract Model`
 - Completed: `ARCH-017-03 API Design and Interaction Patterns`
-- Next: `ARCH-017-04 API Lifecycle, Versioning, and Compatibility`
+- Completed: `ARCH-017-04 API Lifecycle, Versioning, and Compatibility`
+- Next: `ARCH-017-05 API Security, Access, and Isolation`
 
 ## Notes
 
