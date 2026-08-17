@@ -20,4 +20,7 @@ export { RuntimeHostsExtensionPointsDescriptor } from './runtime-hosts-extension
 export * from './plugin-sdk-developer-experience-and-testing-constants.js';
 export { PluginSdkDeveloperExperienceAndTestingProfile } from './contracts/plugin-sdk-developer-experience-and-testing-profile.js';
 export { PluginSdkDeveloperExperienceAndTestingDescriptor } from './plugin-sdk-developer-experience-and-testing/plugin-sdk-developer-experience-and-testing-descriptor.js';
+export * from './tenant-installation-configuration-and-operations-constants.js';
+export { TenantInstallationConfigurationAndOperationsProfile } from './contracts/tenant-installation-configuration-and-operations-profile.js';
+export { TenantInstallationConfigurationAndOperationsDescriptor } from './tenant-installation-configuration-and-operations/tenant-installation-configuration-and-operations-descriptor.js';
 export { addPluginExtensionFramework } from './service-registration.js';

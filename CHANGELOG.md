@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.67.0] - ARCH-019 Tenant Installation, Configuration, and Operations
+
+### Added
+- Tenant Installation, Configuration, and Operations metadata covering tenant principles, tenant roles, discovery-catalog fields, installation-request fields, assessment considerations, informed-consent elements, property-scope rules, configuration properties, connection-record fields, provisioning elements, activation-validation checks, tenant operations-view fields, health signal sources, resource-governance limits, usage/cost view distinctions, notification types, tenant pilot/rollout stages, support-model parties, support-access requirements, incident-response elements, data-portability export items, uninstall-request disclosures, uninstall-execution steps, tenant evidence types, reconciliation domains, and architectural rules.
+- Immutable profile validation requiring effective-grant-based informed consent, renewed approval on material expansion or new access, inspectable configuration provenance, idempotent partial-status provisioning, independently verified security and isolation, tenant-exclusive operations visibility, actionable risk-safe health, billing kept out of runtime authorization, complete update previews, isolated pilot data, explained non-reversible rollback, policy-bounded suspension, tenant-safe support routing, database/host/secret-free publisher support access, complete tenant offboarding, and control-failure treatment of orphaned post-removal state, while rejecting catalog-ranking-implied permission, auto-progressing under-scoped requests, delegated-scope overreach, unapproved dynamic property inclusion, secret-storing or control-overriding configuration, prohibited secret viewing, vulnerable-package rollback re-enablement, hidden-team support dependencies, cross-tenant incident disclosure, incomplete uninstall, and offboarding exclusion of extension-owned data.
+- Tenant Installation, Configuration, and Operations descriptor, contract, module exports, dependency-injection registration, implementation documentation, and focused unit tests.
+
+### Established
+- Tenant operations turn extension ecosystem choices into controlled, observable, and reversible service relationships: transparent capability consent, explicit property scope, governed configuration, mediated secrets, health and cost visibility, bounded updates, accountable support, and reconciled uninstall give tenants meaningful control while platform security and operational authority remain intact.
+
+Status: Plugin & Extension Framework
+Version: 0.67.0
+
+---
+
 ## [0.66.0] - ARCH-019 Plugin SDK, Developer Experience, and Testing
 
 ### Added

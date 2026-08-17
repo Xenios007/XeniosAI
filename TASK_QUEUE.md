@@ -167,7 +167,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-019-05 Capability Security and Isolation`
 - Completed: `ARCH-019-06 Runtime Hosts and Extension Points`
 - Completed: `ARCH-019-07 Plugin SDK, Developer Experience, and Testing`
-- Next: `ARCH-019-08 Tenant Installation, Configuration, and Operations`
+- Completed: `ARCH-019-08 Tenant Installation, Configuration, and Operations`
+- Next: `ARCH-019-09 Marketplace Governance and Assurance`
 
 ## Notes
 
