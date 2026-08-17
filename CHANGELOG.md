@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.65.0] - ARCH-019 Runtime Hosts and Extension Points
+
+### Added
+- Runtime Hosts and Extension Points metadata covering runtime principles, host responsibilities and boundaries, host types, runtime admission checks, invocation context fields, extension-point contract fields, idempotency scope, API/event/workflow extension-point validations and elements, agent tool contract fields and inherited agent requirements, knowledge and memory extension-point contracts, UI extension-point controls, MCP runtime mediation, connector runtime capabilities, result validation checks, failure classifications, health evaluation factors, recovery restoration elements and exercise types, observability telemetry fields, usage metering dimensions, and architectural rules.
+- Immutable profile validation requiring verified-digest-only execution, complete invocation binding, owned extension points, provider-authoritative access, host-mediated interfaces, cancelable bounded execution, out-of-transaction failure, revalidated async scope, untrusted results pending validation, tenant-safe evidence, stable admission failures, immutable trusted context, bounded grant lifetime, host-validated tool calls, coordinated updates, cross-checked inbound claims, and safety-preserving metering while rejecting fail-open controls, shared-transaction participation, workflow-evidence erasure, silent knowledge promotion, extension-created global memory, UI security-chrome overwrite, unrestricted MCP registration, cross-tenant budget consumption, direct storage credentials, internal-endpoint access, and blind non-idempotent recovery.
+- Runtime Hosts and Extension Points descriptor, contract, module exports, dependency-injection registration, implementation documentation, and focused unit tests.
+
+### Established
+- Runtime hosts turn declarative extension intent and approved installation grants into bounded execution: they verify exact packages, establish tenant context, mediate capabilities, isolate resources, validate results, meter use, contain failure, and preserve evidence, while owned extension points keep extensibility outside service internals and authoritative domain boundaries.
+
+Status: Plugin & Extension Framework
+Version: 0.65.0
+
+---
+
 ## [0.64.0] - ARCH-019 Capability Security and Isolation
 
 ### Added

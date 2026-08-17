@@ -4,6 +4,7 @@ import { ExtensionDomainClassificationDescriptor } from './extension-domain-clas
 import { PackageManifestRegistryProvenanceDescriptor } from './package-manifest-registry-provenance/package-manifest-registry-provenance-descriptor.js';
 import { ExtensionLifecycleDistributionCompatibilityDescriptor } from './extension-lifecycle-distribution-compatibility/extension-lifecycle-distribution-compatibility-descriptor.js';
 import { CapabilitySecurityIsolationDescriptor } from './capability-security-isolation/capability-security-isolation-descriptor.js';
+import { RuntimeHostsExtensionPointsDescriptor } from './runtime-hosts-extension-points/runtime-hosts-extension-points-descriptor.js';
 
 export function addPluginExtensionFramework(services) {
   if (!(services instanceof ServiceCollection)) throw new Error('addPluginExtensionFramework expects an instance of ServiceCollection.');
@@ -12,5 +13,6 @@ export function addPluginExtensionFramework(services) {
   services.registerSingleton('PackageManifestRegistryProvenanceDescriptor', () => new PackageManifestRegistryProvenanceDescriptor());
   services.registerSingleton('ExtensionLifecycleDistributionCompatibilityDescriptor', () => new ExtensionLifecycleDistributionCompatibilityDescriptor());
   services.registerSingleton('CapabilitySecurityIsolationDescriptor', () => new CapabilitySecurityIsolationDescriptor());
+  services.registerSingleton('RuntimeHostsExtensionPointsDescriptor', () => new RuntimeHostsExtensionPointsDescriptor());
   return services;
 }

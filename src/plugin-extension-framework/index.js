@@ -14,4 +14,7 @@ export { ExtensionLifecycleDistributionCompatibilityDescriptor } from './extensi
 export * from './capability-security-isolation-constants.js';
 export { CapabilitySecurityIsolationProfile } from './contracts/capability-security-isolation-profile.js';
 export { CapabilitySecurityIsolationDescriptor } from './capability-security-isolation/capability-security-isolation-descriptor.js';
+export * from './runtime-hosts-extension-points-constants.js';
+export { RuntimeHostsExtensionPointsProfile } from './contracts/runtime-hosts-extension-points-profile.js';
+export { RuntimeHostsExtensionPointsDescriptor } from './runtime-hosts-extension-points/runtime-hosts-extension-points-descriptor.js';
 export { addPluginExtensionFramework } from './service-registration.js';
