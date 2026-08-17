@@ -152,7 +152,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-017-10 Future API & SDK Evolution`
 - Completed: `ARCH-018-01 Multi-Tenancy Overview`
 - Completed: `ARCH-018-02 Tenant Domain and Isolation Model`
-- Next: `ARCH-018-03 Tenant Lifecycle and Provisioning`
+- Completed: `ARCH-018-03 Tenant Lifecycle and Provisioning`
+- Next: `ARCH-018-04 Identity, Access, and Delegated Administration`
 
 ## Notes
 

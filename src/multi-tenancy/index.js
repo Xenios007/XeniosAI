@@ -4,4 +4,7 @@ export { MultiTenancyOverviewDescriptor } from './multi-tenancy-overview-descrip
 export * from './tenant-domain-isolation-constants.js';
 export { TenantDomainIsolationProfile } from './contracts/tenant-domain-isolation-profile.js';
 export { TenantDomainIsolationDescriptor } from './tenant-domain-isolation/tenant-domain-isolation-descriptor.js';
+export * from './tenant-lifecycle-provisioning-constants.js';
+export { TenantLifecycleProvisioningProfile } from './contracts/tenant-lifecycle-provisioning-profile.js';
+export { TenantLifecycleProvisioningDescriptor } from './tenant-lifecycle-provisioning/tenant-lifecycle-provisioning-descriptor.js';
 export { addMultiTenancy } from './service-registration.js';

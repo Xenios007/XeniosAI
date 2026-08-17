@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.52.0] - ARCH-018 Tenant Lifecycle and Provisioning
+
+### Added
+- Tenant Lifecycle and Provisioning metadata covering lifecycle principles, lifecycle states, transition contract fields, tenant request inputs, assessment areas, approval elements, provisioning coordinator steps, provisioning domains, desired-state manifest properties, idempotency and concurrency distinctions, failure and compensation responses, validation readiness checks, activation preconditions, active-state changes, restriction examples, suspension exceptions, reactivation checks, tenant migration steps, offboarding plan elements, data export requirements, retention classifications, retirement conditions, reconciliation findings, lifecycle events, lifecycle roles, evidence questions, service objectives, and architectural rules.
+- Immutable profile validation requiring authoritative effective-dated state, command-based accountable transitions, idempotent resumable provisioning, validation-gated activation, visible recoverable partial failure, policy-driven suspension, identity-preserving migration, derivative-covering offboarding, outlivable retention, provider-owned resource lifecycle, rejected stale commands, idempotent replay, a versioned comparable manifest, and reconciliation-driven remediation while rejecting identifier reuse, activation-by-resource-creation, unconditional reactivation, invoice-driven authorization, assumed exact-state compensation, identity-changing migration, secret-bearing export, ignored manual drift, and distributed-lock-dependent provider work.
+- Tenant Lifecycle and Provisioning descriptor, module exports, dependency-injection registration, implementation documentation, and focused unit tests.
+
+### Established
+- Tenant lifecycle is a centrally authoritative, distributedly executed, evidence-producing progression from request through retirement, coordinated through versioned desired state and idempotent provider contracts without reusing retired tenant identifiers.
+
+Status: Multi-Tenancy Architecture
+Version: 0.52.0
+
+---
+
 ## [0.51.0] - ARCH-018 Tenant Domain and Isolation Model
 
 ### Added
