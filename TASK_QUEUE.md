@@ -150,7 +150,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-017-08 API & SDK Governance and Assurance`
 - Completed: `ARCH-017-09 API & SDK Operations, Observability, and Performance`
 - Completed: `ARCH-017-10 Future API & SDK Evolution`
-- Next: `ARCH-018-01 Multi-Tenancy Overview`
+- Completed: `ARCH-018-01 Multi-Tenancy Overview`
+- Next: `ARCH-018-02 Tenant Domain and Isolation Model`
 
 ## Notes
 

@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.50.0] - ARCH-018 Multi-Tenancy Overview
+
+### Added
+- Multi-Tenancy Overview metadata covering objectives, stakeholders, scope, invariants, hierarchy, capabilities, control and data planes, isolation dimensions and profiles, lifecycle, request context, configuration, resources, operating roles, rules, and boundaries.
+- Immutable profile validation requiring fail-closed context, provider ownership validation, end-to-end isolation, fair resources, operable isolation profiles, tenant-aware operations, and continuous assurance while rejecting implicit authority, gateway-only enforcement, unbounded shared capacity, AI authority, topology mandates, and tenant policy weakening platform floors.
+- Multi-Tenancy Overview descriptor, dependency-injection registration, implementation documentation, and focused unit tests.
+
+### Established
+- Multi-tenancy is a cross-platform trust-boundary architecture: shared capability is permitted only with explicit tenant and property context, provider enforcement, risk-appropriate isolation, fair resources, lifecycle control, and auditable exit.
+
+Status: Multi-Tenancy Architecture
+Version: 0.50.0
+
+---
+
 ## [0.49.0] - ARCH-017 Future API and SDK Evolution
 
 ### Added

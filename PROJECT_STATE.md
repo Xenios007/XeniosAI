@@ -11,11 +11,11 @@ Update this file after every successful implementation session.
 - Architecture source of truth: `/architecture`
 - Implementation guide: `IMPLEMENTATION_GUIDE.md`
 - Task queue: `TASK_QUEUE.md`
-- Current implementation phase: `ARCH-017 API & SDK Architecture`
-- Current implementation state: `ARCH-017-10 Future API & SDK Evolution` is implemented.
-- Latest successful implementation module: `ARCH-017-10 Future API & SDK Evolution`
-- Latest successful commit: `6dfc7c5` (`ARCH-017-10 Future API & SDK Evolution`)
-- Latest push status: pushed to `main`
+- Current implementation phase: `ARCH-018 Multi-Tenancy Architecture`
+- Current implementation state: `ARCH-018-01 Multi-Tenancy Overview` is implemented.
+- Latest successful implementation module: `ARCH-018-01 Multi-Tenancy Overview`
+- Latest successful commit: pending commit for `ARCH-018-01 Multi-Tenancy Overview`
+- Latest push status: pending verification
 - Build status: passing
 - Test status: passing
 - Architecture deviations: none
@@ -41,16 +41,16 @@ Update this file after every successful implementation session.
 
 ## Implementation Coverage
 
-- Completed through: `ARCH-017-10 Future API & SDK Evolution`
-- Next documented implementation module: `ARCH-018-01 Multi-Tenancy Overview`
-- Reason: `architecture/018-multi-tenancy/01-multi-tenancy-overview.md` is the next architecture document in order.
+- Completed through: `ARCH-018-01 Multi-Tenancy Overview`
+- Next documented implementation module: `ARCH-018-02 Tenant Domain and Isolation Model`
+- Reason: `architecture/018-multi-tenancy/02-tenant-domain-and-isolation-model.md` is the next architecture document in order.
 
 ## Latest Verification
 
-- Focused test: `npm.cmd test -- tests/api-sdk/future-api-sdk-evolution.test.js`
+- Focused test: `npm.cmd test -- tests/multi-tenancy/multi-tenancy-overview.test.js`
 - Focused test result: passed, 5/5
 - Full test: `npm.cmd test`
-- Full test result: passed, 1102/1102
+- Full test result: passed, 1107/1107
 - Build command: `npm.cmd run build`
 - Build result: passed
 
@@ -72,4 +72,4 @@ Architecture documents must not be changed during implementation unless explicit
 
 ## Recommended Next Action
 
-Recommended next architecture module: `ARCH-018-01 Multi-Tenancy Overview`.
+Recommended next architecture module: `ARCH-018-02 Tenant Domain and Isolation Model`.
