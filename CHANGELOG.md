@@ -6,6 +6,22 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.60.0] - ARCH-019 Plugin and Extension Overview
+
+### Added
+- Plugin and Extension Overview metadata covering business/information/application/technology scope, scope boundaries, ecosystem stakeholders, ecosystem benefits, common failure modes, architecture goals, non-goals, foundational invariants, extension categories, ecosystem roles, control-plane and runtime-plane elements, capability map areas, trust model signals, capability grant fields, extension-point questions, target-state runtime steps and characteristics, adoption phases, architecture risks, success measures (ecosystem, safety, reliability, developer, governance), architecture deliverables, and key decisions.
+- Immutable profile validation requiring stable accountable extension identity, immutable verifiable packages, owned extension points, request-only manifests, explicit installation scope, current-policy runtime actions, isolated storage, no cross-tenant grant leakage, contained failure, disposition-complete uninstall, rapidly suspendable high-risk extensions, evidenced material actions, host-mediated access, domain-retained authority, distinct lifecycle states, uniform MCP controls, and evidence-governed growth while rejecting direct database access, ambient credentials, allow-by-default networking, marketplace-as-authority, silent boundary crossing, declared code safety, signing-as-certification, tenant-weakened controls, automatic community production eligibility, and special AI-generated trust.
+- New `plugin-extension-framework` module: overview descriptor, contracts (including a dedicated `PluginExtensionValidationResult`), module exports, dependency-injection registration, implementation documentation, and focused unit tests.
+
+### Established
+- The XeniosAI extension ecosystem combines open contribution with closed, explicit authority: stable extension points, immutable packages, manifests, registries, publisher provenance, tenant installation, narrow capability grants, isolated hosts, SDKs, lifecycle controls, and continuous assurance allow the platform to grow beyond one team's roadmap without sacrificing tenant trust or domain integrity.
+- This begins ARCH-019 Plugin & Extension Framework (module 1 of 10).
+
+Status: Plugin & Extension Framework
+Version: 0.60.0
+
+---
+
 ## [0.59.0] - ARCH-018 Future Multi-Tenancy Evolution
 
 ### Added

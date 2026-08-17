@@ -97,3 +97,4 @@ The repository currently includes automated unit tests for:
 - `ARCH-018-08 Resource Governance, Metering, and Billing` in `tests/multi-tenancy/`
 - `ARCH-018-09 Tenant Operations, Governance, and Assurance` in `tests/multi-tenancy/`
 - `ARCH-018-10 Future Multi-Tenancy Evolution` in `tests/multi-tenancy/`
+- `ARCH-019-01 Plugin and Extension Overview` in `tests/plugin-extension-framework/`
