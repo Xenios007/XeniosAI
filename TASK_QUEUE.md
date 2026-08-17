@@ -171,7 +171,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-019-09 Marketplace Governance and Assurance`
 - Completed: `ARCH-019-10 Future Extension Ecosystem Evolution`
 - Completed: `ARCH-020-01 Reference Implementation Overview`
-- Next: `ARCH-020-02 Reference Implementation Methodology`
+- Completed: `ARCH-020-02 Reference Implementation Methodology`
+- Next: `ARCH-020-03 Single-Property Hospitality Reference`
 
 ## Notes
 

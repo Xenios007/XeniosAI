@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.71.0] - ARCH-020 Reference Implementation Methodology
+
+### Added
+- Reference Implementation Methodology metadata covering method principles, scenario selection criteria, scenario definition fields, architecture traceability mappings, conformance profile elements, implementation lifecycle steps, evidence package items, variation point categories, divergence classifications, review gate areas, maintenance monitoring areas, retirement elements, and architectural rules.
+- Immutable profile validation requiring bidirectional architecture-to-example traceability, quality-preserving variation substitution, a repeatable proposal-to-release scenario lifecycle, profile-based evidence-backed conformance, mandatory material-artifact traceability, explicit test-preserving variation, in-scope maintenance and retirement, and governance-driven (not drift-driven) architecture change, while rejecting scenario duplication without a meaningful variant, unclassified divergence presented as conformant, and stale references silently presented as current.
+- Reference Implementation Methodology descriptor, contract, module exports, dependency-injection registration, implementation documentation, and focused unit tests.
+
+### Established
+- The methodology makes reference implementations reproducible architecture evidence rather than informal sample code: scenarios are selected by relevance and risk, traced bidirectionally to architecture, bound to a conformance profile, carried through a repeatable lifecycle with a full evidence package, and explicitly governed through variation, divergence classification, review gates, maintenance, and retirement.
+
+Status: Reference Implementations
+Version: 0.71.0
+
+---
+
 ## [0.70.0] - ARCH-020 Reference Implementation Overview
 
 ### Added
