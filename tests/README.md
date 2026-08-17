@@ -94,3 +94,4 @@ The repository currently includes automated unit tests for:
 - `ARCH-018-05 Data Isolation, Residency, and Portability` in `tests/multi-tenancy/`
 - `ARCH-018-06 Configuration, Entitlements, and Customization` in `tests/multi-tenancy/`
 - `ARCH-018-07 Tenant-Aware Runtime and Integration` in `tests/multi-tenancy/`
+- `ARCH-018-08 Resource Governance, Metering, and Billing` in `tests/multi-tenancy/`

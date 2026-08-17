@@ -19,4 +19,7 @@ export { ConfigurationEntitlementsCustomizationDescriptor } from './configuratio
 export * from './tenant-aware-runtime-integration-constants.js';
 export { TenantAwareRuntimeIntegrationProfile } from './contracts/tenant-aware-runtime-integration-profile.js';
 export { TenantAwareRuntimeIntegrationDescriptor } from './tenant-aware-runtime-integration/tenant-aware-runtime-integration-descriptor.js';
+export * from './resource-governance-metering-billing-constants.js';
+export { ResourceGovernanceMeteringBillingProfile } from './contracts/resource-governance-metering-billing-profile.js';
+export { ResourceGovernanceMeteringBillingDescriptor } from './resource-governance-metering-billing/resource-governance-metering-billing-descriptor.js';
 export { addMultiTenancy } from './service-registration.js';

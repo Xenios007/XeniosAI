@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.57.0] - ARCH-018 Resource Governance, Metering, and Billing
+
+### Added
+- Resource Governance, Metering, and Billing metadata covering governance principles, responsibility capabilities, governed resource families, resource scope fields, quota fields, limit types, quota hierarchy levels, admission control factors, fair scheduling mechanisms, noisy-neighbor protection targets, workload classes, graceful degradation actions, capacity reservation fields, dedicated resource requirements, usage record fields, measurement semantics fields, collection architecture steps, usage correction fields, tenant usage view items, usage notification fields, AI/agent budget areas, workflow resource controls, integration resource controls, export/migration governance declarations, capacity planning inputs, resource anomaly indicators, evidence items, reconciliation comparisons, failure behaviors, testing areas, and architectural rules.
+- Immutable profile validation requiring tenant-scoped governance, no-exhaustion protection, distinct commercial decisions, attributable reconcilable usage, stable limit failure behavior, protected safety capacity, sync/async coverage, governed dedicated capacity, protected usage data, entitlement-gated commercial change, history-preserving adjustments, immutable versioned usage, and cross-boundary reconciliation while rejecting safety-control overrides, edge-only quota storage, unentitled critical relabeling, cross-tenant degradation substitution, duplicate chargeable retries, payment-gated access checks, agent budget bypass, shared retry-capacity consumption, exit-right denial, and cross-tenant anomaly exposure or estimated billing.
+- Resource Governance, Metering, and Billing descriptor, module exports, dependency-injection registration, implementation documentation, and focused unit tests.
+
+### Established
+- XeniosAI governs resources so that shared scale does not create unpredictable service or cross-tenant interference: tenant-aware admission, fair scheduling, quotas, reservations, budgets, and degradation protect runtime capacity, while immutable usage, explicit measurement semantics, reconciliation, and clear commercial boundaries provide trustworthy metering and billing inputs without confusing payment state with security authority.
+
+Status: Multi-Tenancy Architecture
+Version: 0.57.0
+
+---
+
 ## [0.56.0] - ARCH-018 Tenant-Aware Runtime and Integration
 
 ### Added
