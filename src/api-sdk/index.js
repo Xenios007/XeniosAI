@@ -23,4 +23,7 @@ export { ApiSecurityAccessIsolationDescriptor } from './security-access-isolatio
 export { SdkArchitectureDistributionDescriptor } from './sdk-architecture-distribution/sdk-architecture-distribution-descriptor.js';
 export { DeveloperExperienceConformanceDescriptor } from './developer-experience-conformance/developer-experience-conformance-descriptor.js';
 export { GovernanceAssuranceDescriptor } from './governance-assurance/governance-assurance-descriptor.js';
+export * from './operations-observability-performance-constants.js';
+export { OperationsObservabilityPerformanceProfile } from './contracts/operations-observability-performance-profile.js';
+export { OperationsObservabilityPerformanceDescriptor } from './operations-observability-performance/operations-observability-performance-descriptor.js';
 export { addApiSdk } from './service-registration.js';

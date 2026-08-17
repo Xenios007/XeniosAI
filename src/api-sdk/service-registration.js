@@ -7,6 +7,7 @@ import { ApiSecurityAccessIsolationDescriptor } from './security-access-isolatio
 import { SdkArchitectureDistributionDescriptor } from './sdk-architecture-distribution/sdk-architecture-distribution-descriptor.js';
 import { DeveloperExperienceConformanceDescriptor } from './developer-experience-conformance/developer-experience-conformance-descriptor.js';
 import { GovernanceAssuranceDescriptor } from './governance-assurance/governance-assurance-descriptor.js';
+import { OperationsObservabilityPerformanceDescriptor } from './operations-observability-performance/operations-observability-performance-descriptor.js';
 
 export function addApiSdk(services) {
   if (!(services instanceof ServiceCollection)) {
@@ -20,5 +21,6 @@ export function addApiSdk(services) {
   services.registerSingleton('SdkArchitectureDistributionDescriptor', () => new SdkArchitectureDistributionDescriptor());
   services.registerSingleton('DeveloperExperienceConformanceDescriptor', () => new DeveloperExperienceConformanceDescriptor());
   services.registerSingleton('GovernanceAssuranceDescriptor', () => new GovernanceAssuranceDescriptor());
+  services.registerSingleton('OperationsObservabilityPerformanceDescriptor', () => new OperationsObservabilityPerformanceDescriptor());
   return services;
 }

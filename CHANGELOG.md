@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.48.0] - ARCH-017 API and SDK Operations, Observability, and Performance
+
+### Added
+- API and SDK Operations, Observability, and Performance metadata covering operational ownership, lifecycle and readiness, consumer-outcome health, observability signals and safe context, operational controls, capacity and fairness, performance areas, architectural rules, and boundaries.
+- Immutable operations profile validation rejecting endpoint-only health, unrestricted telemetry, unbounded retries, queue-depth-only impact, deployment-only health, provider-only integration health, technology coupling, and replacement of related enterprise architecture authorities.
+- Operations descriptor, module exports, dependency-injection registration, implementation documentation, and focused unit tests.
+
+### Established
+- API and SDK operational health is consumer-centered, privacy-safe, tenant-aware, bounded, technology-neutral, and incomplete until recovery evidence verifies asynchronous work, capacity, telemetry, and consumers.
+
+Status: API & SDK Architecture
+Version: 0.48.0
+
+---
+
 ## [0.47.0] - ARCH-017 API and SDK Governance and Assurance
 
 ### Added
