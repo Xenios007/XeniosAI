@@ -10,4 +10,7 @@ export { TenantLifecycleProvisioningDescriptor } from './tenant-lifecycle-provis
 export * from './identity-access-delegated-administration-constants.js';
 export { IdentityAccessDelegatedAdministrationProfile } from './contracts/identity-access-delegated-administration-profile.js';
 export { IdentityAccessDelegatedAdministrationDescriptor } from './identity-access-delegated-administration/identity-access-delegated-administration-descriptor.js';
+export * from './data-isolation-residency-portability-constants.js';
+export { DataIsolationResidencyPortabilityProfile } from './contracts/data-isolation-residency-portability-profile.js';
+export { DataIsolationResidencyPortabilityDescriptor } from './data-isolation-residency-portability/data-isolation-residency-portability-descriptor.js';
 export { addMultiTenancy } from './service-registration.js';

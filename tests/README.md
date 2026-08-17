@@ -91,3 +91,4 @@ The repository currently includes automated unit tests for:
 - `ARCH-018-02 Tenant Domain and Isolation Model` in `tests/multi-tenancy/`
 - `ARCH-018-03 Tenant Lifecycle and Provisioning` in `tests/multi-tenancy/`
 - `ARCH-018-04 Identity, Access, and Delegated Administration` in `tests/multi-tenancy/`
+- `ARCH-018-05 Data Isolation, Residency, and Portability` in `tests/multi-tenancy/`

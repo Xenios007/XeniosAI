@@ -154,7 +154,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-018-02 Tenant Domain and Isolation Model`
 - Completed: `ARCH-018-03 Tenant Lifecycle and Provisioning`
 - Completed: `ARCH-018-04 Identity, Access, and Delegated Administration`
-- Next: `ARCH-018-05 Data Isolation, Residency, and Portability`
+- Completed: `ARCH-018-05 Data Isolation, Residency, and Portability`
+- Next: `ARCH-018-06 Configuration, Entitlements, and Customization`
 
 ## Notes
 

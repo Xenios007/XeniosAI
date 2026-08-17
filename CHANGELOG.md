@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.54.0] - ARCH-018 Data Isolation, Residency, and Portability
+
+### Added
+- Data Isolation, Residency, and Portability metadata covering data isolation principles, data scope, data ownership scopes, tenant ownership attribute rules, shared relational storage controls, partitioned and dedicated storage requirements, object and file storage controls, cache isolation preventions, search and index safeguards, knowledge and memory preventions, events and messaging controls, observability data controls, encryption key patterns, residency policy fields, sovereignty constraints, placement enforcement checks, data transfer requirements, retention metadata fields, legal hold controls, erasure propagation targets, backup isolation design elements, tenant restore steps, portability package contents, export architecture controls, migration architecture steps, data lineage questions, data operational controls, data testing and assurance requirements, data fail-closed conditions, contamination response actions, and architectural rules.
+- Immutable profile validation requiring explicit tenant ownership, provider-enforced ownership, derived-data isolation, tenant-aware shared-storage safeguards, separated placement and ownership, broad residency, complementary encryption, broad minimization, traceable retention and hold, derivative-covering erasure, governed portability, boundary-preserving restore and migration, attribute-retaining backups, exit-supporting lineage, quota-bound exports, and contract-bound cross-tenant transfer while rejecting URL-as-authorization, physical-isolation-as-authorization, key-separation-as-compensation, indefinite retention, silence-as-deletion-evidence, silent reassignment, name-removal-only de-identification, and relationship-inferred transfer.
+- Data Isolation, Residency, and Portability descriptor, module exports, dependency-injection registration, implementation documentation, and focused unit tests.
+
+### Established
+- XeniosAI treats tenant data isolation as an end-to-end information lifecycle responsibility: ownership is preserved across shared or dedicated stores, caches, messages, indexes, analytics, AI context, observability, backups, exports, and derivatives, while residency, retention, legal hold, erasure, portability, restore, and migration provide controlled lifecycle outcomes without compromising another tenant.
+
+Status: Multi-Tenancy Architecture
+Version: 0.54.0
+
+---
+
 ## [0.53.0] - ARCH-018 Identity, Access, and Delegated Administration
 
 ### Added
