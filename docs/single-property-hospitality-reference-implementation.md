@@ -1,0 +1,7 @@
+# ARCH-020-03 Single-Property Hospitality Reference
+
+`SinglePropertyHospitalityReferenceDescriptor` exposes immutable metadata for the Casa Lluvia scenario's actors, business capabilities, domain ownership mappings (capability to owning service), request-flow steps, configurable values, availability-model dimensions, pricing-model output fields, reservation-workflow states and concerns, data/privacy controls, knowledge topic areas, business-fact query sources, observability signals, failure scenarios, acceptance criteria, and architectural rules.
+
+Profile validation requires AI to be limited to collecting missing pricing inputs and explaining results, the same inputs to produce the same authoritative rate, a booked interval to be unable to be confirmed twice, occupancy policy to be enforced by a business service, AI output to be unable to change reservation state directly, guest data to be absent from logs and synthetic fixtures, and failure and recovery to be observable. It rejects configuration bypassing occupancy/security/privacy/authorization/platform controls, the integration feed updating the availability repository directly, AI calculating or inventing the total, and commands lacking tenant/property scope or required idempotency.
+
+The module demonstrates a complete single-property guest journey — inquiry, availability, pricing, reservation, guest authorization, confirmation, and add-ons — while preserving the service, AI, workflow, data, security, and operational boundaries required for later multi-property scale.

@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.72.0] - ARCH-020 Single-Property Hospitality Reference
+
+### Added
+- Single-Property Hospitality Reference (Casa Lluvia) metadata covering scenario actors, business capabilities, domain ownership mappings, request-flow steps, configurable values, availability-model dimensions, pricing-model output fields, reservation-workflow states and concerns, data/privacy controls, knowledge topic areas, business-fact query sources, observability signals, failure scenarios, acceptance criteria, and architectural rules.
+- Immutable profile validation requiring AI to be limited to collecting inputs and explaining pricing (never computing it), rate determinism, non-double-confirmation of booked intervals, service-enforced occupancy policy, AI unable to change reservation state directly, guest-data exclusion from logs and fixtures, and observable failure/recovery, while rejecting control-bypassing configuration, direct availability-repository writes from the integration feed, AI-invented totals, and under-scoped or non-idempotent commands.
+- Single-Property Hospitality Reference descriptor, contract, module exports, dependency-injection registration, implementation documentation, and focused unit tests.
+
+### Established
+- The Casa Lluvia reference demonstrates a complete single-property guest journey — inquiry, availability, pricing, reservation, guest authorization, confirmation, and add-ons — while preserving the service, AI, workflow, data, security, and operational boundaries required for later multi-property scale.
+
+Status: Reference Implementations
+Version: 0.72.0
+
+---
+
 ## [0.71.0] - ARCH-020 Reference Implementation Methodology
 
 ### Added

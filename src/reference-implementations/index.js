@@ -5,4 +5,7 @@ export { ReferenceImplementationOverviewDescriptor } from './overview/reference-
 export * from './methodology-constants.js';
 export { ReferenceImplementationMethodologyProfile } from './contracts/reference-implementation-methodology-profile.js';
 export { ReferenceImplementationMethodologyDescriptor } from './methodology/reference-implementation-methodology-descriptor.js';
+export * from './single-property-hospitality-reference-constants.js';
+export { SinglePropertyHospitalityReferenceProfile } from './contracts/single-property-hospitality-reference-profile.js';
+export { SinglePropertyHospitalityReferenceDescriptor } from './single-property-hospitality-reference/single-property-hospitality-reference-descriptor.js';
 export { addReferenceImplementations } from './service-registration.js';
