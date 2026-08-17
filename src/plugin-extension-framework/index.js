@@ -11,4 +11,7 @@ export { PackageManifestRegistryProvenanceDescriptor } from './package-manifest-
 export * from './extension-lifecycle-distribution-compatibility-constants.js';
 export { ExtensionLifecycleDistributionCompatibilityProfile } from './contracts/extension-lifecycle-distribution-compatibility-profile.js';
 export { ExtensionLifecycleDistributionCompatibilityDescriptor } from './extension-lifecycle-distribution-compatibility/extension-lifecycle-distribution-compatibility-descriptor.js';
+export * from './capability-security-isolation-constants.js';
+export { CapabilitySecurityIsolationProfile } from './contracts/capability-security-isolation-profile.js';
+export { CapabilitySecurityIsolationDescriptor } from './capability-security-isolation/capability-security-isolation-descriptor.js';
 export { addPluginExtensionFramework } from './service-registration.js';

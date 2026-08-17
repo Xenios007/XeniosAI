@@ -3,6 +3,7 @@ import { PluginExtensionOverviewDescriptor } from './overview/plugin-extension-o
 import { ExtensionDomainClassificationDescriptor } from './extension-domain-classification/extension-domain-classification-descriptor.js';
 import { PackageManifestRegistryProvenanceDescriptor } from './package-manifest-registry-provenance/package-manifest-registry-provenance-descriptor.js';
 import { ExtensionLifecycleDistributionCompatibilityDescriptor } from './extension-lifecycle-distribution-compatibility/extension-lifecycle-distribution-compatibility-descriptor.js';
+import { CapabilitySecurityIsolationDescriptor } from './capability-security-isolation/capability-security-isolation-descriptor.js';
 
 export function addPluginExtensionFramework(services) {
   if (!(services instanceof ServiceCollection)) throw new Error('addPluginExtensionFramework expects an instance of ServiceCollection.');
@@ -10,5 +11,6 @@ export function addPluginExtensionFramework(services) {
   services.registerSingleton('ExtensionDomainClassificationDescriptor', () => new ExtensionDomainClassificationDescriptor());
   services.registerSingleton('PackageManifestRegistryProvenanceDescriptor', () => new PackageManifestRegistryProvenanceDescriptor());
   services.registerSingleton('ExtensionLifecycleDistributionCompatibilityDescriptor', () => new ExtensionLifecycleDistributionCompatibilityDescriptor());
+  services.registerSingleton('CapabilitySecurityIsolationDescriptor', () => new CapabilitySecurityIsolationDescriptor());
   return services;
 }

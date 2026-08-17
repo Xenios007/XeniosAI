@@ -164,7 +164,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-019-02 Extension Domain and Classification`
 - Completed: `ARCH-019-03 Package, Manifest, Registry, and Provenance`
 - Completed: `ARCH-019-04 Extension Lifecycle, Distribution, and Compatibility`
-- Next: `ARCH-019-05 Capability Security and Isolation`
+- Completed: `ARCH-019-05 Capability Security and Isolation`
+- Next: `ARCH-019-06 Runtime Hosts and Extension Points`
 
 ## Notes
 

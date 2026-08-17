@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.64.0] - ARCH-019 Capability Security and Isolation
+
+### Added
+- Capability Security and Isolation metadata covering security principles, threat model items, capability grant fields, grant derivation layers, capability granularity examples, runtime identity fields, tenant isolation dimensions, host isolation classes, host security controls, provider enforcement checks, data access prohibitions, extension storage policy fields, secret mediation controls, network security controls, inbound connectivity controls, event security fields, workflow/agent security prohibitions, UI extension security controls, MCP security verification items, supply-chain admission checks, resource containment limits, failure containment controls, revocation targets, incident response steps, security evidence types, security testing areas, and architectural rules.
+- Immutable profile validation requiring untrusted-by-default extensions, enforceable capability, mandatory scope, defense in depth, deny-by-default egress, bounded data use, installation-scoped isolation, non-expanding delegation, rapid revocation, leak-free evidence, non-broadening derivation, provider-required authorization, minimized responses, revalidated redirects, grant-filtered tool discovery, advisory-driven denial, and material cross-tenant treatment while rejecting ambient access, host-policy tampering, unauthorized publisher storage access, arbitrary listeners, forged event scope, policy-altering MCP descriptions, authoritative-transaction extension failure, and UI credential-prompt rendering.
+- Capability Security and Isolation descriptor, contract, module exports, dependency-injection registration, implementation documentation, and focused unit tests.
+
+### Established
+- The capability security model assumes extensions can be compromised or malicious and limits what any package can reach, retain, transfer, or consume: explicit grants, trusted tenant context, isolated hosts, provider-side authorization, mediated secrets, deny-by-default networks, bounded storage and resources, rapid revocation, and adversarial testing preserve XeniosAI trust even as the extension ecosystem grows.
+
+Status: Plugin & Extension Framework
+Version: 0.64.0
+
+---
+
 ## [0.63.0] - ARCH-019 Extension Lifecycle, Distribution, and Compatibility
 
 ### Added

@@ -101,3 +101,4 @@ The repository currently includes automated unit tests for:
 - `ARCH-019-02 Extension Domain and Classification` in `tests/plugin-extension-framework/`
 - `ARCH-019-03 Package, Manifest, Registry, and Provenance` in `tests/plugin-extension-framework/`
 - `ARCH-019-04 Extension Lifecycle, Distribution, and Compatibility` in `tests/plugin-extension-framework/`
+- `ARCH-019-05 Capability Security and Isolation` in `tests/plugin-extension-framework/`
