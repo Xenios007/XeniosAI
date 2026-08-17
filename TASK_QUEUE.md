@@ -141,7 +141,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-016-09 Knowledge & Memory Operations, Observability, and Performance`
 - Completed: `ARCH-016-10 Future Knowledge & Memory Evolution`
 - Completed: `ARCH-017-01 API & SDK Overview`
-- Next: `ARCH-017-02 API Product and Contract Model`
+- Completed: `ARCH-017-02 API Product and Contract Model`
+- Next: `ARCH-017-03 API Design and Interaction Patterns`
 
 ## Notes
 

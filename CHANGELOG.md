@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.41.0] - ARCH-017 API Product and Contract Model
+
+### Added
+- API Product and Contract Model metadata covering canonical product model elements, API domain records, product records, product scope, surfaces, provider relationships, contract records, contract-source controls, authority order, contract packages, operation classes and records, messages, fields, field presence and mutability, identifiers, tenant/property declarations, security/privacy declarations, temporal and consistency semantics, limits, service commitments, dependencies, consumer profiles, views, composition, anti-corruption boundaries, derived artifacts, SDK declarations, documentation, examples, registry authority, lifecycle states, contract quality, validation, review, approval, traceability, evidence, product model operations, non-negotiable rules, and boundaries.
+- Immutable API Product and Contract Model profile validating product ownership, stable identities, authoritative approved contract source, explicit operation/message/field semantics, tenant/property and security/privacy declarations, traceable derived artifacts, safe examples, registry/catalog authority limits, immutable released behavior, semantic review, version-aligned evidence, and authorized metadata access.
+- API Product and Contract Model descriptor, module exports, dependency-injection registration, implementation documentation, and focused unit tests.
+
+### Established
+- API products are governed capability products, not endpoint collections; contracts are versioned provider commitments; approved contract source is authoritative; and SDKs, documentation, examples, mocks, tests, gateway configurations, and catalog entries remain derived traceable artifacts that do not grant runtime authority.
+
+Status: API & SDK Architecture
+Version: 0.41.0
+
+---
+
 ## [0.40.0] - ARCH-017 API & SDK Overview
 
 ### Added

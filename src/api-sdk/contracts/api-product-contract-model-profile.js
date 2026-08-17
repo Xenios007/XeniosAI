@@ -1,0 +1,77 @@
+export class ApiProductContractModelProfile {
+  constructor({
+    profileName,
+    objectives = [], modelElements = [], domainRecordFields = [], productRecordFields = [],
+    productScopeFields = [], surfaceTypes = [], providerRelationshipFields = [], contractRecordFields = [],
+    contractSourceRequirements = [], contractAuthorityOrder = [], contractPackageContents = [],
+    operationClasses = [], operationRecordFields = [], messageTypes = [], messageRecordFields = [],
+    fieldRecordFields = [], fieldPresenceStates = [], fieldMutabilityClasses = [],
+    identifierSemantics = [], tenantPropertyDeclarationFields = [], securityPrivacyDeclarationFields = [],
+    temporalConsistencyFields = [], limitTypes = [], serviceCommitmentTypes = [], dependencyDeclarationFields = [],
+    consumerProfileFields = [], contractViewTypes = [], compositionRequirements = [],
+    antiCorruptionTranslations = [], derivedArtifactTypes = [], derivedArtifactRequirements = [],
+    sdkDeclarationFields = [], documentationSetFields = [], exampleGovernanceRequirements = [],
+    registryAuthorities = [], registryBoundaryExclusions = [], lifecycleStates = [], qualityDimensions = [],
+    validationChecks = [], reviewParticipants = [], approvalAssertions = [], traceabilityLinks = [],
+    evidenceTypes = [], productModelOperations = [], architecturalRules = [], architectureBoundaries = [],
+    productManagedAsProduct = true, contractVersionedCommitment = true,
+    ownershipExplicit = true, stableProductIdentity = true, coherentProductScope = true,
+    surfaceRestrictionsNarrowAuthority = true, providerAuthorityPreserved = true,
+    approvedContractSourceAuthoritative = true, contractSourceControlled = true,
+    operationIdentityStable = true, semanticsExplicit = true, messagesVersioned = true,
+    fieldsSemanticallyDefined = true, fieldPresenceDistinct = true, identifiersNotAuthority = true,
+    tenantPropertyExplicit = true, securityPrivacyExplicit = true, limitsExplicit = true,
+    dependenciesDeclared = true, consumerProfilesGovernanceOnly = true, compositionPreservesBoundaries = true,
+    derivedArtifactsTraceable = true, sdkNotAuthoritative = true, documentationRevisionAligned = true,
+    examplesSafe = true, registryDoesNotGrantAccess = true, contractBehaviorImmutable = true,
+    semanticReviewRequired = true, approvalDoesNotGrantConsumerAccess = true,
+    evidenceVersionAligned = true, productMetadataAuthorized = true, privacyBehaviorExplicit = true,
+    endpointOnlyProduct = false, productOwnsDomainRules = false, arbitraryEndpointCollection = false,
+    selfOwnedProduct = false, runtimeAdmissionUsesUnverifiedMetadata = false,
+    surfaceTransfersOwnership = false, aggregationObscuresProvider = false,
+    generatedArtifactReplacesSource = false, observedBehaviorBecomesTruth = false,
+    routeRenameCreatesOperation = false, methodNameOnlySemantics = false, fieldNameOnlyDefinition = false,
+    conflateAbsentNullEmpty = false, identifierProofOfEligibility = false, sharedTypesWithoutSharedMeaning = false,
+    registryGrantsRuntimeAccess = false, sdkAuthoritativeOverContract = false, examplesContainSensitiveData = false,
+    syntaxValidationProvesCorrectness = false, approvalGrantsEveryConsumer = false,
+    silentContractMutation = false, selectsProtocolSchemaGateway = false, definesInteractionPatterns = false,
+    definesLifecycleVersioning = false, definesSecurityAccess = false, definesSdkArchitecture = false,
+    replacesDomainServices = false, replacesTenantArchitecture = false
+  }) {
+    this.profileName = profileName;
+    for (const [key, value] of Object.entries({
+      objectives, modelElements, domainRecordFields, productRecordFields, productScopeFields,
+      surfaceTypes, providerRelationshipFields, contractRecordFields, contractSourceRequirements,
+      contractAuthorityOrder, contractPackageContents, operationClasses, operationRecordFields,
+      messageTypes, messageRecordFields, fieldRecordFields, fieldPresenceStates, fieldMutabilityClasses,
+      identifierSemantics, tenantPropertyDeclarationFields, securityPrivacyDeclarationFields,
+      temporalConsistencyFields, limitTypes, serviceCommitmentTypes, dependencyDeclarationFields,
+      consumerProfileFields, contractViewTypes, compositionRequirements, antiCorruptionTranslations,
+      derivedArtifactTypes, derivedArtifactRequirements, sdkDeclarationFields, documentationSetFields,
+      exampleGovernanceRequirements, registryAuthorities, registryBoundaryExclusions, lifecycleStates,
+      qualityDimensions, validationChecks, reviewParticipants, approvalAssertions, traceabilityLinks,
+      evidenceTypes, productModelOperations, architecturalRules, architectureBoundaries
+    })) this[key] = Object.freeze([...value]);
+    for (const [key, value] of Object.entries({
+      productManagedAsProduct, contractVersionedCommitment, ownershipExplicit, stableProductIdentity,
+      coherentProductScope, surfaceRestrictionsNarrowAuthority, providerAuthorityPreserved,
+      approvedContractSourceAuthoritative, contractSourceControlled, operationIdentityStable,
+      semanticsExplicit, messagesVersioned, fieldsSemanticallyDefined, fieldPresenceDistinct,
+      identifiersNotAuthority, tenantPropertyExplicit, securityPrivacyExplicit, limitsExplicit,
+      dependenciesDeclared, consumerProfilesGovernanceOnly, compositionPreservesBoundaries,
+      derivedArtifactsTraceable, sdkNotAuthoritative, documentationRevisionAligned, examplesSafe,
+      registryDoesNotGrantAccess, contractBehaviorImmutable, semanticReviewRequired,
+      approvalDoesNotGrantConsumerAccess, evidenceVersionAligned, productMetadataAuthorized,
+      privacyBehaviorExplicit, endpointOnlyProduct, productOwnsDomainRules, arbitraryEndpointCollection,
+      selfOwnedProduct, runtimeAdmissionUsesUnverifiedMetadata, surfaceTransfersOwnership,
+      aggregationObscuresProvider, generatedArtifactReplacesSource, observedBehaviorBecomesTruth,
+      routeRenameCreatesOperation, methodNameOnlySemantics, fieldNameOnlyDefinition,
+      conflateAbsentNullEmpty, identifierProofOfEligibility, sharedTypesWithoutSharedMeaning,
+      registryGrantsRuntimeAccess, sdkAuthoritativeOverContract, examplesContainSensitiveData,
+      syntaxValidationProvesCorrectness, approvalGrantsEveryConsumer, silentContractMutation,
+      selectsProtocolSchemaGateway, definesInteractionPatterns, definesLifecycleVersioning,
+      definesSecurityAccess, definesSdkArchitecture, replacesDomainServices, replacesTenantArchitecture
+    })) this[key] = Boolean(value);
+    Object.freeze(this);
+  }
+}
