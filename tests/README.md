@@ -83,3 +83,4 @@ The repository currently includes automated unit tests for:
 - `ARCH-017-04 API Lifecycle, Versioning, and Compatibility` in `tests/api-sdk/`
 - `ARCH-017-05 API Security, Access, and Isolation` in `tests/api-sdk/`
 - `ARCH-017-06 SDK Architecture and Distribution` in `tests/api-sdk/`
+- `ARCH-017-07 Developer Experience, Testing, and Conformance` in `tests/api-sdk/`

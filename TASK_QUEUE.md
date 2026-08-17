@@ -146,7 +146,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-017-04 API Lifecycle, Versioning, and Compatibility`
 - Completed: `ARCH-017-05 API Security, Access, and Isolation`
 - Completed: `ARCH-017-06 SDK Architecture and Distribution`
-- Next: `ARCH-017-07 Developer Experience, Testing, and Conformance`
+- Completed: `ARCH-017-07 Developer Experience, Testing, and Conformance`
+- Next: `ARCH-017-08 API & SDK Governance and Assurance`
 
 ## Notes
 

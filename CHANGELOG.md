@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.46.0] - ARCH-017 Developer Experience, Testing, and Conformance
+
+### Added
+- Developer Experience, Testing, and Conformance metadata covering developer experience objectives, principles, definitions, journey steps, personas, discovery, access onboarding, documentation, examples, local development, assurance targets, risk factors, test plans, contract validation, test coverage, environments, data controls, conformance decisions, result classes, pipeline stages, quality gates, drift targets, evidence, governance decisions, non-negotiable rules, and boundaries.
+- Immutable Developer Experience, Testing, and Conformance profile validating end-to-end developer journeys, executable contract assurance inputs, behavior-over-syntax testing, provider-owned conformance evidence, first-class negative paths, demonstrated tenant/property isolation, governed test environments and data, versioned conformance, least-privilege onboarding, versioned documentation, safe examples, controlled exploration, local non-production development, risk-based testing without skipping non-negotiables, representative SDK provider tests, governed quality gate overrides, scoped conformance claims, bounded production verification, drift issue ownership, protected evidence, and reviewed AI-generated tests.
+- Developer Experience, Testing, and Conformance descriptor, module exports, dependency-injection registration, implementation documentation, and focused unit tests.
+
+### Established
+- API and SDK assurance is not schema-only or happy-path-only: conformance is versioned, evidence-backed, scoped to a subject/profile/suite/environment, and invalidated by material changes in subject, contract, policy, dependency, environment, or suite assumptions.
+
+Status: API & SDK Architecture
+Version: 0.46.0
+
+---
+
 ## [0.45.0] - ARCH-017 SDK Architecture and Distribution
 
 ### Added
