@@ -6,6 +6,23 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.70.0] - ARCH-020 Reference Implementation Overview
+
+### Added
+- New `reference-implementations` module bootstrapping the ARCH-020 phase: shared validation-result contract, module exports, and dependency-injection registration, following the same pattern established for prior architecture phases.
+- Reference Implementation Overview metadata covering reference mission questions, the three portfolio reference tiers (single-property baseline, enterprise baseline, cross-cutting pattern references), stakeholder needs, target-state characteristics, quality attributes, adoption-path steps, success measures, per-reference declaration fields, and architectural rules.
+- Immutable profile validation requiring observable and reproducible reference evidence, a portfolio that begins with Casa Lluvia and expands to enterprise operation, outcome-and-conformance-measured reference value, cross-cutting requirements in every complete scenario, pattern reuse over undocumented accidents, named reference maintenance ownership, and complete per-reference declarations, while rejecting whole-solution copying, an unversioned or unmaintained portfolio, undisclosed limitations, and ungoverned retirement.
+- Reference Implementation Overview descriptor, contract, module exports, dependency-injection registration, implementation documentation, and focused unit tests.
+
+### Established
+- The reference implementation portfolio is a controlled bridge between XeniosAI architecture and implementation: it starts with a real single-property operating model, demonstrates enterprise growth, and supplies reusable, testable, traceable patterns across the platform.
+- This opens the ARCH-020 Reference Implementations phase.
+
+Status: Reference Implementations
+Version: 0.70.0
+
+---
+
 ## [0.69.0] - ARCH-019 Future Extension Ecosystem Evolution
 
 ### Added

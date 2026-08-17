@@ -170,7 +170,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-019-08 Tenant Installation, Configuration, and Operations`
 - Completed: `ARCH-019-09 Marketplace Governance and Assurance`
 - Completed: `ARCH-019-10 Future Extension Ecosystem Evolution`
-- Next: `ARCH-020-01 Reference Implementation Overview`
+- Completed: `ARCH-020-01 Reference Implementation Overview`
+- Next: `ARCH-020-02 Reference Implementation Methodology`
 
 ## Notes
 
