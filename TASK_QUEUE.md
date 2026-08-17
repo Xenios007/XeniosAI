@@ -168,7 +168,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-019-06 Runtime Hosts and Extension Points`
 - Completed: `ARCH-019-07 Plugin SDK, Developer Experience, and Testing`
 - Completed: `ARCH-019-08 Tenant Installation, Configuration, and Operations`
-- Next: `ARCH-019-09 Marketplace Governance and Assurance`
+- Completed: `ARCH-019-09 Marketplace Governance and Assurance`
+- Next: `ARCH-019-10 Future Extension Ecosystem Evolution`
 
 ## Notes
 

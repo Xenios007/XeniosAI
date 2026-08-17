@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.68.0] - ARCH-019 Marketplace Governance and Assurance
+
+### Added
+- Marketplace Governance and Assurance metadata covering governance principles, governance scope areas, decision rights, marketplace responsibilities and boundaries, the listing model, publisher onboarding and obligations, review-profile types, the certification model, trust-signal types, review/rating controls, ranking and recommendation factors, the commercial model boundary, usage/billing assurance trace fields, vulnerability-disclosure elements, advisory action options, incident-governance roles, suspension/appeal record fields, publisher-termination addresses, audit-evidence types, control objectives, assurance activities, exception-record fields, finding fields, ecosystem metrics, governance-forum topics, and architectural rules.
+- Immutable profile validation requiring registry-status-only marketplace consumption, traceable listing claims, evidence-preserving billing adjustments, consent-renewing processor changes, protected vulnerability reporting, non-automatic appeal restoration, material-harm emergency action, tenant-safety-first termination, immediate action on critical or repeated findings, governed-interface-only commercial entitlement, non-silent exception trust labeling, and risk-contextualized metrics, while rejecting certification-implying verification, version-unbounded certification, ambiguous trust labels, unaggregated installation-base disclosure, ineligible reviews, tenant-revealing ranking logic, policy-overriding paid placement, security-authoritative payment status, marketplace-terms-only data-use broadening, context-blind advisory action, decision-obscuring forums, and security-influencing commercial decisions.
+- Marketplace Governance and Assurance descriptor, contract, module exports, dependency-injection registration, implementation documentation, and focused unit tests.
+
+### Established
+- Marketplace governance creates a trustworthy ecosystem without turning popularity, payment, publisher reputation, or certification into unrestricted authority: clear decision rights, scoped trust signals, risk-based review, commercial separation, disclosure, vulnerability response, evidence, assurance, and expiring exceptions keep marketplace growth aligned with tenant choice, platform safety, and accountable publisher behavior.
+
+Status: Plugin & Extension Framework
+Version: 0.68.0
+
+---
+
 ## [0.67.0] - ARCH-019 Tenant Installation, Configuration, and Operations
 
 ### Added

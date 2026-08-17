@@ -23,4 +23,7 @@ export { PluginSdkDeveloperExperienceAndTestingDescriptor } from './plugin-sdk-d
 export * from './tenant-installation-configuration-and-operations-constants.js';
 export { TenantInstallationConfigurationAndOperationsProfile } from './contracts/tenant-installation-configuration-and-operations-profile.js';
 export { TenantInstallationConfigurationAndOperationsDescriptor } from './tenant-installation-configuration-and-operations/tenant-installation-configuration-and-operations-descriptor.js';
+export * from './marketplace-governance-and-assurance-constants.js';
+export { MarketplaceGovernanceAndAssuranceProfile } from './contracts/marketplace-governance-and-assurance-profile.js';
+export { MarketplaceGovernanceAndAssuranceDescriptor } from './marketplace-governance-and-assurance/marketplace-governance-and-assurance-descriptor.js';
 export { addPluginExtensionFramework } from './service-registration.js';
