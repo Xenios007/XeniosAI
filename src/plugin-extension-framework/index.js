@@ -8,4 +8,7 @@ export { ExtensionDomainClassificationDescriptor } from './extension-domain-clas
 export * from './package-manifest-registry-provenance-constants.js';
 export { PackageManifestRegistryProvenanceProfile } from './contracts/package-manifest-registry-provenance-profile.js';
 export { PackageManifestRegistryProvenanceDescriptor } from './package-manifest-registry-provenance/package-manifest-registry-provenance-descriptor.js';
+export * from './extension-lifecycle-distribution-compatibility-constants.js';
+export { ExtensionLifecycleDistributionCompatibilityProfile } from './contracts/extension-lifecycle-distribution-compatibility-profile.js';
+export { ExtensionLifecycleDistributionCompatibilityDescriptor } from './extension-lifecycle-distribution-compatibility/extension-lifecycle-distribution-compatibility-descriptor.js';
 export { addPluginExtensionFramework } from './service-registration.js';

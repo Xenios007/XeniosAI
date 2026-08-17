@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.63.0] - ARCH-019 Extension Lifecycle, Distribution, and Compatibility
+
+### Added
+- Extension Lifecycle, Distribution, and Compatibility metadata covering lifecycle principles, package and installation lifecycle states, design/registration fields, build candidate outputs, validation/review coverage, certification fields, publication requirements, installation request review items, installation assessment factors, provisioning outputs, tenant-specific validation checks, compatibility dimensions and policy elements, update policies and assessment differences, staged rollout stages, data migration declarations, rollback accounting items, emergency security actions, deprecation fields, uninstall steps, lifecycle reconciliation comparisons, lifecycle evidence elements, and architectural rules.
+- Immutable profile validation requiring independent lifecycles, evidenced authorized transitions, pre-publication validation, exact-digest resolution, policy-respecting bounded updates, override-capable suspension, visible deprecation, complete uninstall, cross-capability reconciliation, authority-free registration, fresh resubmission digests, execution-time revalidation, renewed capability approval, non-mixing cohorts, and acknowledged uninstall while rejecting purchase-as-approval, listing-replaces-artifacts, silent listing-removal uninstall, breaking-compatibility auto-updates, cross-tenant migration reads, unrestricted publisher-disappearance ownership transfer, and syntactic-only compatibility.
+- Extension Lifecycle, Distribution, and Compatibility descriptor, contract, module exports, dependency-injection registration, implementation documentation, and focused unit tests.
+
+### Established
+- The extension lifecycle governs two related products — immutable package versions and tenant-scoped installations — through separate approval, publication, installation, activation, compatibility, update, suspension, and uninstall states, allowing XeniosAI to distribute innovation without losing control of tenant consent, runtime authority, operational safety, or data disposition.
+
+Status: Plugin & Extension Framework
+Version: 0.63.0
+
+---
+
 ## [0.62.0] - ARCH-019 Package, Manifest, Registry, and Provenance
 
 ### Added
