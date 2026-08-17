@@ -5,6 +5,7 @@ import { PackageManifestRegistryProvenanceDescriptor } from './package-manifest-
 import { ExtensionLifecycleDistributionCompatibilityDescriptor } from './extension-lifecycle-distribution-compatibility/extension-lifecycle-distribution-compatibility-descriptor.js';
 import { CapabilitySecurityIsolationDescriptor } from './capability-security-isolation/capability-security-isolation-descriptor.js';
 import { RuntimeHostsExtensionPointsDescriptor } from './runtime-hosts-extension-points/runtime-hosts-extension-points-descriptor.js';
+import { PluginSdkDeveloperExperienceAndTestingDescriptor } from './plugin-sdk-developer-experience-and-testing/plugin-sdk-developer-experience-and-testing-descriptor.js';
 
 export function addPluginExtensionFramework(services) {
   if (!(services instanceof ServiceCollection)) throw new Error('addPluginExtensionFramework expects an instance of ServiceCollection.');
@@ -14,5 +15,6 @@ export function addPluginExtensionFramework(services) {
   services.registerSingleton('ExtensionLifecycleDistributionCompatibilityDescriptor', () => new ExtensionLifecycleDistributionCompatibilityDescriptor());
   services.registerSingleton('CapabilitySecurityIsolationDescriptor', () => new CapabilitySecurityIsolationDescriptor());
   services.registerSingleton('RuntimeHostsExtensionPointsDescriptor', () => new RuntimeHostsExtensionPointsDescriptor());
+  services.registerSingleton('PluginSdkDeveloperExperienceAndTestingDescriptor', () => new PluginSdkDeveloperExperienceAndTestingDescriptor());
   return services;
 }

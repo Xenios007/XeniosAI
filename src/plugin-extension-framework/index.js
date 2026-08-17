@@ -17,4 +17,7 @@ export { CapabilitySecurityIsolationDescriptor } from './capability-security-iso
 export * from './runtime-hosts-extension-points-constants.js';
 export { RuntimeHostsExtensionPointsProfile } from './contracts/runtime-hosts-extension-points-profile.js';
 export { RuntimeHostsExtensionPointsDescriptor } from './runtime-hosts-extension-points/runtime-hosts-extension-points-descriptor.js';
+export * from './plugin-sdk-developer-experience-and-testing-constants.js';
+export { PluginSdkDeveloperExperienceAndTestingProfile } from './contracts/plugin-sdk-developer-experience-and-testing-profile.js';
+export { PluginSdkDeveloperExperienceAndTestingDescriptor } from './plugin-sdk-developer-experience-and-testing/plugin-sdk-developer-experience-and-testing-descriptor.js';
 export { addPluginExtensionFramework } from './service-registration.js';

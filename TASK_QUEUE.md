@@ -166,7 +166,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-019-04 Extension Lifecycle, Distribution, and Compatibility`
 - Completed: `ARCH-019-05 Capability Security and Isolation`
 - Completed: `ARCH-019-06 Runtime Hosts and Extension Points`
-- Next: `ARCH-019-07 Plugin SDK, Developer Experience, and Testing`
+- Completed: `ARCH-019-07 Plugin SDK, Developer Experience, and Testing`
+- Next: `ARCH-019-08 Tenant Installation, Configuration, and Operations`
 
 ## Notes
 

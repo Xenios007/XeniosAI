@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.66.0] - ARCH-019 Plugin SDK, Developer Experience, and Testing
+
+### Added
+- Plugin SDK, Developer Experience, and Testing metadata covering developer experience principles, Plugin SDK scope items, SDK layers, SDK prohibited behaviors, language SDK release declarations, SDK generation properties, developer portal capabilities, extension-point catalog fields, project template elements, local sandbox emulations, test tenant requirements, unit/contract/integration testing coverage, security testing requirements, failure testing scenarios, compatibility testing dimensions, uninstall testing requirements, conformance profile result fields, developer workflow steps, packaging and publishing tooling capabilities, documentation requirements, reference extension examples, developer observability elements, SDK lifecycle fields, and architectural rules.
+- Immutable profile validation requiring the paved road to remain faster than private shortcuts, canonical-contract traceability without hidden authority, host-mirroring local development, mandatory multi-tenant/security/failure/compatibility testing, exact-digest provenance-bearing build artifacts, submission/installation separation in publishing, complete lifecycle documentation, accountable feedback ownership, handwritten/generated code separation, isolated manual edits, hidden undocumented endpoints, minimal-capability deny-by-default templates, verified-only certification, credential-free publishing tooling, actionable failed-review remediation, and secret-redacted developer tooling output, while rejecting production-credentialed developer tools, ambient sandbox authority, single-tenant isolation claims, bundled credentials, capability-weakening language convenience, unapproved production-data copying, cross-publisher evidence access, private contract exceptions, certification-exempt old SDKs, identical-API-shape language parity, and lifecycle-guidance omission.
+- Plugin SDK, Developer Experience, and Testing descriptor, contract, module exports, dependency-injection registration, implementation documentation, and focused unit tests.
+
+### Established
+- The Plugin SDK and developer platform make safe extension development faster than private integration shortcuts: canonical contracts, secure templates, local sandboxes without ambient production authority, multi-tenant fixtures, conformance suites, deterministic packaging with provenance, separated publisher/installer/runtime identities, and mandatory uninstall and failure-path examples give publishers a productive path while host enforcement and domain authority remain intact.
+
+Status: Plugin & Extension Framework
+Version: 0.66.0
+
+---
+
 ## [0.65.0] - ARCH-019 Runtime Hosts and Extension Points
 
 ### Added
