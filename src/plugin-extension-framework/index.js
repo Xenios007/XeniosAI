@@ -26,4 +26,7 @@ export { TenantInstallationConfigurationAndOperationsDescriptor } from './tenant
 export * from './marketplace-governance-and-assurance-constants.js';
 export { MarketplaceGovernanceAndAssuranceProfile } from './contracts/marketplace-governance-and-assurance-profile.js';
 export { MarketplaceGovernanceAndAssuranceDescriptor } from './marketplace-governance-and-assurance/marketplace-governance-and-assurance-descriptor.js';
+export * from './future-extension-ecosystem-evolution-constants.js';
+export { FutureExtensionEcosystemEvolutionProfile } from './contracts/future-extension-ecosystem-evolution-profile.js';
+export { FutureExtensionEcosystemEvolutionDescriptor } from './future-extension-ecosystem-evolution/future-extension-ecosystem-evolution-descriptor.js';
 export { addPluginExtensionFramework } from './service-registration.js';

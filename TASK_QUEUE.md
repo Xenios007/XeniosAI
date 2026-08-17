@@ -169,7 +169,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-019-07 Plugin SDK, Developer Experience, and Testing`
 - Completed: `ARCH-019-08 Tenant Installation, Configuration, and Operations`
 - Completed: `ARCH-019-09 Marketplace Governance and Assurance`
-- Next: `ARCH-019-10 Future Extension Ecosystem Evolution`
+- Completed: `ARCH-019-10 Future Extension Ecosystem Evolution`
+- Next: `ARCH-020-01 Reference Implementation Overview`
 
 ## Notes
 

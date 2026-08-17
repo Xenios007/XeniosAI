@@ -8,6 +8,7 @@ import { RuntimeHostsExtensionPointsDescriptor } from './runtime-hosts-extension
 import { PluginSdkDeveloperExperienceAndTestingDescriptor } from './plugin-sdk-developer-experience-and-testing/plugin-sdk-developer-experience-and-testing-descriptor.js';
 import { TenantInstallationConfigurationAndOperationsDescriptor } from './tenant-installation-configuration-and-operations/tenant-installation-configuration-and-operations-descriptor.js';
 import { MarketplaceGovernanceAndAssuranceDescriptor } from './marketplace-governance-and-assurance/marketplace-governance-and-assurance-descriptor.js';
+import { FutureExtensionEcosystemEvolutionDescriptor } from './future-extension-ecosystem-evolution/future-extension-ecosystem-evolution-descriptor.js';
 
 export function addPluginExtensionFramework(services) {
   if (!(services instanceof ServiceCollection)) throw new Error('addPluginExtensionFramework expects an instance of ServiceCollection.');
@@ -20,5 +21,6 @@ export function addPluginExtensionFramework(services) {
   services.registerSingleton('PluginSdkDeveloperExperienceAndTestingDescriptor', () => new PluginSdkDeveloperExperienceAndTestingDescriptor());
   services.registerSingleton('TenantInstallationConfigurationAndOperationsDescriptor', () => new TenantInstallationConfigurationAndOperationsDescriptor());
   services.registerSingleton('MarketplaceGovernanceAndAssuranceDescriptor', () => new MarketplaceGovernanceAndAssuranceDescriptor());
+  services.registerSingleton('FutureExtensionEcosystemEvolutionDescriptor', () => new FutureExtensionEcosystemEvolutionDescriptor());
   return services;
 }
