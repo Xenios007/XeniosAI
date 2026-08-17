@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.58.0] - ARCH-018 Tenant Operations, Governance, and Assurance
+
+### Added
+- Tenant Operations, Governance, and Assurance metadata covering operations principles, operating model roles, operational scope classifications, service inventory fields, observability capabilities, tenant health factors, tenant-facing status items, alerting preventions, operational access requirements, support session fields, emergency operations requirements, incident tenant-impact classifications, incident response steps, cross-tenant incident response actions, problem management patterns, change assessment factors, release cohorts, capacity operations monitoring areas, continuity plan elements, tenant recovery validation areas, recovery exercise types, governance decision forums, tenant policy hierarchy levels, tenant control objectives, control ownership fields, assurance methods, isolation testing areas, evidence elements, tenant-facing assurance items, exception fields, issue remediation fields, governance metrics, automation governance fields, runbook coverage areas, and architectural rules.
+- Immutable profile validation requiring tenant-aware access-controlled visibility, accountable non-ambient operator duties, bounded evidenced support, tenant-identifying incident handling, multi-dimensional change assessment, preserving recovery, decision-rights governance, effectiveness-testing assurance, bounded exceptions, protective tenant-facing evidence, containable automation, reconciled inventory, conservative unknown-impact handling, and escalating policy conflicts while rejecting shared-password/impersonation access, approval-bypassing emergency access, cross-tenant-mixing rollouts, roster-revealing maintenance, tenant-regressing restores, scope-broadening automation, permanent exceptions, tenant-revealing status views, cross-tenant disclosure, and indefinitely renewed exceptions.
+- Tenant Operations, Governance, and Assurance descriptor, module exports, dependency-injection registration, implementation documentation, and focused unit tests.
+
+### Established
+- Multi-tenant operations make service health, access, incident response, change, capacity, continuity, governance, and assurance explicitly tenant aware: XeniosAI equips operators to diagnose and recover service without ambient customer authority, treats cross-tenant failure as a material event, and tests controls through realistic adversarial and recovery scenarios.
+
+Status: Multi-Tenancy Architecture
+Version: 0.58.0
+
+---
+
 ## [0.57.0] - ARCH-018 Resource Governance, Metering, and Billing
 
 ### Added
