@@ -176,7 +176,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-020-04 Multi-Property Enterprise Reference`
 - Completed: `ARCH-020-05 Conversational AI Agent and Knowledge Reference`
 - Completed: `ARCH-020-06 Workflow and Business Service Reference`
-- Next: `ARCH-020-07 API, Integration, and Extension Reference`
+- Completed: `ARCH-020-07 API, Integration, and Extension Reference`
+- Next: `ARCH-020-08 Multi-Tenant Security, Data, and Operations Reference`
 
 ## Notes
 

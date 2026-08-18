@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.76.0] - ARCH-020 API, Integration, and Extension Reference
+
+### Added
+- API, Integration, and Extension Reference metadata covering API product operations and operation attributes, gateway responsibilities, provider revalidations, SDK capabilities, integration adapter ownership, inbound and outbound flow fields, plugin reference elements, MCP reference elements, compatibility matrix dimensions and change controls, failure cases, acceptance criteria, and architectural rules.
+- Immutable profile validation requiring published contracts for all integrations, tenant/connection-bound credentials, provider validation of resource ownership, idempotent and budgeted retries, capability-mediated plugin and MCP access, demonstrable compatibility and retirement, business-capability-exposing APIs, translation-only adapters, contract-preserving SDKs, and uniform tenant/capability/host/evidence rules across extensions and MCP, while rejecting SDK convenience that broadens authority or hides provider errors, adapters owning internal availability truth, and protocol discovery authorizing tool execution.
+- API, Integration, and Extension Reference descriptor, contract, module exports, dependency-injection registration, implementation documentation, and focused unit tests.
+
+### Established
+- The reference demonstrates interoperable APIs and external ecosystems while retaining explicit contracts, provider authority, tenant-bound connections, compatibility, and failure containment.
+
+Status: Reference Implementations
+Version: 0.76.0
+
+---
+
 ## [0.75.0] - ARCH-020 Workflow and Business Service Reference
 
 ### Added

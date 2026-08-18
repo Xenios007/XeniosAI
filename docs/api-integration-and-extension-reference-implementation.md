@@ -1,0 +1,7 @@
+# ARCH-020-07 API, Integration, and Extension Reference
+
+`ApiIntegrationAndExtensionReferenceDescriptor` exposes immutable metadata for the API product operations and operation attributes, gateway responsibilities, provider revalidations, SDK capabilities, integration adapter ownership, inbound and outbound flow fields, plugin reference elements, MCP reference elements, compatibility matrix dimensions and change controls, failure cases, acceptance criteria, and architectural rules.
+
+Profile validation requires all integrations to use published contracts, credentials to be tenant and connection bound, providers to validate resource ownership, retries to be idempotent and budgeted, plugin and MCP access to be capability mediated, compatibility and retirement to be demonstrable, APIs to expose business capability rather than databases, adapters to own translation rather than business truth, SDKs to preserve contracts, and extensions/MCP to use the same tenant, capability, host, and evidence rules. It rejects SDK convenience broadening authority or hiding provider errors, the integration adapter owning internal availability truth, and protocol discovery authorizing tool execution.
+
+The module demonstrates interoperable APIs and external ecosystems — API products, SDKs, integration adapters, plugin packages, and MCP servers — while retaining explicit contracts, provider authority, tenant-bound connections, compatibility, and failure containment.

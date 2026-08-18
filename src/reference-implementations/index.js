@@ -17,4 +17,7 @@ export { ConversationalAiAgentAndKnowledgeReferenceDescriptor } from './conversa
 export * from './workflow-and-business-service-reference-constants.js';
 export { WorkflowAndBusinessServiceReferenceProfile } from './contracts/workflow-and-business-service-reference-profile.js';
 export { WorkflowAndBusinessServiceReferenceDescriptor } from './workflow-and-business-service-reference/workflow-and-business-service-reference-descriptor.js';
+export * from './api-integration-and-extension-reference-constants.js';
+export { ApiIntegrationAndExtensionReferenceProfile } from './contracts/api-integration-and-extension-reference-profile.js';
+export { ApiIntegrationAndExtensionReferenceDescriptor } from './api-integration-and-extension-reference/api-integration-and-extension-reference-descriptor.js';
 export { addReferenceImplementations } from './service-registration.js';
