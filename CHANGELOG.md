@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.74.0] - ARCH-020 Conversational AI, Agent, and Knowledge Reference
+
+### Added
+- Conversational AI, Agent, and Knowledge Reference metadata covering reference-flow steps, normalized-request fields, orchestrator responsibilities and exclusions, tool attributes and examples, agent attributes, knowledge sources and ingestion lineage fields, memory qualities, grounding categories, human-supervision material actions, safety cases, evaluation dimensions and dataset categories, acceptance criteria, and architectural rules.
+- Immutable profile validation requiring AI to be unable to alter business state without a governed tool or workflow, tool providers to validate actor/tenant/property/resource, retrieval to be unable to cross tenant or property policy, explicit memory admission, enforced agent budgets and stop conditions, uncertainty-stating or escalating unsupported answers, AI interpretation with deterministic execution, separate tool discovery/invocation authorization, non-authoritative knowledge retrieval, deliberate purpose-bound memory, evidentiary evaluations, and authority-narrowing-only delegation, while rejecting orchestrator ownership of bookings/rates/payments/property data/identity/authorization, authority-expanding delegation, and automatically durable conversation-text memory.
+- Conversational AI, Agent, and Knowledge Reference descriptor, contract, module exports, dependency-injection registration, implementation documentation, and focused unit tests.
+
+### Established
+- The reference demonstrates helpful conversational and agent behavior — normalized requests, bounded agents, tool orchestration, knowledge and memory retrieval, grounding, human supervision, and evaluation — without allowing probabilistic reasoning, retrieved text, or stored memory to bypass deterministic service, tenant, and policy controls.
+
+Status: Reference Implementations
+Version: 0.74.0
+
+---
+
 ## [0.73.0] - ARCH-020 Multi-Property Enterprise Reference
 
 ### Added

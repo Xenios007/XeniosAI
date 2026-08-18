@@ -11,4 +11,7 @@ export { SinglePropertyHospitalityReferenceDescriptor } from './single-property-
 export * from './multi-property-enterprise-reference-constants.js';
 export { MultiPropertyEnterpriseReferenceProfile } from './contracts/multi-property-enterprise-reference-profile.js';
 export { MultiPropertyEnterpriseReferenceDescriptor } from './multi-property-enterprise-reference/multi-property-enterprise-reference-descriptor.js';
+export * from './conversational-ai-agent-and-knowledge-reference-constants.js';
+export { ConversationalAiAgentAndKnowledgeReferenceProfile } from './contracts/conversational-ai-agent-and-knowledge-reference-profile.js';
+export { ConversationalAiAgentAndKnowledgeReferenceDescriptor } from './conversational-ai-agent-and-knowledge-reference/conversational-ai-agent-and-knowledge-reference-descriptor.js';
 export { addReferenceImplementations } from './service-registration.js';
