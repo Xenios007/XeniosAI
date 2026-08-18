@@ -14,8 +14,8 @@ Update this file after every successful implementation session.
 - Current implementation phase: `ARCH-020 Reference Implementations`
 - Current implementation state: `ARCH-020-06 Workflow and Business Service Reference` is implemented.
 - Latest successful implementation module: `ARCH-020-06 Workflow and Business Service Reference`
-- Latest successful commit: pending (see git log after this session's commit)
-- Latest push status: pending
+- Latest successful commit: `2747cf0` (`ARCH-020-06 Workflow and Business Service Reference`)
+- Latest push status: pushed to `main`
 - Build status: passing
 - Test status: passing
 - Architecture deviations: none
