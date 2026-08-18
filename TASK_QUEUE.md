@@ -173,7 +173,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-020-01 Reference Implementation Overview`
 - Completed: `ARCH-020-02 Reference Implementation Methodology`
 - Completed: `ARCH-020-03 Single-Property Hospitality Reference`
-- Next: `ARCH-020-04 Multi-Property Enterprise Reference`
+- Completed: `ARCH-020-04 Multi-Property Enterprise Reference`
+- Next: `ARCH-020-05 Conversational AI Agent and Knowledge Reference`
 
 ## Notes
 

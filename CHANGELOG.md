@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.73.0] - ARCH-020 Multi-Property Enterprise Reference
+
+### Added
+- Multi-Property Enterprise Reference metadata covering enterprise actors, hierarchy levels, enterprise capabilities, access-model dimensions, configuration-precedence levels, data-isolation controls, knowledge/memory scopes, cross-property workflow steps, integration-topology dimensions, resource-governance scopes, deployment variants, operations-visibility dimensions, failure scenarios, acceptance criteria, and architectural rules.
+- Immutable profile validation requiring tenant/property context propagation across sync and async boundaries, provider-side rejection of cross-tenant resources, non-overridable platform policy floors, bounded workload contention, tenant-scoped incident visibility, tenant-preserving restore/migration, explicit portfolio grants for cross-property access, and replaceable isolation topology, while rejecting implicit hierarchy-based data access, mandatory-control weakening, cross-property retry-budget bleed, cross-tenant restore overwrite, and unvalidated shared-service access.
+- Multi-Property Enterprise Reference descriptor, contract, module exports, dependency-injection registration, implementation documentation, and focused unit tests.
+
+### Established
+- The enterprise reference demonstrates how the Casa Lluvia single-property vertical slice scales to portfolios and many tenants without collapsing ownership, authorization, configuration, resource, data, or operational boundaries.
+
+Status: Reference Implementations
+Version: 0.73.0
+
+---
+
 ## [0.72.0] - ARCH-020 Single-Property Hospitality Reference
 
 ### Added

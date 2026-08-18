@@ -8,4 +8,7 @@ export { ReferenceImplementationMethodologyDescriptor } from './methodology/refe
 export * from './single-property-hospitality-reference-constants.js';
 export { SinglePropertyHospitalityReferenceProfile } from './contracts/single-property-hospitality-reference-profile.js';
 export { SinglePropertyHospitalityReferenceDescriptor } from './single-property-hospitality-reference/single-property-hospitality-reference-descriptor.js';
+export * from './multi-property-enterprise-reference-constants.js';
+export { MultiPropertyEnterpriseReferenceProfile } from './contracts/multi-property-enterprise-reference-profile.js';
+export { MultiPropertyEnterpriseReferenceDescriptor } from './multi-property-enterprise-reference/multi-property-enterprise-reference-descriptor.js';
 export { addReferenceImplementations } from './service-registration.js';
