@@ -175,7 +175,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-020-03 Single-Property Hospitality Reference`
 - Completed: `ARCH-020-04 Multi-Property Enterprise Reference`
 - Completed: `ARCH-020-05 Conversational AI Agent and Knowledge Reference`
-- Next: `ARCH-020-06 Workflow and Business Service Reference`
+- Completed: `ARCH-020-06 Workflow and Business Service Reference`
+- Next: `ARCH-020-07 API, Integration, and Extension Reference`
 
 ## Notes
 

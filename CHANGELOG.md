@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.75.0] - ARCH-020 Workflow and Business Service Reference
+
+### Added
+- Workflow and Business Service Reference metadata covering reference bounded services, service ownership responsibilities, command fields and provider validations, query characteristics, event fields, reservation workflow steps, workflow state elements, idempotency examples, concurrency controls, failure scenarios, reconciliation-checked records, observability trace-correlation points, acceptance criteria, and architectural rules.
+- Immutable profile validation requiring services to own and protect their repositories, non-duplicating duplicate commands, cross-service workflow recovery after worker restart, visible partial-failure state and compensation, events corresponding to committed facts, tenant context present in every boundary, deterministic service-command state changes, workflows that coordinate without owning domain truth, local transactions and reliable events replacing shared transactions, and reconciliation as a first-class recovery control, while rejecting workflow-state duplication of authoritative records, distributed shared-database transactions, automatic booking reversal on notification failure, silent reconciliation overwrites, and read models acting as alternative authorities.
+- Workflow and Business Service Reference descriptor, contract, module exports, dependency-injection registration, implementation documentation, and focused unit tests.
+
+### Established
+- The reference turns business rules into independently owned services and durable workflows with explicit commands, queries, events, consistency, failure, and recovery semantics.
+
+Status: Reference Implementations
+Version: 0.75.0
+
+---
+
 ## [0.74.0] - ARCH-020 Conversational AI, Agent, and Knowledge Reference
 
 ### Added

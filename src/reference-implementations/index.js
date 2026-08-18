@@ -14,4 +14,7 @@ export { MultiPropertyEnterpriseReferenceDescriptor } from './multi-property-ent
 export * from './conversational-ai-agent-and-knowledge-reference-constants.js';
 export { ConversationalAiAgentAndKnowledgeReferenceProfile } from './contracts/conversational-ai-agent-and-knowledge-reference-profile.js';
 export { ConversationalAiAgentAndKnowledgeReferenceDescriptor } from './conversational-ai-agent-and-knowledge-reference/conversational-ai-agent-and-knowledge-reference-descriptor.js';
+export * from './workflow-and-business-service-reference-constants.js';
+export { WorkflowAndBusinessServiceReferenceProfile } from './contracts/workflow-and-business-service-reference-profile.js';
+export { WorkflowAndBusinessServiceReferenceDescriptor } from './workflow-and-business-service-reference/workflow-and-business-service-reference-descriptor.js';
 export { addReferenceImplementations } from './service-registration.js';

@@ -4,6 +4,7 @@ import { ReferenceImplementationMethodologyDescriptor } from './methodology/refe
 import { SinglePropertyHospitalityReferenceDescriptor } from './single-property-hospitality-reference/single-property-hospitality-reference-descriptor.js';
 import { MultiPropertyEnterpriseReferenceDescriptor } from './multi-property-enterprise-reference/multi-property-enterprise-reference-descriptor.js';
 import { ConversationalAiAgentAndKnowledgeReferenceDescriptor } from './conversational-ai-agent-and-knowledge-reference/conversational-ai-agent-and-knowledge-reference-descriptor.js';
+import { WorkflowAndBusinessServiceReferenceDescriptor } from './workflow-and-business-service-reference/workflow-and-business-service-reference-descriptor.js';
 
 export function addReferenceImplementations(services) {
   if (!(services instanceof ServiceCollection)) throw new Error('addReferenceImplementations expects an instance of ServiceCollection.');
@@ -12,5 +13,6 @@ export function addReferenceImplementations(services) {
   services.registerSingleton('SinglePropertyHospitalityReferenceDescriptor', () => new SinglePropertyHospitalityReferenceDescriptor());
   services.registerSingleton('MultiPropertyEnterpriseReferenceDescriptor', () => new MultiPropertyEnterpriseReferenceDescriptor());
   services.registerSingleton('ConversationalAiAgentAndKnowledgeReferenceDescriptor', () => new ConversationalAiAgentAndKnowledgeReferenceDescriptor());
+  services.registerSingleton('WorkflowAndBusinessServiceReferenceDescriptor', () => new WorkflowAndBusinessServiceReferenceDescriptor());
   return services;
 }
