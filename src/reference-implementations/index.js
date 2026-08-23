@@ -20,4 +20,7 @@ export { WorkflowAndBusinessServiceReferenceDescriptor } from './workflow-and-bu
 export * from './api-integration-and-extension-reference-constants.js';
 export { ApiIntegrationAndExtensionReferenceProfile } from './contracts/api-integration-and-extension-reference-profile.js';
 export { ApiIntegrationAndExtensionReferenceDescriptor } from './api-integration-and-extension-reference/api-integration-and-extension-reference-descriptor.js';
+export * from './multi-tenant-security-data-and-operations-reference-constants.js';
+export { MultiTenantSecurityDataAndOperationsReferenceProfile } from './contracts/multi-tenant-security-data-and-operations-reference-profile.js';
+export { MultiTenantSecurityDataAndOperationsReferenceDescriptor } from './multi-tenant-security-data-and-operations-reference/multi-tenant-security-data-and-operations-reference-descriptor.js';
 export { addReferenceImplementations } from './service-registration.js';

@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.77.0] - ARCH-020 Multi-Tenant Security, Data, and Operations Reference
+
+### Added
+- Multi-Tenant Security, Data, and Operations Reference metadata covering trusted tenant context, test identities, data-isolation paths, data-lifecycle fixtures, security controls, telemetry correlation, capacity and fairness, incidents, recovery, continuity, evidence, acceptance criteria, and architectural rules.
+- Immutable profile validation requiring fail-closed tenant scope, provider-side validation, protected telemetry, noisy-neighbor protection, evidenced tenant restore and erasure, attributable time-bounded support access, and tenant-aware recovery and deletion, while rejecting deletion assumptions, cross-tenant restore overwrite, policy-free resurrection of erased data, unbounded support access, and sensitive telemetry leakage.
+- Descriptor, contract, module exports, dependency-injection registration, implementation documentation, and focused unit tests.
+
+### Established
+- Multi-tenant trust is executable across identity, derived and operational data, capacity, incident response, recovery, and evidence.
+
+Status: Reference Implementations
+Version: 0.77.0
+
+---
+
 ## [0.76.0] - ARCH-020 API, Integration, and Extension Reference
 
 ### Added
