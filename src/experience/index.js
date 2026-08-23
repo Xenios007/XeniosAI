@@ -28,3 +28,6 @@ export { ConversationAndChatExperienceDescriptor } from './conversation-and-chat
 export * from './frontend-application-architecture-constants.js';
 export { FrontendApplicationArchitectureProfile } from './contracts/frontend-application-architecture-profile.js';
 export { FrontendApplicationArchitectureDescriptor } from './frontend-application-architecture/frontend-application-architecture-descriptor.js';
+export * from './design-system-accessibility-and-localization-constants.js';
+export { DesignSystemAccessibilityAndLocalizationProfile } from './contracts/design-system-accessibility-and-localization-profile.js';
+export { DesignSystemAccessibilityAndLocalizationDescriptor } from './design-system-accessibility-and-localization/design-system-accessibility-and-localization-descriptor.js';

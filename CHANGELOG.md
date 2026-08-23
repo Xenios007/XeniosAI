@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.84.0] - ARCH-021 Design System, Accessibility, and Localization
+
+### Added
+- Executable design-system, accessibility, content, localization, branding, component-contract, and quality-evidence metadata with immutable validation, registration, documentation, and focused tests.
+
+Status: Experience, Conversation, and Frontend Architecture
+Version: 0.84.0
+
+---
+
 ## [0.83.0] - ARCH-021 Frontend Application Architecture
 
 ### Added

@@ -184,7 +184,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-021-02 Experience Operating Model and Journeys`
 - Completed: `ARCH-021-03 Conversation and Chat Experience`
 - Completed: `ARCH-021-04 Frontend Application Architecture`
-- Next: `ARCH-021-05 Design System, Accessibility, and Localization`
+- Completed: `ARCH-021-05 Design System, Accessibility, and Localization`
+- Next: `ARCH-021-06 Realtime Streaming and Human Handoff`
 
 ## Notes
 
