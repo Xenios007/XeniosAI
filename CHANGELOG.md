@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.86.0] - ARCH-021 Identity, State, and API Integration
+
+### Added
+- Executable identity, session, API, cache, conversation, attachment, and compatibility metadata with immutable validation, registration, documentation, and focused tests.
+
+Status: Experience, Conversation, and Frontend Architecture
+Version: 0.86.0
+
+---
+
 ## [0.85.0] - ARCH-021 Realtime Streaming and Human Handoff
 
 ### Added

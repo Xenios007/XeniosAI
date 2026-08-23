@@ -10,6 +10,7 @@ import { ConversationAndChatExperienceDescriptor } from './conversation-and-chat
 import { FrontendApplicationArchitectureDescriptor } from './frontend-application-architecture/frontend-application-architecture-descriptor.js';
 import { DesignSystemAccessibilityAndLocalizationDescriptor } from './design-system-accessibility-and-localization/design-system-accessibility-and-localization-descriptor.js';
 import { RealtimeStreamingAndHumanHandoffDescriptor } from './realtime-streaming-and-human-handoff/realtime-streaming-and-human-handoff-descriptor.js';
+import { IdentityStateAndApiIntegrationDescriptor } from './identity-state-and-api-integration/identity-state-and-api-integration-descriptor.js';
 
 export function addExperienceLayer(services, { gatewayRegistrationKey = 'GatewayPort' } = {}) {
   if (!(services instanceof ServiceCollection)) {
@@ -39,6 +40,7 @@ export function addExperienceLayer(services, { gatewayRegistrationKey = 'Gateway
   services.registerSingleton('FrontendApplicationArchitectureDescriptor', () => new FrontendApplicationArchitectureDescriptor());
   services.registerSingleton('DesignSystemAccessibilityAndLocalizationDescriptor', () => new DesignSystemAccessibilityAndLocalizationDescriptor());
   services.registerSingleton('RealtimeStreamingAndHumanHandoffDescriptor', () => new RealtimeStreamingAndHumanHandoffDescriptor());
+  services.registerSingleton('IdentityStateAndApiIntegrationDescriptor', () => new IdentityStateAndApiIntegrationDescriptor());
 
   return services;
 }

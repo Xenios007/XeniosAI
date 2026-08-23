@@ -34,3 +34,6 @@ export { DesignSystemAccessibilityAndLocalizationDescriptor } from './design-sys
 export * from './realtime-streaming-and-human-handoff-constants.js';
 export { RealtimeStreamingAndHumanHandoffProfile } from './contracts/realtime-streaming-and-human-handoff-profile.js';
 export { RealtimeStreamingAndHumanHandoffDescriptor } from './realtime-streaming-and-human-handoff/realtime-streaming-and-human-handoff-descriptor.js';
+export * from './identity-state-and-api-integration-constants.js';
+export { IdentityStateAndApiIntegrationProfile } from './contracts/identity-state-and-api-integration-profile.js';
+export { IdentityStateAndApiIntegrationDescriptor } from './identity-state-and-api-integration/identity-state-and-api-integration-descriptor.js';
