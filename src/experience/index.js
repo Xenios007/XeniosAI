@@ -19,3 +19,6 @@ export { ExperienceService } from './services/experience-service.js';
 export * from './experience-conversation-frontend-overview-constants.js';
 export { ExperienceConversationFrontendOverviewProfile } from './contracts/experience-conversation-frontend-overview-profile.js';
 export { ExperienceConversationFrontendOverviewDescriptor } from './experience-conversation-frontend-overview/experience-conversation-frontend-overview-descriptor.js';
+export * from './experience-operating-model-and-journeys-constants.js';
+export { ExperienceOperatingModelAndJourneysProfile } from './contracts/experience-operating-model-and-journeys-profile.js';
+export { ExperienceOperatingModelAndJourneysDescriptor } from './experience-operating-model-and-journeys/experience-operating-model-and-journeys-descriptor.js';

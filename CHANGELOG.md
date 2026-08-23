@@ -6,6 +6,19 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.81.0] - ARCH-021 Experience Operating Model and Journeys
+
+### Added
+- Executable operating-model and journey metadata, immutable profile validation, descriptor registration, implementation documentation, and focused tests for journey lifecycle, continuity, collaboration, governed configuration, release gates, and feedback.
+
+### Established
+- Journeys are versioned, authority-preserving specifications with governed improvement rather than page flows or self-modifying feedback loops.
+
+Status: Experience, Conversation, and Frontend Architecture
+Version: 0.81.0
+
+---
+
 ## [0.80.0] - ARCH-021 Experience, Conversation, and Frontend Overview
 
 ### Added
