@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [1.0.0] - ARCH-023 Customer & Relationship Management Overview
+
+### Added
+- Executable customer capabilities, purpose-scoped context contracts, authority boundaries, industry-neutral concepts, quality attributes, and customer-data invariants with immutable validation, registration, documentation, and focused tests.
+
+Status: Customer & Relationship Management Architecture
+Version: 1.0.0
+
+---
+
 ## [0.99.0] - ARCH-022 Future Identity and Access Evolution
 
 ### Added

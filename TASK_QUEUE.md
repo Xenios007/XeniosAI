@@ -200,7 +200,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-022-08 Consent, Privacy, and Customer Identity`
 - Completed: `ARCH-022-09 Identity Operations, Governance, and Assurance`
 - Completed: `ARCH-022-10 Future Identity and Access Evolution`
-- Next: `ARCH-023-01 Customer & Relationship Management Overview`
+- Completed: `ARCH-023-01 Customer & Relationship Management Overview`
+- Next: `ARCH-023-02 Customer, Party, and Profile Model`
 
 ## Notes
 
