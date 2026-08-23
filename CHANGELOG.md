@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.98.0] - ARCH-022 Identity Operations, Governance, and Assurance
+
+### Added
+- Executable identity operations, observability, readiness, incident, governance, assurance, and resilience metadata with immutable validation, registration, documentation, and focused tests.
+
+Status: Identity, Organizations, and Access Architecture
+Version: 0.98.0
+
+---
+
 ## [0.97.0] - ARCH-022 Consent, Privacy, and Customer Identity
 
 ### Added
