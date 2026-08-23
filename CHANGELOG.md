@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [1.2.0] - ARCH-023 Organizations, Contacts, and Relationships
+
+### Added
+- Executable organizational customer, contact-role, relationship-record, ownership, event, and privacy boundaries with immutable validation, registration, documentation, and focused tests.
+
+Status: Customer & Relationship Management Architecture
+Version: 1.2.0
+
+---
+
 ## [1.1.0] - ARCH-023 Customer, Party, and Profile Model
 
 ### Added
