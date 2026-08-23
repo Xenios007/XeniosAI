@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [1.7.0] - ARCH-023 Customer Service Integration and Experience
+
+### Added
+- Executable CRM integration, service-interface, agent-tool, workspace, handoff, external-adapter, and authority safeguards with immutable validation, documentation, and focused tests.
+
+Status: Customer & Relationship Management Architecture
+Version: 1.7.0
+
+---
+
 ## [1.6.0] - ARCH-023 Data Quality, Resolution, and Portability
 
 ### Added
