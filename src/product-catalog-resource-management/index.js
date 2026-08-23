@@ -1,0 +1,1 @@
+export * from './product-catalog-resource-management-overview-constants.js';export {ProductCatalogResourceManagementOverviewProfile}from'./contracts/product-catalog-resource-management-overview-profile.js';export {ProductCatalogResourceManagementOverviewDescriptor}from'./overview/product-catalog-resource-management-overview-descriptor.js';
