@@ -187,7 +187,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-021-05 Design System, Accessibility, and Localization`
 - Completed: `ARCH-021-06 Realtime Streaming and Human Handoff`
 - Completed: `ARCH-021-07 Identity, State, and API Integration`
-- Next: `ARCH-021-08 Security, Privacy, and Tenant Experience`
+- Completed: `ARCH-021-08 Security, Privacy, and Tenant Experience`
+- Next: `ARCH-021-09 Frontend Operations, Observability, and Performance`
 
 ## Notes
 

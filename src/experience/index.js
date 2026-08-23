@@ -37,3 +37,6 @@ export { RealtimeStreamingAndHumanHandoffDescriptor } from './realtime-streaming
 export * from './identity-state-and-api-integration-constants.js';
 export { IdentityStateAndApiIntegrationProfile } from './contracts/identity-state-and-api-integration-profile.js';
 export { IdentityStateAndApiIntegrationDescriptor } from './identity-state-and-api-integration/identity-state-and-api-integration-descriptor.js';
+export * from './security-privacy-and-tenant-experience-constants.js';
+export { SecurityPrivacyAndTenantExperienceProfile } from './contracts/security-privacy-and-tenant-experience-profile.js';
+export { SecurityPrivacyAndTenantExperienceDescriptor } from './security-privacy-and-tenant-experience/security-privacy-and-tenant-experience-descriptor.js';

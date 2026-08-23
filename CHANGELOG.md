@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.87.0] - ARCH-021 Security, Privacy, and Tenant Experience
+
+### Added
+- Executable threat, client-security, privacy, tenant-isolation, extension-host, and security-test metadata with immutable validation, registration, documentation, and focused tests.
+
+Status: Experience, Conversation, and Frontend Architecture
+Version: 0.87.0
+
+---
+
 ## [0.86.0] - ARCH-021 Identity, State, and API Integration
 
 ### Added
