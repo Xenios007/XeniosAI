@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.0.0] - ARCH-024 Product Catalog and Resource Management Overview
+
+### Added
+- Executable catalog and resource capability, ownership, lifecycle, record, recovery, telemetry, and authority safeguards with immutable validation, documentation, and focused tests.
+
+Status: Product, Catalog, and Resource Management Architecture
+Version: 2.0.0
+
+---
+
 ## [1.9.0] - ARCH-023 Future Customer Relationship Evolution
 
 ### Added
