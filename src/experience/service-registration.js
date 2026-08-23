@@ -6,6 +6,7 @@ import { ChannelRegistry } from './services/channel-registry.js';
 import { ExperienceService } from './services/experience-service.js';
 import { ExperienceConversationFrontendOverviewDescriptor } from './experience-conversation-frontend-overview/experience-conversation-frontend-overview-descriptor.js';
 import { ExperienceOperatingModelAndJourneysDescriptor } from './experience-operating-model-and-journeys/experience-operating-model-and-journeys-descriptor.js';
+import { ConversationAndChatExperienceDescriptor } from './conversation-and-chat-experience/conversation-and-chat-experience-descriptor.js';
 
 export function addExperienceLayer(services, { gatewayRegistrationKey = 'GatewayPort' } = {}) {
   if (!(services instanceof ServiceCollection)) {
@@ -31,6 +32,7 @@ export function addExperienceLayer(services, { gatewayRegistrationKey = 'Gateway
   );
   services.registerSingleton('ExperienceConversationFrontendOverviewDescriptor', () => new ExperienceConversationFrontendOverviewDescriptor());
   services.registerSingleton('ExperienceOperatingModelAndJourneysDescriptor', () => new ExperienceOperatingModelAndJourneysDescriptor());
+  services.registerSingleton('ConversationAndChatExperienceDescriptor', () => new ConversationAndChatExperienceDescriptor());
 
   return services;
 }

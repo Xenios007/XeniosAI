@@ -6,6 +6,19 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.82.0] - ARCH-021 Conversation and Chat Experience
+
+### Added
+- Executable conversation/chat metadata, immutable profile validation, descriptor registration, implementation documentation, and focused tests for message semantics, structured responses, clarification, confirmation, streaming, memory, feedback, handoff, and quality.
+
+### Established
+- Conversational presentation remains helpful and responsive without treating generated content or partial progress as authoritative transaction state.
+
+Status: Experience, Conversation, and Frontend Architecture
+Version: 0.82.0
+
+---
+
 ## [0.81.0] - ARCH-021 Experience Operating Model and Journeys
 
 ### Added

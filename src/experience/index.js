@@ -22,3 +22,6 @@ export { ExperienceConversationFrontendOverviewDescriptor } from './experience-c
 export * from './experience-operating-model-and-journeys-constants.js';
 export { ExperienceOperatingModelAndJourneysProfile } from './contracts/experience-operating-model-and-journeys-profile.js';
 export { ExperienceOperatingModelAndJourneysDescriptor } from './experience-operating-model-and-journeys/experience-operating-model-and-journeys-descriptor.js';
+export * from './conversation-and-chat-experience-constants.js';
+export { ConversationAndChatExperienceProfile } from './contracts/conversation-and-chat-experience-profile.js';
+export { ConversationAndChatExperienceDescriptor } from './conversation-and-chat-experience/conversation-and-chat-experience-descriptor.js';

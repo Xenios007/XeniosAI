@@ -182,7 +182,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-020-10 Future Reference Implementation Evolution`
 - Completed: `ARCH-021-01 Experience, Conversation, and Frontend Overview`
 - Completed: `ARCH-021-02 Experience Operating Model and Journeys`
-- Next: `ARCH-021-03 Conversation and Chat Experience`
+- Completed: `ARCH-021-03 Conversation and Chat Experience`
+- Next: `ARCH-021-04 Frontend Application Architecture`
 
 ## Notes
 
