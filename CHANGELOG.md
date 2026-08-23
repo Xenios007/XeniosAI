@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.89.0] - ARCH-021 Future Experience and Frontend Evolution
+
+### Added
+- Executable future-horizon, adaptive, multimodal, proactive, generative UI, offline, and enduring-invariant metadata with immutable validation, registration, documentation, and focused tests.
+
+Status: Experience, Conversation, and Frontend Architecture
+Version: 0.89.0
+
+---
+
 ## [0.88.0] - ARCH-021 Frontend Operations, Observability, and Performance
 
 ### Added

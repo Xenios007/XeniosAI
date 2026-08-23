@@ -189,7 +189,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-021-07 Identity, State, and API Integration`
 - Completed: `ARCH-021-08 Security, Privacy, and Tenant Experience`
 - Completed: `ARCH-021-09 Frontend Operations, Observability, and Performance`
-- Next: `ARCH-021-10 Future Experience and Frontend Evolution`
+- Completed: `ARCH-021-10 Future Experience and Frontend Evolution`
+- Next: `ARCH-022-01 Identity, Organizations, and Access Overview`
 
 ## Notes
 
