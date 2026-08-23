@@ -9,6 +9,7 @@ import { ExperienceOperatingModelAndJourneysDescriptor } from './experience-oper
 import { ConversationAndChatExperienceDescriptor } from './conversation-and-chat-experience/conversation-and-chat-experience-descriptor.js';
 import { FrontendApplicationArchitectureDescriptor } from './frontend-application-architecture/frontend-application-architecture-descriptor.js';
 import { DesignSystemAccessibilityAndLocalizationDescriptor } from './design-system-accessibility-and-localization/design-system-accessibility-and-localization-descriptor.js';
+import { RealtimeStreamingAndHumanHandoffDescriptor } from './realtime-streaming-and-human-handoff/realtime-streaming-and-human-handoff-descriptor.js';
 
 export function addExperienceLayer(services, { gatewayRegistrationKey = 'GatewayPort' } = {}) {
   if (!(services instanceof ServiceCollection)) {
@@ -37,6 +38,7 @@ export function addExperienceLayer(services, { gatewayRegistrationKey = 'Gateway
   services.registerSingleton('ConversationAndChatExperienceDescriptor', () => new ConversationAndChatExperienceDescriptor());
   services.registerSingleton('FrontendApplicationArchitectureDescriptor', () => new FrontendApplicationArchitectureDescriptor());
   services.registerSingleton('DesignSystemAccessibilityAndLocalizationDescriptor', () => new DesignSystemAccessibilityAndLocalizationDescriptor());
+  services.registerSingleton('RealtimeStreamingAndHumanHandoffDescriptor', () => new RealtimeStreamingAndHumanHandoffDescriptor());
 
   return services;
 }

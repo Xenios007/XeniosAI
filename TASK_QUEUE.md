@@ -185,7 +185,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-021-03 Conversation and Chat Experience`
 - Completed: `ARCH-021-04 Frontend Application Architecture`
 - Completed: `ARCH-021-05 Design System, Accessibility, and Localization`
-- Next: `ARCH-021-06 Realtime Streaming and Human Handoff`
+- Completed: `ARCH-021-06 Realtime Streaming and Human Handoff`
+- Next: `ARCH-021-07 Identity, State, and API Integration`
 
 ## Notes
 

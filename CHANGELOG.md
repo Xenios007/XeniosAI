@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.85.0] - ARCH-021 Realtime Streaming and Human Handoff
+
+### Added
+- Executable realtime, stream, event, reconnection, handoff, and operational-control metadata with immutable validation, registration, documentation, and focused tests.
+
+Status: Experience, Conversation, and Frontend Architecture
+Version: 0.85.0
+
+---
+
 ## [0.84.0] - ARCH-021 Design System, Accessibility, and Localization
 
 ### Added

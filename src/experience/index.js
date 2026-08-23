@@ -31,3 +31,6 @@ export { FrontendApplicationArchitectureDescriptor } from './frontend-applicatio
 export * from './design-system-accessibility-and-localization-constants.js';
 export { DesignSystemAccessibilityAndLocalizationProfile } from './contracts/design-system-accessibility-and-localization-profile.js';
 export { DesignSystemAccessibilityAndLocalizationDescriptor } from './design-system-accessibility-and-localization/design-system-accessibility-and-localization-descriptor.js';
+export * from './realtime-streaming-and-human-handoff-constants.js';
+export { RealtimeStreamingAndHumanHandoffProfile } from './contracts/realtime-streaming-and-human-handoff-profile.js';
+export { RealtimeStreamingAndHumanHandoffDescriptor } from './realtime-streaming-and-human-handoff/realtime-streaming-and-human-handoff-descriptor.js';
