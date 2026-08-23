@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.95.0] - ARCH-022 Delegated Administration and Privileged Access
+
+### Added
+- Executable delegation, tenant-boundary, privileged-activation, emergency, automation, and governance metadata with immutable validation, registration, documentation, and focused tests.
+
+Status: Identity, Organizations, and Access Architecture
+Version: 0.95.0
+
+---
+
 ## [0.94.0] - ARCH-022 Authorization, Access Packages, and Policy Context
 
 ### Added
