@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.2.0] - ARCH-024 Catalog, Classification, and Discovery
+
+### Added
+- Executable catalog lifecycle, classification, discovery, projection, recovery, and authority safeguards with immutable validation, documentation, and focused tests.
+
+Status: Product, Catalog, and Resource Management Architecture
+Version: 2.2.0
+
+---
+
 ## [2.1.0] - ARCH-024 Product and Service Model
 
 ### Added
