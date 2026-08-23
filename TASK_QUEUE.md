@@ -192,7 +192,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-021-10 Future Experience and Frontend Evolution`
 - Completed: `ARCH-022-01 Identity, Organizations, and Access Overview`
 - Completed: `ARCH-022-02 Identity Types and Lifecycle`
-- Next: `ARCH-022-03 Organizations, Teams, and Membership`
+- Completed: `ARCH-022-03 Organizations, Teams, and Membership`
+- Next: `ARCH-022-04 Authentication, Federation, and Session Assurance`
 
 ## Notes
 

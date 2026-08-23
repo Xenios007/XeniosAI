@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.92.0] - ARCH-022 Organizations, Teams, and Membership
+
+### Added
+- Executable organization, unit/team, membership, partner, group, and lifecycle-review metadata with immutable validation, registration, documentation, and focused tests.
+
+Status: Identity, Organizations, and Access Architecture
+Version: 0.92.0
+
+---
+
 ## [0.91.0] - ARCH-022 Identity Types and Lifecycle
 
 ### Added
