@@ -204,7 +204,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-023-02 Customer, Party, and Profile Model`
 - Completed: `ARCH-023-03 Organizations, Contacts, and Relationships`
 - Completed: `ARCH-023-04 Preferences, Consent, and Customer Context`
-- Next: `ARCH-023-05 Interaction and Service History`
+- Completed: `ARCH-023-05 Interaction and Service History`
+- Next: `ARCH-023-06 Segmentation, Journeys, Loyalty, and Retention`
 
 ## Notes
 

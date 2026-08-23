@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [1.4.0] - ARCH-023 Interaction and Service History
+
+### Added
+- Executable normalized interaction, service-history, timeline, outcome, provenance, retrieval, and reconciliation safeguards with immutable validation, registration, documentation, and focused tests.
+
+Status: Customer & Relationship Management Architecture
+Version: 1.4.0
+
+---
+
 ## [1.3.0] - ARCH-023 Preferences, Consent, and Customer Context
 
 ### Added
