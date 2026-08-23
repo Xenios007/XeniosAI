@@ -13,6 +13,7 @@ import { RealtimeStreamingAndHumanHandoffDescriptor } from './realtime-streaming
 import { IdentityStateAndApiIntegrationDescriptor } from './identity-state-and-api-integration/identity-state-and-api-integration-descriptor.js';
 import { SecurityPrivacyAndTenantExperienceDescriptor } from './security-privacy-and-tenant-experience/security-privacy-and-tenant-experience-descriptor.js';
 import { FrontendOperationsObservabilityAndPerformanceDescriptor } from './frontend-operations-observability-and-performance/frontend-operations-observability-and-performance-descriptor.js';
+import { FutureExperienceFrontendEvolutionDescriptor } from './future-experience-frontend-evolution/future-experience-frontend-evolution-descriptor.js';
 
 export function addExperienceLayer(services, { gatewayRegistrationKey = 'GatewayPort' } = {}) {
   if (!(services instanceof ServiceCollection)) {
@@ -45,6 +46,7 @@ export function addExperienceLayer(services, { gatewayRegistrationKey = 'Gateway
   services.registerSingleton('IdentityStateAndApiIntegrationDescriptor', () => new IdentityStateAndApiIntegrationDescriptor());
   services.registerSingleton('SecurityPrivacyAndTenantExperienceDescriptor', () => new SecurityPrivacyAndTenantExperienceDescriptor());
   services.registerSingleton('FrontendOperationsObservabilityAndPerformanceDescriptor', () => new FrontendOperationsObservabilityAndPerformanceDescriptor());
+  services.registerSingleton('FutureExperienceFrontendEvolutionDescriptor', () => new FutureExperienceFrontendEvolutionDescriptor());
 
   return services;
 }

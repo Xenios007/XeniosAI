@@ -43,3 +43,6 @@ export { SecurityPrivacyAndTenantExperienceDescriptor } from './security-privacy
 export * from './frontend-operations-observability-and-performance-constants.js';
 export { FrontendOperationsObservabilityAndPerformanceProfile } from './contracts/frontend-operations-observability-and-performance-profile.js';
 export { FrontendOperationsObservabilityAndPerformanceDescriptor } from './frontend-operations-observability-and-performance/frontend-operations-observability-and-performance-descriptor.js';
+export * from './future-experience-frontend-evolution-constants.js';
+export { FutureExperienceFrontendEvolutionProfile } from './contracts/future-experience-frontend-evolution-profile.js';
+export { FutureExperienceFrontendEvolutionDescriptor } from './future-experience-frontend-evolution/future-experience-frontend-evolution-descriptor.js';
