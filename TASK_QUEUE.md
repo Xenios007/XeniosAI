@@ -197,7 +197,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-022-05 Authorization, Access Packages, and Policy Context`
 - Completed: `ARCH-022-06 Delegated Administration and Privileged Access`
 - Completed: `ARCH-022-07 Service, Machine, Agent, and Workload Identity`
-- Next: `ARCH-022-08 Consent, Privacy, and Customer Identity`
+- Completed: `ARCH-022-08 Consent, Privacy, and Customer Identity`
+- Next: `ARCH-022-09 Identity Operations, Governance, and Assurance`
 
 ## Notes
 
