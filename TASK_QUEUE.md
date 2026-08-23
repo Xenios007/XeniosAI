@@ -211,7 +211,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-023-09 CRM Operations, Governance, and Assurance`
 - Completed: `ARCH-023-10 Future Customer Relationship Evolution`
 - Completed: `ARCH-024-01 Product Catalog and Resource Management Overview`
-- Next: `ARCH-024-02 Product and Service Model`
+- Completed: `ARCH-024-02 Product and Service Model`
+- Next: `ARCH-024-03 Catalog, Classification, and Discovery`
 
 ## Notes
 

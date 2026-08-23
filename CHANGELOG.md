@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.1.0] - ARCH-024 Product and Service Model
+
+### Added
+- Executable product/service definition, lifecycle, material-record, commercial-boundary, and invariant safeguards with immutable validation, documentation, and focused tests.
+
+Status: Product, Catalog, and Resource Management Architecture
+Version: 2.1.0
+
+---
+
 ## [2.0.0] - ARCH-024 Product Catalog and Resource Management Overview
 
 ### Added
