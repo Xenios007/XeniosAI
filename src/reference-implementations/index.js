@@ -26,4 +26,7 @@ export { MultiTenantSecurityDataAndOperationsReferenceDescriptor } from './multi
 export * from './delivery-testing-and-conformance-reference-constants.js';
 export { DeliveryTestingAndConformanceReferenceProfile } from './contracts/delivery-testing-and-conformance-reference-profile.js';
 export { DeliveryTestingAndConformanceReferenceDescriptor } from './delivery-testing-and-conformance-reference/delivery-testing-and-conformance-reference-descriptor.js';
+export * from './future-reference-implementation-evolution-constants.js';
+export { FutureReferenceImplementationEvolutionProfile } from './contracts/future-reference-implementation-evolution-profile.js';
+export { FutureReferenceImplementationEvolutionDescriptor } from './future-reference-implementation-evolution/future-reference-implementation-evolution-descriptor.js';
 export { addReferenceImplementations } from './service-registration.js';

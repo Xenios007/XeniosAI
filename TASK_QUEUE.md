@@ -179,7 +179,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-020-07 API, Integration, and Extension Reference`
 - Completed: `ARCH-020-08 Multi-Tenant Security, Data, and Operations Reference`
 - Completed: `ARCH-020-09 Delivery, Testing, and Conformance Reference`
-- Next: `ARCH-020-10 Future Reference Implementation Evolution`
+- Completed: `ARCH-020-10 Future Reference Implementation Evolution`
+- Next: `ARCH-021-01 Experience, Conversation, and Frontend Overview`
 
 ## Notes
 
