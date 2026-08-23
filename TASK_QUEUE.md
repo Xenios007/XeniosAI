@@ -194,7 +194,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-022-02 Identity Types and Lifecycle`
 - Completed: `ARCH-022-03 Organizations, Teams, and Membership`
 - Completed: `ARCH-022-04 Authentication, Federation, and Session Assurance`
-- Next: `ARCH-022-05 Authorization, Access Packages, and Policy Context`
+- Completed: `ARCH-022-05 Authorization, Access Packages, and Policy Context`
+- Next: `ARCH-022-06 Delegated Administration and Privileged Access`
 
 ## Notes
 

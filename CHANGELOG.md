@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.94.0] - ARCH-022 Authorization, Access Packages, and Policy Context
+
+### Added
+- Executable authorization, access-request/package, policy-context, provider, review, and decision-evidence metadata with immutable validation, registration, documentation, and focused tests.
+
+Status: Identity, Organizations, and Access Architecture
+Version: 0.94.0
+
+---
+
 ## [0.93.0] - ARCH-022 Authentication, Federation, and Session Assurance
 
 ### Added
