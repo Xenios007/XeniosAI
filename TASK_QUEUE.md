@@ -193,7 +193,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-022-01 Identity, Organizations, and Access Overview`
 - Completed: `ARCH-022-02 Identity Types and Lifecycle`
 - Completed: `ARCH-022-03 Organizations, Teams, and Membership`
-- Next: `ARCH-022-04 Authentication, Federation, and Session Assurance`
+- Completed: `ARCH-022-04 Authentication, Federation, and Session Assurance`
+- Next: `ARCH-022-05 Authorization, Access Packages, and Policy Context`
 
 ## Notes
 

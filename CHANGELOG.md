@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.93.0] - ARCH-022 Authentication, Federation, and Session Assurance
+
+### Added
+- Executable authentication, assurance, federation, JIT, session, credential, and recovery metadata with immutable validation, registration, documentation, and focused tests.
+
+Status: Identity, Organizations, and Access Architecture
+Version: 0.93.0
+
+---
+
 ## [0.92.0] - ARCH-022 Organizations, Teams, and Membership
 
 ### Added
