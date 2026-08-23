@@ -6,6 +6,21 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.78.0] - ARCH-020 Delivery, Testing, and Conformance Reference
+
+### Added
+- Delivery, Testing, and Conformance Reference metadata covering golden-path capabilities, environment separation, the delivery pipeline, test pyramid, contract/AI/workflow/security/performance test controls, release strategy, conformance reporting, productionization, acceptance criteria, and architectural rules.
+- Immutable profile validation requiring reproducible builds, immutable artifact promotion, release-blocking conformance, automatic multi-tenant/failure testing, exercised rollback/recovery, explicit productionization, AI evaluation as a release control, and operational readiness, while rejecting untracked promotion, bypassed controls, unevaluated model changes, mutable production artifacts, and deferred operational readiness.
+- Descriptor, contract, module exports, dependency-injection registration, implementation documentation, and focused unit tests.
+
+### Established
+- Architecture conformance is an automated delivery control from source validation through progressive release and productionization.
+
+Status: Reference Implementations
+Version: 0.78.0
+
+---
+
 ## [0.77.0] - ARCH-020 Multi-Tenant Security, Data, and Operations Reference
 
 ### Added

@@ -7,6 +7,7 @@ import { ConversationalAiAgentAndKnowledgeReferenceDescriptor } from './conversa
 import { WorkflowAndBusinessServiceReferenceDescriptor } from './workflow-and-business-service-reference/workflow-and-business-service-reference-descriptor.js';
 import { ApiIntegrationAndExtensionReferenceDescriptor } from './api-integration-and-extension-reference/api-integration-and-extension-reference-descriptor.js';
 import { MultiTenantSecurityDataAndOperationsReferenceDescriptor } from './multi-tenant-security-data-and-operations-reference/multi-tenant-security-data-and-operations-reference-descriptor.js';
+import { DeliveryTestingAndConformanceReferenceDescriptor } from './delivery-testing-and-conformance-reference/delivery-testing-and-conformance-reference-descriptor.js';
 
 export function addReferenceImplementations(services) {
   if (!(services instanceof ServiceCollection)) throw new Error('addReferenceImplementations expects an instance of ServiceCollection.');
@@ -18,5 +19,6 @@ export function addReferenceImplementations(services) {
   services.registerSingleton('WorkflowAndBusinessServiceReferenceDescriptor', () => new WorkflowAndBusinessServiceReferenceDescriptor());
   services.registerSingleton('ApiIntegrationAndExtensionReferenceDescriptor', () => new ApiIntegrationAndExtensionReferenceDescriptor());
   services.registerSingleton('MultiTenantSecurityDataAndOperationsReferenceDescriptor', () => new MultiTenantSecurityDataAndOperationsReferenceDescriptor());
+  services.registerSingleton('DeliveryTestingAndConformanceReferenceDescriptor', () => new DeliveryTestingAndConformanceReferenceDescriptor());
   return services;
 }

@@ -23,4 +23,7 @@ export { ApiIntegrationAndExtensionReferenceDescriptor } from './api-integration
 export * from './multi-tenant-security-data-and-operations-reference-constants.js';
 export { MultiTenantSecurityDataAndOperationsReferenceProfile } from './contracts/multi-tenant-security-data-and-operations-reference-profile.js';
 export { MultiTenantSecurityDataAndOperationsReferenceDescriptor } from './multi-tenant-security-data-and-operations-reference/multi-tenant-security-data-and-operations-reference-descriptor.js';
+export * from './delivery-testing-and-conformance-reference-constants.js';
+export { DeliveryTestingAndConformanceReferenceProfile } from './contracts/delivery-testing-and-conformance-reference-profile.js';
+export { DeliveryTestingAndConformanceReferenceDescriptor } from './delivery-testing-and-conformance-reference/delivery-testing-and-conformance-reference-descriptor.js';
 export { addReferenceImplementations } from './service-registration.js';

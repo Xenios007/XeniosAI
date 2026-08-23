@@ -178,7 +178,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-020-06 Workflow and Business Service Reference`
 - Completed: `ARCH-020-07 API, Integration, and Extension Reference`
 - Completed: `ARCH-020-08 Multi-Tenant Security, Data, and Operations Reference`
-- Next: `ARCH-020-09 Delivery, Testing, and Conformance Reference`
+- Completed: `ARCH-020-09 Delivery, Testing, and Conformance Reference`
+- Next: `ARCH-020-10 Future Reference Implementation Evolution`
 
 ## Notes
 
