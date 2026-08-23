@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.97.0] - ARCH-022 Consent, Privacy, and Customer Identity
+
+### Added
+- Executable customer-identity, consent, memory/learning, linking, representative, and data-minimization metadata with immutable validation, registration, documentation, and focused tests.
+
+Status: Identity, Organizations, and Access Architecture
+Version: 0.97.0
+
+---
+
 ## [0.96.0] - ARCH-022 Service, Machine, Agent, and Workload Identity
 
 ### Added
