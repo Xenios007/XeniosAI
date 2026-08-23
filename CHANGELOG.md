@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [1.5.0] - ARCH-023 Segmentation, Journeys, Loyalty, and Retention
+
+### Added
+- Executable governed segmentation, journey, loyalty, retention, activation, and projection boundaries with immutable validation, registration, documentation, and focused tests.
+
+Status: Customer & Relationship Management Architecture
+Version: 1.5.0
+
+---
+
 ## [1.4.0] - ARCH-023 Interaction and Service History
 
 ### Added
