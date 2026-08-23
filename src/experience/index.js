@@ -16,3 +16,6 @@ export { GatewayPort } from './gateway/gateway-port.js';
 export { addExperienceLayer } from './service-registration.js';
 export { ChannelRegistry } from './services/channel-registry.js';
 export { ExperienceService } from './services/experience-service.js';
+export * from './experience-conversation-frontend-overview-constants.js';
+export { ExperienceConversationFrontendOverviewProfile } from './contracts/experience-conversation-frontend-overview-profile.js';
+export { ExperienceConversationFrontendOverviewDescriptor } from './experience-conversation-frontend-overview/experience-conversation-frontend-overview-descriptor.js';

@@ -4,6 +4,7 @@ import { WhatsAppChannelAdapter } from './channel/whatsapp-channel-adapter.js';
 import { WebsiteChannelAdapter } from './channel/website-channel-adapter.js';
 import { ChannelRegistry } from './services/channel-registry.js';
 import { ExperienceService } from './services/experience-service.js';
+import { ExperienceConversationFrontendOverviewDescriptor } from './experience-conversation-frontend-overview/experience-conversation-frontend-overview-descriptor.js';
 
 export function addExperienceLayer(services, { gatewayRegistrationKey = 'GatewayPort' } = {}) {
   if (!(services instanceof ServiceCollection)) {
@@ -27,6 +28,7 @@ export function addExperienceLayer(services, { gatewayRegistrationKey = 'Gateway
       meter: provider.getRequiredService('Meter')
     })
   );
+  services.registerSingleton('ExperienceConversationFrontendOverviewDescriptor', () => new ExperienceConversationFrontendOverviewDescriptor());
 
   return services;
 }

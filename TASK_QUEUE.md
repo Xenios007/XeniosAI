@@ -180,7 +180,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-020-08 Multi-Tenant Security, Data, and Operations Reference`
 - Completed: `ARCH-020-09 Delivery, Testing, and Conformance Reference`
 - Completed: `ARCH-020-10 Future Reference Implementation Evolution`
-- Next: `ARCH-021-01 Experience, Conversation, and Frontend Overview`
+- Completed: `ARCH-021-01 Experience, Conversation, and Frontend Overview`
+- Next: `ARCH-021-02 Experience Operating Model and Journeys`
 
 ## Notes
 

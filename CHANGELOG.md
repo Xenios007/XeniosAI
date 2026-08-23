@@ -6,6 +6,19 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.80.0] - ARCH-021 Experience, Conversation, and Frontend Overview
+
+### Added
+- Experience overview metadata, immutable profile validation, descriptor registration, implementation documentation, and focused tests for actors, capability boundaries, normalized envelopes, response rendering, cross-industry reuse, invariants, and success measures.
+
+### Established
+- The frontend remains channel-neutral and presentation-focused while authority is independently validated by governed providers.
+
+Status: Experience, Conversation, and Frontend Architecture
+Version: 0.80.0
+
+---
+
 ## [0.79.0] - ARCH-020 Future Reference Implementation Evolution
 
 ### Added
