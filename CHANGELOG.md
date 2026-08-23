@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [1.1.0] - ARCH-023 Customer, Party, and Profile Model
+
+### Added
+- Executable customer-profile composition, identity linkage, contact points, attribute classification, lifecycle, aggregate boundaries, and CRM invariants with immutable validation, registration, documentation, and focused tests.
+
+Status: Customer & Relationship Management Architecture
+Version: 1.1.0
+
+---
+
 ## [1.0.0] - ARCH-023 Customer & Relationship Management Overview
 
 ### Added
