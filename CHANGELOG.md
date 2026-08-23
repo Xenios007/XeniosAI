@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [1.6.0] - ARCH-023 Data Quality, Resolution, and Portability
+
+### Added
+- Executable customer-data quality, resolution, merge, provenance, deletion, and portability safeguards with immutable validation, documentation, and focused tests.
+
+Status: Customer & Relationship Management Architecture
+Version: 1.6.0
+
+---
+
 ## [1.5.0] - ARCH-023 Segmentation, Journeys, Loyalty, and Retention
 
 ### Added
