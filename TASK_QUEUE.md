@@ -205,7 +205,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-023-03 Organizations, Contacts, and Relationships`
 - Completed: `ARCH-023-04 Preferences, Consent, and Customer Context`
 - Completed: `ARCH-023-05 Interaction and Service History`
-- Next: `ARCH-023-06 Segmentation, Journeys, Loyalty, and Retention`
+- Completed: `ARCH-023-06 Segmentation, Journeys, Loyalty, and Retention`
+- Next: `ARCH-023-07 Data Quality, Resolution, and Portability`
 
 ## Notes
 
