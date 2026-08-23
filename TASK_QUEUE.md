@@ -208,7 +208,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-023-06 Segmentation, Journeys, Loyalty, and Retention`
 - Completed: `ARCH-023-07 Data Quality, Resolution, and Portability`
 - Completed: `ARCH-023-08 Customer Service Integration and Experience`
-- Next: `ARCH-023-09 CRM Operations, Governance, and Assurance`
+- Completed: `ARCH-023-09 CRM Operations, Governance, and Assurance`
+- Next: `ARCH-023-10 Future Customer Relationship Evolution`
 
 ## Notes
 
