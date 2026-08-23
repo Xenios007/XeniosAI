@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.88.0] - ARCH-021 Frontend Operations, Observability, and Performance
+
+### Added
+- Executable frontend operations, telemetry, performance budget, resilience, release, incident, and capacity metadata with immutable validation, registration, documentation, and focused tests.
+
+Status: Experience, Conversation, and Frontend Architecture
+Version: 0.88.0
+
+---
+
 ## [0.87.0] - ARCH-021 Security, Privacy, and Tenant Experience
 
 ### Added
