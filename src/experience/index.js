@@ -25,3 +25,6 @@ export { ExperienceOperatingModelAndJourneysDescriptor } from './experience-oper
 export * from './conversation-and-chat-experience-constants.js';
 export { ConversationAndChatExperienceProfile } from './contracts/conversation-and-chat-experience-profile.js';
 export { ConversationAndChatExperienceDescriptor } from './conversation-and-chat-experience/conversation-and-chat-experience-descriptor.js';
+export * from './frontend-application-architecture-constants.js';
+export { FrontendApplicationArchitectureProfile } from './contracts/frontend-application-architecture-profile.js';
+export { FrontendApplicationArchitectureDescriptor } from './frontend-application-architecture/frontend-application-architecture-descriptor.js';

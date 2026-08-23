@@ -6,6 +6,19 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.83.0] - ARCH-021 Frontend Application Architecture
+
+### Added
+- Executable frontend layer, composition, state, gateway access, extension, compatibility, and reference-application metadata with immutable validation, descriptor registration, documentation, and focused tests.
+
+### Established
+- Frontend applications use replaceable adapters and presentation contracts without owning business truth, direct data access, secrets, or extension authority.
+
+Status: Experience, Conversation, and Frontend Architecture
+Version: 0.83.0
+
+---
+
 ## [0.82.0] - ARCH-021 Conversation and Chat Experience
 
 ### Added
