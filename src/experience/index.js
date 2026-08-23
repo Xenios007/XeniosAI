@@ -40,3 +40,6 @@ export { IdentityStateAndApiIntegrationDescriptor } from './identity-state-and-a
 export * from './security-privacy-and-tenant-experience-constants.js';
 export { SecurityPrivacyAndTenantExperienceProfile } from './contracts/security-privacy-and-tenant-experience-profile.js';
 export { SecurityPrivacyAndTenantExperienceDescriptor } from './security-privacy-and-tenant-experience/security-privacy-and-tenant-experience-descriptor.js';
+export * from './frontend-operations-observability-and-performance-constants.js';
+export { FrontendOperationsObservabilityAndPerformanceProfile } from './contracts/frontend-operations-observability-and-performance-profile.js';
+export { FrontendOperationsObservabilityAndPerformanceDescriptor } from './frontend-operations-observability-and-performance/frontend-operations-observability-and-performance-descriptor.js';

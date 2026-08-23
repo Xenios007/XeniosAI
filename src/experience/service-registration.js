@@ -12,6 +12,7 @@ import { DesignSystemAccessibilityAndLocalizationDescriptor } from './design-sys
 import { RealtimeStreamingAndHumanHandoffDescriptor } from './realtime-streaming-and-human-handoff/realtime-streaming-and-human-handoff-descriptor.js';
 import { IdentityStateAndApiIntegrationDescriptor } from './identity-state-and-api-integration/identity-state-and-api-integration-descriptor.js';
 import { SecurityPrivacyAndTenantExperienceDescriptor } from './security-privacy-and-tenant-experience/security-privacy-and-tenant-experience-descriptor.js';
+import { FrontendOperationsObservabilityAndPerformanceDescriptor } from './frontend-operations-observability-and-performance/frontend-operations-observability-and-performance-descriptor.js';
 
 export function addExperienceLayer(services, { gatewayRegistrationKey = 'GatewayPort' } = {}) {
   if (!(services instanceof ServiceCollection)) {
@@ -43,6 +44,7 @@ export function addExperienceLayer(services, { gatewayRegistrationKey = 'Gateway
   services.registerSingleton('RealtimeStreamingAndHumanHandoffDescriptor', () => new RealtimeStreamingAndHumanHandoffDescriptor());
   services.registerSingleton('IdentityStateAndApiIntegrationDescriptor', () => new IdentityStateAndApiIntegrationDescriptor());
   services.registerSingleton('SecurityPrivacyAndTenantExperienceDescriptor', () => new SecurityPrivacyAndTenantExperienceDescriptor());
+  services.registerSingleton('FrontendOperationsObservabilityAndPerformanceDescriptor', () => new FrontendOperationsObservabilityAndPerformanceDescriptor());
 
   return services;
 }
