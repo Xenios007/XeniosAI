@@ -196,7 +196,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-022-04 Authentication, Federation, and Session Assurance`
 - Completed: `ARCH-022-05 Authorization, Access Packages, and Policy Context`
 - Completed: `ARCH-022-06 Delegated Administration and Privileged Access`
-- Next: `ARCH-022-07 Service, Machine, Agent, and Workload Identity`
+- Completed: `ARCH-022-07 Service, Machine, Agent, and Workload Identity`
+- Next: `ARCH-022-08 Consent, Privacy, and Customer Identity`
 
 ## Notes
 
