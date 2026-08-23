@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.99.0] - ARCH-022 Future Identity and Access Evolution
+
+### Added
+- Executable identity evolution horizons, adaptive safeguards, portable-claim validation, federated workload controls, AI boundaries, research promotion, and enduring invariants with immutable validation, registration, documentation, and focused tests.
+
+Status: Identity, Organizations, and Access Architecture
+Version: 0.99.0
+
+---
+
 ## [0.98.0] - ARCH-022 Identity Operations, Governance, and Assurance
 
 ### Added
