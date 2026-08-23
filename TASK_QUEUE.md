@@ -209,7 +209,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-023-07 Data Quality, Resolution, and Portability`
 - Completed: `ARCH-023-08 Customer Service Integration and Experience`
 - Completed: `ARCH-023-09 CRM Operations, Governance, and Assurance`
-- Next: `ARCH-023-10 Future Customer Relationship Evolution`
+- Completed: `ARCH-023-10 Future Customer Relationship Evolution`
+- Next: `ARCH-024-01 Product Catalog and Resource Management Overview`
 
 ## Notes
 
