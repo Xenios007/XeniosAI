@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.90.0] - ARCH-022 Identity, Organizations, and Access Overview
+
+### Added
+- Executable identity/access target state, concept, ownership, context, decision, obligation, and invariant metadata with immutable validation, registration, documentation, and focused tests.
+
+Status: Identity, Organizations, and Access Architecture
+Version: 0.90.0
+
+---
+
 ## [0.89.0] - ARCH-021 Future Experience and Frontend Evolution
 
 ### Added
