@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [1.3.0] - ARCH-023 Preferences, Consent, and Customer Context
+
+### Added
+- Executable purpose-bound preference, consent, context, personalization, and agent-use safeguards with immutable validation, registration, documentation, and focused tests.
+
+Status: Customer & Relationship Management Architecture
+Version: 1.3.0
+
+---
+
 ## [1.2.0] - ARCH-023 Organizations, Contacts, and Relationships
 
 ### Added
