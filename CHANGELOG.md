@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [0.91.0] - ARCH-022 Identity Types and Lifecycle
+
+### Added
+- Executable identity class, authoritative source, lifecycle, proofing, movement, revocation, recovery, and retirement metadata with immutable validation, registration, documentation, and focused tests.
+
+Status: Identity, Organizations, and Access Architecture
+Version: 0.91.0
+
+---
+
 ## [0.90.0] - ARCH-022 Identity, Organizations, and Access Overview
 
 ### Added

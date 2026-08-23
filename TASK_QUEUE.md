@@ -191,7 +191,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-021-09 Frontend Operations, Observability, and Performance`
 - Completed: `ARCH-021-10 Future Experience and Frontend Evolution`
 - Completed: `ARCH-022-01 Identity, Organizations, and Access Overview`
-- Next: `ARCH-022-02 Identity Types and Lifecycle`
+- Completed: `ARCH-022-02 Identity Types and Lifecycle`
+- Next: `ARCH-022-03 Organizations, Teams, and Membership`
 
 ## Notes
 
