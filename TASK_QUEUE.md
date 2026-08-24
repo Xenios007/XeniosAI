@@ -291,7 +291,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-031-09 Portal Operations, Governance & Assurance`
 - Completed: `ARCH-031-10 Future Developer Experience Evolution`
 - Completed: `ARCH-032-01 Application Framework & UI Extension Overview`
-- Next: `ARCH-032-02 Application Shell Composition, Routing & Navigation`
+- Completed: `ARCH-032-02 Application Shell Composition, Routing & Navigation`
+- Next: `ARCH-032-03 Frontend SDK, Capability & API Clients`
 
 ## Notes
 

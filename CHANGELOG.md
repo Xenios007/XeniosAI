@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.81.0] - ARCH-032-02 Application Shell Composition, Routing & Navigation
+
+### Added
+- Executable shell, route, navigation, layout, capability-loading, error-boundary, composition, lifecycle, recovery, and assurance safeguards.
+
+Status: Application Framework and UI Extension Architecture
+Version: 2.81.0
+
+---
+
 ## [2.80.0] - ARCH-032-01 Application Framework & UI Extension Overview
 
 ### Added
