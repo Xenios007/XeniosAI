@@ -58,6 +58,7 @@ Testing is treated as a first-class engineering discipline rather than an aftert
 
 The repository currently includes automated unit tests for:
 
+- `ARCH-030-10 Future Industry Solution Evolution` in `tests/industry-solution-packs-composable-applications/`
 - `ARCH-030-09 Solution Operations, Governance & Assurance` in `tests/industry-solution-packs-composable-applications/`
 - `ARCH-030-08 Conformance, Versioning, Migration & Exit` in `tests/industry-solution-packs-composable-applications/`
 - `ARCH-030-07 Experience, Branding & Composable Application Shells` in `tests/industry-solution-packs-composable-applications/`

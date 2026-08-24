@@ -25,3 +25,6 @@ export { ConformanceVersioningMigrationExitDescriptor } from './lifecycle/confor
 export * from './solution-operations-governance-assurance-constants.js';
 export { SolutionOperationsGovernanceAssuranceProfile } from './contracts/solution-operations-governance-assurance-profile.js';
 export { SolutionOperationsGovernanceAssuranceDescriptor } from './operations/solution-operations-governance-assurance-descriptor.js';
+export * from './future-industry-solution-evolution-constants.js';
+export { FutureIndustrySolutionEvolutionProfile } from './contracts/future-industry-solution-evolution-profile.js';
+export { FutureIndustrySolutionEvolutionDescriptor } from './evolution/future-industry-solution-evolution-descriptor.js';
