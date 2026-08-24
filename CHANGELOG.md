@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.39.0] - ARCH-027-10 Future Omnichannel Collaboration Evolution
+
+### Added
+- Executable proactive, multimodal, agent-assisted, federated-service, consent, accessibility, research, ARCH-029 promotion, rollback, exit, and enduring-authority safeguards with immutable validation, documentation, and focused tests.
+
+Status: Omnichannel Engagement and Collaboration Architecture
+Version: 2.39.0
+
+---
+
 ## [2.38.0] - ARCH-027-09 Engagement Operations, Governance, and Assurance
 
 ### Added

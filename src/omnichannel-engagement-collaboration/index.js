@@ -25,3 +25,6 @@ export { IntegrationRealtimeDeliveryResilienceDescriptor } from './integration/i
 export * from './engagement-operations-governance-assurance-constants.js';
 export { EngagementOperationsGovernanceAssuranceProfile } from './contracts/engagement-operations-governance-assurance-profile.js';
 export { EngagementOperationsGovernanceAssuranceDescriptor } from './operations/engagement-operations-governance-assurance-descriptor.js';
+export * from './future-omnichannel-collaboration-evolution-constants.js';
+export { FutureOmnichannelCollaborationEvolutionProfile } from './contracts/future-omnichannel-collaboration-evolution-profile.js';
+export { FutureOmnichannelCollaborationEvolutionDescriptor } from './future/future-omnichannel-collaboration-evolution-descriptor.js';
