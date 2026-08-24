@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.49.0] - ARCH-028-10 Future Analytics & Decision Intelligence Evolution
+
+### Added
+- Executable real-time, causal, federated, adaptive-decision-support, research, ARCH-029 promotion, rollback, retirement, quality, tenant-isolation, human-authority, and enduring-source-authority safeguards with immutable validation, documentation, and focused tests.
+
+Status: Analytics and Decision Intelligence Architecture
+Version: 2.49.0
+
+---
+
 ## [2.48.0] - ARCH-028-09 Analytics Operations, Governance & Assurance
 
 ### Added

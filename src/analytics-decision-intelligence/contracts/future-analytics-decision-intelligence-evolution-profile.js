@@ -1,0 +1,8 @@
+export class FutureAnalyticsDecisionIntelligenceEvolutionProfile {
+  constructor({ profileName, evolutionPrinciples = [], evolutionHorizons = [], realTimeAnalytics = [], causalDecisionIntelligence = [], federatedAnalytics = [], adaptiveDecisionSupport = [], researchPromotionRetirement = [], controls = [], measures = [], invariants = [], evidenceGated = true, sourceAuthorityPreserved = true, evolutionReversible = true, tenantBounded = true, humanAuthorityPreserved = true, arch029PromotionRequired = true, qualityGatesPreserved = true, retirementPlanned = true, realTimeBypassesQuality = false, causalClaimWithoutEvidence = false, federationWeakensIsolation = false, adaptationOutsidePromotion = false, modelOutputAsSourceTruth = false, automaticActionWithoutAuthority = false, irreversibleRollout = false, researchUsesUnapprovedData = false } = {}) {
+    this.profileName = profileName;
+    for (const [key, value] of Object.entries({ evolutionPrinciples, evolutionHorizons, realTimeAnalytics, causalDecisionIntelligence, federatedAnalytics, adaptiveDecisionSupport, researchPromotionRetirement, controls, measures, invariants })) this[key] = Object.freeze([...value]);
+    for (const [key, value] of Object.entries({ evidenceGated, sourceAuthorityPreserved, evolutionReversible, tenantBounded, humanAuthorityPreserved, arch029PromotionRequired, qualityGatesPreserved, retirementPlanned, realTimeBypassesQuality, causalClaimWithoutEvidence, federationWeakensIsolation, adaptationOutsidePromotion, modelOutputAsSourceTruth, automaticActionWithoutAuthority, irreversibleRollout, researchUsesUnapprovedData })) this[key] = Boolean(value);
+    Object.freeze(this);
+  }
+}

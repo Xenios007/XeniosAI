@@ -25,3 +25,6 @@ export { AiAssistedAnalysisInsightProvenanceDescriptor } from './ai-analysis/ai-
 export * from './analytics-operations-governance-assurance-constants.js';
 export { AnalyticsOperationsGovernanceAssuranceProfile } from './contracts/analytics-operations-governance-assurance-profile.js';
 export { AnalyticsOperationsGovernanceAssuranceDescriptor } from './operations/analytics-operations-governance-assurance-descriptor.js';
+export * from './future-analytics-decision-intelligence-evolution-constants.js';
+export { FutureAnalyticsDecisionIntelligenceEvolutionProfile } from './contracts/future-analytics-decision-intelligence-evolution-profile.js';
+export { FutureAnalyticsDecisionIntelligenceEvolutionDescriptor } from './evolution/future-analytics-decision-intelligence-evolution-descriptor.js';
