@@ -102,6 +102,7 @@ The repository currently includes automated unit tests for:
 - `ARCH-024-06 Availability, Inventory, and Capacity References` in `tests/product-catalog-resource-management/`
 - `ARCH-024-07 Bundles, Packages, and Eligibility` in `tests/product-catalog-resource-management/`
 - `ARCH-024-08 Integration, APIs, Events, and Extensions` in `tests/product-catalog-resource-management/`
+- `ARCH-024-09 Operations, Governance, and Assurance` in `tests/product-catalog-resource-management/`
 - `ARCH-019-01 Plugin and Extension Overview` in `tests/plugin-extension-framework/`
 - `ARCH-019-02 Extension Domain and Classification` in `tests/plugin-extension-framework/`
 - `ARCH-019-03 Package, Manifest, Registry, and Provenance` in `tests/plugin-extension-framework/`

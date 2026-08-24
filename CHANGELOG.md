@@ -6,6 +6,17 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.8.0] - ARCH-024 Operations, Governance, and Assurance
+
+### Added
+- Catalog operating-model metadata covering stewardship, publication, service and freshness objectives, incident reconciliation, assurance evidence, recovery, and operational measures.
+- Safeguards requiring accountable ownership, separation of duties, sensitive metadata controls, tenant tests, recovery exercises, approved changes, explicit stale or partial behavior, and deterministic AI validation.
+
+Status: Product, Catalog, and Resource Management Architecture
+Version: 2.8.0
+
+---
+
 ## [2.7.0] - ARCH-024 Integration, APIs, Events, and Extensions
 
 ### Added
