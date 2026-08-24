@@ -58,6 +58,7 @@ Testing is treated as a first-class engineering discipline rather than an aftert
 
 The repository currently includes automated unit tests for:
 
+- `ARCH-033-01 API Product Management & Discovery Overview` in `tests/api-product-management-discovery/`
 - `ARCH-032-10 Framework Operations, Governance & Future Evolution` in `tests/application-framework-ui-extension-kit/`
 - `ARCH-032-09 Packaging, Testing, Versioning & Upgrade Paths` in `tests/application-framework-ui-extension-kit/`
 - `ARCH-032-08 UI Extension, Embedding & Security Boundaries` in `tests/application-framework-ui-extension-kit/`

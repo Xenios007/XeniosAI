@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.90.0] - ARCH-033-01 API Product Management & Discovery Overview
+
+### Added
+- Executable API-product, audience, ownership, value, boundary, quality, contract, capability, hospitality-journey, lifecycle, recovery, observability, and assurance safeguards.
+
+Status: API Product Management and Discovery Architecture
+Version: 2.90.0
+
+---
+
 ## [2.89.0] - ARCH-032-10 Framework Operations, Governance & Future Evolution
 
 ### Added

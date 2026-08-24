@@ -300,7 +300,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-032-08 UI Extension, Embedding & Security Boundaries`
 - Completed: `ARCH-032-09 Packaging, Testing, Versioning & Upgrade Paths`
 - Completed: `ARCH-032-10 Framework Operations, Governance & Future Evolution`
-- Next: `ARCH-033-01 API Product Management & Discovery Overview`
+- Completed: `ARCH-033-01 API Product Management & Discovery Overview`
+- Next: `ARCH-033-02 API Product Model, Ownership & Audiences`
 
 ## Notes
 
