@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.42.0] - ARCH-028-03 Analytical Data Products and Lineage
+
+### Added
+- Executable analytical data-product contracts, pinned authoritative sources, reproducible transformations, quality gates, end-to-end lineage, purpose-scoped access, governed lifecycle, recovery, observability, and authority safeguards with immutable validation, documentation, and focused tests.
+
+Status: Analytics and Decision Intelligence Architecture
+Version: 2.42.0
+
+---
+
 ## [2.41.0] - ARCH-028-02 Metrics, Measures, and Semantic Layer
 
 ### Added

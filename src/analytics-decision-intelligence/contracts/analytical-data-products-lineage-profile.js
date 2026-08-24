@@ -1,0 +1,8 @@
+export class AnalyticalDataProductsLineageProfile {
+  constructor({ profileName, responsibilities = [], dataProductFields = [], sourceFields = [], transformationFields = [], qualityRuleFields = [], qualityResultFields = [], lineageFields = [], accessFields = [], lifecycleStates = [], controls = [], failureRecovery = [], observabilityFields = [], assuranceEvidence = [], invariants = [], contractsVersioned = true, sourcesAuthoritativeAndPinned = true, transformationsReproducible = true, qualityGatesEnforced = true, lineageComplete = true, accessPurposeScoped = true, publicationGoverned = true, retirementReconciled = true, sharedDatabases = false, unpublishedContractConsumed = false, unpinnedSourceAccepted = false, untestedTransformationPublished = false, qualityFailureIgnored = false, lineageMissing = false, accessPolicyBypassed = false, dataProductBecomesOperationalTruth = false } = {}) {
+    this.profileName = profileName;
+    for (const [key, value] of Object.entries({ responsibilities, dataProductFields, sourceFields, transformationFields, qualityRuleFields, qualityResultFields, lineageFields, accessFields, lifecycleStates, controls, failureRecovery, observabilityFields, assuranceEvidence, invariants })) this[key] = Object.freeze([...value]);
+    for (const [key, value] of Object.entries({ contractsVersioned, sourcesAuthoritativeAndPinned, transformationsReproducible, qualityGatesEnforced, lineageComplete, accessPurposeScoped, publicationGoverned, retirementReconciled, sharedDatabases, unpublishedContractConsumed, unpinnedSourceAccepted, untestedTransformationPublished, qualityFailureIgnored, lineageMissing, accessPolicyBypassed, dataProductBecomesOperationalTruth })) this[key] = Boolean(value);
+    Object.freeze(this);
+  }
+}
