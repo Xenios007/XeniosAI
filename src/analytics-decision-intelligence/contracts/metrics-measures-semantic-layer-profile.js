@@ -1,0 +1,8 @@
+export class MetricsMeasuresSemanticLayerProfile {
+  constructor({ profileName, responsibilities = [], businessTermFields = [], dimensionFields = [], measureFields = [], timeSemanticFields = [], grainFields = [], metricDefinitionFields = [], metricResultFields = [], controls = [], failureRecovery = [], observabilityFields = [], assuranceEvidence = [], invariants = [], semanticOwnershipAccountable = true, definitionsVersioned = true, grainExplicit = true, timeSemanticsExplicit = true, measuresDeterministic = true, unitsValidated = true, lineageRequired = true, resultsQualified = true, factsRemainExternal = true, sharedDatabases = false, hiddenMetricFilter = false, implicitGrain = false, ambiguousTimeSemantic = false, mutablePublishedDefinition = false, telemetryAsBusinessFact = false, inferredResultAsSourceTruth = false } = {}) {
+    this.profileName = profileName;
+    for (const [key, value] of Object.entries({ responsibilities, businessTermFields, dimensionFields, measureFields, timeSemanticFields, grainFields, metricDefinitionFields, metricResultFields, controls, failureRecovery, observabilityFields, assuranceEvidence, invariants })) this[key] = Object.freeze([...value]);
+    for (const [key, value] of Object.entries({ semanticOwnershipAccountable, definitionsVersioned, grainExplicit, timeSemanticsExplicit, measuresDeterministic, unitsValidated, lineageRequired, resultsQualified, factsRemainExternal, sharedDatabases, hiddenMetricFilter, implicitGrain, ambiguousTimeSemantic, mutablePublishedDefinition, telemetryAsBusinessFact, inferredResultAsSourceTruth })) this[key] = Boolean(value);
+    Object.freeze(this);
+  }
+}

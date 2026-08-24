@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.41.0] - ARCH-028-02 Metrics, Measures, and Semantic Layer
+
+### Added
+- Executable business-term, conformed-dimension, deterministic-measure, time-semantic, grain, metric-definition, qualified-result, lineage, recovery, and authority safeguards with immutable validation, documentation, and focused tests.
+
+Status: Analytics and Decision Intelligence Architecture
+Version: 2.41.0
+
+---
+
 ## [2.40.0] - ARCH-028-01 Analytics and Decision Intelligence Overview
 
 ### Added

@@ -251,7 +251,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-027-09 Engagement Operations, Governance, and Assurance`
 - Completed: `ARCH-027-10 Future Omnichannel Collaboration Evolution`
 - Completed: `ARCH-028-01 Analytics and Decision Intelligence Overview`
-- Next: `ARCH-028-02 Metrics, Measures, and Semantic Layer`
+- Completed: `ARCH-028-02 Metrics, Measures, and Semantic Layer`
+- Next: `ARCH-028-03 Analytical Data Products and Lineage`
 
 ## Notes
 
