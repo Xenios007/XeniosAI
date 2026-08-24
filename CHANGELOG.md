@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.98.0] - ARCH-033-09 API Product Operations, Governance & Assurance
+
+### Added
+- Executable product-council, service-objective, incident, policy, evidence, review, conformance, recovery, observability, and assurance safeguards.
+
+Status: API Product Management and Discovery Architecture
+Version: 2.98.0
+
+---
+
 ## [2.97.0] - ARCH-033-08 API Product Lifecycle, Versioning & Deprecation
 
 ### Added

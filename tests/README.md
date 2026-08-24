@@ -58,6 +58,7 @@ Testing is treated as a first-class engineering discipline rather than an aftert
 
 The repository currently includes automated unit tests for:
 
+- `ARCH-033-09 API Product Operations, Governance & Assurance` in `tests/api-product-management-discovery/`
 - `ARCH-033-08 API Product Lifecycle, Versioning & Deprecation` in `tests/api-product-management-discovery/`
 - `ARCH-033-07 Consumer Analytics, Feedback, Support & Adoption` in `tests/api-product-management-discovery/`
 - `ARCH-033-06 Documentation, Examples, SDKs & Change Communication` in `tests/api-product-management-discovery/`

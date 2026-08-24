@@ -22,3 +22,6 @@ export { ConsumerAnalyticsFeedbackSupportAdoptionDescriptor } from './adoption/c
 export * from './api-product-lifecycle-versioning-deprecation-constants.js';
 export { ApiProductLifecycleVersioningDeprecationProfile } from './contracts/api-product-lifecycle-versioning-deprecation-profile.js';
 export { ApiProductLifecycleVersioningDeprecationDescriptor } from './lifecycle/api-product-lifecycle-versioning-deprecation-descriptor.js';
+export * from './api-product-operations-governance-assurance-constants.js';
+export { ApiProductOperationsGovernanceAssuranceProfile } from './contracts/api-product-operations-governance-assurance-profile.js';
+export { ApiProductOperationsGovernanceAssuranceDescriptor } from './operations/api-product-operations-governance-assurance-descriptor.js';
