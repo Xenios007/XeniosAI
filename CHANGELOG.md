@@ -6,6 +6,17 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.4.0] - ARCH-024 Attributes, Configuration, and Inheritance
+
+### Added
+- Attribute definition, configuration profile, inheritance, precedence, validation, effective-date, compatibility, projection, recovery, and authority metadata with immutable profile validation and focused tests.
+- Safeguards requiring explicit precedence, schema and type validation, audited overrides, explainable resolution, tenant-scoped projections, deterministic AI validation, and no fabricated configuration.
+
+Status: Product, Catalog, and Resource Management Architecture
+Version: 2.4.0
+
+---
+
 ## [2.3.0] - ARCH-024 Resource Types and Lifecycle
 
 ### Added

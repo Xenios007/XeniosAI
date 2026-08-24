@@ -98,6 +98,7 @@ The repository currently includes automated unit tests for:
 - `ARCH-018-09 Tenant Operations, Governance, and Assurance` in `tests/multi-tenancy/`
 - `ARCH-018-10 Future Multi-Tenancy Evolution` in `tests/multi-tenancy/`
 - `ARCH-024-04 Resource Types and Lifecycle` in `tests/product-catalog-resource-management/`
+- `ARCH-024-05 Attributes, Configuration, and Inheritance` in `tests/product-catalog-resource-management/`
 - `ARCH-019-01 Plugin and Extension Overview` in `tests/plugin-extension-framework/`
 - `ARCH-019-02 Extension Domain and Classification` in `tests/plugin-extension-framework/`
 - `ARCH-019-03 Package, Manifest, Registry, and Provenance` in `tests/plugin-extension-framework/`

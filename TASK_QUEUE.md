@@ -214,7 +214,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-024-02 Product and Service Model`
 - Completed: `ARCH-024-03 Catalog, Classification, and Discovery`
 - Completed: `ARCH-024-04 Resource Types and Lifecycle`
-- Next: `ARCH-024-05 Attributes, Configuration, and Inheritance`
+- Completed: `ARCH-024-05 Attributes, Configuration, and Inheritance`
+- Next: `ARCH-024-06 Availability, Inventory, and Capacity References`
 
 ## Notes
 
