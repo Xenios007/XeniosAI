@@ -16,3 +16,6 @@ export { FeedbackSignalsLearningCandidatesPrivacyDescriptor } from './feedback/f
 export * from './evaluation-datasets-offline-replay-regression-constants.js';
 export { EvaluationDatasetsOfflineReplayRegressionProfile } from './contracts/evaluation-datasets-offline-replay-regression-profile.js';
 export { EvaluationDatasetsOfflineReplayRegressionDescriptor } from './evaluation/evaluation-datasets-offline-replay-regression-descriptor.js';
+export * from './shadow-canary-experiment-promotion-constants.js';
+export { ShadowCanaryExperimentPromotionProfile } from './contracts/shadow-canary-experiment-promotion-profile.js';
+export { ShadowCanaryExperimentPromotionDescriptor } from './promotion/shadow-canary-experiment-promotion-descriptor.js';

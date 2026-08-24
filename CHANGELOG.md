@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.56.0] - ARCH-029-07 Shadow, Canary, Experiment & Promotion
+
+### Added
+- Executable staged-promotion, side-effect-free shadow, bounded-canary, governed-experiment, deterministic-allocation, continuous-guardrail, stop-condition, separated-approval, atomic-promotion, and tested-rollback safeguards with immutable validation, documentation, and focused tests.
+
+Status: AI Model Operations, Evaluation and Continuous Learning Architecture
+Version: 2.56.0
+
+---
+
 ## [2.55.0] - ARCH-029-06 Evaluation Datasets, Offline Replay & Regression
 
 ### Added

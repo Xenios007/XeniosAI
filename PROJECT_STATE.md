@@ -12,9 +12,9 @@ Update this file after every successful implementation session.
 - Implementation guide: `IMPLEMENTATION_GUIDE.md`
 - Task queue: `TASK_QUEUE.md`
 - Current implementation phase: `ARCH-029 AI Model Operations, Evaluation & Continuous Learning`
-- Current implementation state: `ARCH-029-06 Evaluation Datasets, Offline Replay & Regression` is implemented.
-- Latest successful implementation module: `ARCH-029-06 Evaluation Datasets, Offline Replay & Regression`
-- Latest successful commit: current-session `ARCH-029-06 Evaluation Datasets, Offline Replay & Regression` implementation commit
+- Current implementation state: `ARCH-029-07 Shadow, Canary, Experiment & Promotion` is implemented.
+- Latest successful implementation module: `ARCH-029-07 Shadow, Canary, Experiment & Promotion`
+- Latest successful commit: current-session `ARCH-029-07 Shadow, Canary, Experiment & Promotion` implementation commit
 - Latest push status: pushed to `main`
 - Build status: passing
 - Test status: passing
@@ -135,19 +135,20 @@ Update this file after every successful implementation session.
 - Completed: `ARCH-029-04 Prompt, Retrieval, Tool & Policy Configuration`
 - Completed: `ARCH-029-05 Feedback Signals, Learning Candidates & Privacy`
 - Completed: `ARCH-029-06 Evaluation Datasets, Offline Replay & Regression`
+- Completed: `ARCH-029-07 Shadow, Canary, Experiment & Promotion`
 
 ## Implementation Coverage
 
-- Completed through: `ARCH-029-06 Evaluation Datasets, Offline Replay & Regression`
-- Next documented implementation module: `ARCH-029-07 Shadow, Canary, Experiment & Promotion`
-- Reason: `architecture/029-ai-model-operations-evaluation-learning/07-shadow-canary-experiment-and-promotion.md` is the next architecture document in order.
+- Completed through: `ARCH-029-07 Shadow, Canary, Experiment & Promotion`
+- Next documented implementation module: `ARCH-029-08 Production Monitoring, Incidents, Deprecation & Exit`
+- Reason: `architecture/029-ai-model-operations-evaluation-learning/08-production-monitoring-incidents-deprecation-and-exit.md` is the next architecture document in order.
 
 ## Latest Verification
 
-- Focused test: `node --test tests/ai-model-operations-evaluation-learning/evaluation-datasets-offline-replay-regression.test.js`
+- Focused test: `node --test tests/ai-model-operations-evaluation-learning/shadow-canary-experiment-promotion.test.js`
 - Focused test result: passed, 3/3
 - Full test: `npm test`
-- Full test result: passed, 1550/1550
+- Full test result: passed, 1553/1553
 - Build command: `npm run build`
 - Build result: passed
 
@@ -169,4 +170,4 @@ Architecture documents must not be changed during implementation unless explicit
 
 ## Recommended Next Action
 
-Recommended next architecture module: `ARCH-029-07 Shadow, Canary, Experiment & Promotion`.
+Recommended next architecture module: `ARCH-029-08 Production Monitoring, Incidents, Deprecation & Exit`.
