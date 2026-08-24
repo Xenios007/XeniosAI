@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.70.0] - ARCH-031-01 Developer Experience & Portal Overview
+
+### Added
+- Executable developer-product, persona, journey, resource, lifecycle, provider-authority, security, failure, outcome-measure, observability, and assurance safeguards with immutable validation, documentation, and focused tests.
+
+Status: Developer Experience and Portal Architecture
+Version: 2.70.0
+
+---
+
 ## [2.69.0] - ARCH-030-10 Future Industry Solution Evolution
 
 ### Added
