@@ -6,6 +6,17 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.5.0] - ARCH-024 Availability, Inventory, and Capacity References
+
+### Added
+- Availability, inventory, capacity, schedule, blackout, maintenance, and operability reference metadata with immutable profile validation and focused tests.
+- Safeguards requiring source authority and timestamps, bounded freshness, explicit degradation, allocation-domain confirmation, no-oversell controls, and deterministic AI validation while rejecting cache authority, projection-based allocation authorization, unknown-as-available behavior, and fabricated results.
+
+Status: Product, Catalog, and Resource Management Architecture
+Version: 2.5.0
+
+---
+
 ## [2.4.0] - ARCH-024 Attributes, Configuration, and Inheritance
 
 ### Added
