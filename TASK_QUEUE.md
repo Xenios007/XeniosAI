@@ -267,7 +267,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-029-05 Feedback Signals, Learning Candidates & Privacy`
 - Completed: `ARCH-029-06 Evaluation Datasets, Offline Replay & Regression`
 - Completed: `ARCH-029-07 Shadow, Canary, Experiment & Promotion`
-- Next: `ARCH-029-08 Production Monitoring, Incidents, Deprecation & Exit`
+- Completed: `ARCH-029-08 Production Monitoring, Incidents, Deprecation & Exit`
+- Next: `ARCH-029-09 AI Operations, Governance & Assurance`
 
 ## Notes
 

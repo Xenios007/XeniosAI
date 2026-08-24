@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.57.0] - ARCH-029-08 Production Monitoring, Incidents, Deprecation & Exit
+
+### Added
+- Executable version-attributed telemetry, slice-aware quality-objective, drift, owned-incident, deterministic-containment, rollback, effective-dated-deprecation, reconciled-retirement, tested-provider-exit, and no-direct-learning safeguards with immutable validation, documentation, and focused tests.
+
+Status: AI Model Operations, Evaluation and Continuous Learning Architecture
+Version: 2.57.0
+
+---
+
 ## [2.56.0] - ARCH-029-07 Shadow, Canary, Experiment & Promotion
 
 ### Added

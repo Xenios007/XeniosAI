@@ -19,3 +19,6 @@ export { EvaluationDatasetsOfflineReplayRegressionDescriptor } from './evaluatio
 export * from './shadow-canary-experiment-promotion-constants.js';
 export { ShadowCanaryExperimentPromotionProfile } from './contracts/shadow-canary-experiment-promotion-profile.js';
 export { ShadowCanaryExperimentPromotionDescriptor } from './promotion/shadow-canary-experiment-promotion-descriptor.js';
+export * from './production-monitoring-incidents-deprecation-exit-constants.js';
+export { ProductionMonitoringIncidentsDeprecationExitProfile } from './contracts/production-monitoring-incidents-deprecation-exit-profile.js';
+export { ProductionMonitoringIncidentsDeprecationExitDescriptor } from './operations/production-monitoring-incidents-deprecation-exit-descriptor.js';
