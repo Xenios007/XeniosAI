@@ -58,6 +58,7 @@ Testing is treated as a first-class engineering discipline rather than an aftert
 
 The repository currently includes automated unit tests for:
 
+- `ARCH-029-10 Future AI Learning Evolution` in `tests/ai-model-operations-evaluation-learning/`
 - `ARCH-013-01 Developer Platform Overview` in `tests/developer-platform/`
 - `ARCH-013-02 Developer Experience and Journeys` in `tests/developer-platform/`
 - `ARCH-013-03 Platform Capability Model` in `tests/developer-platform/`

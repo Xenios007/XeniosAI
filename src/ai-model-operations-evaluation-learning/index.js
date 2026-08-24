@@ -25,3 +25,6 @@ export { ProductionMonitoringIncidentsDeprecationExitDescriptor } from './operat
 export * from './ai-operations-governance-assurance-constants.js';
 export { AiOperationsGovernanceAssuranceProfile } from './contracts/ai-operations-governance-assurance-profile.js';
 export { AiOperationsGovernanceAssuranceDescriptor } from './governance/ai-operations-governance-assurance-descriptor.js';
+export * from './future-ai-learning-evolution-constants.js';
+export { FutureAiLearningEvolutionProfile } from './contracts/future-ai-learning-evolution-profile.js';
+export { FutureAiLearningEvolutionDescriptor } from './evolution/future-ai-learning-evolution-descriptor.js';

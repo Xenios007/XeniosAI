@@ -269,7 +269,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-029-07 Shadow, Canary, Experiment & Promotion`
 - Completed: `ARCH-029-08 Production Monitoring, Incidents, Deprecation & Exit`
 - Completed: `ARCH-029-09 AI Operations, Governance & Assurance`
-- Next: `ARCH-029-10 Future AI Learning Evolution`
+- Completed: `ARCH-029-10 Future AI Learning Evolution`
+- Next: `ARCH-030-01 Industry Solution Packs & Composable Applications Overview`
 
 ## Notes
 
