@@ -115,6 +115,7 @@ The repository currently includes automated unit tests for:
 - `ARCH-025-09 Commerce Operations, Governance, and Assurance` in `tests/commerce-orders-reservations/`
 - `ARCH-025-10 Future Commerce Order and Reservation Evolution` in `tests/commerce-orders-reservations/`
 - `ARCH-026-01 Pricing, Billing, and Payments Overview` in `tests/pricing-billing-payments/`
+- `ARCH-026-02 Price Lists, Rate Plans, and Context` in `tests/pricing-billing-payments/`
 - `ARCH-019-01 Plugin and Extension Overview` in `tests/plugin-extension-framework/`
 - `ARCH-019-02 Extension Domain and Classification` in `tests/plugin-extension-framework/`
 - `ARCH-019-03 Package, Manifest, Registry, and Provenance` in `tests/plugin-extension-framework/`

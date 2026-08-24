@@ -6,6 +6,17 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.21.0] - ARCH-026-02 Price Lists, Rate Plans, and Context
+
+### Added
+- Price book, rate plan, currency, unit, pricing context, effective date, deterministic version selection, recovery, observability, and assurance metadata.
+- Safeguards requiring authoritative effective versions, currency and unit validation, provider-owned commands, tenant and purpose scope, versioned schemas, deterministic AI policy checks, and human review.
+
+Status: Pricing, Billing, and Payments Architecture
+Version: 2.21.0
+
+---
+
 ## [2.20.0] - ARCH-026-01 Pricing, Billing, and Payments Overview
 
 ### Added
