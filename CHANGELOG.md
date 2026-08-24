@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.80.0] - ARCH-032-01 Application Framework & UI Extension Overview
+
+### Added
+- Executable framework, consumer, application-type, authority, quality, portability, lifecycle, Casa Lluvia journey, recovery, observability, and assurance safeguards.
+
+Status: Application Framework and UI Extension Architecture
+Version: 2.80.0
+
+---
+
 ## [2.79.0] - ARCH-031-10 Future Developer Experience Evolution
 
 ### Added

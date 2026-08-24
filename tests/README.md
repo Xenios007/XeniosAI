@@ -58,6 +58,7 @@ Testing is treated as a first-class engineering discipline rather than an aftert
 
 The repository currently includes automated unit tests for:
 
+- `ARCH-032-01 Application Framework & UI Extension Overview` in `tests/application-framework-ui-extension-kit/`
 - `ARCH-031-10 Future Developer Experience Evolution` in `tests/developer-experience-portal/`
 - `ARCH-031-09 Portal Operations, Governance & Assurance` in `tests/developer-experience-portal/`
 - `ARCH-031-08 Portal Integration, Extensibility & Automation` in `tests/developer-experience-portal/`
