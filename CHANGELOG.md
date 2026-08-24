@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.60.0] - ARCH-030-01 Industry Solution Packs & Composable Applications Overview
+
+### Added
+- Executable approved-capability composition, bounded-industry-model, authority-preservation, Casa Lluvia validation, lifecycle, recovery, portability, and conformance safeguards with immutable validation, documentation, and focused tests.
+
+Status: Industry Solution Packs and Composable Applications Architecture
+Version: 2.60.0
+
+---
+
 ## [2.59.0] - ARCH-029-10 Future AI Learning Evolution
 
 ### Added
