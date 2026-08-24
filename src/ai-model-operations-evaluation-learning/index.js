@@ -10,3 +10,6 @@ export { ModelSelectionRoutingFallbackBudgetsDescriptor } from './routing/model-
 export * from './prompt-retrieval-tool-policy-configuration-constants.js';
 export { PromptRetrievalToolPolicyConfigurationProfile } from './contracts/prompt-retrieval-tool-policy-configuration-profile.js';
 export { PromptRetrievalToolPolicyConfigurationDescriptor } from './configuration/prompt-retrieval-tool-policy-configuration-descriptor.js';
+export * from './feedback-signals-learning-candidates-privacy-constants.js';
+export { FeedbackSignalsLearningCandidatesPrivacyProfile } from './contracts/feedback-signals-learning-candidates-privacy-profile.js';
+export { FeedbackSignalsLearningCandidatesPrivacyDescriptor } from './feedback/feedback-signals-learning-candidates-privacy-descriptor.js';

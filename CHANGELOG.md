@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.54.0] - ARCH-029-05 Feedback Signals, Learning Candidates & Privacy
+
+### Added
+- Executable explicit and implicit feedback, qualified outcome, consent, minimization, tenant-isolation, de-identification, reviewed learning-candidate, deletion-reconciliation, and no-direct-learning safeguards with immutable validation, documentation, and focused tests.
+
+Status: AI Model Operations, Evaluation and Continuous Learning Architecture
+Version: 2.54.0
+
+---
+
 ## [2.53.0] - ARCH-029-04 Prompt, Retrieval, Tool & Policy Configuration
 
 ### Added
