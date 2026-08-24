@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.24.0] - ARCH-026-05 Billing, Subscriptions, and Usage Charging
+
+### Added
+- Executable billing account, subscription, metering, rating, accrual, adjustment, recovery, and authority safeguards with immutable validation, documentation, and focused tests.
+
+Status: Pricing, Billing, and Payments Architecture
+Version: 2.24.0
+
+---
+
 ## [2.23.0] - ARCH-026-04 Quotation and Price Determination
 
 ### Added
