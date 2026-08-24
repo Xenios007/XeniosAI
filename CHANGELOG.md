@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.40.0] - ARCH-028-01 Analytics and Decision Intelligence Overview
+
+### Added
+- Executable analytics authority, semantic-definition, analytical-product, capability, lineage, derived-output labeling, recovery, observability, and assurance safeguards with immutable validation, documentation, and focused tests.
+
+Status: Analytics and Decision Intelligence Architecture
+Version: 2.40.0
+
+---
+
 ## [2.39.0] - ARCH-027-10 Future Omnichannel Collaboration Evolution
 
 ### Added

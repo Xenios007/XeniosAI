@@ -250,7 +250,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-027-08 Integration, Realtime Delivery, and Resilience`
 - Completed: `ARCH-027-09 Engagement Operations, Governance, and Assurance`
 - Completed: `ARCH-027-10 Future Omnichannel Collaboration Evolution`
-- Next: `ARCH-028-01 Analytics and Decision Intelligence Overview`
+- Completed: `ARCH-028-01 Analytics and Decision Intelligence Overview`
+- Next: `ARCH-028-02 Metrics, Measures, and Semantic Layer`
 
 ## Notes
 

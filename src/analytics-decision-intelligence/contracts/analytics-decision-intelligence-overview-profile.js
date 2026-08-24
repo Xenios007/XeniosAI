@@ -1,0 +1,8 @@
+export class AnalyticsDecisionIntelligenceOverviewProfile {
+  constructor({ profileName, responsibilities = [], authorities = [], capabilities = [], contractFields = [], recordFields = [], lifecycleStates = [], governanceControls = [], failureRecovery = [], observabilityFields = [], assuranceEvidence = [], invariants = [], semanticDefinitionsGoverned = true, analyticalProductsGoverned = true, operationalFactsExternal = true, telemetryAuthorityExternal = true, customerTruthExternal = true, aiEvaluationExternal = true, derivedOutputsLabeled = true, lineageRequired = true, tenantIsolation = true, humanReviewAvailable = true, sharedDatabases = false, telemetryBecomesBusinessTruth = false, inferenceBecomesSourceTruth = false, analyticsOwnsOperationalFacts = false, analyticsOwnsCustomerTruth = false, analyticalOutputExecutesConsequentialAction = false, aiPromotionOutsideArch029 = false } = {}) {
+    this.profileName = profileName;
+    for (const [key, value] of Object.entries({ responsibilities, authorities, capabilities, contractFields, recordFields, lifecycleStates, governanceControls, failureRecovery, observabilityFields, assuranceEvidence, invariants })) this[key] = Object.freeze([...value]);
+    for (const [key, value] of Object.entries({ semanticDefinitionsGoverned, analyticalProductsGoverned, operationalFactsExternal, telemetryAuthorityExternal, customerTruthExternal, aiEvaluationExternal, derivedOutputsLabeled, lineageRequired, tenantIsolation, humanReviewAvailable, sharedDatabases, telemetryBecomesBusinessTruth, inferenceBecomesSourceTruth, analyticsOwnsOperationalFacts, analyticsOwnsCustomerTruth, analyticalOutputExecutesConsequentialAction, aiPromotionOutsideArch029 })) this[key] = Boolean(value);
+    Object.freeze(this);
+  }
+}
