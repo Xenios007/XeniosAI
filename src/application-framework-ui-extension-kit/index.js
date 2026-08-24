@@ -4,3 +4,6 @@ export { ApplicationFrameworkUiExtensionOverviewDescriptor } from './overview/ap
 export * from './application-shell-composition-routing-navigation-constants.js';
 export { ApplicationShellCompositionRoutingNavigationProfile } from './contracts/application-shell-composition-routing-navigation-profile.js';
 export { ApplicationShellCompositionRoutingNavigationDescriptor } from './composition/application-shell-composition-routing-navigation-descriptor.js';
+export * from './frontend-sdk-capability-api-clients-constants.js';
+export { FrontendSdkCapabilityApiClientsProfile } from './contracts/frontend-sdk-capability-api-clients-profile.js';
+export { FrontendSdkCapabilityApiClientsDescriptor } from './sdk/frontend-sdk-capability-api-clients-descriptor.js';

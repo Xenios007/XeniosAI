@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.82.0] - ARCH-032-03 Frontend SDK, Capability & API Clients
+
+### Added
+- Executable typed-client, identity-context, capability-discovery, retry, streaming, error, contract-version, recovery, observability, and assurance safeguards.
+
+Status: Application Framework and UI Extension Architecture
+Version: 2.82.0
+
+---
+
 ## [2.81.0] - ARCH-032-02 Application Shell Composition, Routing & Navigation
 
 ### Added
