@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.34.0] - ARCH-027-05 Cases, Tasks, and Service Recovery
+
+### Added
+- Executable case lifecycle, service-task, SLA, ownership-transition, complaint, external-dispute-reference, remediation, evidence-based resolution, recovery, and authority safeguards with immutable validation, documentation, and focused tests.
+
+Status: Omnichannel Engagement and Collaboration Architecture
+Version: 2.34.0
+
+---
+
 ## [2.33.0] - ARCH-027-04 Contact Center, Queues, Routing, and Presence
 
 ### Added

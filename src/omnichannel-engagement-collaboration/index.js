@@ -10,3 +10,6 @@ export { CommunicationDeliveryNotificationPreferencesDescriptor } from './delive
 export * from './contact-center-queues-routing-presence-constants.js';
 export { ContactCenterQueuesRoutingPresenceProfile } from './contracts/contact-center-queues-routing-presence-profile.js';
 export { ContactCenterQueuesRoutingPresenceDescriptor } from './contact-center/contact-center-queues-routing-presence-descriptor.js';
+export * from './cases-tasks-service-recovery-constants.js';
+export { CasesTasksServiceRecoveryProfile } from './contracts/cases-tasks-service-recovery-profile.js';
+export { CasesTasksServiceRecoveryDescriptor } from './service-recovery/cases-tasks-service-recovery-descriptor.js';
