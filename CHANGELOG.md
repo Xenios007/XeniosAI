@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.27.0] - ARCH-026-08 Financial Integration, Reconciliation, and Controls
+
+### Added
+- Executable processor and ledger adapter, token-boundary, reconciliation, financial-close, exception-management, and financial-control safeguards with immutable validation, documentation, and focused tests.
+
+Status: Pricing, Billing, and Payments Architecture
+Version: 2.27.0
+
+---
+
 ## [2.26.0] - ARCH-026-07 Payment, Settlement, Refunds, and Disputes
 
 ### Added

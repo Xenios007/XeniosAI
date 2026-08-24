@@ -237,7 +237,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-026-05 Billing, Subscriptions, and Usage Charging`
 - Completed: `ARCH-026-06 Invoicing, Taxation, and Credit Notes`
 - Completed: `ARCH-026-07 Payment, Settlement, Refunds, and Disputes`
-- Next: `ARCH-026-08 Financial Integration, Reconciliation, and Controls`
+- Completed: `ARCH-026-08 Financial Integration, Reconciliation, and Controls`
+- Next: `ARCH-026-09 Financial Operations, Governance, and Assurance`
 
 ## Notes
 
