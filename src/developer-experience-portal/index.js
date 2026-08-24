@@ -25,3 +25,6 @@ export { PortalIntegrationExtensibilityAutomationDescriptor } from './integratio
 export * from './portal-operations-governance-assurance-constants.js';
 export { PortalOperationsGovernanceAssuranceProfile } from './contracts/portal-operations-governance-assurance-profile.js';
 export { PortalOperationsGovernanceAssuranceDescriptor } from './operations/portal-operations-governance-assurance-descriptor.js';
+export * from './future-developer-experience-evolution-constants.js';
+export { FutureDeveloperExperienceEvolutionProfile } from './contracts/future-developer-experience-evolution-profile.js';
+export { FutureDeveloperExperienceEvolutionDescriptor } from './evolution/future-developer-experience-evolution-descriptor.js';

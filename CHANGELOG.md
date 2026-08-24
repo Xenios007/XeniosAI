@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.79.0] - ARCH-031-10 Future Developer Experience Evolution
+
+### Added
+- Executable controlled-evolution safeguards for personalized, agent-assisted, federated, and self-service developer journeys.
+
+Status: Developer Experience and Portal Architecture
+Version: 2.79.0
+
+---
+
 ## [2.78.0] - ARCH-031-09 Portal Operations, Governance & Assurance
 
 ### Added
