@@ -277,7 +277,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-030-05 Rental, Commerce & Service Solution Patterns`
 - Completed: `ARCH-030-06 Workflow, Agent, Knowledge & Integration Packaging`
 - Completed: `ARCH-030-07 Experience, Branding & Composable Application Shells`
-- Next: `ARCH-030-08 Conformance, Versioning, Migration & Exit`
+- Completed: `ARCH-030-08 Conformance, Versioning, Migration & Exit`
+- Next: `ARCH-030-09 Solution Operations, Governance & Assurance`
 
 ## Notes
 

@@ -19,3 +19,6 @@ export { WorkflowAgentKnowledgeIntegrationPackagingDescriptor } from './packagin
 export * from './experience-branding-composable-application-shells-constants.js';
 export { ExperienceBrandingComposableApplicationShellsProfile } from './contracts/experience-branding-composable-application-shells-profile.js';
 export { ExperienceBrandingComposableApplicationShellsDescriptor } from './experience/experience-branding-composable-application-shells-descriptor.js';
+export * from './conformance-versioning-migration-exit-constants.js';
+export { ConformanceVersioningMigrationExitProfile } from './contracts/conformance-versioning-migration-exit-profile.js';
+export { ConformanceVersioningMigrationExitDescriptor } from './lifecycle/conformance-versioning-migration-exit-descriptor.js';

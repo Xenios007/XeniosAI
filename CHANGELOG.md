@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.67.0] - ARCH-030-08 Conformance, Versioning, Migration & Exit
+
+### Added
+- Executable certification, immutable-versioning, compatibility, progressive-upgrade, reconciled-migration, rollback, deprecation, portability, verified-removal, recovery, observability, and assurance safeguards with immutable validation, documentation, and focused tests.
+
+Status: Industry Solution Packs and Composable Applications Architecture
+Version: 2.67.0
+
+---
+
 ## [2.66.0] - ARCH-030-07 Experience, Branding & Composable Application Shells
 
 ### Added
