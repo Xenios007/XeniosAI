@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.35.0] - ARCH-027-06 Collaboration, Approvals, and Human-Agent Handoff
+
+### Added
+- Executable shared-work, protected-comment, approval, accountable-transfer, minimized context-package, explicit human-agent handoff, accountability, recovery, and authority safeguards with immutable validation, documentation, and focused tests.
+
+Status: Omnichannel Engagement and Collaboration Architecture
+Version: 2.35.0
+
+---
+
 ## [2.34.0] - ARCH-027-05 Cases, Tasks, and Service Recovery
 
 ### Added

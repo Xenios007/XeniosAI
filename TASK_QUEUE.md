@@ -245,7 +245,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-027-03 Communication Delivery, Notification, and Preferences`
 - Completed: `ARCH-027-04 Contact Center, Queues, Routing, and Presence`
 - Completed: `ARCH-027-05 Cases, Tasks, and Service Recovery`
-- Next: `ARCH-027-06 Collaboration, Approvals, and Human-Agent Handoff`
+- Completed: `ARCH-027-06 Collaboration, Approvals, and Human-Agent Handoff`
+- Next: `ARCH-027-07 Campaigns, Engagement, and Journeys`
 
 ## Notes
 

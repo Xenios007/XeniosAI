@@ -13,3 +13,6 @@ export { ContactCenterQueuesRoutingPresenceDescriptor } from './contact-center/c
 export * from './cases-tasks-service-recovery-constants.js';
 export { CasesTasksServiceRecoveryProfile } from './contracts/cases-tasks-service-recovery-profile.js';
 export { CasesTasksServiceRecoveryDescriptor } from './service-recovery/cases-tasks-service-recovery-descriptor.js';
+export * from './collaboration-approvals-human-agent-handoff-constants.js';
+export { CollaborationApprovalsHumanAgentHandoffProfile } from './contracts/collaboration-approvals-human-agent-handoff-profile.js';
+export { CollaborationApprovalsHumanAgentHandoffDescriptor } from './collaboration/collaboration-approvals-human-agent-handoff-descriptor.js';
