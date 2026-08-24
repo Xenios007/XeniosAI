@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.71.0] - ARCH-031-02 Developer Personas, Journeys & Onboarding
+
+### Added
+- Executable persona, prerequisite, verification, agreement, guided-onboarding, lifecycle, authority, accessibility, recovery, outcome, observability, and assurance safeguards.
+
+Status: Developer Experience and Portal Architecture
+Version: 2.71.0
+
+---
+
 ## [2.70.0] - ARCH-031-01 Developer Experience & Portal Overview
 
 ### Added
