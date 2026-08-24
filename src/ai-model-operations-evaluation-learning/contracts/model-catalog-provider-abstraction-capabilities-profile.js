@@ -1,0 +1,8 @@
+export class ModelCatalogProviderAbstractionCapabilitiesProfile {
+  constructor({ profileName, responsibilities = [], modelFields = [], providerFields = [], modalities = [], capabilityFields = [], limitFields = [], residencyFields = [], costFields = [], versionFields = [], exitFields = [], lifecycleStates = [], controls = [], failureRecovery = [], observabilityFields = [], assuranceEvidence = [], invariants = [], providerAbstracted = true, capabilitiesExplicit = true, limitsEnforced = true, residencyValidated = true, costVisible = true, versionsPinned = true, exitTested = true, approvalRequired = true, providerSpecificConsumerContract = false, capabilityAssumed = false, limitBypassed = false, residencyUnknown = false, costUnbounded = false, mutableProductionVersion = false, exitPlanMissing = false, providerOutputAsCompletion = false, directLearningEnabled = false } = {}) {
+    this.profileName = profileName;
+    for (const [key, value] of Object.entries({ responsibilities, modelFields, providerFields, modalities, capabilityFields, limitFields, residencyFields, costFields, versionFields, exitFields, lifecycleStates, controls, failureRecovery, observabilityFields, assuranceEvidence, invariants })) this[key] = Object.freeze([...value]);
+    for (const [key, value] of Object.entries({ providerAbstracted, capabilitiesExplicit, limitsEnforced, residencyValidated, costVisible, versionsPinned, exitTested, approvalRequired, providerSpecificConsumerContract, capabilityAssumed, limitBypassed, residencyUnknown, costUnbounded, mutableProductionVersion, exitPlanMissing, providerOutputAsCompletion, directLearningEnabled })) this[key] = Boolean(value);
+    Object.freeze(this);
+  }
+}

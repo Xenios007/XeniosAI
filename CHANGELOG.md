@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.51.0] - ARCH-029-02 Model Catalog, Provider Abstraction & Capabilities
+
+### Added
+- Executable model-record, provider-abstraction, modality, capability, enforced-limit, residency, cost, immutable-version, portability, fallback, recovery, and tested-exit safeguards with immutable validation, documentation, and focused tests.
+
+Status: AI Model Operations, Evaluation and Continuous Learning Architecture
+Version: 2.51.0
+
+---
+
 ## [2.50.0] - ARCH-029-01 AI Model Operations, Evaluation & Learning Overview
 
 ### Added
