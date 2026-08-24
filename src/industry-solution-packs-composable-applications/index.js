@@ -16,3 +16,6 @@ export { RentalCommerceServiceSolutionPatternsDescriptor } from './patterns/rent
 export * from './workflow-agent-knowledge-integration-packaging-constants.js';
 export { WorkflowAgentKnowledgeIntegrationPackagingProfile } from './contracts/workflow-agent-knowledge-integration-packaging-profile.js';
 export { WorkflowAgentKnowledgeIntegrationPackagingDescriptor } from './packaging/workflow-agent-knowledge-integration-packaging-descriptor.js';
+export * from './experience-branding-composable-application-shells-constants.js';
+export { ExperienceBrandingComposableApplicationShellsProfile } from './contracts/experience-branding-composable-application-shells-profile.js';
+export { ExperienceBrandingComposableApplicationShellsDescriptor } from './experience/experience-branding-composable-application-shells-descriptor.js';

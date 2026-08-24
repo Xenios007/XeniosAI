@@ -58,6 +58,7 @@ Testing is treated as a first-class engineering discipline rather than an aftert
 
 The repository currently includes automated unit tests for:
 
+- `ARCH-030-07 Experience, Branding & Composable Application Shells` in `tests/industry-solution-packs-composable-applications/`
 - `ARCH-030-06 Workflow, Agent, Knowledge & Integration Packaging` in `tests/industry-solution-packs-composable-applications/`
 - `ARCH-030-05 Rental, Commerce & Service Solution Patterns` in `tests/industry-solution-packs-composable-applications/`
 - `ARCH-030-04 Hospitality Solution Pack & Casa Lluvia Reference` in `tests/industry-solution-packs-composable-applications/`

@@ -276,7 +276,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-030-04 Hospitality Solution Pack & Casa Lluvia Reference`
 - Completed: `ARCH-030-05 Rental, Commerce & Service Solution Patterns`
 - Completed: `ARCH-030-06 Workflow, Agent, Knowledge & Integration Packaging`
-- Next: `ARCH-030-07 Experience, Branding & Composable Application Shells`
+- Completed: `ARCH-030-07 Experience, Branding & Composable Application Shells`
+- Next: `ARCH-030-08 Conformance, Versioning, Migration & Exit`
 
 ## Notes
 

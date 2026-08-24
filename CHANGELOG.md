@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.66.0] - ARCH-030-07 Experience, Branding & Composable Application Shells
+
+### Added
+- Executable customer-surface, staff-surface, navigation, design-token, localization, branding, extension-slot, accessibility, failure-state, provider-authority, and conformance safeguards with immutable validation, documentation, and focused tests.
+
+Status: Industry Solution Packs and Composable Applications Architecture
+Version: 2.66.0
+
+---
+
 ## [2.65.0] - ARCH-030-06 Workflow, Agent, Knowledge & Integration Packaging
 
 ### Added
