@@ -19,3 +19,6 @@ export { DocumentationExamplesSdksChangeCommunicationDescriptor } from './docume
 export * from './consumer-analytics-feedback-support-adoption-constants.js';
 export { ConsumerAnalyticsFeedbackSupportAdoptionProfile } from './contracts/consumer-analytics-feedback-support-adoption-profile.js';
 export { ConsumerAnalyticsFeedbackSupportAdoptionDescriptor } from './adoption/consumer-analytics-feedback-support-adoption-descriptor.js';
+export * from './api-product-lifecycle-versioning-deprecation-constants.js';
+export { ApiProductLifecycleVersioningDeprecationProfile } from './contracts/api-product-lifecycle-versioning-deprecation-profile.js';
+export { ApiProductLifecycleVersioningDeprecationDescriptor } from './lifecycle/api-product-lifecycle-versioning-deprecation-descriptor.js';

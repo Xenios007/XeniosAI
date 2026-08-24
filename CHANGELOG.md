@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.97.0] - ARCH-033-08 API Product Lifecycle, Versioning & Deprecation
+
+### Added
+- Executable introduction, preview, general-availability, version-mapping, deprecation, retirement, exit, recovery, observability, and assurance safeguards.
+
+Status: API Product Management and Discovery Architecture
+Version: 2.97.0
+
+---
+
 ## [2.96.0] - ARCH-033-07 Consumer Analytics, Feedback, Support & Adoption
 
 ### Added
