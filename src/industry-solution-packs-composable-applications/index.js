@@ -7,3 +7,6 @@ export { SolutionPackModelBoundariesManifestsDescriptor } from './manifests/solu
 export * from './capability-composition-configuration-policy-constants.js';
 export { CapabilityCompositionConfigurationPolicyProfile } from './contracts/capability-composition-configuration-policy-profile.js';
 export { CapabilityCompositionConfigurationPolicyDescriptor } from './composition/capability-composition-configuration-policy-descriptor.js';
+export * from './hospitality-solution-pack-casa-lluvia-reference-constants.js';
+export { HospitalitySolutionPackCasaLluviaReferenceProfile } from './contracts/hospitality-solution-pack-casa-lluvia-reference-profile.js';
+export { HospitalitySolutionPackCasaLluviaReferenceDescriptor } from './hospitality/hospitality-solution-pack-casa-lluvia-reference-descriptor.js';

@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.63.0] - ARCH-030-04 Hospitality Solution Pack & Casa Lluvia Reference
+
+### Added
+- Executable hospitality bounded-context, property-operation, guest-journey, booking-rule, pool/parking add-on, authorization, deterministic-validation, provider-authority, recovery, and conformance safeguards with immutable validation, documentation, and focused tests.
+
+Status: Industry Solution Packs and Composable Applications Architecture
+Version: 2.63.0
+
+---
+
 ## [2.62.0] - ARCH-030-03 Capability Composition, Configuration & Policy
 
 ### Added
