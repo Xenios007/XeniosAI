@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.28.0] - ARCH-026-09 Financial Operations, Governance, and Assurance
+
+### Added
+- Executable financial ownership, service-objective, observability, fraud-boundary, incident, recovery-evidence, governance-artifact, and assurance safeguards with immutable validation, documentation, and focused tests.
+
+Status: Pricing, Billing, and Payments Architecture
+Version: 2.28.0
+
+---
+
 ## [2.27.0] - ARCH-026-08 Financial Integration, Reconciliation, and Controls
 
 ### Added
