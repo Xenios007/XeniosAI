@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.46.0] - ARCH-028-07 Recommendations & Decision Support
+
+### Added
+- Executable non-binding recommendation, alternative, evidence-backed explanation, qualified-confidence, approval, attributable-decision, outcome-capture, recovery, observability, and operational-authority safeguards with immutable validation, documentation, and focused tests.
+
+Status: Analytics and Decision Intelligence Architecture
+Version: 2.46.0
+
+---
+
 ## [2.45.0] - ARCH-028-06 Experimentation & Causal Analysis
 
 ### Added

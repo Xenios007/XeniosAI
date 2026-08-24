@@ -16,3 +16,6 @@ export { ForecastingPlanningScenariosDescriptor } from './forecasting/forecastin
 export * from './experimentation-causal-analysis-constants.js';
 export { ExperimentationCausalAnalysisProfile } from './contracts/experimentation-causal-analysis-profile.js';
 export { ExperimentationCausalAnalysisDescriptor } from './experimentation/experimentation-causal-analysis-descriptor.js';
+export * from './recommendations-decision-support-constants.js';
+export { RecommendationsDecisionSupportProfile } from './contracts/recommendations-decision-support-profile.js';
+export { RecommendationsDecisionSupportDescriptor } from './decision-support/recommendations-decision-support-descriptor.js';
