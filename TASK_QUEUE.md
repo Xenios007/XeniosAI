@@ -304,7 +304,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-033-02 API Product Model, Ownership & Audiences`
 - Completed: `ARCH-033-03 API Catalog, Discovery, Search & Classification`
 - Completed: `ARCH-033-04 Subscriptions, Access Requests, Plans & Entitlements`
-- Next: `ARCH-033-05 Quotas, Limits, Metering & Cost Visibility`
+- Completed: `ARCH-033-05 Quotas, Limits, Metering & Cost Visibility`
+- Next: `ARCH-033-06 Documentation, Examples, SDKs & Change Communication`
 
 ## Notes
 

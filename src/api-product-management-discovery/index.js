@@ -10,3 +10,6 @@ export { ApiCatalogDiscoverySearchClassificationDescriptor } from './catalog/api
 export * from './subscriptions-access-requests-plans-entitlements-constants.js';
 export { SubscriptionsAccessRequestsPlansEntitlementsProfile } from './contracts/subscriptions-access-requests-plans-entitlements-profile.js';
 export { SubscriptionsAccessRequestsPlansEntitlementsDescriptor } from './access/subscriptions-access-requests-plans-entitlements-descriptor.js';
+export * from './quotas-limits-metering-cost-visibility-constants.js';
+export { QuotasLimitsMeteringCostVisibilityProfile } from './contracts/quotas-limits-metering-cost-visibility-profile.js';
+export { QuotasLimitsMeteringCostVisibilityDescriptor } from './usage/quotas-limits-metering-cost-visibility-descriptor.js';
