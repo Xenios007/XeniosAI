@@ -253,7 +253,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-028-01 Analytics and Decision Intelligence Overview`
 - Completed: `ARCH-028-02 Metrics, Measures, and Semantic Layer`
 - Completed: `ARCH-028-03 Analytical Data Products and Lineage`
-- Next: `ARCH-028-04 Operational & Executive Reporting and Alerting`
+- Completed: `ARCH-028-04 Operational & Executive Reporting and Alerting`
+- Next: `ARCH-028-05 Forecasting, Planning & Scenarios`
 
 ## Notes
 

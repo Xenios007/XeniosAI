@@ -1,0 +1,8 @@
+export class OperationalExecutiveReportingAlertingProfile {
+  constructor({ profileName, responsibilities = [], dashboardFields = [], reportFields = [], thresholdFields = [], alertFields = [], subscriptionFields = [], freshnessFields = [], drillThroughFields = [], deliveryFields = [], useCases = [], lifecycleStates = [], controls = [], failureRecovery = [], observabilityFields = [], assuranceEvidence = [], invariants = [], definitionsVersioned = true, governedMetricsRequired = true, freshnessVisible = true, drillThroughAuthorized = true, alertsDeterministic = true, subscriptionsPurposeScoped = true, deliveryAccessible = true, resultsQualified = true, sharedDatabases = false, hiddenFilters = false, staleResultUnmarked = false, inaccessibleDelivery = false, thresholdBypassed = false, crossTenantDrillThrough = false, transportAcknowledgementAsCompletion = false, telemetryAsBusinessTruth = false } = {}) {
+    this.profileName = profileName;
+    for (const [key, value] of Object.entries({ responsibilities, dashboardFields, reportFields, thresholdFields, alertFields, subscriptionFields, freshnessFields, drillThroughFields, deliveryFields, useCases, lifecycleStates, controls, failureRecovery, observabilityFields, assuranceEvidence, invariants })) this[key] = Object.freeze([...value]);
+    for (const [key, value] of Object.entries({ definitionsVersioned, governedMetricsRequired, freshnessVisible, drillThroughAuthorized, alertsDeterministic, subscriptionsPurposeScoped, deliveryAccessible, resultsQualified, sharedDatabases, hiddenFilters, staleResultUnmarked, inaccessibleDelivery, thresholdBypassed, crossTenantDrillThrough, transportAcknowledgementAsCompletion, telemetryAsBusinessTruth })) this[key] = Boolean(value);
+    Object.freeze(this);
+  }
+}

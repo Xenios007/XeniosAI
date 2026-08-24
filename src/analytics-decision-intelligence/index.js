@@ -7,3 +7,6 @@ export { MetricsMeasuresSemanticLayerDescriptor } from './semantics/metrics-meas
 export * from './analytical-data-products-lineage-constants.js';
 export { AnalyticalDataProductsLineageProfile } from './contracts/analytical-data-products-lineage-profile.js';
 export { AnalyticalDataProductsLineageDescriptor } from './data-products/analytical-data-products-lineage-descriptor.js';
+export * from './operational-executive-reporting-alerting-constants.js';
+export { OperationalExecutiveReportingAlertingProfile } from './contracts/operational-executive-reporting-alerting-profile.js';
+export { OperationalExecutiveReportingAlertingDescriptor } from './reporting/operational-executive-reporting-alerting-descriptor.js';

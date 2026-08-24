@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.43.0] - ARCH-028-04 Operational & Executive Reporting and Alerting
+
+### Added
+- Executable dashboard, report, threshold, alert, subscription, freshness, drill-through, accessible-delivery, Casa Lluvia use-case, recovery, observability, and reporting-authority safeguards with immutable validation, documentation, and focused tests.
+
+Status: Analytics and Decision Intelligence Architecture
+Version: 2.43.0
+
+---
+
 ## [2.42.0] - ARCH-028-03 Analytical Data Products and Lineage
 
 ### Added
