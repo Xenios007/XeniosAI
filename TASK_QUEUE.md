@@ -287,7 +287,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-031-05 Credentials, Access Requests & Environment Entry`
 - Completed: `ARCH-031-06 Usage, Quotas, Cost & Operational Visibility`
 - Completed: `ARCH-031-07 Documentation, Support, Feedback & Community`
-- Next: `ARCH-031-08 Portal Integration, Extensibility & Automation`
+- Completed: `ARCH-031-08 Portal Integration, Extensibility & Automation`
+- Next: `ARCH-031-09 Portal Operations, Governance & Assurance`
 
 ## Notes
 

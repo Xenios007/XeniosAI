@@ -19,3 +19,6 @@ export { UsageQuotasCostOperationalVisibilityDescriptor } from './visibility/usa
 export * from './documentation-support-feedback-community-constants.js';
 export { DocumentationSupportFeedbackCommunityProfile } from './contracts/documentation-support-feedback-community-profile.js';
 export { DocumentationSupportFeedbackCommunityDescriptor } from './support/documentation-support-feedback-community-descriptor.js';
+export * from './portal-integration-extensibility-automation-constants.js';
+export { PortalIntegrationExtensibilityAutomationProfile } from './contracts/portal-integration-extensibility-automation-profile.js';
+export { PortalIntegrationExtensibilityAutomationDescriptor } from './integration/portal-integration-extensibility-automation-descriptor.js';

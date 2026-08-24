@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.77.0] - ARCH-031-08 Portal Integration, Extensibility & Automation
+
+### Added
+- Executable BFF, event, webhook, portal-extension, automation, external-system, recovery, observability, and assurance safeguards.
+
+Status: Developer Experience and Portal Architecture
+Version: 2.77.0
+
+---
+
 ## [2.76.0] - ARCH-031-07 Documentation, Support, Feedback & Community
 
 ### Added
