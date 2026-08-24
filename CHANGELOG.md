@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.23.0] - ARCH-026-04 Quotation and Price Determination
+
+### Added
+- Executable quotation, reproducible price determination, tax and fee references, validity, recalculation evidence, recovery, and authority safeguards with immutable validation, documentation, and focused tests.
+
+Status: Pricing, Billing, and Payments Architecture
+Version: 2.23.0
+
+---
+
 ## [2.22.0] - ARCH-026-03 Pricing Rules, Restrictions, Promotions, and Approvals
 
 ### Added

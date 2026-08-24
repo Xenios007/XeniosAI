@@ -233,7 +233,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-026-01 Pricing, Billing, and Payments Overview`
 - Completed: `ARCH-026-02 Price Lists, Rate Plans, and Context`
 - Completed: `ARCH-026-03 Pricing Rules, Restrictions, Promotions, and Approvals`
-- Next: `ARCH-026-04 Quotation and Price Determination`
+- Completed: `ARCH-026-04 Quotation and Price Determination`
+- Next: `ARCH-026-05 Billing, Subscriptions, and Usage Charging`
 
 ## Notes
 
