@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.91.0] - ARCH-033-02 API Product Model, Ownership & Audiences
+
+### Added
+- Executable product-identity, owner, consumer, audience, value, included-contract, support, policy, lifecycle, recovery, and assurance safeguards.
+
+Status: API Product Management and Discovery Architecture
+Version: 2.91.0
+
+---
+
 ## [2.90.0] - ARCH-033-01 API Product Management & Discovery Overview
 
 ### Added

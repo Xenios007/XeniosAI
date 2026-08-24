@@ -301,7 +301,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-032-09 Packaging, Testing, Versioning & Upgrade Paths`
 - Completed: `ARCH-032-10 Framework Operations, Governance & Future Evolution`
 - Completed: `ARCH-033-01 API Product Management & Discovery Overview`
-- Next: `ARCH-033-02 API Product Model, Ownership & Audiences`
+- Completed: `ARCH-033-02 API Product Model, Ownership & Audiences`
+- Next: `ARCH-033-03 API Catalog, Discovery, Search & Classification`
 
 ## Notes
 
