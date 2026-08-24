@@ -227,7 +227,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-025-05 Availability, Allocation, and Holds`
 - Completed: `ARCH-025-06 Modification, Cancellation, and Compensation`
 - Completed: `ARCH-025-07 Fulfillment, Add-ons, and Packages`
-- Next: `ARCH-025-08 Channel Distribution, Integration, and Consistency`
+- Completed: `ARCH-025-08 Channel Distribution, Integration, and Consistency`
+- Next: `ARCH-025-09 Commerce Operations, Governance, and Assurance`
 
 ## Notes
 

@@ -6,6 +6,17 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.17.0] - ARCH-025-08 Channel Distribution, Integration, and Consistency
+
+### Added
+- Channel contract, partner mapping, inventory distribution, import/export event, deduplication, drift reconciliation, recovery, and observability metadata.
+- Safeguards requiring explicit source authority, versioned mappings, governed import/export, duplicate-event deduplication, drift reconciliation, tenant isolation, idempotency, and pinned references.
+
+Status: Commerce, Orders, and Reservations Architecture
+Version: 2.17.0
+
+---
+
 ## [2.16.0] - ARCH-025-07 Fulfillment, Add-ons, and Packages
 
 ### Added
