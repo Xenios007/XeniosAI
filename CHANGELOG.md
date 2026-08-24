@@ -6,6 +6,18 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.3.0] - ARCH-024 Resource Types and Lifecycle
+
+### Added
+- Resource type and lifecycle metadata covering resource responsibilities, controls, tenant-scoped material records, recovery behavior, and ownership invariants.
+- Immutable profile validation requiring owning-service versioned events, tenant projections, governed versions, extension compatibility, freshness without projection authority, non-fabricated unavailable results, and protected-payload-safe telemetry.
+- Resource Types and Lifecycle implementation documentation and focused verification record.
+
+Status: Product, Catalog, and Resource Management Architecture
+Version: 2.3.0
+
+---
+
 ## [2.2.0] - ARCH-024 Catalog, Classification, and Discovery
 
 ### Added
