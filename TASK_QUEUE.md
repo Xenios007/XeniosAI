@@ -260,7 +260,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-028-08 AI-Assisted Analysis & Insight Provenance`
 - Completed: `ARCH-028-09 Analytics Operations, Governance & Assurance`
 - Completed: `ARCH-028-10 Future Analytics & Decision Intelligence Evolution`
-- Next: `ARCH-029-01 AI Model Operations, Evaluation & Learning Overview`
+- Completed: `ARCH-029-01 AI Model Operations, Evaluation & Learning Overview`
+- Next: `ARCH-029-02 Model Catalog, Provider Abstraction & Capabilities`
 
 ## Notes
 

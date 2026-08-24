@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.50.0] - ARCH-029-01 AI Model Operations, Evaluation & Learning Overview
+
+### Added
+- Executable provider-neutral AI ownership, asset lifecycle, governed-learning-loop, privacy-safe feedback, evaluation, separated promotion, Casa Lluvia validation, rollback, observability, assurance, and operational-authority safeguards with immutable validation, documentation, and focused tests.
+
+Status: AI Model Operations, Evaluation and Continuous Learning Architecture
+Version: 2.50.0
+
+---
+
 ## [2.49.0] - ARCH-028-10 Future Analytics & Decision Intelligence Evolution
 
 ### Added
