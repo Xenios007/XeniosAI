@@ -271,7 +271,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-029-09 AI Operations, Governance & Assurance`
 - Completed: `ARCH-029-10 Future AI Learning Evolution`
 - Completed: `ARCH-030-01 Industry Solution Packs & Composable Applications Overview`
-- Next: `ARCH-030-02 Solution Pack Model, Boundaries & Manifests`
+- Completed: `ARCH-030-02 Solution Pack Model, Boundaries & Manifests`
+- Next: `ARCH-030-03 Capability Composition, Configuration & Policy`
 
 ## Notes
 

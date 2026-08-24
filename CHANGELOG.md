@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.61.0] - ARCH-030-02 Solution Pack Model, Boundaries & Manifests
+
+### Added
+- Executable stable-identity, capability, bounded-context, dependency, manifest, ownership, compatibility, lifecycle, recovery, and authority-preservation safeguards with immutable validation, documentation, and focused tests.
+
+Status: Industry Solution Packs and Composable Applications Architecture
+Version: 2.61.0
+
+---
+
 ## [2.60.0] - ARCH-030-01 Industry Solution Packs & Composable Applications Overview
 
 ### Added

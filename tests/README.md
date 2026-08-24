@@ -58,6 +58,7 @@ Testing is treated as a first-class engineering discipline rather than an aftert
 
 The repository currently includes automated unit tests for:
 
+- `ARCH-030-02 Solution Pack Model, Boundaries & Manifests` in `tests/industry-solution-packs-composable-applications/`
 - `ARCH-030-01 Industry Solution Packs & Composable Applications Overview` in `tests/industry-solution-packs-composable-applications/`
 - `ARCH-029-10 Future AI Learning Evolution` in `tests/ai-model-operations-evaluation-learning/`
 - `ARCH-013-01 Developer Platform Overview` in `tests/developer-platform/`
