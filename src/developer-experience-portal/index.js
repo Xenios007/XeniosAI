@@ -4,3 +4,6 @@ export { DeveloperExperiencePortalOverviewDescriptor } from './overview/develope
 export * from './developer-personas-journeys-onboarding-constants.js';
 export { DeveloperPersonasJourneysOnboardingProfile } from './contracts/developer-personas-journeys-onboarding-profile.js';
 export { DeveloperPersonasJourneysOnboardingDescriptor } from './onboarding/developer-personas-journeys-onboarding-descriptor.js';
+export * from './developer-organizations-projects-applications-constants.js';
+export { DeveloperOrganizationsProjectsApplicationsProfile } from './contracts/developer-organizations-projects-applications-profile.js';
+export { DeveloperOrganizationsProjectsApplicationsDescriptor } from './resources/developer-organizations-projects-applications-descriptor.js';

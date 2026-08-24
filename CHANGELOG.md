@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.72.0] - ARCH-031-03 Developer Organizations, Projects & Applications
+
+### Added
+- Executable organization, team, project, environment, application-registration, ownership, lifecycle, provider-authority, recovery, observability, and assurance safeguards.
+
+Status: Developer Experience and Portal Architecture
+Version: 2.72.0
+
+---
+
 ## [2.71.0] - ARCH-031-02 Developer Personas, Journeys & Onboarding
 
 ### Added

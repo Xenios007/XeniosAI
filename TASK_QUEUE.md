@@ -282,7 +282,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-030-10 Future Industry Solution Evolution`
 - Completed: `ARCH-031-01 Developer Experience & Portal Overview`
 - Completed: `ARCH-031-02 Developer Personas, Journeys & Onboarding`
-- Next: `ARCH-031-03 Developer Organizations, Projects & Applications`
+- Completed: `ARCH-031-03 Developer Organizations, Projects & Applications`
+- Next: `ARCH-031-04 Portal Information Architecture & Discovery`
 
 ## Notes
 
