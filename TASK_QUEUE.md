@@ -306,7 +306,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-033-04 Subscriptions, Access Requests, Plans & Entitlements`
 - Completed: `ARCH-033-05 Quotas, Limits, Metering & Cost Visibility`
 - Completed: `ARCH-033-06 Documentation, Examples, SDKs & Change Communication`
-- Next: `ARCH-033-07 Consumer Analytics, Feedback, Support & Adoption`
+- Completed: `ARCH-033-07 Consumer Analytics, Feedback, Support & Adoption`
+- Next: `ARCH-033-08 API Product Lifecycle, Versioning & Deprecation`
 
 ## Notes
 

@@ -16,3 +16,6 @@ export { QuotasLimitsMeteringCostVisibilityDescriptor } from './usage/quotas-lim
 export * from './documentation-examples-sdks-change-communication-constants.js';
 export { DocumentationExamplesSdksChangeCommunicationProfile } from './contracts/documentation-examples-sdks-change-communication-profile.js';
 export { DocumentationExamplesSdksChangeCommunicationDescriptor } from './documentation/documentation-examples-sdks-change-communication-descriptor.js';
+export * from './consumer-analytics-feedback-support-adoption-constants.js';
+export { ConsumerAnalyticsFeedbackSupportAdoptionProfile } from './contracts/consumer-analytics-feedback-support-adoption-profile.js';
+export { ConsumerAnalyticsFeedbackSupportAdoptionDescriptor } from './adoption/consumer-analytics-feedback-support-adoption-descriptor.js';

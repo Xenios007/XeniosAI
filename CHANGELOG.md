@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.96.0] - ARCH-033-07 Consumer Analytics, Feedback, Support & Adoption
+
+### Added
+- Executable adoption-funnel, success-measure, feedback, support, product-health, consumer-impact, privacy-safe-analytics, recovery, observability, and assurance safeguards.
+
+Status: API Product Management and Discovery Architecture
+Version: 2.96.0
+
+---
+
 ## [2.95.0] - ARCH-033-06 Documentation, Examples, SDKs & Change Communication
 
 ### Added
