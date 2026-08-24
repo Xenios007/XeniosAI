@@ -1,0 +1,8 @@
+export class AiAssistedAnalysisInsightProvenanceProfile {
+  constructor({ profileName, responsibilities = [], requestFields = [], retrievalFields = [], calculationFields = [], insightFields = [], claimFields = [], citationFields = [], reviewFields = [], outputFields = [], lifecycleStates = [], controls = [], failureRecovery = [], observabilityFields = [], assuranceEvidence = [], invariants = [], retrievalGoverned = true, calculationsDeterministic = true, citationsRequired = true, provenanceComplete = true, generatedContentLabeled = true, humanReviewRiskBased = true, safeOutputEnforced = true, modelChangesEvaluated = true, sharedDatabases = false, ungroundedClaim = false, unsupportedCitation = false, promptPolicyBypassed = false, protectedPayloadInTelemetry = false, modelOutputAsSourceTruth = false, confidenceAsCompletion = false, toolResultAsCompletion = false, operationalStateMutated = false } = {}) {
+    this.profileName = profileName;
+    for (const [key, value] of Object.entries({ responsibilities, requestFields, retrievalFields, calculationFields, insightFields, claimFields, citationFields, reviewFields, outputFields, lifecycleStates, controls, failureRecovery, observabilityFields, assuranceEvidence, invariants })) this[key] = Object.freeze([...value]);
+    for (const [key, value] of Object.entries({ retrievalGoverned, calculationsDeterministic, citationsRequired, provenanceComplete, generatedContentLabeled, humanReviewRiskBased, safeOutputEnforced, modelChangesEvaluated, sharedDatabases, ungroundedClaim, unsupportedCitation, promptPolicyBypassed, protectedPayloadInTelemetry, modelOutputAsSourceTruth, confidenceAsCompletion, toolResultAsCompletion, operationalStateMutated })) this[key] = Boolean(value);
+    Object.freeze(this);
+  }
+}

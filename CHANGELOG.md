@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.47.0] - ARCH-028-08 AI-Assisted Analysis & Insight Provenance
+
+### Added
+- Executable natural-language request, governed-retrieval, deterministic-calculation, qualified-insight, claim-level citation, provenance, review, safe-output, recovery, observability, and source-authority safeguards with immutable validation, documentation, and focused tests.
+
+Status: Analytics and Decision Intelligence Architecture
+Version: 2.47.0
+
+---
+
 ## [2.46.0] - ARCH-028-07 Recommendations & Decision Support
 
 ### Added

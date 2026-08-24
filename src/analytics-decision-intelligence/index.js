@@ -19,3 +19,6 @@ export { ExperimentationCausalAnalysisDescriptor } from './experimentation/exper
 export * from './recommendations-decision-support-constants.js';
 export { RecommendationsDecisionSupportProfile } from './contracts/recommendations-decision-support-profile.js';
 export { RecommendationsDecisionSupportDescriptor } from './decision-support/recommendations-decision-support-descriptor.js';
+export * from './ai-assisted-analysis-insight-provenance-constants.js';
+export { AiAssistedAnalysisInsightProvenanceProfile } from './contracts/ai-assisted-analysis-insight-provenance-profile.js';
+export { AiAssistedAnalysisInsightProvenanceDescriptor } from './ai-analysis/ai-assisted-analysis-insight-provenance-descriptor.js';

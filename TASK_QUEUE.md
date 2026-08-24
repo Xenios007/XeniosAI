@@ -257,7 +257,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-028-05 Forecasting, Planning & Scenarios`
 - Completed: `ARCH-028-06 Experimentation & Causal Analysis`
 - Completed: `ARCH-028-07 Recommendations & Decision Support`
-- Next: `ARCH-028-08 AI-Assisted Analysis & Insight Provenance`
+- Completed: `ARCH-028-08 AI-Assisted Analysis & Insight Provenance`
+- Next: `ARCH-028-09 Analytics Operations, Governance & Assurance`
 
 ## Notes
 
