@@ -6,6 +6,17 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.7.0] - ARCH-024 Integration, APIs, Events, and Extensions
+
+### Added
+- Catalog integration metadata covering APIs and events, resource references, import/export profiles, external adapters, extension mediation, idempotency, compatibility, reconciliation, recovery, and invariants.
+- Safeguards requiring versioned owning-service contracts, tenant/property scope, provenance, bounded rate/outage handling, least-privilege adapters, and deterministic AI validation while rejecting extension authority, unbounded retries, unreconciled external state, and fabricated results.
+
+Status: Product, Catalog, and Resource Management Architecture
+Version: 2.7.0
+
+---
+
 ## [2.6.0] - ARCH-024 Bundles, Packages, and Eligibility
 
 ### Added

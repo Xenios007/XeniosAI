@@ -217,7 +217,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-024-05 Attributes, Configuration, and Inheritance`
 - Completed: `ARCH-024-06 Availability, Inventory, and Capacity References`
 - Completed: `ARCH-024-07 Bundles, Packages, and Eligibility`
-- Next: `ARCH-024-08 Integration, APIs, Events, and Extensions`
+- Completed: `ARCH-024-08 Integration, APIs, Events, and Extensions`
+- Next: `ARCH-024-09 Operations, Governance, and Assurance`
 
 ## Notes
 
