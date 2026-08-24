@@ -255,7 +255,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-028-03 Analytical Data Products and Lineage`
 - Completed: `ARCH-028-04 Operational & Executive Reporting and Alerting`
 - Completed: `ARCH-028-05 Forecasting, Planning & Scenarios`
-- Next: `ARCH-028-06 Experimentation & Causal Analysis`
+- Completed: `ARCH-028-06 Experimentation & Causal Analysis`
+- Next: `ARCH-028-07 Recommendations & Decision Support`
 
 ## Notes
 

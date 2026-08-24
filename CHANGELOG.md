@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.45.0] - ARCH-028-06 Experimentation & Causal Analysis
+
+### Added
+- Executable experiment, hypothesis, population, reproducible-allocation, guardrail, observation, statistical-evidence, causal-qualification, ethics-review, termination, recovery, observability, and source-authority safeguards with immutable validation, documentation, and focused tests.
+
+Status: Analytics and Decision Intelligence Architecture
+Version: 2.45.0
+
+---
+
 ## [2.44.0] - ARCH-028-05 Forecasting, Planning & Scenarios
 
 ### Added

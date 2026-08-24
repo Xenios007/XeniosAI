@@ -13,3 +13,6 @@ export { OperationalExecutiveReportingAlertingDescriptor } from './reporting/ope
 export * from './forecasting-planning-scenarios-constants.js';
 export { ForecastingPlanningScenariosProfile } from './contracts/forecasting-planning-scenarios-profile.js';
 export { ForecastingPlanningScenariosDescriptor } from './forecasting/forecasting-planning-scenarios-descriptor.js';
+export * from './experimentation-causal-analysis-constants.js';
+export { ExperimentationCausalAnalysisProfile } from './contracts/experimentation-causal-analysis-profile.js';
+export { ExperimentationCausalAnalysisDescriptor } from './experimentation/experimentation-causal-analysis-descriptor.js';
