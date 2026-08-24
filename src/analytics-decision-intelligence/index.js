@@ -10,3 +10,6 @@ export { AnalyticalDataProductsLineageDescriptor } from './data-products/analyti
 export * from './operational-executive-reporting-alerting-constants.js';
 export { OperationalExecutiveReportingAlertingProfile } from './contracts/operational-executive-reporting-alerting-profile.js';
 export { OperationalExecutiveReportingAlertingDescriptor } from './reporting/operational-executive-reporting-alerting-descriptor.js';
+export * from './forecasting-planning-scenarios-constants.js';
+export { ForecastingPlanningScenariosProfile } from './contracts/forecasting-planning-scenarios-profile.js';
+export { ForecastingPlanningScenariosDescriptor } from './forecasting/forecasting-planning-scenarios-descriptor.js';
