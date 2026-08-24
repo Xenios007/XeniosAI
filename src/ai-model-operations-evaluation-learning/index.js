@@ -13,3 +13,6 @@ export { PromptRetrievalToolPolicyConfigurationDescriptor } from './configuratio
 export * from './feedback-signals-learning-candidates-privacy-constants.js';
 export { FeedbackSignalsLearningCandidatesPrivacyProfile } from './contracts/feedback-signals-learning-candidates-privacy-profile.js';
 export { FeedbackSignalsLearningCandidatesPrivacyDescriptor } from './feedback/feedback-signals-learning-candidates-privacy-descriptor.js';
+export * from './evaluation-datasets-offline-replay-regression-constants.js';
+export { EvaluationDatasetsOfflineReplayRegressionProfile } from './contracts/evaluation-datasets-offline-replay-regression-profile.js';
+export { EvaluationDatasetsOfflineReplayRegressionDescriptor } from './evaluation/evaluation-datasets-offline-replay-regression-descriptor.js';

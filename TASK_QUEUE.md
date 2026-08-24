@@ -265,7 +265,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-029-03 Model Selection, Routing, Fallback & Budgets`
 - Completed: `ARCH-029-04 Prompt, Retrieval, Tool & Policy Configuration`
 - Completed: `ARCH-029-05 Feedback Signals, Learning Candidates & Privacy`
-- Next: `ARCH-029-06 Evaluation Datasets, Offline Replay & Regression`
+- Completed: `ARCH-029-06 Evaluation Datasets, Offline Replay & Regression`
+- Next: `ARCH-029-07 Shadow, Canary, Experiment & Promotion`
 
 ## Notes
 

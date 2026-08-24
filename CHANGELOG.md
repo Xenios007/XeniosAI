@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.55.0] - ARCH-029-06 Evaluation Datasets, Offline Replay & Regression
+
+### Added
+- Executable versioned-dataset, case-provenance, evaluation-slice, reviewed-golden-outcome, dependency-pinned replay, calibrated-judge, slice-aware regression, safety, grounding, and promotion-neutral safeguards with immutable validation, documentation, and focused tests.
+
+Status: AI Model Operations, Evaluation and Continuous Learning Architecture
+Version: 2.55.0
+
+---
+
 ## [2.54.0] - ARCH-029-05 Feedback Signals, Learning Candidates & Privacy
 
 ### Added
