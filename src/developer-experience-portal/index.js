@@ -13,3 +13,6 @@ export { PortalInformationArchitectureDiscoveryDescriptor } from './discovery/po
 export * from './credentials-access-environment-entry-constants.js';
 export { CredentialsAccessEnvironmentEntryProfile } from './contracts/credentials-access-environment-entry-profile.js';
 export { CredentialsAccessEnvironmentEntryDescriptor } from './access/credentials-access-environment-entry-descriptor.js';
+export * from './usage-quotas-cost-operational-visibility-constants.js';
+export { UsageQuotasCostOperationalVisibilityProfile } from './contracts/usage-quotas-cost-operational-visibility-profile.js';
+export { UsageQuotasCostOperationalVisibilityDescriptor } from './visibility/usage-quotas-cost-operational-visibility-descriptor.js';

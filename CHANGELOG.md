@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.75.0] - ARCH-031-06 Usage, Quotas, Cost & Operational Visibility
+
+### Added
+- Executable consumption, quota, limit, cost-reference, health, incident, status, diagnostic, recovery, observability, and assurance safeguards.
+
+Status: Developer Experience and Portal Architecture
+Version: 2.75.0
+
+---
+
 ## [2.74.0] - ARCH-031-05 Credentials, Access Requests & Environment Entry
 
 ### Added
