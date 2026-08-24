@@ -1,0 +1,8 @@
+export class ContactCenterQueuesRoutingPresenceProfile {
+  constructor({ profileName, responsibilities = [], queueFields = [], skillFields = [], priorityFields = [], assignmentFields = [], presenceFields = [], capacityFields = [], routingDecisionFields = [], escalationFields = [], controls = [], failureRecovery = [], observabilityFields = [], assuranceEvidence = [], invariants = [], queuesTenantScoped = true, skillsVerified = true, prioritiesBounded = true, presenceFreshnessExplicit = true, capacityEnforced = true, routingDeterministic = true, decisionsExplainable = true, assignmentsIdempotent = true, escalationsAuthorized = true, sharedDatabases = false, stalePresenceTreatedAsCurrent = false, capacityExceeded = false, unexplainedRouting = false, duplicateAssignmentAccepted = false, unauthorizedEscalation = false, routingOwnsCustomerOrTransactionState = false } = {}) {
+    this.profileName = profileName;
+    for (const [key, value] of Object.entries({ responsibilities, queueFields, skillFields, priorityFields, assignmentFields, presenceFields, capacityFields, routingDecisionFields, escalationFields, controls, failureRecovery, observabilityFields, assuranceEvidence, invariants })) this[key] = Object.freeze([...value]);
+    for (const [key, value] of Object.entries({ queuesTenantScoped, skillsVerified, prioritiesBounded, presenceFreshnessExplicit, capacityEnforced, routingDeterministic, decisionsExplainable, assignmentsIdempotent, escalationsAuthorized, sharedDatabases, stalePresenceTreatedAsCurrent, capacityExceeded, unexplainedRouting, duplicateAssignmentAccepted, unauthorizedEscalation, routingOwnsCustomerOrTransactionState })) this[key] = Boolean(value);
+    Object.freeze(this);
+  }
+}

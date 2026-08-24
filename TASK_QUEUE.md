@@ -243,7 +243,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-027-01 Omnichannel Engagement and Collaboration Overview`
 - Completed: `ARCH-027-02 Channel, Conversation, and Context Continuity`
 - Completed: `ARCH-027-03 Communication Delivery, Notification, and Preferences`
-- Next: `ARCH-027-04 Contact Center, Queues, Routing, and Presence`
+- Completed: `ARCH-027-04 Contact Center, Queues, Routing, and Presence`
+- Next: `ARCH-027-05 Cases, Tasks, and Service Recovery`
 
 ## Notes
 

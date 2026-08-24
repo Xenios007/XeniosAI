@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.33.0] - ARCH-027-04 Contact Center, Queues, Routing, and Presence
+
+### Added
+- Executable queue, skill, priority, assignment, freshness-labeled presence, capacity, deterministic routing, escalation, recovery, and authority safeguards with immutable validation, documentation, and focused tests.
+
+Status: Omnichannel Engagement and Collaboration Architecture
+Version: 2.33.0
+
+---
+
 ## [2.32.0] - ARCH-027-03 Communication Delivery, Notification, and Preferences
 
 ### Added

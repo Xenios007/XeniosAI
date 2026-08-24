@@ -12,9 +12,9 @@ Update this file after every successful implementation session.
 - Implementation guide: `IMPLEMENTATION_GUIDE.md`
 - Task queue: `TASK_QUEUE.md`
 - Current implementation phase: `ARCH-027 Omnichannel Engagement and Collaboration`
-- Current implementation state: `ARCH-027-03 Communication Delivery, Notification, and Preferences` is implemented.
-- Latest successful implementation module: `ARCH-027-03 Communication Delivery, Notification, and Preferences`
-- Latest successful commit: current-session `ARCH-027-03 Communication Delivery, Notification, and Preferences` implementation commit
+- Current implementation state: `ARCH-027-04 Contact Center, Queues, Routing, and Presence` is implemented.
+- Latest successful implementation module: `ARCH-027-04 Contact Center, Queues, Routing, and Presence`
+- Latest successful commit: current-session `ARCH-027-04 Contact Center, Queues, Routing, and Presence` implementation commit
 - Latest push status: pushed to `main`
 - Latest push status: pushed to `main`
 - Latest push status: pushed to `main`
@@ -116,19 +116,20 @@ Update this file after every successful implementation session.
 - Completed: `ARCH-027-01 Omnichannel Engagement and Collaboration Overview`
 - Completed: `ARCH-027-02 Channel, Conversation, and Context Continuity`
 - Completed: `ARCH-027-03 Communication Delivery, Notification, and Preferences`
+- Completed: `ARCH-027-04 Contact Center, Queues, Routing, and Presence`
 
 ## Implementation Coverage
 
-- Completed through: `ARCH-027-03 Communication Delivery, Notification, and Preferences`
-- Next documented implementation module: `ARCH-027-04 Contact Center, Queues, Routing, and Presence`
-- Reason: `architecture/027-omnichannel-engagement-collaboration/04-contact-center-queues-routing-and-presence.md` is the next architecture document in order.
+- Completed through: `ARCH-027-04 Contact Center, Queues, Routing, and Presence`
+- Next documented implementation module: `ARCH-027-05 Cases, Tasks, and Service Recovery`
+- Reason: `architecture/027-omnichannel-engagement-collaboration/05-cases-tasks-and-service-recovery.md` is the next architecture document in order.
 
 ## Latest Verification
 
-- Focused test: `node --test tests/omnichannel-engagement-collaboration/communication-delivery-notification-preferences.test.js`
+- Focused test: `node --test tests/omnichannel-engagement-collaboration/contact-center-queues-routing-presence.test.js`
 - Focused test result: passed, 3/3
 - Full test: `npm.cmd test`
-- Full test result: passed, 1481/1481
+- Full test result: passed, 1484/1484
 - Build command: `npm run build`
 - Build result: passed
 
@@ -150,4 +151,4 @@ Architecture documents must not be changed during implementation unless explicit
 
 ## Recommended Next Action
 
-Recommended next architecture module: `ARCH-027-04 Contact Center, Queues, Routing, and Presence`.
+Recommended next architecture module: `ARCH-027-05 Cases, Tasks, and Service Recovery`.

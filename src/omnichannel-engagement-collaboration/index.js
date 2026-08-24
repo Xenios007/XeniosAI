@@ -7,3 +7,6 @@ export { ChannelConversationContextContinuityDescriptor } from './continuity/cha
 export * from './communication-delivery-notification-preferences-constants.js';
 export { CommunicationDeliveryNotificationPreferencesProfile } from './contracts/communication-delivery-notification-preferences-profile.js';
 export { CommunicationDeliveryNotificationPreferencesDescriptor } from './delivery/communication-delivery-notification-preferences-descriptor.js';
+export * from './contact-center-queues-routing-presence-constants.js';
+export { ContactCenterQueuesRoutingPresenceProfile } from './contracts/contact-center-queues-routing-presence-profile.js';
+export { ContactCenterQueuesRoutingPresenceDescriptor } from './contact-center/contact-center-queues-routing-presence-descriptor.js';
