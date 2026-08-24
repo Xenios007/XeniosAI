@@ -6,6 +6,17 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.18.0] - ARCH-025-09 Commerce Operations, Governance, and Assurance
+
+### Added
+- Commerce operating-model, service objective, operational control, fraud and abuse boundary, observability, incident, recovery, audit, assurance, and conformance metadata.
+- Safeguards requiring bounded risk detection, review, rate controls, separation of duties, audit evidence, accountable ownership, incident reconciliation, and assurance evidence.
+
+Status: Commerce, Orders, and Reservations Architecture
+Version: 2.18.0
+
+---
+
 ## [2.17.0] - ARCH-025-08 Channel Distribution, Integration, and Consistency
 
 ### Added

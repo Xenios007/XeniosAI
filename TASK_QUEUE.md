@@ -228,7 +228,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-025-06 Modification, Cancellation, and Compensation`
 - Completed: `ARCH-025-07 Fulfillment, Add-ons, and Packages`
 - Completed: `ARCH-025-08 Channel Distribution, Integration, and Consistency`
-- Next: `ARCH-025-09 Commerce Operations, Governance, and Assurance`
+- Completed: `ARCH-025-09 Commerce Operations, Governance, and Assurance`
+- Next: `ARCH-025-10 Future Commerce Order and Reservation Evolution`
 
 ## Notes
 
