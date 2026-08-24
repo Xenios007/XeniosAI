@@ -225,7 +225,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-025-03 Order Lifecycle and State Management`
 - Completed: `ARCH-025-04 Reservation and Booking Lifecycle`
 - Completed: `ARCH-025-05 Availability, Allocation, and Holds`
-- Next: `ARCH-025-06 Modification, Cancellation, and Compensation`
+- Completed: `ARCH-025-06 Modification, Cancellation, and Compensation`
+- Next: `ARCH-025-07 Fulfillment, Add-ons, and Packages`
 
 ## Notes
 

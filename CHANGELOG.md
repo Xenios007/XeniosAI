@@ -6,6 +6,17 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.15.0] - ARCH-025-06 Modification, Cancellation, and Compensation
+
+### Added
+- Governed change requests, cancellation policy references, impact plans, repricing references, compensation, rollback, confirmation evidence, recovery, and observability metadata.
+- Safeguards requiring policy evaluation, impact planning, authoritative repricing references, bounded compensation, versioned changes, idempotency, pinned references, and auditable evidence.
+
+Status: Commerce, Orders, and Reservations Architecture
+Version: 2.15.0
+
+---
+
 ## [2.14.0] - ARCH-025-05 Availability, Allocation, and Holds
 
 ### Added
