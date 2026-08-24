@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.89.0] - ARCH-032-10 Framework Operations, Governance & Future Evolution
+
+### Added
+- Executable ownership, telemetry, performance-budget, incident, contribution, readiness-assurance, controlled-evolution, recovery, and conformance safeguards.
+
+Status: Application Framework and UI Extension Architecture
+Version: 2.89.0
+
+---
+
 ## [2.88.0] - ARCH-032-09 Packaging, Testing, Versioning & Upgrade Paths
 
 ### Added

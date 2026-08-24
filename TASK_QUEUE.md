@@ -299,7 +299,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-032-07 Design, Theming, Accessibility & Localization Kit`
 - Completed: `ARCH-032-08 UI Extension, Embedding & Security Boundaries`
 - Completed: `ARCH-032-09 Packaging, Testing, Versioning & Upgrade Paths`
-- Next: `ARCH-032-10 Framework Operations, Governance & Future Evolution`
+- Completed: `ARCH-032-10 Framework Operations, Governance & Future Evolution`
+- Next: `ARCH-033-01 API Product Management & Discovery Overview`
 
 ## Notes
 

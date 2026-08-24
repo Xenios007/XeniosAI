@@ -25,3 +25,6 @@ export { UiExtensionEmbeddingSecurityBoundariesDescriptor } from './extensions/u
 export * from './packaging-testing-versioning-upgrade-paths-constants.js';
 export { PackagingTestingVersioningUpgradePathsProfile } from './contracts/packaging-testing-versioning-upgrade-paths-profile.js';
 export { PackagingTestingVersioningUpgradePathsDescriptor } from './release/packaging-testing-versioning-upgrade-paths-descriptor.js';
+export * from './framework-operations-governance-future-evolution-constants.js';
+export { FrameworkOperationsGovernanceFutureEvolutionProfile } from './contracts/framework-operations-governance-future-evolution-profile.js';
+export { FrameworkOperationsGovernanceFutureEvolutionDescriptor } from './operations/framework-operations-governance-future-evolution-descriptor.js';
