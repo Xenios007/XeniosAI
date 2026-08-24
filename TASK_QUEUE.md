@@ -247,7 +247,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-027-05 Cases, Tasks, and Service Recovery`
 - Completed: `ARCH-027-06 Collaboration, Approvals, and Human-Agent Handoff`
 - Completed: `ARCH-027-07 Campaigns, Engagement, and Journeys`
-- Next: `ARCH-027-08 Integration, Realtime Delivery, and Resilience`
+- Completed: `ARCH-027-08 Integration, Realtime Delivery, and Resilience`
+- Next: `ARCH-027-09 Engagement Operations, Governance, and Assurance`
 
 ## Notes
 

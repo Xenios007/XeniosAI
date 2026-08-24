@@ -19,3 +19,6 @@ export { CollaborationApprovalsHumanAgentHandoffDescriptor } from './collaborati
 export * from './campaigns-engagement-journeys-constants.js';
 export { CampaignsEngagementJourneysProfile } from './contracts/campaigns-engagement-journeys-profile.js';
 export { CampaignsEngagementJourneysDescriptor } from './campaigns/campaigns-engagement-journeys-descriptor.js';
+export * from './integration-realtime-delivery-resilience-constants.js';
+export { IntegrationRealtimeDeliveryResilienceProfile } from './contracts/integration-realtime-delivery-resilience-profile.js';
+export { IntegrationRealtimeDeliveryResilienceDescriptor } from './integration/integration-realtime-delivery-resilience-descriptor.js';

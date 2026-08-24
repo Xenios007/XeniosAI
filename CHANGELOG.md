@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.37.0] - ARCH-027-08 Integration, Realtime Delivery, and Resilience
+
+### Added
+- Executable channel-adapter, versioned-event, freshness-bounded presence and stream, signed webhook, explicit outage, checkpoint reconciliation, recovery, and transport-boundary safeguards with immutable validation, documentation, and focused tests.
+
+Status: Omnichannel Engagement and Collaboration Architecture
+Version: 2.37.0
+
+---
+
 ## [2.36.0] - ARCH-027-07 Campaigns, Engagement, and Journeys
 
 ### Added

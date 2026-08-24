@@ -1,0 +1,8 @@
+export class IntegrationRealtimeDeliveryResilienceProfile {
+  constructor({ profileName, responsibilities = [], adapterFields = [], eventFields = [], presenceFields = [], streamFields = [], webhookFields = [], outageBehaviorFields = [], reconciliationFields = [], controls = [], failureRecovery = [], observabilityFields = [], assuranceEvidence = [], invariants = [], adaptersVersioned = true, credentialsIsolated = true, signaturesVerified = true, deliveriesIdempotent = true, orderingExplicit = true, backpressureBounded = true, freshnessExplicit = true, outagesExplicit = true, reconciliationRequired = true, transportAckNotCompletion = true, sharedDatabases = false, unsignedWebhookAccepted = false, unboundedRetry = false, stalePresenceAuthoritative = false, outageHidden = false, replayWithoutCheckpoint = false, transportAckMeansCompletion = false, adapterOwnsBusinessState = false } = {}) {
+    this.profileName = profileName;
+    for (const [key, value] of Object.entries({ responsibilities, adapterFields, eventFields, presenceFields, streamFields, webhookFields, outageBehaviorFields, reconciliationFields, controls, failureRecovery, observabilityFields, assuranceEvidence, invariants })) this[key] = Object.freeze([...value]);
+    for (const [key, value] of Object.entries({ adaptersVersioned, credentialsIsolated, signaturesVerified, deliveriesIdempotent, orderingExplicit, backpressureBounded, freshnessExplicit, outagesExplicit, reconciliationRequired, transportAckNotCompletion, sharedDatabases, unsignedWebhookAccepted, unboundedRetry, stalePresenceAuthoritative, outageHidden, replayWithoutCheckpoint, transportAckMeansCompletion, adapterOwnsBusinessState })) this[key] = Boolean(value);
+    Object.freeze(this);
+  }
+}
