@@ -4,3 +4,6 @@ export { AiModelOperationsEvaluationLearningOverviewDescriptor } from './overvie
 export * from './model-catalog-provider-abstraction-capabilities-constants.js';
 export { ModelCatalogProviderAbstractionCapabilitiesProfile } from './contracts/model-catalog-provider-abstraction-capabilities-profile.js';
 export { ModelCatalogProviderAbstractionCapabilitiesDescriptor } from './catalog/model-catalog-provider-abstraction-capabilities-descriptor.js';
+export * from './model-selection-routing-fallback-budgets-constants.js';
+export { ModelSelectionRoutingFallbackBudgetsProfile } from './contracts/model-selection-routing-fallback-budgets-profile.js';
+export { ModelSelectionRoutingFallbackBudgetsDescriptor } from './routing/model-selection-routing-fallback-budgets-descriptor.js';

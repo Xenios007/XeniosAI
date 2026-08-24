@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.52.0] - ARCH-029-03 Model Selection, Routing, Fallback & Budgets
+
+### Added
+- Executable task-profile, quality-gate, safety-gate, privacy, latency, availability, deterministic-selection, compatible-fallback, budget, safe-refusal, recovery, routing-evidence, and provider-neutrality safeguards with immutable validation, documentation, and focused tests.
+
+Status: AI Model Operations, Evaluation and Continuous Learning Architecture
+Version: 2.52.0
+
+---
+
 ## [2.51.0] - ARCH-029-02 Model Catalog, Provider Abstraction & Capabilities
 
 ### Added

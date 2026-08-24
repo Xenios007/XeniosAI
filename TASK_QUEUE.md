@@ -262,7 +262,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-028-10 Future Analytics & Decision Intelligence Evolution`
 - Completed: `ARCH-029-01 AI Model Operations, Evaluation & Learning Overview`
 - Completed: `ARCH-029-02 Model Catalog, Provider Abstraction & Capabilities`
-- Next: `ARCH-029-03 Model Selection, Routing, Fallback & Budgets`
+- Completed: `ARCH-029-03 Model Selection, Routing, Fallback & Budgets`
+- Next: `ARCH-029-04 Prompt, Retrieval, Tool & Policy Configuration`
 
 ## Notes
 
