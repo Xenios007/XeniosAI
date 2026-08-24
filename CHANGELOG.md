@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.73.0] - ARCH-031-04 Portal Information Architecture & Discovery
+
+### Added
+- Executable navigation, scoped-search, capability-discovery, contextual-guidance, dashboard, publication, freshness, accessibility, recovery, observability, and assurance safeguards.
+
+Status: Developer Experience and Portal Architecture
+Version: 2.73.0
+
+---
+
 ## [2.72.0] - ARCH-031-03 Developer Organizations, Projects & Applications
 
 ### Added

@@ -7,3 +7,6 @@ export { DeveloperPersonasJourneysOnboardingDescriptor } from './onboarding/deve
 export * from './developer-organizations-projects-applications-constants.js';
 export { DeveloperOrganizationsProjectsApplicationsProfile } from './contracts/developer-organizations-projects-applications-profile.js';
 export { DeveloperOrganizationsProjectsApplicationsDescriptor } from './resources/developer-organizations-projects-applications-descriptor.js';
+export * from './portal-information-architecture-discovery-constants.js';
+export { PortalInformationArchitectureDiscoveryProfile } from './contracts/portal-information-architecture-discovery-profile.js';
+export { PortalInformationArchitectureDiscoveryDescriptor } from './discovery/portal-information-architecture-discovery-descriptor.js';
