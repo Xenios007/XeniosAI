@@ -10,3 +10,6 @@ export { DeveloperOrganizationsProjectsApplicationsDescriptor } from './resource
 export * from './portal-information-architecture-discovery-constants.js';
 export { PortalInformationArchitectureDiscoveryProfile } from './contracts/portal-information-architecture-discovery-profile.js';
 export { PortalInformationArchitectureDiscoveryDescriptor } from './discovery/portal-information-architecture-discovery-descriptor.js';
+export * from './credentials-access-environment-entry-constants.js';
+export { CredentialsAccessEnvironmentEntryProfile } from './contracts/credentials-access-environment-entry-profile.js';
+export { CredentialsAccessEnvironmentEntryDescriptor } from './access/credentials-access-environment-entry-descriptor.js';

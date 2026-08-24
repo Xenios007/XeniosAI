@@ -58,6 +58,7 @@ Testing is treated as a first-class engineering discipline rather than an aftert
 
 The repository currently includes automated unit tests for:
 
+- `ARCH-031-05 Credentials, Access Requests & Environment Entry` in `tests/developer-experience-portal/`
 - `ARCH-031-04 Portal Information Architecture & Discovery` in `tests/developer-experience-portal/`
 - `ARCH-031-03 Developer Organizations, Projects & Applications` in `tests/developer-experience-portal/`
 - `ARCH-031-02 Developer Personas, Journeys & Onboarding` in `tests/developer-experience-portal/`

@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.74.0] - ARCH-031-05 Credentials, Access Requests & Environment Entry
+
+### Added
+- Executable access-request, access-package, credential-issuance, one-time-secret-display, environment-entry, rotation, revocation, recovery, observability, and assurance safeguards.
+
+Status: Developer Experience and Portal Architecture
+Version: 2.74.0
+
+---
+
 ## [2.73.0] - ARCH-031-04 Portal Information Architecture & Discovery
 
 ### Added

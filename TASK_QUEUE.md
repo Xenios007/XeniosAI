@@ -284,7 +284,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-031-02 Developer Personas, Journeys & Onboarding`
 - Completed: `ARCH-031-03 Developer Organizations, Projects & Applications`
 - Completed: `ARCH-031-04 Portal Information Architecture & Discovery`
-- Next: `ARCH-031-05 Credentials, Access Requests & Environment Entry`
+- Completed: `ARCH-031-05 Credentials, Access Requests & Environment Entry`
+- Next: `ARCH-031-06 Usage, Quotas, Cost & Operational Visibility`
 
 ## Notes
 
