@@ -288,7 +288,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-031-06 Usage, Quotas, Cost & Operational Visibility`
 - Completed: `ARCH-031-07 Documentation, Support, Feedback & Community`
 - Completed: `ARCH-031-08 Portal Integration, Extensibility & Automation`
-- Next: `ARCH-031-09 Portal Operations, Governance & Assurance`
+- Completed: `ARCH-031-09 Portal Operations, Governance & Assurance`
+- Next: `ARCH-031-10 Future Developer Experience Evolution`
 
 ## Notes
 

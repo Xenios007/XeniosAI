@@ -22,3 +22,6 @@ export { DocumentationSupportFeedbackCommunityDescriptor } from './support/docum
 export * from './portal-integration-extensibility-automation-constants.js';
 export { PortalIntegrationExtensibilityAutomationProfile } from './contracts/portal-integration-extensibility-automation-profile.js';
 export { PortalIntegrationExtensibilityAutomationDescriptor } from './integration/portal-integration-extensibility-automation-descriptor.js';
+export * from './portal-operations-governance-assurance-constants.js';
+export { PortalOperationsGovernanceAssuranceProfile } from './contracts/portal-operations-governance-assurance-profile.js';
+export { PortalOperationsGovernanceAssuranceDescriptor } from './operations/portal-operations-governance-assurance-descriptor.js';
