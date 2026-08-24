@@ -6,6 +6,17 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.10.0] - ARCH-025-01 Commerce, Orders, and Reservations Overview
+
+### Added
+- Commerce overview metadata covering commercial commitment ownership, aggregate authority, commands, events, controls, recovery states, observability, measures, and invariants.
+- Safeguards requiring tenant isolation, explicit confirmation, idempotency, pinned references, sensitive-data minimization, auditable commitments, and separation from ARCH-026 financial authority.
+
+Status: Commerce, Orders, and Reservations Architecture
+Version: 2.10.0
+
+---
+
 ## [2.9.0] - ARCH-024 Future Product Catalog Resource Evolution
 
 ### Added
