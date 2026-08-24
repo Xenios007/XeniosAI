@@ -105,6 +105,7 @@ The repository currently includes automated unit tests for:
 - `ARCH-024-09 Operations, Governance, and Assurance` in `tests/product-catalog-resource-management/`
 - `ARCH-024-10 Future Product Catalog Resource Evolution` in `tests/product-catalog-resource-management/`
 - `ARCH-025-01 Commerce, Orders, and Reservations Overview` in `tests/commerce-orders-reservations/`
+- `ARCH-025-02 Commercial Intent, Quotes, and Carts` in `tests/commerce-orders-reservations/`
 - `ARCH-019-01 Plugin and Extension Overview` in `tests/plugin-extension-framework/`
 - `ARCH-019-02 Extension Domain and Classification` in `tests/plugin-extension-framework/`
 - `ARCH-019-03 Package, Manifest, Registry, and Provenance` in `tests/plugin-extension-framework/`

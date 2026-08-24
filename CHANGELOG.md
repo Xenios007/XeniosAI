@@ -6,6 +6,17 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.11.0] - ARCH-025-02 Commercial Intent, Quotes, and Carts
+
+### Added
+- Commercial intent, quote validity, cart ownership, lifecycle, recalculation, confirmation, and authoritative conversion metadata.
+- Safeguards requiring expiry enforcement, stale-quote recalculation, explicit confirmation, pinned versions, idempotency, auditable history, and separation from ARCH-026 financial authority.
+
+Status: Commerce, Orders, and Reservations Architecture
+Version: 2.11.0
+
+---
+
 ## [2.10.0] - ARCH-025-01 Commerce, Orders, and Reservations Overview
 
 ### Added
