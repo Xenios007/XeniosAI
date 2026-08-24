@@ -11,10 +11,10 @@ Update this file after every successful implementation session.
 - Architecture source of truth: `/architecture`
 - Implementation guide: `IMPLEMENTATION_GUIDE.md`
 - Task queue: `TASK_QUEUE.md`
-- Current implementation phase: `ARCH-024 Product Catalog and Resource Management`
-- Current implementation state: `ARCH-024-09 Operations, Governance, and Assurance` is implemented.
-- Latest successful implementation module: `ARCH-024-09 Operations, Governance, and Assurance`
-- Latest successful commit: `c3dd8e0` (`ARCH-024-09 Operations, Governance, and Assurance`)
+- Current implementation phase: `ARCH-025 Commerce, Orders, and Reservations`
+- Current implementation state: `ARCH-024-10 Future Product Catalog Resource Evolution` is implemented.
+- Latest successful implementation module: `ARCH-024-10 Future Product Catalog Resource Evolution`
+- Latest successful commit: pending implementation commit (`ARCH-024-10 Future Product Catalog Resource Evolution`)
 - Latest push status: pushed to `main`
 - Latest push status: pushed to `main`
 - Latest push status: pushed to `main`
@@ -92,19 +92,21 @@ Update this file after every successful implementation session.
 - Completed: `ARCH-024-07 Bundles, Packages, and Eligibility`
 - Completed: `ARCH-024-08 Integration, APIs, Events, and Extensions`
 - Completed: `ARCH-024-09 Operations, Governance, and Assurance`
+- Completed: `ARCH-024-10 Future Product Catalog Resource Evolution`
+- Next: `ARCH-025-01 Commerce, Orders, and Reservations Overview`
 
 ## Implementation Coverage
 
-- Completed through: `ARCH-024-09 Operations, Governance, and Assurance`
-- Next documented implementation module: `ARCH-024-10 Future Product Catalog Resource Evolution`
-- Reason: `architecture/024-product-catalog-resource-management/10-future-product-catalog-resource-evolution.md` is the next architecture document in order.
+- Completed through: `ARCH-024-10 Future Product Catalog Resource Evolution`
+- Next documented implementation module: `ARCH-025-01 Commerce, Orders, and Reservations Overview`
+- Reason: `architecture/025-commerce-orders-reservations/01-commerce-orders-reservations-overview.md` is the next architecture document in order.
 
 ## Latest Verification
 
-- Focused test: `npm.cmd test -- tests/product-catalog-resource-management/operations-governance-assurance.test.js`
+- Focused test: `npm.cmd test -- tests/product-catalog-resource-management/future-product-catalog-resource-evolution.test.js`
 - Focused test result: passed, 3/3
 - Full test: `npm.cmd test`
-- Full test result: passed, 1413/1413
+- Full test result: passed, 1416/1416
 - Build command: `npm.cmd run build`
 - Build result: passed
 
@@ -126,4 +128,4 @@ Architecture documents must not be changed during implementation unless explicit
 
 ## Recommended Next Action
 
-Recommended next architecture module: `ARCH-024-10 Future Product Catalog Resource Evolution`.
+Recommended next architecture module: `ARCH-025-01 Commerce, Orders, and Reservations Overview`.

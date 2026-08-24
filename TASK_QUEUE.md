@@ -219,7 +219,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-024-07 Bundles, Packages, and Eligibility`
 - Completed: `ARCH-024-08 Integration, APIs, Events, and Extensions`
 - Completed: `ARCH-024-09 Operations, Governance, and Assurance`
-- Next: `ARCH-024-10 Future Product Catalog Resource Evolution`
+- Completed: `ARCH-024-10 Future Product Catalog Resource Evolution`
+- Next: `ARCH-025-01 Commerce, Orders, and Reservations Overview`
 
 ## Notes
 

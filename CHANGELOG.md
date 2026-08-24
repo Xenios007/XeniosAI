@@ -6,6 +6,17 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.9.0] - ARCH-024 Future Product Catalog Resource Evolution
+
+### Added
+- Controlled evolution metadata for catalog maturity horizons, federation, semantic interoperability, AI-assisted stewardship, research, promotion, retirement, recovery, and observability.
+- Safeguards requiring human approval, portable semantics, bounded experimentation, rollback, enduring authority, tenant-scoped projections, and governed versions while rejecting fabricated state and autonomous high-impact actions.
+
+Status: Product, Catalog, and Resource Management Architecture
+Version: 2.9.0
+
+---
+
 ## [2.8.0] - ARCH-024 Operations, Governance, and Assurance
 
 ### Added
