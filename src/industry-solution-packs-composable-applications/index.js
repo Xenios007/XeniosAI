@@ -10,3 +10,6 @@ export { CapabilityCompositionConfigurationPolicyDescriptor } from './compositio
 export * from './hospitality-solution-pack-casa-lluvia-reference-constants.js';
 export { HospitalitySolutionPackCasaLluviaReferenceProfile } from './contracts/hospitality-solution-pack-casa-lluvia-reference-profile.js';
 export { HospitalitySolutionPackCasaLluviaReferenceDescriptor } from './hospitality/hospitality-solution-pack-casa-lluvia-reference-descriptor.js';
+export * from './rental-commerce-service-solution-patterns-constants.js';
+export { RentalCommerceServiceSolutionPatternsProfile } from './contracts/rental-commerce-service-solution-patterns-profile.js';
+export { RentalCommerceServiceSolutionPatternsDescriptor } from './patterns/rental-commerce-service-solution-patterns-descriptor.js';

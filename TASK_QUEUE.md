@@ -274,7 +274,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-030-02 Solution Pack Model, Boundaries & Manifests`
 - Completed: `ARCH-030-03 Capability Composition, Configuration & Policy`
 - Completed: `ARCH-030-04 Hospitality Solution Pack & Casa Lluvia Reference`
-- Next: `ARCH-030-05 Rental, Commerce & Service Solution Patterns`
+- Completed: `ARCH-030-05 Rental, Commerce & Service Solution Patterns`
+- Next: `ARCH-030-06 Workflow, Agent, Knowledge & Integration Packaging`
 
 ## Notes
 

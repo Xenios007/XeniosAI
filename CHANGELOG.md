@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.64.0] - ARCH-030-05 Rental, Commerce & Service Solution Patterns
+
+### Added
+- Executable rental, commerce, customer-service, professional-service, provider-authority, lifecycle, workflow, recovery, and conformance pattern safeguards with immutable validation, documentation, and focused tests.
+
+Status: Industry Solution Packs and Composable Applications Architecture
+Version: 2.64.0
+
+---
+
 ## [2.63.0] - ARCH-030-04 Hospitality Solution Pack & Casa Lluvia Reference
 
 ### Added
