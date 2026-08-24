@@ -13,3 +13,6 @@ export { ConversationCustomerExperienceComponentsDescriptor } from './components
 export * from './administration-operations-data-components-constants.js';
 export { AdministrationOperationsDataComponentsProfile } from './contracts/administration-operations-data-components-profile.js';
 export { AdministrationOperationsDataComponentsDescriptor } from './components/administration-operations-data-components-descriptor.js';
+export * from './frontend-state-data-identity-offline-model-constants.js';
+export { FrontendStateDataIdentityOfflineModelProfile } from './contracts/frontend-state-data-identity-offline-model-profile.js';
+export { FrontendStateDataIdentityOfflineModelDescriptor } from './state/frontend-state-data-identity-offline-model-descriptor.js';

@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.85.0] - ARCH-032-06 Frontend State, Data, Identity & Offline Model
+
+### Added
+- Executable local-state, server-state, cache, identity-context, optimistic, offline, recovery, observability, and assurance safeguards.
+
+Status: Application Framework and UI Extension Architecture
+Version: 2.85.0
+
+---
+
 ## [2.84.0] - ARCH-032-05 Administration, Operations & Data Components
 
 ### Added
