@@ -6,6 +6,17 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.20.0] - ARCH-026-01 Pricing, Billing, and Payments Overview
+
+### Added
+- Financial authority, aggregate, contract, lifecycle, governance, failure recovery, observability, assurance, and conformance metadata.
+- Safeguards requiring provider-owned validation, default deny, least privilege, tenant isolation, purpose limitation, versioned schemas, separation of duties, deterministic AI policy checks, human review, and ARCH-029 AI promotion.
+
+Status: Pricing, Billing, and Payments Architecture
+Version: 2.20.0
+
+---
+
 ## [2.19.0] - ARCH-025-10 Future Commerce Order and Reservation Evolution
 
 ### Added

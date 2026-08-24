@@ -230,7 +230,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-025-08 Channel Distribution, Integration, and Consistency`
 - Completed: `ARCH-025-09 Commerce Operations, Governance, and Assurance`
 - Completed: `ARCH-025-10 Future Commerce Order and Reservation Evolution`
-- Next: `ARCH-026-01 Pricing, Billing, and Payments Overview`
+- Completed: `ARCH-026-01 Pricing, Billing, and Payments Overview`
+- Next: `ARCH-026-02 Price Lists, Rate Plans, and Context`
 
 ## Notes
 
