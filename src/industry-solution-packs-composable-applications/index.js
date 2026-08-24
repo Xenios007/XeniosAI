@@ -13,3 +13,6 @@ export { HospitalitySolutionPackCasaLluviaReferenceDescriptor } from './hospital
 export * from './rental-commerce-service-solution-patterns-constants.js';
 export { RentalCommerceServiceSolutionPatternsProfile } from './contracts/rental-commerce-service-solution-patterns-profile.js';
 export { RentalCommerceServiceSolutionPatternsDescriptor } from './patterns/rental-commerce-service-solution-patterns-descriptor.js';
+export * from './workflow-agent-knowledge-integration-packaging-constants.js';
+export { WorkflowAgentKnowledgeIntegrationPackagingProfile } from './contracts/workflow-agent-knowledge-integration-packaging-profile.js';
+export { WorkflowAgentKnowledgeIntegrationPackagingDescriptor } from './packaging/workflow-agent-knowledge-integration-packaging-descriptor.js';

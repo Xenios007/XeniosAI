@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.65.0] - ARCH-030-06 Workflow, Agent, Knowledge & Integration Packaging
+
+### Added
+- Executable workflow, agent, prompt, tool, knowledge, connector, permission, test, immutable-lifecycle, provider-authority, recovery, and conformance packaging safeguards with immutable validation, documentation, and focused tests.
+
+Status: Industry Solution Packs and Composable Applications Architecture
+Version: 2.65.0
+
+---
+
 ## [2.64.0] - ARCH-030-05 Rental, Commerce & Service Solution Patterns
 
 ### Added
