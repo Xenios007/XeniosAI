@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.95.0] - ARCH-033-06 Documentation, Examples, SDKs & Change Communication
+
+### Added
+- Executable reference, tutorial, example, SDK, changelog, notice, migration-guidance, trust-signal, recovery, observability, and assurance safeguards.
+
+Status: API Product Management and Discovery Architecture
+Version: 2.95.0
+
+---
+
 ## [2.94.0] - ARCH-033-05 Quotas, Limits, Metering & Cost Visibility
 
 ### Added

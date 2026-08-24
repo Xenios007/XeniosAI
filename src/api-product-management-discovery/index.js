@@ -13,3 +13,6 @@ export { SubscriptionsAccessRequestsPlansEntitlementsDescriptor } from './access
 export * from './quotas-limits-metering-cost-visibility-constants.js';
 export { QuotasLimitsMeteringCostVisibilityProfile } from './contracts/quotas-limits-metering-cost-visibility-profile.js';
 export { QuotasLimitsMeteringCostVisibilityDescriptor } from './usage/quotas-limits-metering-cost-visibility-descriptor.js';
+export * from './documentation-examples-sdks-change-communication-constants.js';
+export { DocumentationExamplesSdksChangeCommunicationProfile } from './contracts/documentation-examples-sdks-change-communication-profile.js';
+export { DocumentationExamplesSdksChangeCommunicationDescriptor } from './documentation/documentation-examples-sdks-change-communication-descriptor.js';
