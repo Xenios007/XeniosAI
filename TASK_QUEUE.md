@@ -232,7 +232,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-025-10 Future Commerce Order and Reservation Evolution`
 - Completed: `ARCH-026-01 Pricing, Billing, and Payments Overview`
 - Completed: `ARCH-026-02 Price Lists, Rate Plans, and Context`
-- Next: `ARCH-026-03 Pricing Rules, Restrictions, Promotions, and Approvals`
+- Completed: `ARCH-026-03 Pricing Rules, Restrictions, Promotions, and Approvals`
+- Next: `ARCH-026-04 Quotation and Price Determination`
 
 ## Notes
 

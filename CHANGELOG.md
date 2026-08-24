@@ -6,6 +6,17 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.22.0] - ARCH-026-03 Pricing Rules, Restrictions, Promotions, and Approvals
+
+### Added
+- Deterministic pricing rules, eligibility, stacking, overrides, promotions, approval limits, grounded explanations, recovery, observability, and assurance metadata.
+- Safeguards requiring bounded stacking, approved expiring overrides, approval limits, grounded explanations, provider-owned validation, tenant and purpose scope, deterministic AI policy checks, and human review.
+
+Status: Pricing, Billing, and Payments Architecture
+Version: 2.22.0
+
+---
+
 ## [2.21.0] - ARCH-026-02 Price Lists, Rate Plans, and Context
 
 ### Added
