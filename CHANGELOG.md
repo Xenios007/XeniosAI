@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.76.0] - ARCH-031-07 Documentation, Support, Feedback & Community
+
+### Added
+- Executable documentation, example, support-case, feedback, announcement, learning-path, community-link, recovery, observability, and assurance safeguards.
+
+Status: Developer Experience and Portal Architecture
+Version: 2.76.0
+
+---
+
 ## [2.75.0] - ARCH-031-06 Usage, Quotas, Cost & Operational Visibility
 
 ### Added

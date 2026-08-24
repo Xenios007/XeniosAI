@@ -16,3 +16,6 @@ export { CredentialsAccessEnvironmentEntryDescriptor } from './access/credential
 export * from './usage-quotas-cost-operational-visibility-constants.js';
 export { UsageQuotasCostOperationalVisibilityProfile } from './contracts/usage-quotas-cost-operational-visibility-profile.js';
 export { UsageQuotasCostOperationalVisibilityDescriptor } from './visibility/usage-quotas-cost-operational-visibility-descriptor.js';
+export * from './documentation-support-feedback-community-constants.js';
+export { DocumentationSupportFeedbackCommunityProfile } from './contracts/documentation-support-feedback-community-profile.js';
+export { DocumentationSupportFeedbackCommunityDescriptor } from './support/documentation-support-feedback-community-descriptor.js';
