@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.31.0] - ARCH-027-02 Channel, Conversation, and Context Continuity
+
+### Added
+- Executable normalized channel identity, conversation thread, cross-channel continuity, correlation, authorized transfer, interaction-history, recovery, and authority safeguards with immutable validation, documentation, and focused tests.
+
+Status: Omnichannel Engagement and Collaboration Architecture
+Version: 2.31.0
+
+---
+
 ## [2.30.0] - ARCH-027-01 Omnichannel Engagement and Collaboration Overview
 
 ### Added

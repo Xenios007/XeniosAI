@@ -241,7 +241,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-026-09 Financial Operations, Governance, and Assurance`
 - Completed: `ARCH-026-10 Future Pricing, Billing, and Payment Evolution`
 - Completed: `ARCH-027-01 Omnichannel Engagement and Collaboration Overview`
-- Next: `ARCH-027-02 Channel, Conversation, and Context Continuity`
+- Completed: `ARCH-027-02 Channel, Conversation, and Context Continuity`
+- Next: `ARCH-027-03 Communication Delivery, Notification, and Preferences`
 
 ## Notes
 

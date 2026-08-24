@@ -1,0 +1,8 @@
+export class ChannelConversationContextContinuityProfile {
+  constructor({ profileName, responsibilities = [], channelIdentityFields = [], conversationThreadFields = [], contextContinuityFields = [], interactionCorrelationFields = [], conversationTransferFields = [], interactionHistoryFields = [], controls = [], failureRecovery = [], observabilityFields = [], assuranceEvidence = [], invariants = [], identitiesNormalized = true, continuityPurposeScoped = true, correlationStable = true, transfersAuthorized = true, historyProvenanceRetained = true, consentEnforced = true, tenantIsolation = true, providerOwnsValidation = true, aiChangesOnlyThroughArch029 = true, sharedDatabases = false, contextCopiedWithoutPurpose = false, transferWithoutAuthorization = false, historyBecomesCustomerTruth = false, engagementOwnsChannelTransport = false, inferredIdentityAccepted = false } = {}) {
+    this.profileName = profileName;
+    for (const [key, value] of Object.entries({ responsibilities, channelIdentityFields, conversationThreadFields, contextContinuityFields, interactionCorrelationFields, conversationTransferFields, interactionHistoryFields, controls, failureRecovery, observabilityFields, assuranceEvidence, invariants })) this[key] = Object.freeze([...value]);
+    for (const [key, value] of Object.entries({ identitiesNormalized, continuityPurposeScoped, correlationStable, transfersAuthorized, historyProvenanceRetained, consentEnforced, tenantIsolation, providerOwnsValidation, aiChangesOnlyThroughArch029, sharedDatabases, contextCopiedWithoutPurpose, transferWithoutAuthorization, historyBecomesCustomerTruth, engagementOwnsChannelTransport, inferredIdentityAccepted })) this[key] = Boolean(value);
+    Object.freeze(this);
+  }
+}
