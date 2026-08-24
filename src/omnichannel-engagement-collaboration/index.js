@@ -22,3 +22,6 @@ export { CampaignsEngagementJourneysDescriptor } from './campaigns/campaigns-eng
 export * from './integration-realtime-delivery-resilience-constants.js';
 export { IntegrationRealtimeDeliveryResilienceProfile } from './contracts/integration-realtime-delivery-resilience-profile.js';
 export { IntegrationRealtimeDeliveryResilienceDescriptor } from './integration/integration-realtime-delivery-resilience-descriptor.js';
+export * from './engagement-operations-governance-assurance-constants.js';
+export { EngagementOperationsGovernanceAssuranceProfile } from './contracts/engagement-operations-governance-assurance-profile.js';
+export { EngagementOperationsGovernanceAssuranceDescriptor } from './operations/engagement-operations-governance-assurance-descriptor.js';

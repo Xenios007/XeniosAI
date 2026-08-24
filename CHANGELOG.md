@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.38.0] - ARCH-027-09 Engagement Operations, Governance, and Assurance
+
+### Added
+- Executable operating-role, quality-objective, minimized-telemetry, bounded-abuse-control, incident-evidence, governance-artifact, recovery, and continuous-assurance safeguards with immutable validation, documentation, and focused tests.
+
+Status: Omnichannel Engagement and Collaboration Architecture
+Version: 2.38.0
+
+---
+
 ## [2.37.0] - ARCH-027-08 Integration, Realtime Delivery, and Resilience
 
 ### Added

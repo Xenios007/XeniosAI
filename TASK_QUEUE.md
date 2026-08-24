@@ -248,7 +248,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-027-06 Collaboration, Approvals, and Human-Agent Handoff`
 - Completed: `ARCH-027-07 Campaigns, Engagement, and Journeys`
 - Completed: `ARCH-027-08 Integration, Realtime Delivery, and Resilience`
-- Next: `ARCH-027-09 Engagement Operations, Governance, and Assurance`
+- Completed: `ARCH-027-09 Engagement Operations, Governance, and Assurance`
+- Next: `ARCH-027-10 Future Omnichannel Collaboration Evolution`
 
 ## Notes
 

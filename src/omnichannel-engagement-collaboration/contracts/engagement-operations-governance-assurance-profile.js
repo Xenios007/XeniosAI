@@ -1,0 +1,8 @@
+export class EngagementOperationsGovernanceAssuranceProfile {
+  constructor({ profileName, operatingRoles = [], qualityObjectives = [], telemetryFields = [], abuseControls = [], incidentClasses = [], incidentEvidence = [], governanceArtifacts = [], assuranceActivities = [], invariants = [], accountableOwnership = true, qualityObjectivesMeasured = true, protectedPayloadsExcludedFromTelemetry = true, abuseControlsBounded = true, humanReviewAvailable = true, incidentsReconciled = true, evidenceRetained = true, assuranceContinuous = true, sharedDatabases = false, protectedPayloadsCopiedToTelemetry = false, abuseSignalChangesAuthoritativeState = false, consentBypassedUnderPressure = false, tenantControlBypassedUnderPressure = false, incidentEvidenceDiscarded = false, externalAuthorityAbsorbed = false } = {}) {
+    this.profileName = profileName;
+    for (const [key, value] of Object.entries({ operatingRoles, qualityObjectives, telemetryFields, abuseControls, incidentClasses, incidentEvidence, governanceArtifacts, assuranceActivities, invariants })) this[key] = Object.freeze([...value]);
+    for (const [key, value] of Object.entries({ accountableOwnership, qualityObjectivesMeasured, protectedPayloadsExcludedFromTelemetry, abuseControlsBounded, humanReviewAvailable, incidentsReconciled, evidenceRetained, assuranceContinuous, sharedDatabases, protectedPayloadsCopiedToTelemetry, abuseSignalChangesAuthoritativeState, consentBypassedUnderPressure, tenantControlBypassedUnderPressure, incidentEvidenceDiscarded, externalAuthorityAbsorbed })) this[key] = Boolean(value);
+    Object.freeze(this);
+  }
+}
