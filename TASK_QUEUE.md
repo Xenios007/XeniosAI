@@ -226,7 +226,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-025-04 Reservation and Booking Lifecycle`
 - Completed: `ARCH-025-05 Availability, Allocation, and Holds`
 - Completed: `ARCH-025-06 Modification, Cancellation, and Compensation`
-- Next: `ARCH-025-07 Fulfillment, Add-ons, and Packages`
+- Completed: `ARCH-025-07 Fulfillment, Add-ons, and Packages`
+- Next: `ARCH-025-08 Channel Distribution, Integration, and Consistency`
 
 ## Notes
 

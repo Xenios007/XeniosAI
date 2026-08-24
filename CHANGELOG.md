@@ -6,6 +6,17 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.16.0] - ARCH-025-07 Fulfillment, Add-ons, and Packages
+
+### Added
+- Fulfillment plan, package component, dependency, add-on, substitution, exception, completion evidence, recovery, and observability metadata.
+- Safeguards requiring dependency resolution, add-on eligibility, substitution approval, explicit partial completion, evidence retention, tenant isolation, idempotency, and pinned references.
+
+Status: Commerce, Orders, and Reservations Architecture
+Version: 2.16.0
+
+---
+
 ## [2.15.0] - ARCH-025-06 Modification, Cancellation, and Compensation
 
 ### Added
