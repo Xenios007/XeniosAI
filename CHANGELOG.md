@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.32.0] - ARCH-027-03 Communication Delivery, Notification, and Preferences
+
+### Added
+- Executable message-intent, versioned-template, delivery-attempt, verified-receipt, bounded-retry, preference, consent, suppression, recovery, and transport-boundary safeguards with immutable validation, documentation, and focused tests.
+
+Status: Omnichannel Engagement and Collaboration Architecture
+Version: 2.32.0
+
+---
+
 ## [2.31.0] - ARCH-027-02 Channel, Conversation, and Context Continuity
 
 ### Added

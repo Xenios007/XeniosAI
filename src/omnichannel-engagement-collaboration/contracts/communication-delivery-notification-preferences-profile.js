@@ -1,0 +1,8 @@
+export class CommunicationDeliveryNotificationPreferencesProfile {
+  constructor({ profileName, responsibilities = [], messageIntentFields = [], templateFields = [], deliveryAttemptFields = [], receiptFields = [], retryFields = [], preferenceFields = [], consentSuppressionFields = [], controls = [], failureRecovery = [], observabilityFields = [], assuranceEvidence = [], invariants = [], purposeValidated = true, templatesVersionedAndApproved = true, preferencesAuthoritative = true, consentAuthoritative = true, suppressionChecked = true, deliveryIdempotent = true, receiptsVerified = true, retriesBounded = true, deliveryStatusExplicit = true, tenantIsolation = true, sharedDatabases = false, deliveryWithoutConsentCheck = false, deliveryDespiteSuppression = false, unboundedRetry = false, optimisticDeliveryAssumed = false, engagementOwnsChannelTransport = false, engagementOwnsPreferenceTruth = false } = {}) {
+    this.profileName = profileName;
+    for (const [key, value] of Object.entries({ responsibilities, messageIntentFields, templateFields, deliveryAttemptFields, receiptFields, retryFields, preferenceFields, consentSuppressionFields, controls, failureRecovery, observabilityFields, assuranceEvidence, invariants })) this[key] = Object.freeze([...value]);
+    for (const [key, value] of Object.entries({ purposeValidated, templatesVersionedAndApproved, preferencesAuthoritative, consentAuthoritative, suppressionChecked, deliveryIdempotent, receiptsVerified, retriesBounded, deliveryStatusExplicit, tenantIsolation, sharedDatabases, deliveryWithoutConsentCheck, deliveryDespiteSuppression, unboundedRetry, optimisticDeliveryAssumed, engagementOwnsChannelTransport, engagementOwnsPreferenceTruth })) this[key] = Boolean(value);
+    Object.freeze(this);
+  }
+}

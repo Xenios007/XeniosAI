@@ -4,3 +4,6 @@ export { OmnichannelEngagementCollaborationOverviewDescriptor } from './overview
 export * from './channel-conversation-context-continuity-constants.js';
 export { ChannelConversationContextContinuityProfile } from './contracts/channel-conversation-context-continuity-profile.js';
 export { ChannelConversationContextContinuityDescriptor } from './continuity/channel-conversation-context-continuity-descriptor.js';
+export * from './communication-delivery-notification-preferences-constants.js';
+export { CommunicationDeliveryNotificationPreferencesProfile } from './contracts/communication-delivery-notification-preferences-profile.js';
+export { CommunicationDeliveryNotificationPreferencesDescriptor } from './delivery/communication-delivery-notification-preferences-descriptor.js';
