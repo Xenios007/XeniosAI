@@ -16,3 +16,6 @@ export { CasesTasksServiceRecoveryDescriptor } from './service-recovery/cases-ta
 export * from './collaboration-approvals-human-agent-handoff-constants.js';
 export { CollaborationApprovalsHumanAgentHandoffProfile } from './contracts/collaboration-approvals-human-agent-handoff-profile.js';
 export { CollaborationApprovalsHumanAgentHandoffDescriptor } from './collaboration/collaboration-approvals-human-agent-handoff-descriptor.js';
+export * from './campaigns-engagement-journeys-constants.js';
+export { CampaignsEngagementJourneysProfile } from './contracts/campaigns-engagement-journeys-profile.js';
+export { CampaignsEngagementJourneysDescriptor } from './campaigns/campaigns-engagement-journeys-descriptor.js';

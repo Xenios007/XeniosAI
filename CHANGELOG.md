@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.36.0] - ARCH-027-07 Campaigns, Engagement, and Journeys
+
+### Added
+- Executable campaign, versioned audience activation, frequency governance, journey definition, measurement provenance, deterministic stop-condition, recovery, and authority safeguards with immutable validation, documentation, and focused tests.
+
+Status: Omnichannel Engagement and Collaboration Architecture
+Version: 2.36.0
+
+---
+
 ## [2.35.0] - ARCH-027-06 Collaboration, Approvals, and Human-Agent Handoff
 
 ### Added

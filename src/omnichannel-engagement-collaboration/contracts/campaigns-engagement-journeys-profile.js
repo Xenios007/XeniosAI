@@ -1,0 +1,8 @@
+export class CampaignsEngagementJourneysProfile {
+  constructor({ profileName, responsibilities = [], campaignFields = [], audienceActivationFields = [], frequencyPolicyFields = [], journeyFields = [], journeyStepFields = [], measurementFields = [], stopConditionFields = [], controls = [], failureRecovery = [], observabilityFields = [], assuranceEvidence = [], invariants = [], campaignsApproved = true, audiencesVersioned = true, consentAndSuppressionEnforced = true, frequencyEnforced = true, workflowAuthorityExternal = true, measurementsProvenanced = true, stopConditionsDeterministic = true, activationsIdempotent = true, sharedDatabases = false, activationWithoutConsent = false, frequencyLimitBypassed = false, inferredAudienceAccepted = false, workflowExecutionOwnedHere = false, measurementBecomesSourceTruth = false, stopConditionIgnored = false, aiPublishesCampaign = false } = {}) {
+    this.profileName = profileName;
+    for (const [key, value] of Object.entries({ responsibilities, campaignFields, audienceActivationFields, frequencyPolicyFields, journeyFields, journeyStepFields, measurementFields, stopConditionFields, controls, failureRecovery, observabilityFields, assuranceEvidence, invariants })) this[key] = Object.freeze([...value]);
+    for (const [key, value] of Object.entries({ campaignsApproved, audiencesVersioned, consentAndSuppressionEnforced, frequencyEnforced, workflowAuthorityExternal, measurementsProvenanced, stopConditionsDeterministic, activationsIdempotent, sharedDatabases, activationWithoutConsent, frequencyLimitBypassed, inferredAudienceAccepted, workflowExecutionOwnedHere, measurementBecomesSourceTruth, stopConditionIgnored, aiPublishesCampaign })) this[key] = Boolean(value);
+    Object.freeze(this);
+  }
+}
