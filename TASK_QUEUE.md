@@ -236,7 +236,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-026-04 Quotation and Price Determination`
 - Completed: `ARCH-026-05 Billing, Subscriptions, and Usage Charging`
 - Completed: `ARCH-026-06 Invoicing, Taxation, and Credit Notes`
-- Next: `ARCH-026-07 Payment, Settlement, Refunds, and Disputes`
+- Completed: `ARCH-026-07 Payment, Settlement, Refunds, and Disputes`
+- Next: `ARCH-026-08 Financial Integration, Reconciliation, and Controls`
 
 ## Notes
 

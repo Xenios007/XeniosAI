@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.26.0] - ARCH-026-07 Payment, Settlement, Refunds, and Disputes
+
+### Added
+- Executable payment intent, settlement, refund, chargeback, dispute, recovery, and financial-state safeguards with immutable validation, documentation, and focused tests.
+
+Status: Pricing, Billing, and Payments Architecture
+Version: 2.26.0
+
+---
+
 ## [2.25.0] - ARCH-026-06 Invoicing, Taxation, and Credit Notes
 
 ### Added
