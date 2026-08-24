@@ -1,6 +1,6 @@
 # XeniosAI Implementation Guide
 
-**Version:** 1.0
+**Version:** 1.1
 
 This repository follows **Architecture-Driven Development (ADD)**.
 
@@ -148,47 +148,55 @@ Never implement future modules early.
 
 # Execution Algorithm
 
-Every session:
+For an implementation run:
 
 1. Inspect the repository.
 
-2. Read all architecture documents.
+2. Read `IMPLEMENTATION_GUIDE.md`, `TASK_QUEUE.md`, `PROJECT_STATE.md`, applicable ADRs, and the architecture documents needed for the current dependency chain.
 
-3. Build an architecture dependency graph.
+3. Build or refresh the architecture dependency graph.
 
 4. Compare architecture against implementation.
 
-5. Detect implemented modules.
+5. Detect completed and incomplete modules.
 
-6. Detect incomplete modules.
+6. Select the earliest documented but unfinished architecture module.
 
-7. Select the earliest documented but unfinished architecture module.
+7. Implement exactly one logical architecture module for the current iteration.
 
-8. Implement only that module.
+8. Add or update tests and relevant non-architecture documentation.
 
-9. Run tests.
+9. Run the applicable verification suite.
 
-10. Fix build failures.
+10. Fix recoverable build, test, lint, security, and conformance failures.
 
-11. Commit.
+11. Update `TASK_QUEUE.md` and `PROJECT_STATE.md` with the verified module state.
 
-12. Push the committed branch to the configured Git remote.
+12. Stage and commit the completed module as one focused logical commit.
 
-13. Stop.
+13. Push the committed branch to the configured Git remote.
+
+14. Record a concise module checkpoint report.
+
+15. If another documented module is incomplete, immediately repeat from step 2 for the next module without waiting for user confirmation.
+
+16. End the run only when the defined queue is complete, the user asks to stop, continuing could damage existing work, or a genuine unrecoverable blocker is reached.
 
 ---
 
 # Scope Rules
 
-During one session:
+During one module iteration:
 
 Implement only one logical architecture module.
 
-Do not continue into another module.
+Do not mix implementation from a later module into the current module.
 
 Do not perform unrelated refactoring.
 
-Keep commits focused.
+Keep commits, tests, status updates, and verification evidence focused on the current module.
+
+After the current module is verified, committed, and pushed, continue automatically into the next incomplete module as a new isolated iteration within the same run.
 
 ---
 
@@ -268,7 +276,9 @@ Do not modify architecture unless explicitly instructed.
 
 # Commits
 
-Each session should produce one logical commit.
+Each completed architecture module should produce one focused logical commit.
+
+A continuous run may therefore create multiple sequential commits, but never combine unrelated architecture modules in one commit.
 
 Commit messages should describe the implemented architecture.
 
@@ -282,9 +292,9 @@ Implement ARCH-002 Foundation Layer
 
 # Pushes
 
-After each successful session commit, push the current branch to the configured Git remote.
+After each successfully verified module commit, push the current branch to the configured Git remote before starting the next module.
 
-If no remote exists, authentication fails, or the push is rejected, report the failure in the end-of-session report and stop.
+If no remote exists, authentication fails, or the push is rejected, preserve the verified local commit, report the failure as a blocker, and end the run without starting another module.
 
 Do not rewrite remote history unless explicitly instructed.
 
@@ -300,17 +310,20 @@ Avoid combining unrelated work.
 
 # Conflict Handling
 
-Stop immediately if:
+End the continuous run only for a genuine blocker, including:
 
-* architecture conflicts
-* missing mandatory dependencies
-* repository corruption
-* build system failure
-* security concerns
+* irreconcilable architecture conflicts
+* missing mandatory dependencies that prevent safe implementation
+* repository corruption or unresolved concurrent changes
+* unrecoverable build or verification failure after reasonable diagnosis
+* security, privacy, compliance, or data-loss risk that requires human direction
+* missing authority for a consequential or destructive operation
+* remote push failure
+* an explicit user instruction to stop
 
-Explain the issue.
+Explain the issue and preserve the last verified checkpoint.
 
-Do not guess.
+Do not guess, bypass safeguards, weaken tests, or continue into another module while the blocker remains.
 
 ---
 
@@ -320,9 +333,13 @@ When an architecture module is completed:
 
 * Mark it as implemented in `TASK_QUEUE.md`.
 * Update `PROJECT_STATE.md` with the latest successful implementation state.
-* Do not change architecture documents.
-* Recommend exactly one next architecture module.
-* Stop immediately after the report.
+* Do not change architecture documents unless the user explicitly requests an architecture revision.
+* Run and record the required verification.
+* Stage, commit, and push the module before beginning another module.
+* Record the completed module and identify the next incomplete architecture module.
+* Immediately continue with that next module without asking for confirmation.
+
+If no incomplete architecture module remains, produce the final completion report and end the run.
 
 ---
 
@@ -350,33 +367,39 @@ Remaining Tasks
 
 Recommended Next Architecture Module
 
-Then stop.
+Produce this full report when the continuous run ends.
 
-Do not continue automatically.
+Between successfully completed modules, a concise checkpoint report is sufficient and execution continues automatically.
 
-Wait for the next instruction.
+Do not wait for another instruction between modules.
 
 ---
 
-# Resume Behavior
+# Resume and Continuous Automation Behavior
 
 When the user says:
 
 > Continue
 
-Automatically:
+or requests automatic implementation through a defined architecture range, automatically:
 
-* inspect the repository
-* determine progress
-* locate the next unfinished architecture module
-* implement it
-* commit
-* push
-* report
-* stop
+* inspect the repository and synchronize with the configured remote
+* read the implementation guide, queue, project state, applicable ADRs, and architecture
+* determine the earliest unfinished architecture module
+* implement exactly one module per iteration
+* add or update tests and documentation
+* run verification and fix recoverable failures
+* update `TASK_QUEUE.md` and `PROJECT_STATE.md`
+* stage, commit, and push that module
+* record a concise checkpoint
+* immediately continue to the next unfinished module
 
 Do not ask which module to implement.
 
-Do not skip ahead.
+Do not ask for confirmation between successfully completed modules.
 
-Always continue from the architecture.
+Do not skip ahead or combine modules in one commit.
+
+Always continue in architecture and dependency order until the requested range or currently defined queue is complete.
+
+Stop only for queue completion, an explicit user stop request, risk of damaging existing work, or a genuine unrecoverable blocker defined by this guide.
