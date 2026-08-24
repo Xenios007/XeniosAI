@@ -6,6 +6,17 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.14.0] - ARCH-025-05 Availability, Allocation, and Holds
+
+### Added
+- Availability decision, temporary hold, allocation, concurrency, expiry, release, reconciliation, recovery, and observability metadata.
+- Safeguards requiring authoritative checks, hold expiry, capacity protection, optimistic concurrency, tenant isolation, idempotency, pinned references, and auditable commitments.
+
+Status: Commerce, Orders, and Reservations Architecture
+Version: 2.14.0
+
+---
+
 ## [2.13.0] - ARCH-025-04 Reservation and Booking Lifecycle
 
 ### Added

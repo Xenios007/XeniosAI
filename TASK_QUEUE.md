@@ -224,7 +224,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-025-02 Commercial Intent, Quotes, and Carts`
 - Completed: `ARCH-025-03 Order Lifecycle and State Management`
 - Completed: `ARCH-025-04 Reservation and Booking Lifecycle`
-- Next: `ARCH-025-05 Availability, Allocation, and Holds`
+- Completed: `ARCH-025-05 Availability, Allocation, and Holds`
+- Next: `ARCH-025-06 Modification, Cancellation, and Compensation`
 
 ## Notes
 

@@ -108,6 +108,7 @@ The repository currently includes automated unit tests for:
 - `ARCH-025-02 Commercial Intent, Quotes, and Carts` in `tests/commerce-orders-reservations/`
 - `ARCH-025-03 Order Lifecycle and State Management` in `tests/commerce-orders-reservations/`
 - `ARCH-025-04 Reservation and Booking Lifecycle` in `tests/commerce-orders-reservations/`
+- `ARCH-025-05 Availability, Allocation, and Holds` in `tests/commerce-orders-reservations/`
 - `ARCH-019-01 Plugin and Extension Overview` in `tests/plugin-extension-framework/`
 - `ARCH-019-02 Extension Domain and Classification` in `tests/plugin-extension-framework/`
 - `ARCH-019-03 Package, Manifest, Registry, and Provenance` in `tests/plugin-extension-framework/`
