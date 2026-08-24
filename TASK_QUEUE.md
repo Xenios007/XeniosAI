@@ -239,7 +239,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-026-07 Payment, Settlement, Refunds, and Disputes`
 - Completed: `ARCH-026-08 Financial Integration, Reconciliation, and Controls`
 - Completed: `ARCH-026-09 Financial Operations, Governance, and Assurance`
-- Next: `ARCH-026-10 Future Pricing, Billing, and Payment Evolution`
+- Completed: `ARCH-026-10 Future Pricing, Billing, and Payment Evolution`
+- Next: `ARCH-027-01 Omnichannel Engagement and Collaboration Overview`
 
 ## Notes
 

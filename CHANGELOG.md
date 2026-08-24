@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.29.0] - ARCH-026-10 Future Pricing, Billing, and Payment Evolution
+
+### Added
+- Executable real-time, usage-based, multi-party, intelligent-finance, research, evaluation, promotion, rollback, and enduring-authority safeguards with immutable validation, documentation, and focused tests.
+
+Status: Pricing, Billing, and Payments Architecture
+Version: 2.29.0
+
+---
+
 ## [2.28.0] - ARCH-026-09 Financial Operations, Governance, and Assurance
 
 ### Added

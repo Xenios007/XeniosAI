@@ -1,0 +1,8 @@
+export class FuturePricingBillingPaymentEvolutionProfile {
+  constructor({ profileName, evolutionPrinciples = [], evolutionHorizons = [], realTimeFinance = [], usageBasedFinance = [], multiPartyFinance = [], intelligentFinance = [], researchPromotionRetirement = [], controls = [], measures = [], invariants = [], financialAuthorityEndures = true, calculationsRemainDeterministic = true, humanApprovalRequired = true, boundedExperimentationRequired = true, rollbackRequired = true, portableSemanticsRequired = true, evidenceRequired = true, aiChangesOnlyThroughArch029 = true, aiCannotChangeMoney = true, tenantBoundariesExplicit = true, sharedDatabases = false, unboundedExperimentation = false, aiChangesMoney = false, aiOwnsFinancialState = false, promotionOutsideArch029 = false, unreconciledMultiPartySettlement = false } = {}) {
+    this.profileName = profileName;
+    for (const [key, value] of Object.entries({ evolutionPrinciples, evolutionHorizons, realTimeFinance, usageBasedFinance, multiPartyFinance, intelligentFinance, researchPromotionRetirement, controls, measures, invariants })) this[key] = Object.freeze([...value]);
+    for (const [key, value] of Object.entries({ financialAuthorityEndures, calculationsRemainDeterministic, humanApprovalRequired, boundedExperimentationRequired, rollbackRequired, portableSemanticsRequired, evidenceRequired, aiChangesOnlyThroughArch029, aiCannotChangeMoney, tenantBoundariesExplicit, sharedDatabases, unboundedExperimentation, aiChangesMoney, aiOwnsFinancialState, promotionOutsideArch029, unreconciledMultiPartySettlement })) this[key] = Boolean(value);
+    Object.freeze(this);
+  }
+}
