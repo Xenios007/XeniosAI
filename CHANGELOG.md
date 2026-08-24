@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.86.0] - ARCH-032-07 Design, Theming, Accessibility & Localization Kit
+
+### Added
+- Executable token, theme, tenant-branding, localization, responsive, input-mode, accessibility-conformance, recovery, and assurance safeguards.
+
+Status: Application Framework and UI Extension Architecture
+Version: 2.86.0
+
+---
+
 ## [2.85.0] - ARCH-032-06 Frontend State, Data, Identity & Offline Model
 
 ### Added

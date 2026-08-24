@@ -16,3 +16,6 @@ export { AdministrationOperationsDataComponentsDescriptor } from './components/a
 export * from './frontend-state-data-identity-offline-model-constants.js';
 export { FrontendStateDataIdentityOfflineModelProfile } from './contracts/frontend-state-data-identity-offline-model-profile.js';
 export { FrontendStateDataIdentityOfflineModelDescriptor } from './state/frontend-state-data-identity-offline-model-descriptor.js';
+export * from './design-theming-accessibility-localization-kit-constants.js';
+export { DesignThemingAccessibilityLocalizationKitProfile } from './contracts/design-theming-accessibility-localization-kit-profile.js';
+export { DesignThemingAccessibilityLocalizationKitDescriptor } from './design/design-theming-accessibility-localization-kit-descriptor.js';
