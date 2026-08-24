@@ -22,3 +22,6 @@ export { ShadowCanaryExperimentPromotionDescriptor } from './promotion/shadow-ca
 export * from './production-monitoring-incidents-deprecation-exit-constants.js';
 export { ProductionMonitoringIncidentsDeprecationExitProfile } from './contracts/production-monitoring-incidents-deprecation-exit-profile.js';
 export { ProductionMonitoringIncidentsDeprecationExitDescriptor } from './operations/production-monitoring-incidents-deprecation-exit-descriptor.js';
+export * from './ai-operations-governance-assurance-constants.js';
+export { AiOperationsGovernanceAssuranceProfile } from './contracts/ai-operations-governance-assurance-profile.js';
+export { AiOperationsGovernanceAssuranceDescriptor } from './governance/ai-operations-governance-assurance-descriptor.js';

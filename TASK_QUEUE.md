@@ -268,7 +268,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-029-06 Evaluation Datasets, Offline Replay & Regression`
 - Completed: `ARCH-029-07 Shadow, Canary, Experiment & Promotion`
 - Completed: `ARCH-029-08 Production Monitoring, Incidents, Deprecation & Exit`
-- Next: `ARCH-029-09 AI Operations, Governance & Assurance`
+- Completed: `ARCH-029-09 AI Operations, Governance & Assurance`
+- Next: `ARCH-029-10 Future AI Learning Evolution`
 
 ## Notes
 

@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.58.0] - ARCH-029-09 AI Operations, Governance & Assurance
+
+### Added
+- Executable accountability, risk-tier, immutable-evidence, independent-red-team, conformance, tamper-evident-audit, expiring-exception, owned-remediation, service-readiness, and no-governance-shortcut safeguards with immutable validation, documentation, and focused tests.
+
+Status: AI Model Operations, Evaluation and Continuous Learning Architecture
+Version: 2.58.0
+
+---
+
 ## [2.57.0] - ARCH-029-08 Production Monitoring, Incidents, Deprecation & Exit
 
 ### Added
