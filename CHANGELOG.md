@@ -6,6 +6,17 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.12.0] - ARCH-025-03 Order Lifecycle and State Management
+
+### Added
+- Order and line aggregate metadata covering explicit states, transitions, amendments, version history, commands, events, projections, recovery, and observability.
+- Safeguards requiring transition validation, versioned amendments, owning-service authority, tenant isolation, pinned references, idempotency, auditable commitments, and non-authoritative projections.
+
+Status: Commerce, Orders, and Reservations Architecture
+Version: 2.12.0
+
+---
+
 ## [2.11.0] - ARCH-025-02 Commercial Intent, Quotes, and Carts
 
 ### Added

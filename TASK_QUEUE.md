@@ -222,7 +222,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-024-10 Future Product Catalog Resource Evolution`
 - Completed: `ARCH-025-01 Commerce, Orders, and Reservations Overview`
 - Completed: `ARCH-025-02 Commercial Intent, Quotes, and Carts`
-- Next: `ARCH-025-03 Order Lifecycle and State Management`
+- Completed: `ARCH-025-03 Order Lifecycle and State Management`
+- Next: `ARCH-025-04 Reservation and Booking Lifecycle`
 
 ## Notes
 
