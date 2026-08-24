@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.62.0] - ARCH-030-03 Capability Composition, Configuration & Policy
+
+### Added
+- Executable API, event, workflow, agent, knowledge, UI, deterministic-policy, tenant-configuration, provider-authority, recovery, and conformance safeguards with immutable validation, documentation, and focused tests.
+
+Status: Industry Solution Packs and Composable Applications Architecture
+Version: 2.62.0
+
+---
+
 ## [2.61.0] - ARCH-030-02 Solution Pack Model, Boundaries & Manifests
 
 ### Added

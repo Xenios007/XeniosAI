@@ -272,7 +272,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-029-10 Future AI Learning Evolution`
 - Completed: `ARCH-030-01 Industry Solution Packs & Composable Applications Overview`
 - Completed: `ARCH-030-02 Solution Pack Model, Boundaries & Manifests`
-- Next: `ARCH-030-03 Capability Composition, Configuration & Policy`
+- Completed: `ARCH-030-03 Capability Composition, Configuration & Policy`
+- Next: `ARCH-030-04 Hospitality Solution Pack & Casa Lluvia Reference`
 
 ## Notes
 
