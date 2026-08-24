@@ -7,3 +7,6 @@ export { ApiProductModelOwnershipAudiencesDescriptor } from './model/api-product
 export * from './api-catalog-discovery-search-classification-constants.js';
 export { ApiCatalogDiscoverySearchClassificationProfile } from './contracts/api-catalog-discovery-search-classification-profile.js';
 export { ApiCatalogDiscoverySearchClassificationDescriptor } from './catalog/api-catalog-discovery-search-classification-descriptor.js';
+export * from './subscriptions-access-requests-plans-entitlements-constants.js';
+export { SubscriptionsAccessRequestsPlansEntitlementsProfile } from './contracts/subscriptions-access-requests-plans-entitlements-profile.js';
+export { SubscriptionsAccessRequestsPlansEntitlementsDescriptor } from './access/subscriptions-access-requests-plans-entitlements-descriptor.js';

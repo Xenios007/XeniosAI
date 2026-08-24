@@ -303,7 +303,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-033-01 API Product Management & Discovery Overview`
 - Completed: `ARCH-033-02 API Product Model, Ownership & Audiences`
 - Completed: `ARCH-033-03 API Catalog, Discovery, Search & Classification`
-- Next: `ARCH-033-04 Subscriptions, Access Requests, Plans & Entitlements`
+- Completed: `ARCH-033-04 Subscriptions, Access Requests, Plans & Entitlements`
+- Next: `ARCH-033-05 Quotas, Limits, Metering & Cost Visibility`
 
 ## Notes
 

@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.93.0] - ARCH-033-04 Subscriptions, Access Requests, Plans & Entitlements
+
+### Added
+- Executable subscription, access-request, approval, plan, entitlement, environment, terms, revocation, recovery, observability, and assurance safeguards.
+
+Status: API Product Management and Discovery Architecture
+Version: 2.93.0
+
+---
+
 ## [2.92.0] - ARCH-033-03 API Catalog, Discovery, Search & Classification
 
 ### Added

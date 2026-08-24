@@ -58,6 +58,7 @@ Testing is treated as a first-class engineering discipline rather than an aftert
 
 The repository currently includes automated unit tests for:
 
+- `ARCH-033-04 Subscriptions, Access Requests, Plans & Entitlements` in `tests/api-product-management-discovery/`
 - `ARCH-033-03 API Catalog, Discovery, Search & Classification` in `tests/api-product-management-discovery/`
 - `ARCH-033-02 API Product Model, Ownership & Audiences` in `tests/api-product-management-discovery/`
 - `ARCH-033-01 API Product Management & Discovery Overview` in `tests/api-product-management-discovery/`
