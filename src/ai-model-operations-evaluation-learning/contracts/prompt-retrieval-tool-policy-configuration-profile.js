@@ -1,0 +1,8 @@
+export class PromptRetrievalToolPolicyConfigurationProfile {
+  constructor({ profileName, responsibilities = [], packageFields = [], promptFields = [], retrievalFields = [], toolFields = [], policyFields = [], dependencyFields = [], compatibilityFields = [], approvalFields = [], rollbackFields = [], lifecycleStates = [], controls = [], failureRecovery = [], observabilityFields = [], assuranceEvidence = [], invariants = [], packagesVersioned = true, dependenciesPinned = true, compatibilityValidated = true, approvalsSeparated = true, rollbackTested = true, retrievalGoverned = true, toolsBounded = true, policyDeterministic = true, mutableProductionPackage = false, floatingDependency = false, untrustedRetrievalAsInstruction = false, unapprovedTool = false, policyBypassed = false, secretEmbedded = false, configurationDirectlyLearns = false, partialRollback = false, unevaluatedPromotion = false } = {}) {
+    this.profileName = profileName;
+    for (const [key, value] of Object.entries({ responsibilities, packageFields, promptFields, retrievalFields, toolFields, policyFields, dependencyFields, compatibilityFields, approvalFields, rollbackFields, lifecycleStates, controls, failureRecovery, observabilityFields, assuranceEvidence, invariants })) this[key] = Object.freeze([...value]);
+    for (const [key, value] of Object.entries({ packagesVersioned, dependenciesPinned, compatibilityValidated, approvalsSeparated, rollbackTested, retrievalGoverned, toolsBounded, policyDeterministic, mutableProductionPackage, floatingDependency, untrustedRetrievalAsInstruction, unapprovedTool, policyBypassed, secretEmbedded, configurationDirectlyLearns, partialRollback, unevaluatedPromotion })) this[key] = Boolean(value);
+    Object.freeze(this);
+  }
+}

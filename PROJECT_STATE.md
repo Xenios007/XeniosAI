@@ -12,9 +12,9 @@ Update this file after every successful implementation session.
 - Implementation guide: `IMPLEMENTATION_GUIDE.md`
 - Task queue: `TASK_QUEUE.md`
 - Current implementation phase: `ARCH-029 AI Model Operations, Evaluation & Continuous Learning`
-- Current implementation state: `ARCH-029-03 Model Selection, Routing, Fallback & Budgets` is implemented.
-- Latest successful implementation module: `ARCH-029-03 Model Selection, Routing, Fallback & Budgets`
-- Latest successful commit: current-session `ARCH-029-03 Model Selection, Routing, Fallback & Budgets` implementation commit
+- Current implementation state: `ARCH-029-04 Prompt, Retrieval, Tool & Policy Configuration` is implemented.
+- Latest successful implementation module: `ARCH-029-04 Prompt, Retrieval, Tool & Policy Configuration`
+- Latest successful commit: current-session `ARCH-029-04 Prompt, Retrieval, Tool & Policy Configuration` implementation commit
 - Latest push status: pushed to `main`
 - Latest push status: pushed to `main`
 - Latest push status: pushed to `main`
@@ -136,19 +136,20 @@ Update this file after every successful implementation session.
 - Completed: `ARCH-029-01 AI Model Operations, Evaluation & Learning Overview`
 - Completed: `ARCH-029-02 Model Catalog, Provider Abstraction & Capabilities`
 - Completed: `ARCH-029-03 Model Selection, Routing, Fallback & Budgets`
+- Completed: `ARCH-029-04 Prompt, Retrieval, Tool & Policy Configuration`
 
 ## Implementation Coverage
 
-- Completed through: `ARCH-029-03 Model Selection, Routing, Fallback & Budgets`
-- Next documented implementation module: `ARCH-029-04 Prompt, Retrieval, Tool & Policy Configuration`
-- Reason: `architecture/029-ai-model-operations-evaluation-learning/04-prompt-retrieval-tool-and-policy-configuration.md` is the next architecture document in order.
+- Completed through: `ARCH-029-04 Prompt, Retrieval, Tool & Policy Configuration`
+- Next documented implementation module: `ARCH-029-05 Feedback Signals, Learning Candidates & Privacy`
+- Reason: `architecture/029-ai-model-operations-evaluation-learning/05-feedback-signals-learning-candidates-and-privacy.md` is the next architecture document in order.
 
 ## Latest Verification
 
-- Focused test: `node --test tests/ai-model-operations-evaluation-learning/model-selection-routing-fallback-budgets.test.js`
+- Focused test: `node --test tests/ai-model-operations-evaluation-learning/prompt-retrieval-tool-policy-configuration.test.js`
 - Focused test result: passed, 3/3
 - Full test: `npm test`
-- Full test result: passed, 1541/1541
+- Full test result: passed, 1544/1544
 - Build command: `npm run build`
 - Build result: passed
 
@@ -170,4 +171,4 @@ Architecture documents must not be changed during implementation unless explicit
 
 ## Recommended Next Action
 
-Recommended next architecture module: `ARCH-029-04 Prompt, Retrieval, Tool & Policy Configuration`.
+Recommended next architecture module: `ARCH-029-05 Feedback Signals, Learning Candidates & Privacy`.

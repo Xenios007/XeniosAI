@@ -7,3 +7,6 @@ export { ModelCatalogProviderAbstractionCapabilitiesDescriptor } from './catalog
 export * from './model-selection-routing-fallback-budgets-constants.js';
 export { ModelSelectionRoutingFallbackBudgetsProfile } from './contracts/model-selection-routing-fallback-budgets-profile.js';
 export { ModelSelectionRoutingFallbackBudgetsDescriptor } from './routing/model-selection-routing-fallback-budgets-descriptor.js';
+export * from './prompt-retrieval-tool-policy-configuration-constants.js';
+export { PromptRetrievalToolPolicyConfigurationProfile } from './contracts/prompt-retrieval-tool-policy-configuration-profile.js';
+export { PromptRetrievalToolPolicyConfigurationDescriptor } from './configuration/prompt-retrieval-tool-policy-configuration-descriptor.js';

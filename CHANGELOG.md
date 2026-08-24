@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.53.0] - ARCH-029-04 Prompt, Retrieval, Tool & Policy Configuration
+
+### Added
+- Executable immutable behavior-package, prompt, governed-retrieval, bounded-tool, deterministic-policy, dependency-lock, compatibility, separated-approval, safe-recovery, secret-reference, and atomic-rollback safeguards with immutable validation, documentation, and focused tests.
+
+Status: AI Model Operations, Evaluation and Continuous Learning Architecture
+Version: 2.53.0
+
+---
+
 ## [2.52.0] - ARCH-029-03 Model Selection, Routing, Fallback & Budgets
 
 ### Added
