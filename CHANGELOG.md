@@ -6,6 +6,17 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.19.0] - ARCH-025-10 Future Commerce Order and Reservation Evolution
+
+### Added
+- Controlled commerce evolution metadata for distributed availability, composable fulfillment, agent-assisted transactions, research, promotion, retirement, recovery, and observability.
+- Safeguards requiring human approval, portable semantics, bounded experimentation, rollback, enduring authority, explicit tenant boundaries, preserved versions, and deterministic agent boundaries.
+
+Status: Commerce, Orders, and Reservations Architecture
+Version: 2.19.0
+
+---
+
 ## [2.18.0] - ARCH-025-09 Commerce Operations, Governance, and Assurance
 
 ### Added
