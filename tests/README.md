@@ -58,6 +58,7 @@ Testing is treated as a first-class engineering discipline rather than an aftert
 
 The repository currently includes automated unit tests for:
 
+- `ARCH-032-04 Conversation & Customer Experience Components` in `tests/application-framework-ui-extension-kit/`
 - `ARCH-032-03 Frontend SDK, Capability & API Clients` in `tests/application-framework-ui-extension-kit/`
 - `ARCH-032-02 Application Shell Composition, Routing & Navigation` in `tests/application-framework-ui-extension-kit/`
 - `ARCH-032-01 Application Framework & UI Extension Overview` in `tests/application-framework-ui-extension-kit/`

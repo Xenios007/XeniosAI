@@ -7,3 +7,6 @@ export { ApplicationShellCompositionRoutingNavigationDescriptor } from './compos
 export * from './frontend-sdk-capability-api-clients-constants.js';
 export { FrontendSdkCapabilityApiClientsProfile } from './contracts/frontend-sdk-capability-api-clients-profile.js';
 export { FrontendSdkCapabilityApiClientsDescriptor } from './sdk/frontend-sdk-capability-api-clients-descriptor.js';
+export * from './conversation-customer-experience-components-constants.js';
+export { ConversationCustomerExperienceComponentsProfile } from './contracts/conversation-customer-experience-components-profile.js';
+export { ConversationCustomerExperienceComponentsDescriptor } from './components/conversation-customer-experience-components-descriptor.js';

@@ -293,7 +293,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-032-01 Application Framework & UI Extension Overview`
 - Completed: `ARCH-032-02 Application Shell Composition, Routing & Navigation`
 - Completed: `ARCH-032-03 Frontend SDK, Capability & API Clients`
-- Next: `ARCH-032-04 Conversation & Customer Experience Components`
+- Completed: `ARCH-032-04 Conversation & Customer Experience Components`
+- Next: `ARCH-032-05 Administration, Operations & Data Components`
 
 ## Notes
 

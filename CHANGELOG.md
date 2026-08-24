@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.83.0] - ARCH-032-04 Conversation & Customer Experience Components
+
+### Added
+- Executable chat, structured-input, streaming, citation, confirmation, handoff, history, feedback, accessibility, recovery, and assurance safeguards.
+
+Status: Application Framework and UI Extension Architecture
+Version: 2.83.0
+
+---
+
 ## [2.82.0] - ARCH-032-03 Frontend SDK, Capability & API Clients
 
 ### Added
