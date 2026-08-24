@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.92.0] - ARCH-033-03 API Catalog, Discovery, Search & Classification
+
+### Added
+- Executable catalog-metadata, taxonomy, search, filter, recommendation, visibility, machine-discovery, recovery, observability, and assurance safeguards.
+
+Status: API Product Management and Discovery Architecture
+Version: 2.92.0
+
+---
+
 ## [2.91.0] - ARCH-033-02 API Product Model, Ownership & Audiences
 
 ### Added
