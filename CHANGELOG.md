@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.84.0] - ARCH-032-05 Administration, Operations & Data Components
+
+### Added
+- Executable form, table, filter, queue, timeline, approval, audit-view, bulk-action, safe-state, recovery, and assurance safeguards.
+
+Status: Application Framework and UI Extension Architecture
+Version: 2.84.0
+
+---
+
 ## [2.83.0] - ARCH-032-04 Conversation & Customer Experience Components
 
 ### Added

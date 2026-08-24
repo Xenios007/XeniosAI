@@ -294,7 +294,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-032-02 Application Shell Composition, Routing & Navigation`
 - Completed: `ARCH-032-03 Frontend SDK, Capability & API Clients`
 - Completed: `ARCH-032-04 Conversation & Customer Experience Components`
-- Next: `ARCH-032-05 Administration, Operations & Data Components`
+- Completed: `ARCH-032-05 Administration, Operations & Data Components`
+- Next: `ARCH-032-06 Frontend State, Data, Identity & Offline Model`
 
 ## Notes
 

@@ -10,3 +10,6 @@ export { FrontendSdkCapabilityApiClientsDescriptor } from './sdk/frontend-sdk-ca
 export * from './conversation-customer-experience-components-constants.js';
 export { ConversationCustomerExperienceComponentsProfile } from './contracts/conversation-customer-experience-components-profile.js';
 export { ConversationCustomerExperienceComponentsDescriptor } from './components/conversation-customer-experience-components-descriptor.js';
+export * from './administration-operations-data-components-constants.js';
+export { AdministrationOperationsDataComponentsProfile } from './contracts/administration-operations-data-components-profile.js';
+export { AdministrationOperationsDataComponentsDescriptor } from './components/administration-operations-data-components-descriptor.js';
