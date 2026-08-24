@@ -22,3 +22,6 @@ export { ExperienceBrandingComposableApplicationShellsDescriptor } from './exper
 export * from './conformance-versioning-migration-exit-constants.js';
 export { ConformanceVersioningMigrationExitProfile } from './contracts/conformance-versioning-migration-exit-profile.js';
 export { ConformanceVersioningMigrationExitDescriptor } from './lifecycle/conformance-versioning-migration-exit-descriptor.js';
+export * from './solution-operations-governance-assurance-constants.js';
+export { SolutionOperationsGovernanceAssuranceProfile } from './contracts/solution-operations-governance-assurance-profile.js';
+export { SolutionOperationsGovernanceAssuranceDescriptor } from './operations/solution-operations-governance-assurance-descriptor.js';

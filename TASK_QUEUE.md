@@ -278,7 +278,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-030-06 Workflow, Agent, Knowledge & Integration Packaging`
 - Completed: `ARCH-030-07 Experience, Branding & Composable Application Shells`
 - Completed: `ARCH-030-08 Conformance, Versioning, Migration & Exit`
-- Next: `ARCH-030-09 Solution Operations, Governance & Assurance`
+- Completed: `ARCH-030-09 Solution Operations, Governance & Assurance`
+- Next: `ARCH-030-10 Future Industry Solution Evolution`
 
 ## Notes
 
