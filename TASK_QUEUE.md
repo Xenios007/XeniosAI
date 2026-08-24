@@ -298,7 +298,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-032-06 Frontend State, Data, Identity & Offline Model`
 - Completed: `ARCH-032-07 Design, Theming, Accessibility & Localization Kit`
 - Completed: `ARCH-032-08 UI Extension, Embedding & Security Boundaries`
-- Next: `ARCH-032-09 Packaging, Testing, Versioning & Upgrade Paths`
+- Completed: `ARCH-032-09 Packaging, Testing, Versioning & Upgrade Paths`
+- Next: `ARCH-032-10 Framework Operations, Governance & Future Evolution`
 
 ## Notes
 

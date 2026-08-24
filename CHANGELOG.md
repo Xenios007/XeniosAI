@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.88.0] - ARCH-032-09 Packaging, Testing, Versioning & Upgrade Paths
+
+### Added
+- Executable package, compatibility, visual-test, accessibility-test, release-channel, migration, deprecation, rollback, recovery, and assurance safeguards.
+
+Status: Application Framework and UI Extension Architecture
+Version: 2.88.0
+
+---
+
 ## [2.87.0] - ARCH-032-08 UI Extension, Embedding & Security Boundaries
 
 ### Added

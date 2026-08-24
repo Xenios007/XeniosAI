@@ -22,3 +22,6 @@ export { DesignThemingAccessibilityLocalizationKitDescriptor } from './design/de
 export * from './ui-extension-embedding-security-boundaries-constants.js';
 export { UiExtensionEmbeddingSecurityBoundariesProfile } from './contracts/ui-extension-embedding-security-boundaries-profile.js';
 export { UiExtensionEmbeddingSecurityBoundariesDescriptor } from './extensions/ui-extension-embedding-security-boundaries-descriptor.js';
+export * from './packaging-testing-versioning-upgrade-paths-constants.js';
+export { PackagingTestingVersioningUpgradePathsProfile } from './contracts/packaging-testing-versioning-upgrade-paths-profile.js';
+export { PackagingTestingVersioningUpgradePathsDescriptor } from './release/packaging-testing-versioning-upgrade-paths-descriptor.js';
