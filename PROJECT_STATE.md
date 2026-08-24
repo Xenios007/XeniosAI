@@ -12,9 +12,9 @@ Update this file after every successful implementation session.
 - Implementation guide: `IMPLEMENTATION_GUIDE.md`
 - Task queue: `TASK_QUEUE.md`
 - Current implementation phase: `ARCH-025 Commerce, Orders, and Reservations`
-- Current implementation state: `ARCH-025-03 Order Lifecycle and State Management` is implemented.
-- Latest successful implementation module: `ARCH-025-03 Order Lifecycle and State Management`
-- Latest successful commit: `d5c6657` (`ARCH-025-03 Order Lifecycle and State Management`)
+- Current implementation state: `ARCH-025-04 Reservation and Booking Lifecycle` is implemented.
+- Latest successful implementation module: `ARCH-025-04 Reservation and Booking Lifecycle`
+- Latest successful commit: pending implementation commit (`ARCH-025-04 Reservation and Booking Lifecycle`)
 - Latest push status: pushed to `main`
 - Latest push status: pushed to `main`
 - Latest push status: pushed to `main`
@@ -96,20 +96,21 @@ Update this file after every successful implementation session.
 - Completed: `ARCH-025-01 Commerce, Orders, and Reservations Overview`
 - Completed: `ARCH-025-02 Commercial Intent, Quotes, and Carts`
 - Completed: `ARCH-025-03 Order Lifecycle and State Management`
-- Next: `ARCH-025-04 Reservation and Booking Lifecycle`
+- Completed: `ARCH-025-04 Reservation and Booking Lifecycle`
+- Next: `ARCH-025-05 Availability, Allocation, and Holds`
 
 ## Implementation Coverage
 
-- Completed through: `ARCH-025-03 Order Lifecycle and State Management`
-- Next documented implementation module: `ARCH-025-04 Reservation and Booking Lifecycle`
-- Reason: `architecture/025-commerce-orders-reservations/04-reservation-and-booking-lifecycle.md` is the next architecture document in order.
+- Completed through: `ARCH-025-04 Reservation and Booking Lifecycle`
+- Next documented implementation module: `ARCH-025-05 Availability, Allocation, and Holds`
+- Reason: `architecture/025-commerce-orders-reservations/05-availability-allocation-and-holds.md` is the next architecture document in order.
 
 ## Latest Verification
 
-- Focused test: `npm.cmd test -- tests/commerce-orders-reservations/order-lifecycle-state.test.js`
+- Focused test: `npm.cmd test -- tests/commerce-orders-reservations/reservation-booking-lifecycle.test.js`
 - Focused test result: passed, 3/3
 - Full test: `npm.cmd test`
-- Full test result: passed, 1425/1425
+- Full test result: passed, 1428/1428
 - Build command: `npm.cmd run build`
 - Build result: passed
 
@@ -131,4 +132,4 @@ Architecture documents must not be changed during implementation unless explicit
 
 ## Recommended Next Action
 
-Recommended next architecture module: `ARCH-025-04 Reservation and Booking Lifecycle`.
+Recommended next architecture module: `ARCH-025-05 Availability, Allocation, and Holds`.

@@ -6,6 +6,17 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.13.0] - ARCH-025-04 Reservation and Booking Lifecycle
+
+### Added
+- Reservation and booking metadata covering status transitions, participants, time intervals, resource and service references, confirmation, recovery, observability, and industry extensions.
+- Safeguards requiring validated reservation semantics, solution-pack-scoped extensions, tenant isolation, explicit confirmation, idempotency, pinned references, auditable commitments, and separation from ARCH-026 financial authority.
+
+Status: Commerce, Orders, and Reservations Architecture
+Version: 2.13.0
+
+---
+
 ## [2.12.0] - ARCH-025-03 Order Lifecycle and State Management
 
 ### Added
