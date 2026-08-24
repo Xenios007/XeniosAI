@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.30.0] - ARCH-027-01 Omnichannel Engagement and Collaboration Overview
+
+### Added
+- Executable coordinated-communication, service-work, capability, ownership-boundary, governance, recovery, observability, and assurance safeguards with immutable validation, documentation, and focused tests.
+
+Status: Omnichannel Engagement and Collaboration Architecture
+Version: 2.30.0
+
+---
+
 ## [2.29.0] - ARCH-026-10 Future Pricing, Billing, and Payment Evolution
 
 ### Added
