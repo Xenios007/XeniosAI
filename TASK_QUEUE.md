@@ -216,7 +216,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-024-04 Resource Types and Lifecycle`
 - Completed: `ARCH-024-05 Attributes, Configuration, and Inheritance`
 - Completed: `ARCH-024-06 Availability, Inventory, and Capacity References`
-- Next: `ARCH-024-07 Bundles, Packages, and Eligibility`
+- Completed: `ARCH-024-07 Bundles, Packages, and Eligibility`
+- Next: `ARCH-024-08 Integration, APIs, Events, and Extensions`
 
 ## Notes
 

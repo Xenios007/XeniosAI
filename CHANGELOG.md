@@ -6,6 +6,17 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.6.0] - ARCH-024 Bundles, Packages, and Eligibility
+
+### Added
+- Bundle and package definition metadata covering component cardinality, compatibility, substitutions, eligibility references, lifecycle, validation, recovery, and invariants.
+- Safeguards requiring acyclic composition, pinned versions, deterministic compatibility and eligibility, separated pricing, fulfillment feasibility, and deterministic AI validation while rejecting cycles, unpinned components, price-based authorization, projection authority, and fabricated eligibility.
+
+Status: Product, Catalog, and Resource Management Architecture
+Version: 2.6.0
+
+---
+
 ## [2.5.0] - ARCH-024 Availability, Inventory, and Capacity References
 
 ### Added
