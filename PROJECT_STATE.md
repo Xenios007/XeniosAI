@@ -12,8 +12,8 @@ Update this file after every successful implementation session.
 - Implementation guide: `IMPLEMENTATION_GUIDE.md`
 - Task queue: `TASK_QUEUE.md`
 - Current implementation phase: `ARCH-026 Pricing, Billing, and Payments`
-- Current implementation state: `ARCH-026-05 Billing, Subscriptions, and Usage Charging` is implemented.
-- Latest successful implementation module: `ARCH-026-05 Billing, Subscriptions, and Usage Charging`
+- Current implementation state: `ARCH-026-06 Invoicing, Taxation, and Credit Notes` is implemented.
+- Latest successful implementation module: `ARCH-026-06 Invoicing, Taxation, and Credit Notes`
 - Latest successful commit: current-session `ARCH-026-04 Quotation and Price Determination` implementation commit
 - Latest push status: pushed to `main`
 - Latest push status: pushed to `main`
@@ -108,20 +108,21 @@ Update this file after every successful implementation session.
 - Completed: `ARCH-026-03 Pricing Rules, Restrictions, Promotions, and Approvals`
 - Completed: `ARCH-026-04 Quotation and Price Determination`
 - Completed: `ARCH-026-05 Billing, Subscriptions, and Usage Charging`
+- Completed: `ARCH-026-06 Invoicing, Taxation, and Credit Notes`
 - Next: `ARCH-026-04 Quotation and Price Determination`
 
 ## Implementation Coverage
 
-- Completed through: `ARCH-026-05 Billing, Subscriptions, and Usage Charging`
-- Next documented implementation module: `ARCH-026-06 Invoicing, Taxation, and Credit Notes`
-- Reason: `architecture/026-pricing-billing-payments/06-invoicing-taxation-and-credit-notes.md` is the next architecture document in order.
+- Completed through: `ARCH-026-06 Invoicing, Taxation, and Credit Notes`
+- Next documented implementation module: `ARCH-026-07 Payment, Settlement, Refunds, and Disputes`
+- Reason: `architecture/026-pricing-billing-payments/07-payment-settlement-refunds-and-disputes.md` is the next architecture document in order.
 
 ## Latest Verification
 
-- Focused test: `node --test tests/pricing-billing-payments/billing-subscriptions-usage.test.js`
-- Focused test result: passed, 3/3
+- Focused test: `node --test tests/pricing-billing-payments/invoicing-taxation-credit-notes.test.js`
+- Focused test result: passed, 1/1
 - Full test: `npm.cmd test`
-- Full test result: passed, 1461/1461
+- Full test result: passed, 1462/1462
 - Build command: `npm run build`
 - Build result: passed
 
@@ -143,4 +144,4 @@ Architecture documents must not be changed during implementation unless explicit
 
 ## Recommended Next Action
 
-Recommended next architecture module: `ARCH-026-06 Invoicing, Taxation, and Credit Notes`.
+Recommended next architecture module: `ARCH-026-07 Payment, Settlement, Refunds, and Disputes`.

@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.25.0] - ARCH-026-06 Invoicing, Taxation, and Credit Notes
+
+### Added
+- Executable invoice, tax-reference, receivable, correction, credit-note, document-integrity, and authority safeguards with immutable validation, documentation, and focused tests.
+
+Status: Pricing, Billing, and Payments Architecture
+Version: 2.25.0
+
+---
+
 ## [2.24.0] - ARCH-026-05 Billing, Subscriptions, and Usage Charging
 
 ### Added

@@ -1,0 +1,1 @@
+export class InvoicingTaxationCreditNotesProfile{constructor({profileName,invoiceFields=[],taxFields=[],receivableFields=[],creditFields=[],...flags}={}){this.profileName=profileName;for(const[k,v]of Object.entries({invoiceFields,taxFields,receivableFields,creditFields}))this[k]=Object.freeze([...v]);for(const[k,v]of Object.entries(flags))this[k]=Boolean(v);Object.freeze(this)}}
