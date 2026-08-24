@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [2.87.0] - ARCH-032-08 UI Extension, Embedding & Security Boundaries
+
+### Added
+- Executable slot, manifest, capability-grant, isolation, sandbox, content-security, communication, revocation, recovery, and assurance safeguards.
+
+Status: Application Framework and UI Extension Architecture
+Version: 2.87.0
+
+---
+
 ## [2.86.0] - ARCH-032-07 Design, Theming, Accessibility & Localization Kit
 
 ### Added

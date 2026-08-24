@@ -19,3 +19,6 @@ export { FrontendStateDataIdentityOfflineModelDescriptor } from './state/fronten
 export * from './design-theming-accessibility-localization-kit-constants.js';
 export { DesignThemingAccessibilityLocalizationKitProfile } from './contracts/design-theming-accessibility-localization-kit-profile.js';
 export { DesignThemingAccessibilityLocalizationKitDescriptor } from './design/design-theming-accessibility-localization-kit-descriptor.js';
+export * from './ui-extension-embedding-security-boundaries-constants.js';
+export { UiExtensionEmbeddingSecurityBoundariesProfile } from './contracts/ui-extension-embedding-security-boundaries-profile.js';
+export { UiExtensionEmbeddingSecurityBoundariesDescriptor } from './extensions/ui-extension-embedding-security-boundaries-descriptor.js';
