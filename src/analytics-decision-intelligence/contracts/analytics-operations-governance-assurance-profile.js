@@ -1,0 +1,8 @@
+export class AnalyticsOperationsGovernanceAssuranceProfile {
+  constructor({ profileName, operatingRoles = [], qualityObjectives = [], monitoringFields = [], healthStates = [], incidentClasses = [], incidentEvidence = [], modelRiskBoundaries = [], governanceArtifacts = [], assuranceActivities = [], invariants = [], ownershipAccountable = true, qualityObjectivesMeasured = true, monitoringTenantSafe = true, incidentsEvidenced = true, modelRiskBounded = true, assuranceContinuous = true, recoveryReconciled = true, changesVersioned = true, sharedDatabases = false, protectedPayloadsCopiedToTelemetry = false, qualityBreachIgnored = false, incidentEvidenceDiscarded = false, modelOutputChangesAuthoritativeState = false, policyBypassedUnderPressure = false, assuranceSelfAttestedOnly = false, unapprovedModelPromoted = false, sourceTruthReplaced = false } = {}) {
+    this.profileName = profileName;
+    for (const [key, value] of Object.entries({ operatingRoles, qualityObjectives, monitoringFields, healthStates, incidentClasses, incidentEvidence, modelRiskBoundaries, governanceArtifacts, assuranceActivities, invariants })) this[key] = Object.freeze([...value]);
+    for (const [key, value] of Object.entries({ ownershipAccountable, qualityObjectivesMeasured, monitoringTenantSafe, incidentsEvidenced, modelRiskBounded, assuranceContinuous, recoveryReconciled, changesVersioned, sharedDatabases, protectedPayloadsCopiedToTelemetry, qualityBreachIgnored, incidentEvidenceDiscarded, modelOutputChangesAuthoritativeState, policyBypassedUnderPressure, assuranceSelfAttestedOnly, unapprovedModelPromoted, sourceTruthReplaced })) this[key] = Boolean(value);
+    Object.freeze(this);
+  }
+}

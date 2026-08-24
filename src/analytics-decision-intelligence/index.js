@@ -22,3 +22,6 @@ export { RecommendationsDecisionSupportDescriptor } from './decision-support/rec
 export * from './ai-assisted-analysis-insight-provenance-constants.js';
 export { AiAssistedAnalysisInsightProvenanceProfile } from './contracts/ai-assisted-analysis-insight-provenance-profile.js';
 export { AiAssistedAnalysisInsightProvenanceDescriptor } from './ai-analysis/ai-assisted-analysis-insight-provenance-descriptor.js';
+export * from './analytics-operations-governance-assurance-constants.js';
+export { AnalyticsOperationsGovernanceAssuranceProfile } from './contracts/analytics-operations-governance-assurance-profile.js';
+export { AnalyticsOperationsGovernanceAssuranceDescriptor } from './operations/analytics-operations-governance-assurance-descriptor.js';

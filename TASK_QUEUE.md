@@ -258,7 +258,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-028-06 Experimentation & Causal Analysis`
 - Completed: `ARCH-028-07 Recommendations & Decision Support`
 - Completed: `ARCH-028-08 AI-Assisted Analysis & Insight Provenance`
-- Next: `ARCH-028-09 Analytics Operations, Governance & Assurance`
+- Completed: `ARCH-028-09 Analytics Operations, Governance & Assurance`
+- Next: `ARCH-028-10 Future Analytics & Decision Intelligence Evolution`
 
 ## Notes
 
