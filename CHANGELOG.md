@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.0.0] - ARCH-034-01 Contract, Schema & Capability Registry Overview
+
+### Added
+- Executable registry artifact, metadata-authority, boundary, consumer, discovery, validation, lineage, lifecycle, recovery, observability, and assurance safeguards.
+
+Status: Contract, Schema, and Capability Registry Architecture
+Version: 3.0.0
+
+---
+
 ## [2.99.0] - ARCH-033-10 Future API Product Ecosystem Evolution
 
 ### Added
