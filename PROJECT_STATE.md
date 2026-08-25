@@ -12,9 +12,9 @@ Update this file after every successful implementation session.
 - Implementation guide: `IMPLEMENTATION_GUIDE.md`
 - Task queue: `TASK_QUEUE.md`
 - Current implementation phase: `ARCH-034 Contract, Schema & Capability Registry`
-- Current implementation state: `ARCH-034-03 API, Event, Command, Query & Schema Registration` is implemented.
-- Latest successful implementation module: `ARCH-034-03 API, Event, Command, Query & Schema Registration`
-- Latest successful commit: `4e610e6` (`ARCH-034-03 API, Event, Command, Query & Schema Registration`)
+- Current implementation state: `ARCH-034-04 Tool, Agent, Workflow & Capability Registration` is implemented.
+- Latest successful implementation module: `ARCH-034-04 Tool, Agent, Workflow & Capability Registration`
+- Latest successful commit: pending (`ARCH-034-04 Tool, Agent, Workflow & Capability Registration`)
 - Latest push status: pushed to `main`
 - Build status: passing
 - Test status: passing
@@ -182,19 +182,20 @@ Update this file after every successful implementation session.
 - Completed: `ARCH-034-01 Contract, Schema & Capability Registry Overview`
 - Completed: `ARCH-034-02 Registry Metamodel, Identifiers & Ownership`
 - Completed: `ARCH-034-03 API, Event, Command, Query & Schema Registration`
+- Completed: `ARCH-034-04 Tool, Agent, Workflow & Capability Registration`
 
 ## Implementation Coverage
 
-- Completed through: `ARCH-034-03 API, Event, Command, Query & Schema Registration`
-- Next documented implementation module: `ARCH-034-04 Tool, Agent, Workflow & Capability Registration`
-- Reason: `architecture/034-contract-schema-capability-registry/04-tool-agent-workflow-and-capability-registration.md` is the next architecture document in order.
+- Completed through: `ARCH-034-04 Tool, Agent, Workflow & Capability Registration`
+- Next documented implementation module: `ARCH-034-05 UI Extension, Plugin & Solution Pack Registration`
+- Reason: `architecture/034-contract-schema-capability-registry/05-ui-extension-plugin-and-solution-pack-registration.md` is the next architecture document in order.
 
 ## Latest Verification
 
-- Focused test: `node --test tests/contract-schema-capability-registry/api-event-command-query-schema-registration.test.js`
+- Focused test: `node --test tests/contract-schema-capability-registry/tool-agent-workflow-capability-registration.test.js`
 - Focused test result: passed, 3/3
 - Full test: `npm test`
-- Full test result: passed, 1691/1691
+- Full test result: passed, 1694/1694
 - Build command: `npm run build`
 - Build result: passed
 
@@ -216,4 +217,4 @@ Architecture documents must not be changed during implementation unless explicit
 
 ## Recommended Next Action
 
-Recommended next architecture module: `ARCH-034-04 Tool, Agent, Workflow & Capability Registration`.
+Recommended next architecture module: `ARCH-034-05 UI Extension, Plugin & Solution Pack Registration`.

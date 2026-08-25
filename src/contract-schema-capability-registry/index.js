@@ -7,3 +7,6 @@ export { RegistryMetamodelIdentifiersOwnershipDescriptor } from './metamodel/reg
 export * from './api-event-command-query-schema-registration-constants.js';
 export { ApiEventCommandQuerySchemaRegistrationProfile } from './contracts/api-event-command-query-schema-registration-profile.js';
 export { ApiEventCommandQuerySchemaRegistrationDescriptor } from './registration/api-event-command-query-schema-registration-descriptor.js';
+export * from './tool-agent-workflow-capability-registration-constants.js';
+export { ToolAgentWorkflowCapabilityRegistrationProfile } from './contracts/tool-agent-workflow-capability-registration-profile.js';
+export { ToolAgentWorkflowCapabilityRegistrationDescriptor } from './registration/tool-agent-workflow-capability-registration-descriptor.js';

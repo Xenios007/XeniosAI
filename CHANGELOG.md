@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.3.0] - ARCH-034-04 Tool, Agent, Workflow & Capability Registration
+
+### Added
+- Executable tool, agent, workflow, callable-capability, authority, permission, dependency, limit, recovery, observability, and assurance safeguards.
+
+Status: Contract, Schema, and Capability Registry Architecture
+Version: 3.3.0
+
+---
+
 ## [3.2.0] - ARCH-034-03 API, Event, Command, Query & Schema Registration
 
 ### Added

@@ -313,7 +313,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-034-01 Contract, Schema & Capability Registry Overview`
 - Completed: `ARCH-034-02 Registry Metamodel, Identifiers & Ownership`
 - Completed: `ARCH-034-03 API, Event, Command, Query & Schema Registration`
-- Next: `ARCH-034-04 Tool, Agent, Workflow & Capability Registration`
+- Completed: `ARCH-034-04 Tool, Agent, Workflow & Capability Registration`
+- Next: `ARCH-034-05 UI Extension, Plugin & Solution Pack Registration`
 
 ## Notes
 
