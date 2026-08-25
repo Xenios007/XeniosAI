@@ -309,7 +309,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-033-07 Consumer Analytics, Feedback, Support & Adoption`
 - Completed: `ARCH-033-08 API Product Lifecycle, Versioning & Deprecation`
 - Completed: `ARCH-033-09 API Product Operations, Governance & Assurance`
-- Next: `ARCH-033-10 Future API Product Ecosystem Evolution`
+- Completed: `ARCH-033-10 Future API Product Ecosystem Evolution`
+- Next: `ARCH-034-01 Contract, Schema & Capability Registry Overview`
 
 ## Notes
 

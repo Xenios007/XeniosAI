@@ -25,3 +25,6 @@ export { ApiProductLifecycleVersioningDeprecationDescriptor } from './lifecycle/
 export * from './api-product-operations-governance-assurance-constants.js';
 export { ApiProductOperationsGovernanceAssuranceProfile } from './contracts/api-product-operations-governance-assurance-profile.js';
 export { ApiProductOperationsGovernanceAssuranceDescriptor } from './operations/api-product-operations-governance-assurance-descriptor.js';
+export * from './future-api-product-ecosystem-evolution-constants.js';
+export { FutureApiProductEcosystemEvolutionProfile } from './contracts/future-api-product-ecosystem-evolution-profile.js';
+export { FutureApiProductEcosystemEvolutionDescriptor } from './future/future-api-product-ecosystem-evolution-descriptor.js';
