@@ -311,7 +311,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-033-09 API Product Operations, Governance & Assurance`
 - Completed: `ARCH-033-10 Future API Product Ecosystem Evolution`
 - Completed: `ARCH-034-01 Contract, Schema & Capability Registry Overview`
-- Next: `ARCH-034-02 Registry Metamodel, Identifiers & Ownership`
+- Completed: `ARCH-034-02 Registry Metamodel, Identifiers & Ownership`
+- Next: `ARCH-034-03 API, Event, Command, Query & Schema Registration`
 
 ## Notes
 

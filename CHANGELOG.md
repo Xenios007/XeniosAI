@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.1.0] - ARCH-034-02 Registry Metamodel, Identifiers & Ownership
+
+### Added
+- Executable artifact identity, kind, owner, namespace, immutable version, classification, provenance, lifecycle, recovery, observability, and assurance safeguards.
+
+Status: Contract, Schema, and Capability Registry Architecture
+Version: 3.1.0
+
+---
+
 ## [3.0.0] - ARCH-034-01 Contract, Schema & Capability Registry Overview
 
 ### Added
