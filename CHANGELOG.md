@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.2.0] - ARCH-034-03 API, Event, Command, Query & Schema Registration
+
+### Added
+- Executable API, event, command, query, schema, reference, compatibility, safe-example, generated-artifact, publication, recovery, observability, and assurance safeguards.
+
+Status: Contract, Schema, and Capability Registry Architecture
+Version: 3.2.0
+
+---
+
 ## [3.1.0] - ARCH-034-02 Registry Metamodel, Identifiers & Ownership
 
 ### Added

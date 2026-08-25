@@ -312,7 +312,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-033-10 Future API Product Ecosystem Evolution`
 - Completed: `ARCH-034-01 Contract, Schema & Capability Registry Overview`
 - Completed: `ARCH-034-02 Registry Metamodel, Identifiers & Ownership`
-- Next: `ARCH-034-03 API, Event, Command, Query & Schema Registration`
+- Completed: `ARCH-034-03 API, Event, Command, Query & Schema Registration`
+- Next: `ARCH-034-04 Tool, Agent, Workflow & Capability Registration`
 
 ## Notes
 

@@ -58,6 +58,7 @@ Testing is treated as a first-class engineering discipline rather than an aftert
 
 The repository currently includes automated unit tests for:
 
+- `ARCH-034-03 API, Event, Command, Query & Schema Registration` in `tests/contract-schema-capability-registry/`
 - `ARCH-034-02 Registry Metamodel, Identifiers & Ownership` in `tests/contract-schema-capability-registry/`
 - `ARCH-034-01 Contract, Schema & Capability Registry Overview` in `tests/contract-schema-capability-registry/`
 - `ARCH-033-10 Future API Product Ecosystem Evolution` in `tests/api-product-management-discovery/`
