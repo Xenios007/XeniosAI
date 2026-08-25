@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.4.0] - ARCH-034-05 UI Extension, Plugin & Solution-Pack Registration
+
+### Added
+- Executable manifest, UI extension, plugin, solution-pack, package, slot, compatibility, trust, recovery, observability, and assurance safeguards.
+
+Status: Contract, Schema, and Capability Registry Architecture
+Version: 3.4.0
+
+---
+
 ## [3.3.0] - ARCH-034-04 Tool, Agent, Workflow & Capability Registration
 
 ### Added

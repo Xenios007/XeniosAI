@@ -10,3 +10,6 @@ export { ApiEventCommandQuerySchemaRegistrationDescriptor } from './registration
 export * from './tool-agent-workflow-capability-registration-constants.js';
 export { ToolAgentWorkflowCapabilityRegistrationProfile } from './contracts/tool-agent-workflow-capability-registration-profile.js';
 export { ToolAgentWorkflowCapabilityRegistrationDescriptor } from './registration/tool-agent-workflow-capability-registration-descriptor.js';
+export * from './ui-extension-plugin-solution-pack-registration-constants.js';
+export { UiExtensionPluginSolutionPackRegistrationProfile } from './contracts/ui-extension-plugin-solution-pack-registration-profile.js';
+export { UiExtensionPluginSolutionPackRegistrationDescriptor } from './registration/ui-extension-plugin-solution-pack-registration-descriptor.js';
