@@ -318,7 +318,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-034-06 Discovery, Lineage, Dependency & Impact Analysis`
 - Completed: `ARCH-034-07 Compatibility, Validation & Conformance`
 - Completed: `ARCH-034-08 Registry Lifecycle, Deprecation & Federation`
-- Next: `ARCH-034-09 Registry Security, Operations, Governance & Assurance`
+- Completed: `ARCH-034-09 Registry Security, Operations, Governance & Assurance`
+- Next: `ARCH-034-10 Future Machine-Discoverable Capability Evolution`
 
 ## Notes
 

@@ -22,3 +22,6 @@ export { CompatibilityValidationConformanceDescriptor } from './conformance/comp
 export * from './registry-lifecycle-deprecation-federation-constants.js';
 export { RegistryLifecycleDeprecationFederationProfile } from './contracts/registry-lifecycle-deprecation-federation-profile.js';
 export { RegistryLifecycleDeprecationFederationDescriptor } from './lifecycle/registry-lifecycle-deprecation-federation-descriptor.js';
+export * from './registry-security-operations-governance-assurance-constants.js';
+export { RegistrySecurityOperationsGovernanceAssuranceProfile } from './contracts/registry-security-operations-governance-assurance-profile.js';
+export { RegistrySecurityOperationsGovernanceAssuranceDescriptor } from './governance/registry-security-operations-governance-assurance-descriptor.js';

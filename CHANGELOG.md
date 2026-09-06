@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.8.0] - ARCH-034-09 Registry Security, Operations, Governance & Assurance
+
+### Added
+- Executable access-control, integrity/signing, service-objective, incident-management, operational-recovery, stewardship, audit, recovery, observability, and assurance safeguards.
+
+Status: Contract, Schema, and Capability Registry Architecture
+Version: 3.8.0
+
+---
+
 ## [3.7.0] - ARCH-034-08 Registry Lifecycle, Deprecation & Federation
 
 ### Added
