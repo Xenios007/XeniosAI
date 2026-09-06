@@ -58,6 +58,7 @@ Testing is treated as a first-class engineering discipline rather than an aftert
 
 The repository currently includes automated unit tests for:
 
+- `ARCH-035-02 CLI Command Architecture & User Experience` in `tests/cli-ide-local-tooling/`
 - `ARCH-035-01 CLI, IDE & Local Tooling Overview` in `tests/cli-ide-local-tooling/`
 - `ARCH-034-10 Future Machine-Discoverable Capability Evolution` in `tests/contract-schema-capability-registry/`
 - `ARCH-034-09 Registry Security, Operations, Governance & Assurance` in `tests/contract-schema-capability-registry/`

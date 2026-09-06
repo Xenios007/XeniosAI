@@ -321,7 +321,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-034-09 Registry Security, Operations, Governance & Assurance`
 - Completed: `ARCH-034-10 Future Machine-Discoverable Capability Evolution`
 - Completed: `ARCH-035-01 CLI, IDE & Local Tooling Overview`
-- Next: `ARCH-035-02 CLI Command Architecture & User Experience`
+- Completed: `ARCH-035-02 CLI Command Architecture & User Experience`
+- Next: `ARCH-035-03 Authentication, Configuration Profiles & Context`
 
 ## Notes
 

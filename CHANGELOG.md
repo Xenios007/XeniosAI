@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.11.0] - ARCH-035-02 CLI Command Architecture & User Experience
+
+### Added
+- Executable command-taxonomy, help, input, output, exit-code, prompt, non-interactive/accessibility, recovery, observability, and assurance safeguards.
+
+Status: CLI, IDE & Local Tooling Architecture
+Version: 3.11.0
+
+---
+
 ## [3.10.0] - ARCH-035-01 CLI, IDE & Local Tooling Overview
 
 ### Added
