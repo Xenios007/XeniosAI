@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.10.0] - ARCH-035-01 CLI, IDE & Local Tooling Overview
+
+### Added
+- Executable resource-type, persona, boundary, quality-attribute, capability, context-field, data-control, recovery, observability, and assurance safeguards for local developer tooling.
+
+Status: CLI, IDE & Local Tooling Architecture
+Version: 3.10.0
+
+---
+
 ## [3.9.0] - ARCH-034-10 Future Machine-Discoverable Capability Evolution
 
 ### Added

@@ -320,7 +320,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-034-08 Registry Lifecycle, Deprecation & Federation`
 - Completed: `ARCH-034-09 Registry Security, Operations, Governance & Assurance`
 - Completed: `ARCH-034-10 Future Machine-Discoverable Capability Evolution`
-- Next: `ARCH-035-01 CLI, IDE & Local Tooling Overview`
+- Completed: `ARCH-035-01 CLI, IDE & Local Tooling Overview`
+- Next: `ARCH-035-02 CLI Command Architecture & User Experience`
 
 ## Notes
 
