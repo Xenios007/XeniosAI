@@ -1,0 +1,5 @@
+# ARCH-040-03 Community Contribution, Collaboration & Governance
+
+Executable contribution-path, repository-governance, proposal-process, maintainer, conduct/review, attribution/licensing, and decision-record metadata for the Partner, Community & Ecosystem Federation phase.
+
+Contribution paths are defined, templated, and gated by a contributor agreement or certificate of origin. Repositories enforce branch protection, required reviews, and supply-chain checks. Proposals have an open comment period, identified decision-makers, and a recorded decision with rationale. Maintainers are added and removed through a documented process with succession planning; a published code of conduct is consistently enforced with confidential reporting. Contributor attribution is preserved and never stripped or silently reassigned; the project license and IP terms are clear; governance and technical decisions are recorded with rationale and an appeal path; and AI may assist triage and review but never silently merges a contribution or changes governance.

@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.62.0] - ARCH-040-03 Community Contribution, Collaboration & Governance
+
+### Added
+- Executable contribution-path, repository-governance, proposal-process, maintainer, conduct/review, attribution/licensing, and decision-record safeguards.
+
+Status: Partner, Community & Ecosystem Federation Architecture
+Version: 3.62.0
+
+---
+
 ## [3.61.0] - ARCH-040-02 Partner Program Models, Tiers & Lifecycle
 
 ### Added
