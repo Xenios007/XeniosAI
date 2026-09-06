@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.46.0] - ARCH-038-07 Testing, Simulation, Certification & Security Review
+
+### Added
+- Executable connector-contract-test, sandbox, external-simulation, security-assessment, abuse-test, certification, and evidence safeguards.
+
+Status: Connector, Tool & MCP Development Architecture
+Version: 3.46.0
+
+---
+
 ## [3.45.0] - ARCH-038-06 Hosting, Execution Isolation & Secret Management
 
 ### Added
