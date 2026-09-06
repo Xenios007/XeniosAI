@@ -334,7 +334,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-036-02 Environment Types, Lifecycle & Ownership`
 - Completed: `ARCH-036-03 Isolation, Identity, Network & Secret Boundaries`
 - Completed: `ARCH-036-04 Synthetic Test Data, Privacy & Reset`
-- Next: `ARCH-036-05 Service Virtualization, Mocks & Dependency Profiles`
+- Completed: `ARCH-036-05 Service Virtualization, Mocks & Dependency Profiles`
+- Next: `ARCH-036-06 Ephemeral Preview Environments & Collaboration`
 
 ## Notes
 

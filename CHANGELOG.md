@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.24.0] - ARCH-036-05 Service Virtualization, Mocks & Dependency Profiles
+
+### Added
+- Executable simulated-dependency, contract-binding, latency-profile, failure-injection, fixture-management, fidelity, drift-detection, recovery, observability, and assurance safeguards.
+
+Status: Developer Environments & Sandboxes Architecture
+Version: 3.24.0
+
+---
+
 ## [3.23.0] - ARCH-036-04 Synthetic Test Data, Privacy & Reset
 
 ### Added

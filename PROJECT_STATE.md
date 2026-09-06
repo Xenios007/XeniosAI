@@ -12,9 +12,9 @@ Update this file after every successful implementation session.
 - Implementation guide: `IMPLEMENTATION_GUIDE.md`
 - Task queue: `TASK_QUEUE.md`
 - Current implementation phase: `ARCH-036 Developer Environments & Sandboxes`
-- Current implementation state: `ARCH-036-04 Synthetic Test Data, Privacy & Reset` is implemented.
-- Latest successful implementation module: `ARCH-036-04 Synthetic Test Data, Privacy & Reset`
-- Latest successful commit: `b32cadc` (`ARCH-036-04 Synthetic Test Data, Privacy & Reset`)
+- Current implementation state: `ARCH-036-05 Service Virtualization, Mocks & Dependency Profiles` is implemented.
+- Latest successful implementation module: `ARCH-036-05 Service Virtualization, Mocks & Dependency Profiles`
+- Latest successful commit: pending (`ARCH-036-05 Service Virtualization, Mocks & Dependency Profiles`)
 - Latest push status: pushed to `main`
 - Build status: passing
 - Test status: passing
@@ -203,19 +203,20 @@ Update this file after every successful implementation session.
 - Completed: `ARCH-036-02 Environment Types, Lifecycle & Ownership`
 - Completed: `ARCH-036-03 Isolation, Identity, Network & Secret Boundaries`
 - Completed: `ARCH-036-04 Synthetic Test Data, Privacy & Reset`
+- Completed: `ARCH-036-05 Service Virtualization, Mocks & Dependency Profiles`
 
 ## Implementation Coverage
 
-- Completed through: `ARCH-036-04 Synthetic Test Data, Privacy & Reset`
-- Next documented implementation module: `ARCH-036-05 Service Virtualization, Mocks & Dependency Profiles`
-- Reason: `architecture/036-developer-environments-sandboxes/05-service-virtualization-mocks-and-dependency-profiles.md` is the next architecture document in order.
+- Completed through: `ARCH-036-05 Service Virtualization, Mocks & Dependency Profiles`
+- Next documented implementation module: `ARCH-036-06 Ephemeral Preview Environments & Collaboration`
+- Reason: `architecture/036-developer-environments-sandboxes/06-ephemeral-preview-environments-and-collaboration.md` is the next architecture document in order.
 
 ## Latest Verification
 
-- Focused test: `node --test tests/developer-environments-sandboxes/synthetic-test-data-privacy-reset.test.js`
+- Focused test: `node --test tests/developer-environments-sandboxes/service-virtualization-mocks-dependency-profiles.test.js`
 - Focused test result: passed, 3/3
 - Full test: `npm test`
-- Full test result: passed, 1754/1754
+- Full test result: passed, 1757/1757
 - Build command: `npm run build`
 - Build result: passed
 
@@ -237,4 +238,4 @@ Architecture documents must not be changed during implementation unless explicit
 
 ## Recommended Next Action
 
-Recommended next architecture module: `ARCH-036-05 Service Virtualization, Mocks & Dependency Profiles`.
+Recommended next architecture module: `ARCH-036-06 Ephemeral Preview Environments & Collaboration`.

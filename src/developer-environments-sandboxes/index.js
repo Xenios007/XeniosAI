@@ -10,3 +10,6 @@ export { IsolationIdentityNetworkSecretBoundariesDescriptor } from './isolation/
 export * from './synthetic-test-data-privacy-reset-constants.js';
 export { SyntheticTestDataPrivacyResetProfile } from './contracts/synthetic-test-data-privacy-reset-profile.js';
 export { SyntheticTestDataPrivacyResetDescriptor } from './data/synthetic-test-data-privacy-reset-descriptor.js';
+export * from './service-virtualization-mocks-dependency-profiles-constants.js';
+export { ServiceVirtualizationMocksDependencyProfilesProfile } from './contracts/service-virtualization-mocks-dependency-profiles-profile.js';
+export { ServiceVirtualizationMocksDependencyProfilesDescriptor } from './virtualization/service-virtualization-mocks-dependency-profiles-descriptor.js';
