@@ -58,6 +58,7 @@ Testing is treated as a first-class engineering discipline rather than an aftert
 
 The repository currently includes automated unit tests for:
 
+- `ARCH-034-08 Registry Lifecycle, Deprecation & Federation` in `tests/contract-schema-capability-registry/`
 - `ARCH-034-07 Compatibility, Validation & Conformance` in `tests/contract-schema-capability-registry/`
 - `ARCH-034-06 Discovery, Lineage, Dependency & Impact Analysis` in `tests/contract-schema-capability-registry/`
 - `ARCH-034-05 UI Extension, Plugin & Solution-Pack Registration` in `tests/contract-schema-capability-registry/`

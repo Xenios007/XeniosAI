@@ -19,3 +19,6 @@ export { DiscoveryLineageDependencyImpactAnalysisDescriptor } from './discovery/
 export * from './compatibility-validation-conformance-constants.js';
 export { CompatibilityValidationConformanceProfile } from './contracts/compatibility-validation-conformance-profile.js';
 export { CompatibilityValidationConformanceDescriptor } from './conformance/compatibility-validation-conformance-descriptor.js';
+export * from './registry-lifecycle-deprecation-federation-constants.js';
+export { RegistryLifecycleDeprecationFederationProfile } from './contracts/registry-lifecycle-deprecation-federation-profile.js';
+export { RegistryLifecycleDeprecationFederationDescriptor } from './lifecycle/registry-lifecycle-deprecation-federation-descriptor.js';

@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.7.0] - ARCH-034-08 Registry Lifecycle, Deprecation & Federation
+
+### Added
+- Executable lifecycle-state, publication, supersession, deprecation, retirement, federation, conflict-resolution, recovery, observability, and assurance safeguards.
+
+Status: Contract, Schema, and Capability Registry Architecture
+Version: 3.7.0
+
+---
+
 ## [3.6.0] - ARCH-034-07 Compatibility, Validation & Conformance
 
 ### Added
