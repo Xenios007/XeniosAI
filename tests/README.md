@@ -58,6 +58,7 @@ Testing is treated as a first-class engineering discipline rather than an aftert
 
 The repository currently includes automated unit tests for:
 
+- `ARCH-040-05 Federated Catalogs, Discovery & Metadata Exchange` in `tests/partner-community-ecosystem-federation/`
 - `ARCH-040-04 Solution Provider Competency, Certification & Support` in `tests/partner-community-ecosystem-federation/`
 - `ARCH-040-03 Community Contribution, Collaboration & Governance` in `tests/partner-community-ecosystem-federation/`
 - `ARCH-040-02 Partner Program Models, Tiers & Lifecycle` in `tests/partner-community-ecosystem-federation/`

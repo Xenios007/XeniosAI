@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.64.0] - ARCH-040-05 Federated Catalogs, Discovery & Metadata Exchange
+
+### Added
+- Executable catalog-federation, namespace, provenance, replication, search/ranking, conflict/freshness, and removal safeguards.
+
+Status: Partner, Community & Ecosystem Federation Architecture
+Version: 3.64.0
+
+---
+
 ## [3.63.0] - ARCH-040-04 Solution Provider Competency, Certification & Support
 
 ### Added

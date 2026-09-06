@@ -10,3 +10,6 @@ export { CommunityContributionCollaborationGovernanceDescriptor } from './commun
 export * from './solution-provider-competency-certification-support-constants.js';
 export { SolutionProviderCompetencyCertificationSupportProfile } from './contracts/solution-provider-competency-certification-support-profile.js';
 export { SolutionProviderCompetencyCertificationSupportDescriptor } from './provider/solution-provider-competency-certification-support-descriptor.js';
+export * from './federated-catalogs-discovery-metadata-exchange-constants.js';
+export { FederatedCatalogsDiscoveryMetadataExchangeProfile } from './contracts/federated-catalogs-discovery-metadata-exchange-profile.js';
+export { FederatedCatalogsDiscoveryMetadataExchangeDescriptor } from './federation/federated-catalogs-discovery-metadata-exchange-descriptor.js';
