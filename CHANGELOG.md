@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.44.0] - ARCH-038-05 Data Mapping, Transformation & Domain Boundaries
+
+### Added
+- Executable canonical-mapping, external-identifier, validation/normalization, provenance, conflict-resolution, domain-boundary, and ownership safeguards.
+
+Status: Connector, Tool & MCP Development Architecture
+Version: 3.44.0
+
+---
+
 ## [3.43.0] - ARCH-038-04 Authentication, Consent, Delegation & Authorization
 
 ### Added

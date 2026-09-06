@@ -10,3 +10,6 @@ export { ToolContractsCapabilitiesMcpSemanticsDescriptor } from './semantics/too
 export * from './authentication-consent-delegation-authorization-constants.js';
 export { AuthenticationConsentDelegationAuthorizationProfile } from './contracts/authentication-consent-delegation-authorization-profile.js';
 export { AuthenticationConsentDelegationAuthorizationDescriptor } from './authorization/authentication-consent-delegation-authorization-descriptor.js';
+export * from './data-mapping-transformation-domain-boundaries-constants.js';
+export { DataMappingTransformationDomainBoundariesProfile } from './contracts/data-mapping-transformation-domain-boundaries-profile.js';
+export { DataMappingTransformationDomainBoundariesDescriptor } from './mapping/data-mapping-transformation-domain-boundaries-descriptor.js';

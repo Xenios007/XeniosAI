@@ -354,7 +354,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-038-02 Connector Kits, Adapter Patterns & Project Structure`
 - Completed: `ARCH-038-03 Tool Contracts, Capabilities & MCP Semantics`
 - Completed: `ARCH-038-04 Authentication, Consent, Delegation & Authorization`
-- Next: `ARCH-038-05 Data Mapping, Transformation & Domain Boundaries`
+- Completed: `ARCH-038-05 Data Mapping, Transformation & Domain Boundaries`
+- Next: `ARCH-038-06 Hosting, Execution Isolation & Secret Management`
 
 ## Notes
 
