@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.34.0] - ARCH-037-05 Integration, Workflow & End-to-End Testing
+
+### Added
+- Executable service-integration, workflow/saga, channel, transaction, compensation, journey, environment, recovery, observability, and assurance safeguards.
+
+Status: Testing, Simulation & Conformance Architecture
+Version: 3.34.0
+
+---
+
 ## [3.33.0] - ARCH-037-04 Contract, Schema & Compatibility Testing
 
 ### Added

@@ -58,6 +58,7 @@ Testing is treated as a first-class engineering discipline rather than an aftert
 
 The repository currently includes automated unit tests for:
 
+- `ARCH-037-05 Integration, Workflow & End-to-End Testing` in `tests/testing-simulation-conformance/`
 - `ARCH-037-04 Contract, Schema & Compatibility Testing` in `tests/testing-simulation-conformance/`
 - `ARCH-037-03 Unit, Component & Architecture Testing` in `tests/testing-simulation-conformance/`
 - `ARCH-037-02 Test Strategy, Risk Model & Quality Gates` in `tests/testing-simulation-conformance/`

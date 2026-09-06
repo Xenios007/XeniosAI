@@ -344,7 +344,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-037-02 Test Strategy, Risk Model & Quality Gates`
 - Completed: `ARCH-037-03 Unit, Component & Architecture Testing`
 - Completed: `ARCH-037-04 Contract, Schema & Compatibility Testing`
-- Next: `ARCH-037-05 Integration, Workflow & End-to-End Testing`
+- Completed: `ARCH-037-05 Integration, Workflow & End-to-End Testing`
+- Next: `ARCH-037-06 Security, Privacy & Tenant Isolation Testing`
 
 ## Notes
 

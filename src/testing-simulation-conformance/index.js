@@ -10,3 +10,6 @@ export { UnitComponentArchitectureTestingDescriptor } from './unit/unit-componen
 export * from './contract-schema-compatibility-testing-constants.js';
 export { ContractSchemaCompatibilityTestingProfile } from './contracts/contract-schema-compatibility-testing-profile.js';
 export { ContractSchemaCompatibilityTestingDescriptor } from './contract/contract-schema-compatibility-testing-descriptor.js';
+export * from './integration-workflow-end-to-end-testing-constants.js';
+export { IntegrationWorkflowEndToEndTestingProfile } from './contracts/integration-workflow-end-to-end-testing-profile.js';
+export { IntegrationWorkflowEndToEndTestingDescriptor } from './integration/integration-workflow-end-to-end-testing-descriptor.js';
