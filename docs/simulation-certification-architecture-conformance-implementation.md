@@ -1,0 +1,5 @@
+# ARCH-037-09 Simulation, Certification & Architecture Conformance
+
+Executable scenario-simulation, reference-suite, solution-certification, connector-certification, certification-evidence, architecture-conformance, certification-lifecycle, recovery, observability, and assurance metadata for the Testing, Simulation & Conformance phase.
+
+Scenario simulations are deterministic, seeded, and replayable from a versioned catalog; reference conformance suites (including Casa Lluvia scenarios) run against versioned golden results. Solutions and connectors are certified against level criteria with reviewed evidence before any marketplace listing; certification decisions cite an immutable, signed, traceable evidence bundle. Architecture descriptor completeness and invariant enforcement are asserted and drift is detected. Certifications are time-bounded and can be renewed, suspended, revoked, or superseded, and AI assistance never silently certifies a solution or connector or treats self-certification as verified.

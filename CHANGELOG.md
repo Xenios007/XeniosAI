@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.38.0] - ARCH-037-09 Simulation, Certification & Architecture Conformance
+
+### Added
+- Executable scenario-simulation, reference-suite, solution-certification, connector-certification, certification-evidence, architecture-conformance, certification-lifecycle, recovery, observability, and assurance safeguards.
+
+Status: Testing, Simulation & Conformance Architecture
+Version: 3.38.0
+
+---
+
 ## [3.37.0] - ARCH-037-08 Performance, Resilience, Chaos & Recovery Testing
 
 ### Added

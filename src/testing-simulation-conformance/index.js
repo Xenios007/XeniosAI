@@ -22,3 +22,6 @@ export { AiAgentKnowledgeUiTestingDescriptor } from './ai-ui/ai-agent-knowledge-
 export * from './performance-resilience-chaos-recovery-testing-constants.js';
 export { PerformanceResilienceChaosRecoveryTestingProfile } from './contracts/performance-resilience-chaos-recovery-testing-profile.js';
 export { PerformanceResilienceChaosRecoveryTestingDescriptor } from './performance/performance-resilience-chaos-recovery-testing-descriptor.js';
+export * from './simulation-certification-architecture-conformance-constants.js';
+export { SimulationCertificationArchitectureConformanceProfile } from './contracts/simulation-certification-architecture-conformance-profile.js';
+export { SimulationCertificationArchitectureConformanceDescriptor } from './certification/simulation-certification-architecture-conformance-descriptor.js';
