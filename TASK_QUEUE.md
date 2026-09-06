@@ -376,7 +376,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-040-04 Solution Provider Competency, Certification & Support`
 - Completed: `ARCH-040-05 Federated Catalogs, Discovery & Metadata Exchange`
 - Completed: `ARCH-040-06 Cross-Organization Trust, Identity, Access & Delegation`
-- Next: `ARCH-040-07 Interoperability, Portability, Standards & Provider Exit`
+- Completed: `ARCH-040-07 Interoperability, Portability, Standards & Provider Exit`
+- Next: `ARCH-040-08 Ecosystem Collaboration, Support, Conflict & Resilience`
 
 ## Notes
 

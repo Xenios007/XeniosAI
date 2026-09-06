@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.66.0] - ARCH-040-07 Interoperability, Portability, Standards & Provider Exit
+
+### Added
+- Executable interoperability-profile, semantic-mapping, compatibility, data-portability, artifact-portability, migration, and exit/anti-lock-in safeguards.
+
+Status: Partner, Community & Ecosystem Federation Architecture
+Version: 3.66.0
+
+---
+
 ## [3.65.0] - ARCH-040-06 Cross-Organization Trust, Identity, Access & Delegation
 
 ### Added

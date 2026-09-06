@@ -16,3 +16,6 @@ export { FederatedCatalogsDiscoveryMetadataExchangeDescriptor } from './federati
 export * from './cross-organization-trust-identity-access-delegation-constants.js';
 export { CrossOrganizationTrustIdentityAccessDelegationProfile } from './contracts/cross-organization-trust-identity-access-delegation-profile.js';
 export { CrossOrganizationTrustIdentityAccessDelegationDescriptor } from './trust/cross-organization-trust-identity-access-delegation-descriptor.js';
+export * from './interoperability-portability-standards-provider-exit-constants.js';
+export { InteroperabilityPortabilityStandardsProviderExitProfile } from './contracts/interoperability-portability-standards-provider-exit-profile.js';
+export { InteroperabilityPortabilityStandardsProviderExitDescriptor } from './interoperability/interoperability-portability-standards-provider-exit-descriptor.js';
