@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.9.0] - ARCH-034-10 Future Machine-Discoverable Capability Evolution
+
+### Added
+- Executable evolution-direction, semantic-discovery, federated-discovery, agent-consumable-descriptor, verifiable-claim, recovery, observability, and assurance safeguards.
+
+Status: Contract, Schema, and Capability Registry Architecture
+Version: 3.9.0
+
+---
+
 ## [3.8.0] - ARCH-034-09 Registry Security, Operations, Governance & Assurance
 
 ### Added

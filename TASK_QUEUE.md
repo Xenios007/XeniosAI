@@ -319,7 +319,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-034-07 Compatibility, Validation & Conformance`
 - Completed: `ARCH-034-08 Registry Lifecycle, Deprecation & Federation`
 - Completed: `ARCH-034-09 Registry Security, Operations, Governance & Assurance`
-- Next: `ARCH-034-10 Future Machine-Discoverable Capability Evolution`
+- Completed: `ARCH-034-10 Future Machine-Discoverable Capability Evolution`
+- Next: `ARCH-035-01 CLI, IDE & Local Tooling Overview`
 
 ## Notes
 

@@ -25,3 +25,6 @@ export { RegistryLifecycleDeprecationFederationDescriptor } from './lifecycle/re
 export * from './registry-security-operations-governance-assurance-constants.js';
 export { RegistrySecurityOperationsGovernanceAssuranceProfile } from './contracts/registry-security-operations-governance-assurance-profile.js';
 export { RegistrySecurityOperationsGovernanceAssuranceDescriptor } from './governance/registry-security-operations-governance-assurance-descriptor.js';
+export * from './future-machine-discoverable-capability-evolution-constants.js';
+export { FutureMachineDiscoverableCapabilityEvolutionProfile } from './contracts/future-machine-discoverable-capability-evolution-profile.js';
+export { FutureMachineDiscoverableCapabilityEvolutionDescriptor } from './future/future-machine-discoverable-capability-evolution-descriptor.js';
