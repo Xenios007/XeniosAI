@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.50.0] - ARCH-039-01 Marketplace, Publishing & Monetization Overview
+
+### Added
+- Executable marketplace-capability, actor, trust-boundary, commercial-boundary, quality-attribute, lifecycle, context-field, recovery, observability, and assurance safeguards for the marketplace capability.
+
+Status: Marketplace, Publishing & Monetization Architecture
+Version: 3.50.0
+
+---
+
 ## [3.49.0] - ARCH-038-10 Future Connector, Tool & MCP Evolution
 
 ### Added

@@ -360,7 +360,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-038-08 Observability, Reliability, Rate Limits & Operations`
 - Completed: `ARCH-038-09 Lifecycle, Versioning, Distribution & Provider Exit`
 - Completed: `ARCH-038-10 Future Connector, Tool & MCP Evolution`
-- Next: `ARCH-039-01 Marketplace, Publishing & Monetization Overview`
+- Completed: `ARCH-039-01 Marketplace, Publishing & Monetization Overview`
+- Next: `ARCH-039-02 Marketplace Product Model, Catalog Listings & Discovery`
 
 ## Notes
 

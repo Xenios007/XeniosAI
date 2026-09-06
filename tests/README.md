@@ -58,6 +58,7 @@ Testing is treated as a first-class engineering discipline rather than an aftert
 
 The repository currently includes automated unit tests for:
 
+- `ARCH-039-01 Marketplace, Publishing & Monetization Overview` in `tests/marketplace-publishing-monetization/`
 - `ARCH-038-10 Future Connector, Tool & MCP Evolution` in `tests/connector-tool-mcp-development/`
 - `ARCH-038-09 Lifecycle, Versioning, Distribution & Provider Exit` in `tests/connector-tool-mcp-development/`
 - `ARCH-038-08 Observability, Reliability, Rate Limits & Operations` in `tests/connector-tool-mcp-development/`
