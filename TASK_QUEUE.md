@@ -316,7 +316,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-034-04 Tool, Agent, Workflow & Capability Registration`
 - Completed: `ARCH-034-05 UI Extension, Plugin & Solution-Pack Registration`
 - Completed: `ARCH-034-06 Discovery, Lineage, Dependency & Impact Analysis`
-- Next: `ARCH-034-07 Compatibility, Validation & Conformance`
+- Completed: `ARCH-034-07 Compatibility, Validation & Conformance`
+- Next: `ARCH-034-08 Registry Lifecycle, Deprecation & Federation`
 
 ## Notes
 

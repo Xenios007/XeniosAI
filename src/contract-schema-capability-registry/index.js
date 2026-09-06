@@ -16,3 +16,6 @@ export { UiExtensionPluginSolutionPackRegistrationDescriptor } from './registrat
 export * from './discovery-lineage-dependency-impact-analysis-constants.js';
 export { DiscoveryLineageDependencyImpactAnalysisProfile } from './contracts/discovery-lineage-dependency-impact-analysis-profile.js';
 export { DiscoveryLineageDependencyImpactAnalysisDescriptor } from './discovery/discovery-lineage-dependency-impact-analysis-descriptor.js';
+export * from './compatibility-validation-conformance-constants.js';
+export { CompatibilityValidationConformanceProfile } from './contracts/compatibility-validation-conformance-profile.js';
+export { CompatibilityValidationConformanceDescriptor } from './conformance/compatibility-validation-conformance-descriptor.js';

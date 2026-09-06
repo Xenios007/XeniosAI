@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.6.0] - ARCH-034-07 Compatibility, Validation & Conformance
+
+### Added
+- Executable structural-check, semantic-compatibility, policy-rule, test-evidence, certification, exception, quality-gate, recovery, observability, and assurance safeguards.
+
+Status: Contract, Schema, and Capability Registry Architecture
+Version: 3.6.0
+
+---
+
 ## [3.5.0] - ARCH-034-06 Discovery, Lineage, Dependency & Impact Analysis
 
 ### Added
