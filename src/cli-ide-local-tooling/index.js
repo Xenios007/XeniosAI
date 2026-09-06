@@ -22,3 +22,6 @@ export { DebuggingDiagnosticsTracingSupportBundlesDescriptor } from './diagnosti
 export * from './ide-integration-navigation-validation-feedback-constants.js';
 export { IdeIntegrationNavigationValidationFeedbackProfile } from './contracts/ide-integration-navigation-validation-feedback-profile.js';
 export { IdeIntegrationNavigationValidationFeedbackDescriptor } from './ide/ide-integration-navigation-validation-feedback-descriptor.js';
+export * from './tool-updates-plugins-automation-compatibility-constants.js';
+export { ToolUpdatesPluginsAutomationCompatibilityProfile } from './contracts/tool-updates-plugins-automation-compatibility-profile.js';
+export { ToolUpdatesPluginsAutomationCompatibilityDescriptor } from './updates/tool-updates-plugins-automation-compatibility-descriptor.js';

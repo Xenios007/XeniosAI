@@ -58,6 +58,7 @@ Testing is treated as a first-class engineering discipline rather than an aftert
 
 The repository currently includes automated unit tests for:
 
+- `ARCH-035-09 Tool Updates, Plugins, Automation & Compatibility` in `tests/cli-ide-local-tooling/`
 - `ARCH-035-08 IDE Integration, Navigation, Validation & Feedback` in `tests/cli-ide-local-tooling/`
 - `ARCH-035-07 Debugging, Diagnostics, Tracing & Support Bundles` in `tests/cli-ide-local-tooling/`
 - `ARCH-035-06 Local Emulation, Service Virtualization & Data` in `tests/cli-ide-local-tooling/`

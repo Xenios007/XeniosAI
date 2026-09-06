@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.18.0] - ARCH-035-09 Tool Updates, Plugins, Automation & Compatibility
+
+### Added
+- Executable release-channel, signing/update, plugin, script-automation, compatibility, rollback, machine-output, recovery, observability, and assurance safeguards.
+
+Status: CLI, IDE & Local Tooling Architecture
+Version: 3.18.0
+
+---
+
 ## [3.17.0] - ARCH-035-08 IDE Integration, Navigation, Validation & Feedback
 
 ### Added
