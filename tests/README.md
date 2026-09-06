@@ -58,6 +58,7 @@ Testing is treated as a first-class engineering discipline rather than an aftert
 
 The repository currently includes automated unit tests for:
 
+- `ARCH-038-02 Connector Kits, Adapter Patterns & Project Structure` in `tests/connector-tool-mcp-development/`
 - `ARCH-038-01 Connector, Tool & MCP Development Overview` in `tests/connector-tool-mcp-development/`
 - `ARCH-037-10 Quality Operations, Governance & Future Evolution` in `tests/testing-simulation-conformance/`
 - `ARCH-037-09 Simulation, Certification & Architecture Conformance` in `tests/testing-simulation-conformance/`

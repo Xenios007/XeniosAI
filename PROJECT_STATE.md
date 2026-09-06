@@ -12,9 +12,9 @@ Update this file after every successful implementation session.
 - Implementation guide: `IMPLEMENTATION_GUIDE.md`
 - Task queue: `TASK_QUEUE.md`
 - Current implementation phase: `ARCH-038 Connector, Tool & MCP Development`
-- Current implementation state: `ARCH-038-01 Connector, Tool & MCP Development Overview` is implemented.
-- Latest successful implementation module: `ARCH-038-01 Connector, Tool & MCP Development Overview`
-- Latest successful commit: `4f45d25` (`ARCH-038-01 Connector, Tool & MCP Development Overview`)
+- Current implementation state: `ARCH-038-02 Connector Kits, Adapter Patterns & Project Structure` is implemented.
+- Latest successful implementation module: `ARCH-038-02 Connector Kits, Adapter Patterns & Project Structure`
+- Latest successful commit: pending (`ARCH-038-02 Connector Kits, Adapter Patterns & Project Structure`)
 - Latest push status: pushed to `main`
 - Build status: passing
 - Test status: passing
@@ -220,19 +220,20 @@ Update this file after every successful implementation session.
 - Completed: `ARCH-037-09 Simulation, Certification & Architecture Conformance`
 - Completed: `ARCH-037-10 Quality Operations, Governance & Future Evolution`
 - Completed: `ARCH-038-01 Connector, Tool & MCP Development Overview`
+- Completed: `ARCH-038-02 Connector Kits, Adapter Patterns & Project Structure`
 
 ## Implementation Coverage
 
-- Completed through: `ARCH-038-01 Connector, Tool & MCP Development Overview`
-- Next documented implementation module: `ARCH-038-02 Connector Kits, Adapter Patterns & Project Structure`
-- Reason: `architecture/038-connector-tool-mcp-development/02-connector-kits-adapter-patterns-and-project-structure.md` is the next architecture document in order.
+- Completed through: `ARCH-038-02 Connector Kits, Adapter Patterns & Project Structure`
+- Next documented implementation module: `ARCH-038-03 Tool Contracts, Capabilities & MCP Semantics`
+- Reason: `architecture/038-connector-tool-mcp-development/03-tool-contracts-capabilities-and-mcp-semantics.md` is the next architecture document in order.
 
 ## Latest Verification
 
-- Focused test: `node --test tests/connector-tool-mcp-development/connector-tool-mcp-development-overview.test.js`
+- Focused test: `node --test tests/connector-tool-mcp-development/connector-kits-adapter-patterns-project-structure.test.js`
 - Focused test result: passed, 3/3
 - Full test: `npm test`
-- Full test result: passed, 1808/1808
+- Full test result: passed, 1811/1811
 - Build command: `npm run build`
 - Build result: passed
 
@@ -254,4 +255,4 @@ Architecture documents must not be changed during implementation unless explicit
 
 ## Recommended Next Action
 
-Recommended next architecture module: `ARCH-038-02 Connector Kits, Adapter Patterns & Project Structure`.
+Recommended next architecture module: `ARCH-038-03 Tool Contracts, Capabilities & MCP Semantics`.

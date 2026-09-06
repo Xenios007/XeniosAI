@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.41.0] - ARCH-038-02 Connector Kits, Adapter Patterns & Project Structure
+
+### Added
+- Executable template, ports-and-adapters, manifest, configuration, dependency, packaging, and ownership safeguards.
+
+Status: Connector, Tool & MCP Development Architecture
+Version: 3.41.0
+
+---
+
 ## [3.40.0] - ARCH-038-01 Connector, Tool & MCP Development Overview
 
 ### Added

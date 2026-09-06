@@ -351,7 +351,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-037-09 Simulation, Certification & Architecture Conformance`
 - Completed: `ARCH-037-10 Quality Operations, Governance & Future Evolution`
 - Completed: `ARCH-038-01 Connector, Tool & MCP Development Overview`
-- Next: `ARCH-038-02 Connector Kits, Adapter Patterns & Project Structure`
+- Completed: `ARCH-038-02 Connector Kits, Adapter Patterns & Project Structure`
+- Next: `ARCH-038-03 Tool Contracts, Capabilities & MCP Semantics`
 
 ## Notes
 
