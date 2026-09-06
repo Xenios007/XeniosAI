@@ -25,3 +25,6 @@ export { UpdatesSupportRatingsDisputesRemovalDescriptor } from './support/update
 export * from './marketplace-operations-governance-security-assurance-constants.js';
 export { MarketplaceOperationsGovernanceSecurityAssuranceProfile } from './contracts/marketplace-operations-governance-security-assurance-profile.js';
 export { MarketplaceOperationsGovernanceSecurityAssuranceDescriptor } from './operations/marketplace-operations-governance-security-assurance-descriptor.js';
+export * from './future-marketplace-ecosystem-evolution-constants.js';
+export { FutureMarketplaceEcosystemEvolutionProfile } from './contracts/future-marketplace-ecosystem-evolution-profile.js';
+export { FutureMarketplaceEcosystemEvolutionDescriptor } from './future/future-marketplace-ecosystem-evolution-descriptor.js';

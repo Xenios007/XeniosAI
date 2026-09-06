@@ -58,6 +58,7 @@ Testing is treated as a first-class engineering discipline rather than an aftert
 
 The repository currently includes automated unit tests for:
 
+- `ARCH-039-10 Future Marketplace Ecosystem Evolution` in `tests/marketplace-publishing-monetization/`
 - `ARCH-039-09 Marketplace Operations, Governance, Security & Assurance` in `tests/marketplace-publishing-monetization/`
 - `ARCH-039-08 Updates, Support, Ratings, Disputes & Removal` in `tests/marketplace-publishing-monetization/`
 - `ARCH-039-07 Revenue Sharing, Settlement, Tax & Financial Interfaces` in `tests/marketplace-publishing-monetization/`
