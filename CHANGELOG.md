@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.61.0] - ARCH-040-02 Partner Program Models, Tiers & Lifecycle
+
+### Added
+- Executable partner-model, tier, benefit, obligation, review, exit, and agreement safeguards.
+
+Status: Partner, Community & Ecosystem Federation Architecture
+Version: 3.61.0
+
+---
+
 ## [3.60.0] - ARCH-040-01 Partner, Community & Ecosystem Federation Overview
 
 ### Added

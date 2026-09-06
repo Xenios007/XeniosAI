@@ -58,6 +58,7 @@ Testing is treated as a first-class engineering discipline rather than an aftert
 
 The repository currently includes automated unit tests for:
 
+- `ARCH-040-02 Partner Program Models, Tiers & Lifecycle` in `tests/partner-community-ecosystem-federation/`
 - `ARCH-040-01 Partner, Community & Ecosystem Federation Overview` in `tests/partner-community-ecosystem-federation/`
 - `ARCH-039-10 Future Marketplace Ecosystem Evolution` in `tests/marketplace-publishing-monetization/`
 - `ARCH-039-09 Marketplace Operations, Governance, Security & Assurance` in `tests/marketplace-publishing-monetization/`
