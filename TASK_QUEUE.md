@@ -330,7 +330,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-035-08 IDE Integration, Navigation, Validation & Feedback`
 - Completed: `ARCH-035-09 Tool Updates, Plugins, Automation & Compatibility`
 - Completed: `ARCH-035-10 Tooling Operations, Governance & Future Evolution`
-- Next: `ARCH-036-01 Developer Environments & Sandboxes Overview`
+- Completed: `ARCH-036-01 Developer Environments & Sandboxes Overview`
+- Next: `ARCH-036-02 Environment Types, Lifecycle & Ownership`
 
 ## Notes
 

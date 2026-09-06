@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.20.0] - ARCH-036-01 Developer Environments & Sandboxes Overview
+
+### Added
+- Executable environment-class, persona, lifecycle, trust-boundary, quality-attribute, capability, context-field, recovery, observability, and assurance safeguards for developer environments.
+
+Status: Developer Environments & Sandboxes Architecture
+Version: 3.20.0
+
+---
+
 ## [3.19.0] - ARCH-035-10 Tooling Operations, Governance & Future Evolution
 
 ### Added
