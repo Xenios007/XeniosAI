@@ -12,9 +12,9 @@ Update this file after every successful implementation session.
 - Implementation guide: `IMPLEMENTATION_GUIDE.md`
 - Task queue: `TASK_QUEUE.md`
 - Current implementation phase: `ARCH-038 Connector, Tool & MCP Development`
-- Current implementation state: `ARCH-038-02 Connector Kits, Adapter Patterns & Project Structure` is implemented.
-- Latest successful implementation module: `ARCH-038-02 Connector Kits, Adapter Patterns & Project Structure`
-- Latest successful commit: `b1c1897` (`ARCH-038-02 Connector Kits, Adapter Patterns & Project Structure`)
+- Current implementation state: `ARCH-038-03 Tool Contracts, Capabilities & MCP Semantics` is implemented.
+- Latest successful implementation module: `ARCH-038-03 Tool Contracts, Capabilities & MCP Semantics`
+- Latest successful commit: pending (`ARCH-038-03 Tool Contracts, Capabilities & MCP Semantics`)
 - Latest push status: pushed to `main`
 - Build status: passing
 - Test status: passing
@@ -221,19 +221,20 @@ Update this file after every successful implementation session.
 - Completed: `ARCH-037-10 Quality Operations, Governance & Future Evolution`
 - Completed: `ARCH-038-01 Connector, Tool & MCP Development Overview`
 - Completed: `ARCH-038-02 Connector Kits, Adapter Patterns & Project Structure`
+- Completed: `ARCH-038-03 Tool Contracts, Capabilities & MCP Semantics`
 
 ## Implementation Coverage
 
-- Completed through: `ARCH-038-02 Connector Kits, Adapter Patterns & Project Structure`
-- Next documented implementation module: `ARCH-038-03 Tool Contracts, Capabilities & MCP Semantics`
-- Reason: `architecture/038-connector-tool-mcp-development/03-tool-contracts-capabilities-and-mcp-semantics.md` is the next architecture document in order.
+- Completed through: `ARCH-038-03 Tool Contracts, Capabilities & MCP Semantics`
+- Next documented implementation module: `ARCH-038-04 Authentication, Consent, Delegation & Authorization`
+- Reason: `architecture/038-connector-tool-mcp-development/04-authentication-consent-delegation-and-authorization.md` is the next architecture document in order.
 
 ## Latest Verification
 
-- Focused test: `node --test tests/connector-tool-mcp-development/connector-kits-adapter-patterns-project-structure.test.js`
+- Focused test: `node --test tests/connector-tool-mcp-development/tool-contracts-capabilities-mcp-semantics.test.js`
 - Focused test result: passed, 3/3
 - Full test: `npm test`
-- Full test result: passed, 1811/1811
+- Full test result: passed, 1814/1814
 - Build command: `npm run build`
 - Build result: passed
 
@@ -255,4 +256,4 @@ Architecture documents must not be changed during implementation unless explicit
 
 ## Recommended Next Action
 
-Recommended next architecture module: `ARCH-038-03 Tool Contracts, Capabilities & MCP Semantics`.
+Recommended next architecture module: `ARCH-038-04 Authentication, Consent, Delegation & Authorization`.

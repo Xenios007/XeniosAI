@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.42.0] - ARCH-038-03 Tool Contracts, Capabilities & MCP Semantics
+
+### Added
+- Executable tool-definition, MCP-resource, MCP-prompt, discovery/schema, error-model, progress/cancellation, and protocol-version safeguards.
+
+Status: Connector, Tool & MCP Development Architecture
+Version: 3.42.0
+
+---
+
 ## [3.41.0] - ARCH-038-02 Connector Kits, Adapter Patterns & Project Structure
 
 ### Added
