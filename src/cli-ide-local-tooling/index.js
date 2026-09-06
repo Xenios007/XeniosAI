@@ -25,3 +25,6 @@ export { IdeIntegrationNavigationValidationFeedbackDescriptor } from './ide/ide-
 export * from './tool-updates-plugins-automation-compatibility-constants.js';
 export { ToolUpdatesPluginsAutomationCompatibilityProfile } from './contracts/tool-updates-plugins-automation-compatibility-profile.js';
 export { ToolUpdatesPluginsAutomationCompatibilityDescriptor } from './updates/tool-updates-plugins-automation-compatibility-descriptor.js';
+export * from './tooling-operations-governance-future-evolution-constants.js';
+export { ToolingOperationsGovernanceFutureEvolutionProfile } from './contracts/tooling-operations-governance-future-evolution-profile.js';
+export { ToolingOperationsGovernanceFutureEvolutionDescriptor } from './operations/tooling-operations-governance-future-evolution-descriptor.js';

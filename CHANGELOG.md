@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.19.0] - ARCH-035-10 Tooling Operations, Governance & Future Evolution
+
+### Added
+- Executable ownership, telemetry, support, supply-chain, conformance, deprecation, future-assistance, recovery, observability, and assurance safeguards, completing the ARCH-035 CLI, IDE & Local Tooling phase.
+
+Status: CLI, IDE & Local Tooling Architecture
+Version: 3.19.0
+
+---
+
 ## [3.18.0] - ARCH-035-09 Tool Updates, Plugins, Automation & Compatibility
 
 ### Added

@@ -11,10 +11,10 @@ Update this file after every successful implementation session.
 - Architecture source of truth: `/architecture`
 - Implementation guide: `IMPLEMENTATION_GUIDE.md`
 - Task queue: `TASK_QUEUE.md`
-- Current implementation phase: `ARCH-035 CLI, IDE & Local Tooling`
-- Current implementation state: `ARCH-035-09 Tool Updates, Plugins, Automation & Compatibility` is implemented.
-- Latest successful implementation module: `ARCH-035-09 Tool Updates, Plugins, Automation & Compatibility`
-- Latest successful commit: `f709bf2` (`ARCH-035-09 Tool Updates, Plugins, Automation & Compatibility`)
+- Current implementation phase: `ARCH-036 Developer Environments & Sandboxes`
+- Current implementation state: `ARCH-035-10 Tooling Operations, Governance & Future Evolution` is implemented.
+- Latest successful implementation module: `ARCH-035-10 Tooling Operations, Governance & Future Evolution`
+- Latest successful commit: pending (`ARCH-035-10 Tooling Operations, Governance & Future Evolution`)
 - Latest push status: pushed to `main`
 - Build status: passing
 - Test status: passing
@@ -198,19 +198,20 @@ Update this file after every successful implementation session.
 - Completed: `ARCH-035-07 Debugging, Diagnostics, Tracing & Support Bundles`
 - Completed: `ARCH-035-08 IDE Integration, Navigation, Validation & Feedback`
 - Completed: `ARCH-035-09 Tool Updates, Plugins, Automation & Compatibility`
+- Completed: `ARCH-035-10 Tooling Operations, Governance & Future Evolution`
 
 ## Implementation Coverage
 
-- Completed through: `ARCH-035-09 Tool Updates, Plugins, Automation & Compatibility`
-- Next documented implementation module: `ARCH-035-10 Tooling Operations, Governance & Future Evolution`
-- Reason: `architecture/035-cli-ide-local-tooling/10-tooling-operations-governance-and-future-evolution.md` is the next architecture document in order.
+- Completed through: `ARCH-035-10 Tooling Operations, Governance & Future Evolution` (ARCH-035 phase complete)
+- Next documented implementation module: `ARCH-036-01 Developer Environments & Sandboxes Overview`
+- Reason: `architecture/036-developer-environments-sandboxes/01-developer-environments-sandboxes-overview.md` is the next architecture document in order.
 
 ## Latest Verification
 
-- Focused test: `node --test tests/cli-ide-local-tooling/tool-updates-plugins-automation-compatibility.test.js`
+- Focused test: `node --test tests/cli-ide-local-tooling/tooling-operations-governance-future-evolution.test.js`
 - Focused test result: passed, 3/3
 - Full test: `npm test`
-- Full test result: passed, 1739/1739
+- Full test result: passed, 1742/1742
 - Build command: `npm run build`
 - Build result: passed
 
@@ -232,4 +233,4 @@ Architecture documents must not be changed during implementation unless explicit
 
 ## Recommended Next Action
 
-Recommended next architecture module: `ARCH-035-10 Tooling Operations, Governance & Future Evolution`.
+Recommended next architecture module: `ARCH-036-01 Developer Environments & Sandboxes Overview`.
