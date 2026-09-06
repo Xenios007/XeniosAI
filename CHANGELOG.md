@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.33.0] - ARCH-037-04 Contract, Schema & Compatibility Testing
+
+### Added
+- Executable provider-verification, consumer-verification, message-verification, schema-validation, version-compatibility, deprecation-verification, registry-binding, recovery, observability, and assurance safeguards.
+
+Status: Testing, Simulation & Conformance Architecture
+Version: 3.33.0
+
+---
+
 ## [3.32.0] - ARCH-037-03 Unit, Component & Architecture Testing
 
 ### Added

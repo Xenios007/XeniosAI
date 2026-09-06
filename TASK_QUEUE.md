@@ -343,7 +343,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-037-01 Testing, Simulation & Conformance Overview`
 - Completed: `ARCH-037-02 Test Strategy, Risk Model & Quality Gates`
 - Completed: `ARCH-037-03 Unit, Component & Architecture Testing`
-- Next: `ARCH-037-04 Contract, Schema & Compatibility Testing`
+- Completed: `ARCH-037-04 Contract, Schema & Compatibility Testing`
+- Next: `ARCH-037-05 Integration, Workflow & End-to-End Testing`
 
 ## Notes
 

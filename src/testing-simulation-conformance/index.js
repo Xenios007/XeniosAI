@@ -7,3 +7,6 @@ export { TestStrategyRiskModelQualityGatesDescriptor } from './strategy/test-str
 export * from './unit-component-architecture-testing-constants.js';
 export { UnitComponentArchitectureTestingProfile } from './contracts/unit-component-architecture-testing-profile.js';
 export { UnitComponentArchitectureTestingDescriptor } from './unit/unit-component-architecture-testing-descriptor.js';
+export * from './contract-schema-compatibility-testing-constants.js';
+export { ContractSchemaCompatibilityTestingProfile } from './contracts/contract-schema-compatibility-testing-profile.js';
+export { ContractSchemaCompatibilityTestingDescriptor } from './contract/contract-schema-compatibility-testing-descriptor.js';
