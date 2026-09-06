@@ -1,0 +1,5 @@
+# ARCH-038-08 Observability, Reliability, Rate Limits & Operations
+
+Executable telemetry, health, quota/rate-limit, retry/circuit, reconciliation, incident, and support metadata for the Connector, Tool & MCP Development phase.
+
+Telemetry records outcomes and timings with correlation and no payloads, external responses, secrets, or customer data. Liveness, readiness, and dependency health checks gate serving and signal degradation; per-tenant and per-connector quotas and rate limits are enforced with a retry-after signal. Retries use backoff, jitter, idempotency, and a budget, and a circuit breaker opens on sustained downstream failure. Drift between the connector and the external system is detected and reconciled with idempotent replay and a manual repair path; connector incidents are classified, contained, communicated, recovered, and followed by a blameless postmortem; support uses redacted, consented bundles; and AI assistance never silently mutes an alert, raises a quota, or closes an incident.

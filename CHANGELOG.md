@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.47.0] - ARCH-038-08 Observability, Reliability, Rate Limits & Operations
+
+### Added
+- Executable telemetry, health, quota/rate-limit, retry/circuit, reconciliation, incident, and support safeguards.
+
+Status: Connector, Tool & MCP Development Architecture
+Version: 3.47.0
+
+---
+
 ## [3.46.0] - ARCH-038-07 Testing, Simulation, Certification & Security Review
 
 ### Added

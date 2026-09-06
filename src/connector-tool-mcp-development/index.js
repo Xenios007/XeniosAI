@@ -19,3 +19,6 @@ export { HostingExecutionIsolationSecretManagementDescriptor } from './hosting/h
 export * from './testing-simulation-certification-security-review-constants.js';
 export { TestingSimulationCertificationSecurityReviewProfile } from './contracts/testing-simulation-certification-security-review-profile.js';
 export { TestingSimulationCertificationSecurityReviewDescriptor } from './review/testing-simulation-certification-security-review-descriptor.js';
+export * from './observability-reliability-rate-limits-operations-constants.js';
+export { ObservabilityReliabilityRateLimitsOperationsProfile } from './contracts/observability-reliability-rate-limits-operations-profile.js';
+export { ObservabilityReliabilityRateLimitsOperationsDescriptor } from './operations/observability-reliability-rate-limits-operations-descriptor.js';

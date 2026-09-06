@@ -357,7 +357,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-038-05 Data Mapping, Transformation & Domain Boundaries`
 - Completed: `ARCH-038-06 Hosting, Execution Isolation & Secret Management`
 - Completed: `ARCH-038-07 Testing, Simulation, Certification & Security Review`
-- Next: `ARCH-038-08 Observability, Reliability, Rate Limits & Operations`
+- Completed: `ARCH-038-08 Observability, Reliability, Rate Limits & Operations`
+- Next: `ARCH-038-09 Lifecycle, Versioning, Distribution & Provider Exit`
 
 ## Notes
 
