@@ -373,7 +373,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-040-01 Partner, Community & Ecosystem Federation Overview`
 - Completed: `ARCH-040-02 Partner Program Models, Tiers & Lifecycle`
 - Completed: `ARCH-040-03 Community Contribution, Collaboration & Governance`
-- Next: `ARCH-040-04 Solution Provider Competency, Certification & Support`
+- Completed: `ARCH-040-04 Solution Provider Competency, Certification & Support`
+- Next: `ARCH-040-05 Federated Catalogs, Discovery & Metadata Exchange`
 
 ## Notes
 

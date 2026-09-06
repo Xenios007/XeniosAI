@@ -7,3 +7,6 @@ export { PartnerProgramModelsTiersLifecycleDescriptor } from './program/partner-
 export * from './community-contribution-collaboration-governance-constants.js';
 export { CommunityContributionCollaborationGovernanceProfile } from './contracts/community-contribution-collaboration-governance-profile.js';
 export { CommunityContributionCollaborationGovernanceDescriptor } from './community/community-contribution-collaboration-governance-descriptor.js';
+export * from './solution-provider-competency-certification-support-constants.js';
+export { SolutionProviderCompetencyCertificationSupportProfile } from './contracts/solution-provider-competency-certification-support-profile.js';
+export { SolutionProviderCompetencyCertificationSupportDescriptor } from './provider/solution-provider-competency-certification-support-descriptor.js';

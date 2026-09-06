@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.63.0] - ARCH-040-04 Solution Provider Competency, Certification & Support
+
+### Added
+- Executable competency, training, assessment, certification, delivery-standard, support, and renewal/suspension safeguards.
+
+Status: Partner, Community & Ecosystem Federation Architecture
+Version: 3.63.0
+
+---
+
 ## [3.62.0] - ARCH-040-03 Community Contribution, Collaboration & Governance
 
 ### Added
