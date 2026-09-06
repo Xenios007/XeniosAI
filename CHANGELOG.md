@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.13.0] - ARCH-035-04 Project Scaffolding, Templates & Code Generation
+
+### Added
+- Executable template-catalog, template-input, provenance, deterministic-generation, ownership, regeneration, safe-customization, recovery, observability, and assurance safeguards.
+
+Status: CLI, IDE & Local Tooling Architecture
+Version: 3.13.0
+
+---
+
 ## [3.12.0] - ARCH-035-03 Authentication, Configuration, Profiles & Context
 
 ### Added

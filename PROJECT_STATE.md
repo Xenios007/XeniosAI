@@ -12,9 +12,9 @@ Update this file after every successful implementation session.
 - Implementation guide: `IMPLEMENTATION_GUIDE.md`
 - Task queue: `TASK_QUEUE.md`
 - Current implementation phase: `ARCH-035 CLI, IDE & Local Tooling`
-- Current implementation state: `ARCH-035-03 Authentication, Configuration, Profiles & Context` is implemented.
-- Latest successful implementation module: `ARCH-035-03 Authentication, Configuration, Profiles & Context`
-- Latest successful commit: `79ad7f6` (`ARCH-035-03 Authentication, Configuration, Profiles & Context`)
+- Current implementation state: `ARCH-035-04 Project Scaffolding, Templates & Code Generation` is implemented.
+- Latest successful implementation module: `ARCH-035-04 Project Scaffolding, Templates & Code Generation`
+- Latest successful commit: pending (`ARCH-035-04 Project Scaffolding, Templates & Code Generation`)
 - Latest push status: pushed to `main`
 - Build status: passing
 - Test status: passing
@@ -192,19 +192,20 @@ Update this file after every successful implementation session.
 - Completed: `ARCH-035-01 CLI, IDE & Local Tooling Overview`
 - Completed: `ARCH-035-02 CLI Command Architecture & User Experience`
 - Completed: `ARCH-035-03 Authentication, Configuration, Profiles & Context`
+- Completed: `ARCH-035-04 Project Scaffolding, Templates & Code Generation`
 
 ## Implementation Coverage
 
-- Completed through: `ARCH-035-03 Authentication, Configuration, Profiles & Context`
-- Next documented implementation module: `ARCH-035-04 Project Scaffolding, Templates & Code Generation`
-- Reason: `architecture/035-cli-ide-local-tooling/04-project-scaffolding-templates-and-code-generation.md` is the next architecture document in order.
+- Completed through: `ARCH-035-04 Project Scaffolding, Templates & Code Generation`
+- Next documented implementation module: `ARCH-035-05 Contract, Schema, Client & Server Generation`
+- Reason: `architecture/035-cli-ide-local-tooling/05-contract-schema-client-and-server-generation.md` is the next architecture document in order.
 
 ## Latest Verification
 
-- Focused test: `node --test tests/cli-ide-local-tooling/authentication-configuration-profiles-context.test.js`
+- Focused test: `node --test tests/cli-ide-local-tooling/project-scaffolding-templates-code-generation.test.js`
 - Focused test result: passed, 3/3
 - Full test: `npm test`
-- Full test result: passed, 1721/1721
+- Full test result: passed, 1724/1724
 - Build command: `npm run build`
 - Build result: passed
 
@@ -226,4 +227,4 @@ Architecture documents must not be changed during implementation unless explicit
 
 ## Recommended Next Action
 
-Recommended next architecture module: `ARCH-035-04 Project Scaffolding, Templates & Code Generation`.
+Recommended next architecture module: `ARCH-035-05 Contract, Schema, Client & Server Generation`.

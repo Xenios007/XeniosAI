@@ -7,3 +7,6 @@ export { CliCommandArchitectureUserExperienceDescriptor } from './command/cli-co
 export * from './authentication-configuration-profiles-context-constants.js';
 export { AuthenticationConfigurationProfilesContextProfile } from './contracts/authentication-configuration-profiles-context-profile.js';
 export { AuthenticationConfigurationProfilesContextDescriptor } from './authentication/authentication-configuration-profiles-context-descriptor.js';
+export * from './project-scaffolding-templates-code-generation-constants.js';
+export { ProjectScaffoldingTemplatesCodeGenerationProfile } from './contracts/project-scaffolding-templates-code-generation-profile.js';
+export { ProjectScaffoldingTemplatesCodeGenerationDescriptor } from './scaffolding/project-scaffolding-templates-code-generation-descriptor.js';
