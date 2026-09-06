@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.5.0] - ARCH-034-06 Discovery, Lineage, Dependency & Impact Analysis
+
+### Added
+- Executable discovery, graph, lineage, producer/consumer, transitive-impact, change-planning, recovery, observability, and assurance safeguards.
+
+Status: Contract, Schema, and Capability Registry Architecture
+Version: 3.5.0
+
+---
+
 ## [3.4.0] - ARCH-034-05 UI Extension, Plugin & Solution-Pack Registration
 
 ### Added

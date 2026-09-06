@@ -13,3 +13,6 @@ export { ToolAgentWorkflowCapabilityRegistrationDescriptor } from './registratio
 export * from './ui-extension-plugin-solution-pack-registration-constants.js';
 export { UiExtensionPluginSolutionPackRegistrationProfile } from './contracts/ui-extension-plugin-solution-pack-registration-profile.js';
 export { UiExtensionPluginSolutionPackRegistrationDescriptor } from './registration/ui-extension-plugin-solution-pack-registration-descriptor.js';
+export * from './discovery-lineage-dependency-impact-analysis-constants.js';
+export { DiscoveryLineageDependencyImpactAnalysisProfile } from './contracts/discovery-lineage-dependency-impact-analysis-profile.js';
+export { DiscoveryLineageDependencyImpactAnalysisDescriptor } from './discovery/discovery-lineage-dependency-impact-analysis-descriptor.js';
