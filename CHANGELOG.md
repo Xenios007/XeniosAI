@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.21.0] - ARCH-036-02 Environment Types, Lifecycle & Ownership
+
+### Added
+- Executable environment-type, ownership-model, provisioning, expiry, shared-access, state-management, catalog, recovery, observability, and assurance safeguards.
+
+Status: Developer Environments & Sandboxes Architecture
+Version: 3.21.0
+
+---
+
 ## [3.20.0] - ARCH-036-01 Developer Environments & Sandboxes Overview
 
 ### Added
