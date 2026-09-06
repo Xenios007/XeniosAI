@@ -1,0 +1,5 @@
+# ARCH-037-07 AI, Agent, Knowledge & UI Testing
+
+Executable deterministic-agent, retrieval-grounding, knowledge-version, UI-accessibility, visual-regression, interaction, boundary, recovery, observability, and assurance metadata for the Testing, Simulation & Conformance phase.
+
+Agent and tool tests use recorded model responses and are seeded and reproducible — a deterministic test never calls a live model endpoint. Responses are verified as grounded and cited with hallucination detection; knowledge base and index versions are pinned per run with snapshot tests. UI is tested against a declared accessibility standard with keyboard and screen-reader coverage; visual regressions are gated and an intended change requires human review; interaction flows and error states are covered including streaming and cancellation. Production AI evaluation, learning, and promotion remain owned by ARCH-029, and AI assistance never silently lowers a grounding bar, accepts a visual diff, or ignores a flaky test.

@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.36.0] - ARCH-037-07 AI, Agent, Knowledge & UI Testing
+
+### Added
+- Executable deterministic-agent, retrieval-grounding, knowledge-version, UI-accessibility, visual-regression, interaction, boundary, recovery, observability, and assurance safeguards.
+
+Status: Testing, Simulation & Conformance Architecture
+Version: 3.36.0
+
+---
+
 ## [3.35.0] - ARCH-037-06 Security, Privacy & Tenant Isolation Testing
 
 ### Added

@@ -16,3 +16,6 @@ export { IntegrationWorkflowEndToEndTestingDescriptor } from './integration/inte
 export * from './security-privacy-tenant-isolation-testing-constants.js';
 export { SecurityPrivacyTenantIsolationTestingProfile } from './contracts/security-privacy-tenant-isolation-testing-profile.js';
 export { SecurityPrivacyTenantIsolationTestingDescriptor } from './security/security-privacy-tenant-isolation-testing-descriptor.js';
+export * from './ai-agent-knowledge-ui-testing-constants.js';
+export { AiAgentKnowledgeUiTestingProfile } from './contracts/ai-agent-knowledge-ui-testing-profile.js';
+export { AiAgentKnowledgeUiTestingDescriptor } from './ai-ui/ai-agent-knowledge-ui-testing-descriptor.js';
