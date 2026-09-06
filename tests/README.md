@@ -58,6 +58,7 @@ Testing is treated as a first-class engineering discipline rather than an aftert
 
 The repository currently includes automated unit tests for:
 
+- `ARCH-038-04 Authentication, Consent, Delegation & Authorization` in `tests/connector-tool-mcp-development/`
 - `ARCH-038-03 Tool Contracts, Capabilities & MCP Semantics` in `tests/connector-tool-mcp-development/`
 - `ARCH-038-02 Connector Kits, Adapter Patterns & Project Structure` in `tests/connector-tool-mcp-development/`
 - `ARCH-038-01 Connector, Tool & MCP Development Overview` in `tests/connector-tool-mcp-development/`

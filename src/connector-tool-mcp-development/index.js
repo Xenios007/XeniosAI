@@ -7,3 +7,6 @@ export { ConnectorKitsAdapterPatternsProjectStructureDescriptor } from './struct
 export * from './tool-contracts-capabilities-mcp-semantics-constants.js';
 export { ToolContractsCapabilitiesMcpSemanticsProfile } from './contracts/tool-contracts-capabilities-mcp-semantics-profile.js';
 export { ToolContractsCapabilitiesMcpSemanticsDescriptor } from './semantics/tool-contracts-capabilities-mcp-semantics-descriptor.js';
+export * from './authentication-consent-delegation-authorization-constants.js';
+export { AuthenticationConsentDelegationAuthorizationProfile } from './contracts/authentication-consent-delegation-authorization-profile.js';
+export { AuthenticationConsentDelegationAuthorizationDescriptor } from './authorization/authentication-consent-delegation-authorization-descriptor.js';

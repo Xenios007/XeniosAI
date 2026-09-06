@@ -1,0 +1,5 @@
+# ARCH-038-04 Authentication, Consent, Delegation & Authorization
+
+Executable connector-identity, credential-grant, consent, on-behalf-of, scope, tenant-context, and revocation metadata for the Connector, Tool & MCP Development phase.
+
+A connector authenticates as a distinct workload identity, never a shared account. Credential grants use standard flows with minimal lifetime, audience restriction, and attenuated token exchange; every scope requires explicit, recorded consent with a clear screen and expiry. Delegated invocations carry both an actor and a subject, a verifiable chain, and scopes attenuated (never widened) along the chain. Requested scopes are least-privilege, validated server-side, and never escalated without new consent; tokens and consent are bound to one tenant context and mismatches fail closed; revocation and consent withdrawal propagate immediately to caches, sessions, and downstream grants; and AI assistance never silently grants consent, widens a scope, or issues a credential.

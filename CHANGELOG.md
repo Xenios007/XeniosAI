@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.43.0] - ARCH-038-04 Authentication, Consent, Delegation & Authorization
+
+### Added
+- Executable connector-identity, credential-grant, consent, on-behalf-of, scope, tenant-context, and revocation safeguards.
+
+Status: Connector, Tool & MCP Development Architecture
+Version: 3.43.0
+
+---
+
 ## [3.42.0] - ARCH-038-03 Tool Contracts, Capabilities & MCP Semantics
 
 ### Added
