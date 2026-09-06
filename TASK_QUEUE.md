@@ -370,7 +370,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-039-08 Updates, Support, Ratings, Disputes & Removal`
 - Completed: `ARCH-039-09 Marketplace Operations, Governance, Security & Assurance`
 - Completed: `ARCH-039-10 Future Marketplace Ecosystem Evolution`
-- Next: `ARCH-040-01 Partner, Community & Ecosystem Federation Overview`
+- Completed: `ARCH-040-01 Partner, Community & Ecosystem Federation Overview`
+- Next: `ARCH-040-02 Partner Program Models, Tiers & Lifecycle`
 
 ## Notes
 

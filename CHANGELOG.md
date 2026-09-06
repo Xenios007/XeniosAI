@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.60.0] - ARCH-040-01 Partner, Community & Ecosystem Federation Overview
+
+### Added
+- Executable ecosystem-actor, participation-model, trust-model, federation, governance, sustainability, quality-attribute, recovery, observability, and assurance safeguards for the ecosystem federation capability.
+
+Status: Partner, Community & Ecosystem Federation Architecture
+Version: 3.60.0
+
+---
+
 ## [3.59.0] - ARCH-039-10 Future Marketplace Ecosystem Evolution
 
 ### Added
