@@ -350,7 +350,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-037-08 Performance, Resilience, Chaos & Recovery Testing`
 - Completed: `ARCH-037-09 Simulation, Certification & Architecture Conformance`
 - Completed: `ARCH-037-10 Quality Operations, Governance & Future Evolution`
-- Next: `ARCH-038-01 Connector, Tool & MCP Development Overview`
+- Completed: `ARCH-038-01 Connector, Tool & MCP Development Overview`
+- Next: `ARCH-038-02 Connector Kits, Adapter Patterns & Project Structure`
 
 ## Notes
 

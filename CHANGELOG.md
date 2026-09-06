@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.40.0] - ARCH-038-01 Connector, Tool & MCP Development Overview
+
+### Added
+- Executable connector-type, consumer, protocol, boundary, trust-model, quality-attribute, context-field, recovery, observability, and assurance safeguards for connector development.
+
+Status: Connector, Tool & MCP Development Architecture
+Version: 3.40.0
+
+---
+
 ## [3.39.0] - ARCH-037-10 Quality Operations, Governance & Future Evolution
 
 ### Added
