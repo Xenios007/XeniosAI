@@ -22,3 +22,6 @@ export { SharedPartnerTenantTrainingSandboxesDescriptor } from './shared/shared-
 export * from './quotas-capacity-cost-resource-governance-constants.js';
 export { QuotasCapacityCostResourceGovernanceProfile } from './contracts/quotas-capacity-cost-resource-governance-profile.js';
 export { QuotasCapacityCostResourceGovernanceDescriptor } from './governance/quotas-capacity-cost-resource-governance-descriptor.js';
+export * from './promotion-boundaries-teardown-recovery-constants.js';
+export { PromotionBoundariesTeardownRecoveryProfile } from './contracts/promotion-boundaries-teardown-recovery-profile.js';
+export { PromotionBoundariesTeardownRecoveryDescriptor } from './promotion/promotion-boundaries-teardown-recovery-descriptor.js';

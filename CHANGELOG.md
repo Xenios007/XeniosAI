@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.28.0] - ARCH-036-09 Promotion Boundaries, Teardown & Recovery
+
+### Added
+- Executable artifact-promotion, environment-parity, approval-gate, teardown, backup-limit, recovery, orphan-cleanup, recovery, observability, and assurance safeguards.
+
+Status: Developer Environments & Sandboxes Architecture
+Version: 3.28.0
+
+---
+
 ## [3.27.0] - ARCH-036-08 Quotas, Capacity, Cost & Resource Governance
 
 ### Added

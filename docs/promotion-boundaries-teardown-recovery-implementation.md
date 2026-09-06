@@ -1,0 +1,5 @@
+# ARCH-036-09 Promotion Boundaries, Teardown & Recovery
+
+Executable artifact-promotion, environment-parity, approval-gate, teardown, backup-limit, recovery, orphan-cleanup, recovery, observability, and assurance metadata for the Developer Environments & Sandboxes phase.
+
+Only verified, immutable artifacts are promoted — a development environment never promotes itself, and no sandbox synthetic data, fixtures, or state is migrated into a higher environment. Promotion passes compatibility, security, conformance, and ownership gates with linked evidence; parity and known differences to higher environments are documented and surfaced. Teardown is ordered, idempotent, and verified to leave no residual resources; sandboxes keep no long-lived backups and have no disaster-recovery guarantee; recovery is a rebuild from specification and seed, never a restore of stale state; orphaned and dangling resources are reclaimed; and AI assistance never silently promotes an artifact, bypasses a gate, or migrates sandbox data.
