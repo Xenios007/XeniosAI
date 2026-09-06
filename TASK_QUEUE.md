@@ -341,7 +341,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-036-09 Promotion Boundaries, Teardown & Recovery`
 - Completed: `ARCH-036-10 Environment Operations, Governance & Future Evolution`
 - Completed: `ARCH-037-01 Testing, Simulation & Conformance Overview`
-- Next: `ARCH-037-02 Test Strategy, Risk Model & Quality Gates`
+- Completed: `ARCH-037-02 Test Strategy, Risk Model & Quality Gates`
+- Next: `ARCH-037-03 Unit, Component & Architecture Testing`
 
 ## Notes
 

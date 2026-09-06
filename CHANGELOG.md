@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.31.0] - ARCH-037-02 Test Strategy, Risk Model & Quality Gates
+
+### Added
+- Executable test-portfolio, risk-tier, coverage-target, quality-gate, gate-ownership, waiver, release-evidence, recovery, observability, and assurance safeguards.
+
+Status: Testing, Simulation & Conformance Architecture
+Version: 3.31.0
+
+---
+
 ## [3.30.0] - ARCH-037-01 Testing, Simulation & Conformance Overview
 
 ### Added
