@@ -19,3 +19,6 @@ export { EphemeralPreviewEnvironmentsCollaborationDescriptor } from './preview/e
 export * from './shared-partner-tenant-training-sandboxes-constants.js';
 export { SharedPartnerTenantTrainingSandboxesProfile } from './contracts/shared-partner-tenant-training-sandboxes-profile.js';
 export { SharedPartnerTenantTrainingSandboxesDescriptor } from './shared/shared-partner-tenant-training-sandboxes-descriptor.js';
+export * from './quotas-capacity-cost-resource-governance-constants.js';
+export { QuotasCapacityCostResourceGovernanceProfile } from './contracts/quotas-capacity-cost-resource-governance-profile.js';
+export { QuotasCapacityCostResourceGovernanceDescriptor } from './governance/quotas-capacity-cost-resource-governance-descriptor.js';

@@ -337,7 +337,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-036-05 Service Virtualization, Mocks & Dependency Profiles`
 - Completed: `ARCH-036-06 Ephemeral Preview Environments & Collaboration`
 - Completed: `ARCH-036-07 Shared, Partner, Tenant & Training Sandboxes`
-- Next: `ARCH-036-08 Quotas, Capacity, Cost & Resource Governance`
+- Completed: `ARCH-036-08 Quotas, Capacity, Cost & Resource Governance`
+- Next: `ARCH-036-09 Promotion Boundaries, Teardown & Recovery`
 
 ## Notes
 

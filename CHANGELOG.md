@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.27.0] - ARCH-036-08 Quotas, Capacity, Cost & Resource Governance
+
+### Added
+- Executable budget, quota, scheduling, idle-detection, capacity, fair-use, alert/exception, recovery, observability, and assurance safeguards.
+
+Status: Developer Environments & Sandboxes Architecture
+Version: 3.27.0
+
+---
+
 ## [3.26.0] - ARCH-036-07 Shared, Partner, Tenant & Training Sandboxes
 
 ### Added
