@@ -22,3 +22,6 @@ export { RevenueSharingSettlementTaxFinancialInterfacesDescriptor } from './sett
 export * from './updates-support-ratings-disputes-removal-constants.js';
 export { UpdatesSupportRatingsDisputesRemovalProfile } from './contracts/updates-support-ratings-disputes-removal-profile.js';
 export { UpdatesSupportRatingsDisputesRemovalDescriptor } from './support/updates-support-ratings-disputes-removal-descriptor.js';
+export * from './marketplace-operations-governance-security-assurance-constants.js';
+export { MarketplaceOperationsGovernanceSecurityAssuranceProfile } from './contracts/marketplace-operations-governance-security-assurance-profile.js';
+export { MarketplaceOperationsGovernanceSecurityAssuranceDescriptor } from './operations/marketplace-operations-governance-security-assurance-descriptor.js';

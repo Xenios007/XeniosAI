@@ -368,7 +368,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-039-06 Licensing, Pricing, Subscriptions & Metering`
 - Completed: `ARCH-039-07 Revenue Sharing, Settlement, Tax & Financial Interfaces`
 - Completed: `ARCH-039-08 Updates, Support, Ratings, Disputes & Removal`
-- Next: `ARCH-039-09 Marketplace Operations, Governance, Security & Assurance`
+- Completed: `ARCH-039-09 Marketplace Operations, Governance, Security & Assurance`
+- Next: `ARCH-039-10 Future Marketplace Ecosystem Evolution`
 
 ## Notes
 

@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.58.0] - ARCH-039-09 Marketplace Operations, Governance, Security & Assurance
+
+### Added
+- Executable ownership, service-objective, fraud/abuse-control, incident, moderation, audit, and recovery/assurance safeguards.
+
+Status: Marketplace, Publishing & Monetization Architecture
+Version: 3.58.0
+
+---
+
 ## [3.57.0] - ARCH-039-08 Updates, Support, Ratings, Disputes & Removal
 
 ### Added
