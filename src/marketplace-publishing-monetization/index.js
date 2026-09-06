@@ -10,3 +10,6 @@ export { PublisherOnboardingIdentityTrustAgreementsDescriptor } from './publishe
 export * from './submission-validation-review-certification-constants.js';
 export { SubmissionValidationReviewCertificationProfile } from './contracts/submission-validation-review-certification-profile.js';
 export { SubmissionValidationReviewCertificationDescriptor } from './submission/submission-validation-review-certification-descriptor.js';
+export * from './packaging-signing-distribution-installation-handoff-constants.js';
+export { PackagingSigningDistributionInstallationHandoffProfile } from './contracts/packaging-signing-distribution-installation-handoff-profile.js';
+export { PackagingSigningDistributionInstallationHandoffDescriptor } from './distribution/packaging-signing-distribution-installation-handoff-descriptor.js';

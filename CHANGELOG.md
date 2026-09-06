@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.54.0] - ARCH-039-05 Packaging, Signing, Distribution & Installation Handoff
+
+### Added
+- Executable package-format, provenance/signing, integrity/storage, delivery, installation-request, installation-grant, and revocation safeguards.
+
+Status: Marketplace, Publishing & Monetization Architecture
+Version: 3.54.0
+
+---
+
 ## [3.53.0] - ARCH-039-04 Submission, Validation, Review & Certification
 
 ### Added
