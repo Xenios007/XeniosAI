@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.52.0] - ARCH-039-03 Publisher Onboarding, Identity, Trust & Agreements
+
+### Added
+- Executable publisher-identity, verification, agreement, role, payout-reference, support-obligation, and publisher-lifecycle safeguards.
+
+Status: Marketplace, Publishing & Monetization Architecture
+Version: 3.52.0
+
+---
+
 ## [3.51.0] - ARCH-039-02 Marketplace Product Model, Catalog Listings & Discovery
 
 ### Added

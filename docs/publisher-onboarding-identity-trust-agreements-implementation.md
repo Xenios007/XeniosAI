@@ -1,0 +1,5 @@
+# ARCH-039-03 Publisher Onboarding, Identity, Trust & Agreements
+
+Executable publisher-identity, verification, agreement, role, payout-reference, support-obligation, and publisher-lifecycle metadata for the Marketplace, Publishing & Monetization phase.
+
+A publisher is a registered, verified legal entity with per-member authenticated identities. Business, tax, domain, and sanctions verification completes before a publisher can list; an authorized signatory explicitly accepts the versioned agreement and content policy. Publisher roles are least-privilege with separation of duties between publishing and financial actions. Payout account detail lives in the financial system of record — the marketplace holds only a reference, and bank or payment instrument details are never stored. Support obligations including a security response time are declared and tracked; suspension removes listing and payout privileges; and AI may assist onboarding review but never silently approves a publisher or waives verification.
