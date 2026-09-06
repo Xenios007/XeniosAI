@@ -12,9 +12,9 @@ Update this file after every successful implementation session.
 - Implementation guide: `IMPLEMENTATION_GUIDE.md`
 - Task queue: `TASK_QUEUE.md`
 - Current implementation phase: `ARCH-035 CLI, IDE & Local Tooling`
-- Current implementation state: `ARCH-035-04 Project Scaffolding, Templates & Code Generation` is implemented.
-- Latest successful implementation module: `ARCH-035-04 Project Scaffolding, Templates & Code Generation`
-- Latest successful commit: `5381e9a` (`ARCH-035-04 Project Scaffolding, Templates & Code Generation`)
+- Current implementation state: `ARCH-035-05 Contract, Schema, Client & Server Generation` is implemented.
+- Latest successful implementation module: `ARCH-035-05 Contract, Schema, Client & Server Generation`
+- Latest successful commit: pending (`ARCH-035-05 Contract, Schema, Client & Server Generation`)
 - Latest push status: pushed to `main`
 - Build status: passing
 - Test status: passing
@@ -193,19 +193,20 @@ Update this file after every successful implementation session.
 - Completed: `ARCH-035-02 CLI Command Architecture & User Experience`
 - Completed: `ARCH-035-03 Authentication, Configuration, Profiles & Context`
 - Completed: `ARCH-035-04 Project Scaffolding, Templates & Code Generation`
+- Completed: `ARCH-035-05 Contract, Schema, Client & Server Generation`
 
 ## Implementation Coverage
 
-- Completed through: `ARCH-035-04 Project Scaffolding, Templates & Code Generation`
-- Next documented implementation module: `ARCH-035-05 Contract, Schema, Client & Server Generation`
-- Reason: `architecture/035-cli-ide-local-tooling/05-contract-schema-client-and-server-generation.md` is the next architecture document in order.
+- Completed through: `ARCH-035-05 Contract, Schema, Client & Server Generation`
+- Next documented implementation module: `ARCH-035-06 Local Emulation, Service Virtualization & Data`
+- Reason: `architecture/035-cli-ide-local-tooling/06-local-emulation-service-virtualization-and-data.md` is the next architecture document in order.
 
 ## Latest Verification
 
-- Focused test: `node --test tests/cli-ide-local-tooling/project-scaffolding-templates-code-generation.test.js`
+- Focused test: `node --test tests/cli-ide-local-tooling/contract-schema-client-server-generation.test.js`
 - Focused test result: passed, 3/3
 - Full test: `npm test`
-- Full test result: passed, 1724/1724
+- Full test result: passed, 1727/1727
 - Build command: `npm run build`
 - Build result: passed
 
@@ -227,4 +228,4 @@ Architecture documents must not be changed during implementation unless explicit
 
 ## Recommended Next Action
 
-Recommended next architecture module: `ARCH-035-05 Contract, Schema, Client & Server Generation`.
+Recommended next architecture module: `ARCH-035-06 Local Emulation, Service Virtualization & Data`.

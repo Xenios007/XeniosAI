@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.14.0] - ARCH-035-05 Contract, Schema, Client & Server Generation
+
+### Added
+- Executable registry-input, language-target, compatibility, generated-client, stub/validator, traceability, regeneration-compatibility, recovery, observability, and assurance safeguards.
+
+Status: CLI, IDE & Local Tooling Architecture
+Version: 3.14.0
+
+---
+
 ## [3.13.0] - ARCH-035-04 Project Scaffolding, Templates & Code Generation
 
 ### Added

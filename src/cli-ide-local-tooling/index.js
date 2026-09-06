@@ -10,3 +10,6 @@ export { AuthenticationConfigurationProfilesContextDescriptor } from './authenti
 export * from './project-scaffolding-templates-code-generation-constants.js';
 export { ProjectScaffoldingTemplatesCodeGenerationProfile } from './contracts/project-scaffolding-templates-code-generation-profile.js';
 export { ProjectScaffoldingTemplatesCodeGenerationDescriptor } from './scaffolding/project-scaffolding-templates-code-generation-descriptor.js';
+export * from './contract-schema-client-server-generation-constants.js';
+export { ContractSchemaClientServerGenerationProfile } from './contracts/contract-schema-client-server-generation-profile.js';
+export { ContractSchemaClientServerGenerationDescriptor } from './generation/contract-schema-client-server-generation-descriptor.js';

@@ -324,7 +324,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-035-02 CLI Command Architecture & User Experience`
 - Completed: `ARCH-035-03 Authentication, Configuration, Profiles & Context`
 - Completed: `ARCH-035-04 Project Scaffolding, Templates & Code Generation`
-- Next: `ARCH-035-05 Contract, Schema, Client & Server Generation`
+- Completed: `ARCH-035-05 Contract, Schema, Client & Server Generation`
+- Next: `ARCH-035-06 Local Emulation, Service Virtualization & Data`
 
 ## Notes
 
