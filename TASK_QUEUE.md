@@ -332,7 +332,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-035-10 Tooling Operations, Governance & Future Evolution`
 - Completed: `ARCH-036-01 Developer Environments & Sandboxes Overview`
 - Completed: `ARCH-036-02 Environment Types, Lifecycle & Ownership`
-- Next: `ARCH-036-03 Isolation, Identity, Network & Secret Boundaries`
+- Completed: `ARCH-036-03 Isolation, Identity, Network & Secret Boundaries`
+- Next: `ARCH-036-04 Synthetic Test Data, Privacy & Reset`
 
 ## Notes
 

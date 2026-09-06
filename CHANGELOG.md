@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.22.0] - ARCH-036-03 Isolation, Identity, Network & Secret Boundaries
+
+### Added
+- Executable tenant/project-isolation, compute-isolation, network-isolation, identity-isolation, credential/secret, administrative-isolation, boundary-verification, recovery, observability, and assurance safeguards.
+
+Status: Developer Environments & Sandboxes Architecture
+Version: 3.22.0
+
+---
+
 ## [3.21.0] - ARCH-036-02 Environment Types, Lifecycle & Ownership
 
 ### Added

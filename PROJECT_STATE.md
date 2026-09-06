@@ -12,9 +12,9 @@ Update this file after every successful implementation session.
 - Implementation guide: `IMPLEMENTATION_GUIDE.md`
 - Task queue: `TASK_QUEUE.md`
 - Current implementation phase: `ARCH-036 Developer Environments & Sandboxes`
-- Current implementation state: `ARCH-036-02 Environment Types, Lifecycle & Ownership` is implemented.
-- Latest successful implementation module: `ARCH-036-02 Environment Types, Lifecycle & Ownership`
-- Latest successful commit: `1dbeab0` (`ARCH-036-02 Environment Types, Lifecycle & Ownership`)
+- Current implementation state: `ARCH-036-03 Isolation, Identity, Network & Secret Boundaries` is implemented.
+- Latest successful implementation module: `ARCH-036-03 Isolation, Identity, Network & Secret Boundaries`
+- Latest successful commit: pending (`ARCH-036-03 Isolation, Identity, Network & Secret Boundaries`)
 - Latest push status: pushed to `main`
 - Build status: passing
 - Test status: passing
@@ -201,19 +201,20 @@ Update this file after every successful implementation session.
 - Completed: `ARCH-035-10 Tooling Operations, Governance & Future Evolution`
 - Completed: `ARCH-036-01 Developer Environments & Sandboxes Overview`
 - Completed: `ARCH-036-02 Environment Types, Lifecycle & Ownership`
+- Completed: `ARCH-036-03 Isolation, Identity, Network & Secret Boundaries`
 
 ## Implementation Coverage
 
-- Completed through: `ARCH-036-02 Environment Types, Lifecycle & Ownership`
-- Next documented implementation module: `ARCH-036-03 Isolation, Identity, Network & Secret Boundaries`
-- Reason: `architecture/036-developer-environments-sandboxes/03-isolation-identity-network-and-secret-boundaries.md` is the next architecture document in order.
+- Completed through: `ARCH-036-03 Isolation, Identity, Network & Secret Boundaries`
+- Next documented implementation module: `ARCH-036-04 Synthetic Test Data, Privacy & Reset`
+- Reason: `architecture/036-developer-environments-sandboxes/04-synthetic-test-data-privacy-and-reset.md` is the next architecture document in order.
 
 ## Latest Verification
 
-- Focused test: `node --test tests/developer-environments-sandboxes/environment-types-lifecycle-ownership.test.js`
+- Focused test: `node --test tests/developer-environments-sandboxes/isolation-identity-network-secret-boundaries.test.js`
 - Focused test result: passed, 3/3
 - Full test: `npm test`
-- Full test result: passed, 1748/1748
+- Full test result: passed, 1751/1751
 - Build command: `npm run build`
 - Build result: passed
 
@@ -235,4 +236,4 @@ Architecture documents must not be changed during implementation unless explicit
 
 ## Recommended Next Action
 
-Recommended next architecture module: `ARCH-036-03 Isolation, Identity, Network & Secret Boundaries`.
+Recommended next architecture module: `ARCH-036-04 Synthetic Test Data, Privacy & Reset`.
