@@ -13,3 +13,6 @@ export { SyntheticTestDataPrivacyResetDescriptor } from './data/synthetic-test-d
 export * from './service-virtualization-mocks-dependency-profiles-constants.js';
 export { ServiceVirtualizationMocksDependencyProfilesProfile } from './contracts/service-virtualization-mocks-dependency-profiles-profile.js';
 export { ServiceVirtualizationMocksDependencyProfilesDescriptor } from './virtualization/service-virtualization-mocks-dependency-profiles-descriptor.js';
+export * from './ephemeral-preview-environments-collaboration-constants.js';
+export { EphemeralPreviewEnvironmentsCollaborationProfile } from './contracts/ephemeral-preview-environments-collaboration-profile.js';
+export { EphemeralPreviewEnvironmentsCollaborationDescriptor } from './preview/ephemeral-preview-environments-collaboration-descriptor.js';

@@ -335,7 +335,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-036-03 Isolation, Identity, Network & Secret Boundaries`
 - Completed: `ARCH-036-04 Synthetic Test Data, Privacy & Reset`
 - Completed: `ARCH-036-05 Service Virtualization, Mocks & Dependency Profiles`
-- Next: `ARCH-036-06 Ephemeral Preview Environments & Collaboration`
+- Completed: `ARCH-036-06 Ephemeral Preview Environments & Collaboration`
+- Next: `ARCH-036-07 Shared, Partner, Tenant & Training Sandboxes`
 
 ## Notes
 

@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.25.0] - ARCH-036-06 Ephemeral Preview Environments & Collaboration
+
+### Added
+- Executable change-trigger, sharing, access-control, collaboration, expiry, cost-control, cleanup, recovery, observability, and assurance safeguards.
+
+Status: Developer Environments & Sandboxes Architecture
+Version: 3.25.0
+
+---
+
 ## [3.24.0] - ARCH-036-05 Service Virtualization, Mocks & Dependency Profiles
 
 ### Added
