@@ -4,3 +4,6 @@ export { CliIdeLocalToolingOverviewDescriptor } from './overview/cli-ide-local-t
 export * from './cli-command-architecture-user-experience-constants.js';
 export { CliCommandArchitectureUserExperienceProfile } from './contracts/cli-command-architecture-user-experience-profile.js';
 export { CliCommandArchitectureUserExperienceDescriptor } from './command/cli-command-architecture-user-experience-descriptor.js';
+export * from './authentication-configuration-profiles-context-constants.js';
+export { AuthenticationConfigurationProfilesContextProfile } from './contracts/authentication-configuration-profiles-context-profile.js';
+export { AuthenticationConfigurationProfilesContextDescriptor } from './authentication/authentication-configuration-profiles-context-descriptor.js';

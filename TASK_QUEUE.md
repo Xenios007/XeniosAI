@@ -322,7 +322,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-034-10 Future Machine-Discoverable Capability Evolution`
 - Completed: `ARCH-035-01 CLI, IDE & Local Tooling Overview`
 - Completed: `ARCH-035-02 CLI Command Architecture & User Experience`
-- Next: `ARCH-035-03 Authentication, Configuration Profiles & Context`
+- Completed: `ARCH-035-03 Authentication, Configuration, Profiles & Context`
+- Next: `ARCH-035-04 Project Scaffolding, Templates & Code Generation`
 
 ## Notes
 

@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.12.0] - ARCH-035-03 Authentication, Configuration, Profiles & Context
+
+### Added
+- Executable authentication, token, profile, scope-context, precedence, credential-storage, redaction, recovery, observability, and assurance safeguards.
+
+Status: CLI, IDE & Local Tooling Architecture
+Version: 3.12.0
+
+---
+
 ## [3.11.0] - ARCH-035-02 CLI Command Architecture & User Experience
 
 ### Added
