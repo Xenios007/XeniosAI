@@ -1,0 +1,5 @@
+# ARCH-038-06 Hosting, Execution Isolation & Secret Management
+
+Executable hosting-model, runtime-isolation, egress-control, secret-management, update, resource-limit, and hosting-boundary metadata for the Connector, Tool & MCP Development phase.
+
+Connector execution is isolated per instance (process, container, or VM) with no access to the host filesystem, devices, or privileged syscalls, and no cross-instance interference. Egress is default-deny with a reviewed allowlist and no lateral movement to platform internals, other connectors, or other tenants. Secrets are store-held, runtime-injected, scoped, rotated, and never persisted in the connector; updates are signed, verified, staged, and rollback-capable; CPU, memory, time, concurrency, storage, and quota limits are enforced with defined degradation. A hosted instance is bound to exactly one tenant, hosting never grants platform-internal access or bypasses provider authorization, and AI assistance never silently changes isolation, egress, or secret policy.

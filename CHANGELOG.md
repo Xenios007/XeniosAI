@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.45.0] - ARCH-038-06 Hosting, Execution Isolation & Secret Management
+
+### Added
+- Executable hosting-model, runtime-isolation, egress-control, secret-management, update, resource-limit, and hosting-boundary safeguards.
+
+Status: Connector, Tool & MCP Development Architecture
+Version: 3.45.0
+
+---
+
 ## [3.44.0] - ARCH-038-05 Data Mapping, Transformation & Domain Boundaries
 
 ### Added

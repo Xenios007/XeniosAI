@@ -12,9 +12,9 @@ Update this file after every successful implementation session.
 - Implementation guide: `IMPLEMENTATION_GUIDE.md`
 - Task queue: `TASK_QUEUE.md`
 - Current implementation phase: `ARCH-038 Connector, Tool & MCP Development`
-- Current implementation state: `ARCH-038-05 Data Mapping, Transformation & Domain Boundaries` is implemented.
-- Latest successful implementation module: `ARCH-038-05 Data Mapping, Transformation & Domain Boundaries`
-- Latest successful commit: `96323d1` (`ARCH-038-05 Data Mapping, Transformation & Domain Boundaries`)
+- Current implementation state: `ARCH-038-06 Hosting, Execution Isolation & Secret Management` is implemented.
+- Latest successful implementation module: `ARCH-038-06 Hosting, Execution Isolation & Secret Management`
+- Latest successful commit: pending (`ARCH-038-06 Hosting, Execution Isolation & Secret Management`)
 - Latest push status: pushed to `main`
 - Build status: passing
 - Test status: passing
@@ -224,19 +224,20 @@ Update this file after every successful implementation session.
 - Completed: `ARCH-038-03 Tool Contracts, Capabilities & MCP Semantics`
 - Completed: `ARCH-038-04 Authentication, Consent, Delegation & Authorization`
 - Completed: `ARCH-038-05 Data Mapping, Transformation & Domain Boundaries`
+- Completed: `ARCH-038-06 Hosting, Execution Isolation & Secret Management`
 
 ## Implementation Coverage
 
-- Completed through: `ARCH-038-05 Data Mapping, Transformation & Domain Boundaries`
-- Next documented implementation module: `ARCH-038-06 Hosting, Execution Isolation & Secret Management`
-- Reason: `architecture/038-connector-tool-mcp-development/06-hosting-execution-isolation-and-secret-management.md` is the next architecture document in order.
+- Completed through: `ARCH-038-06 Hosting, Execution Isolation & Secret Management`
+- Next documented implementation module: `ARCH-038-07 Testing, Simulation, Certification & Security Review`
+- Reason: `architecture/038-connector-tool-mcp-development/07-testing-simulation-certification-and-security-review.md` is the next architecture document in order.
 
 ## Latest Verification
 
-- Focused test: `node --test tests/connector-tool-mcp-development/data-mapping-transformation-domain-boundaries.test.js`
+- Focused test: `node --test tests/connector-tool-mcp-development/hosting-execution-isolation-secret-management.test.js`
 - Focused test result: passed, 3/3
 - Full test: `npm test`
-- Full test result: passed, 1820/1820
+- Full test result: passed, 1823/1823
 - Build command: `npm run build`
 - Build result: passed
 
@@ -258,4 +259,4 @@ Architecture documents must not be changed during implementation unless explicit
 
 ## Recommended Next Action
 
-Recommended next architecture module: `ARCH-038-06 Hosting, Execution Isolation & Secret Management`.
+Recommended next architecture module: `ARCH-038-07 Testing, Simulation, Certification & Security Review`.

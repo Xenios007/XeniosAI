@@ -13,3 +13,6 @@ export { AuthenticationConsentDelegationAuthorizationDescriptor } from './author
 export * from './data-mapping-transformation-domain-boundaries-constants.js';
 export { DataMappingTransformationDomainBoundariesProfile } from './contracts/data-mapping-transformation-domain-boundaries-profile.js';
 export { DataMappingTransformationDomainBoundariesDescriptor } from './mapping/data-mapping-transformation-domain-boundaries-descriptor.js';
+export * from './hosting-execution-isolation-secret-management-constants.js';
+export { HostingExecutionIsolationSecretManagementProfile } from './contracts/hosting-execution-isolation-secret-management-profile.js';
+export { HostingExecutionIsolationSecretManagementDescriptor } from './hosting/hosting-execution-isolation-secret-management-descriptor.js';
