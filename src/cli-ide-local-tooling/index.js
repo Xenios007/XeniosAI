@@ -13,3 +13,6 @@ export { ProjectScaffoldingTemplatesCodeGenerationDescriptor } from './scaffoldi
 export * from './contract-schema-client-server-generation-constants.js';
 export { ContractSchemaClientServerGenerationProfile } from './contracts/contract-schema-client-server-generation-profile.js';
 export { ContractSchemaClientServerGenerationDescriptor } from './generation/contract-schema-client-server-generation-descriptor.js';
+export * from './local-emulation-service-virtualization-data-constants.js';
+export { LocalEmulationServiceVirtualizationDataProfile } from './contracts/local-emulation-service-virtualization-data-profile.js';
+export { LocalEmulationServiceVirtualizationDataDescriptor } from './emulation/local-emulation-service-virtualization-data-descriptor.js';

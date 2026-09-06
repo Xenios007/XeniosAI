@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.15.0] - ARCH-035-06 Local Emulation, Service Virtualization & Data
+
+### Added
+- Executable emulator, mock, recorded-fixture, synthetic-data, offline-behavior, parity-limit, isolation, recovery, observability, and assurance safeguards.
+
+Status: CLI, IDE & Local Tooling Architecture
+Version: 3.15.0
+
+---
+
 ## [3.14.0] - ARCH-035-05 Contract, Schema, Client & Server Generation
 
 ### Added
