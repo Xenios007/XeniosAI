@@ -379,7 +379,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-040-07 Interoperability, Portability, Standards & Provider Exit`
 - Completed: `ARCH-040-08 Ecosystem Collaboration, Support, Conflict & Resilience`
 - Completed: `ARCH-040-09 Ecosystem Operations, Governance, Metrics & Assurance`
-- Next: `ARCH-040-10 Future Federated Ecosystem Evolution`
+- Completed: `ARCH-040-10 Future Federated Ecosystem Evolution`
+- Next: none — ARCH-040 phase complete; ARCH-002 through ARCH-040 fully implemented
 
 ## Notes
 

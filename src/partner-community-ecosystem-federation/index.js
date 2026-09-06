@@ -25,3 +25,6 @@ export { EcosystemCollaborationSupportConflictResilienceDescriptor } from './col
 export * from './ecosystem-operations-governance-metrics-assurance-constants.js';
 export { EcosystemOperationsGovernanceMetricsAssuranceProfile } from './contracts/ecosystem-operations-governance-metrics-assurance-profile.js';
 export { EcosystemOperationsGovernanceMetricsAssuranceDescriptor } from './operations/ecosystem-operations-governance-metrics-assurance-descriptor.js';
+export * from './future-federated-ecosystem-evolution-constants.js';
+export { FutureFederatedEcosystemEvolutionProfile } from './contracts/future-federated-ecosystem-evolution-profile.js';
+export { FutureFederatedEcosystemEvolutionDescriptor } from './future/future-federated-ecosystem-evolution-descriptor.js';
