@@ -366,7 +366,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-039-04 Submission, Validation, Review & Certification`
 - Completed: `ARCH-039-05 Packaging, Signing, Distribution & Installation Handoff`
 - Completed: `ARCH-039-06 Licensing, Pricing, Subscriptions & Metering`
-- Next: `ARCH-039-07 Revenue Sharing, Settlement, Tax & Financial Interfaces`
+- Completed: `ARCH-039-07 Revenue Sharing, Settlement, Tax & Financial Interfaces`
+- Next: `ARCH-039-08 Updates, Support, Ratings, Disputes & Removal`
 
 ## Notes
 

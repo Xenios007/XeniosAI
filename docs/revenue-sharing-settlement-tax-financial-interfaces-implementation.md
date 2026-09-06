@@ -1,0 +1,5 @@
+# ARCH-039-07 Revenue Sharing, Settlement, Tax & Financial Interfaces
+
+Executable commercial-split, payout-calculation, settlement-reference, taxation-interface, refund/chargeback, financial-reconciliation, and financial-evidence metadata for the Marketplace, Publishing & Monetization phase.
+
+Revenue-share splits, their basis, and any change are disclosed with the required notice or consent. Payout is calculated by a deterministic, documented formula with an itemized statement. Settlement and payout execute in the financial system of record — the marketplace holds only references and does not custody funds outside a licensed arrangement. Tax calculation, jurisdiction, and reporting obligations are explicit and run through a tax interface; refunds, chargebacks, and clawbacks follow a defined process with publisher notice; usage, billing, settlement, and the financial ledger are reconciled on a defined cadence; financial records and statements are immutable, signed, traceable, and retained; and AI may assist financial analysis but never silently settles, adjusts a payout, or changes a split.

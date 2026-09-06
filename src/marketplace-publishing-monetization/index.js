@@ -16,3 +16,6 @@ export { PackagingSigningDistributionInstallationHandoffDescriptor } from './dis
 export * from './licensing-pricing-subscriptions-metering-constants.js';
 export { LicensingPricingSubscriptionsMeteringProfile } from './contracts/licensing-pricing-subscriptions-metering-profile.js';
 export { LicensingPricingSubscriptionsMeteringDescriptor } from './licensing/licensing-pricing-subscriptions-metering-descriptor.js';
+export * from './revenue-sharing-settlement-tax-financial-interfaces-constants.js';
+export { RevenueSharingSettlementTaxFinancialInterfacesProfile } from './contracts/revenue-sharing-settlement-tax-financial-interfaces-profile.js';
+export { RevenueSharingSettlementTaxFinancialInterfacesDescriptor } from './settlement/revenue-sharing-settlement-tax-financial-interfaces-descriptor.js';
