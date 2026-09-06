@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.16.0] - ARCH-035-07 Debugging, Diagnostics, Tracing & Support Bundles
+
+### Added
+- Executable log, trace, health-check, explain-plan, redaction, support-bundle, correlation/remediation, recovery, observability, and assurance safeguards.
+
+Status: CLI, IDE & Local Tooling Architecture
+Version: 3.16.0
+
+---
+
 ## [3.15.0] - ARCH-035-06 Local Emulation, Service Virtualization & Data
 
 ### Added

@@ -16,3 +16,6 @@ export { ContractSchemaClientServerGenerationDescriptor } from './generation/con
 export * from './local-emulation-service-virtualization-data-constants.js';
 export { LocalEmulationServiceVirtualizationDataProfile } from './contracts/local-emulation-service-virtualization-data-profile.js';
 export { LocalEmulationServiceVirtualizationDataDescriptor } from './emulation/local-emulation-service-virtualization-data-descriptor.js';
+export * from './debugging-diagnostics-tracing-support-bundles-constants.js';
+export { DebuggingDiagnosticsTracingSupportBundlesProfile } from './contracts/debugging-diagnostics-tracing-support-bundles-profile.js';
+export { DebuggingDiagnosticsTracingSupportBundlesDescriptor } from './diagnostics/debugging-diagnostics-tracing-support-bundles-descriptor.js';
