@@ -19,3 +19,6 @@ export { LicensingPricingSubscriptionsMeteringDescriptor } from './licensing/lic
 export * from './revenue-sharing-settlement-tax-financial-interfaces-constants.js';
 export { RevenueSharingSettlementTaxFinancialInterfacesProfile } from './contracts/revenue-sharing-settlement-tax-financial-interfaces-profile.js';
 export { RevenueSharingSettlementTaxFinancialInterfacesDescriptor } from './settlement/revenue-sharing-settlement-tax-financial-interfaces-descriptor.js';
+export * from './updates-support-ratings-disputes-removal-constants.js';
+export { UpdatesSupportRatingsDisputesRemovalProfile } from './contracts/updates-support-ratings-disputes-removal-profile.js';
+export { UpdatesSupportRatingsDisputesRemovalDescriptor } from './support/updates-support-ratings-disputes-removal-descriptor.js';

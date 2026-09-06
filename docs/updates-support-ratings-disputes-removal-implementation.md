@@ -1,0 +1,5 @@
+# ARCH-039-08 Updates, Support, Ratings, Disputes & Removal
+
+Executable update, support-obligation, review/rating, dispute, vulnerability-response, suspension, and removal metadata for the Marketplace, Publishing & Monetization phase.
+
+Updates are versioned, compatibility-classified, and staged, and a breaking update carries advance consumer notice. Publisher support performance and a security response time are tracked and enforced with a marketplace backstop. Reviews are verified and moderated, fake reviews are never permitted, and a publisher cannot suppress a legitimate critical review. Disputes are mediated neutrally with documented timelines and linkage to refunds and entitlement. Vulnerability response follows coordinated disclosure with severity-based service levels and consumer notice. Suspension has defined triggers, notice, and a time-bound appeal; removal provides a consumer transition window, data export, and a tombstone and avoids an abrupt cutoff; and AI may assist triage but never silently suspends, removes, or censors a listing or review.

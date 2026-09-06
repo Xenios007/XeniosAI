@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.57.0] - ARCH-039-08 Updates, Support, Ratings, Disputes & Removal
+
+### Added
+- Executable update, support-obligation, review/rating, dispute, vulnerability-response, suspension, and removal safeguards.
+
+Status: Marketplace, Publishing & Monetization Architecture
+Version: 3.57.0
+
+---
+
 ## [3.56.0] - ARCH-039-07 Revenue Sharing, Settlement, Tax & Financial Interfaces
 
 ### Added
