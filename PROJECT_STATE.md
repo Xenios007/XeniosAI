@@ -14,7 +14,7 @@ Update this file after every successful implementation session.
 - Current implementation phase: `ARCH-036 Developer Environments & Sandboxes`
 - Current implementation state: `ARCH-036-08 Quotas, Capacity, Cost & Resource Governance` is implemented.
 - Latest successful implementation module: `ARCH-036-08 Quotas, Capacity, Cost & Resource Governance`
-- Latest successful commit: pending (`ARCH-036-08 Quotas, Capacity, Cost & Resource Governance`)
+- Latest successful commit: `09087b5` (`ARCH-036-08 Quotas, Capacity, Cost & Resource Governance`)
 - Latest push status: pushed to `main`
 - Build status: passing
 - Test status: passing
