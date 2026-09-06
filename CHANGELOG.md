@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.51.0] - ARCH-039-02 Marketplace Product Model, Catalog Listings & Discovery
+
+### Added
+- Executable product-type, listing-metadata, category-taxonomy, compatibility, search/ranking, localization, and visibility safeguards.
+
+Status: Marketplace, Publishing & Monetization Architecture
+Version: 3.51.0
+
+---
+
 ## [3.50.0] - ARCH-039-01 Marketplace, Publishing & Monetization Overview
 
 ### Added

@@ -361,7 +361,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-038-09 Lifecycle, Versioning, Distribution & Provider Exit`
 - Completed: `ARCH-038-10 Future Connector, Tool & MCP Evolution`
 - Completed: `ARCH-039-01 Marketplace, Publishing & Monetization Overview`
-- Next: `ARCH-039-02 Marketplace Product Model, Catalog Listings & Discovery`
+- Completed: `ARCH-039-02 Marketplace Product Model, Catalog Listings & Discovery`
+- Next: `ARCH-039-03 Publisher Onboarding, Identity, Trust & Agreements`
 
 ## Notes
 
