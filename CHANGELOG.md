@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.48.0] - ARCH-038-09 Lifecycle, Versioning, Distribution & Provider Exit
+
+### Added
+- Executable publication, compatibility, rollout, deprecation/revocation, migration/removal, portability, and provider-exit safeguards.
+
+Status: Connector, Tool & MCP Development Architecture
+Version: 3.48.0
+
+---
+
 ## [3.47.0] - ARCH-038-08 Observability, Reliability, Rate Limits & Operations
 
 ### Added

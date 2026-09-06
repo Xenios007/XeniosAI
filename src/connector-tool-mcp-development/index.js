@@ -22,3 +22,6 @@ export { TestingSimulationCertificationSecurityReviewDescriptor } from './review
 export * from './observability-reliability-rate-limits-operations-constants.js';
 export { ObservabilityReliabilityRateLimitsOperationsProfile } from './contracts/observability-reliability-rate-limits-operations-profile.js';
 export { ObservabilityReliabilityRateLimitsOperationsDescriptor } from './operations/observability-reliability-rate-limits-operations-descriptor.js';
+export * from './lifecycle-versioning-distribution-provider-exit-constants.js';
+export { LifecycleVersioningDistributionProviderExitProfile } from './contracts/lifecycle-versioning-distribution-provider-exit-profile.js';
+export { LifecycleVersioningDistributionProviderExitDescriptor } from './lifecycle/lifecycle-versioning-distribution-provider-exit-descriptor.js';

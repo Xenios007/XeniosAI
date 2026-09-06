@@ -58,6 +58,7 @@ Testing is treated as a first-class engineering discipline rather than an aftert
 
 The repository currently includes automated unit tests for:
 
+- `ARCH-038-09 Lifecycle, Versioning, Distribution & Provider Exit` in `tests/connector-tool-mcp-development/`
 - `ARCH-038-08 Observability, Reliability, Rate Limits & Operations` in `tests/connector-tool-mcp-development/`
 - `ARCH-038-07 Testing, Simulation, Certification & Security Review` in `tests/connector-tool-mcp-development/`
 - `ARCH-038-06 Hosting, Execution Isolation & Secret Management` in `tests/connector-tool-mcp-development/`

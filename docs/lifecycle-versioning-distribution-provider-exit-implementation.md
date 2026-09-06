@@ -1,0 +1,5 @@
+# ARCH-038-09 Lifecycle, Versioning, Distribution & Provider Exit
+
+Executable publication, compatibility, rollout, deprecation/revocation, migration/removal, portability, and provider-exit metadata for the Connector, Tool & MCP Development phase.
+
+Publication passes certification, security, compatibility, and ownership gates and produces a signed, immutable package. Every change is classified and a compatibility gate blocks unclassified breaking changes. Rollout is staged, health-gated, and always has a tested rollback. Deprecation carries reason, advance notice, and sunset dates; emergency revocation is immediate and propagated to installs, caches, and downstream grants. Removal provides a migration path, cleans up all state, revokes credentials, and leaves a discoverable tombstone. A connector is portable, replaceable, and free of proprietary lock-in; a provider exit returns or deletes state and never holds consumer data hostage; and AI assistance never silently publishes, deprecates, or revokes a connector version.
