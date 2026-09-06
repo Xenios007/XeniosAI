@@ -347,7 +347,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-037-05 Integration, Workflow & End-to-End Testing`
 - Completed: `ARCH-037-06 Security, Privacy & Tenant Isolation Testing`
 - Completed: `ARCH-037-07 AI, Agent, Knowledge & UI Testing`
-- Next: `ARCH-037-08 Performance, Resilience, Chaos & Recovery Testing`
+- Completed: `ARCH-037-08 Performance, Resilience, Chaos & Recovery Testing`
+- Next: `ARCH-037-09 Simulation, Certification & Architecture Conformance`
 
 ## Notes
 

@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.37.0] - ARCH-037-08 Performance, Resilience, Chaos & Recovery Testing
+
+### Added
+- Executable load-capacity, latency-budget, degradation, fault-injection, disaster-recovery, reconciliation, environment, recovery, observability, and assurance safeguards.
+
+Status: Testing, Simulation & Conformance Architecture
+Version: 3.37.0
+
+---
+
 ## [3.36.0] - ARCH-037-07 AI, Agent, Knowledge & UI Testing
 
 ### Added

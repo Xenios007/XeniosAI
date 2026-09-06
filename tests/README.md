@@ -58,6 +58,7 @@ Testing is treated as a first-class engineering discipline rather than an aftert
 
 The repository currently includes automated unit tests for:
 
+- `ARCH-037-08 Performance, Resilience, Chaos & Recovery Testing` in `tests/testing-simulation-conformance/`
 - `ARCH-037-07 AI, Agent, Knowledge & UI Testing` in `tests/testing-simulation-conformance/`
 - `ARCH-037-06 Security, Privacy & Tenant Isolation Testing` in `tests/testing-simulation-conformance/`
 - `ARCH-037-05 Integration, Workflow & End-to-End Testing` in `tests/testing-simulation-conformance/`

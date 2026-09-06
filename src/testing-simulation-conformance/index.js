@@ -19,3 +19,6 @@ export { SecurityPrivacyTenantIsolationTestingDescriptor } from './security/secu
 export * from './ai-agent-knowledge-ui-testing-constants.js';
 export { AiAgentKnowledgeUiTestingProfile } from './contracts/ai-agent-knowledge-ui-testing-profile.js';
 export { AiAgentKnowledgeUiTestingDescriptor } from './ai-ui/ai-agent-knowledge-ui-testing-descriptor.js';
+export * from './performance-resilience-chaos-recovery-testing-constants.js';
+export { PerformanceResilienceChaosRecoveryTestingProfile } from './contracts/performance-resilience-chaos-recovery-testing-profile.js';
+export { PerformanceResilienceChaosRecoveryTestingDescriptor } from './performance/performance-resilience-chaos-recovery-testing-descriptor.js';
