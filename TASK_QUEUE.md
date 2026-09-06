@@ -340,7 +340,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-036-08 Quotas, Capacity, Cost & Resource Governance`
 - Completed: `ARCH-036-09 Promotion Boundaries, Teardown & Recovery`
 - Completed: `ARCH-036-10 Environment Operations, Governance & Future Evolution`
-- Next: `ARCH-037-01 Testing, Simulation & Conformance Overview`
+- Completed: `ARCH-037-01 Testing, Simulation & Conformance Overview`
+- Next: `ARCH-037-02 Test Strategy, Risk Model & Quality Gates`
 
 ## Notes
 

@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.30.0] - ARCH-037-01 Testing, Simulation & Conformance Overview
+
+### Added
+- Executable quality-model, test-layer, evidence, risk-model, ownership, boundary, context-field, recovery, observability, and assurance safeguards for the testing capability.
+
+Status: Testing, Simulation & Conformance Architecture
+Version: 3.30.0
+
+---
+
 ## [3.29.0] - ARCH-036-10 Environment Operations, Governance & Future Evolution
 
 ### Added

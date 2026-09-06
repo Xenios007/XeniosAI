@@ -58,6 +58,7 @@ Testing is treated as a first-class engineering discipline rather than an aftert
 
 The repository currently includes automated unit tests for:
 
+- `ARCH-037-01 Testing, Simulation & Conformance Overview` in `tests/testing-simulation-conformance/`
 - `ARCH-036-10 Environment Operations, Governance & Future Evolution` in `tests/developer-environments-sandboxes/`
 - `ARCH-036-09 Promotion Boundaries, Teardown & Recovery` in `tests/developer-environments-sandboxes/`
 - `ARCH-036-08 Quotas, Capacity, Cost & Resource Governance` in `tests/developer-environments-sandboxes/`
