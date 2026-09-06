@@ -19,3 +19,6 @@ export { CrossOrganizationTrustIdentityAccessDelegationDescriptor } from './trus
 export * from './interoperability-portability-standards-provider-exit-constants.js';
 export { InteroperabilityPortabilityStandardsProviderExitProfile } from './contracts/interoperability-portability-standards-provider-exit-profile.js';
 export { InteroperabilityPortabilityStandardsProviderExitDescriptor } from './interoperability/interoperability-portability-standards-provider-exit-descriptor.js';
+export * from './ecosystem-collaboration-support-conflict-resilience-constants.js';
+export { EcosystemCollaborationSupportConflictResilienceProfile } from './contracts/ecosystem-collaboration-support-conflict-resilience-profile.js';
+export { EcosystemCollaborationSupportConflictResilienceDescriptor } from './collaboration/ecosystem-collaboration-support-conflict-resilience-descriptor.js';

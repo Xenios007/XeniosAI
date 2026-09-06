@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.67.0] - ARCH-040-08 Ecosystem Collaboration, Support, Conflict & Resilience
+
+### Added
+- Executable shared-operations, support-boundary, incident-coordination, dispute-resolution, vulnerability-disclosure, continuity, and resilience/recovery safeguards.
+
+Status: Partner, Community & Ecosystem Federation Architecture
+Version: 3.67.0
+
+---
+
 ## [3.66.0] - ARCH-040-07 Interoperability, Portability, Standards & Provider Exit
 
 ### Added

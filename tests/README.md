@@ -58,6 +58,7 @@ Testing is treated as a first-class engineering discipline rather than an aftert
 
 The repository currently includes automated unit tests for:
 
+- `ARCH-040-08 Ecosystem Collaboration, Support, Conflict & Resilience` in `tests/partner-community-ecosystem-federation/`
 - `ARCH-040-07 Interoperability, Portability, Standards & Provider Exit` in `tests/partner-community-ecosystem-federation/`
 - `ARCH-040-06 Cross-Organization Trust, Identity, Access & Delegation` in `tests/partner-community-ecosystem-federation/`
 - `ARCH-040-05 Federated Catalogs, Discovery & Metadata Exchange` in `tests/partner-community-ecosystem-federation/`
