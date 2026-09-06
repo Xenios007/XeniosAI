@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.65.0] - ARCH-040-06 Cross-Organization Trust, Identity, Access & Delegation
+
+### Added
+- Executable federated-identity, organization-claim, trust-agreement, delegation, least-privilege, revocation, and evidence/audit safeguards.
+
+Status: Partner, Community & Ecosystem Federation Architecture
+Version: 3.65.0
+
+---
+
 ## [3.64.0] - ARCH-040-05 Federated Catalogs, Discovery & Metadata Exchange
 
 ### Added

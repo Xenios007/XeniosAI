@@ -13,3 +13,6 @@ export { SolutionProviderCompetencyCertificationSupportDescriptor } from './prov
 export * from './federated-catalogs-discovery-metadata-exchange-constants.js';
 export { FederatedCatalogsDiscoveryMetadataExchangeProfile } from './contracts/federated-catalogs-discovery-metadata-exchange-profile.js';
 export { FederatedCatalogsDiscoveryMetadataExchangeDescriptor } from './federation/federated-catalogs-discovery-metadata-exchange-descriptor.js';
+export * from './cross-organization-trust-identity-access-delegation-constants.js';
+export { CrossOrganizationTrustIdentityAccessDelegationProfile } from './contracts/cross-organization-trust-identity-access-delegation-profile.js';
+export { CrossOrganizationTrustIdentityAccessDelegationDescriptor } from './trust/cross-organization-trust-identity-access-delegation-descriptor.js';
