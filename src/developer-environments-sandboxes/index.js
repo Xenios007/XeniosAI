@@ -25,3 +25,6 @@ export { QuotasCapacityCostResourceGovernanceDescriptor } from './governance/quo
 export * from './promotion-boundaries-teardown-recovery-constants.js';
 export { PromotionBoundariesTeardownRecoveryProfile } from './contracts/promotion-boundaries-teardown-recovery-profile.js';
 export { PromotionBoundariesTeardownRecoveryDescriptor } from './promotion/promotion-boundaries-teardown-recovery-descriptor.js';
+export * from './environment-operations-governance-future-evolution-constants.js';
+export { EnvironmentOperationsGovernanceFutureEvolutionProfile } from './contracts/environment-operations-governance-future-evolution-profile.js';
+export { EnvironmentOperationsGovernanceFutureEvolutionDescriptor } from './operations/environment-operations-governance-future-evolution-descriptor.js';

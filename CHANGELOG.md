@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.29.0] - ARCH-036-10 Environment Operations, Governance & Future Evolution
+
+### Added
+- Executable ownership, fleet-observability, incident, conformance, sustainability, federation, future-evolution, recovery, observability, and assurance safeguards, completing the ARCH-036 Developer Environments & Sandboxes phase.
+
+Status: Developer Environments & Sandboxes Architecture
+Version: 3.29.0
+
+---
+
 ## [3.28.0] - ARCH-036-09 Promotion Boundaries, Teardown & Recovery
 
 ### Added

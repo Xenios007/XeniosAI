@@ -1,0 +1,5 @@
+# ARCH-036-10 Environment Operations, Governance & Future Evolution
+
+Executable ownership, fleet-observability, incident, conformance, sustainability, federation, future-evolution, recovery, observability, and assurance metadata for the Developer Environments & Sandboxes phase.
+
+An accountable owner and governing body set standards, review cadence, and escalation. Fleet observability covers inventory, utilization, health, and isolation without source code or secrets; sandbox incidents are classified, contained, communicated, recovered, and followed by a blameless postmortem; a conformance gate guards new environment classes and templates with recorded evidence; idle reclamation, rightsizing, and scheduling reduce footprint with evidence-backed claims; federated pools are scope-limited, policy-driven, and labelled non-authoritative; and AI-assisted operations remain proposal-only, explainable, bounded, and opt-in. This module completes the ARCH-036 Developer Environments & Sandboxes phase.
