@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.17.0] - ARCH-035-08 IDE Integration, Navigation, Validation & Feedback
+
+### Added
+- Executable editor-integration, language-service, registry-navigation, inline-validation, diagnostic, task-integration, secure-action, recovery, observability, and assurance safeguards.
+
+Status: CLI, IDE & Local Tooling Architecture
+Version: 3.17.0
+
+---
+
 ## [3.16.0] - ARCH-035-07 Debugging, Diagnostics, Tracing & Support Bundles
 
 ### Added

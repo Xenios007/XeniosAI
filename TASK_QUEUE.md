@@ -327,7 +327,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-035-05 Contract, Schema, Client & Server Generation`
 - Completed: `ARCH-035-06 Local Emulation, Service Virtualization & Data`
 - Completed: `ARCH-035-07 Debugging, Diagnostics, Tracing & Support Bundles`
-- Next: `ARCH-035-08 IDE Integration, Navigation, Validation & Feedback`
+- Completed: `ARCH-035-08 IDE Integration, Navigation, Validation & Feedback`
+- Next: `ARCH-035-09 Tool Updates, Plugins, Automation & Compatibility`
 
 ## Notes
 

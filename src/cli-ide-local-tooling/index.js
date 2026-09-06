@@ -19,3 +19,6 @@ export { LocalEmulationServiceVirtualizationDataDescriptor } from './emulation/l
 export * from './debugging-diagnostics-tracing-support-bundles-constants.js';
 export { DebuggingDiagnosticsTracingSupportBundlesProfile } from './contracts/debugging-diagnostics-tracing-support-bundles-profile.js';
 export { DebuggingDiagnosticsTracingSupportBundlesDescriptor } from './diagnostics/debugging-diagnostics-tracing-support-bundles-descriptor.js';
+export * from './ide-integration-navigation-validation-feedback-constants.js';
+export { IdeIntegrationNavigationValidationFeedbackProfile } from './contracts/ide-integration-navigation-validation-feedback-profile.js';
+export { IdeIntegrationNavigationValidationFeedbackDescriptor } from './ide/ide-integration-navigation-validation-feedback-descriptor.js';
