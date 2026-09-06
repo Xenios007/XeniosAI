@@ -25,3 +25,6 @@ export { PerformanceResilienceChaosRecoveryTestingDescriptor } from './performan
 export * from './simulation-certification-architecture-conformance-constants.js';
 export { SimulationCertificationArchitectureConformanceProfile } from './contracts/simulation-certification-architecture-conformance-profile.js';
 export { SimulationCertificationArchitectureConformanceDescriptor } from './certification/simulation-certification-architecture-conformance-descriptor.js';
+export * from './quality-operations-governance-future-evolution-constants.js';
+export { QualityOperationsGovernanceFutureEvolutionProfile } from './contracts/quality-operations-governance-future-evolution-profile.js';
+export { QualityOperationsGovernanceFutureEvolutionDescriptor } from './operations/quality-operations-governance-future-evolution-descriptor.js';

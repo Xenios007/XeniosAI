@@ -1,0 +1,5 @@
+# ARCH-037-10 Quality Operations, Governance & Future Evolution
+
+Executable test-platform-operations, flaky-test-control, quality-analytics, evidence-retention, federated-quality, future-evolution, ownership-governance, recovery, observability, and assurance metadata for the Testing, Simulation & Conformance phase.
+
+The test platform is operated with capacity, fair scheduling, isolation, and cost attribution. Flaky tests are detected, quarantined with an owner and deadline, and still report without blocking. Quality analytics are computed and retained without source code, secrets, or customer data; test and certification evidence retention is classification-based, bounded, and honours legal holds. Federated quality suites and data are scope-limited, trust-verified, and labelled non-authoritative; an accountable governing body owns standards, review cadence, and escalation; and AI-assisted test generation is proposal-only, explainable, bounded, and human-reviewed. This module completes the ARCH-037 Testing, Simulation & Conformance phase.

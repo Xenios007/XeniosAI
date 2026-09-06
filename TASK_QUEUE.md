@@ -349,7 +349,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-037-07 AI, Agent, Knowledge & UI Testing`
 - Completed: `ARCH-037-08 Performance, Resilience, Chaos & Recovery Testing`
 - Completed: `ARCH-037-09 Simulation, Certification & Architecture Conformance`
-- Next: `ARCH-037-10 Quality Operations, Governance & Future Evolution`
+- Completed: `ARCH-037-10 Quality Operations, Governance & Future Evolution`
+- Next: `ARCH-038-01 Connector, Tool & MCP Development Overview`
 
 ## Notes
 
