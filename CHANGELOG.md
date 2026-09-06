@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.55.0] - ARCH-039-06 Licensing, Pricing, Subscriptions & Metering
+
+### Added
+- Executable license-model, offer/plan, trial, subscription, usage-metering, entitlement-reference, and pricing-change safeguards.
+
+Status: Marketplace, Publishing & Monetization Architecture
+Version: 3.55.0
+
+---
+
 ## [3.54.0] - ARCH-039-05 Packaging, Signing, Distribution & Installation Handoff
 
 ### Added

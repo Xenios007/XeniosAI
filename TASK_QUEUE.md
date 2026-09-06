@@ -365,7 +365,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-039-03 Publisher Onboarding, Identity, Trust & Agreements`
 - Completed: `ARCH-039-04 Submission, Validation, Review & Certification`
 - Completed: `ARCH-039-05 Packaging, Signing, Distribution & Installation Handoff`
-- Next: `ARCH-039-06 Licensing, Pricing, Subscriptions & Metering`
+- Completed: `ARCH-039-06 Licensing, Pricing, Subscriptions & Metering`
+- Next: `ARCH-039-07 Revenue Sharing, Settlement, Tax & Financial Interfaces`
 
 ## Notes
 

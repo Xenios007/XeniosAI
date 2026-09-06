@@ -13,3 +13,6 @@ export { SubmissionValidationReviewCertificationDescriptor } from './submission/
 export * from './packaging-signing-distribution-installation-handoff-constants.js';
 export { PackagingSigningDistributionInstallationHandoffProfile } from './contracts/packaging-signing-distribution-installation-handoff-profile.js';
 export { PackagingSigningDistributionInstallationHandoffDescriptor } from './distribution/packaging-signing-distribution-installation-handoff-descriptor.js';
+export * from './licensing-pricing-subscriptions-metering-constants.js';
+export { LicensingPricingSubscriptionsMeteringProfile } from './contracts/licensing-pricing-subscriptions-metering-profile.js';
+export { LicensingPricingSubscriptionsMeteringDescriptor } from './licensing/licensing-pricing-subscriptions-metering-descriptor.js';
