@@ -7,3 +7,6 @@ export { EnvironmentTypesLifecycleOwnershipDescriptor } from './lifecycle/enviro
 export * from './isolation-identity-network-secret-boundaries-constants.js';
 export { IsolationIdentityNetworkSecretBoundariesProfile } from './contracts/isolation-identity-network-secret-boundaries-profile.js';
 export { IsolationIdentityNetworkSecretBoundariesDescriptor } from './isolation/isolation-identity-network-secret-boundaries-descriptor.js';
+export * from './synthetic-test-data-privacy-reset-constants.js';
+export { SyntheticTestDataPrivacyResetProfile } from './contracts/synthetic-test-data-privacy-reset-profile.js';
+export { SyntheticTestDataPrivacyResetDescriptor } from './data/synthetic-test-data-privacy-reset-descriptor.js';

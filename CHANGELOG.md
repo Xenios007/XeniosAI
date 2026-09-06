@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.23.0] - ARCH-036-04 Synthetic Test Data, Privacy & Reset
+
+### Added
+- Executable data-generation, classification, masking-restriction, seed-version, reset, retention, deletion, recovery, observability, and assurance safeguards.
+
+Status: Developer Environments & Sandboxes Architecture
+Version: 3.23.0
+
+---
+
 ## [3.22.0] - ARCH-036-03 Isolation, Identity, Network & Secret Boundaries
 
 ### Added

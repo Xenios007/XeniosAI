@@ -58,6 +58,7 @@ Testing is treated as a first-class engineering discipline rather than an aftert
 
 The repository currently includes automated unit tests for:
 
+- `ARCH-036-04 Synthetic Test Data, Privacy & Reset` in `tests/developer-environments-sandboxes/`
 - `ARCH-036-03 Isolation, Identity, Network & Secret Boundaries` in `tests/developer-environments-sandboxes/`
 - `ARCH-036-02 Environment Types, Lifecycle & Ownership` in `tests/developer-environments-sandboxes/`
 - `ARCH-036-01 Developer Environments & Sandboxes Overview` in `tests/developer-environments-sandboxes/`
