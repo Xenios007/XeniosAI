@@ -1,0 +1,5 @@
+# ARCH-039-04 Submission, Validation, Review & Certification
+
+Executable submission-package, automated-check, security/privacy-review, functional-review, certification-decision, exception, and review-evidence metadata for the Marketplace, Publishing & Monetization phase.
+
+A submission is a signed, complete bundle and is rejected if required elements are missing. Automated policy, security, contract, and packaging checks run and block before human review. An independent security and privacy review covering threat model, permissions, secrets, and isolation is completed; a functional review verifies capabilities and listing accuracy in a sandbox on synthetic data. Certification is a recorded, evidence-backed decision by an independent, accountable reviewer — never self-asserted and never bypassed or expedited for a fee. Exceptions are scoped, justified, compensated, approved, and time-bounded; a product with an unresolved critical finding is never certified or listed; deceptive submissions are never approved; and AI may assist review triage but never silently certifies, approves, or waives a finding.

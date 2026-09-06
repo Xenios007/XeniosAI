@@ -363,7 +363,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-039-01 Marketplace, Publishing & Monetization Overview`
 - Completed: `ARCH-039-02 Marketplace Product Model, Catalog Listings & Discovery`
 - Completed: `ARCH-039-03 Publisher Onboarding, Identity, Trust & Agreements`
-- Next: `ARCH-039-04 Submission, Validation, Review & Certification`
+- Completed: `ARCH-039-04 Submission, Validation, Review & Certification`
+- Next: `ARCH-039-05 Packaging, Signing, Distribution & Installation Handoff`
 
 ## Notes
 

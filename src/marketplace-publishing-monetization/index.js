@@ -7,3 +7,6 @@ export { MarketplaceProductModelCatalogListingsDiscoveryDescriptor } from './cat
 export * from './publisher-onboarding-identity-trust-agreements-constants.js';
 export { PublisherOnboardingIdentityTrustAgreementsProfile } from './contracts/publisher-onboarding-identity-trust-agreements-profile.js';
 export { PublisherOnboardingIdentityTrustAgreementsDescriptor } from './publisher/publisher-onboarding-identity-trust-agreements-descriptor.js';
+export * from './submission-validation-review-certification-constants.js';
+export { SubmissionValidationReviewCertificationProfile } from './contracts/submission-validation-review-certification-profile.js';
+export { SubmissionValidationReviewCertificationDescriptor } from './submission/submission-validation-review-certification-descriptor.js';
