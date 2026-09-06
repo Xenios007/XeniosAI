@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.32.0] - ARCH-037-03 Unit, Component & Architecture Testing
+
+### Added
+- Executable deterministic-unit, component-boundary, static-rule, dependency-constraint, fast-feedback, architecture-test, hermetic-isolation, recovery, observability, and assurance safeguards.
+
+Status: Testing, Simulation & Conformance Architecture
+Version: 3.32.0
+
+---
+
 ## [3.31.0] - ARCH-037-02 Test Strategy, Risk Model & Quality Gates
 
 ### Added
