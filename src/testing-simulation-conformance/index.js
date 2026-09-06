@@ -13,3 +13,6 @@ export { ContractSchemaCompatibilityTestingDescriptor } from './contract/contrac
 export * from './integration-workflow-end-to-end-testing-constants.js';
 export { IntegrationWorkflowEndToEndTestingProfile } from './contracts/integration-workflow-end-to-end-testing-profile.js';
 export { IntegrationWorkflowEndToEndTestingDescriptor } from './integration/integration-workflow-end-to-end-testing-descriptor.js';
+export * from './security-privacy-tenant-isolation-testing-constants.js';
+export { SecurityPrivacyTenantIsolationTestingProfile } from './contracts/security-privacy-tenant-isolation-testing-profile.js';
+export { SecurityPrivacyTenantIsolationTestingDescriptor } from './security/security-privacy-tenant-isolation-testing-descriptor.js';

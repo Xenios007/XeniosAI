@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.35.0] - ARCH-037-06 Security, Privacy & Tenant Isolation Testing
+
+### Added
+- Executable identity/authorization, abuse, secrets, data-protection, consent, deletion, tenant-isolation, recovery, observability, and assurance safeguards.
+
+Status: Testing, Simulation & Conformance Architecture
+Version: 3.35.0
+
+---
+
 ## [3.34.0] - ARCH-037-05 Integration, Workflow & End-to-End Testing
 
 ### Added
