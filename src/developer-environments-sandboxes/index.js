@@ -16,3 +16,6 @@ export { ServiceVirtualizationMocksDependencyProfilesDescriptor } from './virtua
 export * from './ephemeral-preview-environments-collaboration-constants.js';
 export { EphemeralPreviewEnvironmentsCollaborationProfile } from './contracts/ephemeral-preview-environments-collaboration-profile.js';
 export { EphemeralPreviewEnvironmentsCollaborationDescriptor } from './preview/ephemeral-preview-environments-collaboration-descriptor.js';
+export * from './shared-partner-tenant-training-sandboxes-constants.js';
+export { SharedPartnerTenantTrainingSandboxesProfile } from './contracts/shared-partner-tenant-training-sandboxes-profile.js';
+export { SharedPartnerTenantTrainingSandboxesDescriptor } from './shared/shared-partner-tenant-training-sandboxes-descriptor.js';

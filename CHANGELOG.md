@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.26.0] - ARCH-036-07 Shared, Partner, Tenant & Training Sandboxes
+
+### Added
+- Executable multi-user-sandbox, partner-integration, tenant-evaluation, demonstration, training, access-governance, data-scope, recovery, observability, and assurance safeguards.
+
+Status: Developer Environments & Sandboxes Architecture
+Version: 3.26.0
+
+---
+
 ## [3.25.0] - ARCH-036-06 Ephemeral Preview Environments & Collaboration
 
 ### Added

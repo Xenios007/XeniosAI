@@ -58,6 +58,7 @@ Testing is treated as a first-class engineering discipline rather than an aftert
 
 The repository currently includes automated unit tests for:
 
+- `ARCH-036-07 Shared, Partner, Tenant & Training Sandboxes` in `tests/developer-environments-sandboxes/`
 - `ARCH-036-06 Ephemeral Preview Environments & Collaboration` in `tests/developer-environments-sandboxes/`
 - `ARCH-036-05 Service Virtualization, Mocks & Dependency Profiles` in `tests/developer-environments-sandboxes/`
 - `ARCH-036-04 Synthetic Test Data, Privacy & Reset` in `tests/developer-environments-sandboxes/`

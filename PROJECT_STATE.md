@@ -12,9 +12,9 @@ Update this file after every successful implementation session.
 - Implementation guide: `IMPLEMENTATION_GUIDE.md`
 - Task queue: `TASK_QUEUE.md`
 - Current implementation phase: `ARCH-036 Developer Environments & Sandboxes`
-- Current implementation state: `ARCH-036-06 Ephemeral Preview Environments & Collaboration` is implemented.
-- Latest successful implementation module: `ARCH-036-06 Ephemeral Preview Environments & Collaboration`
-- Latest successful commit: `edf1052` (`ARCH-036-06 Ephemeral Preview Environments & Collaboration`)
+- Current implementation state: `ARCH-036-07 Shared, Partner, Tenant & Training Sandboxes` is implemented.
+- Latest successful implementation module: `ARCH-036-07 Shared, Partner, Tenant & Training Sandboxes`
+- Latest successful commit: pending (`ARCH-036-07 Shared, Partner, Tenant & Training Sandboxes`)
 - Latest push status: pushed to `main`
 - Build status: passing
 - Test status: passing
@@ -205,19 +205,20 @@ Update this file after every successful implementation session.
 - Completed: `ARCH-036-04 Synthetic Test Data, Privacy & Reset`
 - Completed: `ARCH-036-05 Service Virtualization, Mocks & Dependency Profiles`
 - Completed: `ARCH-036-06 Ephemeral Preview Environments & Collaboration`
+- Completed: `ARCH-036-07 Shared, Partner, Tenant & Training Sandboxes`
 
 ## Implementation Coverage
 
-- Completed through: `ARCH-036-06 Ephemeral Preview Environments & Collaboration`
-- Next documented implementation module: `ARCH-036-07 Shared, Partner, Tenant & Training Sandboxes`
-- Reason: `architecture/036-developer-environments-sandboxes/07-shared-partner-tenant-and-training-sandboxes.md` is the next architecture document in order.
+- Completed through: `ARCH-036-07 Shared, Partner, Tenant & Training Sandboxes`
+- Next documented implementation module: `ARCH-036-08 Quotas, Capacity, Cost & Resource Governance`
+- Reason: `architecture/036-developer-environments-sandboxes/08-quotas-capacity-cost-and-resource-governance.md` is the next architecture document in order.
 
 ## Latest Verification
 
-- Focused test: `node --test tests/developer-environments-sandboxes/ephemeral-preview-environments-collaboration.test.js`
+- Focused test: `node --test tests/developer-environments-sandboxes/shared-partner-tenant-training-sandboxes.test.js`
 - Focused test result: passed, 3/3
 - Full test: `npm test`
-- Full test result: passed, 1760/1760
+- Full test result: passed, 1763/1763
 - Build command: `npm run build`
 - Build result: passed
 
@@ -239,4 +240,4 @@ Architecture documents must not be changed during implementation unless explicit
 
 ## Recommended Next Action
 
-Recommended next architecture module: `ARCH-036-07 Shared, Partner, Tenant & Training Sandboxes`.
+Recommended next architecture module: `ARCH-036-08 Quotas, Capacity, Cost & Resource Governance`.
