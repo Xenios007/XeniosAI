@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.49.0] - ARCH-038-10 Future Connector, Tool & MCP Evolution
+
+### Added
+- Executable evolution-direction, semantic-discovery, portable-capability, federated-trust, agent-native-interop, recovery, observability, and assurance safeguards, completing the ARCH-038 Connector, Tool & MCP Development phase.
+
+Status: Connector, Tool & MCP Development Architecture
+Version: 3.49.0
+
+---
+
 ## [3.48.0] - ARCH-038-09 Lifecycle, Versioning, Distribution & Provider Exit
 
 ### Added

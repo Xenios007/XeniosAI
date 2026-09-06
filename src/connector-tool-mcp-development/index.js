@@ -25,3 +25,6 @@ export { ObservabilityReliabilityRateLimitsOperationsDescriptor } from './operat
 export * from './lifecycle-versioning-distribution-provider-exit-constants.js';
 export { LifecycleVersioningDistributionProviderExitProfile } from './contracts/lifecycle-versioning-distribution-provider-exit-profile.js';
 export { LifecycleVersioningDistributionProviderExitDescriptor } from './lifecycle/lifecycle-versioning-distribution-provider-exit-descriptor.js';
+export * from './future-connector-tool-mcp-evolution-constants.js';
+export { FutureConnectorToolMcpEvolutionProfile } from './contracts/future-connector-tool-mcp-evolution-profile.js';
+export { FutureConnectorToolMcpEvolutionDescriptor } from './future/future-connector-tool-mcp-evolution-descriptor.js';

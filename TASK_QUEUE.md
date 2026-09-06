@@ -359,7 +359,8 @@ It exists to complement the architecture and implementation guide without replac
 - Completed: `ARCH-038-07 Testing, Simulation, Certification & Security Review`
 - Completed: `ARCH-038-08 Observability, Reliability, Rate Limits & Operations`
 - Completed: `ARCH-038-09 Lifecycle, Versioning, Distribution & Provider Exit`
-- Next: `ARCH-038-10 Future Connector, Tool & MCP Evolution`
+- Completed: `ARCH-038-10 Future Connector, Tool & MCP Evolution`
+- Next: `ARCH-039-01 Marketplace, Publishing & Monetization Overview`
 
 ## Notes
 
