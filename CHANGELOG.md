@@ -6,6 +6,16 @@ The project follows the principle that architecture, documentation, and engineer
 
 ---
 
+## [3.68.0] - ARCH-040-09 Ecosystem Operations, Governance, Metrics & Assurance
+
+### Added
+- Executable council-governance, ownership/decision-rights, ecosystem-health-metric, fairness, risk-management, evidence/audit, and continuous-improvement safeguards.
+
+Status: Partner, Community & Ecosystem Federation Architecture
+Version: 3.68.0
+
+---
+
 ## [3.67.0] - ARCH-040-08 Ecosystem Collaboration, Support, Conflict & Resilience
 
 ### Added

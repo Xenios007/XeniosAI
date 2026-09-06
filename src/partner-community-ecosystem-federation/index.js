@@ -22,3 +22,6 @@ export { InteroperabilityPortabilityStandardsProviderExitDescriptor } from './in
 export * from './ecosystem-collaboration-support-conflict-resilience-constants.js';
 export { EcosystemCollaborationSupportConflictResilienceProfile } from './contracts/ecosystem-collaboration-support-conflict-resilience-profile.js';
 export { EcosystemCollaborationSupportConflictResilienceDescriptor } from './collaboration/ecosystem-collaboration-support-conflict-resilience-descriptor.js';
+export * from './ecosystem-operations-governance-metrics-assurance-constants.js';
+export { EcosystemOperationsGovernanceMetricsAssuranceProfile } from './contracts/ecosystem-operations-governance-metrics-assurance-profile.js';
+export { EcosystemOperationsGovernanceMetricsAssuranceDescriptor } from './operations/ecosystem-operations-governance-metrics-assurance-descriptor.js';
