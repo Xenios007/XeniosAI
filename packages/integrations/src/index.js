@@ -7,23 +7,30 @@ const indirect = 'via-platform';
 const META_GRAPH_VERSION = process.env.META_GRAPH_VERSION || 'v26.0';
 
 export const CHANNEL_CATALOG = Object.freeze([
-  channel('webchat', 'XeniosAI Web Chat', 'Owned', direct, 'Native website widget / API chat.', [], []),
+  channel('webchat', 'XeniosAI Web Chat', 'Owned', direct, 'Native website widget / API chat.', [], [], false, true),
   channel('email', 'Email', 'Owned', direct, 'SMTP/IMAP or provider API integration.', ['smtpHost', 'smtpPort', 'username'], ['password']),
   channel('sms', 'SMS / MMS', 'Owned', direct, 'Connect through Twilio or another SMS provider.', ['accountSid', 'fromNumber'], ['authToken']),
-  channel('facebook-messenger', 'Facebook Page Messenger', 'Meta', review, 'Messenger Platform for Facebook Pages.', ['pageId'], ['pageAccessToken', 'appSecret', 'verifyToken'], true),
-  channel('instagram', 'Instagram Messaging', 'Meta', review, 'Messaging for eligible Instagram professional accounts.', ['instagramAccountId'], ['accessToken', 'appSecret', 'verifyToken']),
-  channel('whatsapp', 'WhatsApp Business', 'Meta', review, 'WhatsApp Cloud API.', ['phoneNumberId'], ['accessToken', 'appSecret', 'verifyToken'], true),
-  channel('telegram', 'Telegram', 'Social', direct, 'Telegram Bot API.', [], ['botToken', 'webhookSecret'], true),
-  channel('line', 'LINE', 'Social', direct, 'LINE Official Account Messaging API.', [], ['channelAccessToken', 'channelSecret'], true),
+  channel('rcs-business', 'RCS for Business', 'Owned', partner, 'Verified branded RCS conversations on supported phones; XeniosAI must become an RCS for Business partner.', ['agentId', 'region'], ['serviceAccountJson']),
+  channel('facebook-messenger', 'Facebook Page Messenger', 'Meta', review, 'Messenger Platform for Facebook Pages.', ['pageId'], ['pageAccessToken', 'appSecret', 'verifyToken'], true, true),
+  channel('instagram', 'Instagram Messaging', 'Meta', review, 'Messaging for eligible Instagram professional accounts.', ['instagramAccountId'], ['accessToken', 'appSecret', 'verifyToken'], false, true),
+  channel('whatsapp', 'WhatsApp Business', 'Meta', review, 'WhatsApp Cloud API.', ['phoneNumberId'], ['accessToken', 'appSecret', 'verifyToken'], true, true),
+  channel('telegram', 'Telegram', 'Social', direct, 'Telegram Bot API.', [], ['botToken', 'webhookSecret'], true, true),
+  channel('line', 'LINE', 'Social', direct, 'LINE Official Account Messaging API.', [], ['channelAccessToken', 'channelSecret'], true, true),
   channel('wechat-official', 'WeChat Official Account', 'Social', review, 'WeChat Official Account customer-service messaging.', ['appId', 'token'], ['appSecret', 'encodingAesKey']),
   channel('wecom', 'WeCom / Enterprise WeChat', 'Social', review, 'Enterprise WeChat customer/contact messaging.', ['corpId', 'agentId', 'token'], ['secret', 'encodingAesKey']),
   channel('x-dm', 'X Direct Messages', 'Social', direct, 'X API v2 Direct Messages with user OAuth.', [], ['userAccessToken'], true),
   channel('viber', 'Rakuten Viber', 'Social', review, 'Viber bot / Business Messages; new bots are commercial.', [], ['authToken'], true),
   channel('kakao-cs', 'KakaoTalk CS / Channel', 'Social', review, 'Kakao Business customer-support channel integration.', ['channelId'], ['accessToken']),
+  channel('twitch', 'Twitch Chat', 'Community', direct, 'Twitch chatbot using EventSub and Twitch API chat endpoints.', ['broadcasterId', 'botUserId', 'clientId'], ['accessToken', 'clientSecret']),
   channel('discord', 'Discord', 'Community', direct, 'Discord bot using Gateway/HTTP APIs.', ['applicationId'], ['botToken'], true),
-  channel('slack', 'Slack', 'Workplace', direct, 'Slack app / bot messaging.', [], ['botToken', 'signingSecret'], true),
+  channel('matrix', 'Matrix', 'Community', direct, 'Matrix Client-Server/Application Service APIs for federated messaging and bots.', ['homeserverUrl', 'userId'], ['accessToken']),
+  channel('slack', 'Slack', 'Workplace', direct, 'Slack app / bot messaging.', [], ['botToken', 'signingSecret'], true, true),
   channel('microsoft-teams', 'Microsoft Teams', 'Workplace', review, 'Teams bot / Microsoft Bot Framework.', ['appId'], ['appPassword']),
   channel('google-chat', 'Google Chat', 'Workplace', review, 'Google Chat app integration.', ['projectId'], ['serviceAccountJson']),
+  channel('zoom-chat', 'Zoom Team Chat', 'Workplace', review, 'Zoom Marketplace chatbot using Chatbot APIs and webhooks.', ['botJid', 'accountId', 'clientId'], ['clientSecret', 'webhookSecret']),
+  channel('mattermost', 'Mattermost', 'Workplace', direct, 'Mattermost bot account using REST/WebSocket APIs.', ['serverUrl'], ['botToken']),
+  channel('rocket-chat', 'Rocket.Chat', 'Workplace', direct, 'Rocket.Chat REST/Realtime API bot integration.', ['serverUrl', 'userId'], ['authToken']),
+  channel('zulip', 'Zulip', 'Workplace', direct, 'Zulip bot API for direct and channel messages.', ['serverUrl', 'botEmail'], ['apiKey']),
   channel('apple-messages', 'Apple Messages for Business', 'Business Messaging', partner, 'Requires Apple Messages for Business enrollment and an approved messaging service provider.', ['brandId'], ['providerCredentials']),
   channel('airbnb', 'Airbnb Guest Messaging', 'Travel', partner, 'Requires Airbnb API/software-program access and approved scopes. Not a self-serve host API token.', ['partnerAccountId'], ['partnerCredentials']),
   channel('booking-com', 'Booking.com Guest Messaging', 'Travel', partner, 'Booking.com Connectivity Partner with MESSAGING connection type.', ['machineAccountId'], ['apiToken']),
@@ -34,11 +41,11 @@ export const CHANNEL_CATALOG = Object.freeze([
   channel('freshchat', 'Freshchat', 'Support', indirect, 'Freshchat conversation APIs and bot integrations.', ['accountUrl'], ['apiToken']),
   channel('salesforce', 'Salesforce Digital Engagement', 'Support', indirect, 'Salesforce enhanced messaging channels.', ['instanceUrl'], ['accessToken']),
   channel('twilio-conversations', 'Twilio Conversations', 'Aggregator', indirect, 'Cross-channel conversations including chat, SMS and WhatsApp.', ['accountSid', 'serviceSid'], ['authToken']),
-  channel('custom-webhook', 'Custom Webhook / API', 'Developer', direct, 'Bring any channel through an inbound/outbound webhook contract.', ['outboundUrl'], ['webhookSecret'], true)
+  channel('custom-webhook', 'Custom Webhook / API', 'Developer', direct, 'Bring any channel through an inbound/outbound webhook contract.', ['outboundUrl'], ['webhookSecret'], true, true)
 ]);
 
-function channel(id, name, group, access, description, settingsFields, credentialFields, sendImplemented = false) {
-  return Object.freeze({ id, name, group, access, description, settingsFields, credentialFields, sendImplemented, inbound: true, outbound: true });
+function channel(id, name, group, access, description, settingsFields, credentialFields, sendImplemented = false, inboundImplemented = false) {
+  return Object.freeze({ id, name, group, access, description, settingsFields, credentialFields, sendImplemented, inboundImplemented, outboundImplemented: sendImplemented, inbound: true, outbound: true });
 }
 
 export function getChannel(id) {
