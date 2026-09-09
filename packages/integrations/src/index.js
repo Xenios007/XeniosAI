@@ -111,27 +111,32 @@ export function parseInbound(channelId, payload) {
 
 export function verifyInboundRequest(channelId, { rawBody, headers = {}, credentials = {} }) {
   const body = Buffer.isBuffer(rawBody) ? rawBody : Buffer.from(rawBody || '');
-  if (['facebook-messenger', 'instagram', 'whatsapp'].includes(channelId) && credentials.appSecret) {
+  if (['facebook-messenger', 'instagram', 'whatsapp'].includes(channelId)) {
+    if (!credentials.appSecret) return false;
     const received = header(headers, 'x-hub-signature-256');
     const expected = `sha256=${crypto.createHmac('sha256', credentials.appSecret).update(body).digest('hex')}`;
     return secureEqual(received, expected);
   }
-  if (channelId === 'line' && credentials.channelSecret) {
+  if (channelId === 'line') {
+    if (!credentials.channelSecret) return false;
     const received = header(headers, 'x-line-signature');
     const expected = crypto.createHmac('sha256', credentials.channelSecret).update(body).digest('base64');
     return secureEqual(received, expected);
   }
-  if (channelId === 'slack' && credentials.signingSecret) {
+  if (channelId === 'slack') {
+    if (!credentials.signingSecret) return false;
     const timestamp = header(headers, 'x-slack-request-timestamp');
     const received = header(headers, 'x-slack-signature');
     if (!timestamp || Math.abs(Date.now() / 1000 - Number(timestamp)) > 300) return false;
     const expected = `v0=${crypto.createHmac('sha256', credentials.signingSecret).update(`v0:${timestamp}:${body.toString('utf8')}`).digest('hex')}`;
     return secureEqual(received, expected);
   }
-  if (channelId === 'telegram' && credentials.webhookSecret) {
+  if (channelId === 'telegram') {
+    if (!credentials.webhookSecret) return false;
     return secureEqual(header(headers, 'x-telegram-bot-api-secret-token'), credentials.webhookSecret);
   }
-  if (channelId === 'custom-webhook' && credentials.webhookSecret) {
+  if (channelId === 'custom-webhook') {
+    if (!credentials.webhookSecret) return false;
     return secureEqual(header(headers, 'x-xenios-webhook-secret'), credentials.webhookSecret);
   }
   return true;
@@ -146,7 +151,7 @@ export async function testConnection(channelId, connection, credentials) {
     case 'facebook-messenger': return checkedJson(`https://graph.facebook.com/${META_GRAPH_VERSION}/${encodeURIComponent(connection.settings.pageId)}?fields=id,name&access_token=${encodeURIComponent(credentials.pageAccessToken)}`);
     case 'whatsapp': return checkedJson(`https://graph.facebook.com/${META_GRAPH_VERSION}/${encodeURIComponent(connection.settings.phoneNumberId)}`, { headers: { Authorization: `Bearer ${credentials.accessToken}` } });
     case 'viber': return checkedJson('https://chatapi.viber.com/pa/get_account_info', { method: 'POST', headers: { 'X-Viber-Auth-Token': credentials.authToken } });
-    case 'custom-webhook': return { ok: Boolean(connection.settings.outboundUrl), detail: 'Custom webhook configured.' };
+    case 'custom-webhook': return { ok: Boolean(connection.settings.outboundUrl && credentials.webhookSecret), detail: 'Custom webhook configured.' };
     default: return { ok: true, detail: 'Connection saved. This channel requires provider/app approval or a specialized adapter before live traffic.' };
   }
 }
