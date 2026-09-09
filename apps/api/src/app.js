@@ -9,7 +9,7 @@ import { hashPassword, verifyPassword } from '@xeniosai/auth';
 import { buildKnowledgeContext } from '@xeniosai/knowledge';
 import { AIService, providerCatalog } from '@xeniosai/ai';
 import { BillingService } from '@xeniosai/billing';
-import { CHANNEL_CATALOG, createCredentialVault, getChannel, parseInbound, publicConnection, sendChannelMessage, testConnection } from '@xeniosai/integrations';
+import { CHANNEL_CATALOG, createCredentialVault, getChannel, parseInbound, publicConnection, sendChannelMessage, testConnection, verifyInboundRequest } from '@xeniosai/integrations';
 import { JsonStore } from './store.js';
 
 const COOKIE = 'xenios_session';
@@ -31,7 +31,7 @@ export async function createApp(config = process.env) {
     currency: config.BILLING_CURRENCY || 'php'
   });
 
-  // Stripe requires the raw body for payment-signature verification.
+  // Stripe requires the unparsed body for payment-signature verification.
   app.post('/api/billing/webhook', express.raw({ type: 'application/json' }), async (req, res) => {
     try {
       const change = await billing.parseWebhook({ rawBody: req.body, signature: req.headers['stripe-signature'] });
@@ -42,7 +42,10 @@ export async function createApp(config = process.env) {
 
   app.use(cors({ origin: config.CORS_ORIGIN || appUrl, credentials: true }));
   app.use(cookieParser());
-  app.use(express.json({ limit: '2mb' }));
+  app.use(express.json({
+    limit: '2mb',
+    verify(req, _res, buffer) { req.rawBody = Buffer.from(buffer); }
+  }));
 
   function issueSession(res, user) {
     const token = jwt.sign({ sub: user.id, email: user.email }, sessionSecret, { expiresIn: '7d' });
@@ -133,6 +136,13 @@ export async function createApp(config = process.env) {
     const integrations = store.snapshot().integrations.filter(item => item.businessId === req.params.id).map(item => withWebhook(publicConnection(item), publicApiUrl));
     res.json({ integrations });
   });
+  app.get('/api/businesses/:id/channel-messages', auth, (req, res) => {
+    if (!ownsBusiness(store, req.user.id, req.params.id)) return res.status(404).json({ error: 'Business not found.' });
+    const integrationId = String(req.query.integrationId || '');
+    let messages = store.snapshot().channelMessages.filter(item => item.businessId === req.params.id);
+    if (integrationId) messages = messages.filter(item => item.integrationId === integrationId);
+    res.json({ messages: messages.slice(-500) });
+  });
   app.post('/api/businesses/:id/integrations', auth, async (req, res) => {
     if (!ownsBusiness(store, req.user.id, req.params.id)) return res.status(404).json({ error: 'Business not found.' });
     const definition = getChannel(String(req.body.channelId || ''));
@@ -186,17 +196,20 @@ export async function createApp(config = process.env) {
     } catch (error) { res.status(502).json({ error: error.message }); }
   });
 
-  // Provider-facing webhook. A long random URL token is required in addition to provider verification where supported.
+  // Provider-facing webhook. A long random URL token is required in addition to provider verification.
   app.get('/api/channels/:connectionId/:webhookToken', (req, res) => {
     const connection = webhookIntegration(store, req.params.connectionId, req.params.webhookToken);
     if (!connection) return res.status(404).send('Not found');
+    const credentials = vault.open(connection.encryptedCredentials);
     const mode = req.query['hub.mode']; const token = req.query['hub.verify_token']; const challenge = req.query['hub.challenge'];
-    if (mode === 'subscribe' && token && token === connection.settings.verifyToken) return res.status(200).send(String(challenge || ''));
+    if (mode === 'subscribe' && token && token === credentials.verifyToken) return res.status(200).send(String(challenge || ''));
     res.status(200).json({ ok: true, channel: connection.channelId });
   });
   app.post('/api/channels/:connectionId/:webhookToken', async (req, res) => {
     const connection = webhookIntegration(store, req.params.connectionId, req.params.webhookToken);
     if (!connection) return res.status(404).json({ error: 'Unknown webhook.' });
+    const credentials = vault.open(connection.encryptedCredentials);
+    if (!verifyInboundRequest(connection.channelId, { rawBody: req.rawBody, headers: req.headers, credentials })) return res.status(401).json({ error: 'Invalid webhook signature.' });
     if (req.body?.type === 'url_verification' && req.body?.challenge) return res.json({ challenge: req.body.challenge });
     const messages = parseInbound(connection.channelId, req.body);
     res.status(202).json({ accepted: messages.length });
@@ -241,6 +254,8 @@ export async function createApp(config = process.env) {
 }
 
 async function processChannelInbound({ store, ai, vault, connection, inbound }) {
+  const existing = inbound.externalMessageId && store.snapshot().channelMessages.some(item => item.integrationId === connection.id && item.role === 'user' && item.externalMessageId === inbound.externalMessageId);
+  if (existing) return;
   const receivedAt = new Date().toISOString();
   await store.mutate(state => state.channelMessages.push({ id: crypto.randomUUID(), integrationId: connection.id, businessId: connection.businessId, role: 'user', senderId: inbound.senderId, text: inbound.text, externalMessageId: inbound.externalMessageId || null, createdAt: receivedAt }));
   const entries = store.snapshot().knowledge.filter(k => k.businessId === connection.businessId && k.enabled !== false);
