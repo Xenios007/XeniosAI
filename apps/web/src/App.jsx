@@ -1,5 +1,6 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavLink, Navigate, Route, Routes, useNavigate } from 'react-router-dom';
+import IntegrationsPage from './IntegrationsPage.jsx';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
 
@@ -97,7 +98,7 @@ function GoogleLogin({ onAuthenticated, onError }) {
 }
 
 const nav = [
-  ['/', 'Dashboard'], ['/chat', 'AI Chat'], ['/knowledge', 'Business Knowledge'], ['/models', 'AI Models'],
+  ['/', 'Dashboard'], ['/chat', 'AI Chat'], ['/knowledge', 'Business Knowledge'], ['/integrations', 'Integrations'], ['/models', 'AI Models'],
   ['/agents', 'Agents'], ['/tasks', 'Tasks'], ['/workflows', 'Workflows'], ['/memory', 'Memory'],
   ['/analytics', 'Analytics'], ['/billing', 'Billing'], ['/logs', 'Logs'], ['/system', 'System'], ['/settings', 'Settings']
 ];
@@ -149,6 +150,7 @@ function ProductShell({ user, onLogout }) {
           <Route path="/" element={<Dashboard />} />
           <Route path="/chat" element={<Chat business={selectedBusiness} />} />
           <Route path="/knowledge" element={<Knowledge business={selectedBusiness} />} />
+          <Route path="/integrations" element={<IntegrationsPage business={selectedBusiness} />} />
           <Route path="/models" element={<Models />} />
           <Route path="/billing" element={<Billing />} />
           <Route path="/agents" element={<Placeholder title="Agents" text="ARCH-014 becomes persisted, user-configurable agents here." />} />

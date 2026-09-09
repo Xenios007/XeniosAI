@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
-const EMPTY = Object.freeze({ users: [], businesses: [], knowledge: [], subscriptions: [], conversations: [] });
+const EMPTY = Object.freeze({ users: [], businesses: [], knowledge: [], subscriptions: [], conversations: [], integrations: [], channelMessages: [] });
 
 export class JsonStore {
   constructor(filePath) {

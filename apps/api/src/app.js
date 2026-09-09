@@ -9,6 +9,7 @@ import { hashPassword, verifyPassword } from '@xeniosai/auth';
 import { buildKnowledgeContext } from '@xeniosai/knowledge';
 import { AIService, providerCatalog } from '@xeniosai/ai';
 import { BillingService } from '@xeniosai/billing';
+import { CHANNEL_CATALOG, createCredentialVault, getChannel, parseInbound, publicConnection, sendChannelMessage, testConnection, verifyInboundRequest } from '@xeniosai/integrations';
 import { JsonStore } from './store.js';
 
 const COOKIE = 'xenios_session';
@@ -18,8 +19,10 @@ export async function createApp(config = process.env) {
   const store = await new JsonStore(config.DATA_FILE).init();
   const sessionSecret = config.SESSION_SECRET || 'dev-only-change-me';
   const appUrl = config.APP_URL || 'http://localhost:5173';
+  const publicApiUrl = config.PUBLIC_API_URL || `http://localhost:${config.PORT || 3001}`;
   const google = config.GOOGLE_CLIENT_ID ? new OAuth2Client(config.GOOGLE_CLIENT_ID) : null;
   const ai = new AIService(config);
+  const vault = createCredentialVault(config.INTEGRATION_SECRET_KEY || sessionSecret);
   const billing = new BillingService({
     provider: config.BILLING_PROVIDER || (config.STRIPE_SECRET_KEY ? 'stripe' : 'mock'),
     stripeSecretKey: config.STRIPE_SECRET_KEY,
@@ -28,7 +31,7 @@ export async function createApp(config = process.env) {
     currency: config.BILLING_CURRENCY || 'php'
   });
 
-  // Webhook must receive the unparsed body for payment-signature verification.
+  // Stripe requires the unparsed body for payment-signature verification.
   app.post('/api/billing/webhook', express.raw({ type: 'application/json' }), async (req, res) => {
     try {
       const change = await billing.parseWebhook({ rawBody: req.body, signature: req.headers['stripe-signature'] });
@@ -39,7 +42,10 @@ export async function createApp(config = process.env) {
 
   app.use(cors({ origin: config.CORS_ORIGIN || appUrl, credentials: true }));
   app.use(cookieParser());
-  app.use(express.json({ limit: '2mb' }));
+  app.use(express.json({
+    limit: '2mb',
+    verify(req, _res, buffer) { req.rawBody = Buffer.from(buffer); }
+  }));
 
   function issueSession(res, user) {
     const token = jwt.sign({ sub: user.id, email: user.email }, sessionSecret, { expiresIn: '7d' });
@@ -123,6 +129,96 @@ export async function createApp(config = process.env) {
     } catch (error) { res.status(502).json({ error: error.message }); }
   });
 
+  // Omnichannel product surface. Secrets are encrypted before persistence and never returned to React.
+  app.get('/api/integrations/catalog', auth, (_req, res) => res.json({ channels: CHANNEL_CATALOG }));
+  app.get('/api/businesses/:id/integrations', auth, (req, res) => {
+    if (!ownsBusiness(store, req.user.id, req.params.id)) return res.status(404).json({ error: 'Business not found.' });
+    const integrations = store.snapshot().integrations.filter(item => item.businessId === req.params.id).map(item => withWebhook(publicConnection(item), publicApiUrl));
+    res.json({ integrations });
+  });
+  app.get('/api/businesses/:id/channel-messages', auth, (req, res) => {
+    if (!ownsBusiness(store, req.user.id, req.params.id)) return res.status(404).json({ error: 'Business not found.' });
+    const integrationId = String(req.query.integrationId || '');
+    let messages = store.snapshot().channelMessages.filter(item => item.businessId === req.params.id);
+    if (integrationId) messages = messages.filter(item => item.integrationId === integrationId);
+    res.json({ messages: messages.slice(-500) });
+  });
+  app.post('/api/businesses/:id/integrations', auth, async (req, res) => {
+    if (!ownsBusiness(store, req.user.id, req.params.id)) return res.status(404).json({ error: 'Business not found.' });
+    const definition = getChannel(String(req.body.channelId || ''));
+    if (!definition) return res.status(400).json({ error: 'Unknown integration channel.' });
+    const credentials = pickFields(req.body.credentials || {}, definition.credentialFields);
+    const settings = pickFields(req.body.settings || {}, definition.settingsFields);
+    const integration = {
+      id: crypto.randomUUID(), businessId: req.params.id, channelId: definition.id,
+      name: String(req.body.name || definition.name).trim() || definition.name,
+      settings, encryptedCredentials: Object.keys(credentials).length ? vault.seal(credentials) : null,
+      autoReply: req.body.autoReply !== false, aiProvider: String(req.body.aiProvider || 'mock'),
+      status: definition.access === 'partner-required' ? 'approval-required' : 'configured',
+      webhookToken: crypto.randomBytes(24).toString('base64url'), createdAt: new Date().toISOString(), updatedAt: new Date().toISOString()
+    };
+    await store.mutate(state => state.integrations.push(integration));
+    res.status(201).json({ integration: withWebhook(publicConnection(integration), publicApiUrl) });
+  });
+  app.put('/api/integrations/:id', auth, async (req, res) => {
+    const current = ownedIntegration(store, req.user.id, req.params.id);
+    if (!current) return res.status(404).json({ error: 'Integration not found.' });
+    const definition = getChannel(current.channelId);
+    await store.mutate(state => {
+      const target = state.integrations.find(item => item.id === current.id);
+      if (req.body.name !== undefined) target.name = String(req.body.name || definition.name).trim() || definition.name;
+      if (req.body.settings) target.settings = { ...target.settings, ...pickFields(req.body.settings, definition.settingsFields) };
+      if (req.body.credentials && Object.keys(req.body.credentials).length) target.encryptedCredentials = vault.seal({ ...vault.open(target.encryptedCredentials), ...pickFields(req.body.credentials, definition.credentialFields) });
+      if (req.body.autoReply !== undefined) target.autoReply = Boolean(req.body.autoReply);
+      if (req.body.aiProvider !== undefined) target.aiProvider = String(req.body.aiProvider || 'mock');
+      target.updatedAt = new Date().toISOString();
+    });
+    res.json({ integration: withWebhook(publicConnection(ownedIntegration(store, req.user.id, req.params.id)), publicApiUrl) });
+  });
+  app.delete('/api/integrations/:id', auth, async (req, res) => {
+    const current = ownedIntegration(store, req.user.id, req.params.id);
+    if (!current) return res.status(404).json({ error: 'Integration not found.' });
+    await store.mutate(state => { state.integrations = state.integrations.filter(item => item.id !== current.id); });
+    res.json({ ok: true });
+  });
+  app.post('/api/integrations/:id/test', auth, async (req, res) => {
+    const connection = ownedIntegration(store, req.user.id, req.params.id);
+    if (!connection) return res.status(404).json({ error: 'Integration not found.' });
+    try { res.json(await testConnection(connection.channelId, connection, vault.open(connection.encryptedCredentials))); }
+    catch (error) { res.status(502).json({ error: error.message }); }
+  });
+  app.post('/api/integrations/:id/send-test', auth, async (req, res) => {
+    const connection = ownedIntegration(store, req.user.id, req.params.id);
+    if (!connection) return res.status(404).json({ error: 'Integration not found.' });
+    try {
+      const result = await sendChannelMessage(connection.channelId, connection, vault.open(connection.encryptedCredentials), String(req.body.recipientId || ''), String(req.body.text || 'XeniosAI integration test'));
+      res.json(result);
+    } catch (error) { res.status(502).json({ error: error.message }); }
+  });
+
+  // Provider-facing webhook. A long random URL token is required in addition to provider verification.
+  app.get('/api/channels/:connectionId/:webhookToken', (req, res) => {
+    const connection = webhookIntegration(store, req.params.connectionId, req.params.webhookToken);
+    if (!connection) return res.status(404).send('Not found');
+    const credentials = vault.open(connection.encryptedCredentials);
+    const mode = req.query['hub.mode']; const token = req.query['hub.verify_token']; const challenge = req.query['hub.challenge'];
+    if (mode === 'subscribe' && token && token === credentials.verifyToken) return res.status(200).send(String(challenge || ''));
+    res.status(200).json({ ok: true, channel: connection.channelId });
+  });
+  app.post('/api/channels/:connectionId/:webhookToken', async (req, res) => {
+    const connection = webhookIntegration(store, req.params.connectionId, req.params.webhookToken);
+    if (!connection) return res.status(404).json({ error: 'Unknown webhook.' });
+    const credentials = vault.open(connection.encryptedCredentials);
+    if (!verifyInboundRequest(connection.channelId, { rawBody: req.rawBody, headers: req.headers, credentials })) return res.status(401).json({ error: 'Invalid webhook signature.' });
+    if (req.body?.type === 'url_verification' && req.body?.challenge) return res.json({ challenge: req.body.challenge });
+    const messages = parseInbound(connection.channelId, req.body);
+    res.status(202).json({ accepted: messages.length });
+    for (const inbound of messages) {
+      try { await processChannelInbound({ store, ai, vault, connection, inbound }); }
+      catch (error) { console.error('Channel processing failed', { integrationId: connection.id, channelId: connection.channelId, error: error.message }); }
+    }
+  });
+
   app.get('/api/billing/plans', auth, (_req, res) => res.json({ plans: billing.plans() }));
   app.get('/api/billing/subscription', auth, (req, res) => res.json({ subscription: subscriptionFor(store, req.user.id) }));
   app.post('/api/billing/checkout', auth, async (req, res) => {
@@ -144,7 +240,7 @@ export async function createApp(config = process.env) {
   app.get('/api/dashboard', auth, (req, res) => {
     const state = store.snapshot(); const businessIds = state.businesses.filter(b => b.ownerUserId === req.user.id).map(b => b.id);
     const sub = subscriptionFor(store, req.user.id);
-    res.json({ cards: { businesses: businessIds.length, knowledgeEntries: state.knowledge.filter(k => businessIds.includes(k.businessId)).length, connectedProviders: providerCatalog(config).filter(p => p.connected).length, activeAgents: 0, runningTasks: 0, plan: sub.planId } });
+    res.json({ cards: { businesses: businessIds.length, knowledgeEntries: state.knowledge.filter(k => businessIds.includes(k.businessId)).length, connectedProviders: providerCatalog(config).filter(p => p.connected).length, connectedChannels: state.integrations.filter(i => businessIds.includes(i.businessId)).length, activeAgents: 0, runningTasks: 0, plan: sub.planId } });
   });
 
   app.get('/api/system', auth, (_req, res) => res.json({ platform: os.platform(), release: os.release(), node: process.version, cpus: os.cpus().length, memoryTotalMB: Math.round(os.totalmem()/1024/1024), memoryFreeMB: Math.round(os.freemem()/1024/1024), uptimeSeconds: Math.round(process.uptime()) }));
@@ -157,8 +253,26 @@ export async function createApp(config = process.env) {
   return app;
 }
 
+async function processChannelInbound({ store, ai, vault, connection, inbound }) {
+  const existing = inbound.externalMessageId && store.snapshot().channelMessages.some(item => item.integrationId === connection.id && item.role === 'user' && item.externalMessageId === inbound.externalMessageId);
+  if (existing) return;
+  const receivedAt = new Date().toISOString();
+  await store.mutate(state => state.channelMessages.push({ id: crypto.randomUUID(), integrationId: connection.id, businessId: connection.businessId, role: 'user', senderId: inbound.senderId, text: inbound.text, externalMessageId: inbound.externalMessageId || null, createdAt: receivedAt }));
+  const entries = store.snapshot().knowledge.filter(k => k.businessId === connection.businessId && k.enabled !== false);
+  const context = buildKnowledgeContext(entries, inbound.text);
+  const result = await ai.chat({ provider: connection.aiProvider || 'mock', message: inbound.text, knowledgeContext: context.text });
+  await store.mutate(state => state.channelMessages.push({ id: crypto.randomUUID(), integrationId: connection.id, businessId: connection.businessId, role: 'assistant', senderId: inbound.senderId, text: result.text, provider: result.provider, createdAt: new Date().toISOString() }));
+  if (connection.autoReply && getChannel(connection.channelId)?.sendImplemented) {
+    await sendChannelMessage(connection.channelId, connection, vault.open(connection.encryptedCredentials), inbound.senderId, result.text);
+  }
+}
+
 function publicUser(user) { return { id: user.id, name: user.name, email: user.email, authProvider: user.authProvider, avatarUrl: user.avatarUrl || null, createdAt: user.createdAt }; }
 function ownsBusiness(store, userId, businessId) { return store.snapshot().businesses.some(b => b.id === businessId && b.ownerUserId === userId); }
+function ownedIntegration(store, userId, integrationId) { const connection = store.snapshot().integrations.find(item => item.id === integrationId); return connection && ownsBusiness(store, userId, connection.businessId) ? connection : null; }
+function webhookIntegration(store, id, token) { return store.snapshot().integrations.find(item => item.id === id && item.webhookToken === token) || null; }
+function withWebhook(connection, publicApiUrl) { return connection ? { ...connection, webhookUrl: `${publicApiUrl}/api/channels/${connection.id}/${connection.webhookToken}` } : null; }
+function pickFields(input, fields) { return Object.fromEntries(fields.filter(field => input[field] !== undefined && String(input[field]).length > 0).map(field => [field, input[field]])); }
 function subscriptionFor(store, userId) { return store.snapshot().subscriptions.find(s => s.userId === userId) || { userId, planId: 'free', status: 'active', provider: 'internal' }; }
 async function upsertSubscription(store, userId, change) {
   await store.mutate(state => {
