@@ -4,15 +4,16 @@ const direct = 'direct';
 const review = 'review-required';
 const partner = 'partner-required';
 const indirect = 'via-platform';
+const META_GRAPH_VERSION = process.env.META_GRAPH_VERSION || 'v26.0';
 
 export const CHANNEL_CATALOG = Object.freeze([
   channel('webchat', 'XeniosAI Web Chat', 'Owned', direct, 'Native website widget / API chat.', [], []),
   channel('email', 'Email', 'Owned', direct, 'SMTP/IMAP or provider API integration.', ['smtpHost', 'smtpPort', 'username'], ['password']),
   channel('sms', 'SMS / MMS', 'Owned', direct, 'Connect through Twilio or another SMS provider.', ['accountSid', 'fromNumber'], ['authToken']),
-  channel('facebook-messenger', 'Facebook Page Messenger', 'Meta', review, 'Messenger Platform for Facebook Pages.', ['pageId', 'verifyToken'], ['pageAccessToken'], true),
-  channel('instagram', 'Instagram Messaging', 'Meta', review, 'Messaging for eligible Instagram professional accounts.', ['instagramAccountId', 'verifyToken'], ['accessToken']),
-  channel('whatsapp', 'WhatsApp Business', 'Meta', review, 'WhatsApp Cloud API.', ['phoneNumberId', 'verifyToken'], ['accessToken'], true),
-  channel('telegram', 'Telegram', 'Social', direct, 'Telegram Bot API.', [], ['botToken'], true),
+  channel('facebook-messenger', 'Facebook Page Messenger', 'Meta', review, 'Messenger Platform for Facebook Pages.', ['pageId', 'verifyToken'], ['pageAccessToken', 'appSecret'], true),
+  channel('instagram', 'Instagram Messaging', 'Meta', review, 'Messaging for eligible Instagram professional accounts.', ['instagramAccountId', 'verifyToken'], ['accessToken', 'appSecret']),
+  channel('whatsapp', 'WhatsApp Business', 'Meta', review, 'WhatsApp Cloud API.', ['phoneNumberId', 'verifyToken'], ['accessToken', 'appSecret'], true),
+  channel('telegram', 'Telegram', 'Social', direct, 'Telegram Bot API.', [], ['botToken', 'webhookSecret'], true),
   channel('line', 'LINE', 'Social', direct, 'LINE Official Account Messaging API.', [], ['channelAccessToken', 'channelSecret'], true),
   channel('wechat-official', 'WeChat Official Account', 'Social', review, 'WeChat Official Account customer-service messaging.', ['appId', 'token'], ['appSecret', 'encodingAesKey']),
   channel('wecom', 'WeCom / Enterprise WeChat', 'Social', review, 'Enterprise WeChat customer/contact messaging.', ['corpId', 'agentId', 'token'], ['secret', 'encodingAesKey']),
@@ -20,7 +21,7 @@ export const CHANNEL_CATALOG = Object.freeze([
   channel('viber', 'Rakuten Viber', 'Social', review, 'Viber bot / Business Messages; new bots are commercial.', [], ['authToken'], true),
   channel('kakao-cs', 'KakaoTalk CS / Channel', 'Social', review, 'Kakao Business customer-support channel integration.', ['channelId'], ['accessToken']),
   channel('discord', 'Discord', 'Community', direct, 'Discord bot using Gateway/HTTP APIs.', ['applicationId'], ['botToken'], true),
-  channel('slack', 'Slack', 'Workplace', direct, 'Slack app / bot messaging.', [], ['botToken'], true),
+  channel('slack', 'Slack', 'Workplace', direct, 'Slack app / bot messaging.', [], ['botToken', 'signingSecret'], true),
   channel('microsoft-teams', 'Microsoft Teams', 'Workplace', review, 'Teams bot / Microsoft Bot Framework.', ['appId'], ['appPassword']),
   channel('google-chat', 'Google Chat', 'Workplace', review, 'Google Chat app integration.', ['projectId'], ['serviceAccountJson']),
   channel('apple-messages', 'Apple Messages for Business', 'Business Messaging', partner, 'Requires Apple Messages for Business enrollment and an approved messaging service provider.', ['brandId'], ['providerCredentials']),
@@ -108,14 +109,42 @@ export function parseInbound(channelId, payload) {
   }
 }
 
+export function verifyInboundRequest(channelId, { rawBody, headers = {}, credentials = {} }) {
+  const body = Buffer.isBuffer(rawBody) ? rawBody : Buffer.from(rawBody || '');
+  if (['facebook-messenger', 'instagram', 'whatsapp'].includes(channelId) && credentials.appSecret) {
+    const received = header(headers, 'x-hub-signature-256');
+    const expected = `sha256=${crypto.createHmac('sha256', credentials.appSecret).update(body).digest('hex')}`;
+    return secureEqual(received, expected);
+  }
+  if (channelId === 'line' && credentials.channelSecret) {
+    const received = header(headers, 'x-line-signature');
+    const expected = crypto.createHmac('sha256', credentials.channelSecret).update(body).digest('base64');
+    return secureEqual(received, expected);
+  }
+  if (channelId === 'slack' && credentials.signingSecret) {
+    const timestamp = header(headers, 'x-slack-request-timestamp');
+    const received = header(headers, 'x-slack-signature');
+    if (!timestamp || Math.abs(Date.now() / 1000 - Number(timestamp)) > 300) return false;
+    const expected = `v0=${crypto.createHmac('sha256', credentials.signingSecret).update(`v0:${timestamp}:${body.toString('utf8')}`).digest('hex')}`;
+    return secureEqual(received, expected);
+  }
+  if (channelId === 'telegram' && credentials.webhookSecret) {
+    return secureEqual(header(headers, 'x-telegram-bot-api-secret-token'), credentials.webhookSecret);
+  }
+  if (channelId === 'custom-webhook' && credentials.webhookSecret) {
+    return secureEqual(header(headers, 'x-xenios-webhook-secret'), credentials.webhookSecret);
+  }
+  return true;
+}
+
 export async function testConnection(channelId, connection, credentials) {
   switch (channelId) {
     case 'telegram': return checkedJson(`https://api.telegram.org/bot${credentials.botToken}/getMe`);
     case 'line': return checkedJson('https://api.line.me/v2/bot/info', { headers: { Authorization: `Bearer ${credentials.channelAccessToken}` } });
     case 'slack': return checkedJson('https://slack.com/api/auth.test', { method: 'POST', headers: { Authorization: `Bearer ${credentials.botToken}` } }, body => body.ok !== false);
     case 'x-dm': return checkedJson('https://api.x.com/2/users/me', { headers: { Authorization: `Bearer ${credentials.userAccessToken}` } });
-    case 'facebook-messenger': return checkedJson(`https://graph.facebook.com/v23.0/${encodeURIComponent(connection.settings.pageId)}?fields=id,name&access_token=${encodeURIComponent(credentials.pageAccessToken)}`);
-    case 'whatsapp': return checkedJson(`https://graph.facebook.com/v23.0/${encodeURIComponent(connection.settings.phoneNumberId)}`, { headers: { Authorization: `Bearer ${credentials.accessToken}` } });
+    case 'facebook-messenger': return checkedJson(`https://graph.facebook.com/${META_GRAPH_VERSION}/${encodeURIComponent(connection.settings.pageId)}?fields=id,name&access_token=${encodeURIComponent(credentials.pageAccessToken)}`);
+    case 'whatsapp': return checkedJson(`https://graph.facebook.com/${META_GRAPH_VERSION}/${encodeURIComponent(connection.settings.phoneNumberId)}`, { headers: { Authorization: `Bearer ${credentials.accessToken}` } });
     case 'viber': return checkedJson('https://chatapi.viber.com/pa/get_account_info', { method: 'POST', headers: { 'X-Viber-Auth-Token': credentials.authToken } });
     case 'custom-webhook': return { ok: Boolean(connection.settings.outboundUrl), detail: 'Custom webhook configured.' };
     default: return { ok: true, detail: 'Connection saved. This channel requires provider/app approval or a specialized adapter before live traffic.' };
@@ -127,9 +156,9 @@ export async function sendChannelMessage(channelId, connection, credentials, rec
   if (!id && channelId !== 'custom-webhook') throw new Error('Recipient id is required.');
   switch (channelId) {
     case 'facebook-messenger':
-      return checkedJson(`https://graph.facebook.com/v23.0/${encodeURIComponent(connection.settings.pageId)}/messages?access_token=${encodeURIComponent(credentials.pageAccessToken)}`, jsonPost({ recipient: { id }, messaging_type: 'RESPONSE', message: { text } }));
+      return checkedJson(`https://graph.facebook.com/${META_GRAPH_VERSION}/${encodeURIComponent(connection.settings.pageId)}/messages?access_token=${encodeURIComponent(credentials.pageAccessToken)}`, jsonPost({ recipient: { id }, messaging_type: 'RESPONSE', message: { text } }));
     case 'whatsapp':
-      return checkedJson(`https://graph.facebook.com/v23.0/${encodeURIComponent(connection.settings.phoneNumberId)}/messages`, jsonPost({ messaging_product: 'whatsapp', to: id, type: 'text', text: { body: text } }, { Authorization: `Bearer ${credentials.accessToken}` }));
+      return checkedJson(`https://graph.facebook.com/${META_GRAPH_VERSION}/${encodeURIComponent(connection.settings.phoneNumberId)}/messages`, jsonPost({ messaging_product: 'whatsapp', to: id, type: 'text', text: { body: text } }, { Authorization: `Bearer ${credentials.accessToken}` }));
     case 'telegram':
       return checkedJson(`https://api.telegram.org/bot${credentials.botToken}/sendMessage`, jsonPost({ chat_id: id, text }));
     case 'line':
@@ -143,7 +172,7 @@ export async function sendChannelMessage(channelId, connection, credentials, rec
     case 'viber':
       return checkedJson('https://chatapi.viber.com/pa/send_message', jsonPost({ receiver: id, type: 'text', text }, { 'X-Viber-Auth-Token': credentials.authToken }));
     case 'custom-webhook':
-      return checkedJson(connection.settings.outboundUrl, jsonPost({ recipient: id || null, text, integrationId: connection.id }, credentials.webhookSecret ? { 'X-Xenios-Signature': credentials.webhookSecret } : {}));
+      return checkedJson(connection.settings.outboundUrl, jsonPost({ recipient: id || null, text, integrationId: connection.id }, credentials.webhookSecret ? { 'X-Xenios-Webhook-Secret': credentials.webhookSecret } : {}));
     default:
       throw new Error(`${getChannel(channelId)?.name || channelId} outbound adapter is not live yet. The channel is cataloged for configuration/approval tracking.`);
   }
@@ -158,4 +187,15 @@ async function checkedJson(url, options = {}, validate = () => true) {
   const body = await response.json().catch(() => ({}));
   if (!response.ok || !validate(body)) throw new Error(body?.error?.message || body?.description || body?.error || `Channel request failed (${response.status})`);
   return { ok: true, body };
+}
+
+function header(headers, name) {
+  if (typeof headers.get === 'function') return headers.get(name) || '';
+  return headers[name] || headers[name.toLowerCase()] || '';
+}
+
+function secureEqual(left, right) {
+  const a = Buffer.from(String(left || ''));
+  const b = Buffer.from(String(right || ''));
+  return a.length === b.length && a.length > 0 && crypto.timingSafeEqual(a, b);
 }
