@@ -1,389 +1,77 @@
-# XeniosAI Task Queue
+# XeniosAI Product Task Queue
 
-## Purpose
+## P0 — Make the vertical slice production-shaped
 
-This file tracks architecture-ordered implementation progress in the repository.
+- [ ] Install dependencies and generate/commit the lockfile.
+- [ ] Add automated API tests for registration, login, business isolation, knowledge CRUD, chat grounding, and billing state.
+- [ ] Add frontend smoke tests for login, business creation, knowledge entry, chat, and billing navigation.
+- [ ] Replace JSON persistence with a production database repository while keeping the current repository interface.
+- [ ] Add rate limiting, CSRF/session hardening, request validation, and production secret checks.
+- [ ] Add password reset/recovery flow.
+- [ ] Configure and verify Google login end-to-end with deployment credentials.
 
-It exists to complement the architecture and implementation guide without replacing them.
+## P0 — AI Models and Chat
 
-## Status
+- [ ] Create persisted AI provider credentials with encryption/secret-store abstraction.
+- [ ] Implement provider connection/test/remove endpoints.
+- [ ] Implement dynamic model discovery for providers that support it.
+- [ ] Implement provider/model selector in AI Chat rather than provider-only selection.
+- [ ] Add Anthropic adapter.
+- [ ] Add Google Gemini adapter.
+- [ ] Add xAI adapter.
+- [ ] Add DeepSeek, Groq, Together, Fireworks, Mistral and compatible-provider adapters.
+- [ ] Add Ollama, LM Studio and custom OpenAI-compatible endpoints.
+- [ ] Add streaming, stop generation, retry/regenerate, markdown rendering, and attachment shell.
+- [ ] Persist conversations/messages and add history/search/rename/delete.
+- [ ] Implement Customer Simulation, Internal Assistant and Raw Model modes fully.
+- [ ] Add model comparison with latency/token/cost metadata.
 
-- Completed: `ARCH-002-02 Foundation Layer`
-- Completed: `ARCH-002-03 Experience Layer`
-- Completed: `ARCH-002-04 Gateway Layer`
-- Completed: `ARCH-002-05 Conversation Layer`
-- Completed: `ARCH-002-06 AI Intelligence Layer`
-- Completed: `ARCH-002-07 Business Services Layer`
-- Completed: `ARCH-002-08 Data Layer`
-- Completed: `ARCH-002-09 Integration Layer`
-- Completed: `ARCH-002-10 Cross-Cutting Concerns`
-- Completed: `ARCH-002-11 Layer Interactions`
-- Completed: `ARCH-003-01 Service Landscape`
-- Completed: `ARCH-003-02 Service Catalog`
-- Completed: `ARCH-003-03 Service Ownership`
-- Completed: `ARCH-003-04 Service Dependencies`
-- Completed: `ARCH-003-05 Domain Boundaries`
-- Completed: `ARCH-003-06 Service Communication`
-- Completed: `ARCH-003-07 Service Lifecycle`
-- Completed: `ARCH-003-08 Service Versioning`
-- Completed: `ARCH-003-09 Service Governance`
-- Completed: `ARCH-003-10 Future Services`
-- Completed: `ARCH-004-01 Orchestrator Overview`
-- Completed: `ARCH-004-02 Request Lifecycle`
-- Completed: `ARCH-004-03 Reasoning Pipeline`
-- Completed: `ARCH-004-04 Tool Orchestration`
-- Completed: `ARCH-004-05 Memory Orchestration`
-- Completed: `ARCH-004-06 Context Management`
-- Completed: `ARCH-004-07 Decision Engine`
-- Completed: `ARCH-004-08 Agent Coordination`
-- Completed: `ARCH-004-09 Failure Recovery`
-- Completed: `ARCH-004-10 Future AI Capabilities`
-- Completed: `ARCH-005-01 Execution Overview`
-- Completed: `ARCH-005-02 Command Flow`
-- Completed: `ARCH-005-03 Query Flow`
-- Completed: `ARCH-005-04 Event Flow`
-- Completed: `ARCH-005-05 Workflow Orchestration`
-- Completed: `ARCH-005-06 Service Integration`
-- Completed: `ARCH-005-07 API Contracts`
-- Completed: `ARCH-005-08 Messaging Patterns`
-- Completed: `ARCH-005-09 Transaction Boundaries`
-- Completed: `ARCH-005-10 Future Integration Capabilities`
-- Completed: `ARCH-006-01 Domain Overview`
-- Completed: `ARCH-006-02 Bounded Contexts`
-- Completed: `ARCH-006-03 Core Entities`
-- Completed: `ARCH-006-04 Value Objects`
-- Completed: `ARCH-006-05 Aggregates`
-- Completed: `ARCH-006-06 Domain Services`
-- Completed: `ARCH-006-07 Domain Events`
-- Completed: `ARCH-006-08 Domain Rules`
-- Completed: `ARCH-006-09 Domain Lifecycle`
-- Completed: `ARCH-006-10 Future Domain Evolution`
-- Completed: `ARCH-007-01 Deployment Overview`
-- Completed: `ARCH-007-02 Environment Strategy`
-- Completed: `ARCH-007-03 Runtime Topology`
-- Completed: `ARCH-007-04 Compute Model`
-- Completed: `ARCH-007-05 Storage Topology`
-- Completed: `ARCH-007-06 Network Topology`
-- Completed: `ARCH-007-07 Service Deployment`
-- Completed: `ARCH-007-08 High Availability`
-- Completed: `ARCH-007-09 Disaster Recovery`
-- Completed: `ARCH-007-10 Future Deployment Evolution`
-- Completed: `ARCH-008-01 Security Overview`
-- Completed: `ARCH-008-02 Identity & Authentication`
-- Completed: `ARCH-008-03 Authorization Model`
-- Completed: `ARCH-008-04 Zero Trust Architecture`
-- Completed: `ARCH-008-05 Secrets & Key Management`
-- Completed: `ARCH-008-06 Cryptography & Data Protection`
-- Completed: `ARCH-008-07 AI Security`
-- Completed: `ARCH-008-08 Platform & Supply Chain Security`
-- Completed: `ARCH-008-09 Compliance & Governance`
-- Completed: `ARCH-008-10 Future Security Evolution`
-- Completed: `ARCH-009-01 Integration Overview`
-- Completed: `ARCH-009-02 Integration Principles`
-- Completed: `ARCH-009-03 API Architecture`
-- Completed: `ARCH-009-04 Messaging & Event Architecture`
-- Completed: `ARCH-009-05 Workflow & Process Integration`
-- Completed: `ARCH-009-06 External System Integration`
-- Completed: `ARCH-009-07 AI Integration Architecture`
-- Completed: `ARCH-009-08 Integration Governance`
-- Completed: `ARCH-009-09 Reliability & Resilience`
-- Completed: `ARCH-009-10 Future Integration Evolution`
-- Completed: `ARCH-010-01 Observability Overview`
-- Completed: `ARCH-010-02 Observability Principles`
-- Completed: `ARCH-010-03 Business Observability`
-- Completed: `ARCH-010-04 Service Observability`
-- Completed: `ARCH-010-05 AI Observability`
-- Completed: `ARCH-010-06 Integration Observability`
-- Completed: `ARCH-010-07 Security Observability`
-- Completed: `ARCH-010-08 Operational Observability`
-- Completed: `ARCH-010-09 Observability Governance`
-- Completed: `ARCH-010-10 Future Observability Evolution`
-- Completed: `ARCH-011 Enterprise Operations`
-- Completed: `ARCH-012 Governance & Compliance`
-- Completed: `ARCH-013-01 Developer Platform Overview`
-- Completed: `ARCH-013-02 Developer Experience and Journeys`
-- Completed: `ARCH-013-03 Platform Capability Model`
-- Completed: `ARCH-013-04 Project and Service Lifecycle`
-- Completed: `ARCH-013-05 Build, Test, and Quality`
-- Completed: `ARCH-013-06 Delivery and Environment Platform`
-- Completed: `ARCH-013-07 Developer Portal and Service Catalog`
-- Completed: `ARCH-013-08 Developer Security and Governance`
-- Completed: `ARCH-013-09 Platform Operations and Adoption`
-- Completed: `ARCH-013-10 Future Developer Platform Evolution`
-- Completed: `ARCH-014-01 AI Agent Framework Overview`
-- Completed: `ARCH-014-02 Agent Identity and Lifecycle`
-- Completed: `ARCH-014-03 Agent Runtime and Execution Model`
-- Completed: `ARCH-014-04 Agent Reasoning and Planning`
-- Completed: `ARCH-014-05 Tools, Actions, and Environment`
-- Completed: `ARCH-014-06 Multi-Agent Coordination`
-- Completed: `ARCH-014-07 Agent Memory, Knowledge, and Context`
-- Completed: `ARCH-014-08 Agent Security, Governance, and Assurance`
-- Completed: `ARCH-014-09 Agent Operations, Observability, and Evaluation`
-- Completed: `ARCH-014-10 Future Agent Framework Evolution`
-- Completed: `ARCH-015-01 Workflow Engine Overview`
-- Completed: `ARCH-015-02 Workflow Definition and Lifecycle`
-- Completed: `ARCH-015-03 Workflow Runtime and State Model`
-- Completed: `ARCH-015-04 Tasks, Activities, and Workers`
-- Completed: `ARCH-015-05 Events, Timers, and Human Interaction`
-- Completed: `ARCH-015-06 Reliability, Retries, and Compensation`
-- Completed: `ARCH-015-07 Workflow Integration and Orchestration`
-- Completed: `ARCH-015-08 Workflow Security, Governance, and Assurance`
-- Completed: `ARCH-015-09 Workflow Operations, Observability, and Performance`
-- Completed: `ARCH-015-10 Future Workflow Evolution`
-- Completed: `ARCH-016-01 Knowledge & Memory Overview`
-- Completed: `ARCH-016-02 Knowledge Architecture and Lifecycle`
-- Completed: `ARCH-016-03 Knowledge Ingestion and Curation`
-- Completed: `ARCH-016-04 Retrieval, Search, and Grounding`
-- Completed: `ARCH-016-05 Memory Model and Lifecycle`
-- Completed: `ARCH-016-06 Context Assembly and Memory Orchestration`
-- Completed: `ARCH-016-07 Knowledge & Memory Integration and Interoperability`
-- Completed: `ARCH-016-08 Knowledge & Memory Security, Governance, and Assurance`
-- Completed: `ARCH-016-09 Knowledge & Memory Operations, Observability, and Performance`
-- Completed: `ARCH-016-10 Future Knowledge & Memory Evolution`
-- Completed: `ARCH-017-01 API & SDK Overview`
-- Completed: `ARCH-017-02 API Product and Contract Model`
-- Completed: `ARCH-017-03 API Design and Interaction Patterns`
-- Completed: `ARCH-017-04 API Lifecycle, Versioning, and Compatibility`
-- Completed: `ARCH-017-05 API Security, Access, and Isolation`
-- Completed: `ARCH-017-06 SDK Architecture and Distribution`
-- Completed: `ARCH-017-07 Developer Experience, Testing, and Conformance`
-- Completed: `ARCH-017-08 API & SDK Governance and Assurance`
-- Completed: `ARCH-017-09 API & SDK Operations, Observability, and Performance`
-- Completed: `ARCH-017-10 Future API & SDK Evolution`
-- Completed: `ARCH-018-01 Multi-Tenancy Overview`
-- Completed: `ARCH-018-02 Tenant Domain and Isolation Model`
-- Completed: `ARCH-018-03 Tenant Lifecycle and Provisioning`
-- Completed: `ARCH-018-04 Identity, Access, and Delegated Administration`
-- Completed: `ARCH-018-05 Data Isolation, Residency, and Portability`
-- Completed: `ARCH-018-06 Configuration, Entitlements, and Customization`
-- Completed: `ARCH-018-07 Tenant-Aware Runtime and Integration`
-- Completed: `ARCH-018-08 Resource Governance, Metering, and Billing`
-- Completed: `ARCH-018-09 Tenant Operations, Governance, and Assurance`
-- Completed: `ARCH-018-10 Future Multi-Tenancy Evolution`
-- Completed: `ARCH-019-01 Plugin and Extension Overview`
-- Completed: `ARCH-019-02 Extension Domain and Classification`
-- Completed: `ARCH-019-03 Package, Manifest, Registry, and Provenance`
-- Completed: `ARCH-019-04 Extension Lifecycle, Distribution, and Compatibility`
-- Completed: `ARCH-019-05 Capability Security and Isolation`
-- Completed: `ARCH-019-06 Runtime Hosts and Extension Points`
-- Completed: `ARCH-019-07 Plugin SDK, Developer Experience, and Testing`
-- Completed: `ARCH-019-08 Tenant Installation, Configuration, and Operations`
-- Completed: `ARCH-019-09 Marketplace Governance and Assurance`
-- Completed: `ARCH-019-10 Future Extension Ecosystem Evolution`
-- Completed: `ARCH-020-01 Reference Implementation Overview`
-- Completed: `ARCH-020-02 Reference Implementation Methodology`
-- Completed: `ARCH-020-03 Single-Property Hospitality Reference`
-- Completed: `ARCH-020-04 Multi-Property Enterprise Reference`
-- Completed: `ARCH-020-05 Conversational AI Agent and Knowledge Reference`
-- Completed: `ARCH-020-06 Workflow and Business Service Reference`
-- Completed: `ARCH-020-07 API, Integration, and Extension Reference`
-- Completed: `ARCH-020-08 Multi-Tenant Security, Data, and Operations Reference`
-- Completed: `ARCH-020-09 Delivery, Testing, and Conformance Reference`
-- Completed: `ARCH-020-10 Future Reference Implementation Evolution`
-- Completed: `ARCH-021-01 Experience, Conversation, and Frontend Overview`
-- Completed: `ARCH-021-02 Experience Operating Model and Journeys`
-- Completed: `ARCH-021-03 Conversation and Chat Experience`
-- Completed: `ARCH-021-04 Frontend Application Architecture`
-- Completed: `ARCH-021-05 Design System, Accessibility, and Localization`
-- Completed: `ARCH-021-06 Realtime Streaming and Human Handoff`
-- Completed: `ARCH-021-07 Identity, State, and API Integration`
-- Completed: `ARCH-021-08 Security, Privacy, and Tenant Experience`
-- Completed: `ARCH-021-09 Frontend Operations, Observability, and Performance`
-- Completed: `ARCH-021-10 Future Experience and Frontend Evolution`
-- Completed: `ARCH-022-01 Identity, Organizations, and Access Overview`
-- Completed: `ARCH-022-02 Identity Types and Lifecycle`
-- Completed: `ARCH-022-03 Organizations, Teams, and Membership`
-- Completed: `ARCH-022-04 Authentication, Federation, and Session Assurance`
-- Completed: `ARCH-022-05 Authorization, Access Packages, and Policy Context`
-- Completed: `ARCH-022-06 Delegated Administration and Privileged Access`
-- Completed: `ARCH-022-07 Service, Machine, Agent, and Workload Identity`
-- Completed: `ARCH-022-08 Consent, Privacy, and Customer Identity`
-- Completed: `ARCH-022-09 Identity Operations, Governance, and Assurance`
-- Completed: `ARCH-022-10 Future Identity and Access Evolution`
-- Completed: `ARCH-023-01 Customer & Relationship Management Overview`
-- Completed: `ARCH-023-02 Customer, Party, and Profile Model`
-- Completed: `ARCH-023-03 Organizations, Contacts, and Relationships`
-- Completed: `ARCH-023-04 Preferences, Consent, and Customer Context`
-- Completed: `ARCH-023-05 Interaction and Service History`
-- Completed: `ARCH-023-06 Segmentation, Journeys, Loyalty, and Retention`
-- Completed: `ARCH-023-07 Data Quality, Resolution, and Portability`
-- Completed: `ARCH-023-08 Customer Service Integration and Experience`
-- Completed: `ARCH-023-09 CRM Operations, Governance, and Assurance`
-- Completed: `ARCH-023-10 Future Customer Relationship Evolution`
-- Completed: `ARCH-024-01 Product Catalog and Resource Management Overview`
-- Completed: `ARCH-024-02 Product and Service Model`
-- Completed: `ARCH-024-03 Catalog, Classification, and Discovery`
-- Completed: `ARCH-024-04 Resource Types and Lifecycle`
-- Completed: `ARCH-024-05 Attributes, Configuration, and Inheritance`
-- Completed: `ARCH-024-06 Availability, Inventory, and Capacity References`
-- Completed: `ARCH-024-07 Bundles, Packages, and Eligibility`
-- Completed: `ARCH-024-08 Integration, APIs, Events, and Extensions`
-- Completed: `ARCH-024-09 Operations, Governance, and Assurance`
-- Completed: `ARCH-024-10 Future Product Catalog Resource Evolution`
-- Completed: `ARCH-025-01 Commerce, Orders, and Reservations Overview`
-- Completed: `ARCH-025-02 Commercial Intent, Quotes, and Carts`
-- Completed: `ARCH-025-03 Order Lifecycle and State Management`
-- Completed: `ARCH-025-04 Reservation and Booking Lifecycle`
-- Completed: `ARCH-025-05 Availability, Allocation, and Holds`
-- Completed: `ARCH-025-06 Modification, Cancellation, and Compensation`
-- Completed: `ARCH-025-07 Fulfillment, Add-ons, and Packages`
-- Completed: `ARCH-025-08 Channel Distribution, Integration, and Consistency`
-- Completed: `ARCH-025-09 Commerce Operations, Governance, and Assurance`
-- Completed: `ARCH-025-10 Future Commerce Order and Reservation Evolution`
-- Completed: `ARCH-026-01 Pricing, Billing, and Payments Overview`
-- Completed: `ARCH-026-02 Price Lists, Rate Plans, and Context`
-- Completed: `ARCH-026-03 Pricing Rules, Restrictions, Promotions, and Approvals`
-- Completed: `ARCH-026-04 Quotation and Price Determination`
-- Completed: `ARCH-026-05 Billing, Subscriptions, and Usage Charging`
-- Completed: `ARCH-026-06 Invoicing, Taxation, and Credit Notes`
-- Completed: `ARCH-026-07 Payment, Settlement, Refunds, and Disputes`
-- Completed: `ARCH-026-08 Financial Integration, Reconciliation, and Controls`
-- Completed: `ARCH-026-09 Financial Operations, Governance, and Assurance`
-- Completed: `ARCH-026-10 Future Pricing, Billing, and Payment Evolution`
-- Completed: `ARCH-027-01 Omnichannel Engagement and Collaboration Overview`
-- Completed: `ARCH-027-02 Channel, Conversation, and Context Continuity`
-- Completed: `ARCH-027-03 Communication Delivery, Notification, and Preferences`
-- Completed: `ARCH-027-04 Contact Center, Queues, Routing, and Presence`
-- Completed: `ARCH-027-05 Cases, Tasks, and Service Recovery`
-- Completed: `ARCH-027-06 Collaboration, Approvals, and Human-Agent Handoff`
-- Completed: `ARCH-027-07 Campaigns, Engagement, and Journeys`
-- Completed: `ARCH-027-08 Integration, Realtime Delivery, and Resilience`
-- Completed: `ARCH-027-09 Engagement Operations, Governance, and Assurance`
-- Completed: `ARCH-027-10 Future Omnichannel Collaboration Evolution`
-- Completed: `ARCH-028-01 Analytics and Decision Intelligence Overview`
-- Completed: `ARCH-028-02 Metrics, Measures, and Semantic Layer`
-- Completed: `ARCH-028-03 Analytical Data Products and Lineage`
-- Completed: `ARCH-028-04 Operational & Executive Reporting and Alerting`
-- Completed: `ARCH-028-05 Forecasting, Planning & Scenarios`
-- Completed: `ARCH-028-06 Experimentation & Causal Analysis`
-- Completed: `ARCH-028-07 Recommendations & Decision Support`
-- Completed: `ARCH-028-08 AI-Assisted Analysis & Insight Provenance`
-- Completed: `ARCH-028-09 Analytics Operations, Governance & Assurance`
-- Completed: `ARCH-028-10 Future Analytics & Decision Intelligence Evolution`
-- Completed: `ARCH-029-01 AI Model Operations, Evaluation & Learning Overview`
-- Completed: `ARCH-029-02 Model Catalog, Provider Abstraction & Capabilities`
-- Completed: `ARCH-029-03 Model Selection, Routing, Fallback & Budgets`
-- Completed: `ARCH-029-04 Prompt, Retrieval, Tool & Policy Configuration`
-- Completed: `ARCH-029-05 Feedback Signals, Learning Candidates & Privacy`
-- Completed: `ARCH-029-06 Evaluation Datasets, Offline Replay & Regression`
-- Completed: `ARCH-029-07 Shadow, Canary, Experiment & Promotion`
-- Completed: `ARCH-029-08 Production Monitoring, Incidents, Deprecation & Exit`
-- Completed: `ARCH-029-09 AI Operations, Governance & Assurance`
-- Completed: `ARCH-029-10 Future AI Learning Evolution`
-- Completed: `ARCH-030-01 Industry Solution Packs & Composable Applications Overview`
-- Completed: `ARCH-030-02 Solution Pack Model, Boundaries & Manifests`
-- Completed: `ARCH-030-03 Capability Composition, Configuration & Policy`
-- Completed: `ARCH-030-04 Hospitality Solution Pack & Casa Lluvia Reference`
-- Completed: `ARCH-030-05 Rental, Commerce & Service Solution Patterns`
-- Completed: `ARCH-030-06 Workflow, Agent, Knowledge & Integration Packaging`
-- Completed: `ARCH-030-07 Experience, Branding & Composable Application Shells`
-- Completed: `ARCH-030-08 Conformance, Versioning, Migration & Exit`
-- Completed: `ARCH-030-09 Solution Operations, Governance & Assurance`
-- Completed: `ARCH-030-10 Future Industry Solution Evolution`
-- Completed: `ARCH-031-01 Developer Experience & Portal Overview`
-- Completed: `ARCH-031-02 Developer Personas, Journeys & Onboarding`
-- Completed: `ARCH-031-03 Developer Organizations, Projects & Applications`
-- Completed: `ARCH-031-04 Portal Information Architecture & Discovery`
-- Completed: `ARCH-031-05 Credentials, Access Requests & Environment Entry`
-- Completed: `ARCH-031-06 Usage, Quotas, Cost & Operational Visibility`
-- Completed: `ARCH-031-07 Documentation, Support, Feedback & Community`
-- Completed: `ARCH-031-08 Portal Integration, Extensibility & Automation`
-- Completed: `ARCH-031-09 Portal Operations, Governance & Assurance`
-- Completed: `ARCH-031-10 Future Developer Experience Evolution`
-- Completed: `ARCH-032-01 Application Framework & UI Extension Overview`
-- Completed: `ARCH-032-02 Application Shell Composition, Routing & Navigation`
-- Completed: `ARCH-032-03 Frontend SDK, Capability & API Clients`
-- Completed: `ARCH-032-04 Conversation & Customer Experience Components`
-- Completed: `ARCH-032-05 Administration, Operations & Data Components`
-- Completed: `ARCH-032-06 Frontend State, Data, Identity & Offline Model`
-- Completed: `ARCH-032-07 Design, Theming, Accessibility & Localization Kit`
-- Completed: `ARCH-032-08 UI Extension, Embedding & Security Boundaries`
-- Completed: `ARCH-032-09 Packaging, Testing, Versioning & Upgrade Paths`
-- Completed: `ARCH-032-10 Framework Operations, Governance & Future Evolution`
-- Completed: `ARCH-033-01 API Product Management & Discovery Overview`
-- Completed: `ARCH-033-02 API Product Model, Ownership & Audiences`
-- Completed: `ARCH-033-03 API Catalog, Discovery, Search & Classification`
-- Completed: `ARCH-033-04 Subscriptions, Access Requests, Plans & Entitlements`
-- Completed: `ARCH-033-05 Quotas, Limits, Metering & Cost Visibility`
-- Completed: `ARCH-033-06 Documentation, Examples, SDKs & Change Communication`
-- Completed: `ARCH-033-07 Consumer Analytics, Feedback, Support & Adoption`
-- Completed: `ARCH-033-08 API Product Lifecycle, Versioning & Deprecation`
-- Completed: `ARCH-033-09 API Product Operations, Governance & Assurance`
-- Completed: `ARCH-033-10 Future API Product Ecosystem Evolution`
-- Completed: `ARCH-034-01 Contract, Schema & Capability Registry Overview`
-- Completed: `ARCH-034-02 Registry Metamodel, Identifiers & Ownership`
-- Completed: `ARCH-034-03 API, Event, Command, Query & Schema Registration`
-- Completed: `ARCH-034-04 Tool, Agent, Workflow & Capability Registration`
-- Completed: `ARCH-034-05 UI Extension, Plugin & Solution-Pack Registration`
-- Completed: `ARCH-034-06 Discovery, Lineage, Dependency & Impact Analysis`
-- Completed: `ARCH-034-07 Compatibility, Validation & Conformance`
-- Completed: `ARCH-034-08 Registry Lifecycle, Deprecation & Federation`
-- Completed: `ARCH-034-09 Registry Security, Operations, Governance & Assurance`
-- Completed: `ARCH-034-10 Future Machine-Discoverable Capability Evolution`
-- Completed: `ARCH-035-01 CLI, IDE & Local Tooling Overview`
-- Completed: `ARCH-035-02 CLI Command Architecture & User Experience`
-- Completed: `ARCH-035-03 Authentication, Configuration, Profiles & Context`
-- Completed: `ARCH-035-04 Project Scaffolding, Templates & Code Generation`
-- Completed: `ARCH-035-05 Contract, Schema, Client & Server Generation`
-- Completed: `ARCH-035-06 Local Emulation, Service Virtualization & Data`
-- Completed: `ARCH-035-07 Debugging, Diagnostics, Tracing & Support Bundles`
-- Completed: `ARCH-035-08 IDE Integration, Navigation, Validation & Feedback`
-- Completed: `ARCH-035-09 Tool Updates, Plugins, Automation & Compatibility`
-- Completed: `ARCH-035-10 Tooling Operations, Governance & Future Evolution`
-- Completed: `ARCH-036-01 Developer Environments & Sandboxes Overview`
-- Completed: `ARCH-036-02 Environment Types, Lifecycle & Ownership`
-- Completed: `ARCH-036-03 Isolation, Identity, Network & Secret Boundaries`
-- Completed: `ARCH-036-04 Synthetic Test Data, Privacy & Reset`
-- Completed: `ARCH-036-05 Service Virtualization, Mocks & Dependency Profiles`
-- Completed: `ARCH-036-06 Ephemeral Preview Environments & Collaboration`
-- Completed: `ARCH-036-07 Shared, Partner, Tenant & Training Sandboxes`
-- Completed: `ARCH-036-08 Quotas, Capacity, Cost & Resource Governance`
-- Completed: `ARCH-036-09 Promotion Boundaries, Teardown & Recovery`
-- Completed: `ARCH-036-10 Environment Operations, Governance & Future Evolution`
-- Completed: `ARCH-037-01 Testing, Simulation & Conformance Overview`
-- Completed: `ARCH-037-02 Test Strategy, Risk Model & Quality Gates`
-- Completed: `ARCH-037-03 Unit, Component & Architecture Testing`
-- Completed: `ARCH-037-04 Contract, Schema & Compatibility Testing`
-- Completed: `ARCH-037-05 Integration, Workflow & End-to-End Testing`
-- Completed: `ARCH-037-06 Security, Privacy & Tenant Isolation Testing`
-- Completed: `ARCH-037-07 AI, Agent, Knowledge & UI Testing`
-- Completed: `ARCH-037-08 Performance, Resilience, Chaos & Recovery Testing`
-- Completed: `ARCH-037-09 Simulation, Certification & Architecture Conformance`
-- Completed: `ARCH-037-10 Quality Operations, Governance & Future Evolution`
-- Completed: `ARCH-038-01 Connector, Tool & MCP Development Overview`
-- Completed: `ARCH-038-02 Connector Kits, Adapter Patterns & Project Structure`
-- Completed: `ARCH-038-03 Tool Contracts, Capabilities & MCP Semantics`
-- Completed: `ARCH-038-04 Authentication, Consent, Delegation & Authorization`
-- Completed: `ARCH-038-05 Data Mapping, Transformation & Domain Boundaries`
-- Completed: `ARCH-038-06 Hosting, Execution Isolation & Secret Management`
-- Completed: `ARCH-038-07 Testing, Simulation, Certification & Security Review`
-- Completed: `ARCH-038-08 Observability, Reliability, Rate Limits & Operations`
-- Completed: `ARCH-038-09 Lifecycle, Versioning, Distribution & Provider Exit`
-- Completed: `ARCH-038-10 Future Connector, Tool & MCP Evolution`
-- Completed: `ARCH-039-01 Marketplace, Publishing & Monetization Overview`
-- Completed: `ARCH-039-02 Marketplace Product Model, Catalog Listings & Discovery`
-- Completed: `ARCH-039-03 Publisher Onboarding, Identity, Trust & Agreements`
-- Completed: `ARCH-039-04 Submission, Validation, Review & Certification`
-- Completed: `ARCH-039-05 Packaging, Signing, Distribution & Installation Handoff`
-- Completed: `ARCH-039-06 Licensing, Pricing, Subscriptions & Metering`
-- Completed: `ARCH-039-07 Revenue Sharing, Settlement, Tax & Financial Interfaces`
-- Completed: `ARCH-039-08 Updates, Support, Ratings, Disputes & Removal`
-- Completed: `ARCH-039-09 Marketplace Operations, Governance, Security & Assurance`
-- Completed: `ARCH-039-10 Future Marketplace Ecosystem Evolution`
-- Completed: `ARCH-040-01 Partner, Community & Ecosystem Federation Overview`
-- Completed: `ARCH-040-02 Partner Program Models, Tiers & Lifecycle`
-- Completed: `ARCH-040-03 Community Contribution, Collaboration & Governance`
-- Completed: `ARCH-040-04 Solution Provider Competency, Certification & Support`
-- Completed: `ARCH-040-05 Federated Catalogs, Discovery & Metadata Exchange`
-- Completed: `ARCH-040-06 Cross-Organization Trust, Identity, Access & Delegation`
-- Completed: `ARCH-040-07 Interoperability, Portability, Standards & Provider Exit`
-- Completed: `ARCH-040-08 Ecosystem Collaboration, Support, Conflict & Resilience`
-- Completed: `ARCH-040-09 Ecosystem Operations, Governance, Metrics & Assurance`
-- Completed: `ARCH-040-10 Future Federated Ecosystem Evolution`
-- Next: none — ARCH-040 phase complete; ARCH-002 through ARCH-040 fully implemented
+## P0 — Business Knowledge
 
-## Notes
+- [ ] Add edit/enable/disable/search/filter operations.
+- [ ] Add structured business sections: profile, products, services, rates, policies, FAQs, locations.
+- [ ] Add bulk paste analysis/organization.
+- [ ] Add file upload for PDF/TXT/CSV/DOCX/JSON/Markdown.
+- [ ] Add ingestion status, provenance and source controls.
+- [ ] Implement retrieval suitable for production business grounding.
+- [ ] Keep Business Knowledge distinct from Conversation Memory.
 
-- Work proceeds strictly in architectural order.
-- Only one architecture module is implemented per session.
-- Missing ADR references should be reported but do not block implementation unless the architecture becomes impossible to realize.
+## P1 — Billing and monetization
+
+- [x] User billing plan catalog.
+- [x] Mock local checkout.
+- [x] Stripe subscription Checkout foundation.
+- [x] Stripe webhook verification and subscription-state updates.
+- [x] Billing portal creation.
+- [ ] Move plan/pricing configuration to server configuration/admin storage.
+- [ ] Add trial handling.
+- [ ] Add invoices/payment history view.
+- [ ] Add failed-payment/past-due handling.
+- [ ] Implement plan entitlements and usage limits.
+- [ ] Add AI token/request usage metering tied to billing plan.
+- [ ] Add upgrade/downgrade/cancel UX driven by provider state.
+- [ ] Add a Philippines-friendly payment adapter if required by the commercial rollout, without coupling the product to one provider.
+
+## P1 — Agents and Workflows
+
+- [ ] Turn ARCH-014 into persisted real agent definitions/executions.
+- [ ] Allow model, business knowledge, instructions, tools and autonomy configuration per agent.
+- [ ] Turn ARCH-015 into real workflow definitions/runs.
+- [ ] Connect agent/task/workflow status to Dashboard.
+
+## P1 — Operations
+
+- [ ] Implement logs, AI request telemetry and activity history.
+- [ ] Implement analytics for requests, models, tokens, latency, errors and cost.
+- [ ] Implement account/settings/security pages.
+- [ ] Add production health/readiness endpoints and structured logging.
+
+## P2 — Channels and solution packs
+
+- [ ] Configure Casa Lluvia through normal Business Knowledge APIs; do not hard-code it.
+- [ ] Validate rates, pool, parking, check-in/out and inquiry response journeys.
+- [ ] Add external channels using ARCH-027: website chat, Facebook/Instagram, WhatsApp, email and future voice.
+
+## Deferred
+
+ARCH-031–040 developer marketplace/ecosystem expansion remains reference/future work until the customer product proves those capabilities are needed.
