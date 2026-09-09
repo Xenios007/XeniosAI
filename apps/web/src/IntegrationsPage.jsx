@@ -70,7 +70,7 @@ export default function IntegrationsPage({ business }) {
     </div>
 
     <div className="panel">
-      <div className="integration-section-head"><div><h3>Connected to {business?.name || 'business'}</h3><p className="muted">Credentials are stored server-side and are never returned to the browser.</p></div></div>
+      <div className="integration-section-head"><div><h3>Connected to {business?.name || 'business'}</h3><p className="muted">Credentials are encrypted server-side and are never returned to the browser.</p></div></div>
       {!business ? <div className="empty">Select a business to manage its channels.</div> : connections.length === 0 ? <div className="empty">No channels connected yet. Choose one below.</div> : <div className="connection-list">
         {connections.map(connection => {
           const definition = channels.find(item => item.id === connection.channelId);
@@ -82,13 +82,13 @@ export default function IntegrationsPage({ business }) {
       </div>}
     </div>
 
-    <div className="integration-catalog-head"><div><h2>Channel catalog</h2><p className="muted">Direct channels can be implemented with normal developer credentials. Some platforms require app review or an official partner relationship.</p></div><input value={search} onChange={event => setSearch(event.target.value)} placeholder="Search Facebook, Airbnb, Telegram…" /></div>
+    <div className="integration-catalog-head"><div><h2>Channel catalog</h2><p className="muted">Direct channels use normal developer credentials. Other platforms require app review, commercial enrollment, or an official partner relationship.</p></div><input value={search} onChange={event => setSearch(event.target.value)} placeholder="Search Facebook, Airbnb, Telegram, RCS…" /></div>
 
     {grouped.map(([group, items]) => <section key={group} className="integration-group"><h3>{group}</h3><div className="integration-grid">
       {items.map(channel => <div className="integration-card" key={channel.id}>
         <div className="integration-card-top"><div><strong>{channel.name}</strong><p>{channel.description}</p></div><span className={`badge access-${channel.access}`}>{accessLabels[channel.access] || channel.access}</span></div>
-        <div className="integration-card-meta"><span>{channel.sendImplemented ? 'Live adapter path' : 'Catalog / approval tracking'}</span><span>Inbound + outbound</span></div>
-        <button disabled={!business} className={channel.sendImplemented ? 'primary' : ''} onClick={() => setSelected(channel)}>{channel.access === 'partner-required' ? 'Prepare integration' : 'Connect'}</button>
+        <div className="integration-card-meta"><span>{readiness(channel)}</span><span>Target: inbound + outbound</span></div>
+        <button disabled={!business} className={channel.inboundImplemented || channel.outboundImplemented ? 'primary' : ''} onClick={() => setSelected(channel)}>{channel.access === 'partner-required' ? 'Prepare integration' : 'Connect'}</button>
       </div>)}
     </div></section>)}
 
@@ -100,7 +100,7 @@ function ConnectionModal({ business, channel, onClose, onSaved, onError }) {
   const [name, setName] = useState(channel.name);
   const [settings, setSettings] = useState({});
   const [credentials, setCredentials] = useState({});
-  const [autoReply, setAutoReply] = useState(true);
+  const [autoReply, setAutoReply] = useState(Boolean(channel.inboundImplemented && channel.outboundImplemented));
   const [aiProvider, setAiProvider] = useState('mock');
   const [providers, setProviders] = useState([]);
   const [busy, setBusy] = useState(false);
@@ -120,15 +120,23 @@ function ConnectionModal({ business, channel, onClose, onSaved, onError }) {
     <form className="integration-modal" onSubmit={submit}>
       <div className="modal-head"><div><h2>Connect {channel.name}</h2><span className={`badge access-${channel.access}`}>{accessLabels[channel.access]}</span></div><button type="button" onClick={onClose}>×</button></div>
       <p className="muted">{channel.description}</p>
+      <div className="adapter-readiness">{readiness(channel)}</div>
       {channel.access === 'partner-required' && <div className="partner-note">This platform does not offer ordinary self-serve messaging credentials. Save this connection to track onboarding, then add approved partner credentials when XeniosAI receives access.</div>}
       <label>Connection name<input value={name} onChange={event => setName(event.target.value)} /></label>
-      {channel.settingsFields.map(field => <label key={field}>{humanize(field)}<input value={settings[field] || ''} onChange={event => setSettings({ ...settings, [field]: event.target.value })} placeholder={field === 'verifyToken' ? 'Choose a private verification token' : ''} /></label>)}
-      {channel.credentialFields.map(field => <label key={field}>{humanize(field)}<input type="password" autoComplete="new-password" value={credentials[field] || ''} onChange={event => setCredentials({ ...credentials, [field]: event.target.value })} /></label>)}
+      {channel.settingsFields.map(field => <label key={field}>{humanize(field)}<input value={settings[field] || ''} onChange={event => setSettings({ ...settings, [field]: event.target.value })} /></label>)}
+      {channel.credentialFields.map(field => <label key={field}>{humanize(field)}<input type="password" autoComplete="new-password" value={credentials[field] || ''} onChange={event => setCredentials({ ...credentials, [field]: event.target.value })} placeholder={field === 'verifyToken' || field === 'webhookSecret' ? 'Create a private random token' : ''} /></label>)}
       <label>AI provider<select value={aiProvider} onChange={event => setAiProvider(event.target.value)}>{providers.map(provider => <option key={provider.id} value={provider.id}>{provider.name}{provider.connected ? ' · connected' : ''}</option>)}</select></label>
-      <label className="toggle-line"><input type="checkbox" checked={autoReply} onChange={event => setAutoReply(event.target.checked)} /> Automatically answer inbound messages with XeniosAI</label>
+      <label className="toggle-line"><input type="checkbox" disabled={!channel.inboundImplemented || !channel.outboundImplemented} checked={autoReply} onChange={event => setAutoReply(event.target.checked)} /> Automatically answer inbound messages with XeniosAI</label>
+      {(!channel.inboundImplemented || !channel.outboundImplemented) && <small className="muted">Auto-reply becomes available after both inbound and outbound adapter paths for this channel are implemented.</small>}
       <div className="modal-actions"><button type="button" onClick={onClose}>Cancel</button><button className="primary" disabled={busy}>{busy ? 'Saving…' : 'Save integration'}</button></div>
     </form>
   </div>;
 }
 
+function readiness(channel) {
+  if (channel.inboundImplemented && channel.outboundImplemented) return 'Inbound + outbound adapter live';
+  if (channel.inboundImplemented) return 'Inbound live · outbound planned';
+  if (channel.outboundImplemented) return 'Outbound live · inbound planned';
+  return 'Adapter planned / approval tracking';
+}
 function humanize(value) { return value.replace(/([A-Z])/g, ' $1').replace(/^./, character => character.toUpperCase()); }
