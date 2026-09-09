@@ -1,15 +1,20 @@
+import crypto from 'node:crypto';
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { CHANNEL_CATALOG, createCredentialVault, getChannel, parseInbound, publicConnection } from '../../packages/integrations/src/index.js';
+import { CHANNEL_CATALOG, createCredentialVault, getChannel, parseInbound, publicConnection, verifyInboundRequest } from '../../packages/integrations/src/index.js';
 
-test('channel catalog includes core social and travel integrations', () => {
+test('channel catalog includes core social travel workplace and business integrations', () => {
   const ids = new Set(CHANNEL_CATALOG.map(channel => channel.id));
-  for (const id of ['facebook-messenger', 'instagram', 'whatsapp', 'telegram', 'line', 'wechat-official', 'x-dm', 'airbnb', 'booking-com', 'expedia-vrbo']) {
+  for (const id of ['facebook-messenger', 'instagram', 'whatsapp', 'telegram', 'line', 'wechat-official', 'x-dm', 'airbnb', 'booking-com', 'expedia-vrbo', 'rcs-business', 'twitch', 'matrix', 'zoom-chat', 'mattermost', 'rocket-chat', 'zulip']) {
     assert.ok(ids.has(id), `expected ${id} in channel catalog`);
   }
   assert.equal(getChannel('airbnb').access, 'partner-required');
   assert.equal(getChannel('booking-com').access, 'partner-required');
-  assert.equal(getChannel('telegram').sendImplemented, true);
+  assert.equal(getChannel('rcs-business').access, 'partner-required');
+  assert.equal(getChannel('telegram').outboundImplemented, true);
+  assert.equal(getChannel('telegram').inboundImplemented, true);
+  assert.equal(getChannel('x-dm').outboundImplemented, true);
+  assert.equal(getChannel('x-dm').inboundImplemented, false);
 });
 
 test('integration credential vault encrypts and decrypts connection credentials', () => {
@@ -47,4 +52,27 @@ test('facebook messenger inbound payload ignores echoes', () => {
   assert.deepEqual(parseInbound('facebook-messenger', payload), [
     { senderId: 'guest-1', text: 'rates?', externalMessageId: 'm1' }
   ]);
+});
+
+test('Meta webhook verification checks raw-body HMAC', () => {
+  const rawBody = Buffer.from('{"object":"page"}');
+  const appSecret = 'meta-secret';
+  const signature = `sha256=${crypto.createHmac('sha256', appSecret).update(rawBody).digest('hex')}`;
+  assert.equal(verifyInboundRequest('facebook-messenger', { rawBody, headers: { 'x-hub-signature-256': signature }, credentials: { appSecret } }), true);
+  assert.equal(verifyInboundRequest('facebook-messenger', { rawBody, headers: { 'x-hub-signature-256': 'sha256=bad' }, credentials: { appSecret } }), false);
+  assert.equal(verifyInboundRequest('facebook-messenger', { rawBody, headers: {}, credentials: {} }), false);
+});
+
+test('LINE webhook verification checks channel-secret signature', () => {
+  const rawBody = Buffer.from('{"events":[]}');
+  const channelSecret = 'line-secret';
+  const signature = crypto.createHmac('sha256', channelSecret).update(rawBody).digest('base64');
+  assert.equal(verifyInboundRequest('line', { rawBody, headers: { 'x-line-signature': signature }, credentials: { channelSecret } }), true);
+  assert.equal(verifyInboundRequest('line', { rawBody, headers: { 'x-line-signature': 'bad' }, credentials: { channelSecret } }), false);
+});
+
+test('custom webhook requires configured secret', () => {
+  const request = { rawBody: Buffer.from('{}'), headers: { 'x-xenios-webhook-secret': 'private' }, credentials: { webhookSecret: 'private' } };
+  assert.equal(verifyInboundRequest('custom-webhook', request), true);
+  assert.equal(verifyInboundRequest('custom-webhook', { ...request, headers: {} }), false);
 });
