@@ -11,6 +11,7 @@
     "@xeniosai/ai": "0.1.0",
     "@xeniosai/auth": "0.1.0",
     "@xeniosai/billing": "0.1.0",
+    "@xeniosai/integrations": "0.1.0",
     "@xeniosai/knowledge": "0.1.0",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
