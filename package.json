@@ -1,11 +1,22 @@
 {
   "name": "xeniosai",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
-  "description": "XeniosAI foundation layer implementation.",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "description": "XeniosAI product-first AI business platform with the existing ARCH-001–040 retained as reference architecture.",
   "scripts": {
-    "build": "node scripts/verify-foundation.mjs",
+    "dev": "concurrently -n web,api \"npm:dev:web\" \"npm:dev:api\"",
+    "dev:web": "npm run dev --workspace @xeniosai/web",
+    "dev:api": "npm run dev --workspace @xeniosai/api",
+    "build": "npm run verify:architecture && npm run build --workspace @xeniosai/web",
+    "verify:architecture": "node scripts/verify-foundation.mjs",
     "test": "node --test"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
   }
 }
